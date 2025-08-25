@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rrih</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Web開発者。TypeScript、Next.js、Cloudflareなどを活用した静的Webツール開発。">
+    <meta name="keywords" content="rrih, Web開発, TypeScript, Next.js, Cloudflare, フロントエンド, エンジニア">
+    <meta name="author" content="rrih">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rrih.github.io">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rrih.github.io">
+    <meta property="og:title" content="rrih">
+    <meta property="og:description" content="Web開発者。TypeScript、Next.js、Cloudflareなどを活用した静的Webツール開発。">
+    <meta property="og:image" content="https://github.com/rrih.png">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:site_name" content="rrih">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://rrih.github.io">
+    <meta property="twitter:title" content="rrih">
+    <meta property="twitter:description" content="Web開発者。TypeScript、Next.js、Cloudflareなどを活用した静的Webツール開発。">
+    <meta property="twitter:image" content="https://github.com/rrih.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://github.com/rrih.png">
+    <link rel="apple-touch-icon" href="https://github.com/rrih.png">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "rrih",
+        "url": "https://rrih.github.io",
+        "sameAs": [
+            "https://github.com/rrih"
+        ],
+        "jobTitle": "Web Developer",
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "東京電機大学"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "東京都",
+            "addressCountry": "JP"
+        }
+    }
+    </script>
+    
+    <style>
+        :root {
+            --accent: #0066cc;
+            --accent-light: #4d94ff;
+            --accent-lighter: #e6f2ff;
+            --accent-dark: #004499;
+            --bg-light: #ffffff;
+            --bg-dark: #0a0a0a;
+            --text-light: #1a1a1a;
+            --text-light-secondary: #666666;
+            --text-dark: #f0f0f0;
+            --text-dark-secondary: #999999;
+            --border-light: #e5e5e5;
+            --border-dark: #222222;
+            --card-light: #fafafa;
+            --card-dark: #141414;
+        }
+
+        [data-theme="dark"] {
+            --bg: var(--bg-dark);
+            --text: var(--text-dark);
+            --text-secondary: var(--text-dark-secondary);
+            --border: var(--border-dark);
+            --card: var(--card-dark);
+        }
+
+        [data-theme="light"] {
+            --bg: var(--bg-light);
+            --text: var(--text-light);
+            --text-secondary: var(--text-light-secondary);
+            --border: var(--border-light);
+            --card: var(--card-light);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            transition: background 0.2s ease, color 0.2s ease;
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            color: var(--text-secondary);
+            transition: color 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .theme-toggle:hover {
+            color: var(--accent);
+        }
+
+        .theme-toggle svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .intro {
+            margin-bottom: 60px;
+        }
+
+        .intro h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .intro .subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 56px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* OOUI Card Components */
+        .card-grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: var(--accent);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .card-icon {
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .card-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .card-title {
+            font-weight: 500;
+            font-size: 16px;
+        }
+
+        .card-subtitle {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .card-content {
+            color: var(--text);
+            font-size: 15px;
+        }
+
+        /* Tech Stack Grid */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 12px;
+        }
+
+        .tech-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 12px;
+            text-align: center;
+            font-size: 14px;
+            color: var(--text);
+            transition: all 0.2s ease;
+        }
+
+        .tech-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* Experience Timeline */
+        .timeline {
+            position: relative;
+            padding-left: 32px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 8px;
+            bottom: 8px;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 24px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -28px;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border: 2px solid var(--bg);
+            border-radius: 50%;
+        }
+
+        .timeline-date {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .timeline-content {
+            font-size: 15px;
+            color: var(--text);
+        }
+
+        /* Hobby Tags */
+        .hobby-container {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .hobby-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .hobby-tag {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 6px 16px;
+            font-size: 14px;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: all 0.2s ease;
+        }
+
+        .hobby-tag:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .hobby-tag svg {
+            width: 14px;
+            height: 14px;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+
+        .contact-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .contact-icon {
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .contact-icon svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        .contact-text {
+            font-size: 14px;
+        }
+
+        .email-protect {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            header {
+                margin-bottom: 40px;
+            }
+
+            .intro h1 {
+                font-size: 24px;
+            }
+
+            .tech-grid {
+                grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .intro h1 {
+                font-size: 22px;
+            }
+
+            .tech-card {
+                font-size: 13px;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <div class="container">
+        <header>
+            <div class="logo">rrih</div>
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="テーマ切り替え">
+                <svg class="theme-icon-light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="4"/>
+                    <path d="M12 2v2"/>
+                    <path d="M12 20v2"/>
+                    <path d="m4.93 4.93 1.41 1.41"/>
+                    <path d="m17.66 17.66 1.41 1.41"/>
+                    <path d="M2 12h2"/>
+                    <path d="M20 12h2"/>
+                    <path d="m6.34 17.66-1.41 1.41"/>
+                    <path d="m19.07 4.93-1.41 1.41"/>
+                </svg>
+                <svg class="theme-icon-dark" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                </svg>
+            </button>
+        </header>
+
+        <main>
+            <section class="intro">
+                <h1>rrih</h1>
+                <p class="subtitle">
+                    Web開発に従事。個人開発で静的Webツールの開発を中心に、Agentic Codingを活用した実装を行っています。
+                </p>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">使用技術・ツール</h2>
+                <div class="tech-grid">
+                    <div class="tech-card">TypeScript</div>
+                    <div class="tech-card">Next.js</div>
+                    <div class="tech-card">Tailwind CSS</div>
+                    <div class="tech-card">shadcn/ui</div>
+                    <div class="tech-card">Bun</div>
+                    <div class="tech-card">Cloudflare</div>
+                    <div class="tech-card">Supabase</div>
+                    <div class="tech-card">Claude Code</div>
+                    <div class="tech-card">Gemini</div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">経歴</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">現在</div>
+                        <div class="timeline-content">
+                            Webアプリケーション開発
+                            <div style="font-size: 14px; color: var(--text-secondary); margin-top: 4px;">
+                                フロントエンド開発、インフラ構築、LLM技術の活用
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021年3月</div>
+                        <div class="timeline-content">東京電機大学理工学部 卒業</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">開発領域</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect width="18" height="18" x="3" y="3" rx="2"/>
+                                    <path d="M9 3v18"/>
+                                    <path d="M15 3v18"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="card-title">フロントエンド</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            React/Next.jsを使用したWebアプリケーション開発
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 20h20"/>
+                                    <path d="M5 20v-6"/>
+                                    <path d="M9 20v-10"/>
+                                    <path d="M13 20V10"/>
+                                    <path d="M17 20V6"/>
+                                    <circle cx="5" cy="10" r="2"/>
+                                    <circle cx="9" cy="6" r="2"/>
+                                    <circle cx="13" cy="6" r="2"/>
+                                    <circle cx="17" cy="2" r="2"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="card-title">バックエンド・インフラ</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            クラウドサービスを活用したインフラ構築と運用
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                                    <path d="M5 3v4"/>
+                                    <path d="M19 17v4"/>
+                                    <path d="M3 5h4"/>
+                                    <path d="M17 19h4"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="card-title">AI/LLM活用</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            Claude CodeやGeminiを使用したAgentic Coding
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">趣味</h2>
+                <div class="hobby-container">
+                    <div class="hobby-tags">
+                        <span class="hobby-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="6" x2="10" y1="11" y2="11"/>
+                                <line x1="8" x2="8" y1="9" y2="13"/>
+                                <line x1="15" x2="15.01" y1="12" y2="12"/>
+                                <line x1="18" x2="18.01" y1="10" y2="10"/>
+                                <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/>
+                            </svg>
+                            ポケットモンスター スカーレット・バイオレット
+                        </span>
+                        <span class="hobby-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="14" x="2" y="5" rx="2"/>
+                                <line x1="2" x2="22" y1="10" y2="10"/>
+                            </svg>
+                            ポケモンカードゲーム
+                        </span>
+                        <span class="hobby-tag">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="7" height="12" x="2" y="6" rx="1"/>
+                                <path d="M13 8.32a7.43 7.43 0 0 1 0 7.36"/>
+                                <path d="M16.46 6.21a11.76 11.76 0 0 1 0 11.58"/>
+                                <path d="M19.91 4.1a15.91 15.91 0 0 1 .01 15.8"/>
+                            </svg>
+                            Pokémon Trading Card Game Pocket
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">連絡先</h2>
+                <div class="contact-grid">
+                    <a href="https://github.com/rrih" class="contact-card" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                <path d="M9 18c-4.51 2-5-2-7-2"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">GitHub</div>
+                    </a>
+                    <div class="contact-card" onclick="revealEmail()" style="cursor: pointer;">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                <path d="m22 7-10 5L2 7"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text" id="email-text">メールアドレス</div>
+                    </div>
+                    <a href="https://github.com/rrih/rrih.github.io" class="contact-card" target="_blank" rel="noopener noreferrer">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"/>
+                                <polyline points="8 6 2 12 8 18"/>
+                            </svg>
+                        </div>
+                        <div class="contact-text">ソースコード</div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p class="copyright">© 2025 rrih</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', newTheme);
+            
+            const lightIcon = document.querySelector('.theme-icon-light');
+            const darkIcon = document.querySelector('.theme-icon-dark');
+            
+            if (newTheme === 'dark') {
+                lightIcon.style.display = 'none';
+                darkIcon.style.display = 'block';
+            } else {
+                lightIcon.style.display = 'block';
+                darkIcon.style.display = 'none';
+            }
+            
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // Email protection
+        function revealEmail() {
+            const emailText = document.getElementById('email-text');
+            const email = ['origabird0911', 'gmail.com'].join('@');
+            emailText.innerHTML = `<a href="mailto:${email}" style="color: inherit; text-decoration: none;">${email}</a>`;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Theme initialization
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.body.setAttribute('data-theme', savedTheme);
+            
+            const lightIcon = document.querySelector('.theme-icon-light');
+            const darkIcon = document.querySelector('.theme-icon-dark');
+            
+            if (savedTheme === 'dark') {
+                lightIcon.style.display = 'none';
+                darkIcon.style.display = 'block';
+            } else {
+                lightIcon.style.display = 'block';
+                darkIcon.style.display = 'none';
+            }
+        });
+
+        // System dark mode detection
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && !localStorage.getItem('theme')) {
+            document.body.setAttribute('data-theme', 'dark');
+            document.querySelector('.theme-icon-light').style.display = 'none';
+            document.querySelector('.theme-icon-dark').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
