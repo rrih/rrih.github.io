@@ -127,25 +127,25 @@ export default function Base64Page() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-6 xs:py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-3 xs:py-4 sm:py-6 md:py-12">
         <Header />
 
         <main>
           {/* Hero Section */}
-          <section className="mb-16 sm:mb-20 text-center">
+          <section className="mb-6 xs:mb-8 sm:mb-12 md:mb-16 text-center">
             <div className="mx-auto max-w-3xl">
-              <h1 className="mb-4 xs:mb-6 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark">
+              <h1 className="mb-2 xs:mb-3 sm:mb-4 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark">
                 Base64 Encoder & Decoder
               </h1>
-              <p className="mb-6 xs:mb-8 text-base xs:text-lg sm:text-xl text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
+              <p className="mb-4 xs:mb-6 text-sm xs:text-base sm:text-lg text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
                 Fast and secure Base64 encoding and decoding.
               </p>
             </div>
           </section>
 
           {/* Mode Toggle */}
-          <section className="mb-8 flex justify-center">
-            <div className="rounded-lg border border-border-light bg-card-light p-1 dark:border-border-dark dark:bg-card-dark mx-3 xs:mx-0">
+          <section className="mb-4 xs:mb-6 flex justify-center">
+            <div className="rounded-lg border border-border-light bg-card-light p-1 dark:border-border-dark dark:bg-card-dark mx-2 xs:mx-0">
               <div className="flex gap-1">
                 <button
                   onClick={() => switchMode('encode')}
@@ -172,14 +172,14 @@ export default function Base64Page() {
           </section>
 
           {/* Controls */}
-          <section className="mb-8">
-            <div className="rounded-lg border border-border-light bg-card-light p-3 xs:p-4 sm:p-6 dark:border-border-dark dark:bg-card-dark">
+          <section className="mb-4 xs:mb-6">
+            <div className="rounded-lg border border-border-light bg-card-light p-2 xs:p-3 sm:p-4 md:p-6 dark:border-border-dark dark:bg-card-dark">
               <div className="flex flex-col xs:flex-row flex-wrap gap-3 xs:gap-4 items-start xs:items-center justify-between">
                 <div className="flex gap-1 xs:gap-2 flex-wrap w-full xs:w-auto">
                   <button
                     onClick={processInput}
                     disabled={isProcessing}
-                    className="rounded-lg bg-accent px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] text-white font-medium text-sm xs:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
+                    className="rounded-lg bg-accent px-2 xs:px-3 sm:px-4 py-2 xs:py-3 min-h-[40px] xs:min-h-[44px] text-white font-medium text-xs xs:text-sm sm:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
                   >
                     {isProcessing
                       ? 'Processing...'
@@ -229,11 +229,11 @@ export default function Base64Page() {
           </section>
 
           {/* Input/Output Grid */}
-          <section className="mb-16 sm:mb-20">
+          <section className="mb-6 xs:mb-8 sm:mb-12 md:mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 xs:gap-6">
               {/* Input Panel */}
               <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
-                <div className="p-3 xs:p-4 sm:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
+                <div className="p-2 xs:p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                   <h3 className="text-base xs:text-lg font-semibold text-foreground-light dark:text-foreground-dark">
                     {mode === 'encode' ? 'Text Input' : 'Base64 Input'}
                   </h3>
@@ -243,7 +243,7 @@ export default function Base64Page() {
                       : 'Enter Base64 string to decode'}
                   </p>
                 </div>
-                <div className="p-3 xs:p-4 sm:p-6">
+                <div className="p-2 xs:p-3 sm:p-4 md:p-6">
                   <textarea
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
@@ -252,7 +252,7 @@ export default function Base64Page() {
                         ? 'Enter text to encode...'
                         : 'Enter Base64 string to decode...'
                     }
-                    className="w-full h-64 xs:h-80 sm:h-96 bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-mono text-xs xs:text-sm sm:text-base p-3 xs:p-4 border border-border-light dark:border-border-dark rounded-lg resize-none transition-all focus:ring-2 focus:ring-accent focus:border-accent"
+                    className="w-full h-40 xs:h-48 sm:h-64 md:h-80 bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-mono text-xs xs:text-sm sm:text-base p-2 xs:p-3 sm:p-4 border border-border-light dark:border-border-dark rounded-lg resize-none transition-all focus:ring-2 focus:ring-accent focus:border-accent"
                   />
                 </div>
               </div>
@@ -309,7 +309,7 @@ export default function Base64Page() {
           </section>
 
           {/* Features */}
-          <section className="mb-8">
+          <section className="hidden xs:block mb-6 xs:mb-8 sm:mb-12 md:mb-16">
             <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
               Why Choose Our Base64 Tool?
             </h2>
@@ -357,7 +357,7 @@ export default function Base64Page() {
           </section>
 
           {/* Usage Examples */}
-          <section className="mb-16 sm:mb-20">
+          <section className="hidden sm:block mb-8 sm:mb-12 md:mb-16">
             <div className="rounded-lg border border-border-light bg-card-light p-6 dark:border-border-dark dark:bg-card-dark">
               <h3 className="text-2xl font-semibold text-foreground-light dark:text-foreground-dark mb-6 text-center">
                 Common Use Cases

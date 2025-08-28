@@ -189,28 +189,28 @@ export default function ColorPickerPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-6 xs:py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-3 xs:py-4 sm:py-6 md:py-12">
         <Header />
 
         <main>
           {/* Hero Section */}
-          <section className="mb-16 sm:mb-20 text-center">
+          <section className="mb-6 xs:mb-8 sm:mb-12 md:mb-16 text-center">
             <div className="mx-auto max-w-3xl">
-              <h1 className="mb-4 xs:mb-6 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark">
+              <h1 className="mb-2 xs:mb-3 sm:mb-4 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark">
                 Color Picker & Converter
               </h1>
-              <p className="mb-6 xs:mb-8 text-base xs:text-lg sm:text-xl text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
+              <p className="mb-4 xs:mb-6 text-sm xs:text-base sm:text-lg text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
                 Pick colors and convert between HEX, RGB, HSL formats.
               </p>
             </div>
           </section>
 
           {/* Main Color Picker */}
-          <section className="mb-16 sm:mb-20">
+          <section className="mb-6 xs:mb-8 sm:mb-12 md:mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 xs:gap-6 lg:gap-8">
               {/* Color Display & Picker */}
               <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
-                <div className="p-3 xs:p-4 sm:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
+                <div className="p-2 xs:p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                   <h3 className="text-lg font-semibold text-foreground-light dark:text-foreground-dark">
                     Color Selection
                   </h3>
@@ -218,10 +218,10 @@ export default function ColorPickerPage() {
                     Choose your perfect color
                   </p>
                 </div>
-                <div className="p-6">
+                <div className="p-3 xs:p-4 sm:p-6">
                   {/* Large Color Display */}
                   <div
-                    className="w-full h-48 sm:h-56 lg:h-64 rounded-lg border-4 border-border-light dark:border-border-dark mb-6 shadow-inner transition-all hover:scale-[1.02]"
+                    className="w-full h-32 xs:h-40 sm:h-48 md:h-56 lg:h-64 rounded-lg border-4 border-border-light dark:border-border-dark mb-4 xs:mb-6 shadow-inner transition-all hover:scale-[1.02]"
                     style={{ backgroundColor: currentColor }}
                   />
 
@@ -334,7 +334,7 @@ export default function ColorPickerPage() {
           </section>
 
           {/* Predefined Colors */}
-          <section className="mb-16 sm:mb-20">
+          <section className="hidden xs:block mb-8 sm:mb-12 md:mb-16">
             <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark p-6 transition-all hover:shadow-lg">
               <h3 className="text-lg font-semibold text-foreground-light dark:text-foreground-dark mb-6">
                 Quick Color Palette
@@ -358,7 +358,7 @@ export default function ColorPickerPage() {
           </section>
 
           {/* Color Harmony & Information */}
-          <section className="mb-16 sm:mb-20">
+          <section className="hidden sm:block mb-8 sm:mb-12 md:mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Color Harmony */}
               <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark p-6 transition-all hover:shadow-lg">
@@ -445,7 +445,7 @@ export default function ColorPickerPage() {
           </section>
 
           {/* Features */}
-          <section className="mb-16 sm:mb-20">
+          <section className="hidden xs:block mb-8 sm:mb-12 md:mb-16">
             <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
               Why Choose Our Color Picker?
             </h2>

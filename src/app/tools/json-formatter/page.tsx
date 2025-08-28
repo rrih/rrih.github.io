@@ -119,52 +119,52 @@ export default function JsonFormatterPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-6 xs:py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-3 xs:py-4 sm:py-6 md:py-12">
         <Header />
 
         <main>
           {/* Hero Section */}
-          <section className="mb-16 sm:mb-20 text-center">
+          <section className="mb-6 xs:mb-8 sm:mb-12 md:mb-16 text-center">
             <div className="mx-auto max-w-3xl">
-              <h1 className="mb-4 xs:mb-6 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark">
+              <h1 className="mb-2 xs:mb-3 sm:mb-4 text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark">
                 JSON Formatter & Validator
               </h1>
-              <p className="mb-6 xs:mb-8 text-base xs:text-lg sm:text-xl text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
+              <p className="mb-4 xs:mb-6 text-sm xs:text-base sm:text-lg text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
                 Format, validate, and beautify JSON data with syntax highlighting.
               </p>
             </div>
           </section>
 
           {/* Controls */}
-          <section className="mb-8">
-            <div className="rounded-lg border border-border-light bg-card-light p-3 xs:p-4 sm:p-6 dark:border-border-dark dark:bg-card-dark">
+          <section className="mb-4 xs:mb-6">
+            <div className="rounded-lg border border-border-light bg-card-light p-2 xs:p-3 sm:p-4 md:p-6 dark:border-border-dark dark:bg-card-dark">
               <div className="flex flex-col xs:flex-row flex-wrap gap-3 xs:gap-4 items-start xs:items-center justify-between">
                 <div className="flex gap-1 xs:gap-2 flex-wrap w-full xs:w-auto">
                   <button
                     onClick={formatJson}
                     disabled={isProcessing}
-                    className="rounded-lg bg-accent px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] text-white font-medium text-sm xs:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
+                    className="rounded-lg bg-accent px-2 xs:px-3 sm:px-4 py-2 xs:py-3 min-h-[40px] xs:min-h-[44px] text-white font-medium text-xs xs:text-sm sm:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
                   >
                     {isProcessing ? 'Processing...' : 'Format'}
                   </button>
                   <button
                     onClick={minifyJson}
                     disabled={isProcessing}
-                    className="rounded-lg bg-accent px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] text-white font-medium text-sm xs:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
+                    className="rounded-lg bg-accent px-2 xs:px-3 sm:px-4 py-2 xs:py-3 min-h-[40px] xs:min-h-[44px] text-white font-medium text-xs xs:text-sm sm:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
                   >
                     {isProcessing ? 'Processing...' : 'Minify'}
                   </button>
                   <button
                     onClick={validateJson}
                     disabled={isProcessing}
-                    className="rounded-lg bg-accent px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] text-white font-medium text-sm xs:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
+                    className="rounded-lg bg-accent px-2 xs:px-3 sm:px-4 py-2 xs:py-3 min-h-[40px] xs:min-h-[44px] text-white font-medium text-xs xs:text-sm sm:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
                   >
                     {isProcessing ? 'Processing...' : 'Validate'}
                   </button>
                   <button
                     onClick={undo}
                     disabled={!canUndo}
-                    className="flex items-center gap-1 xs:gap-2 rounded-lg border border-border-light px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] font-medium text-sm xs:text-base transition-all hover:border-accent hover:text-accent dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex items-center gap-1 xs:gap-2 rounded-lg border border-border-light px-2 xs:px-3 sm:px-4 py-2 xs:py-3 min-h-[40px] xs:min-h-[44px] font-medium text-xs xs:text-sm sm:text-base transition-all hover:border-accent hover:text-accent dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <Undo2 className="w-3 h-3 xs:w-4 xs:h-4" />
                     <span className="hidden xs:inline">Undo</span>
@@ -172,14 +172,14 @@ export default function JsonFormatterPage() {
                   <button
                     onClick={redo}
                     disabled={!canRedo}
-                    className="flex items-center gap-1 xs:gap-2 rounded-lg border border-border-light px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] font-medium text-sm xs:text-base transition-all hover:border-accent hover:text-accent dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="flex items-center gap-1 xs:gap-2 rounded-lg border border-border-light px-2 xs:px-3 sm:px-4 py-2 xs:py-3 min-h-[40px] xs:min-h-[44px] font-medium text-xs xs:text-sm sm:text-base transition-all hover:border-accent hover:text-accent dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <Redo2 className="w-3 h-3 xs:w-4 xs:h-4" />
                     <span className="hidden xs:inline">Redo</span>
                   </button>
                   <button
                     onClick={clearAll}
-                    className="rounded-lg border border-border-light px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] font-medium text-sm xs:text-base transition-all hover:border-red-500 hover:text-red-500 dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
+                    className="rounded-lg border border-border-light px-2 xs:px-3 sm:px-4 py-2 xs:py-3 min-h-[40px] xs:min-h-[44px] font-medium text-xs xs:text-sm sm:text-base transition-all hover:border-red-500 hover:text-red-500 dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
                   >
                     Clear
                   </button>
@@ -207,11 +207,11 @@ export default function JsonFormatterPage() {
           </section>
 
           {/* Input/Output Grid */}
-          <section className="mb-16 sm:mb-20">
+          <section className="mb-6 xs:mb-8 sm:mb-12 md:mb-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 xs:gap-6">
               {/* Input Panel */}
               <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
-                <div className="p-3 xs:p-4 sm:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
+                <div className="p-2 xs:p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                   <h3 className="text-base xs:text-lg font-semibold text-foreground-light dark:text-foreground-dark">
                     Input JSON
                   </h3>
@@ -219,19 +219,19 @@ export default function JsonFormatterPage() {
                     Paste your JSON data here
                   </p>
                 </div>
-                <div className="p-3 xs:p-4 sm:p-6">
+                <div className="p-2 xs:p-3 sm:p-4 md:p-6">
                   <textarea
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     placeholder="Paste your JSON here..."
-                    className="w-full h-64 xs:h-80 sm:h-96 bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-mono text-xs xs:text-sm sm:text-base p-3 xs:p-4 border border-border-light dark:border-border-dark rounded-lg resize-none transition-all focus:ring-2 focus:ring-accent focus:border-accent"
+                    className="w-full h-40 xs:h-48 sm:h-64 md:h-80 bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-mono text-xs xs:text-sm sm:text-base p-2 xs:p-3 sm:p-4 border border-border-light dark:border-border-dark rounded-lg resize-none transition-all focus:ring-2 focus:ring-accent focus:border-accent"
                   />
                 </div>
               </div>
 
               {/* Output Panel */}
               <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
-                <div className="p-3 xs:p-4 sm:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark flex justify-between items-center">
+                <div className="p-2 xs:p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark flex justify-between items-center">
                   <div>
                     <h3 className="text-base xs:text-lg font-semibold text-foreground-light dark:text-foreground-dark">
                       Output
@@ -250,7 +250,7 @@ export default function JsonFormatterPage() {
                     </button>
                   )}
                 </div>
-                <div className="p-3 xs:p-4 sm:p-6">
+                <div className="p-2 xs:p-3 sm:p-4 md:p-6">
                   {error ? (
                     <div className="rounded-lg border border-red-200 bg-red-50 dark:border-red-800 dark:bg-red-900/20 p-3 xs:p-4 transition-all">
                       <div className="flex items-center gap-1 xs:gap-2 text-red-600 dark:text-red-400 font-medium mb-2">
@@ -266,7 +266,7 @@ export default function JsonFormatterPage() {
                       value={output}
                       readOnly
                       placeholder="Formatted JSON will appear here..."
-                      className="w-full h-64 xs:h-80 sm:h-96 bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-mono text-xs xs:text-sm sm:text-base p-3 xs:p-4 border border-border-light dark:border-border-dark rounded-lg resize-none transition-all"
+                      className="w-full h-40 xs:h-48 sm:h-64 md:h-80 bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-mono text-xs xs:text-sm sm:text-base p-2 xs:p-3 sm:p-4 border border-border-light dark:border-border-dark rounded-lg resize-none transition-all"
                     />
                   )}
                 </div>
@@ -275,7 +275,7 @@ export default function JsonFormatterPage() {
           </section>
 
           {/* Features */}
-          <section className="mb-16 sm:mb-20">
+          <section className="hidden xs:block mb-8 sm:mb-12 md:mb-16">
             <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
               Why Choose Our JSON Formatter?
             </h2>

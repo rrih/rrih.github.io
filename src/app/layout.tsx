@@ -69,6 +69,10 @@ export default function RootLayout({
     <html lang="ja" className="light">
       <head>
         <meta name="google-adsense-account" content="ca-pub-6426570202991325" />
+        <meta
+          name="google-site-verification"
+          content="izOncAC8z6Z5EuhYwJNR0H6FXtlb9pTGWLGtK-tajb0"
+        />
         <script
           type="application/ld+json"
           // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
