@@ -11,9 +11,7 @@ export function ToolPanel({ title, children, headerContent }: ToolPanelProps) {
         <h3 className="text-lg font-semibold text-slate-800 dark:text-white">{title}</h3>
         {headerContent}
       </div>
-      <div className="p-4">
-        {children}
-      </div>
+      <div className="p-4">{children}</div>
     </div>
   )
 }

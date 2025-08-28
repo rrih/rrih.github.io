@@ -1,9 +1,9 @@
 'use client'
 
-import { useEffect, useState } from 'react'
-import { Palette, Heart, Copy, AlertCircle } from 'lucide-react'
-import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { AlertCircle, Copy, Heart, Palette } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 interface ColorFormat {
   hex: string
@@ -53,15 +53,15 @@ export default function ColorPickerPage() {
   }
 
   const rgbToHsl = (r: number, g: number, b: number) => {
-    r /= 255
-    g /= 255
-    b /= 255
+    const rNorm = r / 255
+    const gNorm = g / 255
+    const bNorm = b / 255
 
-    const max = Math.max(r, g, b)
-    const min = Math.min(r, g, b)
-    let h,
-      s,
-      l = (max + min) / 2
+    const max = Math.max(rNorm, gNorm, bNorm)
+    const min = Math.min(rNorm, gNorm, bNorm)
+    let h: number
+    let s: number
+    const l = (max + min) / 2
 
     if (max === min) {
       h = s = 0
@@ -70,14 +70,14 @@ export default function ColorPickerPage() {
       s = l > 0.5 ? d / (2 - max - min) : d / (max + min)
 
       switch (max) {
-        case r:
-          h = (g - b) / d + (g < b ? 6 : 0)
+        case rNorm:
+          h = (gNorm - bNorm) / d + (gNorm < bNorm ? 6 : 0)
           break
-        case g:
-          h = (b - r) / d + 2
+        case gNorm:
+          h = (bNorm - rNorm) / d + 2
           break
-        case b:
-          h = (r - g) / d + 4
+        case bNorm:
+          h = (rNorm - gNorm) / d + 4
           break
         default:
           h = 0
@@ -121,9 +121,24 @@ export default function ColorPickerPage() {
   }
 
   const predefinedColors = [
-    '#FF0000', '#FF4500', '#FFA500', '#FFD700', '#FFFF00', '#ADFF2F',
-    '#00FF00', '#00FF7F', '#00FFFF', '#0000FF', '#4169E1', '#8A2BE2',
-    '#FF00FF', '#FF1493', '#FF69B4', '#000000', '#808080', '#FFFFFF',
+    '#FF0000',
+    '#FF4500',
+    '#FFA500',
+    '#FFD700',
+    '#FFFF00',
+    '#ADFF2F',
+    '#00FF00',
+    '#00FF7F',
+    '#00FFFF',
+    '#0000FF',
+    '#4169E1',
+    '#8A2BE2',
+    '#FF00FF',
+    '#FF1493',
+    '#FF69B4',
+    '#000000',
+    '#808080',
+    '#FFFFFF',
   ]
 
   const formatCopies = [
@@ -299,17 +314,23 @@ export default function ColorPickerPage() {
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-foreground-light-secondary dark:text-foreground-dark-secondary">Current</span>
+                    <span className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      Current
+                    </span>
                     <div className="flex items-center gap-3">
                       <div
                         className="w-8 h-8 rounded border border-border-light dark:border-border-dark"
                         style={{ backgroundColor: currentColor }}
                       />
-                      <span className="font-mono text-sm text-foreground-light dark:text-foreground-dark">{currentColor}</span>
+                      <span className="font-mono text-sm text-foreground-light dark:text-foreground-dark">
+                        {currentColor}
+                      </span>
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-foreground-light-secondary dark:text-foreground-dark-secondary">Complementary</span>
+                    <span className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      Complementary
+                    </span>
                     <div className="flex items-center gap-3">
                       <div
                         className="w-8 h-8 rounded border border-border-light dark:border-border-dark"
@@ -318,7 +339,8 @@ export default function ColorPickerPage() {
                         }}
                       />
                       <span className="font-mono text-sm text-foreground-light dark:text-foreground-dark">
-                        hsl({(colorFormat.hsl.h + 180) % 360}, {colorFormat.hsl.s}%, {colorFormat.hsl.l}%)
+                        hsl({(colorFormat.hsl.h + 180) % 360}, {colorFormat.hsl.s}%,{' '}
+                        {colorFormat.hsl.l}%)
                       </span>
                     </div>
                   </div>
@@ -332,7 +354,9 @@ export default function ColorPickerPage() {
                 </h3>
                 <div className="space-y-4 text-sm">
                   <div className="flex justify-between">
-                    <span className="text-foreground-light-secondary dark:text-foreground-dark-secondary">Brightness:</span>
+                    <span className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      Brightness:
+                    </span>
                     <span className="font-medium text-foreground-light dark:text-foreground-dark">
                       {Math.round(
                         ((colorFormat.rgb.r * 0.299 +
@@ -340,16 +364,25 @@ export default function ColorPickerPage() {
                           colorFormat.rgb.b * 0.114) /
                           255) *
                           100
-                      )}%
+                      )}
+                      %
                     </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-foreground-light-secondary dark:text-foreground-dark-secondary">Lightness:</span>
-                    <span className="font-medium text-foreground-light dark:text-foreground-dark">{colorFormat.hsl.l}%</span>
+                    <span className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      Lightness:
+                    </span>
+                    <span className="font-medium text-foreground-light dark:text-foreground-dark">
+                      {colorFormat.hsl.l}%
+                    </span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-foreground-light-secondary dark:text-foreground-dark-secondary">Saturation:</span>
-                    <span className="font-medium text-foreground-light dark:text-foreground-dark">{colorFormat.hsl.s}%</span>
+                    <span className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      Saturation:
+                    </span>
+                    <span className="font-medium text-foreground-light dark:text-foreground-dark">
+                      {colorFormat.hsl.s}%
+                    </span>
                   </div>
                 </div>
               </div>
@@ -358,37 +391,42 @@ export default function ColorPickerPage() {
 
           {/* Features */}
           <section className="mb-16 sm:mb-20">
-            <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">Why Choose Our Color Picker?</h2>
+            <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+              Why Choose Our Color Picker?
+            </h2>
             <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
                   icon: Palette,
                   title: 'Multiple Formats',
-                  description: 'Convert between HEX, RGB, HSL, and CMYK color formats instantly.'
+                  description: 'Convert between HEX, RGB, HSL, and CMYK color formats instantly.',
                 },
                 {
                   icon: Heart,
                   title: 'Color Harmony',
-                  description: 'Discover complementary colors and create beautiful color palettes.'
+                  description: 'Discover complementary colors and create beautiful color palettes.',
                 },
                 {
                   icon: Copy,
                   title: 'Copy & Export',
-                  description: 'One-click copy for all color formats. Perfect for design workflows.'
-                }
+                  description:
+                    'One-click copy for all color formats. Perfect for design workflows.',
+                },
               ].map((feature, index) => (
                 <div
                   key={feature.title}
                   className="rounded-lg border border-border-light bg-card-light p-6 text-center dark:border-border-dark dark:bg-card-dark transition-all hover:-translate-y-1 hover:shadow-lg"
                   style={{
                     animationDelay: `${index * 100}ms`,
-                    animation: 'fadeInUp 0.6s ease-out forwards'
+                    animation: 'fadeInUp 0.6s ease-out forwards',
                   }}
                 >
                   <div className="mb-4 flex justify-center">
                     <feature.icon className="h-10 w-10 text-accent transition-transform hover:scale-110" />
                   </div>
-                  <h3 className="mb-2 text-lg font-semibold text-foreground-light dark:text-foreground-dark">{feature.title}</h3>
+                  <h3 className="mb-2 text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+                    {feature.title}
+                  </h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed">
                     {feature.description}
                   </p>

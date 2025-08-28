@@ -43,7 +43,9 @@ export default function Home() {
 
           {/* Features Section */}
           <section className="mb-16 sm:mb-20">
-            <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold">Why Choose Our Tools?</h2>
+            <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold">
+              Why Choose Our Tools?
+            </h2>
             <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {siteConfig.features.map((feature) => (
                 <div

@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
-import { Shield, Zap, ArrowLeftRight, Copy, AlertCircle } from 'lucide-react'
-import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { AlertCircle, ArrowLeftRight, Copy, Shield, Zap } from 'lucide-react'
+import { useState } from 'react'
 
 export default function Base64Page() {
   const [input, setInput] = useState('')
@@ -16,13 +16,13 @@ export default function Base64Page() {
   const handleEncode = async () => {
     if (!input.trim()) return
     setIsProcessing(true)
-    await new Promise(resolve => setTimeout(resolve, 200))
-    
+    await new Promise((resolve) => setTimeout(resolve, 200))
+
     try {
       setError('')
       const encoded = btoa(unescape(encodeURIComponent(input)))
       setOutput(encoded)
-    } catch (err) {
+    } catch (_err) {
       setError('Failed to encode. Please check your input.')
       setOutput('')
     } finally {
@@ -33,13 +33,13 @@ export default function Base64Page() {
   const handleDecode = async () => {
     if (!input.trim()) return
     setIsProcessing(true)
-    await new Promise(resolve => setTimeout(resolve, 200))
-    
+    await new Promise((resolve) => setTimeout(resolve, 200))
+
     try {
       setError('')
       const decoded = decodeURIComponent(escape(atob(input)))
       setOutput(decoded)
-    } catch (err) {
+    } catch (_err) {
       setError('Invalid Base64 string. Please check your input.')
       setOutput('')
     } finally {
@@ -143,12 +143,11 @@ export default function Base64Page() {
                     disabled={isProcessing}
                     className="rounded-lg bg-accent px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] text-white font-medium text-sm xs:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
                   >
-                    {isProcessing 
-                      ? 'Processing...' 
-                      : mode === 'encode' 
-                        ? 'Encode to Base64' 
-                        : 'Decode from Base64'
-                    }
+                    {isProcessing
+                      ? 'Processing...'
+                      : mode === 'encode'
+                        ? 'Encode to Base64'
+                        : 'Decode from Base64'}
                   </button>
                   {output && (
                     <button
@@ -185,7 +184,9 @@ export default function Base64Page() {
                     {mode === 'encode' ? 'Text Input' : 'Base64 Input'}
                   </h3>
                   <p className="text-xs xs:text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
-                    {mode === 'encode' ? 'Enter plain text to encode' : 'Enter Base64 string to decode'}
+                    {mode === 'encode'
+                      ? 'Enter plain text to encode'
+                      : 'Enter Base64 string to decode'}
                   </p>
                 </div>
                 <div className="p-3 xs:p-4 sm:p-6">
@@ -193,7 +194,9 @@ export default function Base64Page() {
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     placeholder={
-                      mode === 'encode' ? 'Enter text to encode...' : 'Enter Base64 string to decode...'
+                      mode === 'encode'
+                        ? 'Enter text to encode...'
+                        : 'Enter Base64 string to decode...'
                     }
                     className="w-full h-64 xs:h-80 sm:h-96 bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-mono text-xs xs:text-sm sm:text-base p-3 xs:p-4 border border-border-light dark:border-border-dark rounded-lg resize-none transition-all focus:ring-2 focus:ring-accent focus:border-accent"
                   />
@@ -208,7 +211,9 @@ export default function Base64Page() {
                       {mode === 'encode' ? 'Base64 Output' : 'Text Output'}
                     </h3>
                     <p className="text-xs xs:text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
-                      {mode === 'encode' ? 'Encoded result appears here' : 'Decoded result appears here'}
+                      {mode === 'encode'
+                        ? 'Encoded result appears here'
+                        : 'Decoded result appears here'}
                     </p>
                   </div>
                   {output && (
@@ -228,7 +233,9 @@ export default function Base64Page() {
                         <AlertCircle className="w-3 h-3 xs:w-4 xs:h-4" />
                         Error:
                       </div>
-                      <p className="text-red-700 dark:text-red-300 font-mono text-xs xs:text-sm">{error}</p>
+                      <p className="text-red-700 dark:text-red-300 font-mono text-xs xs:text-sm">
+                        {error}
+                      </p>
                     </div>
                   ) : (
                     <textarea
@@ -249,37 +256,44 @@ export default function Base64Page() {
 
           {/* Features */}
           <section className="mb-8">
-            <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">Why Choose Our Base64 Tool?</h2>
+            <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+              Why Choose Our Base64 Tool?
+            </h2>
             <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
                   icon: Shield,
                   title: 'Secure Processing',
-                  description: 'All encoding and decoding happens locally in your browser. No data is sent to servers.'
+                  description:
+                    'All encoding and decoding happens locally in your browser. No data is sent to servers.',
                 },
                 {
                   icon: Zap,
                   title: 'Fast & Efficient',
-                  description: 'Instant encoding and decoding with support for large text files and binary data.'
+                  description:
+                    'Instant encoding and decoding with support for large text files and binary data.',
                 },
                 {
                   icon: ArrowLeftRight,
                   title: 'Bidirectional',
-                  description: 'Switch between encode and decode modes instantly. Swap input/output with one click.'
-                }
+                  description:
+                    'Switch between encode and decode modes instantly. Swap input/output with one click.',
+                },
               ].map((feature, index) => (
                 <div
                   key={feature.title}
                   className="rounded-lg border border-border-light bg-card-light p-6 text-center dark:border-border-dark dark:bg-card-dark transition-all hover:-translate-y-1 hover:shadow-lg"
                   style={{
                     animationDelay: `${index * 100}ms`,
-                    animation: 'fadeInUp 0.6s ease-out forwards'
+                    animation: 'fadeInUp 0.6s ease-out forwards',
                   }}
                 >
                   <div className="mb-4 flex justify-center">
                     <feature.icon className="h-10 w-10 text-accent transition-transform hover:scale-110" />
                   </div>
-                  <h3 className="mb-2 text-lg font-semibold text-foreground-light dark:text-foreground-dark">{feature.title}</h3>
+                  <h3 className="mb-2 text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+                    {feature.title}
+                  </h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed">
                     {feature.description}
                   </p>
@@ -307,7 +321,9 @@ export default function Base64Page() {
                   </div>
                 </div>
                 <div className="rounded-lg border border-border-light bg-white dark:border-border-dark dark:bg-background-dark p-4 transition-all hover:shadow-lg">
-                  <h4 className="font-medium text-foreground-light dark:text-foreground-dark mb-2">Data URLs</h4>
+                  <h4 className="font-medium text-foreground-light dark:text-foreground-dark mb-2">
+                    Data URLs
+                  </h4>
                   <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary mb-3">
                     Embed images and files directly in HTML, CSS, or JavaScript.
                   </p>

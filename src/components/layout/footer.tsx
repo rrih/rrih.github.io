@@ -5,22 +5,22 @@ export function Footer() {
     <footer className="mt-20 border-t border-border-light pt-8 pb-6 dark:border-border-dark">
       <div className="flex flex-col items-center gap-4">
         <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
-          <Link 
-            href="/privacy" 
+          <Link
+            href="/privacy"
             className="text-foreground-light-secondary dark:text-foreground-dark-secondary hover:text-accent transition-colors"
           >
             Privacy Policy
           </Link>
           <span className="text-border-light dark:text-border-dark">•</span>
-          <Link 
-            href="/terms" 
+          <Link
+            href="/terms"
             className="text-foreground-light-secondary dark:text-foreground-dark-secondary hover:text-accent transition-colors"
           >
             Terms of Service
           </Link>
           <span className="text-border-light dark:text-border-dark">•</span>
-          <Link 
-            href="/about" 
+          <Link
+            href="/about"
             className="text-foreground-light-secondary dark:text-foreground-dark-secondary hover:text-accent transition-colors"
           >
             About

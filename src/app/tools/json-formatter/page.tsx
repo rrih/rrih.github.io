@@ -1,9 +1,9 @@
 'use client'
 
-import { useState } from 'react'
-import { CheckCircle, FileText, Zap, Copy, AlertCircle } from 'lucide-react'
-import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { AlertCircle, CheckCircle, Copy, FileText, Zap } from 'lucide-react'
+import { useState } from 'react'
 
 export default function JsonFormatterPage() {
   const [input, setInput] = useState('')
@@ -16,8 +16,8 @@ export default function JsonFormatterPage() {
   const formatJson = async () => {
     if (!input.trim()) return
     setIsProcessing(true)
-    await new Promise(resolve => setTimeout(resolve, 200))
-    
+    await new Promise((resolve) => setTimeout(resolve, 200))
+
     try {
       setError('')
       const parsed = JSON.parse(input)
@@ -34,8 +34,8 @@ export default function JsonFormatterPage() {
   const minifyJson = async () => {
     if (!input.trim()) return
     setIsProcessing(true)
-    await new Promise(resolve => setTimeout(resolve, 200))
-    
+    await new Promise((resolve) => setTimeout(resolve, 200))
+
     try {
       setError('')
       const parsed = JSON.parse(input)
@@ -52,8 +52,8 @@ export default function JsonFormatterPage() {
   const validateJson = async () => {
     if (!input.trim()) return
     setIsProcessing(true)
-    await new Promise(resolve => setTimeout(resolve, 200))
-    
+    await new Promise((resolve) => setTimeout(resolve, 200))
+
     try {
       JSON.parse(input)
       setError('')
@@ -134,14 +134,17 @@ export default function JsonFormatterPage() {
                   </button>
                 </div>
                 <div className="flex items-center gap-2 xs:gap-3 w-full xs:w-auto justify-between xs:justify-start">
-                  <label htmlFor="indent" className="text-xs xs:text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary font-medium">
+                  <label
+                    htmlFor="indent"
+                    className="text-xs xs:text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary font-medium"
+                  >
                     Indent:
                   </label>
                   <select
                     id="indent"
                     value={indentSize}
                     onChange={(e) => setIndentSize(Number(e.target.value))}
-                    className="bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark px-2 xs:px-3 py-2 text-sm rounded-lg border border-border-light dark:border-border-dark transition-all focus:ring-2 focus:ring-accent focus:border-accent">
+                    className="bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark px-2 xs:px-3 py-2 text-sm rounded-lg border border-border-light dark:border-border-dark transition-all focus:ring-2 focus:ring-accent focus:border-accent"
                   >
                     <option value={2}>2 spaces</option>
                     <option value={4}>4 spaces</option>
@@ -158,7 +161,9 @@ export default function JsonFormatterPage() {
               {/* Input Panel */}
               <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
                 <div className="p-3 xs:p-4 sm:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
-                  <h3 className="text-base xs:text-lg font-semibold text-foreground-light dark:text-foreground-dark">Input JSON</h3>
+                  <h3 className="text-base xs:text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+                    Input JSON
+                  </h3>
                   <p className="text-xs xs:text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
                     Paste your JSON data here
                   </p>
@@ -177,7 +182,9 @@ export default function JsonFormatterPage() {
               <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
                 <div className="p-3 xs:p-4 sm:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark flex justify-between items-center">
                   <div>
-                    <h3 className="text-base xs:text-lg font-semibold text-foreground-light dark:text-foreground-dark">Output</h3>
+                    <h3 className="text-base xs:text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+                      Output
+                    </h3>
                     <p className="text-xs xs:text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
                       Formatted result appears here
                     </p>
@@ -199,7 +206,9 @@ export default function JsonFormatterPage() {
                         <AlertCircle className="w-3 h-3 xs:w-4 xs:h-4" />
                         Error:
                       </div>
-                      <p className="text-red-700 dark:text-red-300 font-mono text-xs xs:text-sm">{error}</p>
+                      <p className="text-red-700 dark:text-red-300 font-mono text-xs xs:text-sm">
+                        {error}
+                      </p>
                     </div>
                   ) : (
                     <textarea
@@ -216,37 +225,44 @@ export default function JsonFormatterPage() {
 
           {/* Features */}
           <section className="mb-16 sm:mb-20">
-            <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">Why Choose Our JSON Formatter?</h2>
+            <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+              Why Choose Our JSON Formatter?
+            </h2>
             <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {[
                 {
                   icon: CheckCircle,
                   title: 'JSON Validation',
-                  description: 'Instantly validate your JSON syntax and identify errors with detailed error messages.'
+                  description:
+                    'Instantly validate your JSON syntax and identify errors with detailed error messages.',
                 },
                 {
                   icon: FileText,
                   title: 'Beautiful Formatting',
-                  description: 'Format JSON with customizable indentation for better readability and debugging.'
+                  description:
+                    'Format JSON with customizable indentation for better readability and debugging.',
                 },
                 {
                   icon: Zap,
                   title: 'Minify & Optimize',
-                  description: 'Compress JSON by removing whitespace to reduce file size for production use.'
-                }
+                  description:
+                    'Compress JSON by removing whitespace to reduce file size for production use.',
+                },
               ].map((feature, index) => (
                 <div
                   key={feature.title}
                   className="rounded-lg border border-border-light bg-card-light p-6 text-center dark:border-border-dark dark:bg-card-dark transition-all hover:-translate-y-1 hover:shadow-lg"
                   style={{
                     animationDelay: `${index * 100}ms`,
-                    animation: 'fadeInUp 0.6s ease-out forwards'
+                    animation: 'fadeInUp 0.6s ease-out forwards',
                   }}
                 >
                   <div className="mb-4 flex justify-center">
                     <feature.icon className="h-10 w-10 text-accent transition-transform hover:scale-110" />
                   </div>
-                  <h3 className="mb-2 text-lg font-semibold text-foreground-light dark:text-foreground-dark">{feature.title}</h3>
+                  <h3 className="mb-2 text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+                    {feature.title}
+                  </h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed">
                     {feature.description}
                   </p>

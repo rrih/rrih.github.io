@@ -10,7 +10,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        'xs': '320px',
+        xs: '320px',
       },
       colors: {
         accent: {

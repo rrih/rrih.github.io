@@ -12,10 +12,11 @@ export default function PrivacyPage() {
           <section className="mb-16">
             <h1 className="mb-4 text-4xl font-bold tracking-tight">Privacy Policy</h1>
             <p className="text-lg text-foreground-light-secondary dark:text-foreground-dark-secondary">
-              Last updated: {new Date().toLocaleDateString('en-US', { 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
+              Last updated:{' '}
+              {new Date().toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
               })}
             </p>
           </section>
@@ -24,31 +25,31 @@ export default function PrivacyPage() {
             <section className="mb-12">
               <h2 className="mb-6 text-2xl font-semibold">Overview</h2>
               <p className="mb-4">
-                This Privacy Policy describes how {siteConfig.name} ("we," "our," or "us") collects, uses, 
-                and shares information about you when you use our web-based tools and services 
+                This Privacy Policy describes how {siteConfig.name} ("we," "our," or "us") collects,
+                uses, and shares information about you when you use our web-based tools and services
                 (the "Service").
               </p>
               <p>
-                We are committed to protecting your privacy while providing high-quality web tools. 
-                This policy explains our current practices and may be updated to reflect changes 
-                in our services or applicable law.
+                We are committed to protecting your privacy while providing high-quality web tools.
+                This policy explains our current practices and may be updated to reflect changes in
+                our services or applicable law.
               </p>
             </section>
 
             <section className="mb-12">
               <h2 className="mb-6 text-2xl font-semibold">Information Collection</h2>
-              
+
               <h3 className="mb-4 text-xl font-semibold">Tool Usage Data</h3>
               <p className="mb-4">
-                Currently, our tools process data locally in your browser. The content you input 
-                into our tools (JSON data, text for encoding, etc.) is processed client-side and 
-                is not transmitted to our servers unless you explicitly choose to do so.
+                Currently, our tools process data locally in your browser. The content you input
+                into our tools (JSON data, text for encoding, etc.) is processed client-side and is
+                not transmitted to our servers unless you explicitly choose to do so.
               </p>
 
               <h3 className="mb-4 text-xl font-semibold">Analytics and Usage Information</h3>
               <p className="mb-4">
-                We may implement analytics services in the future to understand how our tools 
-                are used and to improve user experience. This could include:
+                We may implement analytics services in the future to understand how our tools are
+                used and to improve user experience. This could include:
               </p>
               <ul className="mb-4 pl-6 space-y-2">
                 <li>Pages visited and time spent on our site</li>
@@ -59,9 +60,9 @@ export default function PrivacyPage() {
 
               <h3 className="mb-4 text-xl font-semibold">Advertising</h3>
               <p className="mb-4">
-                We may integrate advertising services in the future to support the continued 
-                development and maintenance of our free tools. Any advertising implementation 
-                will follow industry standards for privacy protection.
+                We may integrate advertising services in the future to support the continued
+                development and maintenance of our free tools. Any advertising implementation will
+                follow industry standards for privacy protection.
               </p>
             </section>
 
@@ -93,9 +94,10 @@ export default function PrivacyPage() {
             <section className="mb-12">
               <h2 className="mb-6 text-2xl font-semibold">Data Security</h2>
               <p className="mb-4">
-                We implement appropriate technical and organizational measures to protect information 
-                against unauthorized access, alteration, disclosure, or destruction. However, no 
-                method of transmission over the internet or electronic storage is 100% secure.
+                We implement appropriate technical and organizational measures to protect
+                information against unauthorized access, alteration, disclosure, or destruction.
+                However, no method of transmission over the internet or electronic storage is 100%
+                secure.
               </p>
             </section>
 
@@ -113,18 +115,18 @@ export default function PrivacyPage() {
             <section className="mb-12">
               <h2 className="mb-6 text-2xl font-semibold">Third-Party Services</h2>
               <p className="mb-4">
-                Our website is hosted on GitHub Pages. Please review GitHub's privacy policy 
-                for information about their data practices. We may also use other third-party 
-                services for analytics, advertising, or functionality in the future.
+                Our website is hosted on GitHub Pages. Please review GitHub's privacy policy for
+                information about their data practices. We may also use other third-party services
+                for analytics, advertising, or functionality in the future.
               </p>
             </section>
 
             <section className="mb-12">
               <h2 className="mb-6 text-2xl font-semibold">Changes to This Policy</h2>
               <p className="mb-4">
-                We may update this Privacy Policy from time to time. We will post the updated 
-                policy on this page and update the "Last updated" date. Significant changes 
-                will be highlighted on our website.
+                We may update this Privacy Policy from time to time. We will post the updated policy
+                on this page and update the "Last updated" date. Significant changes will be
+                highlighted on our website.
               </p>
             </section>
 

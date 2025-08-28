@@ -22,14 +22,14 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-base leading-relaxed">
               <p>
-                This project aims to provide high-quality web tools that developers and designers 
-                can rely on. We strive to create a cleaner, faster alternative to existing online tools 
-                with better user experience and modern design.
+                This project aims to provide high-quality web tools that developers and designers
+                can rely on. We strive to create a cleaner, faster alternative to existing online
+                tools with better user experience and modern design.
               </p>
               <p>
-                All tools are built with modern web technologies for maximum performance and currently 
-                run entirely in your browser. We focus on user experience and data efficiency while 
-                maintaining flexibility for future enhancements.
+                All tools are built with modern web technologies for maximum performance and
+                currently run entirely in your browser. We focus on user experience and data
+                efficiency while maintaining flexibility for future enhancements.
               </p>
             </div>
           </section>

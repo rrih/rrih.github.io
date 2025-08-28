@@ -1,4 +1,4 @@
-import { Zap, Shield, Ban, Gift } from 'lucide-react'
+import { Ban, Gift, Shield, Zap } from 'lucide-react'
 
 export const siteConfig = {
   name: 'ToolForge',
