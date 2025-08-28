@@ -1,5 +1,6 @@
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
+import { siteConfig } from '@/config/site'
 import Link from 'next/link'
 
 export default function TermsPage() {
@@ -23,7 +24,7 @@ export default function TermsPage() {
             <section className="mb-12">
               <h2 className="mb-6 text-2xl font-semibold">Agreement to Terms</h2>
               <p className="mb-4">
-                By accessing and using WebTools (the "Service"), you agree to be bound by these 
+                By accessing and using {siteConfig.name} (the "Service"), you agree to be bound by these 
                 Terms of Service ("Terms"). If you do not agree to these Terms, please do not 
                 use the Service.
               </p>
@@ -36,7 +37,7 @@ export default function TermsPage() {
             <section className="mb-12">
               <h2 className="mb-6 text-2xl font-semibold">Description of Service</h2>
               <p className="mb-4">
-                WebTools provides free web-based utilities including but not limited to JSON 
+                {siteConfig.name} provides free web-based utilities including but not limited to JSON 
                 formatting, Base64 encoding/decoding, color picking, and other developer and 
                 designer tools.
               </p>

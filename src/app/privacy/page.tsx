@@ -1,5 +1,6 @@
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
+import { siteConfig } from '@/config/site'
 import Link from 'next/link'
 
 export default function PrivacyPage() {
@@ -23,7 +24,7 @@ export default function PrivacyPage() {
             <section className="mb-12">
               <h2 className="mb-6 text-2xl font-semibold">Overview</h2>
               <p className="mb-4">
-                This Privacy Policy describes how WebTools ("we," "our," or "us") collects, uses, 
+                This Privacy Policy describes how {siteConfig.name} ("we," "our," or "us") collects, uses, 
                 and shares information about you when you use our web-based tools and services 
                 (the "Service").
               </p>

@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '320px',
+      },
       colors: {
         accent: {
           DEFAULT: '#0066cc',
