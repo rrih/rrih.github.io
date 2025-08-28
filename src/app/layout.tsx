@@ -1,25 +1,36 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import { siteConfig } from '@/config/site'
+import type { Metadata } from "next";
+import "./globals.css";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
   keywords: [
-    'rrih',
-    'Web開発',
-    'TypeScript',
-    'Next.js',
-    'Cloudflare',
-    'フロントエンド',
-    'エンジニア',
+    "rrih",
+    "Web",
+    "TypeScript",
+    "Next.js",
+    "Cloudflare",
+    "JavaScript",
+    "Engineer",
+    "Developer",
+    "ToolForge",
+    "Development Tools",
+    "Web Tools",
+    "Developer Utilities",
+    "JSON Formatter",
+    "Base64 Encoder",
+    "Color Picker",
+    "Code Tools",
+    "Web Utilities",
+    "Forge Tools",
   ],
   authors: [{ name: siteConfig.author.name }],
   creator: siteConfig.author.name,
   metadataBase: new URL(siteConfig.url),
   openGraph: {
-    type: 'website',
-    locale: 'ja_JP',
+    type: "website",
+    locale: "ja_JP",
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
@@ -34,7 +45,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: 'summary',
+    card: "summary",
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
@@ -47,35 +58,36 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="ja" className="light">
       <head>
+        <meta name="google-adsense-account" content="ca-pub-6426570202991325" />
         <script
           type="application/ld+json"
           // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'Person',
+              "@context": "https://schema.org",
+              "@type": "Person",
               name: siteConfig.author.name,
               url: siteConfig.url,
               sameAs: [siteConfig.author.github],
-              jobTitle: 'Web Developer',
+              jobTitle: "Web Developer",
               alumniOf: {
-                '@type': 'CollegeOrUniversity',
-                name: '東京電機大学',
+                "@type": "CollegeOrUniversity",
+                name: "東京電機大学",
               },
               address: {
-                '@type': 'PostalAddress',
-                addressRegion: '東京都',
-                addressCountry: 'JP',
+                "@type": "PostalAddress",
+                addressRegion: "東京都",
+                addressCountry: "JP",
               },
             }),
           }}
@@ -85,5 +97,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }

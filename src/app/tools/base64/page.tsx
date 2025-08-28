@@ -2,16 +2,53 @@
 
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
-import { AlertCircle, ArrowLeftRight, Copy, Shield, Zap } from 'lucide-react'
+import { AlertCircle, ArrowLeftRight, Copy, Redo2, Shield, Undo2, Zap } from 'lucide-react'
 import { useState } from 'react'
+import { useHistory } from '@/hooks/useHistory'
+
+interface Base64State {
+  input: string
+  output: string
+  mode: 'encode' | 'decode'
+  error: string
+}
 
 export default function Base64Page() {
-  const [input, setInput] = useState('')
-  const [output, setOutput] = useState('')
-  const [mode, setMode] = useState<'encode' | 'decode'>('encode')
-  const [error, setError] = useState('')
+  const {
+    state,
+    setState: setHistoryState,
+    undo,
+    redo,
+    canUndo,
+    canRedo,
+    clear: clearHistory,
+  } = useHistory<Base64State>({
+    input: '',
+    output: '',
+    mode: 'encode',
+    error: '',
+  })
+
   const [isProcessing, setIsProcessing] = useState(false)
   const [copied, setCopied] = useState(false)
+
+  const { input, output, mode, error } = state
+
+  const setInput = (newInput: string) => {
+    setHistoryState((prev) => ({ ...prev, input: newInput }))
+  }
+
+  const setOutput = (newOutput: string) => {
+    setHistoryState((prev) => ({ ...prev, output: newOutput }))
+  }
+
+  const setMode = (newMode: 'encode' | 'decode') => {
+    setHistoryState((prev) => ({ ...prev, mode: newMode }))
+  }
+
+  const setError = (newError: string) => {
+    setHistoryState((prev) => ({ ...prev, error: newError }))
+  }
 
   const handleEncode = async () => {
     if (!input.trim()) return
@@ -56,16 +93,17 @@ export default function Base64Page() {
   }
 
   const switchMode = (newMode: 'encode' | 'decode') => {
-    setMode(newMode)
-    setInput('')
-    setOutput('')
-    setError('')
+    setHistoryState((prev) => ({
+      ...prev,
+      mode: newMode,
+      input: '',
+      output: '',
+      error: '',
+    }))
   }
 
   const clearAll = () => {
-    setInput('')
-    setOutput('')
-    setError('')
+    clearHistory()
   }
 
   const copyToClipboard = async (text: string) => {
@@ -100,7 +138,7 @@ export default function Base64Page() {
                 Base64 Encoder & Decoder
               </h1>
               <p className="mb-6 xs:mb-8 text-base xs:text-lg sm:text-xl text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
-                Encode and decode Base64 strings with secure client-side processing.
+                Fast and secure Base64 encoding and decoding.
               </p>
             </div>
           </section>
@@ -158,6 +196,22 @@ export default function Base64Page() {
                       Swap
                     </button>
                   )}
+                  <button
+                    onClick={undo}
+                    disabled={!canUndo}
+                    className="flex items-center gap-1 xs:gap-2 rounded-lg border border-border-light px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] font-medium text-sm xs:text-base transition-all hover:border-accent hover:text-accent dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    <Undo2 className="w-3 h-3 xs:w-4 xs:h-4" />
+                    <span className="hidden xs:inline">Undo</span>
+                  </button>
+                  <button
+                    onClick={redo}
+                    disabled={!canRedo}
+                    className="flex items-center gap-1 xs:gap-2 rounded-lg border border-border-light px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] font-medium text-sm xs:text-base transition-all hover:border-accent hover:text-accent dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    <Redo2 className="w-3 h-3 xs:w-4 xs:h-4" />
+                    <span className="hidden xs:inline">Redo</span>
+                  </button>
                   <button
                     onClick={clearAll}
                     className="rounded-lg border border-border-light px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] font-medium text-sm xs:text-base transition-all hover:border-red-500 hover:text-red-500 dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none"

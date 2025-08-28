@@ -2,8 +2,9 @@
 
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
-import { AlertCircle, Copy, Heart, Palette } from 'lucide-react'
+import { AlertCircle, Copy, Heart, Palette, Redo2, Undo2 } from 'lucide-react'
 import { useEffect, useState } from 'react'
+import { useHistory } from '@/hooks/useHistory'
 
 interface ColorFormat {
   hex: string
@@ -12,15 +13,41 @@ interface ColorFormat {
   cmyk: { c: number; m: number; y: number; k: number }
 }
 
+interface ColorPickerState {
+  currentColor: string
+  colorFormat: ColorFormat
+}
+
 export default function ColorPickerPage() {
-  const [currentColor, setCurrentColor] = useState('#0066cc')
-  const [colorFormat, setColorFormat] = useState<ColorFormat>({
-    hex: '#0066cc',
-    rgb: { r: 0, g: 102, b: 204 },
-    hsl: { h: 210, s: 100, l: 40 },
-    cmyk: { c: 100, m: 50, y: 0, k: 20 },
+  const {
+    state,
+    setState: setHistoryState,
+    undo,
+    redo,
+    canUndo,
+    canRedo,
+    clear: clearHistory,
+  } = useHistory<ColorPickerState>({
+    currentColor: '#0066cc',
+    colorFormat: {
+      hex: '#0066cc',
+      rgb: { r: 0, g: 102, b: 204 },
+      hsl: { h: 210, s: 100, l: 40 },
+      cmyk: { c: 100, m: 50, y: 0, k: 20 },
+    },
   })
+
   const [copied, setCopied] = useState('')
+
+  const { currentColor, colorFormat } = state
+
+  const setCurrentColor = (newColor: string) => {
+    setHistoryState((prev) => ({ ...prev, currentColor: newColor }))
+  }
+
+  const setColorFormat = (newFormat: ColorFormat) => {
+    setHistoryState((prev) => ({ ...prev, colorFormat: newFormat }))
+  }
 
   useEffect(() => {
     updateColorFormat(currentColor)
@@ -173,7 +200,7 @@ export default function ColorPickerPage() {
                 Color Picker & Converter
               </h1>
               <p className="mb-6 xs:mb-8 text-base xs:text-lg sm:text-xl text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
-                Visual color picker with instant format conversion and harmony tools.
+                Pick colors and convert between HEX, RGB, HSL formats.
               </p>
             </div>
           </section>
@@ -236,6 +263,32 @@ export default function ColorPickerPage() {
                       placeholder="#0066CC"
                       className="w-full px-4 py-3 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg transition-all focus:ring-2 focus:ring-accent focus:border-accent text-foreground-light dark:text-foreground-dark font-mono"
                     />
+                  </div>
+
+                  {/* History Controls */}
+                  <div className="mt-6 flex gap-2">
+                    <button
+                      onClick={undo}
+                      disabled={!canUndo}
+                      className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg transition-all hover:border-accent hover:text-accent disabled:opacity-50 disabled:cursor-not-allowed flex-1"
+                    >
+                      <Undo2 className="w-4 h-4" />
+                      <span className="text-sm font-medium">Undo</span>
+                    </button>
+                    <button
+                      onClick={redo}
+                      disabled={!canRedo}
+                      className="flex items-center gap-2 px-4 py-2 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg transition-all hover:border-accent hover:text-accent disabled:opacity-50 disabled:cursor-not-allowed flex-1"
+                    >
+                      <Redo2 className="w-4 h-4" />
+                      <span className="text-sm font-medium">Redo</span>
+                    </button>
+                    <button
+                      onClick={() => clearHistory()}
+                      className="px-4 py-2 bg-white dark:bg-background-dark border border-border-light dark:border-border-dark rounded-lg transition-all hover:border-red-500 hover:text-red-500 text-sm font-medium"
+                    >
+                      Clear
+                    </button>
                   </div>
                 </div>
               </div>
@@ -335,7 +388,9 @@ export default function ColorPickerPage() {
                       <div
                         className="w-8 h-8 rounded border border-border-light dark:border-border-dark"
                         style={{
-                          backgroundColor: `hsl(${(colorFormat.hsl.h + 180) % 360}, ${colorFormat.hsl.s}%, ${colorFormat.hsl.l}%)`,
+                          backgroundColor: `hsl(${
+                            (colorFormat.hsl.h + 180) % 360
+                          }, ${colorFormat.hsl.s}%, ${colorFormat.hsl.l}%)`,
                         }}
                       />
                       <span className="font-mono text-sm text-foreground-light dark:text-foreground-dark">

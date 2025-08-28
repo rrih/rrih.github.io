@@ -2,16 +2,53 @@
 
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
-import { AlertCircle, CheckCircle, Copy, FileText, Zap } from 'lucide-react'
+import { AlertCircle, CheckCircle, Copy, FileText, Redo2, Undo2, Zap } from 'lucide-react'
 import { useState } from 'react'
+import { useHistory } from '@/hooks/useHistory'
+
+interface JsonFormatterState {
+  input: string
+  output: string
+  error: string
+  indentSize: number
+}
 
 export default function JsonFormatterPage() {
-  const [input, setInput] = useState('')
-  const [output, setOutput] = useState('')
-  const [error, setError] = useState('')
-  const [indentSize, setIndentSize] = useState(2)
+  const {
+    state,
+    setState: setHistoryState,
+    undo,
+    redo,
+    canUndo,
+    canRedo,
+    clear: clearHistory,
+  } = useHistory<JsonFormatterState>({
+    input: '',
+    output: '',
+    error: '',
+    indentSize: 2,
+  })
+
   const [isProcessing, setIsProcessing] = useState(false)
   const [copied, setCopied] = useState(false)
+
+  const { input, output, error, indentSize } = state
+
+  const setInput = (newInput: string) => {
+    setHistoryState((prev) => ({ ...prev, input: newInput }))
+  }
+
+  const setOutput = (newOutput: string) => {
+    setHistoryState((prev) => ({ ...prev, output: newOutput }))
+  }
+
+  const setError = (newError: string) => {
+    setHistoryState((prev) => ({ ...prev, error: newError }))
+  }
+
+  const setIndentSize = (newSize: number) => {
+    setHistoryState((prev) => ({ ...prev, indentSize: newSize }))
+  }
 
   const formatJson = async () => {
     if (!input.trim()) return
@@ -67,9 +104,7 @@ export default function JsonFormatterPage() {
   }
 
   const clearAll = () => {
-    setInput('')
-    setOutput('')
-    setError('')
+    clearHistory()
   }
 
   const copyToClipboard = async (text: string) => {
@@ -125,6 +160,22 @@ export default function JsonFormatterPage() {
                     className="rounded-lg bg-accent px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] text-white font-medium text-sm xs:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
                   >
                     {isProcessing ? 'Processing...' : 'Validate'}
+                  </button>
+                  <button
+                    onClick={undo}
+                    disabled={!canUndo}
+                    className="flex items-center gap-1 xs:gap-2 rounded-lg border border-border-light px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] font-medium text-sm xs:text-base transition-all hover:border-accent hover:text-accent dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    <Undo2 className="w-3 h-3 xs:w-4 xs:h-4" />
+                    <span className="hidden xs:inline">Undo</span>
+                  </button>
+                  <button
+                    onClick={redo}
+                    disabled={!canRedo}
+                    className="flex items-center gap-1 xs:gap-2 rounded-lg border border-border-light px-3 xs:px-4 sm:px-6 py-3 xs:py-4 min-h-[44px] font-medium text-sm xs:text-base transition-all hover:border-accent hover:text-accent dark:border-border-dark hover:shadow-lg active:scale-95 flex-1 xs:flex-none disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    <Redo2 className="w-3 h-3 xs:w-4 xs:h-4" />
+                    <span className="hidden xs:inline">Redo</span>
                   </button>
                   <button
                     onClick={clearAll}

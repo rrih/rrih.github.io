@@ -26,7 +26,7 @@ export function ThemeToggle() {
     <button
       onClick={toggleTheme}
       className="flex items-center justify-center rounded-md p-2 text-foreground-light-secondary transition-colors hover:text-accent dark:text-foreground-dark-secondary dark:hover:text-accent-light"
-      aria-label="テーマ切り替え"
+      aria-label="change theme"
     >
       {theme === 'light' ? (
         <svg
