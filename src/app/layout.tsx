@@ -1,0 +1,89 @@
+import type { Metadata } from 'next'
+import './globals.css'
+import { siteConfig } from '@/config/site'
+
+export const metadata: Metadata = {
+  title: siteConfig.name,
+  description: siteConfig.description,
+  keywords: [
+    'rrih',
+    'Web開発',
+    'TypeScript',
+    'Next.js',
+    'Cloudflare',
+    'フロントエンド',
+    'エンジニア',
+  ],
+  authors: [{ name: siteConfig.author.name }],
+  creator: siteConfig.author.name,
+  metadataBase: new URL(siteConfig.url),
+  openGraph: {
+    type: 'website',
+    locale: 'ja_JP',
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    images: [
+      {
+        url: siteConfig.ogImage,
+        width: 460,
+        height: 460,
+        alt: siteConfig.name,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary',
+    title: siteConfig.name,
+    description: siteConfig.description,
+    images: [siteConfig.ogImage],
+  },
+  icons: {
+    icon: siteConfig.ogImage,
+    apple: siteConfig.ogImage,
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="ja" className="light">
+      <head>
+        <script
+          type="application/ld+json"
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: siteConfig.author.name,
+              url: siteConfig.url,
+              sameAs: [siteConfig.author.github],
+              jobTitle: 'Web Developer',
+              alumniOf: {
+                '@type': 'CollegeOrUniversity',
+                name: '東京電機大学',
+              },
+              address: {
+                '@type': 'PostalAddress',
+                addressRegion: '東京都',
+                addressCountry: 'JP',
+              },
+            }),
+          }}
+        />
+      </head>
+      <body className="min-h-screen bg-white text-foreground-light antialiased transition-colors duration-200 dark:bg-background-dark dark:text-foreground-dark">
+        {children}
+      </body>
+    </html>
+  )
+}
