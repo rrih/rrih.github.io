@@ -122,7 +122,7 @@ async function generateOGImage(tool, outputPath) {
   ctx.fillStyle = categoryColor
   ctx.font = 'bold 180px system-ui, -apple-system, sans-serif'
   ctx.textAlign = 'center'
-  
+
   // Icon background circle for better visibility
   const iconX = width - 200
   const iconY = height / 2
@@ -139,20 +139,20 @@ async function generateOGImage(tool, outputPath) {
   ctx.fillStyle = '#1e293b'
   ctx.font = 'bold 96px system-ui, -apple-system, sans-serif'
   ctx.textAlign = 'left'
-  
+
   // Handle long titles with line breaks
   const titleWords = tool.title.split(' ')
   let titleY = 220
   let titleLine = ''
   const titleMaxWidth = 650
-  
+
   for (const word of titleWords) {
-    const testLine = titleLine + word + ' '
+    const testLine = `${titleLine + word} `
     const metrics = ctx.measureText(testLine)
-    
+
     if (metrics.width > titleMaxWidth && titleLine !== '') {
       ctx.fillText(titleLine.trim(), 50, titleY)
-      titleLine = word + ' '
+      titleLine = `${word} `
       titleY += 100
     } else {
       titleLine = testLine

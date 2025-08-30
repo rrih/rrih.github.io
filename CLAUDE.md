@@ -18,6 +18,58 @@ This command MUST be executed after every code change and will:
 
 **NEVER skip this step** - it ensures zero errors in production and maintains code quality standards.
 
+## 🔒 ZERO-TOLERANCE CI FAILURE ENFORCEMENT 🔒
+
+**ABSOLUTE MANDATE**: CI failures are STRICTLY FORBIDDEN. The following enforcement systems are permanently in place:
+
+### 🚫 PRE-COMMIT HOOK ENFORCEMENT
+- **Husky Git hooks** automatically run ALL quality checks before EVERY commit
+- **CANNOT be bypassed or skipped** - commits will be blocked if any check fails
+- Pre-commit checks include:
+  1. ✅ TypeScript compilation check
+  2. ✅ Biome linting & formatting
+  3. ✅ Full test suite execution
+  4. ✅ Complete build verification
+
+### 🛡️ MANDATORY COMMIT WORKFLOW
+**EVERY commit must pass ALL checks:**
+
+```bash
+# Automatic pre-commit execution (cannot be skipped)
+git commit -m "message"  # Will run full quality check automatically
+```
+
+### ⚠️ CI FAILURE CONSEQUENCES
+**IF CI ever fails:**
+1. **IMMEDIATELY** stop all development work
+2. **FIRST** fix the CI failure
+3. **THEN** continue with new features
+4. **NEVER** commit CI-breaking code
+
+### 🔧 PERMANENT ENFORCEMENT TOOLS
+- **Husky**: Git pre-commit hooks (`.husky/pre-commit`)
+- **Biome**: Automatic linting & formatting
+- **TypeScript**: Strict type checking
+- **Jest/Bun Test**: Comprehensive test coverage
+- **Build Verification**: Complete build success check
+
+### 📋 CLAUDE AI OBLIGATIONS
+**AI MUST ALWAYS:**
+1. ✅ Run `bun run dev-check` before any commit
+2. ✅ Verify ALL tests pass
+3. ✅ Confirm build succeeds
+4. ✅ Fix ANY pre-commit hook failures
+5. ✅ NEVER force-push or bypass checks
+
+**AI MUST NEVER:**
+1. ❌ Commit code with linting errors
+2. ❌ Skip quality checks
+3. ❌ Bypass pre-commit hooks
+4. ❌ Ignore TypeScript errors
+5. ❌ Push failing builds
+
+This system GUARANTEES zero CI failures and maintains pristine code quality permanently.
+
 ## 🚀 AI-DRIVEN PROACTIVE IMPROVEMENT SYSTEM
 
 **CRITICAL AI BEHAVIOR**: Claude Code AI MUST be proactive in suggesting improvements:

@@ -1,0 +1,34 @@
+#!/usr/bin/env sh
+# Mandatory pre-commit checks - NEVER SKIP
+echo "🔒 Running mandatory pre-commit checks..."
+echo "⚠️  This ensures ZERO CI failures. Cannot be bypassed."
+
+# Run TypeScript check
+echo "📝 Checking TypeScript..."
+if ! bun --bun tsc --noEmit; then
+  echo "❌ TypeScript check failed! Fix errors before committing."
+  exit 1
+fi
+
+# Run Biome linting
+echo "🧹 Running Biome check..."
+if ! bun run lint; then
+  echo "❌ Biome linting failed! Fix linting errors before committing."
+  exit 1
+fi
+
+# Run tests
+echo "🧪 Running tests..."
+if ! bun test; then
+  echo "❌ Tests failed! Fix failing tests before committing."
+  exit 1
+fi
+
+# Run build check
+echo "🏗️ Testing build..."
+if ! bun run build; then
+  echo "❌ Build failed! Fix build errors before committing."
+  exit 1
+fi
+
+echo "✅ All pre-commit checks passed! Proceeding with commit..."
