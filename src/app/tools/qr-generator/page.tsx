@@ -4,7 +4,7 @@ import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
 import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
 import { localStorageManager } from '@/lib/localStorage'
-import { urlSharingManager } from '@/lib/urlSharing'
+import { useUrlSharing } from '@/lib/urlSharing'
 import {
   ArrowDownToLine,
   Copy,
@@ -60,11 +60,15 @@ export default function QRGenerator() {
   const successToast = useSuccessToast()
   const errorToast = useErrorToast()
 
+  const { generateShareUrl, shareInfo, getInitialStateFromUrl } =
+    useUrlSharing<QRGeneratorState>(TOOL_NAME)
+
   const { input, qrType, size, errorLevel, foregroundColor, backgroundColor, wifiSettings } = state
 
   // クライアントサイドでのみ初期状態を復元
+  // biome-ignore lint/correctness/useExhaustiveDependencies: 初期化処理のため一度だけ実行
   useEffect(() => {
-    const sharedState = urlSharingManager.getSharedStateFromUrl<QRGeneratorState>(TOOL_NAME)
+    const sharedState = getInitialStateFromUrl()
     if (sharedState) {
       setState(sharedState)
       return
@@ -83,48 +87,44 @@ export default function QRGenerator() {
     }
   }, [state, input, wifiSettings.ssid])
 
-  // Real QR Code generation using qrcode library
-  const generateQRCode = useCallback(
-    async (data: string) => {
-      try {
-        const qrCodeDataUrl = await QRCode.toDataURL(data, {
-          width: size,
-          margin: 2,
-          color: {
-            dark: foregroundColor,
-            light: backgroundColor,
-          },
-          errorCorrectionLevel: errorLevel,
-        })
-        setQrDataUrl(qrCodeDataUrl)
-      } catch (error) {
-        console.error('Error generating QR code:', error)
-        setQrDataUrl('')
-      }
-    },
-    [size, errorLevel, foregroundColor, backgroundColor]
-  )
-
-  const getQRData = useCallback((): string => {
+  useEffect(() => {
+    let qrData: string
     switch (qrType) {
       case 'wifi':
-        return `WIFI:T:${wifiSettings.security};S:${wifiSettings.ssid};P:${wifiSettings.password};H:${wifiSettings.hidden};`
+        qrData = `WIFI:T:${wifiSettings.security};S:${wifiSettings.ssid};P:${wifiSettings.password};H:${wifiSettings.hidden};`
+        break
       case 'email':
-        return `mailto:${input}`
+        qrData = `mailto:${input}`
+        break
       case 'url':
-        return input.startsWith('http') ? input : `https://${input}`
+        qrData = input.startsWith('http') ? input : `https://${input}`
+        break
       default:
-        return input
+        qrData = input
+        break
     }
-  }, [qrType, wifiSettings, input])
 
-  useEffect(() => {
-    if (input.trim() || (qrType === 'wifi' && wifiSettings.ssid.trim())) {
-      generateQRCode(getQRData())
+    if (qrData.trim()) {
+      QRCode.toDataURL(qrData, {
+        width: size,
+        margin: 2,
+        color: {
+          dark: foregroundColor,
+          light: backgroundColor,
+        },
+        errorCorrectionLevel: errorLevel,
+      })
+        .then((qrCodeDataUrl) => {
+          setQrDataUrl(qrCodeDataUrl)
+        })
+        .catch((error) => {
+          console.error('Error generating QR code:', error)
+          setQrDataUrl('')
+        })
     } else {
       setQrDataUrl('')
     }
-  }, [input, qrType, wifiSettings, generateQRCode, getQRData])
+  }, [input, qrType, wifiSettings, size, errorLevel, foregroundColor, backgroundColor])
 
   const downloadQR = () => {
     if (!qrDataUrl) return
@@ -186,11 +186,19 @@ export default function QRGenerator() {
   const handleShare = async () => {
     setIsSharing(true)
     try {
-      const shareUrl = urlSharingManager.generateShareUrl(TOOL_NAME, state)
-      const success = await urlSharingManager.copyShareUrl(shareUrl)
+      const shareUrl = await generateShareUrl(state)
+      await navigator.clipboard.writeText(shareUrl)
+      const success = true
 
       if (success) {
-        successToast('Share URL copied!', 'The shareable URL has been copied to your clipboard')
+        const message = 'Share URL copied!'
+        let description = 'The shareable URL has been copied to your clipboard'
+
+        if (shareInfo.isLimited) {
+          description = shareInfo.message
+        }
+
+        successToast(message, description)
       } else {
         errorToast('Failed to copy URL', 'Please try again or copy the URL manually')
       }
@@ -206,7 +214,6 @@ export default function QRGenerator() {
   const handleClearData = () => {
     if (confirm('Clear all saved data and current input?')) {
       localStorageManager.clear(TOOL_NAME)
-      urlSharingManager.cleanUrl()
       setState(defaultState)
       setQrDataUrl('')
     }

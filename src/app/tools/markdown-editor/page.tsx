@@ -5,7 +5,7 @@ import { Header } from '@/components/layout/header'
 import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
 import { useHistory } from '@/hooks/useHistory'
 import { localStorageManager } from '@/lib/localStorage'
-import { urlSharingManager } from '@/lib/urlSharing'
+import { useUrlSharing } from '@/lib/urlSharing'
 import {
   Bold,
   Code,
@@ -24,7 +24,7 @@ import {
   Trash2,
   Undo2,
 } from 'lucide-react'
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 interface MarkdownState {
   input: string
@@ -56,6 +56,11 @@ export default function MarkdownEditorPage() {
   const successToast = useSuccessToast()
   const errorToast = useErrorToast()
 
+  const { generateShareUrl, shareInfo, getInitialStateFromUrl } =
+    useUrlSharing<MarkdownState>(TOOL_NAME)
+
+  const hasInitialized = useRef(false)
+
   const { input, preview } = state
 
   const setInput = (newInput: string) => {
@@ -71,7 +76,10 @@ export default function MarkdownEditorPage() {
 
   // Client-side only state restoration
   useEffect(() => {
-    const sharedState = urlSharingManager.getSharedStateFromUrl<MarkdownState>(TOOL_NAME)
+    if (hasInitialized.current) return
+    hasInitialized.current = true
+
+    const sharedState = getInitialStateFromUrl()
     if (sharedState) {
       setHistoryState(sharedState)
       return
@@ -81,7 +89,7 @@ export default function MarkdownEditorPage() {
     if (savedState) {
       setHistoryState(savedState)
     }
-  }, [setHistoryState])
+  })
 
   // Auto-save to localStorage whenever state changes
   useEffect(() => {
@@ -177,11 +185,19 @@ export default function MarkdownEditorPage() {
   const handleShare = async () => {
     setIsSharing(true)
     try {
-      const shareUrl = urlSharingManager.generateShareUrl(TOOL_NAME, state)
-      const success = await urlSharingManager.copyShareUrl(shareUrl)
+      const shareUrl = await generateShareUrl(state)
+      await navigator.clipboard.writeText(shareUrl)
+      const success = true
 
       if (success) {
-        successToast('Share URL copied!', 'The shareable URL has been copied to your clipboard')
+        const message = 'Share URL copied!'
+        let description = 'The shareable URL has been copied to your clipboard'
+
+        if (shareInfo.isLimited) {
+          description = shareInfo.message
+        }
+
+        successToast(message, description)
       } else {
         errorToast('Failed to copy URL', 'Please try again or copy the URL manually')
       }
@@ -196,7 +212,6 @@ export default function MarkdownEditorPage() {
   const handleClearData = () => {
     if (confirm('Clear all saved data and current content?')) {
       localStorageManager.clear(TOOL_NAME)
-      urlSharingManager.cleanUrl()
       clearAll()
     }
   }

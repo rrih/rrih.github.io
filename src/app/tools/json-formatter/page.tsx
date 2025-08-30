@@ -5,7 +5,7 @@ import { Header } from '@/components/layout/header'
 import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
 import { useHistory } from '@/hooks/useHistory'
 import { localStorageManager } from '@/lib/localStorage'
-import { urlSharingManager } from '@/lib/urlSharing'
+import { useUrlSharing } from '@/lib/urlSharing'
 import {
   AlertCircle,
   CheckCircle,
@@ -54,6 +54,9 @@ export default function JsonFormatterPage() {
   const successToast = useSuccessToast()
   const errorToast = useErrorToast()
 
+  const { generateShareUrl, shareInfo, getInitialStateFromUrl } =
+    useUrlSharing<JsonFormatterState>(TOOL_NAME)
+
   const { input, output, error, indentSize } = state
 
   const setInput = (newInput: string) => {
@@ -73,8 +76,9 @@ export default function JsonFormatterPage() {
   }
 
   // Client-side only state restoration
+  // biome-ignore lint/correctness/useExhaustiveDependencies: 初期化処理のため一度だけ実行
   useEffect(() => {
-    const sharedState = urlSharingManager.getSharedStateFromUrl<JsonFormatterState>(TOOL_NAME)
+    const sharedState = getInitialStateFromUrl()
     if (sharedState) {
       setHistoryState(sharedState)
       return
@@ -84,7 +88,7 @@ export default function JsonFormatterPage() {
     if (savedState) {
       setHistoryState(savedState)
     }
-  }, [setHistoryState])
+  }, [])
 
   // 状態が変更されるたびにローカルストレージに保存
   useEffect(() => {
@@ -95,11 +99,19 @@ export default function JsonFormatterPage() {
   const handleShare = async () => {
     setIsSharing(true)
     try {
-      const shareUrl = urlSharingManager.generateShareUrl(TOOL_NAME, state)
-      const success = await urlSharingManager.copyShareUrl(shareUrl)
+      const shareUrl = await generateShareUrl(state)
+      await navigator.clipboard.writeText(shareUrl)
+      const success = true
 
       if (success) {
-        successToast('Share URL copied!', 'The shareable URL has been copied to your clipboard')
+        const message = 'Share URL copied!'
+        let description = 'The shareable URL has been copied to your clipboard'
+
+        if (shareInfo.isLimited) {
+          description = shareInfo.message
+        }
+
+        successToast(message, description)
       } else {
         errorToast('Failed to copy URL', 'Please try again or copy the URL manually')
       }
@@ -116,7 +128,6 @@ export default function JsonFormatterPage() {
     if (confirm('保存されたデータと入力内容をすべて削除しますか？')) {
       localStorageManager.clear(TOOL_NAME)
       clearHistory()
-      urlSharingManager.cleanUrl()
       setHistoryState({
         input: '',
         output: '',

@@ -60,17 +60,31 @@ class URLSharingService implements URLSharingManager {
   }
 
   /**
-   * 共有用URLを生成
+   * 共有用URLを生成（URL長制限付き）
    */
   generateShareUrl<T>(toolName: string, state: T): string {
     if (typeof window === 'undefined') return ''
 
     try {
-      const encoded = this.encode(toolName, state)
+      // まず圧縮された状態でエンコードを試行
+      const compressedState = this.compressState(state)
+      let encoded = this.encode(toolName, compressedState)
       if (!encoded) return ''
 
-      const url = new URL(window.location.href)
+      let url = new URL(window.location.href)
       url.searchParams.set(this.PARAM_KEY, encoded)
+
+      // URL長チェック
+      if (this.isUrlTooLong(url.toString())) {
+        // データ量を制限して再試行
+        const limitedState = this.limitDataSize(toolName, compressedState)
+        encoded = this.encode(toolName, limitedState)
+
+        if (encoded) {
+          url = new URL(window.location.href)
+          url.searchParams.set(this.PARAM_KEY, encoded)
+        }
+      }
 
       return url.toString()
     } catch (error) {
@@ -167,6 +181,110 @@ class URLSharingService implements URLSharingManager {
   }
 
   /**
+   * ツール別データサイズ制限
+   */
+  limitDataSize<T>(toolName: string, state: T): T {
+    if (typeof state !== 'object' || state === null) {
+      return state
+    }
+
+    const limited = { ...state } as Record<string, unknown>
+
+    switch (toolName) {
+      case 'uuid-generator':
+        // UUIDを最大20個に制限
+        if (limited.uuids && Array.isArray(limited.uuids)) {
+          limited.uuids = limited.uuids.slice(0, 20)
+        }
+        break
+
+      case 'markdown-editor':
+        // Markdownテキストを1000文字に制限
+        if (limited.input && typeof limited.input === 'string') {
+          limited.input = limited.input.substring(0, 1000)
+        }
+        if (limited.preview && typeof limited.preview === 'string') {
+          limited.preview = limited.preview.substring(0, 1000)
+        }
+        break
+
+      case 'json-formatter':
+        // JSONテキストを800文字に制限
+        if (limited.input && typeof limited.input === 'string') {
+          limited.input = limited.input.substring(0, 800)
+        }
+        if (limited.output && typeof limited.output === 'string') {
+          limited.output = limited.output.substring(0, 800)
+        }
+        break
+
+      case 'base64':
+        // Base64データを500文字に制限
+        if (limited.input && typeof limited.input === 'string') {
+          limited.input = limited.input.substring(0, 500)
+        }
+        if (limited.output && typeof limited.output === 'string') {
+          limited.output = limited.output.substring(0, 500)
+        }
+        break
+
+      case 'color-picker':
+        // カラーデータは通常小さいので制限なし
+        break
+
+      case 'qr-generator':
+        // QRテキストを200文字に制限
+        if (limited.text && typeof limited.text === 'string') {
+          limited.text = limited.text.substring(0, 200)
+        }
+        break
+
+      default:
+        // その他のツールは汎用制限
+        Object.keys(limited).forEach((key) => {
+          if (typeof limited[key] === 'string' && limited[key].length > 500) {
+            limited[key] = limited[key].substring(0, 500)
+          }
+        })
+        break
+    }
+
+    return limited as T
+  }
+
+  /**
+   * データが制限されたかどうかをチェック
+   */
+  isDataLimited<T>(toolName: string, originalState: T, limitedState: T): boolean {
+    if (typeof originalState !== 'object' || originalState === null) return false
+
+    switch (toolName) {
+      case 'uuid-generator': {
+        const origUuids = (originalState as Record<string, unknown>).uuids
+        const limitUuids = (limitedState as Record<string, unknown>).uuids
+        return (
+          Array.isArray(origUuids) &&
+          Array.isArray(limitUuids) &&
+          origUuids.length > limitUuids.length
+        )
+      }
+
+      case 'markdown-editor': {
+        const origInput = (originalState as Record<string, unknown>).input
+        const limitInput = (limitedState as Record<string, unknown>).input
+        return (
+          typeof origInput === 'string' &&
+          typeof limitInput === 'string' &&
+          origInput.length > limitInput.length
+        )
+      }
+
+      default:
+        return JSON.stringify(originalState).length > JSON.stringify(limitedState).length
+    }
+  }
+
+  /**
    * SNS用の短縮メッセージを生成
    */
   generateSocialMessage(toolName: string, description?: string): string {
@@ -226,18 +344,37 @@ export const urlSharingManager = new URLSharingService()
 export function useUrlSharing<T>(toolName: string) {
   const [isGeneratingShareUrl, setIsGeneratingShareUrl] = React.useState(false)
   const [lastShareUrl, setLastShareUrl] = React.useState<string>('')
+  const [shareInfo, setShareInfo] = React.useState<{ isLimited: boolean; message: string }>({
+    isLimited: false,
+    message: '',
+  })
 
   // 初期化時にURLから共有状態を取得
-  const getInitialStateFromUrl = (): T | null => {
+  const getInitialStateFromUrl = React.useCallback((): T | null => {
     return urlSharingManager.getSharedStateFromUrl<T>(toolName)
-  }
+  }, [toolName])
 
   // 共有URL生成
   const generateShareUrl = async (state: T): Promise<string> => {
     setIsGeneratingShareUrl(true)
     try {
+      const compressedState = urlSharingManager.compressState(state)
+      const limitedState = urlSharingManager.limitDataSize(toolName, compressedState)
+      const isLimited = urlSharingManager.isDataLimited(toolName, state, limitedState)
+
       const shareUrl = urlSharingManager.generateShareUrl(toolName, state)
       setLastShareUrl(shareUrl)
+
+      // 制限情報を設定
+      if (isLimited) {
+        setShareInfo({
+          isLimited: true,
+          message: getOptimizationMessage(toolName),
+        })
+      } else {
+        setShareInfo({ isLimited: false, message: '' })
+      }
+
       return shareUrl
     } finally {
       setIsGeneratingShareUrl(false)
@@ -262,6 +399,24 @@ export function useUrlSharing<T>(toolName: string) {
     }
   }
 
+  // ツール別の最適化メッセージを生成
+  const getOptimizationMessage = (toolName: string): string => {
+    switch (toolName) {
+      case 'uuid-generator':
+        return 'Share URL optimized - showing first 20 UUIDs. Download all UUIDs using the download button.'
+      case 'markdown-editor':
+        return 'Share URL optimized - showing first 1000 characters. Download full content using the download button.'
+      case 'json-formatter':
+        return 'Share URL optimized - showing first 800 characters. Copy full content using the copy button.'
+      case 'base64':
+        return 'Share URL optimized - showing first 500 characters. Copy full content using the copy button.'
+      case 'qr-generator':
+        return 'Share URL optimized - showing first 200 characters of text.'
+      default:
+        return 'Share URL optimized for length. Use copy or download for full content.'
+    }
+  }
+
   // SNS共有URLs生成
   const generateSocialShareUrls = (state: T, description?: string) => {
     const shareUrl = urlSharingManager.generateShareUrl(toolName, state)
@@ -282,7 +437,9 @@ export function useUrlSharing<T>(toolName: string) {
     cleanCurrentUrl,
     isGeneratingShareUrl,
     lastShareUrl,
-    isSharedUrl: urlSharingManager.isSharedUrl(window.location.href),
+    shareInfo,
+    isSharedUrl:
+      typeof window !== 'undefined' ? urlSharingManager.isSharedUrl(window.location.href) : false,
   }
 }
 

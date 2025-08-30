@@ -4,7 +4,7 @@ import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
 import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
 import { localStorageManager } from '@/lib/localStorage'
-import { urlSharingManager } from '@/lib/urlSharing'
+import { useUrlSharing } from '@/lib/urlSharing'
 import {
   Clock,
   Copy,
@@ -41,6 +41,9 @@ export default function UUIDGenerator() {
   const [isSharing, setIsSharing] = useState(false)
   const successToast = useSuccessToast()
   const errorToast = useErrorToast()
+
+  const { generateShareUrl, shareInfo, getInitialStateFromUrl } =
+    useUrlSharing<UUIDState>(TOOL_NAME)
 
   const { uuids, version, count, format } = state
 
@@ -155,11 +158,19 @@ export default function UUIDGenerator() {
   const handleShare = async () => {
     setIsSharing(true)
     try {
-      const shareUrl = urlSharingManager.generateShareUrl(TOOL_NAME, state)
-      const success = await urlSharingManager.copyShareUrl(shareUrl)
+      const shareUrl = await generateShareUrl(state)
+      await navigator.clipboard.writeText(shareUrl)
+      const success = true
 
       if (success) {
-        successToast('Share URL copied!', 'The shareable URL has been copied to your clipboard')
+        const message = 'Share URL copied!'
+        let description = 'The shareable URL has been copied to your clipboard'
+
+        if (shareInfo.isLimited) {
+          description = shareInfo.message
+        }
+
+        successToast(message, description)
       } else {
         errorToast('Failed to copy URL', 'Please try again or copy the URL manually')
       }
@@ -174,14 +185,14 @@ export default function UUIDGenerator() {
   const handleClearData = () => {
     if (confirm('Clear all saved data and current state?')) {
       localStorageManager.clear(TOOL_NAME)
-      urlSharingManager.cleanUrl()
       setState(defaultState)
       setCopyStatus({})
     }
   }
 
+  // biome-ignore lint/correctness/useExhaustiveDependencies: 初期化処理のため一度だけ実行
   useEffect(() => {
-    const sharedState = urlSharingManager.getSharedStateFromUrl<UUIDState>(TOOL_NAME)
+    const sharedState = getInitialStateFromUrl()
     if (sharedState) {
       setState(sharedState)
       return

@@ -5,7 +5,7 @@ import { Header } from '@/components/layout/header'
 import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
 import { useHistory } from '@/hooks/useHistory'
 import { localStorageManager } from '@/lib/localStorage'
-import { urlSharingManager } from '@/lib/urlSharing'
+import { useUrlSharing } from '@/lib/urlSharing'
 import {
   AlertCircle,
   ArrowLeftRight,
@@ -54,6 +54,9 @@ export default function Base64Page() {
   const successToast = useSuccessToast()
   const errorToast = useErrorToast()
 
+  const { generateShareUrl, shareInfo, getInitialStateFromUrl } =
+    useUrlSharing<Base64State>(TOOL_NAME)
+
   const { input, output, mode, error } = state
 
   const setInput = (newInput: string) => {
@@ -73,8 +76,9 @@ export default function Base64Page() {
   }
 
   // クライアントサイドでのみ初期状態を復元
+  // biome-ignore lint/correctness/useExhaustiveDependencies: 初期化処理のため一度だけ実行
   useEffect(() => {
-    const sharedState = urlSharingManager.getSharedStateFromUrl<Base64State>(TOOL_NAME)
+    const sharedState = getInitialStateFromUrl()
     if (sharedState) {
       setHistoryState(sharedState)
       return
@@ -84,7 +88,7 @@ export default function Base64Page() {
     if (savedState) {
       setHistoryState(savedState)
     }
-  }, [setHistoryState])
+  }, [])
 
   // 状態が変更されるたびにローカルストレージに保存
   useEffect(() => {
@@ -98,11 +102,19 @@ export default function Base64Page() {
   const handleShare = async () => {
     setIsSharing(true)
     try {
-      const shareUrl = urlSharingManager.generateShareUrl(TOOL_NAME, state)
-      const success = await urlSharingManager.copyShareUrl(shareUrl)
+      const shareUrl = await generateShareUrl(state)
+      await navigator.clipboard.writeText(shareUrl)
+      const success = true
 
       if (success) {
-        successToast('Share URL copied!', 'The shareable URL has been copied to your clipboard')
+        const message = 'Share URL copied!'
+        let description = 'The shareable URL has been copied to your clipboard'
+
+        if (shareInfo.isLimited) {
+          description = shareInfo.message
+        }
+
+        successToast(message, description)
       } else {
         errorToast('Failed to copy URL', 'Please try again or copy the URL manually')
       }
@@ -119,7 +131,6 @@ export default function Base64Page() {
     if (confirm('Clear all saved data and current input?')) {
       localStorageManager.clear(TOOL_NAME)
       clearHistory()
-      urlSharingManager.cleanUrl()
       setHistoryState({
         input: '',
         output: '',
@@ -156,7 +167,7 @@ export default function Base64Page() {
 
     try {
       setError('')
-      const encoded = btoa(unescape(encodeURIComponent(input)))
+      const encoded = btoa(encodeURIComponent(input))
       setOutput(encoded)
     } catch (_err) {
       setError('Failed to encode. Please check your input.')
@@ -173,7 +184,7 @@ export default function Base64Page() {
 
     try {
       setError('')
-      const decoded = decodeURIComponent(escape(atob(input)))
+      const decoded = decodeURIComponent(atob(input))
       setOutput(decoded)
     } catch (_err) {
       setError('Invalid Base64 string. Please check your input.')
