@@ -10,7 +10,16 @@
   },
   "files": {
     "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "**/*.json"],
-    "ignore": ["node_modules", ".next", "out", "coverage", "*.min.js", "next-env.d.ts"]
+    "ignore": [
+      "node_modules",
+      ".next",
+      "out",
+      "coverage",
+      "*.min.js",
+      "next-env.d.ts",
+      "public/sw.js",
+      "public/workbox-*.js"
+    ]
   },
   "linter": {
     "enabled": true,
