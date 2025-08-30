@@ -18,7 +18,7 @@ import {
   Wifi,
 } from 'lucide-react'
 import QRCode from 'qrcode'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 interface QRGeneratorState {
   input: string
@@ -81,28 +81,31 @@ export default function QRGenerator() {
     if (input || wifiSettings.ssid) {
       localStorageManager.save(TOOL_NAME, state)
     }
-  }, [state])
+  }, [state, input, wifiSettings.ssid])
 
   // Real QR Code generation using qrcode library
-  const generateQRCode = async (data: string) => {
-    try {
-      const qrCodeDataUrl = await QRCode.toDataURL(data, {
-        width: size,
-        margin: 2,
-        color: {
-          dark: foregroundColor,
-          light: backgroundColor,
-        },
-        errorCorrectionLevel: errorLevel,
-      })
-      setQrDataUrl(qrCodeDataUrl)
-    } catch (error) {
-      console.error('Error generating QR code:', error)
-      setQrDataUrl('')
-    }
-  }
+  const generateQRCode = useCallback(
+    async (data: string) => {
+      try {
+        const qrCodeDataUrl = await QRCode.toDataURL(data, {
+          width: size,
+          margin: 2,
+          color: {
+            dark: foregroundColor,
+            light: backgroundColor,
+          },
+          errorCorrectionLevel: errorLevel,
+        })
+        setQrDataUrl(qrCodeDataUrl)
+      } catch (error) {
+        console.error('Error generating QR code:', error)
+        setQrDataUrl('')
+      }
+    },
+    [size, errorLevel, foregroundColor, backgroundColor]
+  )
 
-  const getQRData = (): string => {
+  const getQRData = useCallback((): string => {
     switch (qrType) {
       case 'wifi':
         return `WIFI:T:${wifiSettings.security};S:${wifiSettings.ssid};P:${wifiSettings.password};H:${wifiSettings.hidden};`
@@ -113,7 +116,7 @@ export default function QRGenerator() {
       default:
         return input
     }
-  }
+  }, [qrType, wifiSettings, input])
 
   useEffect(() => {
     if (input.trim() || (qrType === 'wifi' && wifiSettings.ssid.trim())) {
@@ -121,7 +124,7 @@ export default function QRGenerator() {
     } else {
       setQrDataUrl('')
     }
-  }, [input, qrType, size, errorLevel, foregroundColor, backgroundColor, wifiSettings])
+  }, [input, qrType, wifiSettings, generateQRCode, getQRData])
 
   const downloadQR = () => {
     if (!qrDataUrl) return
@@ -168,9 +171,9 @@ export default function QRGenerator() {
         text: 'Generated QR Code',
         files: [file],
       })
-    } catch (err: any) {
+    } catch (err: unknown) {
       // Don't show error for user cancellation
-      if (err.name !== 'AbortError') {
+      if ((err as Error).name !== 'AbortError') {
         console.error('Failed to share QR code:', err)
         errorToast('Share failed', 'Failed to share QR code')
       }
@@ -306,8 +309,11 @@ export default function QRGenerator() {
               {qrType === 'wifi' ? (
                 <div className="space-y-4">
                   <div>
-                    <label className="block text-sm font-medium mb-2">Network Name (SSID)</label>
+                    <label htmlFor="wifi-ssid" className="block text-sm font-medium mb-2">
+                      Network Name (SSID)
+                    </label>
                     <input
+                      id="wifi-ssid"
                       type="text"
                       value={wifiSettings.ssid}
                       onChange={(e) =>
@@ -321,8 +327,11 @@ export default function QRGenerator() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">Password</label>
+                    <label htmlFor="wifi-password" className="block text-sm font-medium mb-2">
+                      Password
+                    </label>
                     <input
+                      id="wifi-password"
                       type="password"
                       value={wifiSettings.password}
                       onChange={(e) =>
@@ -336,8 +345,11 @@ export default function QRGenerator() {
                     />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium mb-2">Security</label>
+                    <label htmlFor="wifi-security" className="block text-sm font-medium mb-2">
+                      Security
+                    </label>
                     <select
+                      id="wifi-security"
                       value={wifiSettings.security}
                       onChange={(e) =>
                         setState((prev) => ({
@@ -369,10 +381,11 @@ export default function QRGenerator() {
                 </div>
               ) : (
                 <div>
-                  <label className="block text-sm font-medium mb-2">
+                  <label htmlFor="qr-input" className="block text-sm font-medium mb-2">
                     {qrType === 'url' ? 'URL' : qrType === 'email' ? 'Email Address' : 'Text'}
                   </label>
                   <textarea
+                    id="qr-input"
                     value={input}
                     onChange={(e) => setState((prev) => ({ ...prev, input: e.target.value }))}
                     className="w-full h-32 px-3 py-2 border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark resize-none"
@@ -397,8 +410,11 @@ export default function QRGenerator() {
 
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium mb-2">Size: {size}px</label>
+                  <label htmlFor="qr-size" className="block text-sm font-medium mb-2">
+                    Size: {size}px
+                  </label>
                   <input
+                    id="qr-size"
                     type="range"
                     min="128"
                     max="512"
@@ -412,8 +428,11 @@ export default function QRGenerator() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Error Correction</label>
+                  <label htmlFor="error-level" className="block text-sm font-medium mb-2">
+                    Error Correction
+                  </label>
                   <select
+                    id="error-level"
                     value={errorLevel}
                     onChange={(e) =>
                       setState((prev) => ({
@@ -432,9 +451,12 @@ export default function QRGenerator() {
 
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium mb-2">Foreground Color</label>
+                    <label htmlFor="fg-color" className="block text-sm font-medium mb-2">
+                      Foreground Color
+                    </label>
                     <div className="flex gap-2">
                       <input
+                        id="fg-color"
                         type="color"
                         value={foregroundColor}
                         onChange={(e) =>
@@ -445,6 +467,7 @@ export default function QRGenerator() {
                       <input
                         type="text"
                         value={foregroundColor}
+                        aria-label="Foreground color hex value"
                         onChange={(e) =>
                           setState((prev) => ({ ...prev, foregroundColor: e.target.value }))
                         }
@@ -454,9 +477,12 @@ export default function QRGenerator() {
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium mb-2">Background Color</label>
+                    <label htmlFor="bg-color" className="block text-sm font-medium mb-2">
+                      Background Color
+                    </label>
                     <div className="flex gap-2">
                       <input
+                        id="bg-color"
                         type="color"
                         value={backgroundColor}
                         onChange={(e) =>
@@ -467,6 +493,7 @@ export default function QRGenerator() {
                       <input
                         type="text"
                         value={backgroundColor}
+                        aria-label="Background color hex value"
                         onChange={(e) =>
                           setState((prev) => ({ ...prev, backgroundColor: e.target.value }))
                         }

@@ -75,7 +75,7 @@ export default function UUIDGenerator() {
       newUuids.push(uuid)
     }
 
-    setState(prevState => {
+    setState((prevState) => {
       const newState = { ...prevState, uuids: newUuids }
       localStorageManager.save(TOOL_NAME, newState)
       return newState
@@ -274,8 +274,11 @@ export default function UUIDGenerator() {
               <h2 className="text-xl font-semibold mb-4">Generation Settings</h2>
               <div className="space-y-4">
                 <div>
-                  <label className="block text-sm font-medium mb-2">Count: {count}</label>
+                  <label htmlFor="uuid-count" className="block text-sm font-medium mb-2">
+                    Count: {count}
+                  </label>
                   <input
+                    id="uuid-count"
                     type="range"
                     min="1"
                     max="100"
@@ -293,8 +296,11 @@ export default function UUIDGenerator() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium mb-2">Format</label>
+                  <label htmlFor="uuid-format" className="block text-sm font-medium mb-2">
+                    Format
+                  </label>
                   <select
+                    id="uuid-format"
                     value={format}
                     onChange={(e) => {
                       const newState = {

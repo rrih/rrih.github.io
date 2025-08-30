@@ -24,7 +24,7 @@ import {
   Trash2,
   Undo2,
 } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 interface MarkdownState {
   input: string
@@ -62,9 +62,12 @@ export default function MarkdownEditorPage() {
     setHistoryState((prev) => ({ ...prev, input: newInput }))
   }
 
-  const setPreview = (newPreview: string) => {
-    setHistoryState((prev) => ({ ...prev, preview: newPreview }))
-  }
+  const setPreview = useCallback(
+    (newPreview: string) => {
+      setHistoryState((prev) => ({ ...prev, preview: newPreview }))
+    },
+    [setHistoryState]
+  )
 
   // Client-side only state restoration
   useEffect(() => {
@@ -350,6 +353,7 @@ Code blocks
                 <div className="p-2 xs:p-3 sm:p-4 md:p-6">
                   <div
                     className="prose prose-slate dark:prose-invert max-w-none min-h-[20rem] xs:min-h-[24rem] sm:min-h-[500px]"
+                    /* biome-ignore lint/security/noDangerouslySetInnerHtml: Required for markdown preview functionality */
                     dangerouslySetInnerHTML={{
                       __html:
                         preview || '<p class="text-gray-400">Start typing to see preview...</p>',

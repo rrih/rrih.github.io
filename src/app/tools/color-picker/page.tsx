@@ -35,12 +35,6 @@ export default function ColorPickerPage() {
   const TOOL_NAME = 'color-picker'
 
   const getInitialState = (): ColorPickerState => {
-    const sharedState = urlSharingManager.getSharedStateFromUrl<ColorPickerState>(TOOL_NAME)
-    if (sharedState) return sharedState
-
-    const savedState = localStorageManager.load<ColorPickerState>(TOOL_NAME)
-    if (savedState) return savedState
-
     return {
       currentColor: '#3b82f6',
       colorFormat: {

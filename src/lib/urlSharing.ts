@@ -86,7 +86,7 @@ class URLSharingService implements URLSharingManager {
     try {
       const urlObj = new URL(url)
       return urlObj.searchParams.has(this.PARAM_KEY)
-    } catch (error) {
+    } catch (_error) {
       return false
     }
   }
@@ -119,7 +119,7 @@ class URLSharingService implements URLSharingManager {
         await navigator.clipboard.writeText(url)
         return true
       }
-      
+
       // Fallback for older browsers
       const textArea = document.createElement('textarea')
       textArea.value = url

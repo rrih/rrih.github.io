@@ -7,7 +7,7 @@ export interface ToolState {
   toolName: string
   version: string
   timestamp: number
-  data: Record<string, any>
+  data: Record<string, unknown>
 }
 
 export interface LocalStorageManager {
@@ -35,7 +35,7 @@ class LocalStorageService implements LocalStorageManager {
         toolName,
         version: this.VERSION,
         timestamp: Date.now(),
-        data: state as Record<string, any>,
+        data: state as Record<string, unknown>,
       }
 
       const key = this.PREFIX + toolName
@@ -176,7 +176,7 @@ class LocalStorageService implements LocalStorageManager {
    * ストレージがほぼ満杯かチェック
    */
   isStorageNearFull(): boolean {
-    const { used, available } = this.getStorageSize()
+    const { available } = this.getStorageSize()
     return available < 500 * 1024 // 500KB未満の場合は警告
   }
 }
