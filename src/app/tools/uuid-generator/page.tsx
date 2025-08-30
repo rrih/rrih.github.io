@@ -240,7 +240,10 @@ export default function UUIDGenerator() {
                     value="v4"
                     checked={version === 'v4'}
                     onChange={(e) => {
-                      const newState = { ...state, version: e.target.value as 'v1' | 'v4' }
+                      const newState = {
+                        ...state,
+                        version: e.target.value as 'v1' | 'v4',
+                      }
                       setState(newState)
                     }}
                     className="w-4 h-4 text-accent"
@@ -262,7 +265,10 @@ export default function UUIDGenerator() {
                     value="v1"
                     checked={version === 'v1'}
                     onChange={(e) => {
-                      const newState = { ...state, version: e.target.value as 'v1' | 'v4' }
+                      const newState = {
+                        ...state,
+                        version: e.target.value as 'v1' | 'v4',
+                      }
                       setState(newState)
                     }}
                     className="w-4 h-4 text-accent"
@@ -295,7 +301,10 @@ export default function UUIDGenerator() {
                     max="100"
                     value={count}
                     onChange={(e) => {
-                      const newState = { ...state, count: Number.parseInt(e.target.value) }
+                      const newState = {
+                        ...state,
+                        count: Number.parseInt(e.target.value),
+                      }
                       setState(newState)
                     }}
                     className="w-full"

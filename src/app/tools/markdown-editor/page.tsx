@@ -223,8 +223,16 @@ export default function MarkdownEditorPage() {
     { icon: Link2, title: 'Link', action: () => insertMarkdown('[', '](url)') },
     { icon: Code, title: 'Code', action: () => insertMarkdown('`', '`') },
     { icon: Quote, title: 'Quote', action: () => insertMarkdown('> ', '') },
-    { icon: List, title: 'Bullet List', action: () => insertMarkdown('* ', '') },
-    { icon: ListOrdered, title: 'Numbered List', action: () => insertMarkdown('1. ', '') },
+    {
+      icon: List,
+      title: 'Bullet List',
+      action: () => insertMarkdown('* ', ''),
+    },
+    {
+      icon: ListOrdered,
+      title: 'Numbered List',
+      action: () => insertMarkdown('1. ', ''),
+    },
   ]
 
   return (
@@ -293,7 +301,9 @@ export default function MarkdownEditorPage() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 xs:gap-6">
               {/* Editor Panel */}
               <div
-                className={`rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg ${isPreviewMode ? 'hidden lg:block' : ''}`}
+                className={`rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg ${
+                  isPreviewMode ? 'hidden lg:block' : ''
+                }`}
               >
                 <div className="p-2 xs:p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark flex justify-between items-center">
                   <div>
@@ -355,7 +365,9 @@ Code blocks
 
               {/* Preview Panel */}
               <div
-                className={`rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg ${!isPreviewMode ? 'hidden lg:block' : ''}`}
+                className={`rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg ${
+                  !isPreviewMode ? 'hidden lg:block' : ''
+                }`}
               >
                 <div className="p-2 xs:p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                   <h3 className="text-base xs:text-lg font-semibold text-foreground-light dark:text-foreground-dark">

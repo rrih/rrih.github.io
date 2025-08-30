@@ -54,7 +54,13 @@ export function ToastProvider({ children }: { children: React.ReactNode }) {
   )
 }
 
-function ToastContainer({ toasts, onRemove }: { toasts: Toast[]; onRemove: (id: string) => void }) {
+function ToastContainer({
+  toasts,
+  onRemove,
+}: {
+  toasts: Toast[]
+  onRemove: (id: string) => void
+}) {
   if (toasts.length === 0) return null
 
   return (
@@ -66,7 +72,13 @@ function ToastContainer({ toasts, onRemove }: { toasts: Toast[]; onRemove: (id: 
   )
 }
 
-function ToastItem({ toast, onRemove }: { toast: Toast; onRemove: (id: string) => void }) {
+function ToastItem({
+  toast,
+  onRemove,
+}: {
+  toast: Toast
+  onRemove: (id: string) => void
+}) {
   const [isVisible, setIsVisible] = useState(false)
   const [isRemoving, setIsRemoving] = useState(false)
 

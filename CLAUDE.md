@@ -10,7 +10,7 @@ bun run dev-check
 
 This command MUST be executed after every code change and will:
 1. ✅ Check TypeScript types
-2. ✅ Run Biome linting & formatting  
+2. ✅ Run Biome linting & formatting
 3. ✅ Test build process
 4. ✅ Clean build artifacts (out/, .next/)
 5. 🤖 **Generate AI improvement suggestions**
@@ -26,7 +26,7 @@ This command MUST be executed after every code change and will:
 AI must AUTOMATICALLY suggest improvements when:
 - Code quality can be enhanced
 - UI/UX can be more competitive vs. rivals
-- Performance can be optimized  
+- Performance can be optimized
 - Automation can be increased
 - SEO can be strengthened
 - Accessibility can be improved
@@ -44,7 +44,7 @@ AI must AUTOMATICALLY suggest improvements when:
 ### 🔄 Continuous Improvement Loop
 Every development session, AI MUST:
 1. Analyze current implementation quality
-2. Compare with competitor benchmarks  
+2. Compare with competitor benchmarks
 3. Identify 3-5 specific improvement opportunities
 4. Propose concrete implementation steps
 5. Estimate impact on KPIs (PV, UX metrics)
@@ -156,14 +156,14 @@ src/
 ### 🚫 ABSOLUTE PROHIBITIONS
 **NEVER violate these rules under ANY circumstances:**
 
-1. **🚫 NO EMOJIS IN CODE**: 
+1. **🚫 NO EMOJIS IN CODE**:
    - NEVER use emojis in any code files
    - ALL icons MUST use Lucide React icons from https://lucide.dev/icons/
    - Replace ALL existing emojis with appropriate Lucide icons
 
-2. **🎨 UNIFIED COLOR PALETTE**: 
+2. **🎨 UNIFIED COLOR PALETTE**:
    - ALL tools MUST use the same color scheme as homepage
-   - Base colors: slate/blue system, accent #0066cc  
+   - Base colors: slate/blue system, accent #0066cc
    - NO random colors: orange, purple, pink variations
    - Consistent border/card styling across all components
 
@@ -195,7 +195,7 @@ src/
 
 7. **🔒 PRIVACY-CONSCIOUS CONTENT**:
    - Prepare for potential Ad integration (future-proof privacy statements)
-   - Prepare for potential Analytics integration  
+   - Prepare for potential Analytics integration
    - NO absolute "never tracking" promises
    - Use terms like "currently no tracking" or "privacy-focused"
 
@@ -218,7 +218,7 @@ src/
 
 ### 🎯 IMPLEMENTATION PRIORITIES
 1. **CRITICAL (Fix Immediately)**: Emojis, Mobile UX, Privacy statements
-2. **HIGH (Next Session)**: Color unification, OOUI compliance  
+2. **HIGH (Next Session)**: Color unification, OOUI compliance
 3. **MEDIUM (Ongoing)**: Code investigation thoroughness, English consistency
 
 **These rules are PERMANENT and MUST be followed by all future AI interactions with this codebase.**
@@ -249,40 +249,40 @@ export default function [ToolName]Page() {
     <div className="min-h-screen bg-white dark:bg-background-dark">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <Header />
-        
+
         {/* Hero Section */}
         <section className="mb-8">...</section>
-        
+
         {/* Main Tool Interface */}
         <section className="grid gap-8 lg:grid-cols-[1fr,1fr] OR lg:grid-cols-3">
           {/* Input/Controls Section */}
           <div>...</div>
-          
+
           {/* Output/Preview Section */}
           <div>...</div>
         </section>
-        
+
         {/* Features Section (optional on mobile) */}
         <section className="hidden xs:block mb-8 sm:mb-12 md:mb-16">...</section>
-        
+
         {/* Content Sections for SEO */}
         <section className="mb-8 sm:mb-12 md:mb-16 border-t border-border-light dark:border-border-dark pt-8 sm:pt-12">
           {/* About This Tool */}
           <div className="mb-12">...</div>
-          
+
           {/* How to Use */}
           <div className="mb-12">...</div>
-          
+
           {/* Key Features */}
           <div className="mb-12">...</div>
-          
+
           {/* Examples */}
           <div className="mb-12">...</div>
-          
+
           {/* FAQ */}
           <div className="mb-12">...</div>
         </section>
-        
+
         <Footer />
       </div>
     </div>
@@ -299,7 +299,7 @@ export default function [ToolName]Page() {
 #### 3. MAIN INTERFACE LAYOUT PATTERNS
 **Choose based on tool complexity:**
 - **Simple Tools**: Single column with stacked input/output
-- **Complex Tools**: 2-column grid (lg:grid-cols-2) 
+- **Complex Tools**: 2-column grid (lg:grid-cols-2)
 - **Multi-section Tools**: 3-column grid (lg:grid-cols-3)
 - **All layouts**: Must stack on mobile (grid-cols-1)
 
@@ -308,7 +308,7 @@ export default function [ToolName]Page() {
 // Primary Action Button
 <button className="rounded-lg bg-accent px-3 sm:px-4 py-2 sm:py-3 min-h-[44px] text-white font-medium text-sm sm:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95">
 
-// Secondary Action Button  
+// Secondary Action Button
 <button className="rounded-lg border border-border-light px-3 sm:px-4 py-2 sm:py-3 min-h-[44px] font-medium text-sm sm:text-base transition-all hover:border-accent hover:text-accent dark:border-border-dark hover:shadow-lg active:scale-95">
 
 // Danger Action Button
@@ -326,7 +326,7 @@ export default function [ToolName]Page() {
       Description
     </p>
   </div>
-  
+
   {/* Content */}
   <div className="p-3 sm:p-4 md:p-6">
     {/* Input/Output content */}
@@ -435,7 +435,7 @@ const { state, setState: setHistoryState, undo, redo, canUndo, canRedo } = useHi
 
 #### BREAKPOINTS
 - Mobile: < 640px
-- Tablet: 640px - 1024px  
+- Tablet: 640px - 1024px
 - Desktop: > 1024px
 
 #### MOBILE-FIRST APPROACH

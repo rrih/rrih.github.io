@@ -227,7 +227,9 @@ export default function QRGenerator() {
       exportedAt: new Date().toISOString(),
     }
 
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
+    const blob = new Blob([JSON.stringify(data, null, 2)], {
+      type: 'application/json',
+    })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
@@ -326,7 +328,10 @@ export default function QRGenerator() {
                       onChange={(e) =>
                         setState((prev) => ({
                           ...prev,
-                          wifiSettings: { ...prev.wifiSettings, ssid: e.target.value },
+                          wifiSettings: {
+                            ...prev.wifiSettings,
+                            ssid: e.target.value,
+                          },
                         }))
                       }
                       className="w-full px-3 py-2 border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
@@ -344,7 +349,10 @@ export default function QRGenerator() {
                       onChange={(e) =>
                         setState((prev) => ({
                           ...prev,
-                          wifiSettings: { ...prev.wifiSettings, password: e.target.value },
+                          wifiSettings: {
+                            ...prev.wifiSettings,
+                            password: e.target.value,
+                          },
                         }))
                       }
                       className="w-full px-3 py-2 border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
@@ -361,7 +369,10 @@ export default function QRGenerator() {
                       onChange={(e) =>
                         setState((prev) => ({
                           ...prev,
-                          wifiSettings: { ...prev.wifiSettings, security: e.target.value },
+                          wifiSettings: {
+                            ...prev.wifiSettings,
+                            security: e.target.value,
+                          },
                         }))
                       }
                       className="w-full px-3 py-2 border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
@@ -378,7 +389,10 @@ export default function QRGenerator() {
                       onChange={(e) =>
                         setState((prev) => ({
                           ...prev,
-                          wifiSettings: { ...prev.wifiSettings, hidden: e.target.checked },
+                          wifiSettings: {
+                            ...prev.wifiSettings,
+                            hidden: e.target.checked,
+                          },
                         }))
                       }
                       className="rounded"
@@ -428,7 +442,10 @@ export default function QRGenerator() {
                     step="32"
                     value={size}
                     onChange={(e) =>
-                      setState((prev) => ({ ...prev, size: Number.parseInt(e.target.value) }))
+                      setState((prev) => ({
+                        ...prev,
+                        size: Number.parseInt(e.target.value),
+                      }))
                     }
                     className="w-full"
                   />
@@ -467,7 +484,10 @@ export default function QRGenerator() {
                         type="color"
                         value={foregroundColor}
                         onChange={(e) =>
-                          setState((prev) => ({ ...prev, foregroundColor: e.target.value }))
+                          setState((prev) => ({
+                            ...prev,
+                            foregroundColor: e.target.value,
+                          }))
                         }
                         className="w-12 h-10 border border-border-light dark:border-border-dark rounded-lg"
                       />
@@ -476,7 +496,10 @@ export default function QRGenerator() {
                         value={foregroundColor}
                         aria-label="Foreground color hex value"
                         onChange={(e) =>
-                          setState((prev) => ({ ...prev, foregroundColor: e.target.value }))
+                          setState((prev) => ({
+                            ...prev,
+                            foregroundColor: e.target.value,
+                          }))
                         }
                         className="flex-1 px-3 py-2 border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
                       />
@@ -493,7 +516,10 @@ export default function QRGenerator() {
                         type="color"
                         value={backgroundColor}
                         onChange={(e) =>
-                          setState((prev) => ({ ...prev, backgroundColor: e.target.value }))
+                          setState((prev) => ({
+                            ...prev,
+                            backgroundColor: e.target.value,
+                          }))
                         }
                         className="w-12 h-10 border border-border-light dark:border-border-dark rounded-lg"
                       />
@@ -502,7 +528,10 @@ export default function QRGenerator() {
                         value={backgroundColor}
                         aria-label="Background color hex value"
                         onChange={(e) =>
-                          setState((prev) => ({ ...prev, backgroundColor: e.target.value }))
+                          setState((prev) => ({
+                            ...prev,
+                            backgroundColor: e.target.value,
+                          }))
                         }
                         className="flex-1 px-3 py-2 border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
                       />
