@@ -1,8 +1,8 @@
-import type { Metadata, Viewport } from "next";
-import "./globals.css";
-import { InstallPrompt } from "@/components/pwa/install-prompt";
-import { ToastProvider } from "@/components/ui/toast";
-import { siteConfig } from "@/config/site";
+import type { Metadata, Viewport } from 'next'
+import './globals.css'
+import { InstallPrompt } from '@/components/pwa/install-prompt'
+import { ToastProvider } from '@/components/ui/toast'
+import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -11,44 +11,44 @@ export const metadata: Metadata = {
   authors: [{ name: siteConfig.author.name }],
   creator: siteConfig.author.name,
   metadataBase: new URL(siteConfig.url),
-  manifest: "/manifest.json",
+  manifest: '/manifest.json',
   applicationName: siteConfig.name,
   appleWebApp: {
     capable: true,
-    statusBarStyle: "default",
+    statusBarStyle: 'default',
     title: siteConfig.name,
   },
   formatDetection: {
     telephone: false,
   },
   icons: {
-    icon: "/icons/icon-192x192.png",
-    shortcut: "/icons/icon-192x192.png",
-    apple: "/icons/icon-192x192.png",
+    icon: '/icons/icon-192x192.png',
+    shortcut: '/icons/icon-192x192.png',
+    apple: '/icons/icon-192x192.png',
     other: {
-      rel: "apple-touch-icon-precomposed",
-      url: "/icons/icon-192x192.png",
+      rel: 'apple-touch-icon-precomposed',
+      url: '/icons/icon-192x192.png',
     },
   },
   robots: {
     index: true,
     follow: true,
   },
-};
+}
 
 export const viewport: Viewport = {
-  width: "device-width",
+  width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-  viewportFit: "cover",
-  themeColor: "#0066cc",
-};
+  viewportFit: 'cover',
+  themeColor: '#0066cc',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="ja" className="light">
@@ -66,8 +66,8 @@ export default function RootLayout({
           // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
+              '@context': 'https://schema.org',
+              '@type': 'Person',
               name: siteConfig.author.name,
               url: siteConfig.url,
               sameAs: [siteConfig.author.github],
@@ -80,5 +80,5 @@ export default function RootLayout({
         <InstallPrompt />
       </body>
     </html>
-  );
+  )
 }

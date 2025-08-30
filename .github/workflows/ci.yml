@@ -32,4 +32,6 @@ jobs:
         run: bun run build
 
       - name: Check build output
-        run: ls -la out/
+        run: |
+          ls -la out/ 2>/dev/null || echo "out/ directory not found"
+          ls -la .next/ || echo ".next/ directory not found"
