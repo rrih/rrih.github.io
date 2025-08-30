@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect, useState } from 'react'
 import { Download, X } from 'lucide-react'
+import { useEffect, useState } from 'react'
 
 interface BeforeInstallPromptEvent extends Event {
   readonly platforms: ReadonlyArray<string>
@@ -20,8 +20,8 @@ export function InstallPrompt() {
   useEffect(() => {
     // Check if app is already installed
     const isStandalone = window.matchMedia('(display-mode: standalone)').matches
-    const isInWebapp = (window.navigator as any).standalone === true
-    
+    const isInWebapp = (window.navigator as { standalone?: boolean }).standalone === true
+
     if (isStandalone || isInWebapp) {
       setIsInstalled(true)
       return
@@ -32,14 +32,21 @@ export function InstallPrompt() {
       e.preventDefault()
       const promptEvent = e as BeforeInstallPromptEvent
       setDeferredPrompt(promptEvent)
-      
-      // Show install prompt after a delay (don't be too aggressive)
+
+      // Show install prompt after a short delay
       setTimeout(() => {
         const hasSeenPrompt = localStorage.getItem('pwa-install-prompt-seen')
-        if (!hasSeenPrompt) {
+        const lastPromptTime = localStorage.getItem('pwa-install-prompt-time')
+        const now = Date.now()
+
+        // Show prompt if never seen, or if it's been more than 24 hours since last dismiss
+        if (
+          !hasSeenPrompt ||
+          (lastPromptTime && now - Number.parseInt(lastPromptTime) > 24 * 60 * 60 * 1000)
+        ) {
           setShowInstallPrompt(true)
         }
-      }, 5000)
+      }, 2000)
     }
 
     // Listen for app installed event
@@ -64,19 +71,21 @@ export function InstallPrompt() {
 
     deferredPrompt.prompt()
     const choiceResult = await deferredPrompt.userChoice
-    
+
     if (choiceResult.outcome === 'accepted') {
       setIsInstalled(true)
     }
-    
+
     setShowInstallPrompt(false)
     setDeferredPrompt(null)
     localStorage.setItem('pwa-install-prompt-seen', 'true')
+    localStorage.setItem('pwa-install-prompt-time', Date.now().toString())
   }
 
   const handleDismiss = () => {
     setShowInstallPrompt(false)
     localStorage.setItem('pwa-install-prompt-seen', 'true')
+    localStorage.setItem('pwa-install-prompt-time', Date.now().toString())
   }
 
   // Don't show if already installed or no prompt available
@@ -93,7 +102,7 @@ export function InstallPrompt() {
       >
         <X className="h-4 w-4" />
       </button>
-      
+
       <div className="flex items-start gap-3">
         <div className="rounded-lg bg-accent/10 p-2">
           <Download className="h-5 w-5 text-accent" />

@@ -592,6 +592,7 @@ export default function GradientGeneratorPage() {
                   <div className="p-3 sm:p-4 md:p-6">
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                       {presets.map((preset, index) => (
+                        // biome-ignore lint/suspicious/noArrayIndexKey: Static preset array order never changes
                         <div key={`preset-${index}`} className="relative group">
                           <div
                             className="w-full h-16 rounded-lg border border-border-light dark:border-border-dark cursor-pointer transition-transform hover:scale-105"

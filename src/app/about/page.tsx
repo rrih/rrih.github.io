@@ -1,7 +1,11 @@
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
 import { EmailReveal } from '@/components/ui/email-reveal'
+import { aboutPageMetadata, createMetadata } from '@/config/metadata'
 import { siteConfig } from '@/config/site'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = createMetadata(aboutPageMetadata)
 
 export default function AboutPage() {
   return (

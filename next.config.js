@@ -16,7 +16,7 @@ const withPWA = require('next-pwa')({
     },
   ],
   buildExcludes: [/middleware-manifest.json$/],
-  disable: process.env.NODE_ENV === 'development',
+  disable: false,
 })
 
 /** @type {import('next').NextConfig} */

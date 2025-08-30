@@ -1,9 +1,13 @@
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
 import { ToolCard } from '@/components/ui/tool-card'
+import { createMetadata, homePageMetadata } from '@/config/metadata'
 import { siteConfig } from '@/config/site'
 import { tools } from '@/config/tools'
+import type { Metadata } from 'next'
 import Link from 'next/link'
+
+export const metadata: Metadata = createMetadata(homePageMetadata)
 
 export default function Home() {
   const featuredTools = tools.filter((tool) => tool.featured)
