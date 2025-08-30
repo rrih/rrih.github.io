@@ -25,7 +25,7 @@ export const homePageMetadata: PageMetadata = {
   ogTitle: `${siteConfig.name} - ${siteConfig.tagline}`,
   ogDescription:
     'Privacy-first web tools with instant URL sharing. Beautiful UI/UX design meets client-side processing.',
-  ogImage: '/og/homepage.png',
+  ogImage: '/og/home.png',
   keywords: siteConfig.keywords,
   url: siteConfig.url,
 }

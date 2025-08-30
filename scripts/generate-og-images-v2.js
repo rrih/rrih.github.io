@@ -190,26 +190,26 @@ async function generateModernOGImage(tool, outputPath) {
 
   // Icon text
   ctx.fillStyle = '#ffffff'
-  ctx.font = 'bold 48px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+  ctx.font = 'bold 64px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
   ctx.fillText(tool.icon, badgeX + badgeSize / 2, badgeY + badgeSize / 2)
 
   // Main title
   ctx.fillStyle = '#1a1a1a'
-  ctx.font = 'bold 72px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+  ctx.font = 'bold 96px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   ctx.textAlign = 'left'
   ctx.textBaseline = 'top'
   ctx.fillText(tool.title, badgeX + badgeSize + 40, badgeY)
 
   // Subtitle
   ctx.fillStyle = gradient.accent
-  ctx.font = '36px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-  ctx.fillText(tool.subtitle, badgeX + badgeSize + 40, badgeY + 80)
+  ctx.font = '48px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+  ctx.fillText(tool.subtitle, badgeX + badgeSize + 40, badgeY + 110)
 
   // Description
   ctx.fillStyle = '#6b7280'
-  ctx.font = '32px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+  ctx.font = '40px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   const descY = cardY + 260
 
   // Word wrap for description
@@ -225,7 +225,7 @@ async function generateModernOGImage(tool, outputPath) {
     if (metrics.width > maxWidth && line !== '') {
       ctx.fillText(line.trim(), cardX + 60, y)
       line = `${word} `
-      y += 45
+      y += 55
     } else {
       line = testLine
     }
@@ -234,7 +234,7 @@ async function generateModernOGImage(tool, outputPath) {
 
   // Brand footer
   ctx.fillStyle = '#9ca3af'
-  ctx.font = '28px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+  ctx.font = '36px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   ctx.textAlign = 'left'
   ctx.fillText('ToolForge', cardX + 60, cardY + cardHeight - 80)
 
@@ -253,7 +253,7 @@ async function generateModernOGImage(tool, outputPath) {
   ctx.fill()
 
   ctx.fillStyle = '#ffffff'
-  ctx.font = 'bold 20px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+  ctx.font = 'bold 24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
   ctx.textAlign = 'center'
   ctx.fillText(categoryText, pillX + pillWidth / 2, pillY + pillHeight / 2 + 7)
 
