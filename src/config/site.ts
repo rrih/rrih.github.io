@@ -1,23 +1,28 @@
-import { Ban, Gift, Shield, Zap } from 'lucide-react'
+import { Eye, Palette, Share2, Shield } from 'lucide-react'
 
 export const siteConfig = {
   name: 'ToolForge',
-  tagline: 'Forge Your Digital Tools',
+  tagline: 'Craft. Share. Create.',
   url: 'https://rrih.github.io',
   ogImage: 'https://github.com/rrih.png',
   description:
-    'Professional development tools forged for modern developers and designers. Fast, intuitive, and crafted for efficiency.',
+    'Privacy-first web tools with instant URL sharing. Client-side processing meets beautiful UI/UX design. No servers, no tracking, just pure efficiency.',
   keywords: [
-    'toolforge',
-    'development tools',
-    'web tools',
-    'developer utilities',
+    'privacy-first tools',
+    'client-side processing',
+    'URL sharing tools',
+    'web development tools',
+    'browser tools',
+    'real-time preview',
+    'beautiful UI tools',
     'json formatter',
     'base64 encoder',
-    'color picker',
-    'code tools',
-    'web utilities',
-    'forge tools',
+    'gradient generator',
+    'animation tools',
+    'password generator',
+    'image converter',
+    'modern web tools',
+    'developer utilities',
   ],
   author: {
     name: 'rrih',
@@ -30,24 +35,24 @@ export const siteConfig = {
   },
   features: [
     {
-      title: 'Fast & Efficient',
-      description: 'Lightning-fast tools powered by modern web technology',
-      icon: Zap,
-    },
-    {
-      title: 'Privacy Conscious',
-      description: 'Currently processes data locally with minimal data footprint',
+      title: 'Zero-Server Privacy',
+      description: 'All processing happens in your browser. Your data never leaves your device.',
       icon: Shield,
     },
     {
-      title: 'Clean Interface',
-      description: 'Distraction-free interface focused on productivity and user experience',
-      icon: Ban,
+      title: 'Instant URL Sharing',
+      description: 'Share your work instantly with auto-generated URLs. No accounts needed.',
+      icon: Share2,
     },
     {
-      title: 'Always Free',
-      description: 'All tools are completely free to use, forever',
-      icon: Gift,
+      title: 'Crafted UI/UX',
+      description: 'Every pixel perfected. Real-time previews with intuitive, beautiful design.',
+      icon: Palette,
+    },
+    {
+      title: 'Live Previews',
+      description: 'See changes instantly as you type. No refresh needed, pure efficiency.',
+      icon: Eye,
     },
   ],
 }

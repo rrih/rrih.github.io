@@ -44,7 +44,7 @@ export default function Home() {
           {/* Features Section */}
           <section className="mb-16 sm:mb-20">
             <h2 className="mb-8 sm:mb-12 text-center text-2xl sm:text-3xl font-semibold">
-              Why Choose Our Tools?
+              Built Different. Built Better.
             </h2>
             <div className="grid gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {siteConfig.features.map((feature) => (
@@ -98,9 +98,10 @@ export default function Home() {
 
           {/* CTA Section */}
           <section className="rounded-2xl bg-accent/5 p-12 text-center dark:bg-accent/10">
-            <h2 className="mb-4 text-3xl font-semibold">Ready to get started?</h2>
+            <h2 className="mb-4 text-3xl font-semibold">Start Creating. Start Sharing.</h2>
             <p className="mb-8 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-              Choose a tool above to start working more efficiently
+              Experience the next generation of web tools. Privacy-first, share-ready, beautifully
+              designed.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link

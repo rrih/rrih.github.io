@@ -174,6 +174,132 @@ export const tools: Tool[] = [
     status: 'available',
     featured: false,
   },
+  {
+    id: 'password-generator',
+    title: 'Password Generator',
+    description: 'Generate strong, secure passwords with customizable options',
+    icon: ({ className }) => (
+      <svg
+        className={className}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+        <circle cx="12" cy="16" r="1" />
+        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+      </svg>
+    ),
+    href: '/tools/password-generator',
+    category: 'utility',
+    status: 'available',
+    featured: true,
+  },
+  {
+    id: 'image-converter',
+    title: 'Image Converter',
+    description: 'Convert images to WebP, AVIF and other formats with compression',
+    icon: ({ className }) => (
+      <svg
+        className={className}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+        <circle cx="9" cy="9" r="2" />
+        <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+      </svg>
+    ),
+    href: '/tools/image-converter',
+    category: 'converter',
+    status: 'available',
+    featured: true,
+  },
+  {
+    id: 'gradient-generator',
+    title: 'CSS Gradient Generator',
+    description: 'Create beautiful CSS gradients with live preview and customization',
+    icon: ({ className }) => (
+      <svg
+        className={className}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <circle cx="12" cy="12" r="10" />
+        <path d="M8 12h8" />
+        <path d="M12 8v8" />
+        <path d="M16 8l-8 8" />
+        <path d="M8 8l8 8" />
+      </svg>
+    ),
+    href: '/tools/gradient-generator',
+    category: 'design',
+    status: 'available',
+    featured: false,
+  },
+  {
+    id: 'box-shadow-generator',
+    title: 'Box Shadow Generator',
+    description: 'Generate CSS box shadows with multiple layers and live preview',
+    icon: ({ className }) => (
+      <svg
+        className={className}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <rect width="18" height="18" x="3" y="3" rx="2" ry="2" />
+        <rect width="12" height="12" x="6" y="6" rx="1" ry="1" />
+      </svg>
+    ),
+    href: '/tools/box-shadow-generator',
+    category: 'design',
+    status: 'available',
+    featured: false,
+  },
+  {
+    id: 'animation-generator',
+    title: 'CSS Animation Generator',
+    description: 'Create smooth CSS animations with custom keyframes and timing',
+    icon: ({ className }) => (
+      <svg
+        className={className}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M12 2l3.09 6.26L22 9l-5.09 3.74L18 19l-6-4.5L6 19l1.09-6.26L2 9l6.91-.74L12 2z" />
+        <path d="M12 2v20" />
+        <path d="M2 9h20" />
+      </svg>
+    ),
+    href: '/tools/animation-generator',
+    category: 'design',
+    status: 'available',
+    featured: false,
+  },
 ]
 
 export const categories = [

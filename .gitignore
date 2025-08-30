@@ -52,3 +52,7 @@ scripts/ai-improvement-engine.js
 .claude/settings.local.json
 dev-check.sh
 DEVELOPMENT_HISTORY.md
+
+# service worker files
+public/sw.js
+public/workbox-*.js
