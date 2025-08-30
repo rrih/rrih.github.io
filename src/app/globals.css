@@ -16,10 +16,23 @@
 
   body {
     @apply bg-white text-foreground-light font-sans antialiased;
+    overflow-x: hidden; /* iPhone対応: 横スクロール防止 */
   }
 
   .dark body {
     @apply bg-background-dark text-foreground-dark;
+  }
+  
+  /* iPhone対応: 全体的な横幅制御 */
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  /* iPhone対応: コンテナの横幅制御 */
+  .container {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
 

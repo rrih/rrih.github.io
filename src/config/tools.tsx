@@ -112,7 +112,7 @@ export const tools: Tool[] = [
     ),
     href: '/tools/markdown-editor',
     category: 'utility',
-    status: 'coming_soon',
+    status: 'available',
     featured: false,
   },
   {
@@ -146,7 +146,7 @@ export const tools: Tool[] = [
     ),
     href: '/tools/qr-generator',
     category: 'utility',
-    status: 'coming_soon',
+    status: 'available',
     featured: false,
   },
   {
@@ -171,7 +171,7 @@ export const tools: Tool[] = [
     ),
     href: '/tools/uuid-generator',
     category: 'developer',
-    status: 'coming_soon',
+    status: 'available',
     featured: false,
   },
 ]

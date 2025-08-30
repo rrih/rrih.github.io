@@ -1,36 +1,37 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import { siteConfig } from "@/config/site";
+import type { Metadata } from 'next'
+import './globals.css'
+import { ToastProvider } from '@/components/ui/toast'
+import { siteConfig } from '@/config/site'
 
 export const metadata: Metadata = {
   title: siteConfig.name,
   description: siteConfig.description,
   keywords: [
-    "rrih",
-    "Web",
-    "TypeScript",
-    "Next.js",
-    "Cloudflare",
-    "JavaScript",
-    "Engineer",
-    "Developer",
-    "ToolForge",
-    "Development Tools",
-    "Web Tools",
-    "Developer Utilities",
-    "JSON Formatter",
-    "Base64 Encoder",
-    "Color Picker",
-    "Code Tools",
-    "Web Utilities",
-    "Forge Tools",
+    'rrih',
+    'Web',
+    'TypeScript',
+    'Next.js',
+    'Cloudflare',
+    'JavaScript',
+    'Engineer',
+    'Developer',
+    'ToolForge',
+    'Development Tools',
+    'Web Tools',
+    'Developer Utilities',
+    'JSON Formatter',
+    'Base64 Encoder',
+    'Color Picker',
+    'Code Tools',
+    'Web Utilities',
+    'Forge Tools',
   ],
   authors: [{ name: siteConfig.author.name }],
   creator: siteConfig.author.name,
   metadataBase: new URL(siteConfig.url),
   openGraph: {
-    type: "website",
-    locale: "ja_JP",
+    type: 'website',
+    locale: 'ja_JP',
     url: siteConfig.url,
     title: siteConfig.name,
     description: siteConfig.description,
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     ],
   },
   twitter: {
-    card: "summary",
+    card: 'summary',
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
@@ -58,12 +59,12 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="ja" className="light">
@@ -78,28 +79,28 @@ export default function RootLayout({
           // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
+              '@context': 'https://schema.org',
+              '@type': 'Person',
               name: siteConfig.author.name,
               url: siteConfig.url,
               sameAs: [siteConfig.author.github],
-              jobTitle: "Web Developer",
+              jobTitle: 'Web Developer',
               alumniOf: {
-                "@type": "CollegeOrUniversity",
-                name: "Tokyo Denki University",
+                '@type': 'CollegeOrUniversity',
+                name: 'Tokyo Denki University',
               },
               address: {
-                "@type": "PostalAddress",
-                addressRegion: "Tokyo",
-                addressCountry: "JP",
+                '@type': 'PostalAddress',
+                addressRegion: 'Tokyo',
+                addressCountry: 'JP',
               },
             }),
           }}
         />
       </head>
       <body className="min-h-screen bg-white text-foreground-light antialiased transition-colors duration-200 dark:bg-background-dark dark:text-foreground-dark">
-        {children}
+        <ToastProvider>{children}</ToastProvider>
       </body>
     </html>
-  );
+  )
 }
