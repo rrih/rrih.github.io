@@ -86,11 +86,11 @@ export default function RootLayout({
               jobTitle: "Web Developer",
               alumniOf: {
                 "@type": "CollegeOrUniversity",
-                name: "東京電機大学",
+                name: "Tokyo Denki University",
               },
               address: {
                 "@type": "PostalAddress",
-                addressRegion: "東京都",
+                addressRegion: "Tokyo",
                 addressCountry: "JP",
               },
             }),

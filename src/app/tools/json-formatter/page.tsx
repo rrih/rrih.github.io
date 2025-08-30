@@ -1,16 +1,24 @@
-'use client'
+"use client";
 
-import { Footer } from '@/components/layout/footer'
-import { Header } from '@/components/layout/header'
-import { AlertCircle, CheckCircle, Copy, FileText, Redo2, Undo2, Zap } from 'lucide-react'
-import { useState } from 'react'
-import { useHistory } from '@/hooks/useHistory'
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
+import { useHistory } from "@/hooks/useHistory";
+import {
+  AlertCircle,
+  CheckCircle,
+  Copy,
+  FileText,
+  Redo2,
+  Undo2,
+  Zap,
+} from "lucide-react";
+import { useState } from "react";
 
 interface JsonFormatterState {
-  input: string
-  output: string
-  error: string
-  indentSize: number
+  input: string;
+  output: string;
+  error: string;
+  indentSize: number;
 }
 
 export default function JsonFormatterPage() {
@@ -23,99 +31,99 @@ export default function JsonFormatterPage() {
     canRedo,
     clear: clearHistory,
   } = useHistory<JsonFormatterState>({
-    input: '',
-    output: '',
-    error: '',
+    input: "",
+    output: "",
+    error: "",
     indentSize: 2,
-  })
+  });
 
-  const [isProcessing, setIsProcessing] = useState(false)
-  const [copied, setCopied] = useState(false)
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [copied, setCopied] = useState(false);
 
-  const { input, output, error, indentSize } = state
+  const { input, output, error, indentSize } = state;
 
   const setInput = (newInput: string) => {
-    setHistoryState((prev) => ({ ...prev, input: newInput }))
-  }
+    setHistoryState((prev) => ({ ...prev, input: newInput }));
+  };
 
   const setOutput = (newOutput: string) => {
-    setHistoryState((prev) => ({ ...prev, output: newOutput }))
-  }
+    setHistoryState((prev) => ({ ...prev, output: newOutput }));
+  };
 
   const setError = (newError: string) => {
-    setHistoryState((prev) => ({ ...prev, error: newError }))
-  }
+    setHistoryState((prev) => ({ ...prev, error: newError }));
+  };
 
   const setIndentSize = (newSize: number) => {
-    setHistoryState((prev) => ({ ...prev, indentSize: newSize }))
-  }
+    setHistoryState((prev) => ({ ...prev, indentSize: newSize }));
+  };
 
   const formatJson = async () => {
-    if (!input.trim()) return
-    setIsProcessing(true)
-    await new Promise((resolve) => setTimeout(resolve, 200))
+    if (!input.trim()) return;
+    setIsProcessing(true);
+    await new Promise((resolve) => setTimeout(resolve, 200));
 
     try {
-      setError('')
-      const parsed = JSON.parse(input)
-      const formatted = JSON.stringify(parsed, null, indentSize)
-      setOutput(formatted)
+      setError("");
+      const parsed = JSON.parse(input);
+      const formatted = JSON.stringify(parsed, null, indentSize);
+      setOutput(formatted);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Invalid JSON format')
-      setOutput('')
+      setError(err instanceof Error ? err.message : "Invalid JSON format");
+      setOutput("");
     } finally {
-      setIsProcessing(false)
+      setIsProcessing(false);
     }
-  }
+  };
 
   const minifyJson = async () => {
-    if (!input.trim()) return
-    setIsProcessing(true)
-    await new Promise((resolve) => setTimeout(resolve, 200))
+    if (!input.trim()) return;
+    setIsProcessing(true);
+    await new Promise((resolve) => setTimeout(resolve, 200));
 
     try {
-      setError('')
-      const parsed = JSON.parse(input)
-      const minified = JSON.stringify(parsed)
-      setOutput(minified)
+      setError("");
+      const parsed = JSON.parse(input);
+      const minified = JSON.stringify(parsed);
+      setOutput(minified);
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Invalid JSON format')
-      setOutput('')
+      setError(err instanceof Error ? err.message : "Invalid JSON format");
+      setOutput("");
     } finally {
-      setIsProcessing(false)
+      setIsProcessing(false);
     }
-  }
+  };
 
   const validateJson = async () => {
-    if (!input.trim()) return
-    setIsProcessing(true)
-    await new Promise((resolve) => setTimeout(resolve, 200))
+    if (!input.trim()) return;
+    setIsProcessing(true);
+    await new Promise((resolve) => setTimeout(resolve, 200));
 
     try {
-      JSON.parse(input)
-      setError('')
-      setOutput('✅ Valid JSON')
+      JSON.parse(input);
+      setError("");
+      setOutput("✅ Valid JSON");
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Invalid JSON format')
-      setOutput('')
+      setError(err instanceof Error ? err.message : "Invalid JSON format");
+      setOutput("");
     } finally {
-      setIsProcessing(false)
+      setIsProcessing(false);
     }
-  }
+  };
 
   const clearAll = () => {
-    clearHistory()
-  }
+    clearHistory();
+  };
 
   const copyToClipboard = async (text: string) => {
     try {
-      await navigator.clipboard.writeText(text)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      console.error('Failed to copy to clipboard:', err)
+      console.error("Failed to copy to clipboard:", err);
     }
-  }
+  };
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
@@ -130,7 +138,8 @@ export default function JsonFormatterPage() {
                 JSON Formatter & Validator
               </h1>
               <p className="mb-4 xs:mb-6 text-sm xs:text-base sm:text-lg text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
-                Format, validate, and beautify JSON data with syntax highlighting.
+                Format, validate, and beautify JSON data with syntax
+                highlighting.
               </p>
             </div>
           </section>
@@ -145,21 +154,21 @@ export default function JsonFormatterPage() {
                     disabled={isProcessing}
                     className="rounded-lg bg-accent px-2 xs:px-3 sm:px-4 py-2 xs:py-3 min-h-[40px] xs:min-h-[44px] text-white font-medium text-xs xs:text-sm sm:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
                   >
-                    {isProcessing ? 'Processing...' : 'Format'}
+                    {isProcessing ? "Processing..." : "Format"}
                   </button>
                   <button
                     onClick={minifyJson}
                     disabled={isProcessing}
                     className="rounded-lg bg-accent px-2 xs:px-3 sm:px-4 py-2 xs:py-3 min-h-[40px] xs:min-h-[44px] text-white font-medium text-xs xs:text-sm sm:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
                   >
-                    {isProcessing ? 'Processing...' : 'Minify'}
+                    {isProcessing ? "Processing..." : "Minify"}
                   </button>
                   <button
                     onClick={validateJson}
                     disabled={isProcessing}
                     className="rounded-lg bg-accent px-2 xs:px-3 sm:px-4 py-2 xs:py-3 min-h-[40px] xs:min-h-[44px] text-white font-medium text-xs xs:text-sm sm:text-base transition-all hover:bg-accent-dark disabled:opacity-50 disabled:cursor-not-allowed hover:shadow-lg active:scale-95 flex-1 xs:flex-none"
                   >
-                    {isProcessing ? 'Processing...' : 'Validate'}
+                    {isProcessing ? "Processing..." : "Validate"}
                   </button>
                   <button
                     onClick={undo}
@@ -246,7 +255,7 @@ export default function JsonFormatterPage() {
                       className="flex items-center gap-1 xs:gap-2 bg-accent hover:bg-accent-dark text-white px-2 xs:px-4 py-2 rounded-lg text-xs xs:text-sm transition-all hover:shadow-lg active:scale-95"
                     >
                       <Copy className="w-3 h-3 xs:w-4 xs:h-4" />
-                      {copied ? 'Copied!' : 'Copy'}
+                      {copied ? "Copied!" : "Copy"}
                     </button>
                   )}
                 </div>
@@ -283,21 +292,21 @@ export default function JsonFormatterPage() {
               {[
                 {
                   icon: CheckCircle,
-                  title: 'JSON Validation',
+                  title: "JSON Validation",
                   description:
-                    'Instantly validate your JSON syntax and identify errors with detailed error messages.',
+                    "Instantly validate your JSON syntax and identify errors with detailed error messages.",
                 },
                 {
                   icon: FileText,
-                  title: 'Beautiful Formatting',
+                  title: "Beautiful Formatting",
                   description:
-                    'Format JSON with customizable indentation for better readability and debugging.',
+                    "Format JSON with customizable indentation for better readability and debugging.",
                 },
                 {
                   icon: Zap,
-                  title: 'Minify & Optimize',
+                  title: "Minify & Optimize",
                   description:
-                    'Compress JSON by removing whitespace to reduce file size for production use.',
+                    "Compress JSON by removing whitespace to reduce file size for production use.",
                 },
               ].map((feature, index) => (
                 <div
@@ -305,7 +314,7 @@ export default function JsonFormatterPage() {
                   className="rounded-lg border border-border-light bg-card-light p-6 text-center dark:border-border-dark dark:bg-card-dark transition-all hover:-translate-y-1 hover:shadow-lg"
                   style={{
                     animationDelay: `${index * 100}ms`,
-                    animation: 'fadeInUp 0.6s ease-out forwards',
+                    animation: "fadeInUp 0.6s ease-out forwards",
                   }}
                 >
                   <div className="mb-4 flex justify-center">
@@ -319,6 +328,326 @@ export default function JsonFormatterPage() {
                   </p>
                 </div>
               ))}
+            </div>
+          </section>
+
+          {/* Content Sections for AdSense */}
+          <section className="mb-8 sm:mb-12 md:mb-16 border-t border-border-light dark:border-border-dark pt-8 sm:pt-12">
+            {/* About This Tool */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                About JSON Formatter
+              </h2>
+              <div className="prose prose-slate dark:prose-invert max-w-none">
+                <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed mb-4">
+                  Our JSON Formatter is a powerful, free online tool designed to
+                  help developers, data analysts, and anyone working with JSON
+                  data. JSON (JavaScript Object Notation) is a lightweight
+                  data-interchange format that is easy for humans to read and
+                  write, and easy for machines to parse and generate. However,
+                  raw JSON data can often be difficult to read, especially when
+                  it's minified or contains nested structures.
+                </p>
+                <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed mb-4">
+                  This tool provides instant JSON formatting, validation, and
+                  minification capabilities right in your browser. All
+                  processing happens locally on your device, ensuring your data
+                  remains private and secure. Whether you're debugging API
+                  responses, configuring application settings, or working with
+                  complex data structures, our JSON formatter makes it easy to
+                  visualize and manipulate JSON data efficiently.
+                </p>
+                <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed">
+                  With support for custom indentation levels, real-time
+                  validation, and one-click copying, this tool is designed to
+                  streamline your workflow and save valuable development time.
+                  The intuitive interface works seamlessly on desktop and mobile
+                  devices, making it accessible whenever and wherever you need
+                  it.
+                </p>
+              </div>
+            </div>
+
+            {/* How to Use */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                How to Use
+              </h2>
+              <div className="space-y-4">
+                <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <h3 className="font-semibold text-lg mb-2">
+                    Step 1: Input Your JSON
+                  </h3>
+                  <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Paste your JSON data into the input field on the left. The
+                    tool accepts any valid JSON structure, including arrays,
+                    objects, and nested data.
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <h3 className="font-semibold text-lg mb-2">
+                    Step 2: Choose Your Action
+                  </h3>
+                  <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Click "Format" to beautify your JSON with proper
+                    indentation, "Minify" to compress it by removing whitespace,
+                    or "Validate" to check for syntax errors.
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <h3 className="font-semibold text-lg mb-2">
+                    Step 3: Customize Indentation
+                  </h3>
+                  <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Select your preferred indentation level (2 spaces, 4 spaces,
+                    or tabs) from the dropdown menu to match your coding
+                    standards.
+                  </p>
+                </div>
+                <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <h3 className="font-semibold text-lg mb-2">
+                    Step 4: Copy the Result
+                  </h3>
+                  <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Once formatted, click the "Copy" button to copy the
+                    processed JSON to your clipboard for use in your projects.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Features */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Key Features
+              </h2>
+              <div className="grid sm:grid-cols-2 gap-4">
+                <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
+                  <h3 className="font-semibold mb-2">Real-time Validation</h3>
+                  <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Instantly identifies syntax errors and provides detailed
+                    error messages to help you fix issues quickly.
+                  </p>
+                </div>
+                <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
+                  <h3 className="font-semibold mb-2">Custom Formatting</h3>
+                  <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Choose between 2 spaces, 4 spaces, or tabs for indentation
+                    to match your preferred coding style.
+                  </p>
+                </div>
+                <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
+                  <h3 className="font-semibold mb-2">Minification</h3>
+                  <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Remove all unnecessary whitespace to reduce file size for
+                    production deployments and API payloads.
+                  </p>
+                </div>
+                <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
+                  <h3 className="font-semibold mb-2">Undo/Redo Support</h3>
+                  <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Navigate through your editing history with full undo and
+                    redo functionality for easy corrections.
+                  </p>
+                </div>
+                <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
+                  <h3 className="font-semibold mb-2">Privacy-First</h3>
+                  <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    All processing happens in your browser. Your JSON data never
+                    leaves your device.
+                  </p>
+                </div>
+                <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
+                  <h3 className="font-semibold mb-2">Mobile Responsive</h3>
+                  <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Works perfectly on all devices, from smartphones to desktop
+                    computers, with an adaptive interface.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Examples */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Examples
+              </h2>
+              <div className="space-y-6">
+                <div>
+                  <h3 className="font-semibold mb-3">
+                    Example 1: API Response Formatting
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <p className="text-sm font-medium mb-2 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                        Input (Minified):
+                      </p>
+                      <pre className="bg-gray-50 dark:bg-gray-900 p-3 rounded-lg text-xs overflow-x-auto">
+                        {`{"user":{"id":1,"name":"John Doe","email":"john@example.com"},"posts":[{"id":101,"title":"First Post"},{"id":102,"title":"Second Post"}]}`}
+                      </pre>
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium mb-2 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                        Output (Formatted):
+                      </p>
+                      <pre className="bg-gray-50 dark:bg-gray-900 p-3 rounded-lg text-xs overflow-x-auto">
+                        {`{
+  "user": {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com"
+  },
+  "posts": [
+    {
+      "id": 101,
+      "title": "First Post"
+    },
+    {
+      "id": 102,
+      "title": "Second Post"
+    }
+  ]
+}`}
+                      </pre>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold mb-3">
+                    Example 2: Configuration File
+                  </h3>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    <div>
+                      <p className="text-sm font-medium mb-2 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                        Input (Unformatted):
+                      </p>
+                      <pre className="bg-gray-50 dark:bg-gray-900 p-3 rounded-lg text-xs overflow-x-auto">
+                        {`{"database":{"host":"localhost","port":5432,"credentials":{"username":"admin","password":"secret"}},"cache":{"enabled":true,"ttl":3600}}`}
+                      </pre>
+                    </div>
+                    <div>
+                      <p className="text-sm font-medium mb-2 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                        Output (Formatted with 4 spaces):
+                      </p>
+                      <pre className="bg-gray-50 dark:bg-gray-900 p-3 rounded-lg text-xs overflow-x-auto">
+                        {`{
+    "database": {
+        "host": "localhost",
+        "port": 5432,
+        "credentials": {
+            "username": "admin",
+            "password": "secret"
+        }
+    },
+    "cache": {
+        "enabled": true,
+        "ttl": 3600
+    }
+}`}
+                      </pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* FAQ */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Frequently Asked Questions
+              </h2>
+              <div className="space-y-4">
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    What is JSON?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    JSON (JavaScript Object Notation) is a lightweight,
+                    text-based data interchange format that's easy for humans to
+                    read and write, and easy for machines to parse and generate.
+                    It's commonly used for transmitting data between web servers
+                    and applications.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    Is my data secure?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Yes, absolutely. All JSON processing happens entirely in
+                    your browser using JavaScript. Your data is never sent to
+                    our servers or any third-party services. This ensures
+                    complete privacy and security for sensitive information.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    What's the maximum file size supported?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Since processing happens in your browser, the practical
+                    limit depends on your device's memory and browser
+                    capabilities. Most modern browsers can handle JSON files up
+                    to several megabytes without issues. For very large files
+                    (&gt;10MB), processing might be slower.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    Can I use this tool offline?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Once the page is loaded, the tool works entirely offline
+                    since all processing is done client-side. However, you need
+                    an internet connection to initially load the tool.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    What's the difference between formatting and minifying?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Formatting adds proper indentation and line breaks to make
+                    JSON human-readable, which is useful for debugging and
+                    development. Minifying removes all unnecessary whitespace to
+                    reduce file size, which is ideal for production use and data
+                    transmission.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    Can this tool fix invalid JSON?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    While the tool can't automatically fix invalid JSON, it
+                    provides detailed error messages that help you identify and
+                    correct syntax errors. Common issues include missing quotes,
+                    trailing commas, and unmatched brackets.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    Does it support JSONP or JSON5?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Currently, the tool supports standard JSON format as defined
+                    by RFC 7159. JSONP (JSON with Padding) and JSON5 (JSON with
+                    extended syntax) are not supported at this time.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    Can I integrate this tool into my workflow?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    While this is a web-based tool, you can bookmark it for
+                    quick access. For programmatic JSON processing, consider
+                    using command-line tools like jq or programming language
+                    libraries specific to your development environment.
+                  </p>
+                </details>
+              </div>
             </div>
           </section>
         </main>
@@ -339,5 +668,5 @@ export default function JsonFormatterPage() {
         }
       `}</style>
     </div>
-  )
+  );
 }

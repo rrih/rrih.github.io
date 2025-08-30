@@ -25,33 +25,37 @@ export function useHistory<T>(initialState: T, maxHistorySize = 50): UseHistoryR
 
   const isUpdatingRef = useRef(false)
 
-  const setState = useCallback((newState: T | ((prevState: T) => T)) => {
-    if (isUpdatingRef.current) return
+  const setState = useCallback(
+    (newState: T | ((prevState: T) => T)) => {
+      if (isUpdatingRef.current) return
 
-    setHistory((currentHistory) => {
-      const resolvedState = typeof newState === 'function' 
-        ? (newState as (prevState: T) => T)(currentHistory.present)
-        : newState
+      setHistory((currentHistory) => {
+        const resolvedState =
+          typeof newState === 'function'
+            ? (newState as (prevState: T) => T)(currentHistory.present)
+            : newState
 
-      // Skip if state hasn't changed
-      if (JSON.stringify(resolvedState) === JSON.stringify(currentHistory.present)) {
-        return currentHistory
-      }
+        // Skip if state hasn't changed
+        if (JSON.stringify(resolvedState) === JSON.stringify(currentHistory.present)) {
+          return currentHistory
+        }
 
-      const newPast = [...currentHistory.past, currentHistory.present]
-      
-      // Limit history size
-      if (newPast.length > maxHistorySize) {
-        newPast.shift()
-      }
+        const newPast = [...currentHistory.past, currentHistory.present]
 
-      return {
-        past: newPast,
-        present: resolvedState,
-        future: [],
-      }
-    })
-  }, [maxHistorySize])
+        // Limit history size
+        if (newPast.length > maxHistorySize) {
+          newPast.shift()
+        }
+
+        return {
+          past: newPast,
+          present: resolvedState,
+          future: [],
+        }
+      })
+    },
+    [maxHistorySize]
+  )
 
   const undo = useCallback(() => {
     setHistory((currentHistory) => {
@@ -97,11 +101,11 @@ export function useHistory<T>(initialState: T, maxHistorySize = 50): UseHistoryR
   // Keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if ((event.ctrlKey || event.metaKey)) {
+      if (event.ctrlKey || event.metaKey) {
         if (event.key === 'z' && !event.shiftKey) {
           event.preventDefault()
           undo()
-        } else if ((event.key === 'y') || (event.key === 'z' && event.shiftKey)) {
+        } else if (event.key === 'y' || (event.key === 'z' && event.shiftKey)) {
           event.preventDefault()
           redo()
         }
