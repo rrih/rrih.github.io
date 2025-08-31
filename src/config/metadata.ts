@@ -37,9 +37,33 @@ export const aboutPageMetadata: PageMetadata = {
   ogTitle: `About ${siteConfig.name}`,
   ogDescription:
     'Discover the story behind privacy-first web tools designed for developers and creators.',
-  ogImage: '/og/about.png',
+  ogImage: '/og/home.png',
   keywords: ['about', 'privacy-first tools', 'developer tools', 'web tools'],
   url: `${siteConfig.url}/about`,
+}
+
+// Generate OGP metadata for Privacy page
+export const privacyPageMetadata: PageMetadata = {
+  title: `Privacy Policy - ${siteConfig.name}`,
+  description: `Privacy policy for ${siteConfig.name}. Learn how we collect, use, and protect your data when using our privacy-first web tools.`,
+  ogTitle: `Privacy Policy - ${siteConfig.name}`,
+  ogDescription:
+    'Our commitment to protecting your privacy while providing high-quality web tools with client-side processing.',
+  ogImage: '/og/home.png',
+  keywords: ['privacy policy', 'data protection', 'privacy-first tools', 'user privacy'],
+  url: `${siteConfig.url}/privacy`,
+}
+
+// Generate OGP metadata for Terms page
+export const termsPageMetadata: PageMetadata = {
+  title: `Terms of Service - ${siteConfig.name}`,
+  description: `Terms of service for ${siteConfig.name}. Understanding the terms and conditions for using our privacy-first web tools.`,
+  ogTitle: `Terms of Service - ${siteConfig.name}`,
+  ogDescription:
+    'Terms and conditions for using our privacy-first web tools and understanding your rights and responsibilities.',
+  ogImage: '/og/home.png',
+  keywords: ['terms of service', 'terms and conditions', 'user agreement', 'privacy-first tools'],
+  url: `${siteConfig.url}/terms`,
 }
 
 // Generate OGP metadata for tool pages

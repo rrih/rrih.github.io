@@ -1,11 +1,11 @@
-import { generateToolMetadata } from "@/lib/metadata";
+import { generateToolMetadata } from '@/lib/metadata'
 
-export const metadata = generateToolMetadata("gradient-generator");
+export const metadata = generateToolMetadata('gradient-generator')
 
 export default function GradientGeneratorLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
-  return children;
+  return children
 }

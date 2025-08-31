@@ -1,29 +1,26 @@
-"use client";
+'use client'
 
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react'
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
   useEffect(() => {
     // Get theme from localStorage or system preference
-    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
-    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-      .matches
-      ? "dark"
-      : "light";
-    const initialTheme = savedTheme || systemTheme;
+    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null
+    const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    const initialTheme = savedTheme || systemTheme
 
-    setTheme(initialTheme);
-    document.documentElement.className = initialTheme;
-  }, []);
+    setTheme(initialTheme)
+    document.documentElement.className = initialTheme
+  }, [])
 
   const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    document.documentElement.className = newTheme;
-    localStorage.setItem("theme", newTheme);
-  };
+    const newTheme = theme === 'light' ? 'dark' : 'light'
+    setTheme(newTheme)
+    document.documentElement.className = newTheme
+    localStorage.setItem('theme', newTheme)
+  }
 
   return (
     <button
@@ -31,7 +28,7 @@ export function ThemeToggle() {
       className="flex items-center justify-center rounded-md p-2 text-foreground-light-secondary transition-colors hover:text-accent dark:text-foreground-dark-secondary dark:hover:text-accent-light"
       aria-label="change theme"
     >
-      {theme === "light" ? (
+      {theme === 'light' ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="20"
@@ -69,5 +66,5 @@ export function ThemeToggle() {
         </svg>
       )}
     </button>
-  );
+  )
 }

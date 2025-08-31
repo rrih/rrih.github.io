@@ -1,13 +1,10 @@
-import React from "react";
+import React from 'react'
 
 // Icon mapping for OGP image generation (simplified SVG components)
 export const OGPIcons = {
-  "json-formatter": (
+  'json-formatter': (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-      <path
-        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-        fill="white"
-      />
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="white" />
       <path d="M14,2 L14,8 L20,8" fill="white" />
       <path d="M12 18v-6l3 3" stroke="#0066cc" strokeWidth="2" fill="none" />
       <path d="M9 9v6l-3-3" stroke="#0066cc" strokeWidth="2" fill="none" />
@@ -22,31 +19,15 @@ export const OGPIcons = {
         strokeWidth="2"
         fill="none"
       />
-      <polyline
-        points="7.5,4.21 12,6.81 16.5,4.21"
-        stroke="white"
-        strokeWidth="2"
-      />
-      <polyline
-        points="7.5,19.79 7.5,14.6 3,12"
-        stroke="white"
-        strokeWidth="2"
-      />
-      <polyline
-        points="21,12 16.5,14.6 16.5,19.79"
-        stroke="white"
-        strokeWidth="2"
-      />
-      <polyline
-        points="3.27,6.96 12,12.01 20.73,6.96"
-        stroke="white"
-        strokeWidth="2"
-      />
+      <polyline points="7.5,4.21 12,6.81 16.5,4.21" stroke="white" strokeWidth="2" />
+      <polyline points="7.5,19.79 7.5,14.6 3,12" stroke="white" strokeWidth="2" />
+      <polyline points="21,12 16.5,14.6 16.5,19.79" stroke="white" strokeWidth="2" />
+      <polyline points="3.27,6.96 12,12.01 20.73,6.96" stroke="white" strokeWidth="2" />
       <line x1="12" y1="22.08" x2="12" y2="12" stroke="white" strokeWidth="2" />
     </svg>
   ),
 
-  "color-picker": (
+  'color-picker': (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
       <circle cx="13.5" cy="6.5" r=".5" fill="white" />
       <circle cx="17.5" cy="10.5" r=".5" fill="white" />
@@ -59,108 +40,56 @@ export const OGPIcons = {
     </svg>
   ),
 
-  "markdown-editor": (
+  'markdown-editor': (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-      <path
-        d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-        fill="white"
-      />
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="white" />
       <path d="M14,2 L14,8 L20,8" fill="white" />
       <path d="M9 13v-2l2 2 4-4" stroke="#0066cc" strokeWidth="2" fill="none" />
     </svg>
   ),
 
-  "qr-generator": (
+  'qr-generator': (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
       <rect width="5" height="5" x="3" y="3" rx="1" fill="white" />
       <rect width="5" height="5" x="16" y="3" rx="1" fill="white" />
       <rect width="5" height="5" x="3" y="16" rx="1" fill="white" />
-      <path
-        d="M21 16h-3a2 2 0 0 0-2 2v3"
-        stroke="white"
-        strokeWidth="2"
-        fill="none"
-      />
-      <path
-        d="M21 21v.01"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-      <path
-        d="M12 7v3a2 2 0 0 1-2 2H7"
-        stroke="white"
-        strokeWidth="2"
-        fill="none"
-      />
-      <path
-        d="M3 12h.01"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-      <path
-        d="M12 3h.01"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
-      <path
-        d="M12 16v.01"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
+      <path d="M21 16h-3a2 2 0 0 0-2 2v3" stroke="white" strokeWidth="2" fill="none" />
+      <path d="M21 21v.01" stroke="white" strokeWidth="2" strokeLinecap="round" />
+      <path d="M12 7v3a2 2 0 0 1-2 2H7" stroke="white" strokeWidth="2" fill="none" />
+      <path d="M3 12h.01" stroke="white" strokeWidth="2" strokeLinecap="round" />
+      <path d="M12 3h.01" stroke="white" strokeWidth="2" strokeLinecap="round" />
+      <path d="M12 16v.01" stroke="white" strokeWidth="2" strokeLinecap="round" />
       <path d="M16 12h1" stroke="white" strokeWidth="2" />
-      <path
-        d="M21 12v.01"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinecap="round"
-      />
+      <path d="M21 12v.01" stroke="white" strokeWidth="2" strokeLinecap="round" />
       <path d="M12 21v-1" stroke="white" strokeWidth="2" />
     </svg>
   ),
 
-  "uuid-generator": (
+  'uuid-generator': (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
       <path d="M6 3h12l4 6-10 13L2 9l4-6z" fill="white" />
-      <path
-        d="M11 3 8 9l4 13 4-13-3-6"
-        stroke="#0066cc"
-        strokeWidth="2"
-        fill="none"
-      />
+      <path d="M11 3 8 9l4 13 4-13-3-6" stroke="#0066cc" strokeWidth="2" fill="none" />
       <path d="M2 9h20" stroke="#0066cc" strokeWidth="2" />
     </svg>
   ),
 
-  "password-generator": (
+  'password-generator': (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
       <rect width="18" height="11" x="3" y="11" rx="2" ry="2" fill="white" />
       <circle cx="12" cy="16" r="1" fill="#0066cc" />
-      <path
-        d="M7 11V7a5 5 0 0 1 10 0v4"
-        stroke="white"
-        strokeWidth="2"
-        fill="none"
-      />
+      <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="white" strokeWidth="2" fill="none" />
     </svg>
   ),
 
-  "image-converter": (
+  'image-converter': (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
       <rect width="18" height="18" x="3" y="3" rx="2" ry="2" fill="white" />
       <circle cx="9" cy="9" r="2" fill="#0066cc" />
-      <path
-        d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"
-        stroke="#0066cc"
-        strokeWidth="2"
-      />
+      <path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21" stroke="#0066cc" strokeWidth="2" />
     </svg>
   ),
 
-  "gradient-generator": (
+  'gradient-generator': (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
       <circle cx="12" cy="12" r="10" fill="white" />
       <path d="M8 12h8" stroke="#0066cc" strokeWidth="2" />
@@ -170,7 +99,7 @@ export const OGPIcons = {
     </svg>
   ),
 
-  "box-shadow-generator": (
+  'box-shadow-generator': (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
       <rect width="18" height="18" x="3" y="3" rx="2" ry="2" fill="white" />
       <rect
@@ -187,7 +116,7 @@ export const OGPIcons = {
     </svg>
   ),
 
-  "animation-generator": (
+  'animation-generator': (
     <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
       <path
         d="M12 2l3.09 6.26L22 9l-5.09 3.74L18 19l-6-4.5L6 19l1.09-6.26L2 9l6.91-.74L12 2z"
@@ -197,7 +126,7 @@ export const OGPIcons = {
       <path d="M2 9h20" stroke="#0066cc" strokeWidth="2" />
     </svg>
   ),
-};
+}
 
 // Category icons for OGP
 export const CategoryIcons = {
@@ -311,4 +240,4 @@ export const CategoryIcons = {
       />
     </svg>
   ),
-};
+}

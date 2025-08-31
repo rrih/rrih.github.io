@@ -1,11 +1,11 @@
-import { generateToolMetadata } from "@/lib/metadata";
+import { generateToolMetadata } from '@/lib/metadata'
 
-export const metadata = generateToolMetadata("animation-generator");
+export const metadata = generateToolMetadata('animation-generator')
 
 export default function AnimationGeneratorLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
-  return children;
+  return children
 }

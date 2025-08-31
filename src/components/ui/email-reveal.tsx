@@ -1,17 +1,17 @@
-"use client";
+'use client'
 
-import { useState } from "react";
+import { useState } from 'react'
 
 interface EmailRevealProps {
-  className?: string;
+  className?: string
 }
 
 export function EmailReveal({ className }: EmailRevealProps) {
-  const [isRevealed, setIsRevealed] = useState(false);
+  const [isRevealed, setIsRevealed] = useState(false)
 
   const handleReveal = () => {
-    setIsRevealed(true);
-  };
+    setIsRevealed(true)
+  }
 
   return (
     <div
@@ -44,9 +44,9 @@ export function EmailReveal({ className }: EmailRevealProps) {
             origabird0911@gmail.com
           </a>
         ) : (
-          "email (click to reveal)"
+          'email (click to reveal)'
         )}
       </div>
     </div>
-  );
+  )
 }

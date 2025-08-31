@@ -1,7 +1,11 @@
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { privacyPageMetadata, createMetadata } from "@/config/metadata";
 import { siteConfig } from "@/config/site";
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = createMetadata(privacyPageMetadata);
 
 export default function PrivacyPage() {
   return (

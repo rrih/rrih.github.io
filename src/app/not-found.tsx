@@ -1,9 +1,9 @@
-"use client";
+'use client'
 
-import { Footer } from "@/components/layout/footer";
-import { Header } from "@/components/layout/header";
-import { ArrowLeft, Home } from "lucide-react";
-import Link from "next/link";
+import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { ArrowLeft, Home } from 'lucide-react'
+import Link from 'next/link'
 
 export default function NotFound() {
   return (
@@ -60,9 +60,7 @@ export default function NotFound() {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded bg-accent-lighter flex items-center justify-center">
-                    <span className="text-accent text-sm font-semibold">
-                      {}
-                    </span>
+                    <span className="text-accent text-sm font-semibold">{}</span>
                   </div>
                   <span className="text-sm font-medium text-foreground-light dark:text-foreground-dark group-hover:text-accent transition-colors">
                     JSON Formatter
@@ -75,9 +73,7 @@ export default function NotFound() {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded bg-accent-lighter flex items-center justify-center">
-                    <span className="text-accent text-sm font-semibold">
-                      B64
-                    </span>
+                    <span className="text-accent text-sm font-semibold">B64</span>
                   </div>
                   <span className="text-sm font-medium text-foreground-light dark:text-foreground-dark group-hover:text-accent transition-colors">
                     Base64 Tool
@@ -121,5 +117,5 @@ export default function NotFound() {
         }
       `}</style>
     </div>
-  );
+  )
 }

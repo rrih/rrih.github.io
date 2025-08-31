@@ -1,17 +1,17 @@
-import { Footer } from "@/components/layout/footer";
-import { Header } from "@/components/layout/header";
-import { ToolCard } from "@/components/ui/tool-card";
-import { createMetadata, homePageMetadata } from "@/config/metadata";
-import { siteConfig } from "@/config/site";
-import { tools } from "@/config/tools";
-import type { Metadata } from "next";
-import Link from "next/link";
+import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { ToolCard } from '@/components/ui/tool-card'
+import { createMetadata, homePageMetadata } from '@/config/metadata'
+import { siteConfig } from '@/config/site'
+import { tools } from '@/config/tools'
+import type { Metadata } from 'next'
+import Link from 'next/link'
 
-export const metadata: Metadata = createMetadata(homePageMetadata);
+export const metadata: Metadata = createMetadata(homePageMetadata)
 
 export default function Home() {
-  const featuredTools = tools.filter((tool) => tool.featured);
-  const allTools = tools.filter((tool) => !tool.featured);
+  const featuredTools = tools.filter((tool) => tool.featured)
+  const allTools = tools.filter((tool) => !tool.featured)
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
@@ -59,9 +59,7 @@ export default function Home() {
                   <div className="mb-4 flex justify-center">
                     <feature.icon className="h-10 w-10 text-accent" />
                   </div>
-                  <h3 className="mb-2 text-lg font-semibold">
-                    {feature.title}
-                  </h3>
+                  <h3 className="mb-2 text-lg font-semibold">{feature.title}</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
                     {feature.description}
                   </p>
@@ -104,12 +102,10 @@ export default function Home() {
 
           {/* CTA Section */}
           <section className="rounded-2xl bg-accent/5 p-12 text-center dark:bg-accent/10">
-            <h2 className="mb-4 text-3xl font-semibold">
-              Start Creating. Start Sharing.
-            </h2>
+            <h2 className="mb-4 text-3xl font-semibold">Start Creating. Start Sharing.</h2>
             <p className="mb-8 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-              Experience the next generation of web tools. Privacy-first,
-              share-ready, beautifully designed.
+              Experience the next generation of web tools. Privacy-first, share-ready, beautifully
+              designed.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
@@ -133,5 +129,5 @@ export default function Home() {
         <Footer />
       </div>
     </div>
-  );
+  )
 }

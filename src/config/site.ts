@@ -4,7 +4,7 @@ export const siteConfig = {
   name: 'ToolForge',
   tagline: 'Craft. Share. Create.',
   url: 'https://rrih.github.io',
-  ogImage: 'https://github.com/rrih.png',
+  ogImage: '/og/home.png',
   description:
     'Privacy-first web tools with instant URL sharing. Client-side processing meets beautiful UI/UX design. No servers, no tracking, just pure efficiency.',
   keywords: [
