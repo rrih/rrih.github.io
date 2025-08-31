@@ -76,7 +76,7 @@ export default function MarkdownEditorPage() {
 
   // Client-side only state restoration
   useEffect(() => {
-    if (hasInitialized.current) return
+    if (hasInitialized.current || typeof window === 'undefined') return
     hasInitialized.current = true
 
     const sharedState = getInitialStateFromUrl()
@@ -89,7 +89,7 @@ export default function MarkdownEditorPage() {
     if (savedState) {
       setHistoryState(savedState)
     }
-  })
+  }, [getInitialStateFromUrl, setHistoryState])
 
   // Auto-save to localStorage whenever state changes
   useEffect(() => {
@@ -314,7 +314,7 @@ export default function MarkdownEditorPage() {
                       Write your Markdown here
                     </p>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="md:flex md:gap-2">
                     <button
                       onClick={() => copyToClipboard(input)}
                       className="flex items-center gap-1 xs:gap-2 bg-accent hover:bg-accent-dark text-white px-2 xs:px-3 py-1.5 rounded-lg text-xs xs:text-sm transition-all"
@@ -633,7 +633,10 @@ code block
         <Footer />
       </div>
 
-      <style jsx>{`
+      <div
+        /* biome-ignore lint/security/noDangerouslySetInnerHtml: Required for animation keyframes */
+        dangerouslySetInnerHTML={{
+          __html: `<style>
         @keyframes fadeInUp {
           from {
             opacity: 0;
@@ -644,7 +647,9 @@ code block
             transform: translateY(0);
           }
         }
-      `}</style>
+      </style>`,
+        }}
+      />
     </div>
   )
 }
