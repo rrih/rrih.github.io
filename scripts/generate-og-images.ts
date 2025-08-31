@@ -163,7 +163,7 @@ async function generateSimpleOGImage(tool: Tool, outputPath: string): Promise<vo
 
   // LARGE TITLE - Readable but fits nicely
   ctx.fillStyle = '#1a1a1a'
-  ctx.font = 'bold 190px Arial'
+  ctx.font = 'bold 120px Arial'
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
 
@@ -172,17 +172,17 @@ async function generateSimpleOGImage(tool: Tool, outputPath: string): Promise<vo
   if (titleWords.length > 1) {
     // Multi-word title - check length and adjust font size
     const fullTitle = tool.title
-    let fontSize = 190
-    let lineSpacing = 85
+    let fontSize = 120
+    let lineSpacing = 60
 
     // Reduce size for very long titles
     if (fullTitle.length > 15) {
-      fontSize = 150
-      lineSpacing = 70
+      fontSize = 120
+      lineSpacing = 50
       ctx.font = `bold ${fontSize}px Arial`
     } else if (fullTitle.length > 12) {
-      fontSize = 170
-      lineSpacing = 80
+      fontSize = 120
+      lineSpacing = 50
       ctx.font = `bold ${fontSize}px Arial`
     }
 
