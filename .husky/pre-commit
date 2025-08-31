@@ -31,4 +31,8 @@ if ! bun run build; then
   exit 1
 fi
 
+# Add any files generated during build (e.g., sw.js)
+echo "📦 Adding build-generated files to commit..."
+git add .
+
 echo "✅ All pre-commit checks passed! Proceeding with commit..."
