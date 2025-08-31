@@ -1,7 +1,7 @@
 import { Eye, Palette, Share2, Shield } from 'lucide-react'
 
 export const siteConfig = {
-  name: 'ToolForge',
+  name: 'Poodware',
   tagline: 'Craft. Share. Create.',
   url: 'https://rrih.github.io',
   ogImage: '/og/home.png',

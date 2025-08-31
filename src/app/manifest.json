@@ -1,6 +1,6 @@
 {
-  "name": "ToolForge - Professional Web Tools",
-  "short_name": "ToolForge",
+  "name": "Poodware - Professional Web Tools",
+  "short_name": "Poodware",
   "description": "Privacy-first web tools with instant URL sharing. Client-side processing meets beautiful UI/UX design.",
   "start_url": "/",
   "display": "standalone",

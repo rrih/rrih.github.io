@@ -108,7 +108,7 @@ export function InstallPrompt() {
           <Download className="h-5 w-5 text-accent" />
         </div>
         <div className="flex-1">
-          <h3 className="font-semibold text-sm mb-1">Install ToolForge</h3>
+          <h3 className="font-semibold text-sm mb-1">Install Poodware</h3>
           <p className="text-xs text-foreground-light-secondary dark:text-foreground-dark-secondary mb-3">
             Install as an app for faster access and offline support
           </p>

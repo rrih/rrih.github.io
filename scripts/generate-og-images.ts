@@ -204,7 +204,7 @@ async function generateSimpleOGImage(tool: Tool, outputPath: string): Promise<vo
   ctx.fillStyle = '#888'
   ctx.font = '36px Arial'
   ctx.textAlign = 'left'
-  ctx.fillText('ToolForge', 100, 130)
+  ctx.fillText('Poodware', 100, 130)
 
   // Save image
   const buffer = canvas.toBuffer('image/png')
@@ -235,7 +235,7 @@ async function generateHomeOGImage(outputPath: string): Promise<void> {
   ctx.font = 'bold 200px Arial'
   ctx.textAlign = 'center'
   ctx.textBaseline = 'middle'
-  ctx.fillText('ToolForge', width / 2, height / 2 - 60)
+  ctx.fillText('Poodware', width / 2, height / 2 - 60)
 
   // MEDIUM Tagline
   ctx.fillStyle = '#8b5cf6'
