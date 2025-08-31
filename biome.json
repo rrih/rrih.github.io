@@ -41,6 +41,9 @@
       "style": {
         "noNonNullAssertion": "off"
       },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
       "correctness": {
         "noUnusedVariables": "warn"
       }

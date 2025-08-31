@@ -242,9 +242,8 @@ export default function QRGenerator() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-6 py-4">
-        <Header />
-
+      <Header />
+      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 pt-16 pb-8">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-foreground-light dark:text-foreground-dark mb-4">
             QR Code Generator

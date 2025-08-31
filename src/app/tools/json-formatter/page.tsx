@@ -228,9 +228,8 @@ export default function JsonFormatterPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-3 xs:py-4 py-5">
-        <Header />
-
+      <Header />
+      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 pt-16 pb-8">
         <main>
           {/* Hero Section */}
           <section className="mb-6 xs:mb-8 sm:mb-12 md:mb-16 text-center">

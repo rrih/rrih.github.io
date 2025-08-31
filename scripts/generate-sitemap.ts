@@ -4,6 +4,7 @@ import { writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { siteConfig } from '../src/config/site'
 import { tools } from '../src/config/tools'
+import { getBlogSitemapEntries } from '../src/lib/blog'
 
 interface SitemapEntry {
   url: string
@@ -12,7 +13,7 @@ interface SitemapEntry {
   priority: number
 }
 
-const generateSitemap = () => {
+const generateSitemap = async () => {
   const baseUrl = siteConfig.url
   const currentDate = new Date().toISOString().split('T')[0]
 
@@ -24,6 +25,13 @@ const generateSitemap = () => {
       lastmod: currentDate,
       changefreq: 'weekly',
       priority: 1.0,
+    },
+    // Blog main page
+    {
+      url: `${baseUrl}/blog`,
+      lastmod: currentDate,
+      changefreq: 'weekly',
+      priority: 0.9,
     },
     // About, Privacy, Terms pages
     {
@@ -58,6 +66,21 @@ const generateSitemap = () => {
     }
   }
 
+  // Add blog posts
+  try {
+    const blogEntries = await getBlogSitemapEntries()
+    pages.push(
+      ...blogEntries.map((entry) => ({
+        url: entry.url,
+        lastmod: entry.lastModified,
+        changefreq: entry.changeFrequency,
+        priority: entry.priority,
+      }))
+    )
+  } catch (error) {
+    console.warn('Could not load blog entries for sitemap:', error)
+  }
+
   // Generate XML content
   const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -88,7 +111,7 @@ ${pages
 
 // Run the generator
 try {
-  generateSitemap()
+  await generateSitemap()
 } catch (error) {
   console.error('❌ Error generating sitemap:', error)
   process.exit(1)
