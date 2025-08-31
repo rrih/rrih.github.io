@@ -1,7 +1,7 @@
 interface ToolLayoutProps {
-  title: string
-  description: string
-  children: React.ReactNode
+  title: string;
+  description: string;
+  children: React.ReactNode;
 }
 
 export function ToolLayout({ title, description, children }: ToolLayoutProps) {
@@ -19,5 +19,5 @@ export function ToolLayout({ title, description, children }: ToolLayoutProps) {
         {children}
       </div>
     </div>
-  )
+  );
 }

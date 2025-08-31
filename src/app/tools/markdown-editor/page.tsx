@@ -1,11 +1,11 @@
-'use client'
+"use client";
 
-import { Footer } from '@/components/layout/footer'
-import { Header } from '@/components/layout/header'
-import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
-import { useHistory } from '@/hooks/useHistory'
-import { localStorageManager } from '@/lib/localStorage'
-import { useUrlSharing } from '@/lib/urlSharing'
+import { Footer } from "@/components/layout/footer";
+import { Header } from "@/components/layout/header";
+import { useErrorToast, useSuccessToast } from "@/components/ui/toast";
+import { useHistory } from "@/hooks/useHistory";
+import { localStorageManager } from "@/lib/localStorage";
+import { useUrlSharing } from "@/lib/urlSharing";
 import {
   Bold,
   Code,
@@ -23,21 +23,21 @@ import {
   Share2,
   Trash2,
   Undo2,
-} from 'lucide-react'
-import { useCallback, useEffect, useRef, useState } from 'react'
+} from "lucide-react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 interface MarkdownState {
-  input: string
-  preview: string
+  input: string;
+  preview: string;
 }
 
 export default function MarkdownEditorPage() {
-  const TOOL_NAME = 'markdown-editor'
+  const TOOL_NAME = "markdown-editor";
 
   const defaultState: MarkdownState = {
-    input: '',
-    preview: '',
-  }
+    input: "",
+    preview: "",
+  };
 
   const {
     state,
@@ -47,83 +47,92 @@ export default function MarkdownEditorPage() {
     canUndo,
     canRedo,
     clear: clearHistory,
-  } = useHistory<MarkdownState>(defaultState)
+  } = useHistory<MarkdownState>(defaultState);
 
-  const [isPreviewMode, setIsPreviewMode] = useState(false)
-  const [copied, setCopied] = useState(false)
-  const [isSharing, setIsSharing] = useState(false)
+  const [isPreviewMode, setIsPreviewMode] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const [isSharing, setIsSharing] = useState(false);
 
-  const successToast = useSuccessToast()
-  const errorToast = useErrorToast()
+  const successToast = useSuccessToast();
+  const errorToast = useErrorToast();
 
   const { generateShareUrl, shareInfo, getInitialStateFromUrl } =
-    useUrlSharing<MarkdownState>(TOOL_NAME)
+    useUrlSharing<MarkdownState>(TOOL_NAME);
 
-  const hasInitialized = useRef(false)
+  const hasInitialized = useRef(false);
 
-  const { input, preview } = state
+  const { input, preview } = state;
 
   const setInput = (newInput: string) => {
-    setHistoryState((prev) => ({ ...prev, input: newInput }))
-  }
+    setHistoryState((prev) => ({ ...prev, input: newInput }));
+  };
 
   const setPreview = useCallback(
     (newPreview: string) => {
-      setHistoryState((prev) => ({ ...prev, preview: newPreview }))
+      setHistoryState((prev) => ({ ...prev, preview: newPreview }));
     },
     [setHistoryState]
-  )
+  );
 
   // Client-side only state restoration
   useEffect(() => {
-    if (hasInitialized.current) return
-    hasInitialized.current = true
+    if (hasInitialized.current) return;
+    hasInitialized.current = true;
 
-    const sharedState = getInitialStateFromUrl()
+    const sharedState = getInitialStateFromUrl();
     if (sharedState) {
-      setHistoryState(sharedState)
-      return
+      setHistoryState(sharedState);
+      return;
     }
 
-    const savedState = localStorageManager.load<MarkdownState>(TOOL_NAME)
+    const savedState = localStorageManager.load<MarkdownState>(TOOL_NAME);
     if (savedState) {
-      setHistoryState(savedState)
+      setHistoryState(savedState);
     }
-  })
+  });
 
   // Auto-save to localStorage whenever state changes
   useEffect(() => {
     if (state.input || state.preview) {
-      localStorageManager.save(TOOL_NAME, state)
+      localStorageManager.save(TOOL_NAME, state);
     }
-  }, [state])
+  }, [state]);
 
   // Convert Markdown to HTML
   useEffect(() => {
     const convertMarkdown = () => {
       const html = input
         // Headers
-        .replace(/^### (.*$)/gim, '<h3 class="text-xl font-semibold mb-2">$1</h3>')
-        .replace(/^## (.*$)/gim, '<h2 class="text-2xl font-semibold mb-3">$1</h2>')
+        .replace(
+          /^### (.*$)/gim,
+          '<h3 class="text-xl font-semibold mb-2">$1</h3>'
+        )
+        .replace(
+          /^## (.*$)/gim,
+          '<h2 class="text-2xl font-semibold mb-3">$1</h2>'
+        )
         .replace(/^# (.*$)/gim, '<h1 class="text-3xl font-bold mb-4">$1</h1>')
         // Bold
-        .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
         // Italic
-        .replace(/\*(.+?)\*/g, '<em>$1</em>')
+        .replace(/\*(.+?)\*/g, "<em>$1</em>")
         // Links
         .replace(
           /\[([^\]]+)\]\(([^)]+)\)/g,
           '<a href="$2" class="text-accent hover:underline">$1</a>'
         )
         // Line breaks
-        .replace(/\n/g, '<br />')
+        .replace(/\n/g, "<br />")
         // Code blocks
         .replace(
           /```([^`]+)```/g,
           '<pre class="bg-gray-100 dark:bg-gray-800 p-3 rounded-lg overflow-x-auto"><code>$1</code></pre>'
         )
         // Inline code
-        .replace(/`([^`]+)`/g, '<code class="bg-gray-100 dark:bg-gray-800 px-1 rounded">$1</code>')
+        .replace(
+          /`([^`]+)`/g,
+          '<code class="bg-gray-100 dark:bg-gray-800 px-1 rounded">$1</code>'
+        )
         // Lists
         .replace(/^\* (.+)$/gim, '<li class="ml-4">• $1</li>')
         .replace(/^\d+\. (.+)$/gim, '<li class="ml-4">$1</li>')
@@ -131,109 +140,119 @@ export default function MarkdownEditorPage() {
         .replace(
           /^> (.+)$/gim,
           '<blockquote class="border-l-4 border-accent pl-4 italic">$1</blockquote>'
-        )
+        );
 
-      setPreview(html)
-    }
+      setPreview(html);
+    };
 
-    convertMarkdown()
-  }, [input, setPreview])
+    convertMarkdown();
+  }, [input, setPreview]);
 
-  const insertMarkdown = (before: string, after = '') => {
-    const textarea = document.querySelector('textarea')
-    if (!textarea) return
+  const insertMarkdown = (before: string, after = "") => {
+    const textarea = document.querySelector("textarea");
+    if (!textarea) return;
 
-    const start = textarea.selectionStart
-    const end = textarea.selectionEnd
-    const selectedText = input.substring(start, end)
-    const replacement = `${before}${selectedText}${after}`
-    const newText = input.substring(0, start) + replacement + input.substring(end)
+    const start = textarea.selectionStart;
+    const end = textarea.selectionEnd;
+    const selectedText = input.substring(start, end);
+    const replacement = `${before}${selectedText}${after}`;
+    const newText =
+      input.substring(0, start) + replacement + input.substring(end);
 
-    setInput(newText)
+    setInput(newText);
 
     // Reset cursor position
     setTimeout(() => {
-      textarea.focus()
-      textarea.setSelectionRange(start + before.length, start + before.length + selectedText.length)
-    }, 0)
-  }
+      textarea.focus();
+      textarea.setSelectionRange(
+        start + before.length,
+        start + before.length + selectedText.length
+      );
+    }, 0);
+  };
 
   const copyToClipboard = async (text: string) => {
     try {
-      await navigator.clipboard.writeText(text)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      console.error('Failed to copy to clipboard:', err)
+      console.error("Failed to copy to clipboard:", err);
     }
-  }
+  };
 
   const downloadMarkdown = () => {
-    const blob = new Blob([input], { type: 'text/markdown' })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = 'document.md'
-    a.click()
-    URL.revokeObjectURL(url)
-  }
+    const blob = new Blob([input], { type: "text/markdown" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "document.md";
+    a.click();
+    URL.revokeObjectURL(url);
+  };
 
   const clearAll = () => {
-    clearHistory()
-  }
+    clearHistory();
+  };
 
   const handleShare = async () => {
-    setIsSharing(true)
+    setIsSharing(true);
     try {
-      const shareUrl = await generateShareUrl(state)
-      await navigator.clipboard.writeText(shareUrl)
-      const success = true
+      const shareUrl = await generateShareUrl(state);
+      await navigator.clipboard.writeText(shareUrl);
+      const success = true;
 
       if (success) {
-        const message = 'Share URL copied!'
-        let description = 'The shareable URL has been copied to your clipboard'
+        const message = "Share URL copied!";
+        let description = "The shareable URL has been copied to your clipboard";
 
         if (shareInfo.isLimited) {
-          description = shareInfo.message
+          description = shareInfo.message;
         }
 
-        successToast(message, description)
+        successToast(message, description);
       } else {
-        errorToast('Failed to copy URL', 'Please try again or copy the URL manually')
+        errorToast(
+          "Failed to copy URL",
+          "Please try again or copy the URL manually"
+        );
       }
     } catch (error) {
-      console.error('Share failed:', error)
-      errorToast('Sharing failed', 'An error occurred while generating the share URL')
+      console.error("Share failed:", error);
+      errorToast(
+        "Sharing failed",
+        "An error occurred while generating the share URL"
+      );
     } finally {
-      setIsSharing(false)
+      setIsSharing(false);
     }
-  }
+  };
 
   const handleClearData = () => {
-    if (confirm('Clear all saved data and current content?')) {
-      localStorageManager.clear(TOOL_NAME)
-      clearAll()
+    if (confirm("Clear all saved data and current content?")) {
+      localStorageManager.clear(TOOL_NAME);
+      clearAll();
     }
-  }
+  };
 
   const toolbarButtons = [
-    { icon: Bold, title: 'Bold', action: () => insertMarkdown('**', '**') },
-    { icon: Italic, title: 'Italic', action: () => insertMarkdown('*', '*') },
-    { icon: Heading, title: 'Heading', action: () => insertMarkdown('# ', '') },
-    { icon: Link2, title: 'Link', action: () => insertMarkdown('[', '](url)') },
-    { icon: Code, title: 'Code', action: () => insertMarkdown('`', '`') },
-    { icon: Quote, title: 'Quote', action: () => insertMarkdown('> ', '') },
+    { icon: Bold, title: "Bold", action: () => insertMarkdown("**", "**") },
+    { icon: Italic, title: "Italic", action: () => insertMarkdown("*", "*") },
+    { icon: Heading, title: "Heading", action: () => insertMarkdown("# ", "") },
+    { icon: Link2, title: "Link", action: () => insertMarkdown("[", "](url)") },
+    { icon: Code, title: "Code", action: () => insertMarkdown("`", "`") },
+    { icon: Quote, title: "Quote", action: () => insertMarkdown("> ", "") },
     {
       icon: List,
-      title: 'Bullet List',
-      action: () => insertMarkdown('* ', ''),
+      title: "Bullet List",
+      action: () => insertMarkdown("* ", ""),
     },
     {
       icon: ListOrdered,
-      title: 'Numbered List',
-      action: () => insertMarkdown('1. ', ''),
+      title: "Numbered List",
+      action: () => insertMarkdown("1. ", ""),
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
@@ -248,7 +267,8 @@ export default function MarkdownEditorPage() {
                 Markdown Editor
               </h1>
               <p className="mb-4 xs:mb-6 text-sm xs:text-base sm:text-lg text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
-                Write and preview Markdown with live rendering and export options.
+                Write and preview Markdown with live rendering and export
+                options.
               </p>
             </div>
           </section>
@@ -275,7 +295,9 @@ export default function MarkdownEditorPage() {
                     className="flex items-center gap-2 px-3 xs:px-4 py-2 rounded-lg bg-accent text-white hover:bg-accent-dark transition-all"
                   >
                     <Eye className="w-4 h-4" />
-                    <span className="hidden xs:inline">{isPreviewMode ? 'Edit' : 'Preview'}</span>
+                    <span className="hidden xs:inline">
+                      {isPreviewMode ? "Edit" : "Preview"}
+                    </span>
                   </button>
                   <button
                     onClick={undo}
@@ -302,7 +324,7 @@ export default function MarkdownEditorPage() {
               {/* Editor Panel */}
               <div
                 className={`rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg ${
-                  isPreviewMode ? 'hidden lg:block' : ''
+                  isPreviewMode ? "hidden lg:block" : ""
                 }`}
               >
                 <div className="p-2 xs:p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark flex justify-between items-center">
@@ -320,7 +342,7 @@ export default function MarkdownEditorPage() {
                       className="flex items-center gap-1 xs:gap-2 bg-accent hover:bg-accent-dark text-white px-2 xs:px-3 py-1.5 rounded-lg text-xs xs:text-sm transition-all"
                     >
                       <Copy className="w-3 h-3 xs:w-4 xs:h-4" />
-                      {copied ? 'Copied!' : 'Copy'}
+                      {copied ? "Copied!" : "Copy"}
                     </button>
                     <button
                       onClick={downloadMarkdown}
@@ -335,7 +357,7 @@ export default function MarkdownEditorPage() {
                       className="flex items-center gap-1 xs:gap-2 bg-accent hover:bg-accent-dark text-white px-2 xs:px-3 py-1.5 rounded-lg text-xs xs:text-sm transition-all disabled:opacity-50"
                     >
                       <Share2 className="w-3 h-3 xs:w-4 xs:h-4" />
-                      {isSharing ? 'Sharing...' : 'Share'}
+                      {isSharing ? "Sharing..." : "Share"}
                     </button>
                   </div>
                 </div>
@@ -366,7 +388,7 @@ Code blocks
               {/* Preview Panel */}
               <div
                 className={`rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg ${
-                  !isPreviewMode ? 'hidden lg:block' : ''
+                  !isPreviewMode ? "hidden lg:block" : ""
                 }`}
               >
                 <div className="p-2 xs:p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
@@ -383,7 +405,8 @@ Code blocks
                     /* biome-ignore lint/security/noDangerouslySetInnerHtml: Required for markdown preview functionality */
                     dangerouslySetInnerHTML={{
                       __html:
-                        preview || '<p class="text-gray-400">Start typing to see preview...</p>',
+                        preview ||
+                        '<p class="text-gray-400">Start typing to see preview...</p>',
                     }}
                   />
                 </div>
@@ -411,18 +434,21 @@ Code blocks
               {[
                 {
                   icon: FileText,
-                  title: 'Live Preview',
-                  description: 'See your formatted text in real-time as you type.',
+                  title: "Live Preview",
+                  description:
+                    "See your formatted text in real-time as you type.",
                 },
                 {
                   icon: Code,
-                  title: 'Syntax Support',
-                  description: 'Full Markdown syntax support with toolbar shortcuts.',
+                  title: "Syntax Support",
+                  description:
+                    "Full Markdown syntax support with toolbar shortcuts.",
                 },
                 {
                   icon: Download,
-                  title: 'Export Options',
-                  description: 'Download your Markdown files or copy formatted HTML.',
+                  title: "Export Options",
+                  description:
+                    "Download your Markdown files or copy formatted HTML.",
                 },
               ].map((feature, index) => (
                 <div
@@ -430,7 +456,7 @@ Code blocks
                   className="rounded-lg border border-border-light bg-card-light p-6 text-center dark:border-border-dark dark:bg-card-dark transition-all hover:-translate-y-1 hover:shadow-lg"
                   style={{
                     animationDelay: `${index * 100}ms`,
-                    animation: 'fadeInUp 0.6s ease-out forwards',
+                    animation: "fadeInUp 0.6s ease-out forwards",
                   }}
                 >
                   <div className="mb-4 flex justify-center">
@@ -456,24 +482,28 @@ Code blocks
               </h2>
               <div className="prose prose-slate dark:prose-invert max-w-none">
                 <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed mb-4">
-                  Our Markdown Editor is a powerful, browser-based tool designed for writers,
-                  developers, and content creators who work with Markdown syntax. Markdown is a
-                  lightweight markup language that allows you to format text using simple, readable
-                  syntax that can be converted to HTML and other formats. This tool provides a
-                  seamless writing experience with live preview, syntax highlighting, and export
-                  capabilities.
+                  Our Markdown Editor is a powerful, browser-based tool designed
+                  for writers, developers, and content creators who work with
+                  Markdown syntax. Markdown is a lightweight markup language
+                  that allows you to format text using simple, readable syntax
+                  that can be converted to HTML and other formats. This tool
+                  provides a seamless writing experience with live preview,
+                  syntax highlighting, and export capabilities.
                 </p>
                 <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed mb-4">
-                  Whether you're writing documentation, blog posts, README files, or taking notes,
-                  our editor makes it easy to create well-formatted content without dealing with
-                  complex HTML or word processor formatting. The split-pane interface lets you see
-                  your formatted output in real-time, helping you perfect your content as you write.
+                  Whether you're writing documentation, blog posts, README
+                  files, or taking notes, our editor makes it easy to create
+                  well-formatted content without dealing with complex HTML or
+                  word processor formatting. The split-pane interface lets you
+                  see your formatted output in real-time, helping you perfect
+                  your content as you write.
                 </p>
                 <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed">
-                  With features like toolbar shortcuts, undo/redo functionality, and instant
-                  download capabilities, this editor streamlines your Markdown workflow. All
-                  processing happens locally in your browser, ensuring your content remains private
-                  and secure while providing lightning-fast performance.
+                  With features like toolbar shortcuts, undo/redo functionality,
+                  and instant download capabilities, this editor streamlines
+                  your Markdown workflow. All processing happens locally in your
+                  browser, ensuring your content remains private and secure
+                  while providing lightning-fast performance.
                 </p>
               </div>
             </div>
@@ -485,30 +515,39 @@ Code blocks
               </h2>
               <div className="space-y-4">
                 <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
-                  <h3 className="font-semibold text-lg mb-2">Step 1: Write Your Markdown</h3>
+                  <h3 className="font-semibold text-lg mb-2">
+                    Step 1: Write Your Markdown
+                  </h3>
                   <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Type or paste your Markdown content in the left editor pane. Use standard
-                    Markdown syntax for formatting.
+                    Type or paste your Markdown content in the left editor pane.
+                    Use standard Markdown syntax for formatting.
                   </p>
                 </div>
                 <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
-                  <h3 className="font-semibold text-lg mb-2">Step 2: Use Toolbar Shortcuts</h3>
+                  <h3 className="font-semibold text-lg mb-2">
+                    Step 2: Use Toolbar Shortcuts
+                  </h3>
                   <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Click toolbar buttons to quickly insert formatting like bold, italic, headers,
-                    links, and lists.
+                    Click toolbar buttons to quickly insert formatting like
+                    bold, italic, headers, links, and lists.
                   </p>
                 </div>
                 <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
-                  <h3 className="font-semibold text-lg mb-2">Step 3: Preview Your Content</h3>
+                  <h3 className="font-semibold text-lg mb-2">
+                    Step 3: Preview Your Content
+                  </h3>
                   <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    View the formatted output in real-time in the right preview pane, or toggle
-                    full-screen preview mode.
+                    View the formatted output in real-time in the right preview
+                    pane, or toggle full-screen preview mode.
                   </p>
                 </div>
                 <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
-                  <h3 className="font-semibold text-lg mb-2">Step 4: Export Your Work</h3>
+                  <h3 className="font-semibold text-lg mb-2">
+                    Step 4: Export Your Work
+                  </h3>
                   <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Download your Markdown file or copy the content to use in other applications.
+                    Download your Markdown file or copy the content to use in
+                    other applications.
                   </p>
                 </div>
               </div>
@@ -580,20 +619,26 @@ code block
               </h2>
               <div className="space-y-4">
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
-                  <summary className="font-semibold cursor-pointer">What is Markdown?</summary>
+                  <summary className="font-semibold cursor-pointer">
+                    What is Markdown?
+                  </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Markdown is a lightweight markup language created by John Gruber. It allows you
-                    to write using an easy-to-read, easy-to-write plain text format that can be
-                    converted to structurally valid HTML. It's widely used for documentation, README
-                    files, blog posts, and comments.
+                    Markdown is a lightweight markup language created by John
+                    Gruber. It allows you to write using an easy-to-read,
+                    easy-to-write plain text format that can be converted to
+                    structurally valid HTML. It's widely used for documentation,
+                    README files, blog posts, and comments.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
-                  <summary className="font-semibold cursor-pointer">Is my content saved?</summary>
+                  <summary className="font-semibold cursor-pointer">
+                    Is my content saved?
+                  </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Your content is temporarily stored in your browser's session while you work. For
-                    permanent storage, use the download feature to save your Markdown files locally.
-                    The editor maintains undo/redo history during your session.
+                    Your content is temporarily stored in your browser's session
+                    while you work. For permanent storage, use the download
+                    feature to save your Markdown files locally. The editor
+                    maintains undo/redo history during your session.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
@@ -601,9 +646,10 @@ code block
                     Can I use extended Markdown syntax?
                   </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    This editor supports core Markdown syntax. For extended features like tables,
-                    footnotes, or task lists, the preview may not render them fully. However, your
-                    Markdown text will remain valid for use in applications that support extended
+                    This editor supports core Markdown syntax. For extended
+                    features like tables, footnotes, or task lists, the preview
+                    may not render them fully. However, your Markdown text will
+                    remain valid for use in applications that support extended
                     syntax.
                   </p>
                 </details>
@@ -612,17 +658,19 @@ code block
                     Can I import existing Markdown files?
                   </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    You can paste existing Markdown content directly into the editor. Simply copy
-                    your Markdown text from any source and paste it into the input area to continue
-                    editing.
+                    You can paste existing Markdown content directly into the
+                    editor. Simply copy your Markdown text from any source and
+                    paste it into the input area to continue editing.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
-                  <summary className="font-semibold cursor-pointer">Does it work offline?</summary>
+                  <summary className="font-semibold cursor-pointer">
+                    Does it work offline?
+                  </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Once loaded, the editor works entirely offline. All processing happens in your
-                    browser using JavaScript, so you can continue writing even without an internet
-                    connection.
+                    Once loaded, the editor works entirely offline. All
+                    processing happens in your browser using JavaScript, so you
+                    can continue writing even without an internet connection.
                   </p>
                 </details>
               </div>
@@ -646,5 +694,5 @@ code block
         }
       `}</style>
     </div>
-  )
+  );
 }

@@ -1,96 +1,104 @@
-'use client'
+"use client";
 
-import { Download, X } from 'lucide-react'
-import { useEffect, useState } from 'react'
+import { Download, X } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface BeforeInstallPromptEvent extends Event {
-  readonly platforms: ReadonlyArray<string>
+  readonly platforms: ReadonlyArray<string>;
   readonly userChoice: Promise<{
-    outcome: 'accepted' | 'dismissed'
-    platform: string
-  }>
-  prompt(): Promise<void>
+    outcome: "accepted" | "dismissed";
+    platform: string;
+  }>;
+  prompt(): Promise<void>;
 }
 
 export function InstallPrompt() {
-  const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null)
-  const [showInstallPrompt, setShowInstallPrompt] = useState(false)
-  const [isInstalled, setIsInstalled] = useState(false)
+  const [deferredPrompt, setDeferredPrompt] =
+    useState<BeforeInstallPromptEvent | null>(null);
+  const [showInstallPrompt, setShowInstallPrompt] = useState(false);
+  const [isInstalled, setIsInstalled] = useState(false);
 
   useEffect(() => {
     // Check if app is already installed
-    const isStandalone = window.matchMedia('(display-mode: standalone)').matches
-    const isInWebapp = (window.navigator as { standalone?: boolean }).standalone === true
+    const isStandalone = window.matchMedia(
+      "(display-mode: standalone)"
+    ).matches;
+    const isInWebapp =
+      (window.navigator as { standalone?: boolean }).standalone === true;
 
     if (isStandalone || isInWebapp) {
-      setIsInstalled(true)
-      return
+      setIsInstalled(true);
+      return;
     }
 
     // Listen for beforeinstallprompt event
     const handleBeforeInstallPrompt = (e: Event) => {
-      e.preventDefault()
-      const promptEvent = e as BeforeInstallPromptEvent
-      setDeferredPrompt(promptEvent)
+      e.preventDefault();
+      const promptEvent = e as BeforeInstallPromptEvent;
+      setDeferredPrompt(promptEvent);
 
       // Show install prompt after a short delay
       setTimeout(() => {
-        const hasSeenPrompt = localStorage.getItem('pwa-install-prompt-seen')
-        const lastPromptTime = localStorage.getItem('pwa-install-prompt-time')
-        const now = Date.now()
+        const hasSeenPrompt = localStorage.getItem("pwa-install-prompt-seen");
+        const lastPromptTime = localStorage.getItem("pwa-install-prompt-time");
+        const now = Date.now();
 
         // Show prompt if never seen, or if it's been more than 24 hours since last dismiss
         if (
           !hasSeenPrompt ||
-          (lastPromptTime && now - Number.parseInt(lastPromptTime) > 24 * 60 * 60 * 1000)
+          (lastPromptTime &&
+            now - Number.parseInt(lastPromptTime) > 24 * 60 * 60 * 1000)
         ) {
-          setShowInstallPrompt(true)
+          setShowInstallPrompt(true);
         }
-      }, 2000)
-    }
+      }, 2000);
+    };
 
     // Listen for app installed event
     const handleAppInstalled = () => {
-      setIsInstalled(true)
-      setShowInstallPrompt(false)
-      setDeferredPrompt(null)
-      localStorage.setItem('pwa-install-prompt-seen', 'true')
-    }
+      setIsInstalled(true);
+      setShowInstallPrompt(false);
+      setDeferredPrompt(null);
+      localStorage.setItem("pwa-install-prompt-seen", "true");
+    };
 
-    window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
-    window.addEventListener('appinstalled', handleAppInstalled)
+    window.addEventListener("beforeinstallprompt", handleBeforeInstallPrompt);
+    window.addEventListener("appinstalled", handleAppInstalled);
 
     return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
-      window.removeEventListener('appinstalled', handleAppInstalled)
-    }
-  }, [])
+      window.removeEventListener(
+        "beforeinstallprompt",
+        handleBeforeInstallPrompt
+      );
+      window.removeEventListener("appinstalled", handleAppInstalled);
+    };
+  }, []);
 
   const handleInstallClick = async () => {
-    if (!deferredPrompt) return
+    if (!deferredPrompt) return;
 
-    deferredPrompt.prompt()
-    const choiceResult = await deferredPrompt.userChoice
+    deferredPrompt.prompt();
+    const choiceResult = await deferredPrompt.userChoice;
 
-    if (choiceResult.outcome === 'accepted') {
-      setIsInstalled(true)
+    if (choiceResult.outcome === "accepted") {
+      setIsInstalled(true);
     }
 
-    setShowInstallPrompt(false)
-    setDeferredPrompt(null)
-    localStorage.setItem('pwa-install-prompt-seen', 'true')
-    localStorage.setItem('pwa-install-prompt-time', Date.now().toString())
-  }
+    setShowInstallPrompt(false);
+    setDeferredPrompt(null);
+    localStorage.setItem("pwa-install-prompt-seen", "true");
+    localStorage.setItem("pwa-install-prompt-time", Date.now().toString());
+  };
 
   const handleDismiss = () => {
-    setShowInstallPrompt(false)
-    localStorage.setItem('pwa-install-prompt-seen', 'true')
-    localStorage.setItem('pwa-install-prompt-time', Date.now().toString())
-  }
+    setShowInstallPrompt(false);
+    localStorage.setItem("pwa-install-prompt-seen", "true");
+    localStorage.setItem("pwa-install-prompt-time", Date.now().toString());
+  };
 
   // Don't show if already installed or no prompt available
   if (isInstalled || !deferredPrompt || !showInstallPrompt) {
-    return null
+    return null;
   }
 
   return (
@@ -129,5 +137,5 @@ export function InstallPrompt() {
         </div>
       </div>
     </div>
-  )
+  );
 }

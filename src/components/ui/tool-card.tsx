@@ -1,20 +1,22 @@
-import type { Tool } from '@/config/tools'
-import { cn } from '@/lib/utils'
-import Link from 'next/link'
+import type { Tool } from "@/config/tools";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
 
 interface ToolCardProps {
-  tool: Tool
-  className?: string
+  tool: Tool;
+  className?: string;
 }
 
 export function ToolCard({ tool, className }: ToolCardProps) {
-  const isComingSoon = tool.status === 'coming_soon'
+  const isComingSoon = tool.status === "coming_soon";
 
   const card = (
     <div
       className={cn(
-        'group relative overflow-hidden rounded-xl border border-border-light bg-card-light p-6 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-2xl hover:shadow-accent/20 dark:border-border-dark dark:bg-card-dark',
-        isComingSoon ? 'cursor-not-allowed opacity-75' : 'hover:border-accent/50',
+        "group relative overflow-hidden rounded-xl border border-border-light bg-card-light p-6 transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:shadow-2xl hover:shadow-accent/20 dark:border-border-dark dark:bg-card-dark",
+        isComingSoon
+          ? "cursor-not-allowed opacity-75"
+          : "hover:border-accent/50",
         className
       )}
     >
@@ -41,10 +43,10 @@ export function ToolCard({ tool, className }: ToolCardProps) {
       {/* Category Badge */}
       <div className="mt-4">
         <span className="inline-flex items-center rounded-full bg-accent/10 px-2.5 py-0.5 text-xs font-medium text-accent">
-          {tool.category === 'developer' && 'Developer'}
-          {tool.category === 'design' && 'Design'}
-          {tool.category === 'utility' && 'Utility'}
-          {tool.category === 'converter' && 'Converter'}
+          {tool.category === "developer" && "Developer"}
+          {tool.category === "design" && "Design"}
+          {tool.category === "utility" && "Utility"}
+          {tool.category === "converter" && "Converter"}
         </span>
       </div>
 
@@ -67,15 +69,15 @@ export function ToolCard({ tool, className }: ToolCardProps) {
         </div>
       )}
     </div>
-  )
+  );
 
   if (isComingSoon) {
-    return card
+    return card;
   }
 
   return (
     <Link href={tool.href} className="block">
       {card}
     </Link>
-  )
+  );
 }

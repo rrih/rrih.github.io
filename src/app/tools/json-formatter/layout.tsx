@@ -1,11 +1,11 @@
-import { generateToolMetadata } from '@/lib/metadata'
+import { generateToolMetadata } from "@/lib/metadata";
 
-export const metadata = generateToolMetadata('json-formatter')
+export const metadata = generateToolMetadata("json-formatter");
 
 export default function JsonFormatterLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return children
+  return children;
 }

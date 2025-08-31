@@ -1,67 +1,73 @@
-'use client'
+"use client";
 
-import { AlertCircle, CheckCircle, X, XCircle } from 'lucide-react'
-import type React from 'react'
-import { createContext, useCallback, useContext, useEffect, useState } from 'react'
+import { AlertCircle, CheckCircle, X, XCircle } from "lucide-react";
+import type React from "react";
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 
 export interface Toast {
-  id: string
-  type: 'success' | 'error' | 'warning'
-  title: string
-  message?: string
-  duration?: number
+  id: string;
+  type: "success" | "error" | "warning";
+  title: string;
+  message?: string;
+  duration?: number;
 }
 
 interface ToastContextType {
-  toasts: Toast[]
-  addToast: (toast: Omit<Toast, 'id'>) => void
-  removeToast: (id: string) => void
+  toasts: Toast[];
+  addToast: (toast: Omit<Toast, "id">) => void;
+  removeToast: (id: string) => void;
 }
 
-const ToastContext = createContext<ToastContextType | undefined>(undefined)
+const ToastContext = createContext<ToastContextType | undefined>(undefined);
 
 export function ToastProvider({ children }: { children: React.ReactNode }) {
-  const [toasts, setToasts] = useState<Toast[]>([])
+  const [toasts, setToasts] = useState<Toast[]>([]);
 
   const removeToast = useCallback((id: string) => {
-    setToasts((prev) => prev.filter((toast) => toast.id !== id))
-  }, [])
+    setToasts((prev) => prev.filter((toast) => toast.id !== id));
+  }, []);
 
   const addToast = useCallback(
-    (toast: Omit<Toast, 'id'>) => {
-      const id = Math.random().toString(36).slice(2)
+    (toast: Omit<Toast, "id">) => {
+      const id = Math.random().toString(36).slice(2);
       const newToast: Toast = {
         id,
         ...toast,
         duration: toast.duration ?? 3000,
-      }
+      };
 
-      setToasts((prev) => [...prev, newToast])
+      setToasts((prev) => [...prev, newToast]);
 
       // Auto remove after duration
       setTimeout(() => {
-        removeToast(id)
-      }, newToast.duration)
+        removeToast(id);
+      }, newToast.duration);
     },
     [removeToast]
-  )
+  );
 
   return (
     <ToastContext.Provider value={{ toasts, addToast, removeToast }}>
       {children}
       <ToastContainer toasts={toasts} onRemove={removeToast} />
     </ToastContext.Provider>
-  )
+  );
 }
 
 function ToastContainer({
   toasts,
   onRemove,
 }: {
-  toasts: Toast[]
-  onRemove: (id: string) => void
+  toasts: Toast[];
+  onRemove: (id: string) => void;
 }) {
-  if (toasts.length === 0) return null
+  if (toasts.length === 0) return null;
 
   return (
     <div className="fixed top-4 right-4 z-[9999] space-y-2 max-w-sm w-full pointer-events-none">
@@ -69,54 +75,54 @@ function ToastContainer({
         <ToastItem key={toast.id} toast={toast} onRemove={onRemove} />
       ))}
     </div>
-  )
+  );
 }
 
 function ToastItem({
   toast,
   onRemove,
 }: {
-  toast: Toast
-  onRemove: (id: string) => void
+  toast: Toast;
+  onRemove: (id: string) => void;
 }) {
-  const [isVisible, setIsVisible] = useState(false)
-  const [isRemoving, setIsRemoving] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
+  const [isRemoving, setIsRemoving] = useState(false);
 
   useEffect(() => {
     // Trigger entrance animation
     requestAnimationFrame(() => {
-      setIsVisible(true)
-    })
-  }, [])
+      setIsVisible(true);
+    });
+  }, []);
 
   const handleRemove = () => {
-    setIsRemoving(true)
+    setIsRemoving(true);
     setTimeout(() => {
-      onRemove(toast.id)
-    }, 200) // Match exit animation duration
-  }
+      onRemove(toast.id);
+    }, 200); // Match exit animation duration
+  };
 
   const getIcon = () => {
     switch (toast.type) {
-      case 'success':
-        return <CheckCircle className="h-5 w-5 text-green-400" />
-      case 'error':
-        return <XCircle className="h-5 w-5 text-red-400" />
-      case 'warning':
-        return <AlertCircle className="h-5 w-5 text-yellow-400" />
+      case "success":
+        return <CheckCircle className="h-5 w-5 text-green-400" />;
+      case "error":
+        return <XCircle className="h-5 w-5 text-red-400" />;
+      case "warning":
+        return <AlertCircle className="h-5 w-5 text-yellow-400" />;
     }
-  }
+  };
 
   const getBgColor = () => {
     switch (toast.type) {
-      case 'success':
-        return 'bg-green-50 border-green-200 dark:bg-green-900/20 dark:border-green-800'
-      case 'error':
-        return 'bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-800'
-      case 'warning':
-        return 'bg-yellow-50 border-yellow-200 dark:bg-yellow-900/20 dark:border-yellow-800'
+      case "success":
+        return "bg-green-50 border-green-200 dark:bg-green-900/20 dark:border-green-800";
+      case "error":
+        return "bg-red-50 border-red-200 dark:bg-red-900/20 dark:border-red-800";
+      case "warning":
+        return "bg-yellow-50 border-yellow-200 dark:bg-yellow-900/20 dark:border-yellow-800";
     }
-  }
+  };
 
   return (
     <div
@@ -125,8 +131,8 @@ function ToastItem({
         ${getBgColor()}
         ${
           isVisible && !isRemoving
-            ? 'translate-x-0 opacity-100 scale-100'
-            : 'translate-x-full opacity-0 scale-95'
+            ? "translate-x-0 opacity-100 scale-100"
+            : "translate-x-full opacity-0 scale-95"
         }
       `}
     >
@@ -150,44 +156,44 @@ function ToastItem({
         </button>
       </div>
     </div>
-  )
+  );
 }
 
 export function useToast() {
-  const context = useContext(ToastContext)
+  const context = useContext(ToastContext);
   if (context === undefined) {
-    throw new Error('useToast must be used within a ToastProvider')
+    throw new Error("useToast must be used within a ToastProvider");
   }
-  return context
+  return context;
 }
 
 // Convenience hooks
 export function useSuccessToast() {
-  const { addToast } = useToast()
+  const { addToast } = useToast();
   return useCallback(
     (title: string, message?: string, duration?: number) => {
-      addToast({ type: 'success', title, message, duration })
+      addToast({ type: "success", title, message, duration });
     },
     [addToast]
-  )
+  );
 }
 
 export function useErrorToast() {
-  const { addToast } = useToast()
+  const { addToast } = useToast();
   return useCallback(
     (title: string, message?: string, duration?: number) => {
-      addToast({ type: 'error', title, message, duration })
+      addToast({ type: "error", title, message, duration });
     },
     [addToast]
-  )
+  );
 }
 
 export function useWarningToast() {
-  const { addToast } = useToast()
+  const { addToast } = useToast();
   return useCallback(
     (title: string, message?: string, duration?: number) => {
-      addToast({ type: 'warning', title, message, duration })
+      addToast({ type: "warning", title, message, duration });
     },
     [addToast]
-  )
+  );
 }

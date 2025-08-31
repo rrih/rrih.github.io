@@ -1,6 +1,6 @@
-import { siteConfig } from '@/config/site'
-import Link from 'next/link'
-import { ThemeToggle } from './theme-toggle'
+import { siteConfig } from "@/config/site";
+import Link from "next/link";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
   return (
@@ -31,5 +31,5 @@ export function Header() {
         <ThemeToggle />
       </div>
     </header>
-  )
+  );
 }

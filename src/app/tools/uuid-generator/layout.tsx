@@ -1,11 +1,11 @@
-import { generateToolMetadata } from '@/lib/metadata'
+import { generateToolMetadata } from "@/lib/metadata";
 
-export const metadata = generateToolMetadata('uuid-generator')
+export const metadata = generateToolMetadata("uuid-generator");
 
 export default function UUIDGeneratorLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
-  return children
+  return children;
 }
