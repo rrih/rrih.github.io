@@ -52,3 +52,4 @@ scripts/ai-improvement-engine.js
 .claude/settings.local.json
 dev-check.sh
 DEVELOPMENT_HISTORY.md
+*.local.*
