@@ -312,7 +312,7 @@ ${keyframesCSS}
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-6 xs:py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-6 py-4">
         <Header />
 
         <style jsx>{`
