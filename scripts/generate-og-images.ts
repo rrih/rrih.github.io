@@ -2,6 +2,7 @@ import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { type Canvas, type CanvasRenderingContext2D, createCanvas } from 'canvas'
+import { tools } from '../src/config/tools'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -11,7 +12,7 @@ interface CategoryGradient {
   accent: string
 }
 
-interface Tool {
+interface OGTool {
   id: string
   title: string
   subtitle: string
@@ -44,99 +45,49 @@ const categoryGradients: Record<string, CategoryGradient> = {
   },
 }
 
-// Tool configurations
-const tools: Tool[] = [
-  {
-    id: 'json-formatter',
-    title: 'JSON Formatter',
-    subtitle: 'Format & Validate',
-    description: 'Beautiful JSON formatting with syntax highlighting',
-    category: 'developer',
-    icon: '{ }',
-  },
-  {
-    id: 'base64',
-    title: 'Base64',
-    subtitle: 'Encode & Decode',
-    description: 'Fast and secure Base64 encoding/decoding',
-    category: 'converter',
-    icon: 'B64',
-  },
-  {
-    id: 'color-picker',
-    title: 'Color Picker',
-    subtitle: 'HEX, RGB, HSL',
-    description: 'Professional color format converter',
-    category: 'design',
-    icon: '#',
-  },
-  {
-    id: 'markdown-editor',
-    title: 'Markdown Editor',
-    subtitle: 'Live Preview',
-    description: 'Write Markdown with real-time rendering',
-    category: 'utility',
-    icon: 'MD',
-  },
-  {
-    id: 'qr-generator',
-    title: 'QR Generator',
-    subtitle: 'Custom QR Codes',
-    description: 'Generate QR codes for any content',
-    category: 'utility',
-    icon: 'QR',
-  },
-  {
-    id: 'uuid-generator',
-    title: 'UUID Generator',
-    subtitle: 'v1, v4, v5',
-    description: 'Generate unique identifiers instantly',
-    category: 'developer',
-    icon: 'ID',
-  },
-  {
-    id: 'password-generator',
-    title: 'Password Generator',
-    subtitle: 'Secure & Strong',
-    description: 'Create unbreakable passwords',
-    category: 'utility',
-    icon: '***',
-  },
-  {
-    id: 'image-converter',
-    title: 'Image Converter',
-    subtitle: 'WebP, AVIF, PNG',
-    description: 'Modern image format conversion',
-    category: 'converter',
-    icon: 'IMG',
-  },
-  {
-    id: 'gradient-generator',
-    title: 'CSS Gradients',
-    subtitle: 'Beautiful Colors',
-    description: 'Create stunning CSS gradients',
-    category: 'design',
-    icon: '▥',
-  },
-  {
-    id: 'box-shadow-generator',
-    title: 'Box Shadows',
-    subtitle: 'CSS Effects',
-    description: 'Design perfect box shadows',
-    category: 'design',
-    icon: '▦',
-  },
-  {
-    id: 'animation-generator',
-    title: 'CSS Animations',
-    subtitle: 'Keyframes & Timing',
-    description: 'Create smooth animations easily',
-    category: 'design',
-    icon: '◉',
-  },
-]
+// Subtitle mappings for each tool
+const toolSubtitles: Record<string, string> = {
+  'json-formatter': 'Format & Validate',
+  base64: 'Encode & Decode',
+  'color-picker': 'HEX, RGB, HSL',
+  'markdown-editor': 'Live Preview',
+  'qr-generator': 'Custom QR Codes',
+  'uuid-generator': 'v1, v4, v5',
+  'password-generator': 'Secure & Strong',
+  'image-converter': 'WebP, AVIF, PNG',
+  'gradient-generator': 'Beautiful Colors',
+  'box-shadow-generator': 'CSS Effects',
+  'animation-generator': 'Keyframes & Timing',
+}
 
-async function generateSimpleOGImage(tool: Tool, outputPath: string): Promise<void> {
+// Icon representations for OG images
+const toolIcons: Record<string, string> = {
+  'json-formatter': '{ }',
+  base64: 'B64',
+  'color-picker': '#',
+  'markdown-editor': 'MD',
+  'qr-generator': 'QR',
+  'uuid-generator': 'ID',
+  'password-generator': '***',
+  'image-converter': 'IMG',
+  'gradient-generator': '▥',
+  'box-shadow-generator': '▦',
+  'animation-generator': '◉',
+}
+
+// Convert tools from config to OG format
+const ogTools: OGTool[] = tools
+  .filter((tool) => tool.status === 'available')
+  .map((tool) => ({
+    id: tool.id,
+    title: tool.title.replace('CSS ', '').replace(' Generator', ''), // Shorten long titles
+    subtitle: toolSubtitles[tool.id] || 'Web Tool',
+    description: tool.description,
+    category: tool.category,
+    icon: toolIcons[tool.id] || '◆',
+  }))
+
+async function generateSimpleOGImage(tool: OGTool, outputPath: string): Promise<void> {
   const width = 1200
   const height = 630
   const canvas: Canvas = createCanvas(width, height)
@@ -274,7 +225,7 @@ async function main(): Promise<void> {
     await generateHomeOGImage(path.join(ogDir, 'home.png'))
 
     // Generate tool OG images
-    for (const tool of tools) {
+    for (const tool of ogTools) {
       await generateSimpleOGImage(tool, path.join(ogDir, `${tool.id}.png`))
     }
 

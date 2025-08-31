@@ -10,7 +10,7 @@ export const metadata: Metadata = createMetadata(privacyPageMetadata)
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
         <Header />
         <main>
           <section className="mb-16">

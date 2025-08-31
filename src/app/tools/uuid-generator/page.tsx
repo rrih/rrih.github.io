@@ -212,7 +212,7 @@ export default function UUIDGenerator() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
         <Header />
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-foreground-light dark:text-foreground-dark mb-4">

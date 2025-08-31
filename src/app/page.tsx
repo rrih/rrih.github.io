@@ -5,6 +5,7 @@ import { createMetadata, homePageMetadata } from '@/config/metadata'
 import { siteConfig } from '@/config/site'
 import { tools } from '@/config/tools'
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = createMetadata(homePageMetadata)
@@ -15,13 +16,24 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
         <Header />
 
         <main>
           {/* Hero Section */}
           <section className="mb-16 sm:mb-20 text-center">
             <div className="mx-auto max-w-3xl">
+              <div className="flex justify-center">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
+                  <Image
+                    src="/icons/poodware_1024.png"
+                    alt="Poodware"
+                    width={96}
+                    height={96}
+                    // className="rounded-2xl shadow-lg"
+                  />
+                </div>
+              </div>
               <h1 className="mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground-light dark:text-foreground-dark">
                 {siteConfig.tagline}
               </h1>
