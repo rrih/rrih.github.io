@@ -1,11 +1,11 @@
-import { Footer } from "@/components/layout/footer";
-import { Header } from "@/components/layout/header";
-import { EmailReveal } from "@/components/ui/email-reveal";
-import { aboutPageMetadata, createMetadata } from "@/config/metadata";
-import { siteConfig } from "@/config/site";
-import type { Metadata } from "next";
+import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { EmailReveal } from '@/components/ui/email-reveal'
+import { aboutPageMetadata, createMetadata } from '@/config/metadata'
+import { siteConfig } from '@/config/site'
+import type { Metadata } from 'next'
 
-export const metadata: Metadata = createMetadata(aboutPageMetadata);
+export const metadata: Metadata = createMetadata(aboutPageMetadata)
 
 export default function AboutPage() {
   return (
@@ -14,9 +14,7 @@ export default function AboutPage() {
         <Header />
         <main>
           <section className="mb-15">
-            <h1 className="mb-3 text-3xl font-semibold tracking-tight">
-              About
-            </h1>
+            <h1 className="mb-3 text-3xl font-semibold tracking-tight">About</h1>
             <p className="text-base leading-relaxed text-foreground-light-secondary dark:text-foreground-dark-secondary">
               Learn more about this project and the developer behind it.
             </p>
@@ -28,16 +26,14 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-base leading-relaxed">
               <p>
-                This project aims to provide high-quality web tools that
-                developers and designers can rely on. We strive to create a
-                cleaner, faster alternative to existing online tools with better
-                user experience and modern design.
+                This project aims to provide high-quality web tools that developers and designers
+                can rely on. We strive to create a cleaner, faster alternative to existing online
+                tools with better user experience and modern design.
               </p>
               <p>
-                All tools are built with modern web technologies for maximum
-                performance and currently run entirely in your browser. We focus
-                on user experience and data efficiency while maintaining
-                flexibility for future enhancements.
+                All tools are built with modern web technologies for maximum performance and
+                currently run entirely in your browser. We focus on user experience and data
+                efficiency while maintaining flexibility for future enhancements.
               </p>
             </div>
           </section>
@@ -48,13 +44,13 @@ export default function AboutPage() {
             </h2>
             <div className="grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-5">
               {[
-                "Next.js 15",
-                "TypeScript",
-                "Tailwind CSS",
-                "Bun",
-                "Biome",
-                "GitHub Pages",
-                "GitHub Actions",
+                'Next.js 15',
+                'TypeScript',
+                'Tailwind CSS',
+                'Bun',
+                'Biome',
+                'GitHub Pages',
+                'GitHub Actions',
               ].map((tech) => (
                 <div
                   key={tech}
@@ -78,19 +74,17 @@ export default function AboutPage() {
                 </p>
               </div>
               <p className="mb-4 text-sm leading-relaxed">
-                Passionate about creating efficient web tools and leveraging
-                AI-powered development workflows. Focused on building
-                privacy-first, high-performance applications that solve
-                real-world problems.
+                Passionate about creating efficient web tools and leveraging AI-powered development
+                workflows. Focused on building privacy-first, high-performance applications that
+                solve real-world problems.
               </p>
               <div className="space-y-2 text-sm">
                 <div>
-                  <strong>Education:</strong> Computer Science and Information
-                  Engineering (2021)
+                  <strong>Education:</strong> Computer Science and Information Engineering (2021)
                 </div>
                 <div>
-                  <strong>Focus:</strong> Frontend Development, Infrastructure,
-                  LLM Technology Integration
+                  <strong>Focus:</strong> Frontend Development, Infrastructure, LLM Technology
+                  Integration
                 </div>
               </div>
             </div>
@@ -103,24 +97,24 @@ export default function AboutPage() {
             <div className="grid gap-4">
               {[
                 {
-                  title: "AI-Powered Development",
+                  title: 'AI-Powered Development',
                   description:
-                    "Leveraging tools like Claude Code and Gemini for rapid, high-quality implementation",
+                    'Leveraging tools like Claude Code and Gemini for rapid, high-quality implementation',
                 },
                 {
-                  title: "Privacy-Conscious Design",
+                  title: 'Privacy-Conscious Design',
                   description:
-                    "Currently all processing happens locally in your browser with minimal data footprint",
+                    'Currently all processing happens locally in your browser with minimal data footprint',
                 },
                 {
-                  title: "Performance Focused",
+                  title: 'Performance Focused',
                   description:
-                    "Optimized for speed with modern web technologies and best practices",
+                    'Optimized for speed with modern web technologies and best practices',
                 },
                 {
-                  title: "Open Source",
+                  title: 'Open Source',
                   description:
-                    "Transparent development with all code available on GitHub for community contribution",
+                    'Transparent development with all code available on GitHub for community contribution',
                 },
               ].map((approach) => (
                 <div
@@ -196,5 +190,5 @@ export default function AboutPage() {
         <Footer />
       </div>
     </div>
-  );
+  )
 }

@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import { Footer } from "@/components/layout/footer";
-import { Header } from "@/components/layout/header";
-import { useErrorToast, useSuccessToast } from "@/components/ui/toast";
-import { useHistory } from "@/hooks/useHistory";
-import { localStorageManager } from "@/lib/localStorage";
-import { useUrlSharing } from "@/lib/urlSharing";
+import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
+import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
+import { useHistory } from '@/hooks/useHistory'
+import { localStorageManager } from '@/lib/localStorage'
+import { useUrlSharing } from '@/lib/urlSharing'
 import {
   Download,
   FileImage,
@@ -18,41 +18,41 @@ import {
   Undo2,
   Upload,
   Zap,
-} from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
+} from 'lucide-react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 
 interface ImageFile {
-  id: string;
-  name: string;
-  originalFormat: string;
-  size: number;
-  dataUrl: string;
-  convertedDataUrl?: string;
-  convertedSize?: number;
+  id: string
+  name: string
+  originalFormat: string
+  size: number
+  dataUrl: string
+  convertedDataUrl?: string
+  convertedSize?: number
 }
 
 interface ImageConverterState {
-  images: ImageFile[];
-  outputFormat: "jpeg" | "png" | "webp" | "avif";
-  quality: number;
-  maxWidth: number;
-  maxHeight: number;
-  maintainAspectRatio: boolean;
-  resizeEnabled: boolean;
+  images: ImageFile[]
+  outputFormat: 'jpeg' | 'png' | 'webp' | 'avif'
+  quality: number
+  maxWidth: number
+  maxHeight: number
+  maintainAspectRatio: boolean
+  resizeEnabled: boolean
 }
 
 export default function ImageConverterPage() {
-  const TOOL_NAME = "image-converter";
+  const TOOL_NAME = 'image-converter'
 
   const defaultState: ImageConverterState = {
     images: [],
-    outputFormat: "webp",
+    outputFormat: 'webp',
     quality: 80,
     maxWidth: 1920,
     maxHeight: 1080,
     maintainAspectRatio: true,
     resizeEnabled: false,
-  };
+  }
 
   const {
     state,
@@ -62,90 +62,80 @@ export default function ImageConverterPage() {
     canUndo,
     canRedo,
     clear: clearHistory,
-  } = useHistory<ImageConverterState>(defaultState);
+  } = useHistory<ImageConverterState>(defaultState)
 
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [dragActive, setDragActive] = useState(false);
-  const [isSharing, setIsSharing] = useState(false);
-  const [processingProgress, setProcessingProgress] = useState(0);
+  const [isProcessing, setIsProcessing] = useState(false)
+  const [dragActive, setDragActive] = useState(false)
+  const [isSharing, setIsSharing] = useState(false)
+  const [processingProgress, setProcessingProgress] = useState(0)
 
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null)
 
-  const successToast = useSuccessToast();
-  const errorToast = useErrorToast();
+  const successToast = useSuccessToast()
+  const errorToast = useErrorToast()
 
   const { generateShareUrl, shareInfo, getInitialStateFromUrl } =
-    useUrlSharing<ImageConverterState>(TOOL_NAME);
+    useUrlSharing<ImageConverterState>(TOOL_NAME)
 
-  const {
-    images,
-    outputFormat,
-    quality,
-    maxWidth,
-    maxHeight,
-    maintainAspectRatio,
-    resizeEnabled,
-  } = state;
+  const { images, outputFormat, quality, maxWidth, maxHeight, maintainAspectRatio, resizeEnabled } =
+    state
 
   // Client-side only state restoration
   useEffect(() => {
-    const sharedState = getInitialStateFromUrl();
+    const sharedState = getInitialStateFromUrl()
     if (sharedState) {
-      setHistoryState(sharedState);
-      return;
+      setHistoryState(sharedState)
+      return
     }
 
-    const savedState = localStorageManager.load<ImageConverterState>(TOOL_NAME);
+    const savedState = localStorageManager.load<ImageConverterState>(TOOL_NAME)
     if (savedState) {
-      setHistoryState(savedState);
+      setHistoryState(savedState)
     }
-  }, [getInitialStateFromUrl, setHistoryState]);
+  }, [getInitialStateFromUrl, setHistoryState])
 
   // Save state to localStorage
   useEffect(() => {
-    localStorageManager.save(TOOL_NAME, state);
-  }, [state]);
+    localStorageManager.save(TOOL_NAME, state)
+  }, [state])
 
   // URL sharing
   const handleShare = async () => {
-    setIsSharing(true);
+    setIsSharing(true)
     try {
-      const shareUrl = await generateShareUrl(state);
-      await navigator.clipboard.writeText(shareUrl);
+      const shareUrl = await generateShareUrl(state)
+      await navigator.clipboard.writeText(shareUrl)
 
-      const message = "Share URL copied!";
-      let description = "The shareable URL has been copied to your clipboard";
+      const message = 'Share URL copied!'
+      let description = 'The shareable URL has been copied to your clipboard'
 
       if (shareInfo.isLimited) {
-        description = shareInfo.message;
+        description = shareInfo.message
       }
 
-      successToast(message, description);
+      successToast(message, description)
     } catch (error) {
-      console.error("Share failed:", error);
-      errorToast(
-        "Sharing failed",
-        "An error occurred while generating the share URL"
-      );
+      console.error('Share failed:', error)
+      errorToast('Sharing failed', 'An error occurred while generating the share URL')
     } finally {
-      setIsSharing(false);
+      setIsSharing(false)
     }
-  };
+  }
 
   // Clear data
   const handleClearData = () => {
-    if (confirm("Clear all images and settings?")) {
-      localStorageManager.clear(TOOL_NAME);
-      clearHistory();
-      setHistoryState(defaultState);
+    if (confirm('Clear all images and settings?')) {
+      localStorageManager.clear(TOOL_NAME)
+      clearHistory()
+      setHistoryState(defaultState)
     }
-  };
+  }
 
   // Export data
   const handleExportData = () => {
     if (images.length === 0) {
-      errorToast("No images", "Add images to export");
-      return;
+      errorToast('No images', 'Add images to export')
+      return
     }
 
     const data = {
@@ -164,288 +154,268 @@ export default function ImageConverterPage() {
         resizeEnabled,
       },
       exportedAt: new Date().toISOString(),
-    };
+    }
 
     const blob = new Blob([JSON.stringify(data, null, 2)], {
-      type: "application/json",
-    });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `image-converter-data-${new Date()
-      .toISOString()
-      .slice(0, 10)}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-  };
+      type: 'application/json',
+    })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `image-converter-data-${new Date().toISOString().slice(0, 10)}.json`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
+  }
 
   // Handle file selection
   const handleFileSelect = useCallback(
     (files: FileList | File[]) => {
-      const fileArray = Array.from(files);
-      const imageFiles = fileArray.filter((file) =>
-        file.type.startsWith("image/")
-      );
+      const fileArray = Array.from(files)
+      const imageFiles = fileArray.filter((file) => file.type.startsWith('image/'))
 
       if (imageFiles.length === 0) {
-        errorToast("No valid images", "Please select valid image files");
-        return;
+        errorToast('No valid images', 'Please select valid image files')
+        return
       }
 
-      const newImages: ImageFile[] = [];
-      let processedCount = 0;
+      const newImages: ImageFile[] = []
+      let processedCount = 0
 
       imageFiles.forEach((file, index) => {
-        const reader = new FileReader();
+        const reader = new FileReader()
         reader.onload = (e) => {
-          const dataUrl = e.target?.result as string;
+          const dataUrl = e.target?.result as string
           const newImage: ImageFile = {
             id: `${Date.now()}-${index}`,
             name: file.name,
-            originalFormat: file.type.split("/")[1],
+            originalFormat: file.type.split('/')[1],
             size: file.size,
             dataUrl,
-          };
-          newImages.push(newImage);
-          processedCount++;
+          }
+          newImages.push(newImage)
+          processedCount++
 
           if (processedCount === imageFiles.length) {
             setHistoryState((prev) => ({
               ...prev,
               images: [...prev.images, ...newImages],
-            }));
+            }))
           }
-        };
-        reader.readAsDataURL(file);
-      });
+        }
+        reader.readAsDataURL(file)
+      })
     },
     [setHistoryState, errorToast]
-  );
+  )
 
   // Drag and drop handlers
   const handleDrag = useCallback((e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (e.type === "dragenter" || e.type === "dragover") {
-      setDragActive(true);
-    } else if (e.type === "dragleave") {
-      setDragActive(false);
+    e.preventDefault()
+    e.stopPropagation()
+    if (e.type === 'dragenter' || e.type === 'dragover') {
+      setDragActive(true)
+    } else if (e.type === 'dragleave') {
+      setDragActive(false)
     }
-  }, []);
+  }, [])
 
   const handleDrop = useCallback(
     (e: React.DragEvent) => {
-      e.preventDefault();
-      e.stopPropagation();
-      setDragActive(false);
+      e.preventDefault()
+      e.stopPropagation()
+      setDragActive(false)
 
       if (e.dataTransfer.files && e.dataTransfer.files.length > 0) {
-        handleFileSelect(e.dataTransfer.files);
+        handleFileSelect(e.dataTransfer.files)
       }
     },
     [handleFileSelect]
-  );
+  )
 
   // Convert image
   const convertImage = useCallback(
     async (image: ImageFile): Promise<ImageFile> => {
       return new Promise((resolve, reject) => {
-        const img = new Image();
+        const img = new Image()
         img.onload = () => {
           try {
-            const canvas = document.createElement("canvas");
-            const ctx = canvas.getContext("2d");
+            const canvas = document.createElement('canvas')
+            const ctx = canvas.getContext('2d')
 
             if (!ctx) {
-              reject(new Error("Canvas context not available"));
-              return;
+              reject(new Error('Canvas context not available'))
+              return
             }
 
-            let { width, height } = img;
+            let { width, height } = img
 
             // Apply resizing if enabled
             if (resizeEnabled) {
-              const aspectRatio = width / height;
+              const aspectRatio = width / height
 
               if (maintainAspectRatio) {
                 if (width > maxWidth) {
-                  width = maxWidth;
-                  height = width / aspectRatio;
+                  width = maxWidth
+                  height = width / aspectRatio
                 }
                 if (height > maxHeight) {
-                  height = maxHeight;
-                  width = height * aspectRatio;
+                  height = maxHeight
+                  width = height * aspectRatio
                 }
               } else {
-                width = Math.min(width, maxWidth);
-                height = Math.min(height, maxHeight);
+                width = Math.min(width, maxWidth)
+                height = Math.min(height, maxHeight)
               }
             }
 
-            canvas.width = width;
-            canvas.height = height;
+            canvas.width = width
+            canvas.height = height
 
             // Draw image on canvas
-            ctx.drawImage(img, 0, 0, width, height);
+            ctx.drawImage(img, 0, 0, width, height)
 
             // Convert to desired format
-            const mimeType = `image/${outputFormat}`;
-            const qualityValue =
-              outputFormat === "png" ? undefined : quality / 100;
+            const mimeType = `image/${outputFormat}`
+            const qualityValue = outputFormat === 'png' ? undefined : quality / 100
 
             canvas.toBlob(
               (blob) => {
                 if (blob) {
-                  const reader = new FileReader();
+                  const reader = new FileReader()
                   reader.onload = () => {
-                    const convertedDataUrl = reader.result as string;
+                    const convertedDataUrl = reader.result as string
                     const convertedImage: ImageFile = {
                       ...image,
                       convertedDataUrl,
                       convertedSize: blob.size,
-                    };
-                    resolve(convertedImage);
-                  };
-                  reader.readAsDataURL(blob);
+                    }
+                    resolve(convertedImage)
+                  }
+                  reader.readAsDataURL(blob)
                 } else {
-                  reject(new Error("Failed to convert image"));
+                  reject(new Error('Failed to convert image'))
                 }
               },
               mimeType,
               qualityValue
-            );
+            )
           } catch (error) {
-            reject(error);
+            reject(error)
           }
-        };
-        img.onerror = () => reject(new Error("Failed to load image"));
-        img.src = image.dataUrl;
-      });
+        }
+        img.onerror = () => reject(new Error('Failed to load image'))
+        img.src = image.dataUrl
+      })
     },
-    [
-      outputFormat,
-      quality,
-      maxWidth,
-      maxHeight,
-      maintainAspectRatio,
-      resizeEnabled,
-    ]
-  );
+    [outputFormat, quality, maxWidth, maxHeight, maintainAspectRatio, resizeEnabled]
+  )
 
   // Convert all images
   const handleConvertAll = async () => {
     if (images.length === 0) {
-      errorToast("No images", "Add images to convert");
-      return;
+      errorToast('No images', 'Add images to convert')
+      return
     }
 
-    setIsProcessing(true);
-    setProcessingProgress(0);
+    setIsProcessing(true)
+    setProcessingProgress(0)
 
     try {
-      const convertedImages: ImageFile[] = [];
+      const convertedImages: ImageFile[] = []
 
       for (let i = 0; i < images.length; i++) {
-        const image = images[i];
-        const convertedImage = await convertImage(image);
-        convertedImages.push(convertedImage);
-        setProcessingProgress(((i + 1) / images.length) * 100);
+        const image = images[i]
+        const convertedImage = await convertImage(image)
+        convertedImages.push(convertedImage)
+        setProcessingProgress(((i + 1) / images.length) * 100)
 
         // Add small delay for UI feedback
-        await new Promise((resolve) => setTimeout(resolve, 100));
+        await new Promise((resolve) => setTimeout(resolve, 100))
       }
 
       setHistoryState((prev) => ({
         ...prev,
         images: convertedImages,
-      }));
+      }))
 
       successToast(
-        "Conversion complete!",
+        'Conversion complete!',
         `${convertedImages.length} images converted successfully`
-      );
+      )
     } catch (error) {
-      console.error("Conversion failed:", error);
-      errorToast(
-        "Conversion failed",
-        "An error occurred during image conversion"
-      );
+      console.error('Conversion failed:', error)
+      errorToast('Conversion failed', 'An error occurred during image conversion')
     } finally {
-      setIsProcessing(false);
-      setProcessingProgress(0);
+      setIsProcessing(false)
+      setProcessingProgress(0)
     }
-  };
+  }
 
   // Download single image
   const downloadImage = (image: ImageFile) => {
     if (!image.convertedDataUrl) {
-      errorToast("Not converted", "Convert the image first");
-      return;
+      errorToast('Not converted', 'Convert the image first')
+      return
     }
 
-    const link = document.createElement("a");
-    link.href = image.convertedDataUrl;
-    link.download = `${image.name.split(".")[0]}.${outputFormat}`;
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+    const link = document.createElement('a')
+    link.href = image.convertedDataUrl
+    link.download = `${image.name.split('.')[0]}.${outputFormat}`
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
 
   // Download all images
   const downloadAllImages = async () => {
-    const convertedImages = images.filter((img) => img.convertedDataUrl);
+    const convertedImages = images.filter((img) => img.convertedDataUrl)
 
     if (convertedImages.length === 0) {
-      errorToast("No converted images", "Convert images first");
-      return;
+      errorToast('No converted images', 'Convert images first')
+      return
     }
 
     // For multiple images, create a zip (simplified - just download individually)
     convertedImages.forEach((image, index) => {
-      setTimeout(() => downloadImage(image), index * 500);
-    });
+      setTimeout(() => downloadImage(image), index * 500)
+    })
 
-    successToast(
-      "Download started",
-      `${convertedImages.length} images downloading`
-    );
-  };
+    successToast('Download started', `${convertedImages.length} images downloading`)
+  }
 
   // Remove image
   const removeImage = (imageId: string) => {
     setHistoryState((prev) => ({
       ...prev,
       images: prev.images.filter((img) => img.id !== imageId),
-    }));
-  };
+    }))
+  }
 
   // Clear all images
   const clearAllImages = () => {
     setHistoryState((prev) => ({
       ...prev,
       images: [],
-    }));
-  };
+    }))
+  }
 
   // Format file size
   const formatFileSize = (bytes: number): string => {
-    if (bytes === 0) return "0 Bytes";
-    const k = 1024;
-    const sizes = ["Bytes", "KB", "MB", "GB"];
-    const i = Math.floor(Math.log(bytes) / Math.log(k));
-    return `${Number.parseFloat((bytes / k ** i).toFixed(2))} ${sizes[i]}`;
-  };
+    if (bytes === 0) return '0 Bytes'
+    const k = 1024
+    const sizes = ['Bytes', 'KB', 'MB', 'GB']
+    const i = Math.floor(Math.log(bytes) / Math.log(k))
+    return `${Number.parseFloat((bytes / k ** i).toFixed(2))} ${sizes[i]}`
+  }
 
   // Calculate compression ratio
   const getCompressionRatio = (original: number, converted: number): string => {
-    if (!converted) return "";
-    const ratio = ((original - converted) / original) * 100;
-    return ratio > 0
-      ? `-${ratio.toFixed(1)}%`
-      : `+${Math.abs(ratio).toFixed(1)}%`;
-  };
+    if (!converted) return ''
+    const ratio = ((original - converted) / original) * 100
+    return ratio > 0 ? `-${ratio.toFixed(1)}%` : `+${Math.abs(ratio).toFixed(1)}%`
+  }
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
@@ -460,8 +430,7 @@ export default function ImageConverterPage() {
                 Image Converter & Optimizer
               </h1>
               <p className="mb-4 xs:mb-6 text-sm xs:text-base sm:text-lg text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
-                Convert images to modern formats like WebP and AVIF with
-                compression and resizing.
+                Convert images to modern formats like WebP and AVIF with compression and resizing.
               </p>
             </div>
           </section>
@@ -479,10 +448,7 @@ export default function ImageConverterPage() {
                   <div className="grid sm:grid-cols-2 gap-4">
                     {/* Output Format */}
                     <div>
-                      <label
-                        htmlFor="output-format"
-                        className="text-sm font-medium mb-2 block"
-                      >
+                      <label htmlFor="output-format" className="text-sm font-medium mb-2 block">
                         Output Format
                       </label>
                       <select
@@ -491,11 +457,7 @@ export default function ImageConverterPage() {
                         onChange={(e) =>
                           setHistoryState({
                             ...state,
-                            outputFormat: e.target.value as
-                              | "jpeg"
-                              | "png"
-                              | "webp"
-                              | "avif",
+                            outputFormat: e.target.value as 'jpeg' | 'png' | 'webp' | 'avif',
                           })
                         }
                         className="w-full px-3 py-2 text-sm border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
@@ -508,12 +470,9 @@ export default function ImageConverterPage() {
                     </div>
 
                     {/* Quality */}
-                    {outputFormat !== "png" && (
+                    {outputFormat !== 'png' && (
                       <div>
-                        <label
-                          htmlFor="quality"
-                          className="text-sm font-medium mb-2 block"
-                        >
+                        <label htmlFor="quality" className="text-sm font-medium mb-2 block">
                           Quality: {quality}%
                         </label>
                         <input
@@ -547,9 +506,7 @@ export default function ImageConverterPage() {
                           }
                           className="w-4 h-4 text-accent rounded"
                         />
-                        <span className="text-sm font-medium">
-                          Enable resizing
-                        </span>
+                        <span className="text-sm font-medium">Enable resizing</span>
                       </label>
                     </div>
 
@@ -557,10 +514,7 @@ export default function ImageConverterPage() {
                     {resizeEnabled && (
                       <>
                         <div>
-                          <label
-                            htmlFor="max-width"
-                            className="text-sm font-medium mb-2 block"
-                          >
+                          <label htmlFor="max-width" className="text-sm font-medium mb-2 block">
                             Max Width (px)
                           </label>
                           <input
@@ -580,10 +534,7 @@ export default function ImageConverterPage() {
                         </div>
 
                         <div>
-                          <label
-                            htmlFor="max-height"
-                            className="text-sm font-medium mb-2 block"
-                          >
+                          <label htmlFor="max-height" className="text-sm font-medium mb-2 block">
                             Max Height (px)
                           </label>
                           <input
@@ -615,9 +566,7 @@ export default function ImageConverterPage() {
                               }
                               className="w-4 h-4 text-accent rounded"
                             />
-                            <span className="text-sm">
-                              Maintain aspect ratio
-                            </span>
+                            <span className="text-sm">Maintain aspect ratio</span>
                           </label>
                         </div>
                       </>
@@ -647,9 +596,7 @@ export default function ImageConverterPage() {
 
                   <button
                     onClick={downloadAllImages}
-                    disabled={
-                      images.filter((img) => img.convertedDataUrl).length === 0
-                    }
+                    disabled={images.filter((img) => img.convertedDataUrl).length === 0}
                     className="flex items-center justify-center gap-2 rounded-lg border border-border-light px-4 py-3 min-h-[44px] font-medium text-sm transition-all hover:border-accent hover:text-accent disabled:opacity-50 disabled:cursor-not-allowed dark:border-border-dark"
                   >
                     <Download className="w-4 h-4" />
@@ -662,7 +609,7 @@ export default function ImageConverterPage() {
                     className="flex items-center justify-center gap-2 rounded-lg border border-border-light px-4 py-3 min-h-[44px] font-medium text-sm transition-all hover:border-accent hover:text-accent disabled:opacity-50 disabled:cursor-not-allowed dark:border-border-dark"
                   >
                     <Share2 className="w-4 h-4" />
-                    {isSharing ? "Sharing..." : "Share"}
+                    {isSharing ? 'Sharing...' : 'Share'}
                   </button>
 
                   <button
@@ -710,8 +657,8 @@ export default function ImageConverterPage() {
             <div
               className={`rounded-lg border-2 border-dashed p-8 text-center transition-all ${
                 dragActive
-                  ? "border-accent bg-accent/10"
-                  : "border-border-light dark:border-border-dark hover:border-accent"
+                  ? 'border-accent bg-accent/10'
+                  : 'border-border-light dark:border-border-dark hover:border-accent'
               }`}
               onDragEnter={handleDrag}
               onDragLeave={handleDrag}
@@ -738,9 +685,7 @@ export default function ImageConverterPage() {
                     type="file"
                     multiple
                     accept="image/*"
-                    onChange={(e) =>
-                      e.target.files && handleFileSelect(e.target.files)
-                    }
+                    onChange={(e) => e.target.files && handleFileSelect(e.target.files)}
                     className="hidden"
                   />
                 </div>
@@ -752,9 +697,7 @@ export default function ImageConverterPage() {
           {images.length > 0 && (
             <section className="mb-8 sm:mb-12 md:mb-16">
               <div className="flex justify-between items-center mb-6">
-                <h2 className="text-xl font-semibold">
-                  Images ({images.length})
-                </h2>
+                <h2 className="text-xl font-semibold">Images ({images.length})</h2>
                 <button
                   onClick={clearAllImages}
                   className="text-sm text-red-600 hover:text-red-700 transition-colors"
@@ -785,10 +728,7 @@ export default function ImageConverterPage() {
 
                     {/* Image Info */}
                     <div className="p-4">
-                      <h3
-                        className="font-medium mb-2 truncate"
-                        title={image.name}
-                      >
+                      <h3 className="font-medium mb-2 truncate" title={image.name}>
                         {image.name}
                       </h3>
 
@@ -796,10 +736,8 @@ export default function ImageConverterPage() {
                         <div className="flex justify-between">
                           <span>Format:</span>
                           <span className="uppercase font-mono">
-                            {image.originalFormat} →{" "}
-                            {image.convertedDataUrl
-                              ? outputFormat
-                              : image.originalFormat}
+                            {image.originalFormat} →{' '}
+                            {image.convertedDataUrl ? outputFormat : image.originalFormat}
                           </span>
                         </div>
                         <div className="flex justify-between">
@@ -808,19 +746,16 @@ export default function ImageConverterPage() {
                             {formatFileSize(image.size)}
                             {image.convertedSize && (
                               <>
-                                {" → "}
+                                {' → '}
                                 {formatFileSize(image.convertedSize)}
                                 <span
                                   className={`ml-1 ${
                                     image.convertedSize < image.size
-                                      ? "text-green-600"
-                                      : "text-red-600"
+                                      ? 'text-green-600'
+                                      : 'text-red-600'
                                   }`}
                                 >
-                                  {getCompressionRatio(
-                                    image.size,
-                                    image.convertedSize
-                                  )}
+                                  {getCompressionRatio(image.size, image.convertedSize)}
                                 </span>
                               </>
                             )}
@@ -861,21 +796,21 @@ export default function ImageConverterPage() {
               {[
                 {
                   icon: Zap,
-                  title: "Modern Formats",
+                  title: 'Modern Formats',
                   description:
-                    "Convert to WebP and AVIF for up to 80% smaller file sizes with better quality.",
+                    'Convert to WebP and AVIF for up to 80% smaller file sizes with better quality.',
                 },
                 {
                   icon: ImageIcon,
-                  title: "Batch Processing",
+                  title: 'Batch Processing',
                   description:
-                    "Convert multiple images simultaneously with consistent settings and quality.",
+                    'Convert multiple images simultaneously with consistent settings and quality.',
                 },
                 {
                   icon: Settings,
-                  title: "Full Control",
+                  title: 'Full Control',
                   description:
-                    "Customize quality, resize dimensions, and format options for perfect results.",
+                    'Customize quality, resize dimensions, and format options for perfect results.',
                 },
               ].map((feature, index) => (
                 <div
@@ -883,7 +818,7 @@ export default function ImageConverterPage() {
                   className="rounded-lg border border-border-light bg-card-light p-6 text-center dark:border-border-dark dark:bg-card-dark transition-all hover:-translate-y-1 hover:shadow-lg"
                   style={{
                     animationDelay: `${index * 100}ms`,
-                    animation: "fadeInUp 0.6s ease-out forwards",
+                    animation: 'fadeInUp 0.6s ease-out forwards',
                   }}
                 >
                   <div className="mb-4 flex justify-center">
@@ -909,31 +844,27 @@ export default function ImageConverterPage() {
               </h2>
               <div className="prose prose-slate dark:prose-invert max-w-none">
                 <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed mb-4">
-                  Our Image Converter is a powerful, browser-based tool that
-                  transforms your images into modern, web-optimized formats like
-                  WebP and AVIF. These next-generation formats provide
-                  significantly better compression than traditional JPEG and
-                  PNG, often reducing file sizes by 50-80% while maintaining or
-                  even improving visual quality. This makes your websites load
-                  faster, reduces bandwidth costs, and improves user experience
-                  across all devices.
+                  Our Image Converter is a powerful, browser-based tool that transforms your images
+                  into modern, web-optimized formats like WebP and AVIF. These next-generation
+                  formats provide significantly better compression than traditional JPEG and PNG,
+                  often reducing file sizes by 50-80% while maintaining or even improving visual
+                  quality. This makes your websites load faster, reduces bandwidth costs, and
+                  improves user experience across all devices.
                 </p>
                 <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed mb-4">
-                  Built with the latest web technologies, our converter runs
-                  entirely in your browser using the HTML5 Canvas API and modern
-                  JavaScript. This means your images never leave your device -
-                  they're processed locally, ensuring complete privacy and
-                  security. The tool supports batch processing, allowing you to
-                  convert dozens of images simultaneously with consistent
-                  quality settings, saving you valuable time in your workflow.
+                  Built with the latest web technologies, our converter runs entirely in your
+                  browser using the HTML5 Canvas API and modern JavaScript. This means your images
+                  never leave your device - they're processed locally, ensuring complete privacy and
+                  security. The tool supports batch processing, allowing you to convert dozens of
+                  images simultaneously with consistent quality settings, saving you valuable time
+                  in your workflow.
                 </p>
                 <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed">
-                  Whether you're a web developer optimizing site performance, a
-                  blogger preparing images for publication, or a business owner
-                  reducing storage costs, our Image Converter provides
-                  professional-grade results with an intuitive interface. The
-                  tool also includes intelligent resizing options that maintain
-                  aspect ratios and prevent image distortion.
+                  Whether you're a web developer optimizing site performance, a blogger preparing
+                  images for publication, or a business owner reducing storage costs, our Image
+                  Converter provides professional-grade results with an intuitive interface. The
+                  tool also includes intelligent resizing options that maintain aspect ratios and
+                  prevent image distortion.
                 </p>
               </div>
             </div>
@@ -945,14 +876,11 @@ export default function ImageConverterPage() {
               </h2>
               <div className="space-y-4">
                 <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
-                  <h3 className="font-semibold text-lg mb-2">
-                    Step 1: Upload Your Images
-                  </h3>
+                  <h3 className="font-semibold text-lg mb-2">Step 1: Upload Your Images</h3>
                   <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Drag and drop images directly onto the upload area, or click
-                    "Choose Files" to select multiple images from your computer.
-                    Supports all common formats including JPEG, PNG, GIF, WebP,
-                    and more.
+                    Drag and drop images directly onto the upload area, or click "Choose Files" to
+                    select multiple images from your computer. Supports all common formats including
+                    JPEG, PNG, GIF, WebP, and more.
                   </p>
                 </div>
                 <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
@@ -960,31 +888,24 @@ export default function ImageConverterPage() {
                     Step 2: Configure Conversion Settings
                   </h3>
                   <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Choose your desired output format (WebP recommended for best
-                    balance of size and quality, AVIF for maximum compression).
-                    Adjust quality settings and enable resizing if needed to fit
-                    specific dimensions.
+                    Choose your desired output format (WebP recommended for best balance of size and
+                    quality, AVIF for maximum compression). Adjust quality settings and enable
+                    resizing if needed to fit specific dimensions.
                   </p>
                 </div>
                 <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
-                  <h3 className="font-semibold text-lg mb-2">
-                    Step 3: Convert and Preview
-                  </h3>
+                  <h3 className="font-semibold text-lg mb-2">Step 3: Convert and Preview</h3>
                   <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Click "Convert All" to process your images. Preview the
-                    results, compare file sizes, and see compression ratios. The
-                    tool shows original vs. converted sizes to help you
-                    understand the space savings.
+                    Click "Convert All" to process your images. Preview the results, compare file
+                    sizes, and see compression ratios. The tool shows original vs. converted sizes
+                    to help you understand the space savings.
                   </p>
                 </div>
                 <div className="rounded-lg border border-border-light dark:border-border-dark p-4">
-                  <h3 className="font-semibold text-lg mb-2">
-                    Step 4: Download Results
-                  </h3>
+                  <h3 className="font-semibold text-lg mb-2">Step 4: Download Results</h3>
                   <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Download individual converted images or use "Download All"
-                    to get all converted files at once. Share your settings with
-                    others using the share feature.
+                    Download individual converted images or use "Download All" to get all converted
+                    files at once. Share your settings with others using the share feature.
                   </p>
                 </div>
               </div>
@@ -999,43 +920,43 @@ export default function ImageConverterPage() {
                 <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
                   <h3 className="font-semibold mb-2">Modern Format Support</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Convert to WebP, AVIF, and other modern formats that provide
-                    superior compression and quality.
+                    Convert to WebP, AVIF, and other modern formats that provide superior
+                    compression and quality.
                   </p>
                 </div>
                 <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
                   <h3 className="font-semibold mb-2">Batch Processing</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Convert multiple images simultaneously with progress
-                    tracking and consistent quality settings.
+                    Convert multiple images simultaneously with progress tracking and consistent
+                    quality settings.
                   </p>
                 </div>
                 <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
                   <h3 className="font-semibold mb-2">Quality Control</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Adjust compression quality from 10% to 100% to find the
-                    perfect balance of size and quality.
+                    Adjust compression quality from 10% to 100% to find the perfect balance of size
+                    and quality.
                   </p>
                 </div>
                 <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
                   <h3 className="font-semibold mb-2">Smart Resizing</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Resize images with aspect ratio preservation to fit specific
-                    dimensions without distortion.
+                    Resize images with aspect ratio preservation to fit specific dimensions without
+                    distortion.
                   </p>
                 </div>
                 <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
                   <h3 className="font-semibold mb-2">Privacy Protected</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    All processing happens in your browser. Images are never
-                    uploaded to servers or stored online.
+                    All processing happens in your browser. Images are never uploaded to servers or
+                    stored online.
                   </p>
                 </div>
                 <div className="rounded-lg bg-card-light dark:bg-card-dark p-4 border border-border-light dark:border-border-dark">
                   <h3 className="font-semibold mb-2">Real-time Preview</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    See converted images instantly with file size comparisons
-                    and compression ratios.
+                    See converted images instantly with file size comparisons and compression
+                    ratios.
                   </p>
                 </div>
               </div>
@@ -1048,9 +969,7 @@ export default function ImageConverterPage() {
               </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="font-semibold mb-3">
-                    Example 1: Website Optimization
-                  </h3>
+                  <h3 className="font-semibold mb-3">Example 1: Website Optimization</h3>
                   <div className="rounded-lg bg-gray-50 dark:bg-gray-900 p-4">
                     <p className="text-sm mb-2">
                       Scenario: Converting product photos for an e-commerce site
@@ -1068,15 +987,12 @@ export default function ImageConverterPage() {
                       </div>
                     </div>
                     <p className="text-sm mt-2 text-green-600 dark:text-green-400">
-                      Result: 80% smaller files with nearly identical visual
-                      quality
+                      Result: 80% smaller files with nearly identical visual quality
                     </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-3">
-                    Example 2: Blog Post Images
-                  </h3>
+                  <h3 className="font-semibold mb-3">Example 2: Blog Post Images</h3>
                   <div className="rounded-lg bg-gray-50 dark:bg-gray-900 p-4">
                     <p className="text-sm mb-2">
                       Scenario: Optimizing blog images for faster loading
@@ -1094,24 +1010,19 @@ export default function ImageConverterPage() {
                       </div>
                     </div>
                     <p className="text-sm mt-2 text-green-600 dark:text-green-400">
-                      Result: 84% size reduction with resizing for perfect blog
-                      layout
+                      Result: 84% size reduction with resizing for perfect blog layout
                     </p>
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-semibold mb-3">
-                    Example 3: Social Media Preparation
-                  </h3>
+                  <h3 className="font-semibold mb-3">Example 3: Social Media Preparation</h3>
                   <div className="rounded-lg bg-gray-50 dark:bg-gray-900 p-4">
                     <p className="text-sm mb-2">
                       Scenario: Batch converting photos for social media
                     </p>
                     <div className="grid md:grid-cols-2 gap-4 text-sm">
                       <div>
-                        <p className="font-semibold mb-1">
-                          Before (Mixed formats):
-                        </p>
+                        <p className="font-semibold mb-1">Before (Mixed formats):</p>
                         <p>20 images, 45 MB total</p>
                         <p>Formats: JPEG, PNG, various sizes</p>
                       </div>
@@ -1140,11 +1051,10 @@ export default function ImageConverterPage() {
                     What are WebP and AVIF formats?
                   </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    WebP and AVIF are modern image formats that provide superior
-                    compression compared to JPEG and PNG. WebP typically reduces
-                    file sizes by 25-50% while AVIF can achieve 50-80% smaller
-                    files with the same or better visual quality. Both formats
-                    are supported by all modern browsers.
+                    WebP and AVIF are modern image formats that provide superior compression
+                    compared to JPEG and PNG. WebP typically reduces file sizes by 25-50% while AVIF
+                    can achieve 50-80% smaller files with the same or better visual quality. Both
+                    formats are supported by all modern browsers.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
@@ -1152,10 +1062,9 @@ export default function ImageConverterPage() {
                     Are my images uploaded to your servers?
                   </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    No, all image processing happens entirely in your browser
-                    using HTML5 Canvas and JavaScript. Your images are never
-                    uploaded, transmitted, or stored on our servers. This
-                    ensures complete privacy and security for your files.
+                    No, all image processing happens entirely in your browser using HTML5 Canvas and
+                    JavaScript. Your images are never uploaded, transmitted, or stored on our
+                    servers. This ensures complete privacy and security for your files.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
@@ -1163,10 +1072,9 @@ export default function ImageConverterPage() {
                     What's the maximum file size supported?
                   </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    The tool can handle images up to several hundred megabytes,
-                    limited primarily by your device's available memory. For
-                    optimal performance, we recommend images under 50MB. Very
-                    large images may take longer to process.
+                    The tool can handle images up to several hundred megabytes, limited primarily by
+                    your device's available memory. For optimal performance, we recommend images
+                    under 50MB. Very large images may take longer to process.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
@@ -1174,10 +1082,9 @@ export default function ImageConverterPage() {
                     Which quality setting should I use?
                   </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    For most web use, 80-85% quality provides excellent results
-                    with significant size savings. For photography or detailed
-                    images, try 90-95%. For thumbnails or less critical images,
-                    60-75% can dramatically reduce file sizes with acceptable
+                    For most web use, 80-85% quality provides excellent results with significant
+                    size savings. For photography or detailed images, try 90-95%. For thumbnails or
+                    less critical images, 60-75% can dramatically reduce file sizes with acceptable
                     quality.
                   </p>
                 </details>
@@ -1186,10 +1093,9 @@ export default function ImageConverterPage() {
                     Can I convert images back to JPEG or PNG?
                   </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Yes, our tool supports conversion to traditional formats as
-                    well. You can convert WebP or AVIF files back to JPEG or PNG
-                    if needed for compatibility with older systems or specific
-                    use cases.
+                    Yes, our tool supports conversion to traditional formats as well. You can
+                    convert WebP or AVIF files back to JPEG or PNG if needed for compatibility with
+                    older systems or specific use cases.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
@@ -1197,10 +1103,9 @@ export default function ImageConverterPage() {
                     Does resizing reduce image quality?
                   </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Our tool uses high-quality resampling algorithms that
-                    preserve as much detail as possible. When downsizing images,
-                    quality is generally well-preserved. The "maintain aspect
-                    ratio" option prevents distortion by automatically adjusting
+                    Our tool uses high-quality resampling algorithms that preserve as much detail as
+                    possible. When downsizing images, quality is generally well-preserved. The
+                    "maintain aspect ratio" option prevents distortion by automatically adjusting
                     dimensions proportionally.
                   </p>
                 </details>
@@ -1209,11 +1114,10 @@ export default function ImageConverterPage() {
                     Why should I use WebP over JPEG?
                   </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    WebP provides 25-50% better compression than JPEG while
-                    maintaining similar visual quality. It supports both lossy
-                    and lossless compression, transparency (like PNG), and
-                    animation (like GIF). All modern browsers support WebP,
-                    making it ideal for web optimization.
+                    WebP provides 25-50% better compression than JPEG while maintaining similar
+                    visual quality. It supports both lossy and lossless compression, transparency
+                    (like PNG), and animation (like GIF). All modern browsers support WebP, making
+                    it ideal for web optimization.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
@@ -1221,10 +1125,9 @@ export default function ImageConverterPage() {
                     Can I process RAW camera files?
                   </summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Currently, the tool supports standard web image formats
-                    (JPEG, PNG, GIF, WebP, etc.) but not RAW camera formats like
-                    CR2, NEF, or ARW. You'll need to export RAW files to JPEG or
-                    TIFF first using photo editing software.
+                    Currently, the tool supports standard web image formats (JPEG, PNG, GIF, WebP,
+                    etc.) but not RAW camera formats like CR2, NEF, or ARW. You'll need to export
+                    RAW files to JPEG or TIFF first using photo editing software.
                   </p>
                 </details>
               </div>
@@ -1248,5 +1151,5 @@ export default function ImageConverterPage() {
         }
       `}</style>
     </div>
-  );
+  )
 }
