@@ -306,9 +306,9 @@ export default function PasswordGeneratorPage() {
           </section>
 
           {/* Main Interface */}
-          <section className="grid gap-6 lg:grid-cols-[1fr,2fr]">
+          <section className="grid gap-4 xs:gap-6 grid-cols-1 lg:grid-cols-[1fr,2fr] overflow-hidden">
             {/* Settings Panel */}
-            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
               <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                 <h3 className="text-lg font-semibold flex items-center gap-2">
                   <Settings className="w-5 h-5" />
@@ -318,7 +318,7 @@ export default function PasswordGeneratorPage() {
                   Customize your password requirements
                 </p>
               </div>
-              <div className="p-3 sm:p-4 md:p-6 space-y-4">
+              <div className="p-3 xs:p-4 sm:p-4 md:p-6 space-y-4">
                 {/* Length */}
                 <div>
                   <label htmlFor="password-length" className="text-sm font-medium mb-2 block">
@@ -336,7 +336,7 @@ export default function PasswordGeneratorPage() {
                         length: Number(e.target.value),
                       })
                     }
-                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 min-w-0"
                   />
                   <div className="flex justify-between text-xs text-gray-500 mt-1">
                     <span>4</span>
@@ -361,7 +361,7 @@ export default function PasswordGeneratorPage() {
                         quantity: Number(e.target.value),
                       })
                     }
-                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+                    className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 min-w-0"
                   />
                   <div className="flex justify-between text-xs text-gray-500 mt-1">
                     <span>1</span>
@@ -486,9 +486,9 @@ export default function PasswordGeneratorPage() {
             </div>
 
             {/* Output Panel */}
-            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
               <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
-                <div className="flex justify-between items-center">
+                <div className="flex flex-wrap justify-between items-center gap-2">
                   <div>
                     <h3 className="text-lg font-semibold flex items-center gap-2">
                       <Key className="w-5 h-5" />
@@ -500,7 +500,7 @@ export default function PasswordGeneratorPage() {
                         : 'Click generate to create passwords'}
                     </p>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     <button
                       onClick={() => setShowPasswords(!showPasswords)}
                       className="p-2 rounded-lg border border-border-light dark:border-border-dark hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
@@ -563,9 +563,9 @@ export default function PasswordGeneratorPage() {
                           key={password}
                           className="p-4 rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-background-dark"
                         >
-                          <div className="flex items-center justify-between mb-2">
-                            <div className="flex-1 mr-4">
-                              <div className="font-mono text-sm sm:text-base break-all">
+                          <div className="flex flex-wrap items-center justify-between mb-2 gap-2">
+                            <div className="flex-1 min-w-0 mr-2 xs:mr-4">
+                              <div className="font-mono text-xs xs:text-sm sm:text-base break-all overflow-x-auto max-w-full">
                                 {showPasswords ? password : '••••••••••••••••'}
                               </div>
                             </div>

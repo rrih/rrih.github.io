@@ -242,7 +242,7 @@ export default function QRGenerator() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-6 xs:py-8 sm:py-12">
         <Header />
 
         <div className="mb-8">
@@ -254,19 +254,19 @@ export default function QRGenerator() {
           </p>
         </div>
 
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="grid gap-4 xs:gap-6 lg:gap-8 grid-cols-1 lg:grid-cols-2 overflow-hidden">
           {/* Input Section */}
-          <div className="space-y-6">
+          <div className="space-y-4 xs:space-y-6 min-w-0">
             {/* QR Type Selection */}
-            <div className="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6">
+            <div className="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-3 xs:p-4 sm:p-6 min-w-0 overflow-hidden">
               <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
                 <Hash className="h-5 w-5" />
                 QR Code Type
               </h2>
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 xs:grid-cols-2 gap-3">
                 <button
                   onClick={() => setState((prev) => ({ ...prev, qrType: 'text' }))}
-                  className={`p-3 rounded-lg border transition-colors ${
+                  className={`p-2 xs:p-3 rounded-lg border transition-colors min-h-[44px] text-xs xs:text-sm ${
                     qrType === 'text'
                       ? 'bg-accent text-white border-accent'
                       : 'border-border-light dark:border-border-dark hover:border-accent'
@@ -277,7 +277,7 @@ export default function QRGenerator() {
                 </button>
                 <button
                   onClick={() => setState((prev) => ({ ...prev, qrType: 'url' }))}
-                  className={`p-3 rounded-lg border transition-colors ${
+                  className={`p-2 xs:p-3 rounded-lg border transition-colors min-h-[44px] text-xs xs:text-sm ${
                     qrType === 'url'
                       ? 'bg-accent text-white border-accent'
                       : 'border-border-light dark:border-border-dark hover:border-accent'
@@ -288,7 +288,7 @@ export default function QRGenerator() {
                 </button>
                 <button
                   onClick={() => setState((prev) => ({ ...prev, qrType: 'wifi' }))}
-                  className={`p-3 rounded-lg border transition-colors ${
+                  className={`p-2 xs:p-3 rounded-lg border transition-colors min-h-[44px] text-xs xs:text-sm ${
                     qrType === 'wifi'
                       ? 'bg-accent text-white border-accent'
                       : 'border-border-light dark:border-border-dark hover:border-accent'
@@ -299,7 +299,7 @@ export default function QRGenerator() {
                 </button>
                 <button
                   onClick={() => setState((prev) => ({ ...prev, qrType: 'email' }))}
-                  className={`p-3 rounded-lg border transition-colors ${
+                  className={`p-2 xs:p-3 rounded-lg border transition-colors min-h-[44px] text-xs xs:text-sm ${
                     qrType === 'email'
                       ? 'bg-accent text-white border-accent'
                       : 'border-border-light dark:border-border-dark hover:border-accent'
@@ -312,7 +312,7 @@ export default function QRGenerator() {
             </div>
 
             {/* Input Fields */}
-            <div className="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6">
+            <div className="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-3 xs:p-4 sm:p-6 min-w-0 overflow-hidden">
               <h2 className="text-xl font-semibold mb-4">Content</h2>
 
               {qrType === 'wifi' ? (
@@ -423,7 +423,7 @@ export default function QRGenerator() {
             </div>
 
             {/* Customization */}
-            <div className="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6">
+            <div className="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-3 xs:p-4 sm:p-6 min-w-0 overflow-hidden">
               <h2 className="text-xl font-semibold mb-4 flex items-center gap-2">
                 <Settings className="h-5 w-5" />
                 Customization
@@ -473,12 +473,12 @@ export default function QRGenerator() {
                   </select>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 xs:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="fg-color" className="block text-sm font-medium mb-2">
                       Foreground Color
                     </label>
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 min-w-0">
                       <input
                         id="fg-color"
                         type="color"
@@ -489,7 +489,7 @@ export default function QRGenerator() {
                             foregroundColor: e.target.value,
                           }))
                         }
-                        className="w-12 h-10 border border-border-light dark:border-border-dark rounded-lg"
+                        className="w-10 xs:w-12 h-8 xs:h-10 border border-border-light dark:border-border-dark rounded-lg flex-shrink-0"
                       />
                       <input
                         type="text"
@@ -501,7 +501,7 @@ export default function QRGenerator() {
                             foregroundColor: e.target.value,
                           }))
                         }
-                        className="flex-1 px-3 py-2 border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
+                        className="flex-1 min-w-0 px-2 xs:px-3 py-2 text-xs xs:text-sm border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
                       />
                     </div>
                   </div>
@@ -510,7 +510,7 @@ export default function QRGenerator() {
                     <label htmlFor="bg-color" className="block text-sm font-medium mb-2">
                       Background Color
                     </label>
-                    <div className="flex gap-2">
+                    <div className="flex gap-2 min-w-0">
                       <input
                         id="bg-color"
                         type="color"
@@ -521,7 +521,7 @@ export default function QRGenerator() {
                             backgroundColor: e.target.value,
                           }))
                         }
-                        className="w-12 h-10 border border-border-light dark:border-border-dark rounded-lg"
+                        className="w-10 xs:w-12 h-8 xs:h-10 border border-border-light dark:border-border-dark rounded-lg flex-shrink-0"
                       />
                       <input
                         type="text"
@@ -533,7 +533,7 @@ export default function QRGenerator() {
                             backgroundColor: e.target.value,
                           }))
                         }
-                        className="flex-1 px-3 py-2 border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
+                        className="flex-1 min-w-0 px-2 xs:px-3 py-2 text-xs xs:text-sm border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
                       />
                     </div>
                   </div>
@@ -571,8 +571,8 @@ export default function QRGenerator() {
           </div>
 
           {/* Output Section */}
-          <div className="space-y-6">
-            <div className="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-6">
+          <div className="space-y-4 xs:space-y-6 min-w-0">
+            <div className="rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark p-3 xs:p-4 sm:p-6 min-w-0 overflow-hidden">
               <h2 className="text-xl font-semibold mb-4">Generated QR Code</h2>
 
               <div className="text-center">
@@ -752,7 +752,7 @@ export default function QRGenerator() {
             <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
               Use Cases & Examples
             </h2>
-            <div className="space-y-6">
+            <div className="space-y-4 xs:space-y-6 min-w-0">
               <div>
                 <h3 className="font-semibold mb-3">Example 1: WiFi Network Sharing</h3>
                 <div className="grid md:grid-cols-2 gap-4">

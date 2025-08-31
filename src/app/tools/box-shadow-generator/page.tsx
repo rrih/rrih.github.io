@@ -320,9 +320,9 @@ export default function BoxShadowGeneratorPage() {
           </section>
 
           {/* Main Interface */}
-          <section className="grid gap-6 lg:grid-cols-[1fr,2fr]">
+          <section className="grid gap-4 xs:gap-6 grid-cols-1 lg:grid-cols-[1fr,2fr] overflow-hidden">
             {/* Controls Panel */}
-            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
               <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                 <h3 className="text-lg font-semibold flex items-center gap-2">
                   <Settings className="w-5 h-5" />
@@ -332,7 +332,7 @@ export default function BoxShadowGeneratorPage() {
                   Configure shadow layers and properties
                 </p>
               </div>
-              <div className="p-3 sm:p-4 md:p-6 space-y-6">
+              <div className="p-3 xs:p-4 sm:p-4 md:p-6 space-y-4 xs:space-y-6">
                 {/* Preview Settings */}
                 <div>
                   <label htmlFor="preview-settings" className="text-sm font-medium mb-3 block">
@@ -667,9 +667,9 @@ export default function BoxShadowGeneratorPage() {
             </div>
 
             {/* Preview & Output Panel */}
-            <div className="space-y-6">
+            <div className="space-y-4 xs:space-y-6 min-w-0">
               {/* Live Preview */}
-              <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+              <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
                 <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                   <h3 className="text-lg font-semibold">Live Preview</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
@@ -684,7 +684,7 @@ export default function BoxShadowGeneratorPage() {
               </div>
 
               {/* CSS Output */}
-              <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+              <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
                 <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                   <h3 className="text-lg font-semibold">Generated CSS</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
@@ -692,14 +692,14 @@ export default function BoxShadowGeneratorPage() {
                   </p>
                 </div>
                 <div className="p-3 sm:p-4 md:p-6">
-                  <pre className="bg-gray-50 dark:bg-gray-900 p-4 rounded-lg text-sm font-mono overflow-x-auto">
+                  <pre className="bg-gray-50 dark:bg-gray-900 p-3 xs:p-4 rounded-lg text-xs xs:text-sm font-mono overflow-x-auto max-w-full">
                     <code>{`box-shadow: ${generateBoxShadowCSS()};`}</code>
                   </pre>
                 </div>
               </div>
 
               {/* Quick Presets */}
-              <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+              <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
                 <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                   <h3 className="text-lg font-semibold">Quick Presets</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
@@ -726,7 +726,7 @@ export default function BoxShadowGeneratorPage() {
 
               {/* Saved Presets */}
               {presets.length > 0 && (
-                <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+                <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
                   <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                     <h3 className="text-lg font-semibold">Saved Presets</h3>
                     <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">

@@ -295,9 +295,9 @@ export default function GradientGeneratorPage() {
           </section>
 
           {/* Main Interface */}
-          <section className="grid gap-6 lg:grid-cols-[1fr,2fr]">
+          <section className="grid gap-4 xs:gap-6 grid-cols-1 lg:grid-cols-[1fr,2fr] overflow-hidden">
             {/* Controls Panel */}
-            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
               <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                 <h3 className="text-lg font-semibold flex items-center gap-2">
                   <Settings className="w-5 h-5" />
@@ -307,18 +307,18 @@ export default function GradientGeneratorPage() {
                   Configure gradient type and properties
                 </p>
               </div>
-              <div className="p-3 sm:p-4 md:p-6 space-y-6">
+              <div className="p-3 xs:p-4 sm:p-4 md:p-6 space-y-4 xs:space-y-6">
                 {/* Gradient Type */}
                 <div>
                   <label htmlFor="gradient-type" className="text-sm font-medium mb-3 block">
                     Gradient Type
                   </label>
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-1 xs:grid-cols-3 gap-2">
                     {(['linear', 'radial', 'conic'] as const).map((type) => (
                       <button
                         key={type}
                         onClick={() => setHistoryState({ ...state, gradientType: type })}
-                        className={`px-3 py-2 rounded-lg text-sm font-medium transition-all ${
+                        className={`px-2 xs:px-3 py-2 rounded-lg text-xs xs:text-sm font-medium transition-all min-h-[44px] ${
                           gradientType === type
                             ? 'bg-accent text-white'
                             : 'border border-border-light dark:border-border-dark hover:border-accent'
@@ -348,7 +348,7 @@ export default function GradientGeneratorPage() {
                           angle: Number(e.target.value),
                         })
                       }
-                      className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
+                      className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700 min-w-0"
                     />
                   </div>
                 )}
@@ -369,7 +369,7 @@ export default function GradientGeneratorPage() {
                             radialShape: e.target.value as 'circle' | 'ellipse',
                           })
                         }
-                        className="w-full px-3 py-2 text-sm border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
+                        className="w-full min-w-0 px-2 xs:px-3 py-2 text-xs xs:text-sm border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
                       >
                         <option value="circle">Circle</option>
                         <option value="ellipse">Ellipse</option>
@@ -393,7 +393,7 @@ export default function GradientGeneratorPage() {
                               | 'farthest-corner',
                           })
                         }
-                        className="w-full px-3 py-2 text-sm border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
+                        className="w-full min-w-0 px-2 xs:px-3 py-2 text-xs xs:text-sm border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
                       >
                         <option value="closest-side">Closest Side</option>
                         <option value="closest-corner">Closest Corner</option>
@@ -415,7 +415,7 @@ export default function GradientGeneratorPage() {
                             radialPosition: e.target.value,
                           })
                         }
-                        className="w-full px-3 py-2 text-sm border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
+                        className="w-full min-w-0 px-2 xs:px-3 py-2 text-xs xs:text-sm border border-border-light dark:border-border-dark rounded-lg bg-white dark:bg-background-dark"
                       >
                         <option value="center">Center</option>
                         <option value="top">Top</option>
@@ -508,7 +508,7 @@ export default function GradientGeneratorPage() {
                     </button>
                   </div>
 
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-1 xs:grid-cols-3 gap-2">
                     <button
                       onClick={handleShare}
                       disabled={isSharing}
@@ -556,9 +556,9 @@ export default function GradientGeneratorPage() {
             </div>
 
             {/* Preview & Output Panel */}
-            <div className="space-y-6">
+            <div className="space-y-4 xs:space-y-6 min-w-0">
               {/* Live Preview */}
-              <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+              <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
                 <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                   <h3 className="text-lg font-semibold">Live Preview</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
@@ -576,7 +576,7 @@ export default function GradientGeneratorPage() {
               </div>
 
               {/* CSS Output */}
-              <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+              <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
                 <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                   <h3 className="text-lg font-semibold">Generated CSS</h3>
                   <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
@@ -584,7 +584,7 @@ export default function GradientGeneratorPage() {
                   </p>
                 </div>
                 <div className="p-3 sm:p-4 md:p-6">
-                  <pre className="bg-gray-50 dark:bg-gray-900 p-4 rounded-lg text-sm font-mono overflow-x-auto">
+                  <pre className="bg-gray-50 dark:bg-gray-900 p-3 xs:p-4 rounded-lg text-xs xs:text-sm font-mono overflow-x-auto max-w-full">
                     <code>{`background: ${generateGradientCSS()};`}</code>
                   </pre>
                 </div>
@@ -592,7 +592,7 @@ export default function GradientGeneratorPage() {
 
               {/* Saved Presets */}
               {presets.length > 0 && (
-                <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+                <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
                   <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                     <h3 className="text-lg font-semibold">Saved Presets</h3>
                     <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">

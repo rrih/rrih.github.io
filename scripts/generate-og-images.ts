@@ -266,7 +266,7 @@ async function main(): Promise<void> {
           await fs.unlink(path.join(ogDir, file))
         }
       }
-    } catch (error) {
+    } catch (_error) {
       // Directory might not exist, ignore
     }
 

@@ -358,7 +358,7 @@ Start typing your Markdown here...
 ```
 Code blocks
 ```"
-                    className="w-full h-80 xs:h-96 sm:h-[500px] bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-mono text-xs xs:text-sm sm:text-base p-2 xs:p-3 sm:p-4 border border-border-light dark:border-border-dark rounded-lg resize-none transition-all focus:ring-2 focus:ring-accent focus:border-accent"
+                    className="w-full h-80 xs:h-96 sm:h-[500px] bg-white dark:bg-background-dark text-foreground-light dark:text-foreground-dark font-mono text-xs xs:text-sm sm:text-base p-2 xs:p-3 sm:p-4 border border-border-light dark:border-border-dark rounded-lg resize-none transition-all focus:ring-2 focus:ring-accent focus:border-accent overflow-auto max-w-full"
                   />
                 </div>
               </div>

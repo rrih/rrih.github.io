@@ -312,7 +312,7 @@ ${keyframesCSS}
 
   return (
     <div className="min-h-screen bg-white dark:bg-background-dark">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="mx-auto max-w-7xl px-3 xs:px-4 sm:px-6 lg:px-8 py-6 xs:py-8 sm:py-12">
         <Header />
 
         <style jsx>{`
@@ -335,18 +335,18 @@ ${keyframesCSS}
         </section>
 
         {/* Main Interface */}
-        <section className="grid gap-6 lg:gap-8 lg:grid-cols-2 mb-8 sm:mb-12">
+        <section className="grid gap-4 xs:gap-6 lg:gap-8 grid-cols-1 lg:grid-cols-2 mb-8 sm:mb-12 overflow-hidden">
           {/* Controls Section */}
-          <div className="space-y-4 sm:space-y-6">
+          <div className="space-y-4 xs:space-y-6 min-w-0">
             {/* Animation Properties */}
-            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
               <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                 <h3 className="text-lg font-semibold">Animation Properties</h3>
                 <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
                   Configure animation timing and behavior
                 </p>
               </div>
-              <div className="p-3 sm:p-4 md:p-6 space-y-4">
+              <div className="p-3 xs:p-4 sm:p-4 md:p-6 space-y-4">
                 <div>
                   <label htmlFor="animation-name" className="block text-sm font-medium mb-2">
                     Animation Name
@@ -499,7 +499,7 @@ ${keyframesCSS}
             </div>
 
             {/* Presets */}
-            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
               <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                 <h3 className="text-lg font-semibold">Animation Presets</h3>
                 <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
@@ -523,9 +523,9 @@ ${keyframesCSS}
           </div>
 
           {/* Preview Section */}
-          <div className="space-y-4 sm:space-y-6">
+          <div className="space-y-4 xs:space-y-6 min-w-0">
             {/* Animation Preview */}
-            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
               <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                 <div className="flex items-center justify-between">
                   <div>
@@ -599,7 +599,7 @@ ${keyframesCSS}
             </div>
 
             {/* CSS Output */}
-            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+            <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg min-w-0">
               <div className="p-3 sm:p-4 md:p-6 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                 <div className="flex items-center justify-between">
                   <div>
@@ -625,7 +625,7 @@ ${keyframesCSS}
                 </div>
               </div>
               <div className="p-3 sm:p-4 md:p-6">
-                <pre className="text-sm bg-gray-50 dark:bg-gray-800/50 rounded-lg p-4 overflow-x-auto">
+                <pre className="text-xs xs:text-sm bg-gray-50 dark:bg-gray-800/50 rounded-lg p-3 xs:p-4 overflow-x-auto max-w-full">
                   <code>{generateCSS()}</code>
                 </pre>
                 {copied && (
