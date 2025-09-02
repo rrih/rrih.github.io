@@ -27,7 +27,7 @@ import {
   Wallet,
   X,
 } from 'lucide-react'
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useState } from 'react'
 import {
   Area,
   AreaChart,
@@ -151,21 +151,42 @@ export default function InvestmentCalculatorPage() {
     },
   ]
 
-  const getDefaultState = (): InvestmentCalculatorState => ({
-    mode: 'future-value',
-    currency: 'USD',
-    initialAmount: 10000,
-    monthlyAmount: 500,
-    annualReturn: 7,
-    investmentPeriod: 20,
-    targetAmount: 500000,
-    withdrawalPeriod: 30,
-    inflationRate: 2,
-    compoundFrequency: 'monthly',
-    phases: defaultPhases,
-    defaultPortfolios: defaultPortfolios,
-    totalSimulationYears: 40,
-  })
+  const getDefaultState = useCallback(
+    (): InvestmentCalculatorState => ({
+      mode: 'future-value',
+      currency: 'USD',
+      initialAmount: 10000,
+      monthlyAmount: 500,
+      annualReturn: 7,
+      investmentPeriod: 20,
+      targetAmount: 500000,
+      withdrawalPeriod: 30,
+      inflationRate: 2,
+      compoundFrequency: 'monthly',
+      phases: [
+        {
+          id: 'phase1',
+          startYear: 0,
+          duration: 20,
+          action: 'invest',
+          monthlyAmount: 500,
+          portfolios: [
+            { id: 'stocks', name: 'Stocks', annualReturn: 10, color: '#3b82f6', allocation: 70 },
+            { id: 'bonds', name: 'Bonds', annualReturn: 5, color: '#10b981', allocation: 20 },
+            { id: 'cash', name: 'Cash', annualReturn: 2, color: '#6b7280', allocation: 10 },
+          ],
+          description: 'Initial investment phase',
+        },
+      ],
+      defaultPortfolios: [
+        { id: 'stocks', name: 'Stocks', annualReturn: 10, color: '#3b82f6', allocation: 70 },
+        { id: 'bonds', name: 'Bonds', annualReturn: 5, color: '#10b981', allocation: 20 },
+        { id: 'cash', name: 'Cash', annualReturn: 2, color: '#6b7280', allocation: 10 },
+      ],
+      totalSimulationYears: 40,
+    }),
+    []
+  )
 
   const currencyInfo: Record<
     Currency,
@@ -292,105 +313,119 @@ export default function InvestmentCalculatorPage() {
 
   // Calculate advanced simulation
   const calculateAdvancedSimulation = useMemo(() => {
-    if (state.mode !== 'advanced' || !state.phases || state.phases.length === 0) {
-      return null
-    }
+    try {
+      if (state.mode !== 'advanced' || !state.phases || state.phases.length === 0) {
+        return null
+      }
 
-    const simulationYears = state.totalSimulationYears || 40
-    const chartData = []
-    let currentBalance = state.initialAmount
-    let totalInvested = state.initialAmount
-    let totalWithdrawn = 0
+      // Validate essential data
+      if (
+        !Array.isArray(state.phases) ||
+        state.phases.some((phase) => !phase || !Array.isArray(phase.portfolios))
+      ) {
+        console.warn('Invalid phases data structure')
+        return null
+      }
 
-    // Sort phases by start year
-    const sortedPhases = [...state.phases].sort((a, b) => a.startYear - b.startYear)
+      const simulationYears = Math.max(10, Math.min(100, state.totalSimulationYears || 40))
+      const chartData = []
+      let currentBalance = state.initialAmount
+      let totalInvested = state.initialAmount
+      let totalWithdrawn = 0
 
-    for (let year = 0; year <= simulationYears; year++) {
-      // Find active phases for this year
-      const activePhases = sortedPhases.filter(
-        (phase) => year >= phase.startYear && year < phase.startYear + phase.duration
-      )
+      // Sort phases by start year
+      const sortedPhases = [...state.phases].sort((a, b) => a.startYear - b.startYear)
 
-      let yearlyContribution = 0
-      let yearlyWithdrawal = 0
-      let weightedReturn = 0
+      for (let year = 0; year <= simulationYears; year++) {
+        // Find active phases for this year
+        const activePhases = sortedPhases.filter(
+          (phase) => year >= phase.startYear && year < phase.startYear + phase.duration
+        )
 
-      // Calculate contributions/withdrawals and weighted returns for active phases
-      if (activePhases.length === 0) {
-        // No active phases, use default return rate but no contributions/withdrawals
-        weightedReturn = state.annualReturn
-      } else {
-        let totalPhaseWeight = 0
-        let _totalContributionWeight = 0
+        let yearlyContribution = 0
+        let yearlyWithdrawal = 0
+        let weightedReturn = 0
 
-        for (const phase of activePhases) {
-          if (phase.action === 'invest') {
-            yearlyContribution += phase.monthlyAmount * 12
-            _totalContributionWeight += phase.monthlyAmount * 12
-          } else if (phase.action === 'withdraw') {
-            yearlyWithdrawal += phase.monthlyAmount * 12
+        // Calculate contributions/withdrawals and weighted returns for active phases
+        if (activePhases.length === 0) {
+          // No active phases, use default return rate but no contributions/withdrawals
+          weightedReturn = state.annualReturn
+        } else {
+          let totalPhaseWeight = 0
+          let _totalContributionWeight = 0
+
+          for (const phase of activePhases) {
+            if (phase.action === 'invest') {
+              yearlyContribution += phase.monthlyAmount * 12
+              _totalContributionWeight += phase.monthlyAmount * 12
+            } else if (phase.action === 'withdraw') {
+              yearlyWithdrawal += phase.monthlyAmount * 12
+            }
+
+            // Calculate weighted return based on portfolio allocation for this phase
+            const phaseReturn = phase.portfolios.reduce(
+              (sum, portfolio) => sum + (portfolio.annualReturn * portfolio.allocation) / 100,
+              0
+            )
+
+            // Weight the return by the contribution amount for invest phases, or treat equally for other phases
+            const phaseWeight = phase.action === 'invest' ? phase.monthlyAmount * 12 : 1
+            weightedReturn += phaseReturn * phaseWeight
+            totalPhaseWeight += phaseWeight
           }
 
-          // Calculate weighted return based on portfolio allocation for this phase
-          const phaseReturn = phase.portfolios.reduce(
-            (sum, portfolio) => sum + (portfolio.annualReturn * portfolio.allocation) / 100,
-            0
-          )
-
-          // Weight the return by the contribution amount for invest phases, or treat equally for other phases
-          const phaseWeight = phase.action === 'invest' ? phase.monthlyAmount * 12 : 1
-          weightedReturn += phaseReturn * phaseWeight
-          totalPhaseWeight += phaseWeight
+          // Calculate weighted average return
+          if (totalPhaseWeight > 0) {
+            weightedReturn = weightedReturn / totalPhaseWeight
+          } else {
+            weightedReturn = state.annualReturn // Fallback
+          }
         }
 
-        // Calculate weighted average return
-        if (totalPhaseWeight > 0) {
-          weightedReturn = weightedReturn / totalPhaseWeight
-        } else {
-          weightedReturn = state.annualReturn // Fallback
+        // Apply monthly compounding
+        const monthlyRate = weightedReturn / 100 / 12
+        for (let month = 0; month < 12; month++) {
+          // Add monthly contribution
+          if (yearlyContribution > 0) {
+            currentBalance += yearlyContribution / 12
+            totalInvested += yearlyContribution / 12
+          }
+
+          // Subtract monthly withdrawal
+          if (yearlyWithdrawal > 0) {
+            const monthlyWithdrawal = Math.min(yearlyWithdrawal / 12, currentBalance)
+            currentBalance -= monthlyWithdrawal
+            totalWithdrawn += monthlyWithdrawal
+          }
+
+          // Apply compound growth
+          currentBalance *= 1 + monthlyRate
         }
+
+        chartData.push({
+          year,
+          principal: Math.round(totalInvested - totalWithdrawn),
+          value: Math.round(Math.max(0, currentBalance)),
+          returns: Math.round(Math.max(0, currentBalance - (totalInvested - totalWithdrawn))),
+          totalInvested: Math.round(totalInvested),
+          totalWithdrawn: Math.round(totalWithdrawn),
+          phases: activePhases
+            .map((p) => p.description || `Phase ${sortedPhases.indexOf(p) + 1}`)
+            .join(', '),
+        })
       }
 
-      // Apply monthly compounding
-      const monthlyRate = weightedReturn / 100 / 12
-      for (let month = 0; month < 12; month++) {
-        // Add monthly contribution
-        if (yearlyContribution > 0) {
-          currentBalance += yearlyContribution / 12
-          totalInvested += yearlyContribution / 12
-        }
-
-        // Subtract monthly withdrawal
-        if (yearlyWithdrawal > 0) {
-          const monthlyWithdrawal = Math.min(yearlyWithdrawal / 12, currentBalance)
-          currentBalance -= monthlyWithdrawal
-          totalWithdrawn += monthlyWithdrawal
-        }
-
-        // Apply compound growth
-        currentBalance *= 1 + monthlyRate
+      return {
+        futureValue: currentBalance,
+        totalContributions: totalInvested,
+        totalWithdrawn,
+        totalReturns: currentBalance - (totalInvested - totalWithdrawn),
+        chartData,
+        phases: sortedPhases,
       }
-
-      chartData.push({
-        year,
-        principal: Math.round(totalInvested - totalWithdrawn),
-        value: Math.round(Math.max(0, currentBalance)),
-        returns: Math.round(Math.max(0, currentBalance - (totalInvested - totalWithdrawn))),
-        totalInvested: Math.round(totalInvested),
-        totalWithdrawn: Math.round(totalWithdrawn),
-        phases: activePhases
-          .map((p) => p.description || `Phase ${sortedPhases.indexOf(p) + 1}`)
-          .join(', '),
-      })
-    }
-
-    return {
-      futureValue: currentBalance,
-      totalContributions: totalInvested,
-      totalWithdrawn,
-      totalReturns: currentBalance - (totalInvested - totalWithdrawn),
-      chartData,
-      phases: sortedPhases,
+    } catch (error) {
+      console.error('Error in advanced simulation calculation:', error)
+      return null
     }
   }, [state])
 
@@ -615,15 +650,44 @@ export default function InvestmentCalculatorPage() {
 
   // Load from URL or localStorage on mount
   useEffect(() => {
-    const sharedState = getInitialStateFromUrl()
-    if (sharedState) {
-      setHistoryState(sharedState)
-      return
-    }
+    try {
+      const sharedState = getInitialStateFromUrl()
+      if (sharedState) {
+        // Validate shared state structure for advanced mode
+        if (sharedState.mode === 'advanced') {
+          // Ensure phases array exists and is valid
+          if (!sharedState.phases || !Array.isArray(sharedState.phases)) {
+            sharedState.phases = []
+          }
 
-    const saved = localStorageManager.load<InvestmentCalculatorState>(TOOL_NAME)
-    if (saved) {
-      setHistoryState(saved)
+          // Validate each phase structure
+          sharedState.phases = sharedState.phases.filter(
+            (phase) =>
+              phase &&
+              typeof phase.id === 'string' &&
+              typeof phase.startYear === 'number' &&
+              typeof phase.duration === 'number' &&
+              Array.isArray(phase.portfolios)
+          )
+
+          // Ensure defaultPortfolios exists
+          if (!sharedState.defaultPortfolios || !Array.isArray(sharedState.defaultPortfolios)) {
+            sharedState.defaultPortfolios = [...defaultPortfolios]
+          }
+        }
+
+        setHistoryState(sharedState)
+        return
+      }
+
+      const saved = localStorageManager.load<InvestmentCalculatorState>(TOOL_NAME)
+      if (saved) {
+        setHistoryState(saved)
+      }
+    } catch (error) {
+      console.warn('Failed to restore state from URL or localStorage:', error)
+      // Use default state if restoration fails
+      setHistoryState(getDefaultState())
     }
 
     // Load saved patterns
@@ -636,7 +700,7 @@ export default function InvestmentCalculatorPage() {
     if (window.innerWidth < 640 && !sessionStorage.getItem('wizard-dismissed')) {
       setShowMobileWizard(true)
     }
-  }, [getInitialStateFromUrl, setHistoryState])
+  }, [getInitialStateFromUrl, setHistoryState, getDefaultState])
 
   // Save to localStorage and update URL on state change
   useEffect(() => {
@@ -1990,8 +2054,12 @@ export default function InvestmentCalculatorPage() {
                 </div>
 
                 {/* Advanced Chart */}
-                {calculateAdvancedSimulation.chartData && (
-                  <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg">
+                {calculateAdvancedSimulation?.chartData &&
+                calculateAdvancedSimulation.chartData.length > 0 ? (
+                  <div
+                    key={`chart-${state.phases?.length || 0}-${state.totalSimulationYears}`}
+                    className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden transition-all hover:shadow-lg"
+                  >
                     <div className="p-4 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
                       <h3 className="text-lg font-semibold">
                         <ChartLine className="inline-block w-5 h-5 mr-2" />
@@ -2003,8 +2071,15 @@ export default function InvestmentCalculatorPage() {
                     </div>
 
                     <div className="p-4">
-                      <ResponsiveContainer width="100%" height={400}>
-                        <AreaChart data={calculateAdvancedSimulation.chartData}>
+                      <ResponsiveContainer
+                        width="100%"
+                        height={400}
+                        key={`responsive-container-${state.phases?.length || 0}-${calculateAdvancedSimulation.chartData.length}`}
+                      >
+                        <AreaChart
+                          data={calculateAdvancedSimulation.chartData}
+                          key={`area-chart-${state.phases?.length || 0}-${calculateAdvancedSimulation.chartData.length}`}
+                        >
                           <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
                           <XAxis
                             dataKey="year"
@@ -2181,6 +2256,28 @@ export default function InvestmentCalculatorPage() {
                           />
                         </AreaChart>
                       </ResponsiveContainer>
+                    </div>
+                  </div>
+                ) : (
+                  /* Fallback when chart data is not available */
+                  <div className="rounded-lg border border-border-light bg-card-light dark:border-border-dark dark:bg-card-dark overflow-hidden">
+                    <div className="p-4 border-b border-border-light dark:border-border-dark bg-white dark:bg-background-dark">
+                      <h3 className="text-lg font-semibold">
+                        <ChartLine className="inline-block w-5 h-5 mr-2" />
+                        Advanced Portfolio Growth
+                      </h3>
+                      <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-1">
+                        Add investment phases to see your portfolio growth projection
+                      </p>
+                    </div>
+                    <div className="p-8 text-center">
+                      <ChartLine className="w-16 h-16 mx-auto mb-4 text-foreground-light-secondary dark:text-foreground-dark-secondary opacity-50" />
+                      <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                        No investment phases configured yet.
+                      </p>
+                      <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mt-2">
+                        Click "Add Phase" above to start building your investment strategy.
+                      </p>
                     </div>
                   </div>
                 )}
