@@ -98,6 +98,11 @@ export default function RootLayout({
             }),
           }}
         />
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6426570202991325"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="min-h-screen bg-white text-foreground-light antialiased transition-colors duration-200 dark:bg-background-dark dark:text-foreground-dark">
         {/* Google Analytics */}
