@@ -1,6 +1,7 @@
 'use client'
 
 import { Download, X } from 'lucide-react'
+import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 interface BeforeInstallPromptEvent extends Event {
@@ -13,9 +14,11 @@ interface BeforeInstallPromptEvent extends Event {
 }
 
 export function InstallPrompt() {
+  const pathname = usePathname()
   const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null)
   const [showInstallPrompt, setShowInstallPrompt] = useState(false)
   const [isInstalled, setIsInstalled] = useState(false)
+  const isTimetableRoute = pathname?.startsWith('/tools/timetable') ?? false
 
   useEffect(() => {
     // Check if app is already installed
@@ -88,8 +91,8 @@ export function InstallPrompt() {
     localStorage.setItem('pwa-install-prompt-time', Date.now().toString())
   }
 
-  // Don't show if already installed or no prompt available
-  if (isInstalled || !deferredPrompt || !showInstallPrompt) {
+  // Don't show if already installed, timetable route, or no prompt available
+  if (isInstalled || isTimetableRoute || !deferredPrompt || !showInstallPrompt) {
     return null
   }
 
