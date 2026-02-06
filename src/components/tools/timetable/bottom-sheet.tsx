@@ -78,7 +78,7 @@ export function BottomSheet({ open, title, subtitle, onClose, children }: Bottom
     <dialog
       open
       className={cn(
-        'fixed inset-0 z-[100] transition-opacity duration-200',
+        'fixed inset-0 z-[100] m-0 h-screen w-screen max-h-none max-w-none overflow-visible border-0 bg-transparent p-0 outline-none transition-opacity duration-200',
         isVisible ? 'opacity-100' : 'opacity-0'
       )}
       aria-label={title}
