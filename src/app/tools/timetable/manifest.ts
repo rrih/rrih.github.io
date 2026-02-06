@@ -2,15 +2,18 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
+    id: '/tools/timetable/',
     name: 'Timetable Share',
     short_name: 'Timetable',
     description: 'URLだけで共有・復元できる時間割PWA',
     start_url: '/tools/timetable/',
     scope: '/tools/timetable/',
     display: 'standalone',
+    display_override: ['standalone', 'minimal-ui'],
     background_color: '#f8fafc',
     theme_color: '#2563eb',
     orientation: 'portrait',
+    prefer_related_applications: false,
     icons: [
       {
         src: '/icons/icon-192x192.png',

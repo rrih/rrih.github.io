@@ -1,13 +1,17 @@
 import { generateToolMetadata } from '@/lib/metadata'
-import type { Viewport } from 'next'
+import type { Metadata, Viewport } from 'next'
 
-export const metadata = {
+export const metadata: Metadata = {
   ...generateToolMetadata('timetable'),
+  applicationName: 'Timetable Share',
   manifest: '/tools/timetable/manifest.webmanifest',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
     title: 'Timetable Share',
+  },
+  other: {
+    'apple-mobile-web-app-capable': 'yes',
   },
 }
 
