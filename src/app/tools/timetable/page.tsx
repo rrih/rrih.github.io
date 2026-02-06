@@ -657,6 +657,7 @@ export default function TimetablePage() {
   const canGoPrevDay = selectedDayIndex > 0
   const canGoNextDay = selectedDayIndex >= 0 && selectedDayIndex < state.meta.activeDays.length - 1
   const urlUsageRatio = Math.min(1, urlLength / URL_MAX_LENGTH)
+  const canNativeShare = typeof navigator !== 'undefined' && 'share' in navigator
   const urlUsageMessage =
     urlUsageRatio >= 0.95
       ? 'URLパラメータが上限に近いです。メモを短くすると共有しやすくなります。'
@@ -684,7 +685,7 @@ export default function TimetablePage() {
             >
               <Copy className="h-3.5 w-3.5" />
             </button>
-            {'share' in navigator && (
+            {canNativeShare && (
               <button
                 type="button"
                 onClick={handleNativeShare}
@@ -774,7 +775,7 @@ export default function TimetablePage() {
                   <Copy className="h-4 w-4" />
                   URLコピー
                 </button>
-                {'share' in navigator && (
+                {canNativeShare && (
                   <button
                     type="button"
                     onClick={handleNativeShare}
