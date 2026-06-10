@@ -11,6 +11,21 @@
   "lang": "en",
   "dir": "ltr",
   "scope": "/",
+  "shortcuts": [
+    {
+      "name": "URL Timetable",
+      "short_name": "Timetable",
+      "description": "Open the shareable URL-based timetable app",
+      "url": "/tools/timetable/",
+      "icons": [
+        {
+          "src": "/icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
   "icons": [
     {
       "src": "/icons/icon-72x72.png",
