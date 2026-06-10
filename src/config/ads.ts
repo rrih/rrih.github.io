@@ -4,8 +4,8 @@ export const ADSENSE_CLIENT = 'ca-pub-6426570202991325'
 // Empty string = unit not created yet; AdUnit renders nothing for that slot,
 // so this file can ship before the units exist in AdSense.
 export const adSlots = {
-  toolContent: '',
-  blogArticle: '',
+  toolContent: '8269566351',
+  blogArticle: '8885519736',
 } as const
 
 export type AdSlotKey = keyof typeof adSlots
