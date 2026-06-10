@@ -66,6 +66,23 @@ const generateSitemap = async () => {
     }
   }
 
+  // Add static apps deployed under public/ (copied as-is to out/)
+  const staticAppPages = [
+    'shitsugyo-hoken',
+    'shitsugyo-hoken/guide',
+    'shitsugyo-hoken/nissu',
+    'shitsugyo-hoken/keisanshiki',
+    'shitsugyo-hoken/faq',
+  ]
+  for (const path of staticAppPages) {
+    pages.push({
+      url: `${baseUrl}/${path}`,
+      lastmod: currentDate,
+      changefreq: 'monthly',
+      priority: 0.8,
+    })
+  }
+
   // Add blog posts
   try {
     const blogEntries = await getBlogSitemapEntries()
