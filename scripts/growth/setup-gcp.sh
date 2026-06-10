@@ -21,7 +21,7 @@ echo "Using project: $PROJECT_ID"
 
 echo "Enabling APIs (Search Console, Analytics Data)..."
 gcloud services enable searchconsole.googleapis.com analyticsdata.googleapis.com \
-  --project "$PROJECT_ID"
+  iam.googleapis.com --project "$PROJECT_ID"
 
 SA_EMAIL="${SA_NAME}@${PROJECT_ID}.iam.gserviceaccount.com"
 if ! gcloud iam service-accounts describe "$SA_EMAIL" --project "$PROJECT_ID" >/dev/null 2>&1; then
