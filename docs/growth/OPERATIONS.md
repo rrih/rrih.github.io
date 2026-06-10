@@ -11,6 +11,9 @@
 4. 任意: 「サイトごと」→ 自動広告を ON（コード変更不要で追加配信）
 
 ### 1-2. Search Console / GA4 の API アクセス
+
+**短縮ルート**: `gcloud auth login` 済みなら `./scripts/growth/setup-gcp.sh [PROJECT_ID]` が手順1〜3と6を自動実行する（残りは4と5のみ）。
+
 1. Google Cloud Console で プロジェクト作成（既存でも可）
 2. 「Search Console API」「Google Analytics Data API」を有効化
 3. サービスアカウントを作成し、JSON鍵をダウンロード
