@@ -18,7 +18,8 @@
       "*.min.js",
       "next-env.d.ts",
       "public/sw.js",
-      "public/workbox-*.js"
+      "public/workbox-*.js",
+      "public/shitsugyo-hoken"
     ]
   },
   "linter": {
