@@ -19,6 +19,8 @@
       "next-env.d.ts",
       "public/sw.js",
       "public/workbox-*.js",
+      "public/tools/timetable/sw.js",
+      "public/tools/timetable/workbox-*.js",
       "public/shitsugyo-hoken"
     ]
   },

@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-06-10T15:19:05.383Z",
+  "range": {
+    "startDate": "2026-05-11",
+    "endDate": "2026-06-07"
+  },
+  "searchConsole": null,
+  "ga4": null,
+  "revenue": {
+    "currency": "JPY",
+    "note": "AdSense Management API requires interactive OAuth, so record monthly estimated earnings here manually (from the AdSense dashboard). Format: { \"month\": \"YYYY-MM\", \"estimatedEarnings\": 123 }",
+    "entries": []
+  },
+  "kpi": {
+    "month": "2026-06",
+    "target": {
+      "pageviews": 3000,
+      "revenueJpy": 0
+    },
+    "actualPageviews28d": null,
+    "actualRevenueJpy": null
+  }
+}

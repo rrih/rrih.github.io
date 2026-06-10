@@ -1,5 +1,6 @@
 'use client'
 
+import { AdUnit } from '@/components/ads/ad-unit'
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
 import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
@@ -451,6 +452,8 @@ export default function JsonFormatterPage() {
               ))}
             </div>
           </section>
+
+          <AdUnit slot="toolContent" className="mb-8 sm:mb-12" />
 
           {/* Content Sections for AdSense */}
           <section className="mb-8 sm:mb-12 md:mb-16 border-t border-border-light dark:border-border-dark pt-8 sm:pt-12">

@@ -1,3 +1,4 @@
+import { AdUnit } from '@/components/ads/ad-unit'
 import ShareButton from '@/components/blog/ShareButton'
 import { BreadcrumbNav } from '@/components/blog/breadcrumb-nav'
 import { getAllBlogSlugs, getBlogPost } from '@/lib/blog'
@@ -168,6 +169,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <article className="prose prose-lg dark:prose-invert max-w-none">
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </article>
+
+        <AdUnit slot="blogArticle" className="mt-12" />
 
         {/* Related Tools Section */}
         {post.relatedTools && post.relatedTools.length > 0 && (

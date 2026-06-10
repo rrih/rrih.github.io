@@ -1,0 +1,5 @@
+{
+  "currency": "JPY",
+  "note": "AdSense Management API requires interactive OAuth, so record monthly estimated earnings here manually (from the AdSense dashboard). Format: { \"month\": \"YYYY-MM\", \"estimatedEarnings\": 123 }",
+  "entries": []
+}
