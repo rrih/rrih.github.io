@@ -37,7 +37,7 @@
 - No emojis in code; use Lucide icons. Keep colors consistent with the homepage palette and design mobile-first.
 
 ## Growth Automation (AdSense Revenue Program)
-This repository runs an automated growth loop targeting 10,000 JPY/month AdSense revenue by 2026-12. Any agent (Codex, Claude Code, or other LLMs) can execute it.
+This repository runs an automated growth loop targeting 50,000 JPY/month AdSense revenue by 2026-12. Any agent (Codex, Claude Code, or other LLMs) can execute it.
 
 - **Entry point**: open the latest GitHub Issue labeled `growth` ("Weekly growth review ..."), or run `bun scripts/growth/fetch-metrics.ts` to refresh data, then follow `docs/growth/playbooks/weekly-review.md`.
 - **Plan & KPIs**: `docs/growth/MASTER_PLAN.md` (monthly targets, tool backlog). Operations and one-time human setup: `docs/growth/OPERATIONS.md`.
