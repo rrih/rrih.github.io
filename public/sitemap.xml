@@ -142,6 +142,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://rrih.github.io/blog/how-to-format-messy-json-data/</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rrih.github.io/blog/generate-qr-codes-for-your-business/</loc>
+    <lastmod>2025-01-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://rrih.github.io/blog/embed-images-in-html-email-base64/</loc>
     <lastmod>2025-01-31</lastmod>
     <changefreq>weekly</changefreq>
@@ -154,19 +166,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rrih.github.io/blog/generate-qr-codes-for-your-business/</loc>
-    <lastmod>2025-01-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://rrih.github.io/blog/make-beautiful-css-gradients-without-code/</loc>
-    <lastmod>2025-01-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://rrih.github.io/blog/how-to-format-messy-json-data/</loc>
     <lastmod>2025-01-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
