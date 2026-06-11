@@ -94,9 +94,9 @@ export function parseRelatedToolConfig(source: string): Record<string, string[]>
   return mappings
 }
 
-export function selectTargetToolIds(topPages: GscRow[], limit = 3): string[] {
+export function selectTargetToolIds(topPages: GscRow[], limit = 5): string[] {
   return topPages
-    .filter((row) => row.impressions >= 100 || row.clicks > 0)
+    .filter((row) => row.impressions > 0 || row.clicks > 0)
     .sort((a, b) => b.impressions - a.impressions)
     .map((row) => toolIdFromUrl(row.keys[0] ?? ''))
     .filter((toolId): toolId is string => Boolean(toolId))

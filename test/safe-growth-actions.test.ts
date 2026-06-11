@@ -15,7 +15,7 @@ describe('safe growth actions', () => {
     expect(toolIdFromUrl('https://example.com/tools/animation-generator/')).toBeNull()
   })
 
-  it('selects high-impression tool pages as targets', () => {
+  it('selects tool pages with search impressions as targets', () => {
     const targets = selectTargetToolIds([
       {
         keys: ['https://rrih.github.io/tools/animation-generator/'],
@@ -32,6 +32,13 @@ describe('safe growth actions', () => {
         position: 35,
       },
       {
+        keys: ['https://rrih.github.io/tools/markdown-editor/'],
+        clicks: 0,
+        impressions: 15,
+        ctr: 0,
+        position: 77,
+      },
+      {
         keys: ['https://rrih.github.io/about/'],
         clicks: 0,
         impressions: 999,
@@ -40,7 +47,7 @@ describe('safe growth actions', () => {
       },
     ])
 
-    expect(targets).toEqual(['animation-generator', 'gradient-generator'])
+    expect(targets).toEqual(['animation-generator', 'gradient-generator', 'markdown-editor'])
   })
 
   it('adds deterministic related links without overwriting existing links', () => {
