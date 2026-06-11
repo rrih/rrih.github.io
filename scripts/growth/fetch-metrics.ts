@@ -7,13 +7,18 @@
  *   - data/growth/metrics/latest.json       (same content, stable path)
  *   - data/growth/reports/<YYYY-MM-DD>.md   (human/LLM-readable report)
  *
- * Auth: a Google Cloud service account with read access to:
+ * Auth: either:
+ *   - a Google Cloud service account with read access to:
  *   - Search Console property https://rrih.github.io/ (add SA email as user)
  *   - GA4 property 503144752 (add SA email as Viewer)
+ *   - or an authorized_user OAuth credential JSON for a Google user that has
+ *     direct access to both products.
  *
  * Env vars:
  *   GOOGLE_SERVICE_ACCOUNT_KEY   service account key JSON (string), or
  *   GOOGLE_APPLICATION_CREDENTIALS path to the key file
+ *   GOOGLE_OAUTH_CREDENTIALS     authorized_user JSON (string)
+ *   GOOGLE_QUOTA_PROJECT_ID      quota project for OAuth user credentials
  *   GA4_PROPERTY_ID              default: 503144752
  *   GSC_SITE_URL                 default: https://rrih.github.io/
  *
@@ -42,9 +47,26 @@ const KPI_TARGETS: Record<string, { pageviews: number; revenueJpy: number }> = {
 }
 
 interface ServiceAccountKey {
+  type?: 'service_account'
   client_email: string
   private_key: string
   token_uri: string
+}
+
+interface AuthorizedUserCredentials {
+  type: 'authorized_user'
+  client_id: string
+  client_secret: string
+  refresh_token: string
+  token_uri?: string
+  quota_project_id?: string
+}
+
+type GoogleCredentials = ServiceAccountKey | AuthorizedUserCredentials
+
+interface AuthContext {
+  token: string
+  quotaProjectId?: string
 }
 
 interface GscRow {
@@ -99,11 +121,20 @@ interface MetricsSnapshot {
   }
 }
 
-function loadServiceAccountKey(): ServiceAccountKey | null {
+function isAuthorizedUserCredentials(value: GoogleCredentials): value is AuthorizedUserCredentials {
+  return value.type === 'authorized_user'
+}
+
+function loadGoogleCredentials(): GoogleCredentials | null {
+  const oauth = process.env.GOOGLE_OAUTH_CREDENTIALS
+  if (oauth) return JSON.parse(oauth) as AuthorizedUserCredentials
+
   const inline = process.env.GOOGLE_SERVICE_ACCOUNT_KEY
-  if (inline) return JSON.parse(inline) as ServiceAccountKey
+  if (inline) return JSON.parse(inline) as GoogleCredentials
+
   const path = process.env.GOOGLE_APPLICATION_CREDENTIALS
-  if (path) return JSON.parse(readFileSync(path, 'utf8')) as ServiceAccountKey
+  if (path) return JSON.parse(readFileSync(path, 'utf8')) as GoogleCredentials
+
   return null
 }
 
@@ -157,28 +188,71 @@ async function getAccessToken(key: ServiceAccountKey, scopes: string[]): Promise
   return json.access_token
 }
 
+async function getUserAccessToken(credentials: AuthorizedUserCredentials): Promise<string> {
+  const res = await fetch(credentials.token_uri ?? 'https://oauth2.googleapis.com/token', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams({
+      client_id: credentials.client_id,
+      client_secret: credentials.client_secret,
+      refresh_token: credentials.refresh_token,
+      grant_type: 'refresh_token',
+    }),
+  })
+  if (!res.ok) throw new Error(`OAuth token refresh failed: ${res.status} ${await res.text()}`)
+  const json = (await res.json()) as { access_token: string }
+  return json.access_token
+}
+
+async function getAuthContext(credentials: GoogleCredentials): Promise<AuthContext> {
+  if (isAuthorizedUserCredentials(credentials)) {
+    return {
+      token: await getUserAccessToken(credentials),
+      quotaProjectId:
+        process.env.GOOGLE_QUOTA_PROJECT_ID ??
+        credentials.quota_project_id ??
+        process.env.GOOGLE_CLOUD_PROJECT ??
+        process.env.GCLOUD_PROJECT,
+    }
+  }
+
+  return {
+    token: await getAccessToken(credentials, [
+      'https://www.googleapis.com/auth/webmasters.readonly',
+      'https://www.googleapis.com/auth/analytics.readonly',
+    ]),
+  }
+}
+
+function authHeaders(auth: AuthContext): Record<string, string> {
+  return {
+    Authorization: `Bearer ${auth.token}`,
+    ...(auth.quotaProjectId ? { 'x-goog-user-project': auth.quotaProjectId } : {}),
+  }
+}
+
 function formatDate(d: Date): string {
   return d.toISOString().slice(0, 10)
 }
 
-async function queryGsc(token: string, body: Record<string, unknown>): Promise<GscResponse> {
+async function queryGsc(auth: AuthContext, body: Record<string, unknown>): Promise<GscResponse> {
   const url = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(
     GSC_SITE_URL
   )}/searchAnalytics/query`
   const res = await fetch(url, {
     method: 'POST',
-    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    headers: { ...authHeaders(auth), 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   })
   if (!res.ok) throw new Error(`GSC query failed: ${res.status} ${await res.text()}`)
   return (await res.json()) as GscResponse
 }
 
-async function queryGa4(token: string, body: Record<string, unknown>): Promise<Ga4Response> {
+async function queryGa4(auth: AuthContext, body: Record<string, unknown>): Promise<Ga4Response> {
   const url = `https://analyticsdata.googleapis.com/v1beta/properties/${GA4_PROPERTY_ID}:runReport`
   const res = await fetch(url, {
     method: 'POST',
-    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    headers: { ...authHeaders(auth), 'Content-Type': 'application/json' },
     body: JSON.stringify(body),
   })
   if (!res.ok) throw new Error(`GA4 query failed: ${res.status} ${await res.text()}`)
@@ -302,21 +376,18 @@ async function main(): Promise<void> {
   const startDate = formatDate(start)
   const endDate = formatDate(end)
 
-  const key = loadServiceAccountKey()
+  const credentials = loadGoogleCredentials()
   let searchConsole: MetricsSnapshot['searchConsole'] = null
   let ga4: MetricsSnapshot['ga4'] = null
 
-  if (key) {
+  if (credentials) {
     try {
-      const token = await getAccessToken(key, [
-        'https://www.googleapis.com/auth/webmasters.readonly',
-        'https://www.googleapis.com/auth/analytics.readonly',
-      ])
+      const auth = await getAuthContext(credentials)
 
       const [byDate, byPage, byQuery] = await Promise.all([
-        queryGsc(token, { startDate, endDate, dimensions: ['date'], rowLimit: 28 }),
-        queryGsc(token, { startDate, endDate, dimensions: ['page'], rowLimit: 50 }),
-        queryGsc(token, { startDate, endDate, dimensions: ['query'], rowLimit: 100 }),
+        queryGsc(auth, { startDate, endDate, dimensions: ['date'], rowLimit: 28 }),
+        queryGsc(auth, { startDate, endDate, dimensions: ['page'], rowLimit: 50 }),
+        queryGsc(auth, { startDate, endDate, dimensions: ['query'], rowLimit: 100 }),
       ])
       const dateRows = byDate.rows ?? []
       searchConsole = {
@@ -327,13 +398,13 @@ async function main(): Promise<void> {
       }
 
       const [ga4ByDate, ga4ByPage] = await Promise.all([
-        queryGa4(token, {
+        queryGa4(auth, {
           dateRanges: [{ startDate, endDate }],
           dimensions: [{ name: 'date' }],
           metrics: [{ name: 'screenPageViews' }, { name: 'activeUsers' }],
           limit: 28,
         }),
-        queryGa4(token, {
+        queryGa4(auth, {
           dateRanges: [{ startDate, endDate }],
           dimensions: [{ name: 'pagePath' }],
           metrics: [{ name: 'screenPageViews' }],
@@ -362,7 +433,7 @@ async function main(): Promise<void> {
     }
   } else {
     console.warn(
-      'No service account credentials (GOOGLE_SERVICE_ACCOUNT_KEY / GOOGLE_APPLICATION_CREDENTIALS). Writing snapshot without API data.'
+      'No Google credentials (GOOGLE_OAUTH_CREDENTIALS / GOOGLE_SERVICE_ACCOUNT_KEY / GOOGLE_APPLICATION_CREDENTIALS). Writing snapshot without API data.'
     )
   }
 
