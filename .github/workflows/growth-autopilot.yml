@@ -65,6 +65,12 @@ jobs:
           bun test
           bun run build
 
+      - name: Restore validation artifacts
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git restore public/og public/sitemap.xml public/sw.js
+          git diff --name-only
+
       - name: Create growth PR
         if: steps.changes.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v7
