@@ -58,6 +58,7 @@
 ### 障害対応
 - 週次レポートに「NOT AVAILABLE」が出た場合: `GOOGLE_OAUTH_CREDENTIALS` の失効、`GOOGLE_QUOTA_PROJECT_ID` の不足、または対象 Google プロダクト権限の剥奪を疑い、1-2 を再確認
 - Issue が起票されない場合: Actions の実行ログを確認（cron はリポジトリが60日間更新なしだと停止する点に注意）
+- Codex Automation が `growth` / `revenue-accelerator` のopen PR/Issueを確認できない場合: **repoファイルを編集しない**。新規PR・既存PR更新・docs/scripts/metrics変更をすべて止め、`gh pr list` / `gh issue list` / `git ls-remote` のエラー文字列だけをautomation memoryと最終報告に記録する。ローカルの `origin/codex/*` 追跡ブランチが `main` より古い場合も、推測で変更せず、次回のGitHub接続復旧後にPR状態確認・close/update・Issueコメントのいずれかを1件だけ実行する
 
 ## 3. 品質ゲート（全変更共通）
 

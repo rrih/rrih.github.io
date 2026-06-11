@@ -1,0 +1,4 @@
+interface:
+  display_name: "rrih.github.io Revenue Accelerator"
+  short_description: "Run one safe rrih.github.io revenue increment"
+  default_prompt: "Use $rrih-github-io-revenue-accelerator to run one guarded revenue implementation loop."
