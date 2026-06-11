@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T02:24:51.931Z",
+  "generatedAt": "2026-06-11T02:36:20.558Z",
   "range": {
     "startDate": "2026-05-12",
     "endDate": "2026-06-08"
@@ -976,8 +976,21 @@
   },
   "revenue": {
     "currency": "JPY",
-    "note": "AdSense Management API requires interactive OAuth, so record monthly estimated earnings here manually (from the AdSense dashboard). Format: { \"month\": \"YYYY-MM\", \"estimatedEarnings\": 123 }",
-    "entries": []
+    "note": "Weekly growth metrics syncs rrih.github.io estimated earnings from the AdSense Management API when GOOGLE_OAUTH_CREDENTIALS is available. Manual fallback format: { \"month\": \"YYYY-MM\", \"estimatedEarnings\": 123 }.",
+    "entries": [
+      {
+        "month": "2026-04",
+        "estimatedEarnings": 1
+      },
+      {
+        "month": "2026-05",
+        "estimatedEarnings": 0
+      },
+      {
+        "month": "2026-06",
+        "estimatedEarnings": 2
+      }
+    ]
   },
   "kpi": {
     "month": "2026-06",
@@ -986,6 +999,6 @@
       "revenueJpy": 0
     },
     "actualPageviews28d": 51,
-    "actualRevenueJpy": null
+    "actualRevenueJpy": 2
   }
 }

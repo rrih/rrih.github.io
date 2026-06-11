@@ -10,21 +10,25 @@
 3. 発行された **スロットID（数字）** を `src/config/ads.ts` の `toolContent` / `blogArticle` に記入してコミット
 4. 任意: 「サイトごと」→ 自動広告を ON（コード変更不要で追加配信）
 
-### 1-2. Search Console / GA4 の API アクセス
+### 1-2. Search Console / GA4 / AdSense の API アクセス
 
-**短縮ルート**: `gcloud auth login` 済みなら `./scripts/growth/setup-gcp.sh [PROJECT_ID]` が手順1〜3と6を自動実行する（残りは4と5のみ）。
+**推奨ルート（現在の本番運用）**: AdSense / Search Console / GA4 を管理できる Google ユーザーの OAuth authorized-user credential を GitHub Secret `GOOGLE_OAUTH_CREDENTIALS` に登録する。GitHub Actions では `GOOGLE_QUOTA_PROJECT_ID=ro1-dev` を付けて API を呼ぶ。
 
 1. Google Cloud Console で プロジェクト作成（既存でも可）
-2. 「Search Console API」「Google Analytics Data API」を有効化
-3. サービスアカウントを作成し、JSON鍵をダウンロード
-4. Search Console: 設定 → ユーザーと権限 → サービスアカウントのメールを「フル」以上で追加（プロパティ: https://rrih.github.io/）
-5. GA4: 管理 → プロパティのアクセス管理 → 同メールを「閲覧者」で追加（プロパティID: 503144752）
-6. GitHub リポジトリ → Settings → Secrets and variables → Actions → `GOOGLE_SERVICE_ACCOUNT_KEY` に JSON鍵の中身全文を登録
+2. 「Search Console API」「Google Analytics Data API」「AdSense Management API」を有効化
+3. 管理ユーザーで OAuth credential を作成し、GitHub リポジトリ → Settings → Secrets and variables → Actions → `GOOGLE_OAUTH_CREDENTIALS` に JSON 全文を登録
+4. `.github/workflows/growth-metrics.yml` の `GOOGLE_QUOTA_PROJECT_ID` に課金/クォータ用プロジェクトIDを設定
+
+**サービスアカウントのフォールバック**:
+
+- `GOOGLE_SERVICE_ACCOUNT_KEY` もスクリプト上は対応している
+- ただし 2026-06-11 時点で、Search Console / GA4 の管理画面は `growth-metrics@ro1-dev.iam.gserviceaccount.com` の直接追加を拒否した
+- 現在は OAuth 経路で GSC / GA4 / AdSense の取得が成功しているため、サービスアカウントの直接追加は必須ではない
 
 ### 1-3. 動作確認
 - Actions タブ → 「Weekly Growth Metrics」→ Run workflow（手動実行）
 - `data/growth/reports/` にレポートが生成され、Issue が起票されればOK
-- ローカル確認: `GOOGLE_APPLICATION_CREDENTIALS=/path/to/key.json bun scripts/growth/fetch-metrics.ts`
+- ローカル確認: `GOOGLE_OAUTH_CREDENTIALS="$(cat ~/.config/gcloud/application_default_credentials.json)" GOOGLE_QUOTA_PROJECT_ID=ro1-dev bun scripts/growth/fetch-metrics.ts`
 
 ## 2. 定常運用
 
@@ -35,13 +39,13 @@
    - Codex の場合: 「label:growth の最新Issueを読み、docs/growth/playbooks/weekly-review.md に従って改善を実装して」と指示（AGENTS.md にも記載済み）
 3. 人間はPRをレビュー・マージ（deploy.yml が自動デプロイ）
 
-### 月次（人間・5分）
-1. AdSense ダッシュボードで当月の見積もり収益を確認
-2. `data/growth/revenue.json` の `entries` に `{ "month": "YYYY-MM", "estimatedEarnings": <金額> }` を追記してコミット
+### 月次（自動 + 必要時のみ人間）
+1. 通常は週次 workflow が AdSense API から前月と当月MTDの `rrih.github.io` 推定収益を `data/growth/revenue.json` に同期する
+2. APIで取得できない場合だけ、AdSense ダッシュボードで前月の見積もり収益を確認し、`entries` に `{ "month": "YYYY-MM", "estimatedEarnings": <金額> }` を追記してコミット
 3. 月次目標との乖離は次回の週次レポートに自動反映される
 
 ### 障害対応
-- 週次レポートに「NOT AVAILABLE」が出た場合: サービスアカウント鍵の失効・権限剥奪を疑い、1-2 を再確認
+- 週次レポートに「NOT AVAILABLE」が出た場合: `GOOGLE_OAUTH_CREDENTIALS` の失効、`GOOGLE_QUOTA_PROJECT_ID` の不足、または対象 Google プロダクト権限の剥奪を疑い、1-2 を再確認
 - Issue が起票されない場合: Actions の実行ログを確認（cron はリポジトリが60日間更新なしだと停止する点に注意）
 
 ## 3. 品質ゲート（全変更共通）

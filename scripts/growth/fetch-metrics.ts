@@ -1,8 +1,8 @@
 /**
  * Growth metrics collector for rrih.github.io
  *
- * Fetches Search Console (impressions/clicks) and GA4 (pageviews/users) data
- * for the last 28 days, merges manually-recorded AdSense revenue, and writes:
+ * Fetches Search Console (impressions/clicks), GA4 (pageviews/users), and
+ * AdSense revenue data, then writes:
  *   - data/growth/metrics/<YYYY-MM-DD>.json (snapshot)
  *   - data/growth/metrics/latest.json       (same content, stable path)
  *   - data/growth/reports/<YYYY-MM-DD>.md   (human/LLM-readable report)
@@ -19,6 +19,9 @@
  *   GOOGLE_APPLICATION_CREDENTIALS path to the key file
  *   GOOGLE_OAUTH_CREDENTIALS     authorized_user JSON (string)
  *   GOOGLE_QUOTA_PROJECT_ID      quota project for OAuth user credentials
+ *   ADSENSE_ACCOUNT_NAME         default: accounts/pub-6426570202991325
+ *   ADSENSE_SITE_DOMAIN          default: rrih.github.io
+ *   ADSENSE_REVENUE_MONTH        optional YYYY-MM override; defaults to current + previous month
  *   GA4_PROPERTY_ID              default: 503144752
  *   GSC_SITE_URL                 default: https://rrih.github.io/
  *
@@ -30,6 +33,8 @@ import { join } from 'node:path'
 
 const GA4_PROPERTY_ID = process.env.GA4_PROPERTY_ID ?? '503144752'
 const GSC_SITE_URL = process.env.GSC_SITE_URL ?? 'https://rrih.github.io/'
+const ADSENSE_ACCOUNT_NAME = process.env.ADSENSE_ACCOUNT_NAME ?? 'accounts/pub-6426570202991325'
+const ADSENSE_SITE_DOMAIN = process.env.ADSENSE_SITE_DOMAIN ?? 'rrih.github.io'
 const ROOT = join(import.meta.dir, '..', '..')
 const METRICS_DIR = join(ROOT, 'data', 'growth', 'metrics')
 const REPORTS_DIR = join(ROOT, 'data', 'growth', 'reports')
@@ -220,6 +225,7 @@ async function getAuthContext(credentials: GoogleCredentials): Promise<AuthConte
     token: await getAccessToken(credentials, [
       'https://www.googleapis.com/auth/webmasters.readonly',
       'https://www.googleapis.com/auth/analytics.readonly',
+      'https://www.googleapis.com/auth/adsense.readonly',
     ]),
   }
 }
@@ -259,6 +265,38 @@ async function queryGa4(auth: AuthContext, body: Record<string, unknown>): Promi
   return (await res.json()) as Ga4Response
 }
 
+async function queryAdsenseMonthlyRevenue(
+  auth: AuthContext,
+  month: string,
+  domain: string,
+  today: Date
+): Promise<number | null> {
+  const [year, monthNumber] = month.split('-').map(Number)
+  const isCurrentMonth = year === today.getFullYear() && monthNumber === today.getMonth() + 1
+  const endDay = isCurrentMonth ? today.getDate() : new Date(year, monthNumber, 0).getDate()
+  const params = new URLSearchParams({
+    dateRange: 'CUSTOM',
+    'startDate.year': String(year),
+    'startDate.month': String(monthNumber),
+    'startDate.day': '1',
+    'endDate.year': String(year),
+    'endDate.month': String(monthNumber),
+    'endDate.day': String(endDay),
+    dimensions: 'DOMAIN_NAME',
+    metrics: 'ESTIMATED_EARNINGS',
+    currencyCode: 'JPY',
+  })
+  const url = `https://adsense.googleapis.com/v2/${ADSENSE_ACCOUNT_NAME}/reports:generate?${params}`
+  const res = await fetch(url, { headers: authHeaders(auth) })
+  if (!res.ok) throw new Error(`AdSense report failed: ${res.status} ${await res.text()}`)
+  const json = (await res.json()) as {
+    rows?: Array<{ cells: Array<{ value?: string }> }>
+  }
+  const row = json.rows?.find((r) => r.cells[0]?.value === domain)
+  const value = row?.cells[1]?.value
+  return value === undefined ? null : Number(value)
+}
+
 function sumGsc(rows: GscRow[]): {
   clicks: number
   impressions: number
@@ -280,6 +318,30 @@ function loadRevenue(): RevenueFile {
   }
 }
 
+function upsertRevenueEntry(revenue: RevenueFile, month: string, estimatedEarnings: number): void {
+  const existing = revenue.entries.find((entry) => entry.month === month)
+  if (existing) {
+    existing.estimatedEarnings = estimatedEarnings
+  } else {
+    revenue.entries.push({ month, estimatedEarnings })
+    revenue.entries.sort((a, b) => a.month.localeCompare(b.month))
+  }
+}
+
+function previousMonth(date: Date): string {
+  const previous = new Date(date.getFullYear(), date.getMonth() - 1, 1)
+  return `${previous.getFullYear()}-${String(previous.getMonth() + 1).padStart(2, '0')}`
+}
+
+function currentMonth(date: Date): string {
+  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}`
+}
+
+function revenueMonthsToSync(today: Date): string[] {
+  if (process.env.ADSENSE_REVENUE_MONTH) return [process.env.ADSENSE_REVENUE_MONTH]
+  return Array.from(new Set([previousMonth(today), currentMonth(today)]))
+}
+
 function buildReport(snapshot: MetricsSnapshot, previous: MetricsSnapshot | null): string {
   const lines: string[] = []
   const { kpi } = snapshot
@@ -299,7 +361,7 @@ function buildReport(snapshot: MetricsSnapshot, previous: MetricsSnapshot | null
       })`
     )
     lines.push(
-      `- Revenue (month, manual): ${rev ?? 'not recorded'} JPY / target ${kpi.target.revenueJpy} JPY`
+      `- Revenue (month, recorded): ${rev ?? 'not recorded'} JPY / target ${kpi.target.revenueJpy} JPY`
     )
   } else {
     lines.push(`- No KPI target defined for ${kpi.month}`)
@@ -367,7 +429,8 @@ function buildReport(snapshot: MetricsSnapshot, previous: MetricsSnapshot | null
 }
 
 async function main(): Promise<void> {
-  const today = formatDate(new Date())
+  const now = new Date()
+  const today = formatDate(now)
   const month = today.slice(0, 7)
   const end = new Date()
   end.setDate(end.getDate() - 3) // GSC data lags ~2-3 days
@@ -377,13 +440,24 @@ async function main(): Promise<void> {
   const endDate = formatDate(end)
 
   const credentials = loadGoogleCredentials()
+  let auth: AuthContext | null = null
   let searchConsole: MetricsSnapshot['searchConsole'] = null
   let ga4: MetricsSnapshot['ga4'] = null
 
   if (credentials) {
     try {
-      const auth = await getAuthContext(credentials)
+      auth = await getAuthContext(credentials)
+    } catch (err) {
+      console.error('Google auth failed:', err)
+    }
+  } else {
+    console.warn(
+      'No Google credentials (GOOGLE_OAUTH_CREDENTIALS / GOOGLE_SERVICE_ACCOUNT_KEY / GOOGLE_APPLICATION_CREDENTIALS). Writing snapshot without API data.'
+    )
+  }
 
+  if (auth) {
+    try {
       const [byDate, byPage, byQuery] = await Promise.all([
         queryGsc(auth, { startDate, endDate, dimensions: ['date'], rowLimit: 28 }),
         queryGsc(auth, { startDate, endDate, dimensions: ['page'], rowLimit: 50 }),
@@ -429,15 +503,31 @@ async function main(): Promise<void> {
         })),
       }
     } catch (err) {
-      console.error('API fetch failed:', err)
+      console.error('GSC / GA4 fetch failed:', err)
     }
-  } else {
-    console.warn(
-      'No Google credentials (GOOGLE_OAUTH_CREDENTIALS / GOOGLE_SERVICE_ACCOUNT_KEY / GOOGLE_APPLICATION_CREDENTIALS). Writing snapshot without API data.'
-    )
   }
 
   const revenue = loadRevenue()
+  if (auth) {
+    try {
+      for (const revenueMonth of revenueMonthsToSync(now)) {
+        const estimatedEarnings = await queryAdsenseMonthlyRevenue(
+          auth,
+          revenueMonth,
+          ADSENSE_SITE_DOMAIN,
+          now
+        )
+        if (estimatedEarnings !== null) {
+          upsertRevenueEntry(revenue, revenueMonth, estimatedEarnings)
+        } else {
+          console.warn(`No AdSense revenue row found for ${ADSENSE_SITE_DOMAIN} in ${revenueMonth}`)
+        }
+      }
+      writeFileSync(REVENUE_FILE, `${JSON.stringify(revenue, null, 2)}\n`)
+    } catch (err) {
+      console.error('AdSense revenue fetch failed:', err)
+    }
+  }
   const monthRevenue = revenue.entries.find((e) => e.month === month)?.estimatedEarnings ?? null
 
   const snapshot: MetricsSnapshot = {
