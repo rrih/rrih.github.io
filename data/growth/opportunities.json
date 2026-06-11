@@ -119,7 +119,7 @@
       "implementationEffort": "low",
       "policyRisk": "low",
       "automationMode": "auto-pr",
-      "status": "planned",
+      "status": "launched",
       "rationale": "This is a lower-risk calculator that can be implemented deterministically and broaden traffic."
     }
   ]

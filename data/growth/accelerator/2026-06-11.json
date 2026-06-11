@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T07:48:03.469Z",
+  "generatedAt": "2026-06-11T13:45:53.939Z",
   "targetMonthlyRevenueJpy": 50000,
   "targetDailyRevenueJpy": 1666.67,
   "actualRevenueJpy": 2,
@@ -27,14 +27,6 @@
     {
       "type": "new-high-cpc-tool",
       "priority": 98,
-      "title": "Build Electricity Cost Calculator",
-      "target": "/tools/electricity-cost-calculator/",
-      "automationMode": "auto-pr",
-      "rationale": "calculate appliance electricity cost from watts, usage time, and kWh rate. CPC tier: medium; potential: medium; effort: low; policy risk: low. This is a lower-risk calculator that can be implemented deterministically and broaden traffic."
-    },
-    {
-      "type": "new-high-cpc-tool",
-      "priority": 97,
       "title": "Build Furusato Tax Limit Calculator",
       "target": "/tools/furusato-tax-limit-calculator/",
       "automationMode": "draft-pr",
@@ -42,11 +34,19 @@
     },
     {
       "type": "new-high-cpc-tool",
-      "priority": 96,
+      "priority": 97,
       "title": "Build Mortgage Prepayment Calculator",
       "target": "/tools/mortgage-prepayment-calculator/",
       "automationMode": "draft-pr",
       "rationale": "compare mortgage balance, interest savings, and repayment-period reduction. CPC tier: high; potential: high; effort: high; policy risk: medium. Mortgage queries can have strong RPM, but the tool needs accurate amortization logic."
+    },
+    {
+      "type": "new-high-cpc-tool",
+      "priority": 96,
+      "title": "Build Retirement Allowance Tax Calculator",
+      "target": "/tools/retirement-allowance-tax-calculator/",
+      "automationMode": "draft-pr",
+      "rationale": "estimate retirement allowance deduction and taxable retirement income. CPC tier: high; potential: medium; effort: medium; policy risk: medium. Retirement and tax planning searches are commercially relevant and evergreen."
     },
     {
       "type": "ctr-rewrite",

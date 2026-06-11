@@ -163,6 +163,7 @@ export function findExistingPageExpansionActions(snapshot: MetricsSnapshot): Acc
 
 export function findNewToolActions(opportunities: RevenueOpportunity[]): AcceleratorAction[] {
   return [...opportunities]
+    .filter((opportunity) => opportunity.status === 'planned')
     .sort((a, b) => plannedOpportunityScore(b) - plannedOpportunityScore(a))
     .slice(0, 5)
     .map((opportunity, index) => ({

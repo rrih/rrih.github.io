@@ -85,6 +85,17 @@ describe('revenue accelerator', () => {
     expect(actions.every((action) => action.target.startsWith('/tools/'))).toBe(true)
   })
 
+  it('excludes launched tool opportunities from new-tool actions', () => {
+    const actions = findNewToolActions([
+      {
+        ...opportunities.opportunities[0],
+        status: 'launched' as const,
+      },
+    ])
+
+    expect(actions).toEqual([])
+  })
+
   it('detects low-CTR queries for rewrite candidates', () => {
     const actions = findCtrRewriteActions(snapshot)
 
