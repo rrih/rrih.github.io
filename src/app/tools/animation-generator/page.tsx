@@ -3,6 +3,7 @@
 import { AdUnit } from '@/components/ads/ad-unit'
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
+import { RelatedToolsSection } from '@/components/tools/related-tools-section'
 import { useToolState } from '@/lib/localStorage'
 import { useUrlSharing } from '@/lib/urlSharing'
 import {
@@ -144,6 +145,34 @@ const timingFunctions = [
 const iterationCounts = ['1', '2', '3', '5', '10', 'infinite']
 const directions = ['normal', 'reverse', 'alternate', 'alternate-reverse']
 const fillModes = ['none', 'forwards', 'backwards', 'both']
+
+const animationUseCases = [
+  {
+    title: 'Micro-interactions',
+    description:
+      'Use short 120-250ms animations for buttons, toggles, menus, and confirmations so the interface feels responsive without slowing users down.',
+    example: 'Try scale(1.03), opacity(0.9), or translateY(-2px).',
+  },
+  {
+    title: 'Entry and reveal effects',
+    description:
+      'Combine opacity with translateX or translateY when content enters the viewport, modal, or panel. Keep the movement small for readable UI.',
+    example: 'Start at opacity 0 and translateY(16px), then settle at opacity 1.',
+  },
+  {
+    title: 'Loading and status loops',
+    description:
+      'Choose infinite rotation, pulse, or bounce animations only for temporary states. Avoid distracting loops near form fields or long reading areas.',
+    example: 'Use linear timing for spinners and ease-in-out for pulse effects.',
+  },
+]
+
+const implementationChecks = [
+  'Animate transform and opacity first because they avoid layout recalculation.',
+  'Keep decorative loops subtle and provide a paused state for previews or demos.',
+  'Name keyframes by purpose, such as modal-enter or button-pulse, before copying CSS.',
+  'Pair motion with color, shadow, or gradient tools only when the visual state needs it.',
+]
 
 export default function AnimationGeneratorPage() {
   const [state, setState] = useState<AnimationState>(initialState)
@@ -1169,6 +1198,50 @@ ${keyframesCSS}
             </div>
           </div>
 
+          {/* Practical Use Cases */}
+          <div className="mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+              Practical CSS Animation Patterns
+            </h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              {animationUseCases.map((item) => (
+                <div
+                  key={item.title}
+                  className="border border-border-light dark:border-border-dark rounded-lg p-4 md:p-5"
+                >
+                  <h3 className="font-semibold text-lg mb-3">{item.title}</h3>
+                  <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mb-4">
+                    {item.description}
+                  </p>
+                  <p className="text-sm rounded-lg bg-gray-50 dark:bg-gray-800 p-3">
+                    {item.example}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Implementation Checklist */}
+          <div className="mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">
+              Animation Implementation Checklist
+            </h2>
+            <div className="border border-border-light dark:border-border-dark rounded-lg p-4 md:p-6">
+              <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary mb-4">
+                Before exporting CSS, use this checklist to keep generated animations lightweight,
+                reusable, and easy to maintain in production stylesheets.
+              </p>
+              <ul className="space-y-3">
+                {implementationChecks.map((check) => (
+                  <li key={check} className="flex gap-3 text-sm sm:text-base">
+                    <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" />
+                    <span>{check}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
           {/* FAQ */}
           <div className="mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold mb-6">Frequently Asked Questions</h2>
@@ -1260,6 +1333,8 @@ ${keyframesCSS}
             </div>
           </div>
         </section>
+
+        <RelatedToolsSection />
 
         <Footer />
       </div>
