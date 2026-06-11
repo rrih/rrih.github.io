@@ -1,3 +1,4 @@
+import { Zap } from 'lucide-react'
 import type React from 'react'
 
 export interface Tool {
@@ -350,6 +351,16 @@ export const tools: Tool[] = [
       </svg>
     ),
     href: '/tools/investment-calculator',
+    category: 'utility',
+    status: 'available',
+    featured: true,
+  },
+  {
+    id: 'electricity-cost-calculator',
+    title: 'Electricity Cost Calculator',
+    description: 'Estimate appliance running costs from watts, usage time, and kWh rate',
+    icon: ({ className }) => <Zap className={className} />,
+    href: '/tools/electricity-cost-calculator',
     category: 'utility',
     status: 'available',
     featured: true,
