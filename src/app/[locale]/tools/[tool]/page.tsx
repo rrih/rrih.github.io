@@ -2,6 +2,7 @@ import AnimationGeneratorPage from '@/app/tools/animation-generator/page'
 import Base64Page from '@/app/tools/base64/page'
 import BoxShadowGeneratorPage from '@/app/tools/box-shadow-generator/page'
 import ColorPickerPage from '@/app/tools/color-picker/page'
+import ElectricityCostCalculatorPage from '@/app/tools/electricity-cost-calculator/page'
 import GradientGeneratorPage from '@/app/tools/gradient-generator/page'
 import HomeworkTrackerPage from '@/app/tools/homework-tracker/page'
 import ImageConverterPage from '@/app/tools/image-converter/page'
@@ -23,6 +24,7 @@ const toolPages = {
   base64: Base64Page,
   'box-shadow-generator': BoxShadowGeneratorPage,
   'color-picker': ColorPickerPage,
+  'electricity-cost-calculator': ElectricityCostCalculatorPage,
   'gradient-generator': GradientGeneratorPage,
   'homework-tracker': HomeworkTrackerPage,
   'image-converter': ImageConverterPage,
