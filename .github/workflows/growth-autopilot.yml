@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
   issues: write
@@ -72,6 +73,7 @@ jobs:
           git diff --name-only
 
       - name: Create growth PR
+        id: cpr
         if: steps.changes.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v7
         with:
@@ -91,6 +93,56 @@ jobs:
             Guardrails:
             - No ad density changes.
             - No generated article/content batch.
-            - No automatic merge.
+            - Automatically merged only when the PR changes `src/config/tool-related-links.ts`.
 
             References ${{ steps.latest_issue.outputs.reference }}
+
+      - name: Verify autopilot PR guardrails
+        if: steps.changes.outputs.changed == 'true' && steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          changed_files="$(gh pr view "$PR_NUMBER" --json files --jq '.files[].path')"
+          head_ref="$(gh pr view "$PR_NUMBER" --json headRefName --jq '.headRefName')"
+
+          echo "PR #$PR_NUMBER head: $head_ref"
+          echo "Changed files:"
+          echo "$changed_files"
+
+          if [ "$head_ref" != "codex/growth-autopilot" ]; then
+            echo "Unexpected PR branch: $head_ref"
+            exit 1
+          fi
+
+          if [ "$changed_files" != "src/config/tool-related-links.ts" ]; then
+            echo "Automerge blocked: only src/config/tool-related-links.ts may change."
+            exit 1
+          fi
+
+      - name: Auto-merge safe growth PR
+        if: steps.changes.outputs.changed == 'true' && steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          gh pr merge "$PR_NUMBER" \
+            --squash \
+            --delete-branch \
+            --subject "fix: strengthen growth internal links" \
+            --body "Automated safe growth merge after validation and allowlist checks."
+
+      - name: Deploy merged growth change
+        if: steps.changes.outputs.changed == 'true' && steps.cpr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
+
+      - name: Comment on growth issue
+        if: steps.changes.outputs.changed == 'true' && steps.cpr.outputs.pull-request-number != '' && steps.latest_issue.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ steps.latest_issue.outputs.number }}
+          PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
+        run: |
+          gh issue comment "$ISSUE_NUMBER" --body "Growth autopilot merged PR #$PR_NUMBER after validation and allowlist checks. Deploy workflow was dispatched for main."
