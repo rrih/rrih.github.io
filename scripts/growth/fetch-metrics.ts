@@ -40,15 +40,15 @@ const METRICS_DIR = join(ROOT, 'data', 'growth', 'metrics')
 const REPORTS_DIR = join(ROOT, 'data', 'growth', 'reports')
 const REVENUE_FILE = join(ROOT, 'data', 'growth', 'revenue.json')
 
-// Monthly KPI curve toward 10,000 JPY/month by 2026-12 (28-day PV basis)
+// Monthly KPI curve toward 50,000 JPY/month by 2026-12 (28-day PV basis)
 const KPI_TARGETS: Record<string, { pageviews: number; revenueJpy: number }> = {
   '2026-06': { pageviews: 3000, revenueJpy: 0 },
-  '2026-07': { pageviews: 6000, revenueJpy: 500 },
-  '2026-08': { pageviews: 10000, revenueJpy: 1500 },
-  '2026-09': { pageviews: 16000, revenueJpy: 3000 },
-  '2026-10': { pageviews: 24000, revenueJpy: 5000 },
-  '2026-11': { pageviews: 32000, revenueJpy: 7500 },
-  '2026-12': { pageviews: 40000, revenueJpy: 10000 },
+  '2026-07': { pageviews: 30000, revenueJpy: 2500 },
+  '2026-08': { pageviews: 50000, revenueJpy: 7500 },
+  '2026-09': { pageviews: 80000, revenueJpy: 15000 },
+  '2026-10': { pageviews: 120000, revenueJpy: 25000 },
+  '2026-11': { pageviews: 160000, revenueJpy: 37500 },
+  '2026-12': { pageviews: 200000, revenueJpy: 50000 },
 }
 
 interface ServiceAccountKey {
