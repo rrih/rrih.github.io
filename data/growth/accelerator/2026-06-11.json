@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-06-11T07:41:56.158Z",
+  "targetMonthlyRevenueJpy": 50000,
+  "targetDailyRevenueJpy": 1666.67,
+  "actualRevenueJpy": 2,
+  "actualDailyRevenueJpy": 0.07,
+  "actualPageviews28d": 51,
+  "currentRpmJpy": 39.22,
+  "requiredMonthlyPageviewsAtCurrentRpm": 1274860,
+  "topActions": [
+    {
+      "type": "new-high-cpc-tool",
+      "priority": 100,
+      "title": "Build Take-Home Pay Calculator",
+      "target": "/tools/take-home-pay-calculator/",
+      "automationMode": "draft-pr",
+      "rationale": "annual salary to net income calculator with tax and social insurance breakdown. CPC tier: high; potential: high; effort: medium; policy risk: medium. Income and tax tools can attract higher-value finance queries than generic developer utilities."
+    },
+    {
+      "type": "new-high-cpc-tool",
+      "priority": 99,
+      "title": "Build Overtime Pay Calculator",
+      "target": "/tools/overtime-pay-calculator/",
+      "automationMode": "draft-pr",
+      "rationale": "calculate overtime pay from hourly wage, monthly salary, and premium rate. CPC tier: high; potential: high; effort: medium; policy risk: medium. Labor and salary queries have stable search demand and stronger commercial advertiser fit."
+    },
+    {
+      "type": "new-high-cpc-tool",
+      "priority": 98,
+      "title": "Build Electricity Cost Calculator",
+      "target": "/tools/electricity-cost-calculator/",
+      "automationMode": "auto-pr",
+      "rationale": "calculate appliance electricity cost from watts, usage time, and kWh rate. CPC tier: medium; potential: medium; effort: low; policy risk: low. This is a lower-risk calculator that can be implemented deterministically and broaden traffic."
+    },
+    {
+      "type": "new-high-cpc-tool",
+      "priority": 97,
+      "title": "Build Furusato Tax Limit Calculator",
+      "target": "/tools/furusato-tax-limit-calculator/",
+      "automationMode": "draft-pr",
+      "rationale": "estimate furusato tax donation limit from income and family profile. CPC tier: high; potential: high; effort: high; policy risk: medium. Tax-saving queries are monetizable, but the calculation needs careful testing and disclaimers."
+    },
+    {
+      "type": "new-high-cpc-tool",
+      "priority": 96,
+      "title": "Build Mortgage Prepayment Calculator",
+      "target": "/tools/mortgage-prepayment-calculator/",
+      "automationMode": "draft-pr",
+      "rationale": "compare mortgage balance, interest savings, and repayment-period reduction. CPC tier: high; potential: high; effort: high; policy risk: medium. Mortgage queries can have strong RPM, but the tool needs accurate amortization logic."
+    },
+    {
+      "type": "ctr-rewrite",
+      "priority": 70,
+      "title": "Rewrite title/meta for query: css animation generator",
+      "target": "css animation generator",
+      "automationMode": "draft-pr",
+      "rationale": "61 impressions, 0% CTR, average position 27.2."
+    },
+    {
+      "type": "existing-page-expansion",
+      "priority": 60,
+      "title": "Expand existing tool page: https://rrih.github.io/tools/animation-generator/",
+      "target": "https://rrih.github.io/tools/animation-generator/",
+      "automationMode": "auto-pr",
+      "rationale": "660 impressions and 2 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density."
+    },
+    {
+      "type": "existing-page-expansion",
+      "priority": 59,
+      "title": "Expand existing tool page: https://rrih.github.io/tools/gradient-generator/",
+      "target": "https://rrih.github.io/tools/gradient-generator/",
+      "automationMode": "auto-pr",
+      "rationale": "431 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density."
+    }
+  ]
+}

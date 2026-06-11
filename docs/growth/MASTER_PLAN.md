@@ -78,7 +78,22 @@ GitHub Actions (.github/workflows/growth-metrics.yml, 毎週月曜 09:00 JST)
           docs/growth/playbooks/weekly-review.md に従って改善PRを作成 ← 自動改善ループ
 ```
 
-- 収益データは AdSense Management API が対話的OAuth必須のため、月1回 `data/growth/revenue.json` に手動記録（5分作業）。
+追加の攻め筋:
+
+```
+GitHub Actions (.github/workflows/revenue-accelerator.yml, 毎日 10:00 JST)
+  ├─ bun scripts/growth/fetch-metrics.ts（失敗時は直近snapshotで継続）
+  ├─ bun scripts/growth/revenue-accelerator.ts
+  │    ├─ 月5万円目標に対する収益ギャップを算出
+  │    ├─ rrih.github.io 配下限定の高単価ツール候補を優先度付け
+  │    └─ data/growth/accelerator/latest.{json,md} を生成
+  ├─ Issue「Revenue accelerator control tower」へ最新レポートを追記
+  └─ Growth Autopilot PR をdispatchし、低リスク内部リンク改善を自動投入
+```
+
+- `data/growth/opportunities.json` が rrih.github.io 内だけで攻める大型候補の機械可読バックログ。
+- 高単価・計算ロジック付きツールは `automationMode: "draft-pr"` とし、Codex Automation がPR作成までは進めるが、最初は人間レビューを残す。
+- 低リスクな既存ページ改善や内部リンク改善は allowlist 検証後に自動マージする。
 - 認証情報セットアップ手順は `OPERATIONS.md` 参照。
 
 ## 5. リスクと対策

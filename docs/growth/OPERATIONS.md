@@ -39,6 +39,17 @@
    - Codex の場合: 「label:growth の最新Issueを読み、docs/growth/playbooks/weekly-review.md に従って改善を実装して」と指示（AGENTS.md にも記載済み）
 3. 人間はPRをレビュー・マージ（deploy.yml が自動デプロイ）
 
+### 日次（自動 + 攻めの候補生成）
+1. 毎日 10:00 JST に `.github/workflows/revenue-accelerator.yml` が実行される
+2. 最新メトリクスを取得し、失敗時も直近snapshotで `scripts/growth/revenue-accelerator.ts` を実行する
+3. `data/growth/accelerator/latest.md` と `latest.json` に月5万円目標との差分、必要PV、上位施策を出力する
+4. Issue「Revenue accelerator control tower」（label: `revenue-accelerator`）に最新レポートを追記する
+5. 低リスクな内部リンク改善は `growth-autopilot.yml` をdispatchして自動検証・自動マージ・自動デプロイする
+6. 高単価ツール候補は `data/growth/opportunities.json` の `automationMode` に従う
+   - `auto-pr`: deterministicな低リスク実装は自動PR/自動マージ候補
+   - `draft-pr`: 税金・給与・住宅ローンなど計算精度が重要なものはPR作成まで自動化し、レビュー後にmerge
+   - `issue-only`: 認証/ポリシー/判断が必要なものはIssue記録のみ
+
 ### 月次（自動 + 必要時のみ人間）
 1. 通常は週次 workflow が AdSense API から前月と当月MTDの `rrih.github.io` 推定収益を `data/growth/revenue.json` に同期する
 2. APIで取得できない場合だけ、AdSense ダッシュボードで前月の見積もり収益を確認し、`entries` に `{ "month": "YYYY-MM", "estimatedEarnings": <金額> }` を追記してコミット
@@ -68,5 +79,8 @@
 | `data/growth/metrics/` | メトリクス履歴（JSON） |
 | `data/growth/reports/` | 週次レポート（Markdown） |
 | `data/growth/revenue.json` | 月次収益の手動記録 |
+| `data/growth/opportunities.json` | rrih.github.io 配下限定の高単価候補バックログ |
+| `data/growth/accelerator/` | 日次Revenue Acceleratorの出力 |
 | `.github/workflows/growth-metrics.yml` | 週次自動化 |
+| `.github/workflows/revenue-accelerator.yml` | 日次の攻め施策候補生成 |
 | `.claude/skills/adsense-growth/` ほか | Claude Code 用スキル（playbooks への入口） |
