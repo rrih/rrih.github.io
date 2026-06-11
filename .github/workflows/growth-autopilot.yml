@@ -71,6 +71,8 @@ jobs:
         with:
           branch: codex/growth-autopilot
           delete-branch: true
+          add-paths: |
+            src/config/tool-related-links.ts
           title: 'fix: strengthen growth internal links'
           commit-message: 'fix: strengthen growth internal links'
           labels: growth
