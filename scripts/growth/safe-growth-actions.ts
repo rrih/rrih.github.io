@@ -152,12 +152,12 @@ export function renderRelatedToolConfig(mapping: Record<string, string[]>): stri
   }
 
   const lines = [
-    'export const relatedToolIdsByToolId = {',
+    'export const relatedToolIdsByToolId: Record<string, readonly string[]> = {',
     ...keys.map((toolId) => {
       const relatedIds = mapping[toolId].map((id) => `'${id}'`).join(', ')
       return `  '${toolId}': [${relatedIds}],`
     }),
-    '} as const satisfies Record<string, readonly string[]>\n',
+    '}\n',
   ]
 
   return lines.join('\n')
