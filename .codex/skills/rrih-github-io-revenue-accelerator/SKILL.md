@@ -36,7 +36,22 @@ paths or final-response wording, but this skill owns the operating procedure.
 
 ## Non-Negotiable Preflight Gate
 
-Run GitHub triage before making any repository change:
+Run GitHub triage before making any repository change. Prefer the bundled retrying script
+so transient `api.github.com` failures do not stop the run after one network blip:
+
+```bash
+bash /Users/rrih/.codex/skills/rrih-github-io-revenue-accelerator/scripts/github_preflight.sh rrih/rrih.github.io
+```
+
+If the global skill script is unavailable, use the repo-local copy:
+
+```bash
+bash .codex/skills/rrih-github-io-revenue-accelerator/scripts/github_preflight.sh rrih/rrih.github.io
+```
+
+The script runs `gh auth status`, probes `api.github.com`, prints GitHub rate-limit
+diagnostics, and retries the required PR/Issue list commands. If the script itself is
+unavailable, run the equivalent commands manually:
 
 ```bash
 gh auth status
@@ -50,7 +65,8 @@ This gate is mandatory. If current GitHub state cannot be verified, stop immedia
 
 - Do not edit repo files, docs, scripts, metrics, generated assets, branches, or commits.
 - Do not start a new unit of revenue work.
-- Record the exact blocker in automation memory and final response.
+- Record the exact blocker, retry count, and whether `curl https://api.github.com/rate_limit`
+  and `gh api rate_limit` succeeded in automation memory and final response.
 - A GUI/computer-use fallback may help investigate auth/browser state, but it does not waive
   the requirement to know current open PR/Issue state before repo edits.
 
@@ -170,6 +186,10 @@ If subagent dispatch is unavailable or not explicitly authorized, write:
   `/Users/rrih/workspace/rrih.github.io`. Always move to the canonical repo before edits.
 - **Skill-read but gate-skipped**: Merely reading this skill is not enough. The GitHub triage
   commands must succeed before repo edits.
+- **Transient GitHub API failure**: A single `error connecting to api.github.com` is not enough
+  to stop. Use `scripts/github_preflight.sh`, which retries and records curl/`gh api`
+  diagnostics. Stop only after the retrying preflight fails, unless authentication itself is
+  invalid.
 - **`dev-check` availability drift**: Before reporting `bun run dev-check` as a blocker,
   inspect `package.json` and the referenced script path in the canonical repo. If the script is
   absent, run the four required verification commands and report `dev-check` as unavailable;
