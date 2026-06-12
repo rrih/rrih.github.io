@@ -11,6 +11,7 @@ import JsonFormatterPage from '@/app/tools/json-formatter/page'
 import MarkdownEditorPage from '@/app/tools/markdown-editor/page'
 import PasswordGeneratorPage from '@/app/tools/password-generator/page'
 import QrGeneratorPage from '@/app/tools/qr-generator/page'
+import TakeHomePayCalculatorPage from '@/app/tools/take-home-pay-calculator/page'
 import TimetablePage from '@/app/tools/timetable/page'
 import UuidGeneratorPage from '@/app/tools/uuid-generator/page'
 import { generateToolMetadata } from '@/config/metadata'
@@ -33,6 +34,7 @@ const toolPages = {
   'markdown-editor': MarkdownEditorPage,
   'password-generator': PasswordGeneratorPage,
   'qr-generator': QrGeneratorPage,
+  'take-home-pay-calculator': TakeHomePayCalculatorPage,
   timetable: TimetablePage,
   'uuid-generator': UuidGeneratorPage,
 } as const
