@@ -3,6 +3,7 @@
 import { AdUnit } from '@/components/ads/ad-unit'
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
+import { RelatedToolsSection } from '@/components/tools/related-tools-section'
 import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
 import { useHistory } from '@/hooks/useHistory'
 import { localStorageManager } from '@/lib/localStorage'
@@ -37,6 +38,35 @@ interface GradientGeneratorState {
   radialPosition: string
   presets: string[]
 }
+
+const gradientUseCases = [
+  {
+    title: 'Hero and Section Backgrounds',
+    description:
+      'Use broad linear gradients to guide attention behind headings, pricing blocks, and calls to action.',
+    example: 'Start with two close brand colors, then set the angle between 120 and 160 degrees.',
+  },
+  {
+    title: 'Button and Card Accents',
+    description:
+      'Create small, high-contrast gradients for interactive states without adding image assets.',
+    example: 'Keep color stops close together and test text contrast before copying the CSS.',
+  },
+  {
+    title: 'Soft Spotlight Overlays',
+    description:
+      'Layer radial gradients over photos or panels to create depth while keeping the source image visible.',
+    example: 'Use transparent outer stops and position the center near the visual focal point.',
+  },
+]
+
+const gradientImplementationChecks = [
+  'Choose gradient colors after confirming the foreground text contrast.',
+  'Use CSS gradients instead of image backgrounds when the shape can scale fluidly.',
+  'Keep reusable gradient values in design tokens or shared CSS variables.',
+  'Pair gradients with shadows or animation only when the extra effect supports the task.',
+  'Open related color, shadow, and animation tools when refining a complete UI treatment.',
+]
 
 export default function GradientGeneratorPage() {
   const TOOL_NAME = 'gradient-generator'
@@ -849,6 +879,50 @@ export default function GradientGeneratorPage() {
               </div>
             </div>
 
+            {/* Practical Use Cases */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Practical CSS Gradient Patterns
+              </h2>
+              <div className="grid gap-4 md:grid-cols-3">
+                {gradientUseCases.map((item) => (
+                  <div
+                    key={item.title}
+                    className="rounded-lg border border-border-light p-4 md:p-5 dark:border-border-dark"
+                  >
+                    <h3 className="mb-3 text-lg font-semibold">{item.title}</h3>
+                    <p className="mb-4 text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {item.description}
+                    </p>
+                    <p className="rounded-lg bg-gray-50 p-3 text-sm dark:bg-gray-800">
+                      {item.example}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Implementation Checklist */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Gradient Implementation Checklist
+              </h2>
+              <div className="rounded-lg border border-border-light p-4 md:p-6 dark:border-border-dark">
+                <p className="mb-4 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                  Before copying CSS, use this checklist to keep gradients readable, reusable, and
+                  easy to maintain across production UI surfaces.
+                </p>
+                <ul className="space-y-3">
+                  {gradientImplementationChecks.map((check) => (
+                    <li key={check} className="flex gap-3 text-sm sm:text-base">
+                      <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent" />
+                      <span>{check}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
             {/* FAQ */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
@@ -943,6 +1017,7 @@ export default function GradientGeneratorPage() {
               </div>
             </div>
           </section>
+          <RelatedToolsSection />
         </main>
 
         <Footer />
