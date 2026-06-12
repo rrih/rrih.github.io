@@ -25,12 +25,56 @@ import {
   Trash2,
   Undo2,
 } from 'lucide-react'
+import Link from 'next/link'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 interface MarkdownState {
   input: string
   preview: string
 }
+
+const markdownUseCases = [
+  {
+    title: 'README and documentation drafts',
+    description:
+      'Write project notes, installation steps, changelog entries, and README sections while checking headings, lists, links, and code blocks in the preview.',
+  },
+  {
+    title: 'Blog post outlines',
+    description:
+      'Shape articles with headings, quotes, and links before moving the final Markdown into a CMS, static site, or publishing workflow.',
+  },
+  {
+    title: 'Shareable notes and snippets',
+    description:
+      'Prepare meeting notes, release summaries, support replies, and reusable snippets that can be downloaded as a clean .md file.',
+  },
+]
+
+const markdownChecklist = [
+  'Use one H1 and clear H2 sections so the document is easy to scan.',
+  'Preview code blocks, blockquotes, and nested lists before publishing.',
+  'Download the .md file before clearing browser data or switching devices.',
+  'Keep long URLs behind descriptive link text for cleaner reading.',
+]
+
+const markdownWorkflowLinks = [
+  {
+    href: '/tools/json-formatter',
+    title: 'JSON Formatter',
+    description: 'Format API examples before pasting them into docs.',
+  },
+  {
+    href: '/tools/base64',
+    title: 'Base64 Encoder/Decoder',
+    description: 'Decode payload snippets and document the readable value.',
+  },
+  {
+    href: '/tools/qr-generator',
+    title: 'QR Code Generator',
+    description: 'Turn a finished document or published page URL into a QR code.',
+  },
+]
 
 export default function MarkdownEditorPage() {
   const TOOL_NAME = 'markdown-editor'
@@ -248,7 +292,8 @@ export default function MarkdownEditorPage() {
                 Markdown Editor
               </h1>
               <p className="mb-4 xs:mb-6 text-sm xs:text-base sm:text-lg text-foreground-light-secondary dark:text-foreground-dark-secondary px-2 xs:px-0">
-                Write and preview Markdown with live rendering and export options.
+                Write Markdown online with live preview, formatting shortcuts, local draft restore,
+                and one-click download for README files, blog outlines, and notes.
               </p>
             </div>
           </section>
@@ -451,6 +496,28 @@ Code blocks
 
           {/* Content Sections for AdSense */}
           <section className="mb-8 sm:mb-12 md:mb-16 border-t border-border-light dark:border-border-dark pt-8 sm:pt-12">
+            {/* Workflow Fit */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Markdown Workflows This Editor Handles
+              </h2>
+              <div className="grid gap-4 md:grid-cols-3">
+                {markdownUseCases.map((useCase) => (
+                  <div
+                    key={useCase.title}
+                    className="rounded-lg border border-border-light dark:border-border-dark p-4"
+                  >
+                    <h3 className="mb-2 text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+                      {useCase.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {useCase.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* About This Tool */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
@@ -477,6 +544,26 @@ Code blocks
                   processing happens locally in your browser, ensuring your content remains private
                   and secure while providing lightning-fast performance.
                 </p>
+              </div>
+            </div>
+
+            {/* Publishing Checklist */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Quick Markdown Publishing Checklist
+              </h2>
+              <div className="rounded-lg border border-border-light dark:border-border-dark p-4 sm:p-6">
+                <ul className="space-y-3">
+                  {markdownChecklist.map((item) => (
+                    <li
+                      key={item}
+                      className="flex gap-3 text-foreground-light-secondary dark:text-foreground-dark-secondary"
+                    >
+                      <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-accent" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 
@@ -513,6 +600,29 @@ Code blocks
                     Download your Markdown file or copy the content to use in other applications.
                   </p>
                 </div>
+              </div>
+            </div>
+
+            {/* Nearby Workflow Tools */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Use It With Nearby Tools
+              </h2>
+              <div className="grid gap-4 md:grid-cols-3">
+                {markdownWorkflowLinks.map((tool) => (
+                  <Link
+                    key={tool.href}
+                    href={tool.href}
+                    className="rounded-lg border border-border-light dark:border-border-dark p-4 transition-all hover:-translate-y-0.5 hover:border-accent hover:shadow-lg"
+                  >
+                    <h3 className="mb-2 text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+                      {tool.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {tool.description}
+                    </p>
+                  </Link>
+                ))}
               </div>
             </div>
 
@@ -593,9 +703,20 @@ code block
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
                   <summary className="font-semibold cursor-pointer">Is my content saved?</summary>
                   <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
-                    Your content is temporarily stored in your browser's session while you work. For
+                    Your content is stored locally in this browser while you work, and shared URLs
+                    can restore supported editor state when they fit within browser URL limits. For
                     permanent storage, use the download feature to save your Markdown files locally.
-                    The editor maintains undo/redo history during your session.
+                    The editor also maintains undo/redo history during your session.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    Can I share a Markdown draft?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Yes. Use the Share button to copy a restorable URL for compact drafts. If the
+                    draft is too large for a reliable URL, download the .md file and share the file
+                    instead.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">

@@ -94,7 +94,8 @@ export const tools: Tool[] = [
   {
     id: 'markdown-editor',
     title: 'Markdown Editor',
-    description: 'Write and preview Markdown with live rendering and export options',
+    description:
+      'Write Markdown online with live preview, shortcuts, download, and shareable drafts',
     icon: ({ className }) => (
       <svg
         className={className}
