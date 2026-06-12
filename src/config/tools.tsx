@@ -1,4 +1,4 @@
-import { Wallet, Zap } from 'lucide-react'
+import { Clock3, Wallet, Zap } from 'lucide-react'
 import type React from 'react'
 
 export interface Tool {
@@ -371,6 +371,16 @@ export const tools: Tool[] = [
     description: 'Estimate Japan net pay from gross salary, taxes, and payroll deductions',
     icon: ({ className }) => <Wallet className={className} />,
     href: '/tools/take-home-pay-calculator',
+    category: 'utility',
+    status: 'available',
+    featured: true,
+  },
+  {
+    id: 'overtime-pay-calculator',
+    title: 'Overtime Pay Calculator',
+    description: 'Estimate Japan overtime, night-work, and legal-holiday premium pay',
+    icon: ({ className }) => <Clock3 className={className} />,
+    href: '/tools/overtime-pay-calculator',
     category: 'utility',
     status: 'available',
     featured: true,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T11:17:19.337Z",
+  "generatedAt": "2026-06-12T13:22:21.810Z",
   "targetMonthlyRevenueJpy": 50000,
   "targetDailyRevenueJpy": 1666.67,
   "actualRevenueJpy": 2,
@@ -11,14 +11,6 @@
     {
       "type": "new-high-cpc-tool",
       "priority": 100,
-      "title": "Build Overtime Pay Calculator",
-      "target": "/tools/overtime-pay-calculator/",
-      "automationMode": "draft-pr",
-      "rationale": "calculate overtime pay from hourly wage, monthly salary, and premium rate. CPC tier: high; potential: high; effort: medium; policy risk: medium. Labor and salary queries have stable search demand and stronger commercial advertiser fit."
-    },
-    {
-      "type": "new-high-cpc-tool",
-      "priority": 99,
       "title": "Build Furusato Tax Limit Calculator",
       "target": "/tools/furusato-tax-limit-calculator/",
       "automationMode": "draft-pr",
@@ -26,7 +18,7 @@
     },
     {
       "type": "new-high-cpc-tool",
-      "priority": 98,
+      "priority": 99,
       "title": "Build Mortgage Prepayment Calculator",
       "target": "/tools/mortgage-prepayment-calculator/",
       "automationMode": "draft-pr",
@@ -34,7 +26,7 @@
     },
     {
       "type": "new-high-cpc-tool",
-      "priority": 97,
+      "priority": 98,
       "title": "Build Retirement Allowance Tax Calculator",
       "target": "/tools/retirement-allowance-tax-calculator/",
       "automationMode": "draft-pr",
@@ -42,11 +34,19 @@
     },
     {
       "type": "new-high-cpc-tool",
-      "priority": 96,
+      "priority": 97,
       "title": "Build Child Allowance Calculator",
       "target": "/tools/child-allowance-calculator/",
       "automationMode": "draft-pr",
       "rationale": "estimate child allowance and family support payments. CPC tier: medium; potential: medium; effort: medium; policy risk: medium. Family benefit queries can build traffic diversity under the same utility-site brand."
+    },
+    {
+      "type": "new-high-cpc-tool",
+      "priority": 96,
+      "title": "Build Childcare Leave Benefit Calculator",
+      "target": "/tools/childcare-leave-benefit-calculator/",
+      "automationMode": "draft-pr",
+      "rationale": "estimate childcare leave benefits from salary and leave period. CPC tier: medium; potential: medium; effort: medium; policy risk: medium. Benefit calculators can win long-tail searches when backed by clear formulas and caveats."
     },
     {
       "type": "ctr-rewrite",
