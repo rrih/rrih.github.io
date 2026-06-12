@@ -14,45 +14,45 @@ Scope: `https://rrih.github.io/` only.
 
 ## Top Actions
 
-### 1. Build Take-Home Pay Calculator
-
-- Type: new-high-cpc-tool
-- Target: /tools/take-home-pay-calculator/
-- Automation mode: draft-pr
-- Priority: 100
-- Rationale: annual salary to net income calculator with tax and social insurance breakdown. CPC tier: high; potential: high; effort: medium; policy risk: medium. Income and tax tools can attract higher-value finance queries than generic developer utilities.
-
-### 2. Build Overtime Pay Calculator
+### 1. Build Overtime Pay Calculator
 
 - Type: new-high-cpc-tool
 - Target: /tools/overtime-pay-calculator/
 - Automation mode: draft-pr
-- Priority: 99
+- Priority: 100
 - Rationale: calculate overtime pay from hourly wage, monthly salary, and premium rate. CPC tier: high; potential: high; effort: medium; policy risk: medium. Labor and salary queries have stable search demand and stronger commercial advertiser fit.
 
-### 3. Build Furusato Tax Limit Calculator
+### 2. Build Furusato Tax Limit Calculator
 
 - Type: new-high-cpc-tool
 - Target: /tools/furusato-tax-limit-calculator/
 - Automation mode: draft-pr
-- Priority: 98
+- Priority: 99
 - Rationale: estimate furusato tax donation limit from income and family profile. CPC tier: high; potential: high; effort: high; policy risk: medium. Tax-saving queries are monetizable, but the calculation needs careful testing and disclaimers.
 
-### 4. Build Mortgage Prepayment Calculator
+### 3. Build Mortgage Prepayment Calculator
 
 - Type: new-high-cpc-tool
 - Target: /tools/mortgage-prepayment-calculator/
 - Automation mode: draft-pr
-- Priority: 97
+- Priority: 98
 - Rationale: compare mortgage balance, interest savings, and repayment-period reduction. CPC tier: high; potential: high; effort: high; policy risk: medium. Mortgage queries can have strong RPM, but the tool needs accurate amortization logic.
 
-### 5. Build Retirement Allowance Tax Calculator
+### 4. Build Retirement Allowance Tax Calculator
 
 - Type: new-high-cpc-tool
 - Target: /tools/retirement-allowance-tax-calculator/
 - Automation mode: draft-pr
-- Priority: 96
+- Priority: 97
 - Rationale: estimate retirement allowance deduction and taxable retirement income. CPC tier: high; potential: medium; effort: medium; policy risk: medium. Retirement and tax planning searches are commercially relevant and evergreen.
+
+### 5. Build Child Allowance Calculator
+
+- Type: new-high-cpc-tool
+- Target: /tools/child-allowance-calculator/
+- Automation mode: draft-pr
+- Priority: 96
+- Rationale: estimate child allowance and family support payments. CPC tier: medium; potential: medium; effort: medium; policy risk: medium. Family benefit queries can build traffic diversity under the same utility-site brand.
 
 ### 6. Rewrite title/meta for query: css animation generator
 
