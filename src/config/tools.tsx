@@ -309,7 +309,8 @@ export const tools: Tool[] = [
   {
     id: 'animation-generator',
     title: 'CSS Animation Generator',
-    description: 'Create smooth CSS animations with custom keyframes and timing',
+    description:
+      'Generate CSS keyframes, hover effects, fade-ins, loading loops, and animation code',
     icon: ({ className }) => (
       <svg
         className={className}
