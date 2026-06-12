@@ -36,6 +36,32 @@ interface QRGeneratorState {
   }
 }
 
+const qrWorkflowCards = [
+  {
+    title: 'Campaign and landing-page links',
+    description:
+      'Turn a short URL into a QR code for posters, flyers, receipts, booth signage, and printed cards. Keep the destination stable so printed codes stay useful after the campaign starts.',
+  },
+  {
+    title: 'WiFi access for guests',
+    description:
+      'Generate a WiFi QR code for offices, events, studios, and home guest networks. Visitors can scan instead of typing a long password, while the password remains local in your browser.',
+  },
+  {
+    title: 'Printed instructions and support',
+    description:
+      'Attach QR codes to manuals, packaging, classroom handouts, or help-desk notes so people can open a setup guide, booking page, or support form from their phone.',
+  },
+]
+
+const qrReadabilityChecklist = [
+  'Use a dark foreground on a light background and avoid low-contrast brand colors.',
+  'Choose Medium or High error correction for printed materials, labels, and outdoor signage.',
+  'Test the QR code with at least one iPhone camera and one Android camera before publishing.',
+  'Keep URLs short and stable; update the destination page rather than reprinting the code.',
+  'Leave quiet white space around the code so nearby text or graphics do not break scanning.',
+]
+
 export default function QRGenerator() {
   const TOOL_NAME = 'qr-generator'
 
@@ -653,10 +679,11 @@ export default function QRGenerator() {
                 with instant preview and download capabilities.
               </p>
               <p className="text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed">
-                With support for high-resolution output, batch processing capabilities, and
-                mobile-responsive design, this QR code generator is perfect for businesses,
-                developers, marketers, and anyone who needs reliable QR code creation. The intuitive
-                interface makes it easy to create, customize, and share QR codes in seconds.
+                With support for high-resolution output, shareable generator settings, local data
+                export, and mobile-responsive design, this QR code generator is perfect for
+                businesses, developers, marketers, and anyone who needs reliable QR code creation.
+                The intuitive interface makes it easy to create, customize, and share QR codes in
+                seconds.
               </p>
             </div>
           </div>
@@ -746,6 +773,46 @@ export default function QRGenerator() {
                   across all platforms.
                 </p>
               </div>
+            </div>
+          </div>
+
+          {/* Practical Workflows */}
+          <div className="mb-12">
+            <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+              QR Code Workflows This Tool Handles
+            </h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              {qrWorkflowCards.map((workflow) => (
+                <div
+                  key={workflow.title}
+                  className="rounded-lg border border-border-light dark:border-border-dark p-4"
+                >
+                  <h3 className="font-semibold mb-2">{workflow.title}</h3>
+                  <p className="text-sm leading-relaxed text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    {workflow.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Readability Checklist */}
+          <div className="mb-12">
+            <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+              QR Code Readability Checklist
+            </h2>
+            <div className="rounded-lg border border-border-light dark:border-border-dark p-4 sm:p-6">
+              <ul className="space-y-3">
+                {qrReadabilityChecklist.map((item) => (
+                  <li
+                    key={item}
+                    className="flex gap-3 text-sm leading-relaxed text-foreground-light-secondary dark:text-foreground-dark-secondary"
+                  >
+                    <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-accent" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 
@@ -914,6 +981,26 @@ export default function QRGenerator() {
                   Absolutely. All QR code generation happens entirely in your browser using
                   JavaScript. Your data is never transmitted to our servers or any third-party
                   services, ensuring complete privacy and security.
+                </p>
+              </details>
+              <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                <summary className="font-semibold cursor-pointer">
+                  How should I prepare a QR code for print?
+                </summary>
+                <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                  Download the PNG, place it with clear white space around all sides, and print a
+                  test copy at the final size. Scan the printed version from the expected distance
+                  before ordering cards, labels, posters, or packaging.
+                </p>
+              </details>
+              <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                <summary className="font-semibold cursor-pointer">
+                  Which related tools help after creating a QR code?
+                </summary>
+                <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                  Use the Markdown editor to draft instructions, the Base64 tool for encoding
+                  compact text snippets, and the image converter when you need to prepare supporting
+                  graphics for the same printed or digital asset.
                 </p>
               </details>
             </div>
