@@ -3,7 +3,6 @@
 import { AdUnit } from '@/components/ads/ad-unit'
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
-import { RelatedToolsSection } from '@/components/tools/related-tools-section'
 import { type ElectricityCostInput, calculateElectricityCost } from '@/lib/electricity-cost'
 import { Calculator, Info, RotateCcw, Zap } from 'lucide-react'
 import { useMemo, useState } from 'react'
@@ -326,7 +325,6 @@ export default function ElectricityCostCalculatorPage() {
         </section>
       </main>
 
-      <RelatedToolsSection />
       <Footer />
     </div>
   )

@@ -3,7 +3,6 @@
 import { AdUnit } from '@/components/ads/ad-unit'
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
-import { RelatedToolsSection } from '@/components/tools/related-tools-section'
 import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
 import { useHistory } from '@/hooks/useHistory'
 import { localStorageManager } from '@/lib/localStorage'
@@ -1017,7 +1016,6 @@ export default function GradientGeneratorPage() {
               </div>
             </div>
           </section>
-          <RelatedToolsSection />
         </main>
 
         <Footer />
