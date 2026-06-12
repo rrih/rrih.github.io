@@ -1,4 +1,4 @@
-import { Zap } from 'lucide-react'
+import { Wallet, Zap } from 'lucide-react'
 import type React from 'react'
 
 export interface Tool {
@@ -361,6 +361,16 @@ export const tools: Tool[] = [
     description: 'Estimate appliance running costs from watts, usage time, and kWh rate',
     icon: ({ className }) => <Zap className={className} />,
     href: '/tools/electricity-cost-calculator',
+    category: 'utility',
+    status: 'available',
+    featured: true,
+  },
+  {
+    id: 'take-home-pay-calculator',
+    title: 'Take-Home Pay Calculator',
+    description: 'Estimate Japan net pay from gross salary, taxes, and payroll deductions',
+    icon: ({ className }) => <Wallet className={className} />,
+    href: '/tools/take-home-pay-calculator',
     category: 'utility',
     status: 'available',
     featured: true,
