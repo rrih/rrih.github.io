@@ -3,7 +3,6 @@
 import { AdUnit } from '@/components/ads/ad-unit'
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
-import { RelatedToolsSection } from '@/components/tools/related-tools-section'
 import { useErrorToast, useSuccessToast } from '@/components/ui/toast'
 import { localStorageManager } from '@/lib/localStorage'
 import { useUrlSharing } from '@/lib/urlSharing'
@@ -1007,8 +1006,6 @@ export default function QRGenerator() {
             </div>
           </div>
         </section>
-
-        <RelatedToolsSection />
 
         <Footer />
       </div>
