@@ -3,7 +3,6 @@
 import { AdUnit } from '@/components/ads/ad-unit'
 import { Footer } from '@/components/layout/footer'
 import { Header } from '@/components/layout/header'
-import { RelatedToolsSection } from '@/components/tools/related-tools-section'
 import { useToolState } from '@/lib/localStorage'
 import { useUrlSharing } from '@/lib/urlSharing'
 import {
@@ -1333,8 +1332,6 @@ ${keyframesCSS}
             </div>
           </div>
         </section>
-
-        <RelatedToolsSection />
 
         <Footer />
       </div>
