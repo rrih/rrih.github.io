@@ -58,6 +58,71 @@ const markdownChecklist = [
   'Keep long URLs behind descriptive link text for cleaner reading.',
 ]
 
+const markdownTemplates = [
+  {
+    title: 'README starter',
+    description: 'Start a repository README with the sections people expect before installation.',
+    snippet: `# Project Name
+
+Short project summary.
+
+## Install
+\`\`\`bash
+bun install
+\`\`\`
+
+## Usage
+Add the primary command or workflow here.`,
+  },
+  {
+    title: 'Release notes',
+    description:
+      'Draft a changelog entry that separates user-facing changes from maintenance work.',
+    snippet: `## YYYY-MM-DD
+
+### Added
+* New capability or page
+
+### Fixed
+* Bug or copy correction
+
+### Notes
+* Migration or follow-up detail`,
+  },
+  {
+    title: 'Meeting notes',
+    description:
+      'Capture decisions, follow-ups, and references in a format that can be shared later.',
+    snippet: `# Meeting Notes
+
+## Decisions
+* Decision and owner
+
+## Follow-ups
+1. Task - person - date
+
+## Links
+* [Reference](https://example.com)`,
+  },
+]
+
+const markdownPreviewChecks = [
+  {
+    title: 'Check scannability',
+    description: 'Confirm the preview has clear heading levels and no giant unbroken paragraph.',
+  },
+  {
+    title: 'Check code readability',
+    description:
+      'Look for fenced code blocks, inline code, and long lines before sharing technical notes.',
+  },
+  {
+    title: 'Check handoff links',
+    description:
+      'Use descriptive link text so exported Markdown is readable even outside the browser.',
+  },
+]
+
 const markdownWorkflowLinks = [
   {
     href: '/tools/json-formatter',
@@ -518,6 +583,31 @@ Code blocks
               </div>
             </div>
 
+            {/* Ready-to-Use Examples */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Markdown Examples You Can Paste Into the Editor
+              </h2>
+              <div className="grid gap-4 lg:grid-cols-3">
+                {markdownTemplates.map((template) => (
+                  <div
+                    key={template.title}
+                    className="rounded-lg border border-border-light dark:border-border-dark p-4"
+                  >
+                    <h3 className="mb-2 text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+                      {template.title}
+                    </h3>
+                    <p className="mb-4 text-sm leading-relaxed text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {template.description}
+                    </p>
+                    <pre className="overflow-x-auto rounded-lg bg-gray-50 p-3 text-xs leading-relaxed text-foreground-light dark:bg-gray-900 dark:text-foreground-dark">
+                      <code>{template.snippet}</code>
+                    </pre>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* About This Tool */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
@@ -564,6 +654,28 @@ Code blocks
                     </li>
                   ))}
                 </ul>
+              </div>
+            </div>
+
+            {/* Preview Checks */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                What to Check Before You Download Markdown
+              </h2>
+              <div className="grid gap-4 md:grid-cols-3">
+                {markdownPreviewChecks.map((check) => (
+                  <div
+                    key={check.title}
+                    className="rounded-lg border border-border-light dark:border-border-dark p-4"
+                  >
+                    <h3 className="mb-2 font-semibold text-foreground-light dark:text-foreground-dark">
+                      {check.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {check.description}
+                    </p>
+                  </div>
+                ))}
               </div>
             </div>
 
@@ -738,6 +850,26 @@ code block
                     You can paste existing Markdown content directly into the editor. Simply copy
                     your Markdown text from any source and paste it into the input area to continue
                     editing.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    Can I use this editor for README files?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Yes. The editor is useful for drafting README sections, installation notes,
+                    command examples, and changelog entries. Paste a starter template, preview the
+                    structure, then download the final Markdown file for your repository.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    Does the preview change my original Markdown?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    No. The preview renders a browser-side HTML view while the editor keeps the
+                    original Markdown text intact. Use the Markdown input when copying or
+                    downloading your final file.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
