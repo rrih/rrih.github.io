@@ -166,6 +166,27 @@ const animationUseCases = [
   },
 ]
 
+const animationRecipes = [
+  {
+    title: 'CSS hover animation',
+    description:
+      'Build a two-step keyframe that scales the element slightly and fades opacity to show immediate feedback on buttons, cards, and menu items.',
+    settings: 'Duration 0.18s, ease-out timing, 1 iteration, both fill mode.',
+  },
+  {
+    title: 'CSS fade in animation',
+    description:
+      'Start with opacity 0 and a small translateY offset, then end at opacity 1 with no translation for readable content reveals.',
+    settings: 'Duration 0.3s, ease-out timing, 1 iteration, forwards fill mode.',
+  },
+  {
+    title: 'CSS loading animation',
+    description:
+      'Use a rotate keyframe from 0deg to 360deg with linear timing when the animation needs to loop while a task is running.',
+    settings: 'Duration 0.8s, linear timing, infinite iterations, normal direction.',
+  },
+]
+
 const implementationChecks = [
   'Animate transform and opacity first because they avoid layout recalculation.',
   'Keep decorative loops subtle and provide a paused state for previews or demos.',
@@ -1096,6 +1117,31 @@ ${keyframesCSS}
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Search Intent Recipes */}
+          <div className="mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6">CSS Animation Generator Recipes</h2>
+            <p className="text-base sm:text-lg text-foreground-light-secondary dark:text-foreground-dark-secondary mb-6">
+              Start from a common CSS animation pattern, adjust the keyframes in the editor, then
+              copy the generated @keyframes and animation declaration into your stylesheet.
+            </p>
+            <div className="grid gap-4 md:grid-cols-3">
+              {animationRecipes.map((recipe) => (
+                <div
+                  key={recipe.title}
+                  className="border border-border-light dark:border-border-dark rounded-lg p-4 md:p-5"
+                >
+                  <h3 className="font-semibold text-lg mb-3">{recipe.title}</h3>
+                  <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary mb-4">
+                    {recipe.description}
+                  </p>
+                  <p className="text-sm rounded-lg bg-gray-50 dark:bg-gray-800 p-3">
+                    {recipe.settings}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
