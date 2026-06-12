@@ -14,45 +14,45 @@ Scope: `https://rrih.github.io/` only.
 
 ## Top Actions
 
-### 1. Build Overtime Pay Calculator
-
-- Type: new-high-cpc-tool
-- Target: /tools/overtime-pay-calculator/
-- Automation mode: draft-pr
-- Priority: 100
-- Rationale: calculate overtime pay from hourly wage, monthly salary, and premium rate. CPC tier: high; potential: high; effort: medium; policy risk: medium. Labor and salary queries have stable search demand and stronger commercial advertiser fit.
-
-### 2. Build Furusato Tax Limit Calculator
+### 1. Build Furusato Tax Limit Calculator
 
 - Type: new-high-cpc-tool
 - Target: /tools/furusato-tax-limit-calculator/
 - Automation mode: draft-pr
-- Priority: 99
+- Priority: 100
 - Rationale: estimate furusato tax donation limit from income and family profile. CPC tier: high; potential: high; effort: high; policy risk: medium. Tax-saving queries are monetizable, but the calculation needs careful testing and disclaimers.
 
-### 3. Build Mortgage Prepayment Calculator
+### 2. Build Mortgage Prepayment Calculator
 
 - Type: new-high-cpc-tool
 - Target: /tools/mortgage-prepayment-calculator/
 - Automation mode: draft-pr
-- Priority: 98
+- Priority: 99
 - Rationale: compare mortgage balance, interest savings, and repayment-period reduction. CPC tier: high; potential: high; effort: high; policy risk: medium. Mortgage queries can have strong RPM, but the tool needs accurate amortization logic.
 
-### 4. Build Retirement Allowance Tax Calculator
+### 3. Build Retirement Allowance Tax Calculator
 
 - Type: new-high-cpc-tool
 - Target: /tools/retirement-allowance-tax-calculator/
 - Automation mode: draft-pr
-- Priority: 97
+- Priority: 98
 - Rationale: estimate retirement allowance deduction and taxable retirement income. CPC tier: high; potential: medium; effort: medium; policy risk: medium. Retirement and tax planning searches are commercially relevant and evergreen.
 
-### 5. Build Child Allowance Calculator
+### 4. Build Child Allowance Calculator
 
 - Type: new-high-cpc-tool
 - Target: /tools/child-allowance-calculator/
 - Automation mode: draft-pr
-- Priority: 96
+- Priority: 97
 - Rationale: estimate child allowance and family support payments. CPC tier: medium; potential: medium; effort: medium; policy risk: medium. Family benefit queries can build traffic diversity under the same utility-site brand.
+
+### 5. Build Childcare Leave Benefit Calculator
+
+- Type: new-high-cpc-tool
+- Target: /tools/childcare-leave-benefit-calculator/
+- Automation mode: draft-pr
+- Priority: 96
+- Rationale: estimate childcare leave benefits from salary and leave period. CPC tier: medium; potential: medium; effort: medium; policy risk: medium. Benefit calculators can win long-tail searches when backed by clear formulas and caveats.
 
 ### 6. Rewrite title/meta for query: css animation generator
 
@@ -62,21 +62,21 @@ Scope: `https://rrih.github.io/` only.
 - Priority: 70
 - Rationale: 65 impressions, 0% CTR, average position 27.4.
 
-### 7. Expand existing tool page: https://rrih.github.io/tools/animation-generator/
+### 7. Expand existing tool page: https://rrih.github.io/tools/markdown-editor/
 
 - Type: existing-page-expansion
-- Target: https://rrih.github.io/tools/animation-generator/
+- Target: https://rrih.github.io/tools/markdown-editor/
 - Automation mode: auto-pr
 - Priority: 60
-- Rationale: 644 impressions and 2 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density.
+- Rationale: 15 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density.
 
-### 8. Expand existing tool page: https://rrih.github.io/tools/gradient-generator/
+### 8. Expand existing tool page: https://rrih.github.io/tools/qr-generator/
 
 - Type: existing-page-expansion
-- Target: https://rrih.github.io/tools/gradient-generator/
+- Target: https://rrih.github.io/tools/qr-generator/
 - Automation mode: auto-pr
 - Priority: 59
-- Rationale: 416 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density.
+- Rationale: 1 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density.
 
 ## Automation Boundary
 

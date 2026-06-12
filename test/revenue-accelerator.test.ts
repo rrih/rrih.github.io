@@ -3,8 +3,10 @@ import { readFileSync } from 'node:fs'
 import {
   buildRevenueAcceleratorPlan,
   findCtrRewriteActions,
+  findExistingPageExpansionActions,
   findNewToolActions,
   renderAcceleratorReport,
+  toolIdFromProductionToolUrl,
 } from '../scripts/growth/revenue-accelerator'
 import { tools } from '../src/config/tools'
 
@@ -121,6 +123,50 @@ describe('revenue accelerator', () => {
       target: 'css animation generator',
       automationMode: 'draft-pr',
     })
+  })
+
+  it('extracts production tool ids for existing-page filters', () => {
+    expect(toolIdFromProductionToolUrl('https://rrih.github.io/tools/gradient-generator/')).toBe(
+      'gradient-generator'
+    )
+    expect(toolIdFromProductionToolUrl('https://example.com/tools/gradient-generator/')).toBeNull()
+    expect(toolIdFromProductionToolUrl('not a url')).toBeNull()
+  })
+
+  it('excludes completed existing-page expansions from recurring actions', () => {
+    const actions = findExistingPageExpansionActions({
+      ...snapshot,
+      searchConsole: {
+        ...snapshot.searchConsole,
+        topPages: [
+          {
+            keys: ['https://rrih.github.io/tools/animation-generator/'],
+            clicks: 2,
+            impressions: 660,
+            ctr: 0.003,
+            position: 28,
+          },
+          {
+            keys: ['https://rrih.github.io/tools/gradient-generator/'],
+            clicks: 0,
+            impressions: 431,
+            ctr: 0,
+            position: 35,
+          },
+          {
+            keys: ['https://rrih.github.io/tools/markdown-editor/'],
+            clicks: 0,
+            impressions: 15,
+            ctr: 0,
+            position: 77,
+          },
+        ],
+      },
+    })
+
+    expect(actions.map((action) => action.target)).toEqual([
+      'https://rrih.github.io/tools/markdown-editor/',
+    ])
   })
 
   it('computes the revenue gap and required PV at current RPM', () => {
