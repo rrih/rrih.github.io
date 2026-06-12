@@ -1,10 +1,12 @@
 import { describe, expect, it } from 'bun:test'
+import { readFileSync } from 'node:fs'
 import {
   buildRevenueAcceleratorPlan,
   findCtrRewriteActions,
   findNewToolActions,
   renderAcceleratorReport,
 } from '../scripts/growth/revenue-accelerator'
+import { tools } from '../src/config/tools'
 
 const snapshot = {
   generatedAt: '2026-06-11T00:00:00.000Z',
@@ -94,6 +96,21 @@ describe('revenue accelerator', () => {
     ])
 
     expect(actions).toEqual([])
+  })
+
+  it('keeps implemented tool opportunities out of planned status', () => {
+    const realOpportunities = JSON.parse(
+      readFileSync(new URL('../data/growth/opportunities.json', import.meta.url), 'utf8')
+    ) as typeof opportunities
+    const availableToolIds = new Set(
+      tools.filter((tool) => tool.status === 'available').map((tool) => tool.id)
+    )
+    const stalePlannedToolIds = realOpportunities.opportunities
+      .filter((opportunity) => availableToolIds.has(opportunity.id))
+      .filter((opportunity) => opportunity.status === 'planned')
+      .map((opportunity) => opportunity.id)
+
+    expect(stalePlannedToolIds).toEqual([])
   })
 
   it('detects low-CTR queries for rewrite candidates', () => {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T01:48:42.201Z",
+  "generatedAt": "2026-06-12T11:17:19.337Z",
   "targetMonthlyRevenueJpy": 50000,
   "targetDailyRevenueJpy": 1666.67,
   "actualRevenueJpy": 2,
@@ -11,14 +11,6 @@
     {
       "type": "new-high-cpc-tool",
       "priority": 100,
-      "title": "Build Take-Home Pay Calculator",
-      "target": "/tools/take-home-pay-calculator/",
-      "automationMode": "draft-pr",
-      "rationale": "annual salary to net income calculator with tax and social insurance breakdown. CPC tier: high; potential: high; effort: medium; policy risk: medium. Income and tax tools can attract higher-value finance queries than generic developer utilities."
-    },
-    {
-      "type": "new-high-cpc-tool",
-      "priority": 99,
       "title": "Build Overtime Pay Calculator",
       "target": "/tools/overtime-pay-calculator/",
       "automationMode": "draft-pr",
@@ -26,7 +18,7 @@
     },
     {
       "type": "new-high-cpc-tool",
-      "priority": 98,
+      "priority": 99,
       "title": "Build Furusato Tax Limit Calculator",
       "target": "/tools/furusato-tax-limit-calculator/",
       "automationMode": "draft-pr",
@@ -34,7 +26,7 @@
     },
     {
       "type": "new-high-cpc-tool",
-      "priority": 97,
+      "priority": 98,
       "title": "Build Mortgage Prepayment Calculator",
       "target": "/tools/mortgage-prepayment-calculator/",
       "automationMode": "draft-pr",
@@ -42,11 +34,19 @@
     },
     {
       "type": "new-high-cpc-tool",
-      "priority": 96,
+      "priority": 97,
       "title": "Build Retirement Allowance Tax Calculator",
       "target": "/tools/retirement-allowance-tax-calculator/",
       "automationMode": "draft-pr",
       "rationale": "estimate retirement allowance deduction and taxable retirement income. CPC tier: high; potential: medium; effort: medium; policy risk: medium. Retirement and tax planning searches are commercially relevant and evergreen."
+    },
+    {
+      "type": "new-high-cpc-tool",
+      "priority": 96,
+      "title": "Build Child Allowance Calculator",
+      "target": "/tools/child-allowance-calculator/",
+      "automationMode": "draft-pr",
+      "rationale": "estimate child allowance and family support payments. CPC tier: medium; potential: medium; effort: medium; policy risk: medium. Family benefit queries can build traffic diversity under the same utility-site brand."
     },
     {
       "type": "ctr-rewrite",
