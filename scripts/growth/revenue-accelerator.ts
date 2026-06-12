@@ -99,6 +99,8 @@ const policyScore: Record<Tier, number> = {
   high: -2,
 }
 
+const completedExistingPageExpansionToolIds = new Set(['animation-generator', 'gradient-generator'])
+
 function formatDate(d = new Date()): string {
   return d.toISOString().slice(0, 10)
 }
@@ -118,6 +120,19 @@ function plannedOpportunityScore(opportunity: RevenueOpportunity): number {
     policyScore[opportunity.policyRisk] +
     (opportunity.automationMode === 'auto-pr' ? 2 : 0)
   )
+}
+
+export function toolIdFromProductionToolUrl(url: string): string | null {
+  try {
+    const parsed = new URL(url)
+
+    if (parsed.hostname !== 'rrih.github.io') return null
+
+    const match = parsed.pathname.match(/^\/tools\/([^/]+)\/?$/)
+    return match?.[1] ?? null
+  } catch {
+    return null
+  }
 }
 
 export function findCtrRewriteActions(snapshot: MetricsSnapshot): AcceleratorAction[] {
@@ -147,8 +162,12 @@ export function findExistingPageExpansionActions(snapshot: MetricsSnapshot): Acc
     .map((row) => ({
       row,
       url: row.keys[0] ?? '',
+      toolId: toolIdFromProductionToolUrl(row.keys[0] ?? ''),
     }))
-    .filter(({ url, row }) => url.includes('/tools/') && row.impressions > 0)
+    .filter(
+      ({ row, toolId }) =>
+        row.impressions > 0 && toolId !== null && !completedExistingPageExpansionToolIds.has(toolId)
+    )
     .sort((a, b) => b.row.impressions - a.row.impressions)
     .slice(0, 3)
     .map(({ row, url }, index) => ({

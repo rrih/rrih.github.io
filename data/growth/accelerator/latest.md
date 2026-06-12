@@ -62,21 +62,21 @@ Scope: `https://rrih.github.io/` only.
 - Priority: 70
 - Rationale: 65 impressions, 0% CTR, average position 27.4.
 
-### 7. Expand existing tool page: https://rrih.github.io/tools/animation-generator/
+### 7. Expand existing tool page: https://rrih.github.io/tools/markdown-editor/
 
 - Type: existing-page-expansion
-- Target: https://rrih.github.io/tools/animation-generator/
+- Target: https://rrih.github.io/tools/markdown-editor/
 - Automation mode: auto-pr
 - Priority: 60
-- Rationale: 644 impressions and 2 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density.
+- Rationale: 15 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density.
 
-### 8. Expand existing tool page: https://rrih.github.io/tools/gradient-generator/
+### 8. Expand existing tool page: https://rrih.github.io/tools/qr-generator/
 
 - Type: existing-page-expansion
-- Target: https://rrih.github.io/tools/gradient-generator/
+- Target: https://rrih.github.io/tools/qr-generator/
 - Automation mode: auto-pr
 - Priority: 59
-- Rationale: 416 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density.
+- Rationale: 1 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density.
 
 ## Automation Boundary
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T13:22:21.810Z",
+  "generatedAt": "2026-06-12T14:33:49.994Z",
   "targetMonthlyRevenueJpy": 50000,
   "targetDailyRevenueJpy": 1666.67,
   "actualRevenueJpy": 2,
@@ -59,18 +59,18 @@
     {
       "type": "existing-page-expansion",
       "priority": 60,
-      "title": "Expand existing tool page: https://rrih.github.io/tools/animation-generator/",
-      "target": "https://rrih.github.io/tools/animation-generator/",
+      "title": "Expand existing tool page: https://rrih.github.io/tools/markdown-editor/",
+      "target": "https://rrih.github.io/tools/markdown-editor/",
       "automationMode": "auto-pr",
-      "rationale": "644 impressions and 2 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density."
+      "rationale": "15 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density."
     },
     {
       "type": "existing-page-expansion",
       "priority": 59,
-      "title": "Expand existing tool page: https://rrih.github.io/tools/gradient-generator/",
-      "target": "https://rrih.github.io/tools/gradient-generator/",
+      "title": "Expand existing tool page: https://rrih.github.io/tools/qr-generator/",
+      "target": "https://rrih.github.io/tools/qr-generator/",
       "automationMode": "auto-pr",
-      "rationale": "416 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density."
+      "rationale": "1 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density."
     }
   ]
 }
