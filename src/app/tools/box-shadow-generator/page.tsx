@@ -41,6 +41,34 @@ interface BoxShadowGeneratorState {
   presets: string[]
 }
 
+const shadowWorkflowLinks = [
+  {
+    title: 'Pair shadows with CSS gradients',
+    href: '/tools/gradient-generator',
+    description:
+      'Use when the element needs a layered background, soft surface tint, or stronger visual hierarchy.',
+  },
+  {
+    title: 'Add motion to shadow states',
+    href: '/tools/animation-generator',
+    description:
+      'Use when hover, focus, or loading states need subtle movement after the shadow recipe is ready.',
+  },
+  {
+    title: 'Pick accessible shadow colors',
+    href: '/tools/color-picker',
+    description:
+      'Use when tinted shadows need to stay consistent with brand colors and readable foreground text.',
+  },
+]
+
+const shadowImplementationChecks = [
+  'Test the shadow on the same background color used in production.',
+  'Use small blur and opacity changes for hover states so motion feels responsive.',
+  'Keep heavy multi-layer shadows away from long scrolling lists on mobile.',
+  'Combine shadows with gradients or animation only when the visual state needs the extra signal.',
+]
+
 export default function BoxShadowGeneratorPage() {
   const TOOL_NAME = 'box-shadow-generator'
 
@@ -977,6 +1005,49 @@ export default function BoxShadowGeneratorPage() {
                     </code>
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Build a Complete CSS Surface
+              </h2>
+              <p className="mb-6 text-foreground-light-secondary dark:text-foreground-dark-secondary leading-relaxed">
+                Box shadows usually work best as one part of a surface system. After choosing the
+                elevation, move through the adjacent CSS tools to set color, background treatment,
+                and motion without leaving the browser.
+              </p>
+              <div className="grid gap-4 md:grid-cols-3">
+                {shadowWorkflowLinks.map((tool) => (
+                  <a
+                    key={tool.href}
+                    href={tool.href}
+                    className="min-w-0 rounded-lg border border-border-light bg-card-light p-4 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-lg dark:border-border-dark dark:bg-card-dark"
+                  >
+                    <h3 className="mb-2 font-semibold text-foreground-light dark:text-foreground-dark">
+                      {tool.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {tool.description}
+                    </p>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Before Copying Box Shadow CSS
+              </h2>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {shadowImplementationChecks.map((check) => (
+                  <div
+                    key={check}
+                    className="rounded-lg border border-border-light bg-card-light p-4 text-sm leading-relaxed text-foreground-light-secondary dark:border-border-dark dark:bg-card-dark dark:text-foreground-dark-secondary"
+                  >
+                    {check}
+                  </div>
+                ))}
               </div>
             </div>
 
