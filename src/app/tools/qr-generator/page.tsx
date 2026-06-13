@@ -62,6 +62,48 @@ const qrReadabilityChecklist = [
   'Leave quiet white space around the code so nearby text or graphics do not break scanning.',
 ]
 
+const qrPrintSizeRows = [
+  {
+    placement: 'Business card or product label',
+    minimumSize: '0.8 in / 2 cm',
+    scanDistance: 'Close hand-held scan',
+    recommendation:
+      'Use a short URL, High error correction, and a clear white margin before sending artwork.',
+  },
+  {
+    placement: 'Flyer, menu, or classroom handout',
+    minimumSize: '1.2 in / 3 cm',
+    scanDistance: 'Arm-length scan',
+    recommendation:
+      'Print a test copy at final size and scan it under the same lighting people will use.',
+  },
+  {
+    placement: 'Poster, booth sign, or window display',
+    minimumSize: '4 in / 10 cm',
+    scanDistance: 'Several feet away',
+    recommendation:
+      'Keep the surrounding design uncluttered and avoid placing small text tight against the code.',
+  },
+]
+
+const qrLaunchChecks = [
+  {
+    title: 'Validate the destination',
+    description:
+      'Open the encoded URL on mobile data and WiFi, confirm redirects resolve quickly, and check that tracking parameters do not break the page.',
+  },
+  {
+    title: 'Test the printed surface',
+    description:
+      'Scan from the final paper, sticker, card, or sign material because glare, texture, and ink spread can reduce readability.',
+  },
+  {
+    title: 'Keep one recovery path',
+    description:
+      'Pair important printed QR codes with a short readable URL so people can still reach the destination if their camera scan fails.',
+  },
+]
+
 export default function QRGenerator() {
   const TOOL_NAME = 'qr-generator'
 
@@ -813,6 +855,69 @@ export default function QRGenerator() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+
+          {/* Print Size Guide */}
+          <div className="mb-12">
+            <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+              QR Code Print Size Guide
+            </h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              {qrPrintSizeRows.map((row) => (
+                <div
+                  key={row.placement}
+                  className="rounded-lg border border-border-light dark:border-border-dark p-4"
+                >
+                  <h3 className="font-semibold mb-3">{row.placement}</h3>
+                  <dl className="space-y-3 text-sm">
+                    <div>
+                      <dt className="font-medium text-foreground-light dark:text-foreground-dark">
+                        Minimum size
+                      </dt>
+                      <dd className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                        {row.minimumSize}
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="font-medium text-foreground-light dark:text-foreground-dark">
+                        Typical scan distance
+                      </dt>
+                      <dd className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                        {row.scanDistance}
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="font-medium text-foreground-light dark:text-foreground-dark">
+                        Production note
+                      </dt>
+                      <dd className="text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                        {row.recommendation}
+                      </dd>
+                    </div>
+                  </dl>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Launch Checks */}
+          <div className="mb-12">
+            <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+              Before You Publish a QR Code
+            </h2>
+            <div className="grid gap-4 md:grid-cols-3">
+              {qrLaunchChecks.map((check) => (
+                <div
+                  key={check.title}
+                  className="rounded-lg border border-border-light dark:border-border-dark p-4"
+                >
+                  <h3 className="font-semibold mb-2">{check.title}</h3>
+                  <p className="text-sm leading-relaxed text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    {check.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
 
