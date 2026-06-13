@@ -88,6 +88,29 @@ const gradientImplementationChecks = [
   'Open related color, shadow, and animation tools when refining a complete UI treatment.',
 ]
 
+const gradientTroubleshootingRows = [
+  {
+    symptom: 'Text feels hard to read',
+    fix: 'Move the brightest color stop away from the copy area or add a transparent overlay.',
+    css: 'linear-gradient(135deg, rgba(15, 23, 42, 0.88), rgba(37, 99, 235, 0.62))',
+  },
+  {
+    symptom: 'The gradient looks muddy',
+    fix: 'Use fewer stops, keep hue changes intentional, and avoid mixing low-saturation browns.',
+    css: 'linear-gradient(120deg, #0ea5e9 0%, #22c55e 100%)',
+  },
+  {
+    symptom: 'A visible band appears',
+    fix: 'Widen the transition distance or add a middle stop so the browser has more room to blend.',
+    css: 'linear-gradient(90deg, #111827 0%, #334155 48%, #0f766e 100%)',
+  },
+  {
+    symptom: 'The background overpowers the UI',
+    fix: 'Lower saturation, keep the gradient behind quiet surfaces, and reserve motion for focus.',
+    css: 'linear-gradient(180deg, #f8fafc 0%, #dbeafe 100%)',
+  },
+]
+
 const gradientWorkflowSteps = [
   {
     tool: 'Color Picker',
@@ -965,6 +988,35 @@ export default function GradientGeneratorPage() {
                     <p className="rounded-lg bg-gray-50 p-3 text-sm dark:bg-gray-800">
                       {item.example}
                     </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Troubleshooting */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                CSS Gradient Troubleshooting Guide
+              </h2>
+              <div className="grid gap-4 md:grid-cols-2">
+                {gradientTroubleshootingRows.map((item) => (
+                  <div
+                    key={item.symptom}
+                    className="min-w-0 rounded-lg border border-border-light p-4 md:p-5 dark:border-border-dark"
+                  >
+                    <div
+                      className="mb-4 h-20 rounded-lg border border-border-light dark:border-border-dark"
+                      style={{ background: item.css }}
+                    />
+                    <h3 className="mb-2 text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+                      {item.symptom}
+                    </h3>
+                    <p className="mb-3 text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {item.fix}
+                    </p>
+                    <pre className="overflow-x-auto rounded-lg bg-gray-50 p-3 text-xs dark:bg-gray-900">
+                      <code>{`background: ${item.css};`}</code>
+                    </pre>
                   </div>
                 ))}
               </div>
