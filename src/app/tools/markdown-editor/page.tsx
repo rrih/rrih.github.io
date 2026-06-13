@@ -141,6 +141,24 @@ const markdownWorkflowLinks = [
   },
 ]
 
+const markdownDestinationGuide = [
+  {
+    destination: 'GitHub and code hosting',
+    guidance:
+      'Keep headings predictable, wrap commands in fenced code blocks, and preview nested lists before saving README, changelog, or issue-template text.',
+  },
+  {
+    destination: 'Static sites and blogs',
+    guidance:
+      'Draft the article body in Markdown, check that links and quotes render cleanly, then move the finished text into your CMS or MDX workflow.',
+  },
+  {
+    destination: 'Team notes and handoffs',
+    guidance:
+      'Use short sections, action lists, and descriptive links so the downloaded .md file remains readable in chat, docs, or project trackers.',
+  },
+]
+
 export default function MarkdownEditorPage() {
   const TOOL_NAME = 'markdown-editor'
 
@@ -679,6 +697,28 @@ Code blocks
               </div>
             </div>
 
+            {/* Destination Guide */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Choose the Right Markdown Output
+              </h2>
+              <div className="grid gap-4 md:grid-cols-3">
+                {markdownDestinationGuide.map((item) => (
+                  <div
+                    key={item.destination}
+                    className="rounded-lg border border-border-light dark:border-border-dark p-4"
+                  >
+                    <h3 className="mb-2 font-semibold text-foreground-light dark:text-foreground-dark">
+                      {item.destination}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {item.guidance}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* How to Use */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
@@ -860,6 +900,17 @@ code block
                     Yes. The editor is useful for drafting README sections, installation notes,
                     command examples, and changelog entries. Paste a starter template, preview the
                     structure, then download the final Markdown file for your repository.
+                  </p>
+                </details>
+                <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
+                  <summary className="font-semibold cursor-pointer">
+                    What makes a good online Markdown editor workflow?
+                  </summary>
+                  <p className="mt-3 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    Start with the final destination in mind. README files usually need clear
+                    installation commands, blog drafts need stable heading structure, and team notes
+                    need concise action lists. Preview those elements before downloading the .md
+                    file or copying the text elsewhere.
                   </p>
                 </details>
                 <details className="rounded-lg border border-border-light dark:border-border-dark p-4">
