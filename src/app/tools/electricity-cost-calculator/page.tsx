@@ -14,6 +14,19 @@ const presets = [
   { name: 'Heater', watts: 1200, hoursPerDay: 4 },
 ]
 
+const exampleCosts = [
+  { name: 'LED bulb', watts: 9, hoursPerDay: 5, note: 'Bedroom or desk lamp' },
+  { name: 'Laptop', watts: 65, hoursPerDay: 6, note: 'Work-from-home day' },
+  { name: 'Air conditioner', watts: 900, hoursPerDay: 8, note: 'Summer cooling estimate' },
+  { name: 'Electric heater', watts: 1200, hoursPerDay: 4, note: 'Spot heating comparison' },
+]
+
+const estimateChecks = [
+  'Use the measured wattage from the appliance label, manual, or a plug-in power meter.',
+  'Split time-of-use plans into separate morning, daytime, and night calculations.',
+  'Run high-use appliances separately before combining them into a monthly household estimate.',
+]
+
 const defaultInput: ElectricityCostInput = {
   watts: 900,
   quantity: 1,
@@ -96,7 +109,8 @@ export default function ElectricityCostCalculatorPage() {
               </h1>
               <p className="max-w-3xl text-lg text-foreground-light-secondary dark:text-foreground-dark-secondary">
                 Estimate the running cost of appliances from wattage, usage time, quantity, and your
-                own electricity rate. The calculation stays in your browser.
+                own electricity rate. Compare daily, monthly, and annualized costs without sending
+                your appliance data to a server.
               </p>
             </div>
             <div className="rounded-lg border border-border-light bg-card-light p-4 dark:border-border-dark dark:bg-card-dark">
@@ -289,6 +303,82 @@ export default function ElectricityCostCalculatorPage() {
           </div>
         </section>
 
+        <section className="mt-12">
+          <div className="mb-5">
+            <h2 className="text-2xl font-bold text-foreground-light dark:text-foreground-dark">
+              Common Appliance Monthly Examples
+            </h2>
+            <p className="mt-2 max-w-3xl text-sm leading-6 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+              These examples use a 30-day month and the default JPY 31 per kWh rate. Adjust the
+              fields above when your bill shows a different electricity rate or your appliance runs
+              for a different number of hours.
+            </p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {exampleCosts.map((example) => {
+              const exampleResult = calculateElectricityCost({
+                watts: example.watts,
+                quantity: 1,
+                hoursPerDay: example.hoursPerDay,
+                days: 30,
+                ratePerKwh: defaultInput.ratePerKwh,
+              })
+
+              return (
+                <div
+                  key={example.name}
+                  className="rounded-lg border border-border-light bg-card-light p-4 dark:border-border-dark dark:bg-card-dark"
+                >
+                  <p className="text-sm font-medium text-accent">{example.note}</p>
+                  <h3 className="mt-2 font-semibold text-foreground-light dark:text-foreground-dark">
+                    {example.name}
+                  </h3>
+                  <p className="mt-2 text-2xl font-bold text-foreground-light dark:text-foreground-dark">
+                    {currencyFormatter.format(exampleResult.totalCost)}
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    {example.watts} W for {example.hoursPerDay} hours per day
+                  </p>
+                </div>
+              )
+            })}
+          </div>
+        </section>
+
+        <section className="mt-12 grid gap-6 lg:grid-cols-[minmax(0,1fr)_24rem]">
+          <div>
+            <h2 className="text-2xl font-bold text-foreground-light dark:text-foreground-dark">
+              How to Improve Your Estimate
+            </h2>
+            <p className="mt-3 text-sm leading-6 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+              Electricity use changes by mode, season, and thermostat behavior. Use this checklist
+              before comparing appliances or deciding whether a usage habit is worth changing.
+            </p>
+            <div className="mt-5 grid gap-3">
+              {estimateChecks.map((check) => (
+                <div
+                  key={check}
+                  className="rounded-lg border border-border-light bg-card-light p-4 dark:border-border-dark dark:bg-card-dark"
+                >
+                  <p className="text-sm leading-6 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                    {check}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="rounded-lg border border-border-light bg-card-light p-5 dark:border-border-dark dark:bg-card-dark">
+            <h3 className="text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+              When to use annualized cost
+            </h3>
+            <p className="mt-3 text-sm leading-6 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+              Annualized cost is useful for devices that run all year, such as refrigerators,
+              routers, dehumidifiers, aquariums, or standby equipment. For seasonal devices, compare
+              the selected period total instead.
+            </p>
+          </div>
+        </section>
+
         <section className="mt-12 rounded-lg border border-border-light bg-card-light p-5 dark:border-border-dark dark:bg-card-dark sm:p-6">
           <h2 className="mb-5 text-2xl font-bold text-foreground-light dark:text-foreground-dark">
             Frequently Asked Questions
@@ -319,6 +409,24 @@ export default function ElectricityCostCalculatorPage() {
               <p className="mt-2 text-sm leading-6 text-foreground-light-secondary dark:text-foreground-dark-secondary">
                 Yes. Set the period to 30 or 31 days. The annualized figure uses your average daily
                 cost multiplied by 365.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-foreground-light dark:text-foreground-dark">
+                How do I compare two appliances fairly?
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                Keep the same period and rate per kWh, then change only the wattage, quantity, or
+                hours per day. That makes the cost difference easier to read.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-foreground-light dark:text-foreground-dark">
+                Should standby power be included?
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                Include standby power for devices that stay plugged in all day. Use a low wattage
+                value, 24 hours per day, and a 30-day period to estimate the monthly cost.
               </p>
             </div>
           </div>
