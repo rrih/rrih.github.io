@@ -59,12 +59,51 @@ const gradientUseCases = [
   },
 ]
 
+const gradientRecipeRows = [
+  {
+    title: 'Clean SaaS hero background',
+    useCase: 'Use when a header needs depth behind dark or white text.',
+    css: 'linear-gradient(135deg, #0f172a 0%, #2563eb 52%, #14b8a6 100%)',
+    tip: 'Keep the brightest color away from the text block, then test contrast at mobile width.',
+  },
+  {
+    title: 'Subtle product card surface',
+    useCase: 'Use for feature cards, pricing tiles, and dashboard panels.',
+    css: 'linear-gradient(180deg, #ffffff 0%, #eff6ff 100%)',
+    tip: 'Pair with a light border instead of stacking heavy shadows and saturated colors.',
+  },
+  {
+    title: 'CTA button accent',
+    useCase: 'Use for primary actions that need a stronger affordance than a flat color.',
+    css: 'linear-gradient(90deg, #2563eb 0%, #7c3aed 100%)',
+    tip: 'Keep the gradient short and verify hover, focus, and disabled states stay readable.',
+  },
+]
+
 const gradientImplementationChecks = [
   'Choose gradient colors after confirming the foreground text contrast.',
   'Use CSS gradients instead of image backgrounds when the shape can scale fluidly.',
   'Keep reusable gradient values in design tokens or shared CSS variables.',
   'Pair gradients with shadows or animation only when the extra effect supports the task.',
   'Open related color, shadow, and animation tools when refining a complete UI treatment.',
+]
+
+const gradientWorkflowSteps = [
+  {
+    tool: 'Color Picker',
+    href: '/tools/color-picker',
+    when: 'Use after choosing a recipe to tune brand colors and check exact hex values.',
+  },
+  {
+    tool: 'Box Shadow Generator',
+    href: '/tools/box-shadow-generator',
+    when: 'Use when the gradient sits on a card, modal, or floating panel.',
+  },
+  {
+    tool: 'CSS Animation Generator',
+    href: '/tools/animation-generator',
+    when: 'Use only when a static gradient is not enough and motion supports the action.',
+  },
 ]
 
 export default function GradientGeneratorPage() {
@@ -878,6 +917,36 @@ export default function GradientGeneratorPage() {
               </div>
             </div>
 
+            {/* Copy-Paste Recipes */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                CSS Gradient Recipes for Common UI Blocks
+              </h2>
+              <div className="grid gap-4 lg:grid-cols-3">
+                {gradientRecipeRows.map((recipe) => (
+                  <div
+                    key={recipe.title}
+                    className="min-w-0 rounded-lg border border-border-light p-4 dark:border-border-dark"
+                  >
+                    <div
+                      className="mb-4 h-24 rounded-lg border border-border-light dark:border-border-dark"
+                      style={{ background: recipe.css }}
+                    />
+                    <h3 className="mb-2 text-lg font-semibold">{recipe.title}</h3>
+                    <p className="mb-3 text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {recipe.useCase}
+                    </p>
+                    <pre className="mb-3 overflow-x-auto rounded-lg bg-gray-50 p-3 text-xs dark:bg-gray-900">
+                      <code>{`background: ${recipe.css};`}</code>
+                    </pre>
+                    <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {recipe.tip}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
             {/* Practical Use Cases */}
             <div className="mb-12">
               <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
@@ -897,6 +966,29 @@ export default function GradientGeneratorPage() {
                       {item.example}
                     </p>
                   </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Related Workflow */}
+            <div className="mb-12">
+              <h2 className="mb-6 text-2xl sm:text-3xl font-semibold text-foreground-light dark:text-foreground-dark">
+                Where to Go After Generating a Gradient
+              </h2>
+              <div className="grid gap-4 md:grid-cols-3">
+                {gradientWorkflowSteps.map((step) => (
+                  <a
+                    key={step.tool}
+                    href={step.href}
+                    className="min-w-0 rounded-lg border border-border-light p-4 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-lg dark:border-border-dark"
+                  >
+                    <h3 className="mb-3 text-lg font-semibold text-foreground-light dark:text-foreground-dark">
+                      {step.tool}
+                    </h3>
+                    <p className="text-sm text-foreground-light-secondary dark:text-foreground-dark-secondary">
+                      {step.when}
+                    </p>
+                  </a>
                 ))}
               </div>
             </div>
