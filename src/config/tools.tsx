@@ -1,4 +1,4 @@
-import { Wallet, Zap } from 'lucide-react'
+import { Home, Wallet, Zap } from 'lucide-react'
 import type React from 'react'
 
 export interface Tool {
@@ -372,6 +372,16 @@ export const tools: Tool[] = [
     description: 'Estimate Japan net pay from gross salary, taxes, and payroll deductions',
     icon: ({ className }) => <Wallet className={className} />,
     href: '/tools/take-home-pay-calculator',
+    category: 'utility',
+    status: 'available',
+    featured: true,
+  },
+  {
+    id: 'mortgage-prepayment-calculator',
+    title: 'Mortgage Prepayment Calculator',
+    description: 'Compare mortgage prepayment interest savings and monthly payment changes',
+    icon: ({ className }) => <Home className={className} />,
+    href: '/tools/mortgage-prepayment-calculator',
     category: 'utility',
     status: 'available',
     featured: true,
