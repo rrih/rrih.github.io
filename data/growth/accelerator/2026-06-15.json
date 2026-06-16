@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-16T01:54:31.213Z",
+  "generatedAt": "2026-06-15T01:50:21.383Z",
   "targetMonthlyRevenueJpy": 50000,
   "targetDailyRevenueJpy": 1666.67,
   "actualRevenueJpy": 3,
   "actualDailyRevenueJpy": 0.11,
-  "actualPageviews28d": 156,
-  "currentRpmJpy": 19.23,
-  "requiredMonthlyPageviewsAtCurrentRpm": 2600105,
+  "actualPageviews28d": 112,
+  "currentRpmJpy": 26.79,
+  "requiredMonthlyPageviewsAtCurrentRpm": 1866369,
   "topActions": [
     {
       "type": "new-high-cpc-tool",
@@ -54,7 +54,7 @@
       "title": "Rewrite title/meta for query: css animation generator",
       "target": "css animation generator",
       "automationMode": "draft-pr",
-      "rationale": "70 impressions, 1.43% CTR, average position 26.6."
+      "rationale": "66 impressions, 1.52% CTR, average position 26.7."
     },
     {
       "type": "ctr-rewrite",
@@ -62,7 +62,7 @@
       "title": "Rewrite title/meta for query: animation css generator",
       "target": "animation css generator",
       "automationMode": "draft-pr",
-      "rationale": "24 impressions, 0% CTR, average position 28."
+      "rationale": "22 impressions, 0% CTR, average position 28.5."
     },
     {
       "type": "existing-page-expansion",
@@ -70,7 +70,7 @@
       "title": "Expand existing tool page: https://rrih.github.io/tools/markdown-editor/",
       "target": "https://rrih.github.io/tools/markdown-editor/",
       "automationMode": "auto-pr",
-      "rationale": "11 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density."
+      "rationale": "12 impressions and 0 clicks in the latest GSC window. Add supporting copy, FAQ, and internal links without changing ad density."
     }
   ]
 }
