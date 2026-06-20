@@ -15,7 +15,7 @@ if run_next_build; then
   exit 0
 fi
 
-if ! rg -q "ENOENT: no such file or directory.*\\.next/(build-manifest|server/pages-manifest|static/.+/_ssgManifest|export/500)\\.(json|js|html)" "$tmp_log"; then
+if ! rg -q "(ENOENT: no such file or directory.*\\.next/(build-manifest|server/pages-manifest|static/.+/_ssgManifest|export/500)\\.(json|js|html)|Cannot find module '.*/\\.next/server/app/.+/(route|page)\\.js')" "$tmp_log"; then
   exit 1
 fi
 
