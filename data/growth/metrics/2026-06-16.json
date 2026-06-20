@@ -13,196 +13,252 @@
     },
     "byDate": [
       {
-        "keys": ["2026-05-17"],
+        "keys": [
+          "2026-05-17"
+        ],
         "clicks": 0,
         "impressions": 89,
         "ctr": 0,
         "position": 35.752808988764045
       },
       {
-        "keys": ["2026-05-18"],
+        "keys": [
+          "2026-05-18"
+        ],
         "clicks": 0,
         "impressions": 85,
         "ctr": 0,
         "position": 36.96470588235294
       },
       {
-        "keys": ["2026-05-19"],
+        "keys": [
+          "2026-05-19"
+        ],
         "clicks": 0,
         "impressions": 71,
         "ctr": 0,
         "position": 32.859154929577464
       },
       {
-        "keys": ["2026-05-20"],
+        "keys": [
+          "2026-05-20"
+        ],
         "clicks": 0,
         "impressions": 54,
         "ctr": 0,
         "position": 34.074074074074076
       },
       {
-        "keys": ["2026-05-21"],
+        "keys": [
+          "2026-05-21"
+        ],
         "clicks": 0,
         "impressions": 54,
         "ctr": 0,
         "position": 28.962962962962962
       },
       {
-        "keys": ["2026-05-22"],
+        "keys": [
+          "2026-05-22"
+        ],
         "clicks": 0,
         "impressions": 80,
         "ctr": 0,
         "position": 30.6625
       },
       {
-        "keys": ["2026-05-23"],
+        "keys": [
+          "2026-05-23"
+        ],
         "clicks": 0,
         "impressions": 72,
         "ctr": 0,
         "position": 33.34722222222222
       },
       {
-        "keys": ["2026-05-24"],
+        "keys": [
+          "2026-05-24"
+        ],
         "clicks": 0,
         "impressions": 73,
         "ctr": 0,
         "position": 32.80821917808219
       },
       {
-        "keys": ["2026-05-25"],
+        "keys": [
+          "2026-05-25"
+        ],
         "clicks": 0,
         "impressions": 48,
         "ctr": 0,
         "position": 16.895833333333336
       },
       {
-        "keys": ["2026-05-26"],
+        "keys": [
+          "2026-05-26"
+        ],
         "clicks": 0,
         "impressions": 13,
         "ctr": 0,
         "position": 29.692307692307693
       },
       {
-        "keys": ["2026-05-27"],
+        "keys": [
+          "2026-05-27"
+        ],
         "clicks": 0,
         "impressions": 37,
         "ctr": 0,
         "position": 29.27027027027027
       },
       {
-        "keys": ["2026-05-28"],
+        "keys": [
+          "2026-05-28"
+        ],
         "clicks": 0,
         "impressions": 60,
         "ctr": 0,
         "position": 30.066666666666666
       },
       {
-        "keys": ["2026-05-29"],
+        "keys": [
+          "2026-05-29"
+        ],
         "clicks": 0,
         "impressions": 4,
         "ctr": 0,
         "position": 22
       },
       {
-        "keys": ["2026-05-30"],
+        "keys": [
+          "2026-05-30"
+        ],
         "clicks": 0,
         "impressions": 7,
         "ctr": 0,
         "position": 40
       },
       {
-        "keys": ["2026-05-31"],
+        "keys": [
+          "2026-05-31"
+        ],
         "clicks": 0,
         "impressions": 11,
         "ctr": 0,
         "position": 38.09090909090909
       },
       {
-        "keys": ["2026-06-01"],
+        "keys": [
+          "2026-06-01"
+        ],
         "clicks": 1,
         "impressions": 15,
         "ctr": 0.06666666666666667,
         "position": 36.53333333333333
       },
       {
-        "keys": ["2026-06-02"],
+        "keys": [
+          "2026-06-02"
+        ],
         "clicks": 0,
         "impressions": 12,
         "ctr": 0,
         "position": 23.083333333333332
       },
       {
-        "keys": ["2026-06-03"],
+        "keys": [
+          "2026-06-03"
+        ],
         "clicks": 0,
         "impressions": 4,
         "ctr": 0,
         "position": 19.5
       },
       {
-        "keys": ["2026-06-04"],
+        "keys": [
+          "2026-06-04"
+        ],
         "clicks": 0,
         "impressions": 10,
         "ctr": 0,
         "position": 22.5
       },
       {
-        "keys": ["2026-06-05"],
+        "keys": [
+          "2026-06-05"
+        ],
         "clicks": 0,
         "impressions": 7,
         "ctr": 0,
         "position": 27.142857142857142
       },
       {
-        "keys": ["2026-06-06"],
+        "keys": [
+          "2026-06-06"
+        ],
         "clicks": 0,
         "impressions": 13,
         "ctr": 0,
         "position": 29.46153846153846
       },
       {
-        "keys": ["2026-06-07"],
+        "keys": [
+          "2026-06-07"
+        ],
         "clicks": 0,
         "impressions": 24,
         "ctr": 0,
         "position": 16.583333333333336
       },
       {
-        "keys": ["2026-06-08"],
+        "keys": [
+          "2026-06-08"
+        ],
         "clicks": 0,
         "impressions": 28,
         "ctr": 0,
         "position": 23.821428571428573
       },
       {
-        "keys": ["2026-06-09"],
+        "keys": [
+          "2026-06-09"
+        ],
         "clicks": 0,
         "impressions": 6,
         "ctr": 0,
         "position": 22.833333333333332
       },
       {
-        "keys": ["2026-06-10"],
+        "keys": [
+          "2026-06-10"
+        ],
         "clicks": 0,
         "impressions": 14,
         "ctr": 0,
         "position": 18.142857142857142
       },
       {
-        "keys": ["2026-06-11"],
+        "keys": [
+          "2026-06-11"
+        ],
         "clicks": 0,
         "impressions": 19,
         "ctr": 0,
         "position": 15.31578947368421
       },
       {
-        "keys": ["2026-06-12"],
+        "keys": [
+          "2026-06-12"
+        ],
         "clicks": 2,
         "impressions": 7,
         "ctr": 0.2857142857142857,
         "position": 14.142857142857142
       },
       {
-        "keys": ["2026-06-13"],
+        "keys": [
+          "2026-06-13"
+        ],
         "clicks": 0,
         "impressions": 97,
         "ctr": 0,
@@ -211,70 +267,90 @@
     ],
     "topPages": [
       {
-        "keys": ["https://rrih.github.io/tools/animation-generator/"],
+        "keys": [
+          "https://rrih.github.io/tools/animation-generator/"
+        ],
         "clicks": 3,
         "impressions": 651,
         "ctr": 0.004608294930875576,
         "position": 24.274961597542244
       },
       {
-        "keys": ["https://rrih.github.io/"],
+        "keys": [
+          "https://rrih.github.io/"
+        ],
         "clicks": 0,
         "impressions": 10,
         "ctr": 0,
         "position": 6
       },
       {
-        "keys": ["https://rrih.github.io/about/"],
+        "keys": [
+          "https://rrih.github.io/about/"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 3
       },
       {
-        "keys": ["https://rrih.github.io/blog/create-secure-passwords-that-you-can-remember/"],
+        "keys": [
+          "https://rrih.github.io/blog/create-secure-passwords-that-you-can-remember/"
+        ],
         "clicks": 0,
         "impressions": 10,
         "ctr": 0,
         "position": 22.1
       },
       {
-        "keys": ["https://rrih.github.io/blog/generate-qr-codes-for-your-business/"],
+        "keys": [
+          "https://rrih.github.io/blog/generate-qr-codes-for-your-business/"
+        ],
         "clicks": 0,
         "impressions": 11,
         "ctr": 0,
         "position": 50
       },
       {
-        "keys": ["https://rrih.github.io/shitsugyo-hoken/guide/"],
+        "keys": [
+          "https://rrih.github.io/shitsugyo-hoken/guide/"
+        ],
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
         "position": 2.5
       },
       {
-        "keys": ["https://rrih.github.io/shitsugyo-hoken/keisanshiki/"],
+        "keys": [
+          "https://rrih.github.io/shitsugyo-hoken/keisanshiki/"
+        ],
         "clicks": 0,
         "impressions": 6,
         "ctr": 0,
         "position": 22.833333333333332
       },
       {
-        "keys": ["https://rrih.github.io/shitsugyo-hoken/nissu/"],
+        "keys": [
+          "https://rrih.github.io/shitsugyo-hoken/nissu/"
+        ],
         "clicks": 0,
         "impressions": 3,
         "ctr": 0,
         "position": 4
       },
       {
-        "keys": ["https://rrih.github.io/tools/gradient-generator/"],
+        "keys": [
+          "https://rrih.github.io/tools/gradient-generator/"
+        ],
         "clicks": 0,
         "impressions": 312,
         "ctr": 0,
         "position": 35.1474358974359
       },
       {
-        "keys": ["https://rrih.github.io/tools/markdown-editor/"],
+        "keys": [
+          "https://rrih.github.io/tools/markdown-editor/"
+        ],
         "clicks": 0,
         "impressions": 11,
         "ctr": 0,
@@ -283,259 +359,333 @@
     ],
     "topQueries": [
       {
-        "keys": ["css animation creator"],
+        "keys": [
+          "css animation creator"
+        ],
         "clicks": 1,
         "impressions": 9,
         "ctr": 0.1111111111111111,
         "position": 26.333333333333332
       },
       {
-        "keys": ["css animation generator"],
+        "keys": [
+          "css animation generator"
+        ],
         "clicks": 1,
         "impressions": 70,
         "ctr": 0.014285714285714285,
         "position": 26.6
       },
       {
-        "keys": ["css animations generator"],
+        "keys": [
+          "css animations generator"
+        ],
         "clicks": 1,
         "impressions": 17,
         "ctr": 0.058823529411764705,
         "position": 28.41176470588235
       },
       {
-        "keys": ["animaciones css generator"],
+        "keys": [
+          "animaciones css generator"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 36
       },
       {
-        "keys": ["animate css generator"],
+        "keys": [
+          "animate css generator"
+        ],
         "clicks": 0,
         "impressions": 7,
         "ctr": 0,
         "position": 28.857142857142858
       },
       {
-        "keys": ["animation css generator"],
+        "keys": [
+          "animation css generator"
+        ],
         "clicks": 0,
         "impressions": 24,
         "ctr": 0,
         "position": 28.041666666666668
       },
       {
-        "keys": ["animation css3 generator"],
+        "keys": [
+          "animation css3 generator"
+        ],
         "clicks": 0,
         "impressions": 8,
         "ctr": 0,
         "position": 35.125
       },
       {
-        "keys": ["animation generator css"],
+        "keys": [
+          "animation generator css"
+        ],
         "clicks": 0,
         "impressions": 13,
         "ctr": 0,
         "position": 30.307692307692307
       },
       {
-        "keys": ["animation maker css"],
+        "keys": [
+          "animation maker css"
+        ],
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
         "position": 34
       },
       {
-        "keys": ["animations css generator"],
+        "keys": [
+          "animations css generator"
+        ],
         "clicks": 0,
         "impressions": 4,
         "ctr": 0,
         "position": 29.25
       },
       {
-        "keys": ["background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"],
+        "keys": [
+          "background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"
+        ],
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
         "position": 6.5
       },
       {
-        "keys": ["creating strong passwords you can remember"],
+        "keys": [
+          "creating strong passwords you can remember"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 32
       },
       {
-        "keys": ["css animation builder"],
+        "keys": [
+          "css animation builder"
+        ],
         "clicks": 0,
         "impressions": 5,
         "ctr": 0,
         "position": 27.6
       },
       {
-        "keys": ["css animation code generator"],
+        "keys": [
+          "css animation code generator"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 31
       },
       {
-        "keys": ["css animation maker"],
+        "keys": [
+          "css animation maker"
+        ],
         "clicks": 0,
         "impressions": 8,
         "ctr": 0,
         "position": 28.25
       },
       {
-        "keys": ["css animation preview"],
+        "keys": [
+          "css animation preview"
+        ],
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
         "position": 24
       },
       {
-        "keys": ["css animation timing function generator"],
+        "keys": [
+          "css animation timing function generator"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 28
       },
       {
-        "keys": ["css animation tool"],
+        "keys": [
+          "css animation tool"
+        ],
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
         "position": 33.5
       },
       {
-        "keys": ["css keyframe animation generator"],
+        "keys": [
+          "css keyframe animation generator"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 15
       },
       {
-        "keys": ["css keyframes animation generator"],
+        "keys": [
+          "css keyframes animation generator"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 12
       },
       {
-        "keys": ["css keyframes generator"],
+        "keys": [
+          "css keyframes generator"
+        ],
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
         "position": 19.5
       },
       {
-        "keys": ["css transform animation generator"],
+        "keys": [
+          "css transform animation generator"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 30
       },
       {
-        "keys": ["css transition animation generator"],
+        "keys": [
+          "css transition animation generator"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 52
       },
       {
-        "keys": ["css3 animation generator"],
+        "keys": [
+          "css3 animation generator"
+        ],
         "clicks": 0,
         "impressions": 11,
         "ctr": 0,
         "position": 31.363636363636363
       },
       {
-        "keys": ["cssgradient.io"],
+        "keys": [
+          "cssgradient.io"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 89
       },
       {
-        "keys": ["getting qr code for business"],
+        "keys": [
+          "getting qr code for business"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 44
       },
       {
-        "keys": ["how to get a qr code for my business"],
+        "keys": [
+          "how to get a qr code for my business"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 9
       },
       {
-        "keys": ["infinite normal both"],
+        "keys": [
+          "infinite normal both"
+        ],
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
         "position": 1
       },
       {
-        "keys": ["keyframe generator"],
+        "keys": [
+          "keyframe generator"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 23
       },
       {
-        "keys": ["markdown live editor"],
+        "keys": [
+          "markdown live editor"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 72
       },
       {
-        "keys": ["markup editor"],
+        "keys": [
+          "markup editor"
+        ],
         "clicks": 0,
         "impressions": 3,
         "ctr": 0,
         "position": 94.66666666666667
       },
       {
-        "keys": ["markup language editor"],
+        "keys": [
+          "markup language editor"
+        ],
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
         "position": 74
       },
       {
-        "keys": ["md markup editor"],
+        "keys": [
+          "md markup editor"
+        ],
         "clicks": 0,
         "impressions": 2,
         "ctr": 0,
         "position": 95
       },
       {
-        "keys": ["readme editor"],
+        "keys": [
+          "readme editor"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 70
       },
       {
-        "keys": ["readme md editor"],
+        "keys": [
+          "readme md editor"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
         "position": 74
       },
       {
-        "keys": ["site:github.io"],
+        "keys": [
+          "site:github.io"
+        ],
         "clicks": 0,
         "impressions": 3,
         "ctr": 0,
         "position": 3
       },
       {
-        "keys": ["失業手当 計算"],
+        "keys": [
+          "失業手当 計算"
+        ],
         "clicks": 0,
         "impressions": 1,
         "ctr": 0,
