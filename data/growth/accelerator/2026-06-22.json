@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-06-23T01:40:04.926Z",
+  "generatedAt": "2026-06-22T01:50:45.955Z",
   "targetMonthlyRevenueJpy": 50000,
   "targetDailyRevenueJpy": 1666.67,
   "actualRevenueJpy": 4,
   "actualDailyRevenueJpy": 0.14,
-  "actualPageviews28d": 189,
-  "currentRpmJpy": 21.16,
-  "requiredMonthlyPageviewsAtCurrentRpm": 2362949,
+  "actualPageviews28d": 187,
+  "currentRpmJpy": 21.39,
+  "requiredMonthlyPageviewsAtCurrentRpm": 2337541,
   "topActions": [
     {
       "type": "new-high-cpc-tool",
@@ -54,7 +54,7 @@
       "title": "Rewrite title/meta for query: css animation generator",
       "target": "css animation generator",
       "automationMode": "draft-pr",
-      "rationale": "80 impressions, 1.25% CTR, average position 26.4."
+      "rationale": "77 impressions, 1.3% CTR, average position 26.3."
     },
     {
       "type": "ctr-rewrite",
