@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3333",
-    "build": "bun run generate-og && bun run generate-blog-og && bun run generate-sitemap && next build",
+    "build": "bun run generate-og && bun run generate-blog-og && bun run generate-sitemap && bash scripts/next-build-with-retry.sh",
     "generate-og": "bun scripts/generate-og-images.ts",
     "generate-blog-og": "bun scripts/generate-blog-og-images.ts",
     "generate-sitemap": "bun scripts/generate-sitemap.ts",
