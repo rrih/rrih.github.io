@@ -9,6 +9,7 @@ import ImageConverterPage from '@/app/tools/image-converter/page'
 import InvestmentCalculatorPage from '@/app/tools/investment-calculator/page'
 import JsonFormatterPage from '@/app/tools/json-formatter/page'
 import MarkdownEditorPage from '@/app/tools/markdown-editor/page'
+import MortgagePrepaymentCalculatorPage from '@/app/tools/mortgage-prepayment-calculator/page'
 import PasswordGeneratorPage from '@/app/tools/password-generator/page'
 import QrGeneratorPage from '@/app/tools/qr-generator/page'
 import TakeHomePayCalculatorPage from '@/app/tools/take-home-pay-calculator/page'
@@ -32,6 +33,7 @@ const toolPages = {
   'investment-calculator': InvestmentCalculatorPage,
   'json-formatter': JsonFormatterPage,
   'markdown-editor': MarkdownEditorPage,
+  'mortgage-prepayment-calculator': MortgagePrepaymentCalculatorPage,
   'password-generator': PasswordGeneratorPage,
   'qr-generator': QrGeneratorPage,
   'take-home-pay-calculator': TakeHomePayCalculatorPage,
