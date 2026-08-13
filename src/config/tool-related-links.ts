@@ -2,6 +2,7 @@ export const relatedToolIdsByToolId: Record<string, readonly string[]> = {
   base64: ['json-formatter', 'markdown-editor', 'image-converter'],
   'markdown-editor': ['json-formatter', 'base64', 'qr-generator'],
   'qr-generator': ['base64', 'markdown-editor', 'image-converter'],
+  'image-converter': ['base64', 'color-picker', 'gradient-generator'],
   'gradient-generator': ['color-picker', 'box-shadow-generator', 'animation-generator'],
   'animation-generator': ['color-picker', 'gradient-generator', 'box-shadow-generator'],
   'electricity-cost-calculator': ['investment-calculator', 'timetable', 'qr-generator'],
