@@ -59,7 +59,7 @@
       "implementationEffort": "high",
       "policyRisk": "medium",
       "automationMode": "draft-pr",
-      "status": "planned",
+      "status": "in_progress",
       "rationale": "Mortgage queries can have strong RPM, but the tool needs accurate amortization logic."
     },
     {
