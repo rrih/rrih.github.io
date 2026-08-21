@@ -377,8 +377,8 @@ ${keyframesCSS}
               CSS Animation Generator
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-foreground-light-secondary dark:text-foreground-dark-secondary mb-6 sm:mb-8">
-              Create smooth CSS animations with custom keyframes, timing functions, and real-time
-              preview
+              Create CSS keyframe animations, hover effects, fade-in transitions, and loading loops
+              with timing controls and real-time preview.
             </p>
           </div>
         </section>
