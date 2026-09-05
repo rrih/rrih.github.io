@@ -1,0 +1,1276 @@
+{
+  "source": "https://zukan.pokemon.co.jp/",
+  "policy": "Reviewed summaries use text_1; official category terms fill missing classifications. No original description is republished in this evidence file.",
+  "species": {
+    "899": {
+      "name": "アヤシシ",
+      "genus": "おおツノポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0899",
+      "sourceVersion": "Pokémon LEGENDS アルセウス",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "3d60433a3a119caad6fb3588a371f670488e4af3d0410f0dc18b36432a9372fd",
+      "selectedField": "text_1",
+      "sourceTextSha256": "5f1b6edb6f4d78496173808b66cccb716fc610771f6ab578f11bd152e7d8e8c0"
+    },
+    "900": {
+      "name": "バサギリ",
+      "genus": "まさかりポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0900",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "0e09ec757f92133b93c49db6192c7a305e1ac443abddea8284bc116d7a0136be",
+      "selectedField": "text_1",
+      "sourceTextSha256": "a00d2e588e174430132e44110629971df6b38d76c4825d280b175a8435acc605"
+    },
+    "901": {
+      "name": "ガチグマ",
+      "genus": "でいたんポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0901",
+      "sourceVersion": "Pokémon LEGENDS アルセウス",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "443c39659a1b95e3d9c42a51976c6ca7bda8db38f0c30127051c00bb9a704cf3",
+      "selectedField": "text_1",
+      "sourceTextSha256": "73e58f64730e145e749d818eccae2528bc823022e7bebc0eda105e028654ede3"
+    },
+    "902": {
+      "name": "イダイトウ",
+      "genus": "おおうおポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0902",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "9a1dae4332916f42d3f8b97f925d149fd2b90b7fdaae7eb84bed1aa56e444824",
+      "selectedField": "text_1",
+      "sourceTextSha256": "e544307d24b6cf31d992ad579ce4d435910426a2b364affbbcacfebf5fb923cb"
+    },
+    "903": {
+      "name": "オオニューラ",
+      "genus": "クライミングポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0903",
+      "sourceVersion": "Pokémon LEGENDS アルセウス",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "8d21f158153e37be1f4eddd8bf8ee29863968394a3f64b63457305ad86918a4b",
+      "selectedField": "text_1",
+      "sourceTextSha256": "cdf41b89225e0107306c56bd44f9e84889bfd24c314e2c14ed5918880a2aa274"
+    },
+    "904": {
+      "name": "ハリーマン",
+      "genus": "けんざんポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0904",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "04b2d6be03b341fdda3f83b0f73425116cd0493eef43fef5c1dc586d57637ba7",
+      "selectedField": "text_1",
+      "sourceTextSha256": "b8667965a6676586eb972d3cb02f83cf3a03e01481936473d9ffbc0c1f923f5e"
+    },
+    "905": {
+      "name": "ラブトロス",
+      "genus": "あいぞうポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0905",
+      "sourceVersion": "Pokémon LEGENDS アルセウス",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "3ac75884a14a0a17acc3fc23df44b0d59886f3606130582f00cc7d03d4d840f3",
+      "selectedField": "text_1",
+      "sourceTextSha256": "57d8a60a99e5c3631ca562e304b5d4c6baee47dc51bafeffbffcb4132b6948ea"
+    },
+    "906": {
+      "name": "ニャオハ",
+      "genus": "くさねこポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0906",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "77d9b11af9093e990ab8e0a3932654a77a3ddc02115892c82be5fb3c55d66d1a",
+      "selectedField": "text_1",
+      "sourceTextSha256": "ff7d7d946d6a714336905344966611146e6522abfc93bbb48ff052d1d0be2390"
+    },
+    "907": {
+      "name": "ニャローテ",
+      "genus": "くさねこポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0907",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "0b14310a15bf55951b7523b288d81ac793a3a5bfd1d31926ef5b77f6fa319b0c",
+      "selectedField": "text_1",
+      "sourceTextSha256": "f974fb6f57e324841fc0ba28deb5359e9b470e6960900fc9a498c175b2140fc6"
+    },
+    "908": {
+      "name": "マスカーニャ",
+      "genus": "マジシャンポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0908",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "647217229ab7211a0e99f3d0e138867d76fa30b05a62d7eb1d0d69edc38ddf9b",
+      "selectedField": "text_1",
+      "sourceTextSha256": "dafb1d5771ff6d8d9315317f3dd53d21bd78abb7ec68739ff07eb56eac41f066"
+    },
+    "909": {
+      "name": "ホゲータ",
+      "genus": "ほのおワニポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0909",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "3e90a9aa07eaa9ba637c2d57dfe8cdececc244beeb22fa7f5f0b5546f2bde422",
+      "selectedField": "text_1",
+      "sourceTextSha256": "5f03bd5e302cc50de3e0fae1f7326d811da47e27c6ccad2408f840a6b0fea87f"
+    },
+    "910": {
+      "name": "アチゲータ",
+      "genus": "ほのおワニポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0910",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "ab589474c7704cce506768b6f73bf3fd96b0233a44386259c43ce69c756550ba",
+      "selectedField": "text_1",
+      "sourceTextSha256": "d5d2d5a64246400a671e5072c8175e0b763e9c52b1677bcadcfd7886f4eb9a9d"
+    },
+    "911": {
+      "name": "ラウドボーン",
+      "genus": "シンガーポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0911",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "cab22dce1e60c5e92607aa0f9b1054c80a7360138f0718e91311dea37ac193f2",
+      "selectedField": "text_1",
+      "sourceTextSha256": "c9bd7096976f72f1a4b5440b270c2a2c6e7e894c49ff4bd8495a914850e8e194"
+    },
+    "912": {
+      "name": "クワッス",
+      "genus": "こがもポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0912",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "05bd259414aef331066115527eda766fab48b81fcc344f4a6f3f7d17cf8e9310",
+      "selectedField": "text_1",
+      "sourceTextSha256": "60237e4f0dbf954ddea99b7b987630ee5381b5959f351cdfb9599d8c8a966330"
+    },
+    "913": {
+      "name": "ウェルカモ",
+      "genus": "レッスンポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0913",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "a4170b57c699a7b980e6a5a5ae9bd861b995246afb62c205b6b282c22ae6017a",
+      "selectedField": "text_1",
+      "sourceTextSha256": "1748ca52bd9fe85135b9b4cd055e260100468270a52884c0e8fc4d2831585620"
+    },
+    "914": {
+      "name": "ウェーニバル",
+      "genus": "ダンサーポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0914",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "7d72b655a9a3b0f38518f86d7fde4aa35a7047425931c25f2b5fec3c82d927be",
+      "selectedField": "text_1",
+      "sourceTextSha256": "3997b72ba2a66add5f4d955c412cad227941fc6890b08e43dd0d6b327545bf19"
+    },
+    "915": {
+      "name": "グルトン",
+      "genus": "ぶたポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0915",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "e53564380268828558702585fbe9f9700761263bb0369895b9bb6e0ea20efcce",
+      "selectedField": "text_1",
+      "sourceTextSha256": "4bed4f68cb05eb2cc2f995fc95628861b37a041a9df7609b7eeac9dbacbc2277"
+    },
+    "916": {
+      "name": "パフュートン",
+      "genus": "ぶたポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0916",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "075c4b13038ae72a413f6a87294406e11c93fb920f80f7afc8ddb5688515ad60",
+      "selectedField": "text_1",
+      "sourceTextSha256": "b17713e36a58c075081bddf81677d66a4a01a93275b94d9dd4ca634b967be060"
+    },
+    "917": {
+      "name": "タマンチュラ",
+      "genus": "いとだまポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0917",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "342e85c74c2fd2836e228682538d4e5538365fc9b3893b04d25ea17f4934cfbd",
+      "selectedField": "text_1",
+      "sourceTextSha256": "fca8d889b6fe93300e751cbbb9f87f61c8d866d4c98fe812d545aa915dc63966"
+    },
+    "918": {
+      "name": "ワナイダー",
+      "genus": "トラップポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0918",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "97696ea32bb9b3676199159aea7b2386a51d0cd3c6741809b4aeeb8955071c9c",
+      "selectedField": "text_1",
+      "sourceTextSha256": "3c11cc54d22ba55a5a1f1db6f2d21ee11f8505d33df980427120c04a1b7e9011"
+    },
+    "919": {
+      "name": "マメバッタ",
+      "genus": "バッタポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0919",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "32a6d72e4c1e77ea26c03758216af51a43d9cc58582d323e0dcae1940ac7bc68",
+      "selectedField": "text_1",
+      "sourceTextSha256": "7e740183fab59ec5e8613058e5001ea6431c46bc31a8226d31e03a7809955ae7"
+    },
+    "920": {
+      "name": "エクスレッグ",
+      "genus": "バッタポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0920",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "f06021b7b0827d81e7f5c1215fc76b59a37bbeb46974f13289031cc3f7f521da",
+      "selectedField": "text_1",
+      "sourceTextSha256": "b82f5a59c6e24a7a17bb744142cc3a7552fe4cf9d40bcee3556424dc46f85485"
+    },
+    "921": {
+      "name": "パモ",
+      "genus": "ねずみポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0921",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "54cd8bc4120d46513e2832f7cd07d9bf9f84418e46b00a73d541464e8fa6e2f3",
+      "selectedField": "text_1",
+      "sourceTextSha256": "52766f013f793e3b8dce9af6888aae3a9f548387cc68514112a25b34f000cc1b"
+    },
+    "922": {
+      "name": "パモット",
+      "genus": "ねずみポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0922",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "8569fde18f7524e03b312653c4952625e20550d0b81412a6e10bf47f7d0164f6",
+      "selectedField": "text_1",
+      "sourceTextSha256": "252294a5da46898ea28ab18bbb4ba0cbd18651d12e6f6d4f9ab9fd65f31ed4fc"
+    },
+    "923": {
+      "name": "パーモット",
+      "genus": "てあてポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0923",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "3adc1b3f574c7540f717651dfba7ffe3e7fd2bec48ad3524774edd17e56f76be",
+      "selectedField": "text_1",
+      "sourceTextSha256": "50b42493cae90f737d0c2113f6705d20f8701f5974113e42844e98a9014a5206"
+    },
+    "924": {
+      "name": "ワッカネズミ",
+      "genus": "カップルポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0924",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "8bc52d492967ba479e01f56687c96adc9df37e7c98adf2c73fa8c8bfdcc34c33",
+      "selectedField": "text_1",
+      "sourceTextSha256": "25ddc46c47cf1f3c2c73fd35d9cc8784e578d53a07a60646c44d849cc0d22673"
+    },
+    "925": {
+      "name": "イッカネズミ",
+      "genus": "ファミリーポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0925",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "7e4b18b96bb7b4d807373120bdaf1d3220329b641adf79de6aca39439471ff95",
+      "selectedField": "text_1",
+      "sourceTextSha256": "d2b6747cff065edfd6d6b6a9d6141bc74a9eb02d9895d23acdb614d89bfdf7cd"
+    },
+    "926": {
+      "name": "パピモッチ",
+      "genus": "こいぬポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0926",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "789cef85285b0bbecf9c81f03d5aee81ea827246af33602caa0342430c8f2b17",
+      "selectedField": "text_1",
+      "sourceTextSha256": "74173ff2c7cbd9af38f0eb4e2f78b4c0adf2aef4523ecfc49fa98883b32db649"
+    },
+    "927": {
+      "name": "バウッツェル",
+      "genus": "いぬポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0927",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "32fcf46518359287e70f61734c84a03679a2343cd2dc53e630ee714640d6fa8c",
+      "selectedField": "text_1",
+      "sourceTextSha256": "707f633f25b02b90cd19c047d400e46ff7a520598b1d02d8ce7640f4439a1bea"
+    },
+    "928": {
+      "name": "ミニーブ",
+      "genus": "オリーブポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0928",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "7aa3fd852382dc62d036f393231b69142de827b7c374cd370a29d5cc67a4eacf",
+      "selectedField": "text_1",
+      "sourceTextSha256": "8cb68684b4f003c0695dd546a4341d8f44e7773041b48399f3c4659d876fc246"
+    },
+    "929": {
+      "name": "オリーニョ",
+      "genus": "オリーブポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0929",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "69fbf595dad8ca26e340de5fb0775c79ad24142699c98b1bc520190bb2187cb1",
+      "selectedField": "text_1",
+      "sourceTextSha256": "f35d8e6d07a6ac53510602e1bf0963f64915630fce28b3bf1d89ba825339551b"
+    },
+    "930": {
+      "name": "オリーヴァ",
+      "genus": "オリーブポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0930",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "b74ad096ace84ca342c84dc4286c665f08d2a5275ce4d24dd665b8cf9d60153d",
+      "selectedField": "text_1",
+      "sourceTextSha256": "e6c4f6acefca170e1afc766ad90b66358add66d03c9d7c6dea64a3d5c64d9a93"
+    },
+    "931": {
+      "name": "イキリンコ",
+      "genus": "インコポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0931",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "bcab07b1918f761ef9d6ffb163826f74e0cdc9e8f014468686d652fe591fce57",
+      "selectedField": "text_1",
+      "sourceTextSha256": "6506be051b47fe22fa346f2e9fa5fcaed866c4ec7c40a1d05c79fdaed26640f6"
+    },
+    "932": {
+      "name": "コジオ",
+      "genus": "がんえんポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0932",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "83d2d0a0b32b4be595cc7722ef42472aeee6eb1a6065b124e6c6192dedf58c4e",
+      "selectedField": "text_1",
+      "sourceTextSha256": "f609c857a97ea9f334c84a431ad5804acfc2f6f2f0e7c5db606416796420c728"
+    },
+    "933": {
+      "name": "ジオヅム",
+      "genus": "がんえんポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0933",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "3ea10526363451cd3800967533f59439fdf8cfd2f48fcdf991e7b413ade76795",
+      "selectedField": "text_1",
+      "sourceTextSha256": "d4f0877c9d21b39a15b96ae74dae72aac74f6234039c620b3f691e7b2b6ba128"
+    },
+    "934": {
+      "name": "キョジオーン",
+      "genus": "がんえんポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0934",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "702d7540f1683fe66b68d58795cd81fbe76c858b21137749121de2aed5c70760",
+      "selectedField": "text_1",
+      "sourceTextSha256": "bc2718485e399a7a5ede83af6eb77335e81b5265fb269ebfe5aa60f458de839e"
+    },
+    "935": {
+      "name": "カルボウ",
+      "genus": "ひのこポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0935",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "addc4289ce59f97aae58520349ce59ef0c3cc14f1015a107fb1a6975923bacea",
+      "selectedField": "text_1",
+      "sourceTextSha256": "a52559eec49d8794477f6dc6229ad5a0559bb2d2b3426dabf364cfbc7fcaaae5"
+    },
+    "936": {
+      "name": "グレンアルマ",
+      "genus": "ひのせんしポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0936",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "f4d2b2bca6cfe70f8de6baf135ddaaf94c3cd38bbf71b2ea284ca9343fd7e968",
+      "selectedField": "text_1",
+      "sourceTextSha256": "8d6feaf69cd1fac110b037ca9d232dbec02178f3b0d6f927769c1ebc0da3b973"
+    },
+    "937": {
+      "name": "ソウブレイズ",
+      "genus": "ひのけんしポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0937",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "2622101d6947ff26fcec4a4fc9c546967cdd34221dd5236878d760d94b2da3be",
+      "selectedField": "text_1",
+      "sourceTextSha256": "82243075586aeee2d2b63995553f2d4e3b40dbc6f839eac98c07409d3227ed30"
+    },
+    "938": {
+      "name": "ズピカ",
+      "genus": "でんきおたまポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0938",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "3885ed4d9b858efefb5f02edf74e1ea83e06bd11e73d413e95c4901f3d9de36e",
+      "selectedField": "text_1",
+      "sourceTextSha256": "485512ad81081ac7f21df32813da60e38da040a2fe71ca347ef33fe8b6daa0be"
+    },
+    "939": {
+      "name": "ハラバリー",
+      "genus": "でんきがえるポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0939",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "714865e4bc8026aed8623568a40126200d44a502d46b02807a5649f725f19498",
+      "selectedField": "text_1",
+      "sourceTextSha256": "ce4e2352028030560a8de2539cf14eea09262d20897a1029fe36bfd6509a882c"
+    },
+    "940": {
+      "name": "カイデン",
+      "genus": "うみつばめポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0940",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "3804a0cb5170b4455006b4574823da627e85731c7cd40c8b0a8b8d10735a9b28",
+      "selectedField": "text_1",
+      "sourceTextSha256": "30a381687f6ed45e25882836eaf460d7829abaf37be025fba128818f2919852e"
+    },
+    "941": {
+      "name": "タイカイデン",
+      "genus": "ぐんかんどりポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0941",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "5e9f892905418724d9a23e14ed7676300392f7a5a1ff15184935df28a32a680c",
+      "selectedField": "text_1",
+      "sourceTextSha256": "af55e86fbbf8cea178d9275ee2a166bf9a731223d3072e562c9de5014661fcdc"
+    },
+    "942": {
+      "name": "オラチフ",
+      "genus": "わかぞうポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0942",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "cdb5024aa4c4b459f292ce2878a5aab5eafa0248ed6dd01cda016bf568b11cc3",
+      "selectedField": "text_1",
+      "sourceTextSha256": "68b3e1074b621d650632260bea89f9b1e3385aa719d88a18c529b08a3bbc5d5f"
+    },
+    "943": {
+      "name": "マフィティフ",
+      "genus": "おやぶんポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0943",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "f6b25bb7f75fcadab1739d0afc7548f42a26a91a3fd2a89d83b76af89fe9f5f0",
+      "selectedField": "text_1",
+      "sourceTextSha256": "559c8d820261832e108df56e1ad7917af25a6105365fbbda80abbf75bb9f0c1e"
+    },
+    "944": {
+      "name": "シルシュルー",
+      "genus": "どくねずみポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0944",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "e2f812b865cfc16e47b6faf40b63c1134d84f18785e0b14b2f2477b9fb77a1cf",
+      "selectedField": "text_1",
+      "sourceTextSha256": "abd51e616e0e690f98cee209e996142e6e9499fd446588e4fdde17b03bb523ed"
+    },
+    "945": {
+      "name": "タギングル",
+      "genus": "どくざるポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0945",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "473c75ce4ffb4823a0f2b437b09e5f0b70fd33825680b5d97162e949c3376316",
+      "selectedField": "text_1",
+      "sourceTextSha256": "a66019755819c6e67fa068550ba17bea61086a193c95b48dea6bf28a2f3a0ec9"
+    },
+    "946": {
+      "name": "アノクサ",
+      "genus": "ころがりぐさポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0946",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "6e98d3c4c35a78ce49ee40cbf6ed5ef36ec7ec05ab0b834be6ff859b64716707",
+      "selectedField": "text_1",
+      "sourceTextSha256": "7ee18c550122494bb336552b6606b26581b7a74c2a637ed53a2d4602249b88dd"
+    },
+    "947": {
+      "name": "アノホラグサ",
+      "genus": "ころがりぐさポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0947",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "05ad2ac5c87b96c8b525da7588083510cc0ab04805c2a132485f93de5f95c5ef",
+      "selectedField": "text_1",
+      "sourceTextSha256": "434a502fa92872cce02f932106c836131d428462cf89c5a629c6cbb9cc8dfe34"
+    },
+    "948": {
+      "name": "ノノクラゲ",
+      "genus": "きくらげポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0948",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "1d1c854bf78bf1e24e2fffc174ed9c5785c05ac4d939908f4f5afb7b38354d7e",
+      "selectedField": "text_1",
+      "sourceTextSha256": "eaedada3429625a33fce73579c9e0324ab8c40df706336afb4498a4c62b1dc53"
+    },
+    "949": {
+      "name": "リククラゲ",
+      "genus": "きくらげポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0949",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "a5212709253acfa9de11649d073aa9e08e582c9c0dd616a47991515a9fb4813c",
+      "selectedField": "text_1",
+      "sourceTextSha256": "e2d3c2a682f958af334642aa2d86fe093305ae6c46daee6c5643b4d7f7e6696a"
+    },
+    "950": {
+      "name": "ガケガニ",
+      "genus": "まちぶせポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0950",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "8a6b93ad44cc1965d93ad68ff1d080fcbbcb42963cbe2ab65844a474ed5ea540",
+      "selectedField": "text_1",
+      "sourceTextSha256": "c0309f04640d393b1a2225678dedfc579aff774491b6a031b6f64f2005cba966"
+    },
+    "951": {
+      "name": "カプサイジ",
+      "genus": "ハバネロポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0951",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "f9720a250cde8f1d0d177f73244f00623856f4d4b18b00f6df5d6bf77d9f7ae4",
+      "selectedField": "text_1",
+      "sourceTextSha256": "f138af2acebd61139c44fb4c4b6ecc17f03dc35c842f942e6743496b7a0101bc"
+    },
+    "952": {
+      "name": "スコヴィラン",
+      "genus": "ハバネロポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0952",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "f37388607a569028c113a6f911a7e24312010c3289d9bc2fe43894243f189aad",
+      "selectedField": "text_1",
+      "sourceTextSha256": "76f8882474c0d21976083ad1c1db17c905ab8adefbf3b07fbd59cdd6c30d130f"
+    },
+    "953": {
+      "name": "シガロコ",
+      "genus": "ころがしポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0953",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "585a524dc0f8836e241905b2e341a915be32400d445216cf3aee301b10f24823",
+      "selectedField": "text_1",
+      "sourceTextSha256": "78563c8edbfcf373d13ba90bf40c404065f50e96b61b4a00373c1873d38a6900"
+    },
+    "954": {
+      "name": "ベラカス",
+      "genus": "ころがしポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0954",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "938c651f33985e5b44edccc5c271a879e896b1f27c6eb270a63fa4e94efefd61",
+      "selectedField": "text_1",
+      "sourceTextSha256": "15b914d7b3af3ac85cd7e43ca163f77aaa167b6eec8c3a31c80339dddfbf6b20"
+    },
+    "955": {
+      "name": "ヒラヒナ",
+      "genus": "フリルポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0955",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "52123a0c2758e5ede9e63ad11876cd686f48b05216b5901ae428995f136f99f7",
+      "selectedField": "text_1",
+      "sourceTextSha256": "37033dd2a8a2dae8f6a8b771f10e9d7c1fe91d6942541472ff6e0573c2dfe7ba"
+    },
+    "956": {
+      "name": "クエスパトラ",
+      "genus": "ダチョウポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0956",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "23ccad6d0fe734a91ca8998c42aab0f56714fe680d42dade6a2447043b36cbf4",
+      "selectedField": "text_1",
+      "sourceTextSha256": "b66cb6944fd5dc8b50a7f53c4890ddacd716928a03e993ba08c2c5270172e058"
+    },
+    "957": {
+      "name": "カヌチャン",
+      "genus": "かなうちポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0957",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "820a50d58380ba5cb159c0cc63a00be2f73c2215356a83e37117b56ce04714a7",
+      "selectedField": "text_1",
+      "sourceTextSha256": "69560e0b96e17386967d6c07e641f999bd69552354afcd473707bd804c41cd78"
+    },
+    "958": {
+      "name": "ナカヌチャン",
+      "genus": "ハンマーポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0958",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "f40cd4bd0e1e3588b6803bf9fac14b7a27c4a51718632b1961e5cd24ad6c0fda",
+      "selectedField": "text_1",
+      "sourceTextSha256": "7b3573e7ede9ec4639e64ad4c378d90bc80a0c40a790f045ccee9d0b52d0afc3"
+    },
+    "959": {
+      "name": "デカヌチャン",
+      "genus": "ハンマーポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0959",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "4bf17056a78c4d4108a67845dad2e3b04ea07563c365c4580ac7ec24b4f4c1bd",
+      "selectedField": "text_1",
+      "sourceTextSha256": "998687c7471e52ab8bb4beb885286db2b622e0f13937daa9ac62e50719ce9934"
+    },
+    "960": {
+      "name": "ウミディグダ",
+      "genus": "あなごポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0960",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "7c41a4b1800317a0f4e4f9034bfb64b7a6b88d14a832e54cc44c6814ac38ddc6",
+      "selectedField": "text_1",
+      "sourceTextSha256": "97dcdf28f8df1d9e48714aadf425444b67d41fba4c8878b349fb71c497ac3e53"
+    },
+    "961": {
+      "name": "ウミトリオ",
+      "genus": "あなごポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0961",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "ceb8eb17a4f82c449beb5b5544711d1e38ed6f28a17097bf9f0c877a5e8ec4fd",
+      "selectedField": "text_1",
+      "sourceTextSha256": "0772d61fc809508f1871d82ecad42e306bf218df117c4a10ec3d7671367fa77b"
+    },
+    "962": {
+      "name": "オトシドリ",
+      "genus": "おとしものポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0962",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "388118d3fa99898d69ff71b7d2b559292c88af5a9b5cbc26ca293f814bc75179",
+      "selectedField": "text_1",
+      "sourceTextSha256": "abd045613abea7f30adc76f3cc47cf32093e0edb194062ddd1472ff806fce06d"
+    },
+    "963": {
+      "name": "ナミイルカ",
+      "genus": "イルカポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0963",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "11408b893f65e2b95aa34ee6f45540cc35ffa4e383e79172b89adbcbed83e4ab",
+      "selectedField": "text_1",
+      "sourceTextSha256": "135b305e4546fd7a89cbeb61cabdc32f3202b149d79161fa7b32c4b6c139fd88"
+    },
+    "964": {
+      "name": "イルカマン",
+      "genus": "イルカポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0964",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "bfce85c86a68971114be8612d2f1a83e9c36907e63941edf3b33113a0f299d59",
+      "selectedField": "text_1",
+      "sourceTextSha256": "d1e27ba9e396728366f666a76968e2e666e42c9e07f0af426f2d4f26719ba2e4"
+    },
+    "965": {
+      "name": "ブロロン",
+      "genus": "たんきとうポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0965",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "430799ab87ae5add90c76e53add21e4a68a68fd3b06f802649ae10027cabc6c3",
+      "selectedField": "text_1",
+      "sourceTextSha256": "ab6ec726953207e02d247efb2028613cc9fa978382032496298f4fd37d281e1b"
+    },
+    "966": {
+      "name": "ブロロローム",
+      "genus": "たきとうポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0966",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "9272fe62b0bb1a6cea188000dceaf12021936bad62c76192f6a9cd28b5c4a5a4",
+      "selectedField": "text_1",
+      "sourceTextSha256": "6754b5e2c59c23a6c791ac2a228e5b25b5668c730141d2092699dde42d84e69d"
+    },
+    "967": {
+      "name": "モトトカゲ",
+      "genus": "ライドポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0967",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "cc6fb24a29f10a61d8554f331f63e4bcd94f3f71b4710e61a4493708b5798d78",
+      "selectedField": "text_1",
+      "sourceTextSha256": "0f41e764c6228b821dc22171594c3fdda32438a98f0f96de88acbe8bd1d38c6e"
+    },
+    "968": {
+      "name": "ミミズズ",
+      "genus": "ミミズポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0968",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "fdbf887c163bc4c2e746fcfc4ae6f25b517cf8a500acd5cd43a9a19e0a08eb84",
+      "selectedField": "text_1",
+      "sourceTextSha256": "46e87910f434c0335033f177aa18586a3a37cb949e6c3e159947670e5210fbd9"
+    },
+    "969": {
+      "name": "キラーメ",
+      "genus": "こうせきポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0969",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "1156d05291fae580edcdf83fc6ae3f704174e1dde18448c4cd8505308043f3fb",
+      "selectedField": "text_1",
+      "sourceTextSha256": "137250260421c1ecbcacb6fab1ee3acb36c3afd496c4b75773579a90c40b2831"
+    },
+    "970": {
+      "name": "キラフロル",
+      "genus": "こうせきポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0970",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "b1a5f03f3fd0a6ee8fa21203710870f137dc506c1687246a8adaaff965530a63",
+      "selectedField": "text_1",
+      "sourceTextSha256": "de9a857cc7277bede5731d3d1e555a7c177bda2e7cb7a695d3b5bb51a562b3c3"
+    },
+    "971": {
+      "name": "ボチ",
+      "genus": "おばけいぬポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0971",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "4f35c2dde16e929aa5e03f77e0fd7ad4eb43352104c8af180ea3ce615c204ba2",
+      "selectedField": "text_1",
+      "sourceTextSha256": "d91e5371c150b4859af1a2bbcb312dbc188f6c5fd2a31a5ddcd2bd5bb1192872"
+    },
+    "972": {
+      "name": "ハカドッグ",
+      "genus": "おばけいぬポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0972",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "4f2473729a400ee5b4134d7327109892892bd2782eee442f51451414db8c969d",
+      "selectedField": "text_1",
+      "sourceTextSha256": "5573a900a9a6da132c624c3bc87cc173662892c08217dd69e431917cc0ba4957"
+    },
+    "973": {
+      "name": "カラミンゴ",
+      "genus": "シンクロポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0973",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "95c387fc948476a2c426b78cf88b948f42e9eb796154db1e62dc83b89b091873",
+      "selectedField": "text_1",
+      "sourceTextSha256": "941049c7029e7fc22c5e784b65242e3ae65eef8a657315fd098fb58c11065118"
+    },
+    "974": {
+      "name": "アルクジラ",
+      "genus": "りくくじらポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0974",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "8b1ed67db90e6344769a1feeca21f9326ebb93125a734792efa99238f6273642",
+      "selectedField": "text_1",
+      "sourceTextSha256": "66fc0200434b0f12a02d5f8b17c6b7e984ce89a3310ef6efa845fdd0f8fc9f85"
+    },
+    "975": {
+      "name": "ハルクジラ",
+      "genus": "りくくじらポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0975",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "88439a5747b45d8a6f908e5315702685322220d1bfaf0a0da7a77fcbfb9ff6c3",
+      "selectedField": "text_1",
+      "sourceTextSha256": "8bcbaa8f9728b3caac89fe35f7de11302b45ffb530e249487ece5f1ddea8475e"
+    },
+    "976": {
+      "name": "ミガルーサ",
+      "genus": "きりはなしポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0976",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "ec0e4302c2988352a0a068e0fffda457a3df037a782805d7d284b556a3ff033a",
+      "selectedField": "text_1",
+      "sourceTextSha256": "5781ba482b560c525fb23bbbc815b6c3dbb18a54eeda225277a240e5166516b6"
+    },
+    "977": {
+      "name": "ヘイラッシャ",
+      "genus": "おおなまずポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0977",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "535f28259e34f48bde7b0e814e8c65813331ed67a007c73c4c5b6e7f6ec8144c",
+      "selectedField": "text_1",
+      "sourceTextSha256": "fdb0ac8160847f214627b83014dfcfa411034c8397d9a4b4ca6eeb8b6b186579"
+    },
+    "978": {
+      "name": "シャリタツ",
+      "genus": "ぎたいポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0978",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "dd8d986e9ae686af00b132e13514810deceb5df5570571041b6b421990815bdc",
+      "selectedField": "text_1",
+      "sourceTextSha256": "7b3194edb9a43de0c90ae76b4c749b965f0dc2bad1b9d61cd99ad328b3ddd597"
+    },
+    "979": {
+      "name": "コノヨザル",
+      "genus": "ふんどざるポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0979",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "5e7f457d1f6ab0b640308d3e090a6ac96900b5eef1b82ba5fa51db21362abae5",
+      "selectedField": "text_1",
+      "sourceTextSha256": "e62746a175ab6be4705a864feaf3615abc0b8277cf88b96809cf9b2ef7df0991"
+    },
+    "980": {
+      "name": "ドオー",
+      "genus": "とげうおポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0980",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "1e86587f722102d0040695463d8778cd188876190c16512e07aaab4075a7e78e",
+      "selectedField": "text_1",
+      "sourceTextSha256": "ba92f2c981724ced17aced623a9727e603fdb00bf4bb20efcd58005352d17a8c"
+    },
+    "981": {
+      "name": "リキキリン",
+      "genus": "くびながポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0981",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "b587511a2eaa42d1c4b593433401ed6bb13dcad6c0a8b84fc2acc98dfed8c23e",
+      "selectedField": "text_1",
+      "sourceTextSha256": "3ff719c3e1e6b2ec174f9d1bdb9f5f9597243ec623f405bad54705582da2480c"
+    },
+    "982": {
+      "name": "ノココッチ",
+      "genus": "つちへびポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0982",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "2f08daec4fa0cb075b9caf4a8b7d061972b2dabcc86e78d70443a918839b9b28",
+      "selectedField": "text_1",
+      "sourceTextSha256": "cba0776d4c50a4b7fa2025ea3545f1f037ec03673549a1fd52d76fd776490156"
+    },
+    "983": {
+      "name": "ドドゲザン",
+      "genus": "だいとうポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0983",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "dfe812db9e9328ae2c4a25577f633328284d7fe0dc2a81f59e23920be69704e7",
+      "selectedField": "text_1",
+      "sourceTextSha256": "0604f0a4176c81d05d2f005353c3b9a6036f02f3704a3b891789ff9e83fc5677"
+    },
+    "984": {
+      "name": "イダイナキバ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0984",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "09d8baa984179058d7bed655eed2d2e4ba0e5fdd02ee446a0b10660d6400e4e0",
+      "selectedField": "text_1",
+      "sourceTextSha256": "abd3bda4feedc8618c14b518ffb20ac2a00db3151f68125507e27a2532827efe"
+    },
+    "985": {
+      "name": "サケブシッポ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0985",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "59335714e70fd90716a8594b39ad029a1d5831e02c7f00144c1ada45804626ff",
+      "selectedField": "text_1",
+      "sourceTextSha256": "3374421495e1320bcd8bedf794f954009b9a56e0f8c7057cab741bc9e5a8e570"
+    },
+    "986": {
+      "name": "アラブルタケ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0986",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "e43966d79c50a797e9f2f92cea7026e9cd476591777cb4dd51da14fae55dca54",
+      "selectedField": "text_1",
+      "sourceTextSha256": "33dd0cc535a314601fa2301ad91e350192bca174eacb7abd1e5468ff19e07e21"
+    },
+    "987": {
+      "name": "ハバタクカミ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0987",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "cf6af50cff5dc94d6a9cc21630ad0c305712944b84680a8d785a090f1644bd5e",
+      "selectedField": "text_1",
+      "sourceTextSha256": "a7338a356d71cf6fcdc18339ba9d9e175c78fd02552cfbf23a3bfbe4a4fc875d"
+    },
+    "988": {
+      "name": "チヲハウハネ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0988",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "26a36f74e8afb49bf21d69d4e9128d794f449af0ff7d9c3246266484c3d62f72",
+      "selectedField": "text_1",
+      "sourceTextSha256": "86889e87604e6e349a3dbc2dde3abccd267e2a2c0bfb373255947fa894c55659"
+    },
+    "989": {
+      "name": "スナノケガワ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0989",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "6a436f1446240f26aea65e18bef3e5e8cf13c367b0a67bba53de6f6219bd5335",
+      "selectedField": "text_1",
+      "sourceTextSha256": "a0c9d3247069562f82e240cd084dd307eeffdebf937bb89e0c968db2cffe06ff"
+    },
+    "990": {
+      "name": "テツノワダチ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0990",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "03a638d2cb92ed5b4da368a663fd023f74971a5ab7c4a6b5f4ce32f783e7cce8",
+      "selectedField": "text_1",
+      "sourceTextSha256": "37ed11d6eb1317c17ccf74f26671779fa3a8b3cef0d9cdc6910b7d6848d287d9"
+    },
+    "991": {
+      "name": "テツノツツミ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0991",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "b4b26302b48d0a7818cab78fb2160b96e3e5773a76cb2f7e593af923cbf9de7e",
+      "selectedField": "text_1",
+      "sourceTextSha256": "926d2b74f743e43bc7d090d68478ed17e5cf3c7501859677d53c963f5f4385ae"
+    },
+    "992": {
+      "name": "テツノカイナ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0992",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "73b3f37bfc797c682c644b7d6b0ced2bd4087711555f164746e8da058cea5989",
+      "selectedField": "text_1",
+      "sourceTextSha256": "3601d9f85a818401c6bc596c21abfecebceb19ab7dadb5bf32d7db6a94b473e7"
+    },
+    "993": {
+      "name": "テツノコウベ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0993",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "c3273c9dafde650d88856cb49b53b38a9f74c23898ec01e3ed2bca667e3a08c6",
+      "selectedField": "text_1",
+      "sourceTextSha256": "97898000e7e3770e6c92d574213edef6c3e844ed2459aee953657dde74882f00"
+    },
+    "994": {
+      "name": "テツノドクガ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0994",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "7d8f6ee352e40b93219870182a359ad08165c1f67fe5fec9e868954a43c7f7ad",
+      "selectedField": "text_1",
+      "sourceTextSha256": "76e0ae356a48667d836cceb076e94bb894b4f5f94c98b13f656cbe0109d3513d"
+    },
+    "995": {
+      "name": "テツノイバラ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0995",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "e30b2d5edfc876e8d1e437b5e5bbadae49bdef5199d6ba51e276444dcf60dda6",
+      "selectedField": "text_1",
+      "sourceTextSha256": "9ac5bfe3eab8f204e0eee0b9f4b8e503b2ddeeea6b46b95bc5be55c6f3739d36"
+    },
+    "996": {
+      "name": "セビエ",
+      "genus": "こおりビレポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0996",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "7747ffb5c3e6b3511b9baa8019f003dd171eb3bf11f5ce5584deca2840273c20",
+      "selectedField": "text_1",
+      "sourceTextSha256": "c0105e2448189d6b31e06d892fd193e952adacc840c01604ff30854b08cf2b85"
+    },
+    "997": {
+      "name": "セゴール",
+      "genus": "こおりビレポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0997",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "dfa9fe2cda0a05179e41941cf81d48518e0d64b6ab619fe705126e0e356994cc",
+      "selectedField": "text_1",
+      "sourceTextSha256": "57c8e179c1fdd33d6bbebead9fe8bf89997f2513d8c590cc67f28a8e74b18559"
+    },
+    "998": {
+      "name": "セグレイブ",
+      "genus": "ひょうりゅうポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0998",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "a8e664e265923a6916dd98ab96550dca7d65a6f159939be2f87b9317108aea62",
+      "selectedField": "text_1",
+      "sourceTextSha256": "6dbbc69a54f6ec07758e8354d40eda6faedd61b7eac2cad8d803e708d40cda2c"
+    },
+    "999": {
+      "name": "コレクレー",
+      "genus": "たからばこポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/0999",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "1fa5b9bd266414c0730023d252a22d084862b3a90c7d392aa4eef64827436c53",
+      "selectedField": "text_1",
+      "sourceTextSha256": "528a9d18dcf76fe61753f2c7f5e74c11b119f5a38dcb07cc9be9fcea9a07aeb8"
+    },
+    "1000": {
+      "name": "サーフゴー",
+      "genus": "たからものポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1000",
+      "sourceVersion": "Pokémon LEGENDS Z-A",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "c182910fb38c3ce3686392d5e7007474be36907fd224be8a92c08833aeb2e1a4",
+      "selectedField": "text_1",
+      "sourceTextSha256": "7b601fa0dfd71120c19745b21670388e4cded4e59d6088e64852e5ca2307a707"
+    },
+    "1001": {
+      "name": "チオンジェン",
+      "genus": "さいやくポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1001",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "a04c77a2977da1f18e5ff8e86447ad086d9df94bc0ab6765d6c181c9a8b1fe6e",
+      "selectedField": "text_1",
+      "sourceTextSha256": "e7e762d33ff9e1e0f59d193273f8c87b2da3757708bfcadac4068ab71bd7f398"
+    },
+    "1002": {
+      "name": "パオジアン",
+      "genus": "さいやくポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1002",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "f54c752c15a7ef7f71150fece87c38c760a73552163c121a2804ac7454c673ac",
+      "selectedField": "text_1",
+      "sourceTextSha256": "7ab3f327418317119d8d270f9f3e467f468eda872cc0b2939332963072b568ef"
+    },
+    "1003": {
+      "name": "ディンルー",
+      "genus": "さいやくポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1003",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "8ad1fae3139f8dca0833578c138e519caf41c01831acb8361eefdb1b88c458fe",
+      "selectedField": "text_1",
+      "sourceTextSha256": "6b4dd30e59648e2a0c10c65e8f7ca9f2780a8037fb636392e0a75516763f3014"
+    },
+    "1004": {
+      "name": "イーユイ",
+      "genus": "さいやくポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1004",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "d0c833ba95b18687d9542eae178f833720841fd8406f13c0885c6f4bb6d7ae2d",
+      "selectedField": "text_1",
+      "sourceTextSha256": "29715a8d504f12d3eb6c8f2dbf4727782d378abaa824cad2becfbc0d4346373e"
+    },
+    "1005": {
+      "name": "トドロクツキ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1005",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "bf994c80a0daa4ab417399418be5ab0c017a2a79d3e44383765ae15113f4e273",
+      "selectedField": "text_1",
+      "sourceTextSha256": "97eaa3c7dbc6c733ab6e3b4dd7dc1817dc1b063017b07959abe4414277c898dc"
+    },
+    "1006": {
+      "name": "テツノブジン",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1006",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "e2badbfdc25bcfd85bddbf42a3484b5f43e9b76cc637bf03e2e1af9fbee9e559",
+      "selectedField": "text_1",
+      "sourceTextSha256": "7361235cb04c146955ff83ffa9897c7fec81fb87f67fe1e64c26eb8d65f3211b"
+    },
+    "1007": {
+      "name": "コライドン",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1007",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "a5edf76c84089e4c9af37c527a87f30ff4e79107f129b1aa75b91a2fe3f150ec",
+      "selectedField": "text_1",
+      "sourceTextSha256": "e6b3a211bcedcfc38054e8f7f9d3559cae77be4b75652489b52a4697c47f874a"
+    },
+    "1008": {
+      "name": "ミライドン",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1008",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "79dc7102c926490ed96b267fcbf2563d90d4aacf4dca84450fa30b38b92bd048",
+      "selectedField": "text_1",
+      "sourceTextSha256": "f813e648f789be145e616ec17717047ba47592de909d879e96c8b63b67ba4e2e"
+    },
+    "1009": {
+      "name": "ウネルミナモ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1009",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "84e300128de059caefe8229cf55630b758fe29ff4c0f2ed558031ebed49b86fb",
+      "selectedField": "text_1",
+      "sourceTextSha256": "06a365970ac02154e5e94425b0c0f5cfe080e118ec64802a721b1bea65dcac46"
+    },
+    "1010": {
+      "name": "テツノイサハ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1010",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "2414a8642df1be2ce7e58bc3474176b8d00e0edeaeebb5ffe49fe89947c85c97",
+      "selectedField": "text_1",
+      "sourceTextSha256": "c2b8eb2709ec98956cf9ef646a0a4402702b229b29a325bc9ca99b2cf28bea16"
+    },
+    "1011": {
+      "name": "カミッチュ",
+      "genus": "りんごあめポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1011",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "21001851ebfc98ad36f217abf86dd852ef9d53fe892b870815fe76c9ddf08731",
+      "selectedField": "text_1",
+      "sourceTextSha256": "26f1f2d8ba4ae73726f2dbd012d6ceb588feec157ba79c93c45c43c139f32f45"
+    },
+    "1012": {
+      "name": "チャデス",
+      "genus": "まっちゃポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1012",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "2879ef9910a4ecdd91608a7c511e72c3e3de1bce183a04cf70b0ab099896e418",
+      "selectedField": "text_1",
+      "sourceTextSha256": "4446938637465d5c4709ace9060f25f94d4d1748c6db08c8c9d07864ec9a2cab"
+    },
+    "1013": {
+      "name": "ヤバソチャ",
+      "genus": "まっちゃポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1013",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "2d1a01520fabc5b4603ea903a32d9864b20eda2608f1eb6f165453427b4fe036",
+      "selectedField": "text_1",
+      "sourceTextSha256": "875ba10d6d02abde0d08f864093e9f8eeb3ddf48309a812735a9c8bd8572b271"
+    },
+    "1014": {
+      "name": "イイネイヌ",
+      "genus": "けらいポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1014",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "0679b5beebaf15c2eee0a880b727f2408ed75bf7e1fa78c438787d0dddab49fb",
+      "selectedField": "text_1",
+      "sourceTextSha256": "177fe3e53deacea315a751165a35213bdc9b746f44fe039a83c30e187065e101"
+    },
+    "1015": {
+      "name": "マシマシラ",
+      "genus": "けらいポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1015",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "69167f1d7833aeab1578f81d7c8056f52461f32783f5515884f99cf398825184",
+      "selectedField": "text_1",
+      "sourceTextSha256": "05b35283f0bb54f57f4bd0c7ab70d0ddb4a0f943fa55ff8a23d8b488ab2a233f"
+    },
+    "1016": {
+      "name": "キチキギス",
+      "genus": "けらいポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1016",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "3bf681705f7c90e828cfa7d09eeb3aab1600b067f310b85da514e753881bfdfd",
+      "selectedField": "text_1",
+      "sourceTextSha256": "dd57b40a1676b17d574992295696bc606b427c6b09bba17a80f5ee6c319d4dd9"
+    },
+    "1017": {
+      "name": "オーガポン",
+      "genus": "おめんポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1017",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "7121c5abd637487be1ec8411e677ed195f8ba998a9f7f6e84ac85cc66545d43d",
+      "selectedField": "text_1",
+      "sourceTextSha256": "6474d76e2eb886c4287914b2a5127a9025260f9dd25f96f44362c71a2922220b"
+    },
+    "1018": {
+      "name": "ブリジュラス",
+      "genus": "ごうきんポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1018",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "4725ccdf8852de1fed5ba89a792c6ab20c5247f90f985cf25fe30a2156db3c88",
+      "selectedField": "text_1",
+      "sourceTextSha256": "8d2e18e7403b38a5ec50092d9902f1406ad7cb02fce0179a38adf4110b7f2809"
+    },
+    "1019": {
+      "name": "カミツオロチ",
+      "genus": "りんごオロチポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1019",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "8bf8692d32fa7c17c693bf76961a4529251289dc380c6acc1725167ded32d6ef",
+      "selectedField": "text_1",
+      "sourceTextSha256": "f58f4b61eb5513a626bcdd90c720f98bf86d6c37b63f54fd0d6e3acab9b01cf2"
+    },
+    "1020": {
+      "name": "ウガツホムラ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1020",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "7ca20f0eebf0776b0a704d27e1731b01980b9562b808d61ec864c8594826b457",
+      "selectedField": "text_1",
+      "sourceTextSha256": "6eb9dbac91d6dfcbd17a0a61fefb6beeffeff4f449087555728aeb38a772fe3d"
+    },
+    "1021": {
+      "name": "タケルライコ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1021",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "2adeca97944251e60e071780b6c542f1acf80f7ca90c4762c2a3cf6d74b98b4b",
+      "selectedField": "text_1",
+      "sourceTextSha256": "71c2236be36014a0e2af74df6b38566ecd2c9e5529334e3d7fc85d6437c56277"
+    },
+    "1022": {
+      "name": "テツノイワオ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1022",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "987ee6d813e749943324c6d3d739044f15f03cc86c6488a64974b532d14faa4b",
+      "selectedField": "text_1",
+      "sourceTextSha256": "17f3f1450ac2a4c03dabb6dbd746a7574e849ae9f35ce23418fe08c29d7ac7ad"
+    },
+    "1023": {
+      "name": "テツノカシラ",
+      "genus": "パラドックスポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1023",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "7a94fa817b716f6929cf654438dd2e31c9dbd4ccc7b2effe8ec66c1eeb766a70",
+      "selectedField": "text_1",
+      "sourceTextSha256": "2adaa1a095a1350f91c8039c8ccb89e5cc8cd8f258fd405539fe09d13fea3469"
+    },
+    "1024": {
+      "name": "テラパゴス",
+      "genus": "テラスタルポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1024",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "8def567806dfd1ab98dbf7daff2bb742eb0cd58c7e28fc847d23f5bf16fb0259",
+      "selectedField": "text_1",
+      "sourceTextSha256": "d10bcec58de6487d74ad7075b72cf8bc5f9df02c2e883ae57dac1ad4a47afb4c"
+    },
+    "1025": {
+      "name": "モモワロウ",
+      "genus": "しはいポケモン",
+      "sourceURL": "https://zukan.pokemon.co.jp/detail/1025",
+      "sourceVersion": "ポケットモンスター スカーレット",
+      "verifiedAt": "2026-09-06",
+      "htmlSha256": "7855868961be642d63a12acd7b696132dc1f7edc92765f9a6a8b7338e12ca4ae",
+      "selectedField": "text_1",
+      "sourceTextSha256": "a3a21d2b24a7a72c1a6c9f79fbcc1828bb29cf8eb7108782f86a36ebd0d8b32d"
+    }
+  }
+}

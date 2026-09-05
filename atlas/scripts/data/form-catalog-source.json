@@ -1,0 +1,15 @@
+{
+  "repository": "PokeAPI/pokeapi",
+  "revision": "d4f9a4af58ade123fbc0558f68b1c69daa97d9e4",
+  "files": {
+    "pokemon_form_names.csv": "f496066d02fab12c18d10cce0af2f748d09cb7e296ecc784cc8682f8c4da8625",
+    "types.csv": "37f039c8d722f47d51ba1c5c5ecf9b7007235b1a9a1af2827645c777b70307c8",
+    "pokemon_types.csv": "f1fc4bfd657a034ea3bf6972423b10276424aa068577b304a78a08996425ba05",
+    "pokemon.csv": "16c81c33188b0eac403aa2f759fcbe9e42c611f722d263f5b5a6a5bff9f8ce6b",
+    "pokemon_forms.csv": "99bf8f7ad4dc1f2e291357a090cef6a575623ec3cbf9030d0e33656e6e608ae2",
+    "pokemon_stats.csv": "fa2c44263a3706468682fefc3e0b3c4f5487fe9febed7d4ebcd6939c34b16aa8",
+    "pokemon_species.csv": "9878f19c0637095cdd9a4134b4aac8fb2b64776d3bdc599aa68f15c3a011b87c",
+    "pokemon_species_names.csv": "820cde17074cdb1c2b0595c997fb8f998e773bd5da3bb525dec85703c86c5fd9",
+    "languages.csv": "fbb60019a6a461783d5671a995d5f590db61792a273e90faa0ed630d102a19b8"
+  }
+}

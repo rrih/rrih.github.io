@@ -1,0 +1,234 @@
+{
+  "catalogue": {
+    "repository": "PokeAPI/pokeapi",
+    "revision": "d4f9a4af58ade123fbc0558f68b1c69daa97d9e4",
+    "files": {
+      "pokemon_form_names.csv": "f496066d02fab12c18d10cce0af2f748d09cb7e296ecc784cc8682f8c4da8625",
+      "types.csv": "37f039c8d722f47d51ba1c5c5ecf9b7007235b1a9a1af2827645c777b70307c8",
+      "pokemon_types.csv": "f1fc4bfd657a034ea3bf6972423b10276424aa068577b304a78a08996425ba05",
+      "pokemon.csv": "16c81c33188b0eac403aa2f759fcbe9e42c611f722d263f5b5a6a5bff9f8ce6b",
+      "pokemon_forms.csv": "99bf8f7ad4dc1f2e291357a090cef6a575623ec3cbf9030d0e33656e6e608ae2",
+      "pokemon_stats.csv": "fa2c44263a3706468682fefc3e0b3c4f5487fe9febed7d4ebcd6939c34b16aa8",
+      "pokemon_species.csv": "9878f19c0637095cdd9a4134b4aac8fb2b64776d3bdc599aa68f15c3a011b87c",
+      "pokemon_species_names.csv": "820cde17074cdb1c2b0595c997fb8f998e773bd5da3bb525dec85703c86c5fd9",
+      "languages.csv": "fbb60019a6a461783d5671a995d5f590db61792a273e90faa0ed630d102a19b8"
+    }
+  },
+  "included": 120,
+  "mega": 62,
+  "regional": 58,
+  "withShiny": 106,
+  "unavailableMegaForms": [
+    {
+      "id": "clefable-mega",
+      "pokemonId": 10278,
+      "speciesId": 36,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "victreebel-mega",
+      "pokemonId": 10279,
+      "speciesId": 71,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "starmie-mega",
+      "pokemonId": 10280,
+      "speciesId": 121,
+      "reason": "Only a static model without native animation was found"
+    },
+    {
+      "id": "dragonite-mega",
+      "pokemonId": 10281,
+      "speciesId": 149,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "meganium-mega",
+      "pokemonId": 10282,
+      "speciesId": 154,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "froslass-mega",
+      "pokemonId": 10285,
+      "speciesId": 478,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "emboar-mega",
+      "pokemonId": 10286,
+      "speciesId": 500,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "scolipede-mega",
+      "pokemonId": 10288,
+      "speciesId": 545,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "scrafty-mega",
+      "pokemonId": 10289,
+      "speciesId": 560,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "chandelure-mega",
+      "pokemonId": 10291,
+      "speciesId": 609,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "pyroar-mega",
+      "pokemonId": 10295,
+      "speciesId": 668,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "barbaracle-mega",
+      "pokemonId": 10298,
+      "speciesId": 689,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "dragalge-mega",
+      "pokemonId": 10299,
+      "speciesId": 691,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "hawlucha-mega",
+      "pokemonId": 10300,
+      "speciesId": 701,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "drampa-mega",
+      "pokemonId": 10302,
+      "speciesId": 780,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "falinks-mega",
+      "pokemonId": 10303,
+      "speciesId": 870,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "raichu-mega-x",
+      "pokemonId": 10304,
+      "speciesId": 26,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "raichu-mega-y",
+      "pokemonId": 10305,
+      "speciesId": 26,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "chimecho-mega",
+      "pokemonId": 10306,
+      "speciesId": 358,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "absol-mega-z",
+      "pokemonId": 10307,
+      "speciesId": 359,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "staraptor-mega",
+      "pokemonId": 10308,
+      "speciesId": 398,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "heatran-mega",
+      "pokemonId": 10311,
+      "speciesId": 485,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "golurk-mega",
+      "pokemonId": 10313,
+      "speciesId": 623,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "meowstic-male-mega",
+      "pokemonId": 10314,
+      "speciesId": 678,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "crabominable-mega",
+      "pokemonId": 10315,
+      "speciesId": 740,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "golisopod-mega",
+      "pokemonId": 10316,
+      "speciesId": 768,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "magearna-mega",
+      "pokemonId": 10317,
+      "speciesId": 801,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "magearna-original-mega",
+      "pokemonId": 10318,
+      "speciesId": 801,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "scovillain-mega",
+      "pokemonId": 10320,
+      "speciesId": 952,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "glimmora-mega",
+      "pokemonId": 10321,
+      "speciesId": 970,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "tatsugiri-curly-mega",
+      "pokemonId": 10322,
+      "speciesId": 978,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "tatsugiri-droopy-mega",
+      "pokemonId": 10323,
+      "speciesId": 978,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "tatsugiri-stretchy-mega",
+      "pokemonId": 10324,
+      "speciesId": 978,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "baxcalibur-mega",
+      "pokemonId": 10325,
+      "speciesId": 998,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    },
+    {
+      "id": "meowstic-female-mega",
+      "pokemonId": 10326,
+      "speciesId": 678,
+      "reason": "No matching animated model was found in the inspected pinned HOME and Pokemon-3D-api repositories"
+    }
+  ],
+  "japaneseTaurosBreedSource": "https://www.pokemon.co.jp/goods/2023/05/230512_go01.html"
+}

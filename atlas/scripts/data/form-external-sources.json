@@ -1,0 +1,256 @@
+[
+  {
+    "id": "feraligatr-mega",
+    "pokemonId": 10283,
+    "speciesId": 160,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/160.glb",
+    "animationIndex": 0,
+    "animationName": "pm0160_51_00_00001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-feraligatr-za-8cb8ed15d75d491191a684ebe1811e9e",
+      "title": "Mega Feraligatr ZA"
+    },
+    "gitBlobSha1": "bc019f95608be414f19e73e0a0e67a4ff367990c"
+  },
+  {
+    "id": "skarmory-mega",
+    "pokemonId": 10284,
+    "speciesId": 227,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/227.glb",
+    "animationIndex": 0,
+    "animationName": "pm0227_51_00_00001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-skarmory-za-912da691a12247568c23cc5295603dd6",
+      "title": "Mega Skarmory (ZA)"
+    },
+    "gitBlobSha1": "3666f71f6a57b5f65a5d5beaaeddb4fe556b021b"
+  },
+  {
+    "id": "excadrill-mega",
+    "pokemonId": 10287,
+    "speciesId": 530,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/530.glb",
+    "animationIndex": 0,
+    "animationName": "pm0530_51_00|pm0530_51_00_00001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-excadrill-aaf9dad7068c4f9895fcafc1078cd52e",
+      "title": "Mega Excadrill"
+    },
+    "gitBlobSha1": "8d2b250b6290a001b46c158518542a853b6c68ff"
+  },
+  {
+    "id": "eelektross-mega",
+    "pokemonId": 10290,
+    "speciesId": 604,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/604.glb",
+    "animationIndex": 0,
+    "animationName": "pm0604_51_00|pm0604_51_00_10001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-eelektross-za-523ca3deb2b74ef18916bc8559aef169",
+      "title": "Mega Eelektross (ZA)"
+    },
+    "gitBlobSha1": "286851dfc65c3428655fbcfe2cbae31cb8c81e7e"
+  },
+  {
+    "id": "chesnaught-mega",
+    "pokemonId": 10292,
+    "speciesId": 652,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/652.glb",
+    "animationIndex": 0,
+    "animationName": "pm0722_51_00_00001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-chesnaught-2876c57d7a16415ab568c6b2bec71430",
+      "title": "Mega Chesnaught"
+    },
+    "gitBlobSha1": "15dd7e42188892b9efac845e6a3a0486def83476"
+  },
+  {
+    "id": "delphox-mega",
+    "pokemonId": 10293,
+    "speciesId": 655,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/655.glb",
+    "animationIndex": 0,
+    "animationName": "pm0719_51_00_20001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-delphox-za-6e6bfccbfee249ca8c9e0922cbf19795",
+      "title": "Mega Delphox (ZA)"
+    },
+    "gitBlobSha1": "5c1b694bd79fb884dab7df1e65bf37ce700f8163"
+  },
+  {
+    "id": "greninja-mega",
+    "pokemonId": 10294,
+    "speciesId": 658,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/658.glb",
+    "animationIndex": 0,
+    "animationName": "pm0725_51_00_20001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-greninja-za-b3b6268f8c944fb59b94bafb2c0f7072",
+      "title": "Mega Greninja (ZA)"
+    },
+    "gitBlobSha1": "ad27565a15df48d9d4e9e92367de8875360896ff"
+  },
+  {
+    "id": "floette-mega",
+    "pokemonId": 10296,
+    "speciesId": 670,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/670.glb",
+    "animationIndex": 0,
+    "animationName": "pm0714_51_00_20001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-eternal-floette-0a44f74d102d403892fcaf76f067af30",
+      "title": "Mega Eternal Floette"
+    },
+    "gitBlobSha1": "667058528ca8430f86b10c349e19e10e083b22c2"
+  },
+  {
+    "id": "malamar-mega",
+    "pokemonId": 10297,
+    "speciesId": 687,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/za/687.glb",
+    "animationIndex": 0,
+    "animationName": "pm0727_51_00|pm0727_51_00_20001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-malamar-za-c443be586a51452597b147ad99a88853",
+      "title": "Mega Malamar (ZA)"
+    },
+    "gitBlobSha1": "c094ad571fa8c97f88ef9aad0627a700a1731bfa"
+  },
+  {
+    "id": "zygarde-mega",
+    "pokemonId": 10301,
+    "speciesId": 718,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/718.glb",
+    "animationIndex": 0,
+    "animationName": "pm0770_51_00_20001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-zygarde-za-25518e7d8c3f4893b64963d4e62e477b",
+      "title": "Mega Zygarde (ZA)"
+    },
+    "gitBlobSha1": "a3169b4b27c5be43355f367e41922807012250e9"
+  },
+  {
+    "id": "garchomp-mega-z",
+    "pokemonId": 10309,
+    "speciesId": 445,
+    "kind": "mega",
+    "variant": "z",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/za/445.glb",
+    "animationIndex": 0,
+    "animationName": "pm0445_52_00|pm0445_52_00_20001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-garchomp-z-za-2824a13bd75943099d3d32d5f79537dc",
+      "title": "Mega Garchomp Z (ZA)"
+    },
+    "gitBlobSha1": "71451e8f0c417ced3d940d8fb226745b3b4e5686"
+  },
+  {
+    "id": "lucario-mega-z",
+    "pokemonId": 10310,
+    "speciesId": 448,
+    "kind": "mega",
+    "variant": "z",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/za/448.glb",
+    "animationIndex": 0,
+    "animationName": "pm0448_52_00|pm0448_52_00_00001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-lucario-z-za-dfd8c9bbab904eafab576a2f73f5b20d",
+      "title": "Mega Lucario Z (ZA)"
+    },
+    "gitBlobSha1": "456eb96002843128dc96e82df4755d2244458e59"
+  },
+  {
+    "id": "darkrai-mega",
+    "pokemonId": 10312,
+    "speciesId": 491,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/491.glb",
+    "animationIndex": 0,
+    "animationName": "pm0491_51_00|pm0491_51_00_20001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-darkrai-za-ba9c27697603441f9445b5526834e95f",
+      "title": "Mega Darkrai (ZA)"
+    },
+    "gitBlobSha1": "49be0db554b8582d57690aa6a9bbdcf2f9c0cdff"
+  },
+  {
+    "id": "zeraora-mega",
+    "pokemonId": 10319,
+    "speciesId": 807,
+    "kind": "mega",
+    "repository": "Pokemon-3D-api/assets",
+    "revision": "429de1288cea0d43f5b4f56305d2276e94239d65",
+    "path": "models/opt/mega/807.glb",
+    "animationIndex": 0,
+    "animationName": "pm0888_51_00|pm0888_51_00_00001_battlewait01_loop",
+    "credit": {
+      "author": "Mariokart07 (https://sketchfab.com/Mariokart07)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/mega-zeraora-za-2fa27bbdace04c97916197494526ebdf",
+      "title": "Mega Zeraora (ZA)"
+    },
+    "gitBlobSha1": "62a2437cd42d416e7dc70ed385b7297e4b3bf5c4"
+  }
+]

@@ -1,0 +1,142 @@
+[
+  {
+    "id": "feraligatr-mega",
+    "sourceSha256": "79c7d0c0fe4d742539b5487e33e6cd7e5b91d9df4732cb4365fe2e13d4749638",
+    "sha256": "24a9172e8ae7b5e3888dc668a3be5b0bbda9e2f0bc1e074425f067376af36e84",
+    "before": 9167852,
+    "bytes": 282992,
+    "sourceClips": 77,
+    "retainedClip": "pm0160_51_00_00001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "skarmory-mega",
+    "sourceSha256": "247bb9b16c499cb9be29febd7df8bb3d1318af205a4d2de0d08c7eb2bc339fa2",
+    "sha256": "6f8429666e92c6dbadb7d97026a82a19849e0985b05a3eed81209cfd5ee9f1cc",
+    "before": 11051484,
+    "bytes": 268512,
+    "sourceClips": 79,
+    "retainedClip": "pm0227_51_00_00001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "excadrill-mega",
+    "sourceSha256": "daefda2124237419eebca45cb378a082ab689d60f18b9a7b137d8811dad80bf5",
+    "sha256": "bd46236fde3b8e1ae6ed5d4d1a4a99abc547c510d546410b8d7aaa95bbb749b2",
+    "before": 2686872,
+    "bytes": 168180,
+    "sourceClips": 43,
+    "retainedClip": "pm0530_51_00|pm0530_51_00_00001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "eelektross-mega",
+    "sourceSha256": "4668351e06d9dddd1939453124b6614f1a6ed3516d8bdba62bf3ec2a582461dd",
+    "sha256": "ddcc1299a76b4221759c02a909b94936f261f707ed8f34b20da569f0c386ba67",
+    "before": 8144820,
+    "bytes": 414688,
+    "sourceClips": 78,
+    "retainedClip": "pm0604_51_00|pm0604_51_00_10001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "chesnaught-mega",
+    "sourceSha256": "b6da42b191e0421ff7dbb1a2d93507d481fdee2b04f6fc983ed2973222fc6318",
+    "sha256": "d6644ad3fe6f21b7bb432e085bfed25710b93507ec46b64f6df60b87cb42ab49",
+    "before": 5982568,
+    "bytes": 306364,
+    "sourceClips": 39,
+    "retainedClip": "pm0722_51_00_00001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "delphox-mega",
+    "sourceSha256": "33f9a700ebac7a8436d8baa573ae9ec58299ba0fb19940abd2f5ace76408b9c6",
+    "sha256": "b331230ba0041541d92fa2218777ea8e8377fefa5222c06e72da99d6c8e0f5d9",
+    "before": 8336692,
+    "bytes": 538816,
+    "sourceClips": 40,
+    "retainedClip": "pm0719_51_00_20001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "greninja-mega",
+    "sourceSha256": "4658c9c7a30415f9f2bc566135ed9806ed9eb5eceb79d3199eb3c5f07a6ed83b",
+    "sha256": "3577809977a1b84331ae05df231eecd7913c3676fd7cc878728096230565e657",
+    "before": 4558292,
+    "bytes": 216516,
+    "sourceClips": 42,
+    "retainedClip": "pm0725_51_00_20001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "floette-mega",
+    "sourceSha256": "30487b4ccba115178c1380998f201b00730172c825d56771edcfb9c4ffb0ecaf",
+    "sha256": "7200915eb6a9a217fd5d1a722c8a9590969e3d1dd4687c30fb06894b4c400ac2",
+    "before": 5414664,
+    "bytes": 288664,
+    "sourceClips": 39,
+    "retainedClip": "pm0714_51_00_20001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "malamar-mega",
+    "sourceSha256": "53c52fb1214f890a594502097c9cb452df1a2fdbe654b15c44c1f1425dcd0b8d",
+    "sha256": "3d58533e0dedeea624164fbd61dd61bf13a891303eeab275474865233ce6d1b6",
+    "before": 4036356,
+    "bytes": 312180,
+    "sourceClips": 39,
+    "retainedClip": "pm0727_51_00|pm0727_51_00_20001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "zygarde-mega",
+    "sourceSha256": "51b7c54ce36385589e1a29a0fa93e9194252713dc168818f2bb02a5a53ca4f9f",
+    "sha256": "9e534334d3c52518d4318b2ab52444b0748ae0903ca6e427dd982db98ccdb542",
+    "before": 5765216,
+    "bytes": 362816,
+    "sourceClips": 41,
+    "retainedClip": "pm0770_51_00_20001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "garchomp-mega-z",
+    "sourceSha256": "70617aa3aaf2d2ae44d24a25e68ee1e53ef2a795dbe8a08fc5a75d8cf4abb585",
+    "sha256": "0a3714a75d0dcdc392a1d393720e44f1058bc1fb4ca605fb6674bc284b2f8142",
+    "before": 4558360,
+    "bytes": 252880,
+    "sourceClips": 39,
+    "retainedClip": "pm0445_52_00|pm0445_52_00_20001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "lucario-mega-z",
+    "sourceSha256": "6fc8f5a57270a3ae422883db7f6df82de55de2b793f97899b2c60f5d91b755d0",
+    "sha256": "732bc7557791df0039ff071519f9463c836cb9cb1a695829bb9f1e7e92e8c7ba",
+    "before": 7439616,
+    "bytes": 423740,
+    "sourceClips": 39,
+    "retainedClip": "pm0448_52_00|pm0448_52_00_00001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "darkrai-mega",
+    "sourceSha256": "59f95fd0eb93ce3037c0e6e099e544fb3e486a6de4027e2a8ab5826fbf7b5fa6",
+    "sha256": "d33388c348dcde07a076230365122935d2fc9d49c2d30da3be6354cc926bf98e",
+    "before": 11244752,
+    "bytes": 819852,
+    "sourceClips": 44,
+    "retainedClip": "pm0491_51_00|pm0491_51_00_20001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  },
+  {
+    "id": "zeraora-mega",
+    "sourceSha256": "d7e1191538346f2e5ed990926f21bd11151d5da857b95f2912f9d0a4ded3196b",
+    "sha256": "3dea1920e871580670b6427ccc6a10befeee1e6d4138eb3795b9ad5553df8318",
+    "before": 7882652,
+    "bytes": 328872,
+    "sourceClips": 45,
+    "retainedClip": "pm0888_51_00|pm0888_51_00_00001_battlewait01_loop",
+    "geometryMaterialsAndIdleUnchanged": true
+  }
+]

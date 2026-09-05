@@ -1,0 +1,218 @@
+{
+  "locales": {
+    "zh-Hans": {
+      "1011": {
+        "name": "裹蜜虫",
+        "genus": "糖苹果宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1011",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "a3d1bd8fc1092ee9a96c5c573c13b2ca066b836329324bada9d380e3eba2798b"
+      },
+      "1012": {
+        "name": "斯魔茶",
+        "genus": "抹茶宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1012",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "b5e92f20ec29ab8f2276d5cf26d330c1b9c3e7b73a11917018441a55dd0075f8"
+      },
+      "1013": {
+        "name": "来悲粗茶",
+        "genus": "抹茶宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1013",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "3ea39c2e8c54dce57c2fe4e9fb67a4001b366a808323816515aaa20afef46179"
+      },
+      "1014": {
+        "name": "够赞狗",
+        "genus": "随从宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1014",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "be06af4b45939253456e19e00917c127556bb402a14fcf8508d7681c52dac175"
+      },
+      "1015": {
+        "name": "愿增猿",
+        "genus": "随从宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1015",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "c31010e98c3062eff664c8bdb53634707448b79f56afa154afa351ac3552a71c"
+      },
+      "1016": {
+        "name": "吉雉鸡",
+        "genus": "随从宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1016",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "cde132792bb87b2825b8cede05d6c288a6231f5aae61e1e4bf7149607a6f69b9"
+      },
+      "1017": {
+        "name": "厄诡椪",
+        "genus": "面具宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1017",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "24a143c805735ded4d52dba653cf40e06bbdba8ee10a63ef5ccb445a6de564ff"
+      },
+      "1018": {
+        "name": "铝钢桥龙",
+        "genus": "合金宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1018",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "c4117118800a108c88196fe83cb7364d0efdbd0082a3379ff4b9afad6a56d9fa"
+      },
+      "1019": {
+        "name": "蜜集大蛇",
+        "genus": "苹果大蛇宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1019",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "6ebccae91c7ba401b47bbc27ce1948a1bd921aec1c29d624555406dc9f2adb00"
+      },
+      "1020": {
+        "name": "破空焰",
+        "genus": "悖谬宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1020",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "b88cab655f40e6b33ac826639e481d4142fd6804f31b62d926284fabb51edd3a"
+      },
+      "1021": {
+        "name": "猛雷鼓",
+        "genus": "悖谬宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1021",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "7e7a4288b6299ba9bf9b6c1213983814b374c325c0a0133d8f6828589c7e8fe2"
+      },
+      "1022": {
+        "name": "铁磐岩",
+        "genus": "悖谬宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1022",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "2181ff9d64fb7b4a3951e8d1356b69e2b4564df414df9f6055877b554a234649"
+      },
+      "1023": {
+        "name": "铁头壳",
+        "genus": "悖谬宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1023",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "8dd9ad0c34f4a3878768316825b54aa46dd2ca7c17288d535a7f5864dab3d511"
+      },
+      "1024": {
+        "name": "太乐巴戈斯",
+        "genus": "太晶宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1024",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "c5d0afd286588710d41880c2d3897c7991c5acd6a362953126b191c4040539e4"
+      },
+      "1025": {
+        "name": "桃歹郎",
+        "genus": "支配宝可梦",
+        "sourceURL": "https://www.pokemon.cn/play/pokedex/1025",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "a22f3d473dee908ce7cd5692c8b767e2f6368cac23a7b9be4c754e651f728d18"
+      }
+    },
+    "zh-Hant": {
+      "1011": {
+        "name": "裹蜜蟲",
+        "genus": "糖蘋果寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1011",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "8087c769849f07f51cdbb2ee9b89169357878af9731b959124b8bbf1b8029c3a"
+      },
+      "1012": {
+        "name": "斯魔茶",
+        "genus": "抹茶寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1012",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "aa99ffed1e63fbfcfd914107c87815fa6c9885b50ef003bc859a8b6dd5b598de"
+      },
+      "1013": {
+        "name": "來悲粗茶",
+        "genus": "抹茶寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1013",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "180f2a2d56a55de0ba63f60f5df132cc359a0496af8e3c0e07f1db2fe4ed09b1"
+      },
+      "1014": {
+        "name": "夠讚狗",
+        "genus": "隨從寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1014",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "495905a46e20271cf75f971b96c9798f71bc3b0cda36f96ab2fadbdfac0e677a"
+      },
+      "1015": {
+        "name": "願增猿",
+        "genus": "隨從寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1015",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "6291701c630efe283ac42b6cd10cf5b9f66e64a96f1583e2fae5b6e7b2d80dfd"
+      },
+      "1016": {
+        "name": "吉雉雞",
+        "genus": "隨從寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1016",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "088328778a08de0ea089fe6ce5e3ddbaad8f66c921fc3237faf1c3328d128c40"
+      },
+      "1017": {
+        "name": "厄鬼椪",
+        "genus": "面具寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1017",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "e7e1ee4f07da87a4a11b312a3923483262c6e8f894793df834dc9e34018255e5"
+      },
+      "1018": {
+        "name": "鋁鋼橋龍",
+        "genus": "合金寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1018",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "f54854c8dcdfa53197504cb2a47073b934ac25d02a7e029a6ccc9165f132d785"
+      },
+      "1019": {
+        "name": "蜜集大蛇",
+        "genus": "蘋果大蛇寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1019",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "0bd0ac2dca1e49d7dadacec58a0674df4df607a83b24f37504891dc78a925e19"
+      },
+      "1020": {
+        "name": "破空焰",
+        "genus": "悖謬寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1020",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "daa0a338fe24a03e0d4ee45fa194035bb5120bfdf1a6437987e2c577170d5f8a"
+      },
+      "1021": {
+        "name": "猛雷鼓",
+        "genus": "悖謬寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1021",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "8215331aaf95e23ca26b80d0f8940674121cca29f560d01d7979f35edaad6d5a"
+      },
+      "1022": {
+        "name": "鐵磐岩",
+        "genus": "悖謬寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1022",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "20bebc708b858a9c92b914b4502430c634b84d069d29b015857453d16cb7b410"
+      },
+      "1023": {
+        "name": "鐵頭殼",
+        "genus": "悖謬寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1023",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "f8ad805373d4f01f5eab54819276bb52f1cb52a195134837b0dd8a7e641c78ed"
+      },
+      "1024": {
+        "name": "太樂巴戈斯",
+        "genus": "太晶寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1024",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "ced0bb4c486953dd5c6d626517d4fc615e13d32c0e603e58375ac52e45790419"
+      },
+      "1025": {
+        "name": "桃歹郎",
+        "genus": "支配寶可夢",
+        "sourceURL": "https://tw.portal-pokemon.com/play/pokedex/1025",
+        "verifiedAt": "2026-09-06",
+        "htmlSha256": "7dbede7928e07f74d2446dad724cd11b540130ccb6b4276a604586b270d905de"
+      }
+    }
+  }
+}

@@ -1,0 +1,1486 @@
+[
+  {
+    "id": "venusaur-mega",
+    "pokemonId": 10033,
+    "normal": {
+      "url": "/models/forms/venusaur-mega.glb",
+      "bytes": 325824,
+      "sha256": "c5d681399ed086308dc0e5d73ea90bae9426c16a2e7aebe4bb98e7e733658094"
+    },
+    "rare": {
+      "url": "/models/forms/venusaur-mega-shiny.glb",
+      "bytes": 552112,
+      "sha256": "79d087bb51bcb65b25d71f130fa4f20ffa8aa487ed1cfcaaff9ed52153f3cd34"
+    }
+  },
+  {
+    "id": "charizard-mega-x",
+    "pokemonId": 10034,
+    "normal": {
+      "url": "/models/forms/charizard-mega-x.glb",
+      "bytes": 270668,
+      "sha256": "ec614062b8ab6e2284fd4222582ac0189aeacf889baafa747276275994c82159"
+    },
+    "rare": {
+      "url": "/models/forms/charizard-mega-x-shiny.glb",
+      "bytes": 409640,
+      "sha256": "155492f22c70db8516f4f777ccff1793f7a5b62a1c82dfbd584380f16d561f2f"
+    }
+  },
+  {
+    "id": "charizard-mega-y",
+    "pokemonId": 10035,
+    "normal": {
+      "url": "/models/forms/charizard-mega-y.glb",
+      "bytes": 307000,
+      "sha256": "f856bcbe3797b8afe5e1e3f88b953562e8e28c93f0667d1ef2037e4f24f3c41b"
+    },
+    "rare": {
+      "url": "/models/forms/charizard-mega-y-shiny.glb",
+      "bytes": 381580,
+      "sha256": "a3cc7f3d04142c70553d96809c83b1b8ef92523f7a228c7b290a69672e0e514f"
+    }
+  },
+  {
+    "id": "blastoise-mega",
+    "pokemonId": 10036,
+    "normal": {
+      "url": "/models/forms/blastoise-mega.glb",
+      "bytes": 180992,
+      "sha256": "d7b98c60a5c5d1724757311274f54e6e64a21b77ea62d64f9b5f6f2699d63560"
+    },
+    "rare": {
+      "url": "/models/forms/blastoise-mega-shiny.glb",
+      "bytes": 340620,
+      "sha256": "984447124b6efc89ead51dfaf19ff514fa7402dd5d7f5773113f96d4127d5391"
+    }
+  },
+  {
+    "id": "alakazam-mega",
+    "pokemonId": 10037,
+    "normal": {
+      "url": "/models/forms/alakazam-mega.glb",
+      "bytes": 254476,
+      "sha256": "4b7f70c78ee3e07dab805267f8a1782cdb5086c4980a521ba393bd534b2a0364"
+    },
+    "rare": {
+      "url": "/models/forms/alakazam-mega-shiny.glb",
+      "bytes": 356348,
+      "sha256": "1f11651b52a010e9669bb62719d83a5aa9dac4044637a584c53eca516d633bef"
+    }
+  },
+  {
+    "id": "gengar-mega",
+    "pokemonId": 10038,
+    "normal": {
+      "url": "/models/forms/gengar-mega.glb",
+      "bytes": 154392,
+      "sha256": "680faa78b31ba9b95f689176f5a5dbcd68542a1315613b54f804ccc4b1472091"
+    },
+    "rare": {
+      "url": "/models/forms/gengar-mega-shiny.glb",
+      "bytes": 210720,
+      "sha256": "9618f88362c47e0e1a410452f2ca3bb05a1b075c5d72947bc2ae7bc68033e9f8"
+    }
+  },
+  {
+    "id": "kangaskhan-mega",
+    "pokemonId": 10039,
+    "normal": {
+      "url": "/models/forms/kangaskhan-mega.glb",
+      "bytes": 284524,
+      "sha256": "85a17c91cee8f406c4c9ea07431dc9c4f3660bf71dc5daba51aea51865e8192d"
+    },
+    "rare": {
+      "url": "/models/forms/kangaskhan-mega-shiny.glb",
+      "bytes": 578724,
+      "sha256": "fe213f677fbd937d028a8683e3f795d183120154a9e7d98fbeb30b8f4b074001"
+    }
+  },
+  {
+    "id": "pinsir-mega",
+    "pokemonId": 10040,
+    "normal": {
+      "url": "/models/forms/pinsir-mega.glb",
+      "bytes": 219180,
+      "sha256": "dff90d890a66c63bdbd5efc57c5ae621f0df97ba8b9cff8f6dd48b27d83ad957"
+    },
+    "rare": {
+      "url": "/models/forms/pinsir-mega-shiny.glb",
+      "bytes": 464616,
+      "sha256": "274e6fc0a43de5733ad023a06a180302e8cc9d4fb453d51d0fe45a3678816d1b"
+    }
+  },
+  {
+    "id": "gyarados-mega",
+    "pokemonId": 10041,
+    "normal": {
+      "url": "/models/forms/gyarados-mega.glb",
+      "bytes": 232948,
+      "sha256": "2567b6d4ff6067bf136beafb4a39dc69446b83e7bc21f6b2692aa26d3bd04b34"
+    },
+    "rare": {
+      "url": "/models/forms/gyarados-mega-shiny.glb",
+      "bytes": 429412,
+      "sha256": "ececacf0c3a43bae1f3a26fb058475e11c28f8a4c9a0c4859a5633cd0d21a7fe"
+    }
+  },
+  {
+    "id": "aerodactyl-mega",
+    "pokemonId": 10042,
+    "normal": {
+      "url": "/models/forms/aerodactyl-mega.glb",
+      "bytes": 171256,
+      "sha256": "0871bd649f1564f15405ebb6d87b2fbb5b69e178ac2ae44428945babf706acd0"
+    },
+    "rare": {
+      "url": "/models/forms/aerodactyl-mega-shiny.glb",
+      "bytes": 274816,
+      "sha256": "51fd13db9be69ddcd06d3d0e803e25cfa0f58a2211d5330291d165f19a3508a5"
+    }
+  },
+  {
+    "id": "mewtwo-mega-x",
+    "pokemonId": 10043,
+    "normal": {
+      "url": "/models/forms/mewtwo-mega-x.glb",
+      "bytes": 171392,
+      "sha256": "28b05f07ed0f374913cbe36863ae3d73887723e40e478f8c341d9871adae19df"
+    },
+    "rare": {
+      "url": "/models/forms/mewtwo-mega-x-shiny.glb",
+      "bytes": 234964,
+      "sha256": "f81d14c4b4f1753dd860ee9ccdd846e33dd7dc56b95e5d980d4e53b7d731b241"
+    }
+  },
+  {
+    "id": "mewtwo-mega-y",
+    "pokemonId": 10044,
+    "normal": {
+      "url": "/models/forms/mewtwo-mega-y.glb",
+      "bytes": 335716,
+      "sha256": "725de9d4dd976525e46227b130c5ca00c5efbb81a6a505b2db90e66f41d404e4"
+    },
+    "rare": {
+      "url": "/models/forms/mewtwo-mega-y-shiny.glb",
+      "bytes": 466836,
+      "sha256": "33c14efc3540c2deae4a9579cb097a087c50ae9d8a4c0f792f42949ded0faed1"
+    }
+  },
+  {
+    "id": "ampharos-mega",
+    "pokemonId": 10045,
+    "normal": {
+      "url": "/models/forms/ampharos-mega.glb",
+      "bytes": 379852,
+      "sha256": "dba78304b2e598dcbe3caffcb0c9ac46957c8f917e46f5e2baee1d40bfdc30ae"
+    },
+    "rare": {
+      "url": "/models/forms/ampharos-mega-shiny.glb",
+      "bytes": 492596,
+      "sha256": "b0198d347c2b39825d6e52d37f4700881e72045a413d17dad1e4ce4b166e00b5"
+    }
+  },
+  {
+    "id": "scizor-mega",
+    "pokemonId": 10046,
+    "normal": {
+      "url": "/models/forms/scizor-mega.glb",
+      "bytes": 202260,
+      "sha256": "839d934e1ea9cc12e6784257b41606638b013bb5163a9e5b3a336aa8bdc4d8e4"
+    },
+    "rare": {
+      "url": "/models/forms/scizor-mega-shiny.glb",
+      "bytes": 459136,
+      "sha256": "8f55ee97190a2c3b3036b606dba930e526307da35f743ff692006d06d21a4837"
+    }
+  },
+  {
+    "id": "heracross-mega",
+    "pokemonId": 10047,
+    "normal": {
+      "url": "/models/forms/heracross-mega.glb",
+      "bytes": 162212,
+      "sha256": "2d565be0f3c2d2a5a446ec794a7249fb0ba19f0eab20f87e16901413203141cd"
+    },
+    "rare": {
+      "url": "/models/forms/heracross-mega-shiny.glb",
+      "bytes": 292360,
+      "sha256": "3521b05ad252d890bcc186ce3fb1b860e4188987616fce321172d038bcf7336e"
+    }
+  },
+  {
+    "id": "houndoom-mega",
+    "pokemonId": 10048,
+    "normal": {
+      "url": "/models/forms/houndoom-mega.glb",
+      "bytes": 180908,
+      "sha256": "376ee904a3e4fbd8ea04dc4947c2e478c55654ac8f5a792c9e3ab6082c8252bc"
+    },
+    "rare": {
+      "url": "/models/forms/houndoom-mega-shiny.glb",
+      "bytes": 264224,
+      "sha256": "382cd9685cf3eb3aeb55669477155bc6c255753263b94e0116298e50a1226e70"
+    }
+  },
+  {
+    "id": "tyranitar-mega",
+    "pokemonId": 10049,
+    "normal": {
+      "url": "/models/forms/tyranitar-mega.glb",
+      "bytes": 146668,
+      "sha256": "c0753b2babb3a0405398e9fecc1a17ef1da7df5bd9f901dbae028fdaadce5197"
+    },
+    "rare": {
+      "url": "/models/forms/tyranitar-mega-shiny.glb",
+      "bytes": 216564,
+      "sha256": "f89c04a56ae708cfcf0d55d91536c596b50bc64862b01b9416ed877c17d687ee"
+    }
+  },
+  {
+    "id": "blaziken-mega",
+    "pokemonId": 10050,
+    "normal": {
+      "url": "/models/forms/blaziken-mega.glb",
+      "bytes": 301004,
+      "sha256": "5def914cc68e449b9e18e6ad64e4e710a7660042ba5f2abfd6304bb368bd8914"
+    },
+    "rare": {
+      "url": "/models/forms/blaziken-mega-shiny.glb",
+      "bytes": 459188,
+      "sha256": "0b398f8c3f4d5999f7709f08ac21699592601a2e986734370b60c5fbd7bd5df9"
+    }
+  },
+  {
+    "id": "gardevoir-mega",
+    "pokemonId": 10051,
+    "normal": {
+      "url": "/models/forms/gardevoir-mega.glb",
+      "bytes": 182888,
+      "sha256": "f4bd033d83fc1708d5724058f10d067796adae6981a32759938174e8d66f7009"
+    },
+    "rare": {
+      "url": "/models/forms/gardevoir-mega-shiny.glb",
+      "bytes": 346556,
+      "sha256": "7255ed83ab2d0f98719f78f19ba30345ae451b2a4294cdb6687eb30af4a47ca3"
+    }
+  },
+  {
+    "id": "mawile-mega",
+    "pokemonId": 10052,
+    "normal": {
+      "url": "/models/forms/mawile-mega.glb",
+      "bytes": 275816,
+      "sha256": "39ebd464c6df8b0e896657ecca18e7b84820a01d65385a061de478975ae931d3"
+    },
+    "rare": {
+      "url": "/models/forms/mawile-mega-shiny.glb",
+      "bytes": 621416,
+      "sha256": "5657a9ad2f6fef9a87a7ff33b91f86dae71b8729f455224b1b42ae3a70efb576"
+    }
+  },
+  {
+    "id": "aggron-mega",
+    "pokemonId": 10053,
+    "normal": {
+      "url": "/models/forms/aggron-mega.glb",
+      "bytes": 168712,
+      "sha256": "228a8b52dbae3f92c30c2e6cb7b675c744d484acaa2d0f7097de819bccd96c16"
+    },
+    "rare": {
+      "url": "/models/forms/aggron-mega-shiny.glb",
+      "bytes": 286436,
+      "sha256": "5940340b0165fe7893a085f77285796ec0c5920ac4fa4af22d717fd91c2d368f"
+    }
+  },
+  {
+    "id": "medicham-mega",
+    "pokemonId": 10054,
+    "normal": {
+      "url": "/models/forms/medicham-mega.glb",
+      "bytes": 662192,
+      "sha256": "a34c9ce571b9fb2fa208fb76d5c1305eb5582550982dbf0c2c9e518692eb4337"
+    },
+    "rare": {
+      "url": "/models/forms/medicham-mega-shiny.glb",
+      "bytes": 812476,
+      "sha256": "727e883761079f134b7aca502db02a6d325d502a8c8830ba6e45070ab330b972"
+    }
+  },
+  {
+    "id": "manectric-mega",
+    "pokemonId": 10055,
+    "normal": {
+      "url": "/models/forms/manectric-mega.glb",
+      "bytes": 121248,
+      "sha256": "35be85c3fd9b1c634059d42f2e3cf21f7e00a6460615e4e00a5b2445f8d7781f"
+    },
+    "rare": {
+      "url": "/models/forms/manectric-mega-shiny.glb",
+      "bytes": 172920,
+      "sha256": "3bb7f272403a5c78b6ce0b901d1fd6767cb77fb7ecd7d00bf53f212f0cc71c6b"
+    }
+  },
+  {
+    "id": "banette-mega",
+    "pokemonId": 10056,
+    "normal": {
+      "url": "/models/forms/banette-mega.glb",
+      "bytes": 384428,
+      "sha256": "7d7b4014b63b5b060b79a621a3f8430968f8a7f397fb1691e3bd0cb9f420b8ea"
+    },
+    "rare": {
+      "url": "/models/forms/banette-mega-shiny.glb",
+      "bytes": 635108,
+      "sha256": "2af69f9598826accd8af2e40624d594eb2f61c1fb2dd3a997ccb381abacba374"
+    }
+  },
+  {
+    "id": "absol-mega",
+    "pokemonId": 10057,
+    "normal": {
+      "url": "/models/forms/absol-mega.glb",
+      "bytes": 177260,
+      "sha256": "74bb34856095f9955b8b751e1265d55da08d8edcab3e19f93bdb9b5d76568d1e"
+    },
+    "rare": {
+      "url": "/models/forms/absol-mega-shiny.glb",
+      "bytes": 257036,
+      "sha256": "06aa9bb61d7c89944aa8e1e6aee1ae8d70d040c0828a073f4b34b23330d98082"
+    }
+  },
+  {
+    "id": "garchomp-mega",
+    "pokemonId": 10058,
+    "normal": {
+      "url": "/models/forms/garchomp-mega.glb",
+      "bytes": 153024,
+      "sha256": "42bdc11aa7d344fa0af9ad393a5a95bc190bdf54b7566dd32e0928a7c4fa5904"
+    },
+    "rare": {
+      "url": "/models/forms/garchomp-mega-shiny.glb",
+      "bytes": 258180,
+      "sha256": "f8817f9f75dcd8960647141ac1207e92f83da168661e060e51264432aec4a7b8"
+    }
+  },
+  {
+    "id": "lucario-mega",
+    "pokemonId": 10059,
+    "normal": {
+      "url": "/models/forms/lucario-mega.glb",
+      "bytes": 299184,
+      "sha256": "b9ea9532facab31f9fb72618b8b076eb476b9fdefe6a6359f159af2045b7b656"
+    },
+    "rare": {
+      "url": "/models/forms/lucario-mega-shiny.glb",
+      "bytes": 419856,
+      "sha256": "e3e847fb9e66e40fb19bd75da0be661e2471997693d3afdc6cbd9879b247f72a"
+    }
+  },
+  {
+    "id": "abomasnow-mega",
+    "pokemonId": 10060,
+    "normal": {
+      "url": "/models/forms/abomasnow-mega.glb",
+      "bytes": 170968,
+      "sha256": "b5890c21e04249e085a1d7addfbbfffb790c6ac1b9ac3ca2a7f37546cbdeaee2"
+    },
+    "rare": {
+      "url": "/models/forms/abomasnow-mega-shiny.glb",
+      "bytes": 267724,
+      "sha256": "bd3d30d40795167b5014c6b8466c2a49dd5a6a2f96d22e921482fa38dc9a482f"
+    }
+  },
+  {
+    "id": "latias-mega",
+    "pokemonId": 10062,
+    "normal": {
+      "url": "/models/forms/latias-mega.glb",
+      "bytes": 145024,
+      "sha256": "7798c25645a8cb5266ab032ce8e6d0f56140256e0287e82900d3f1208e18e7fe"
+    },
+    "rare": {
+      "url": "/models/forms/latias-mega-shiny.glb",
+      "bytes": 248556,
+      "sha256": "4f28227b9754109aa5442a22bc76b66a28b1144a5ed435fe687d02eed822d6b6"
+    }
+  },
+  {
+    "id": "latios-mega",
+    "pokemonId": 10063,
+    "normal": {
+      "url": "/models/forms/latios-mega.glb",
+      "bytes": 144136,
+      "sha256": "4e332df02e21a3a9997d2eb918776dc03088c6a509775e121e346d294aa76b87"
+    },
+    "rare": {
+      "url": "/models/forms/latios-mega-shiny.glb",
+      "bytes": 247140,
+      "sha256": "6440a92c80c0d7c728999f1382dff42456a2b976bbdcf9aee89cd599fde2824e"
+    }
+  },
+  {
+    "id": "swampert-mega",
+    "pokemonId": 10064,
+    "normal": {
+      "url": "/models/forms/swampert-mega.glb",
+      "bytes": 197984,
+      "sha256": "7a7045b553f42a818f5957bf34194f1bc17249c7a30970c08eaa49388d817b68"
+    },
+    "rare": {
+      "url": "/models/forms/swampert-mega-shiny.glb",
+      "bytes": 371624,
+      "sha256": "a75d359105ba6813dce523b5c9e9fb5c13357e87230dcd156f198bf6e7de8ff4"
+    }
+  },
+  {
+    "id": "sceptile-mega",
+    "pokemonId": 10065,
+    "normal": {
+      "url": "/models/forms/sceptile-mega.glb",
+      "bytes": 291420,
+      "sha256": "73e7001572db8e50aa02dc92e49b71392c44414cad21db27585149d8ca58f033"
+    },
+    "rare": {
+      "url": "/models/forms/sceptile-mega-shiny.glb",
+      "bytes": 576820,
+      "sha256": "ec60eb82b195cce33e267d4ce59196798407261206bc826f0ab572c56c0d2a4c"
+    }
+  },
+  {
+    "id": "sableye-mega",
+    "pokemonId": 10066,
+    "normal": {
+      "url": "/models/forms/sableye-mega.glb",
+      "bytes": 129268,
+      "sha256": "52df98d1eb0d5b0b75e7f36991526428c3a036f2a5b5a0c9585277e483234bbf"
+    },
+    "rare": {
+      "url": "/models/forms/sableye-mega-shiny.glb",
+      "bytes": 174980,
+      "sha256": "6004e476dd95c5635246b61aca2ab2354bf7a79e867b74b0cc42f10f72cbfb49"
+    }
+  },
+  {
+    "id": "altaria-mega",
+    "pokemonId": 10067,
+    "normal": {
+      "url": "/models/forms/altaria-mega.glb",
+      "bytes": 349204,
+      "sha256": "ef8dd47ea6f04097f60f7fc7288582885490d25a6fa9347d7ca426877e4fc273"
+    },
+    "rare": {
+      "url": "/models/forms/altaria-mega-shiny.glb",
+      "bytes": 408128,
+      "sha256": "7c895ccdecdb84d744c0335b2d30a3780936f024e349a0e02602b6f49dde707b"
+    }
+  },
+  {
+    "id": "gallade-mega",
+    "pokemonId": 10068,
+    "normal": {
+      "url": "/models/forms/gallade-mega.glb",
+      "bytes": 194508,
+      "sha256": "8302a536b195ef58215cded6fb2e4e4fcd12321b1b14970706a2f3faaeb71579"
+    },
+    "rare": {
+      "url": "/models/forms/gallade-mega-shiny.glb",
+      "bytes": 278808,
+      "sha256": "1f3d5fbfa0470f304b9349257f9087500254be3d8468663c9c3d53b04318473c"
+    }
+  },
+  {
+    "id": "audino-mega",
+    "pokemonId": 10069,
+    "normal": {
+      "url": "/models/forms/audino-mega.glb",
+      "bytes": 212600,
+      "sha256": "6c218be17a21b1e9d865fa8120ba755db0bf618e0d4183e1b11ee2f77d70d07e"
+    },
+    "rare": {
+      "url": "/models/forms/audino-mega-shiny.glb",
+      "bytes": 315012,
+      "sha256": "3d789bdd359c0e84a438aba949fd46cbffffaaa6dccb9c47176c6b687ac3c545"
+    }
+  },
+  {
+    "id": "sharpedo-mega",
+    "pokemonId": 10070,
+    "normal": {
+      "url": "/models/forms/sharpedo-mega.glb",
+      "bytes": 131064,
+      "sha256": "e2acadd9186ba836ea9cc92632746e11450ddd94febc90f9ca231a158ae19b95"
+    },
+    "rare": {
+      "url": "/models/forms/sharpedo-mega-shiny.glb",
+      "bytes": 355580,
+      "sha256": "08831684953c97a204fb334f6f4499ecb5f8ddd1eab4bed54639f2c3edab6327"
+    }
+  },
+  {
+    "id": "slowbro-mega",
+    "pokemonId": 10071,
+    "normal": {
+      "url": "/models/forms/slowbro-mega.glb",
+      "bytes": 149504,
+      "sha256": "56092e33defbd1e923fbd18eb9ebbcb21aad3036923f64e4ac157dbd4fbb24a0"
+    },
+    "rare": {
+      "url": "/models/forms/slowbro-mega-shiny.glb",
+      "bytes": 235652,
+      "sha256": "34f3a055a736a523b6f5ccf466aa0cb3572bd7ec578c4debb694aada416b7c71"
+    }
+  },
+  {
+    "id": "steelix-mega",
+    "pokemonId": 10072,
+    "normal": {
+      "url": "/models/forms/steelix-mega.glb",
+      "bytes": 247964,
+      "sha256": "31849c3dc70980fba0466f0eaeeee0196083cc41341ccb5a42be49c2d00fca1c"
+    },
+    "rare": {
+      "url": "/models/forms/steelix-mega-shiny.glb",
+      "bytes": 308816,
+      "sha256": "8873fb5fc48694dc18a77940b7464788ce66b023399ccee51e2f030b4fb37261"
+    }
+  },
+  {
+    "id": "pidgeot-mega",
+    "pokemonId": 10073,
+    "normal": {
+      "url": "/models/forms/pidgeot-mega.glb",
+      "bytes": 369836,
+      "sha256": "7e37a21923620b2acd99a824ddc4f1e25d45eeeb7f1dd52be276849127fa927d"
+    },
+    "rare": {
+      "url": "/models/forms/pidgeot-mega-shiny.glb",
+      "bytes": 485360,
+      "sha256": "94bd182eac023548308947f426cf20b1a20324e118d55060b631e0775f683562"
+    }
+  },
+  {
+    "id": "glalie-mega",
+    "pokemonId": 10074,
+    "normal": {
+      "url": "/models/forms/glalie-mega.glb",
+      "bytes": 95420,
+      "sha256": "1bc85d22f70eac14eab0f5746552788dfb48018a2228c92c4e6d5f922f87e1cc"
+    },
+    "rare": {
+      "url": "/models/forms/glalie-mega-shiny.glb",
+      "bytes": 231588,
+      "sha256": "4fb6382d502a22d14fda27faa070114a723b654bcbbcd59e4b79ff67b3c60a95"
+    }
+  },
+  {
+    "id": "diancie-mega",
+    "pokemonId": 10075,
+    "normal": {
+      "url": "/models/forms/diancie-mega.glb",
+      "bytes": 563296,
+      "sha256": "e777bf5767ae47fe15f1e3217ca14e011b90d67146e1b6b7677f8cfd736ae137"
+    },
+    "rare": {
+      "url": "/models/forms/diancie-mega-shiny.glb",
+      "bytes": 676472,
+      "sha256": "168e862a30e46ee998c3f0cb29f999660ca64c04394c92775bf670244c006e96"
+    }
+  },
+  {
+    "id": "metagross-mega",
+    "pokemonId": 10076,
+    "normal": {
+      "url": "/models/forms/metagross-mega.glb",
+      "bytes": 206636,
+      "sha256": "da3af1837677b6f6f4f91f59d963eed6c57637a156f8b62820b49f1d9d632494"
+    },
+    "rare": {
+      "url": "/models/forms/metagross-mega-shiny.glb",
+      "bytes": 315800,
+      "sha256": "c4d2aa2d2fd8e2807ac36f2e606b5cb7f0ae1f4454664bd762a2f0cbe5063ce7"
+    }
+  },
+  {
+    "id": "rayquaza-mega",
+    "pokemonId": 10079,
+    "normal": {
+      "url": "/models/forms/rayquaza-mega.glb",
+      "bytes": 566760,
+      "sha256": "99028c81f61b22db3d1f3f3b4322d2c5f317d534291e0eb69befd6d6f32e928e"
+    },
+    "rare": {
+      "url": "/models/forms/rayquaza-mega-shiny.glb",
+      "bytes": 1071324,
+      "sha256": "249cda07e3934029da534f9a056d42969b81d9f3ebe8ce499fad5ddcc424fd1c"
+    }
+  },
+  {
+    "id": "camerupt-mega",
+    "pokemonId": 10087,
+    "normal": {
+      "url": "/models/forms/camerupt-mega.glb",
+      "bytes": 295948,
+      "sha256": "3e3d07c0102e74c321dfda199fe4c90d90a43c71d173cdf952662d2157d3182b"
+    },
+    "rare": {
+      "url": "/models/forms/camerupt-mega-shiny.glb",
+      "bytes": 637948,
+      "sha256": "ff8fa4acb7e6f50b4c9da2d6c041d5e101340bce70fe29eafb6c49b43ac1c95b"
+    }
+  },
+  {
+    "id": "lopunny-mega",
+    "pokemonId": 10088,
+    "normal": {
+      "url": "/models/forms/lopunny-mega.glb",
+      "bytes": 255720,
+      "sha256": "916c2c650af3a4dc59f41c19c028d1377f676a7438de499534f36cce1849ea98"
+    },
+    "rare": {
+      "url": "/models/forms/lopunny-mega-shiny.glb",
+      "bytes": 471868,
+      "sha256": "9381789583d72839d508b4c8e56d8e02d9e8b1f4237925fb2eb36e783584342d"
+    }
+  },
+  {
+    "id": "salamence-mega",
+    "pokemonId": 10089,
+    "normal": {
+      "url": "/models/forms/salamence-mega.glb",
+      "bytes": 299008,
+      "sha256": "916e1b6d8885aee441793dbb4ffa20988fc5fef5b3779e399e7bae6544c2c939"
+    },
+    "rare": {
+      "url": "/models/forms/salamence-mega-shiny.glb",
+      "bytes": 548896,
+      "sha256": "c465a1b80ca63593967f1e95bbb1f8aa85c9ba1498b16f760626d2cdda3291de"
+    }
+  },
+  {
+    "id": "beedrill-mega",
+    "pokemonId": 10090,
+    "normal": {
+      "url": "/models/forms/beedrill-mega.glb",
+      "bytes": 131360,
+      "sha256": "e7cae307cc1ab07b352a756b176b6f8b0b3370e081ce7274faf2aee99bac4c62"
+    },
+    "rare": {
+      "url": "/models/forms/beedrill-mega-shiny.glb",
+      "bytes": 310696,
+      "sha256": "ab3ad77b553809e8f3076548536948df34ae61321308ca8ee0a14dad301ac7ba"
+    }
+  },
+  {
+    "id": "rattata-alola",
+    "pokemonId": 10091,
+    "normal": {
+      "url": "/models/forms/rattata-alola.glb",
+      "bytes": 135396,
+      "sha256": "fdcc376c5d8aa3c94295eefdc3540eb265899371d3c756a79620cbdc109f80d5"
+    },
+    "rare": {
+      "url": "/models/forms/rattata-alola-shiny.glb",
+      "bytes": 319584,
+      "sha256": "c49373c2abed1868e89a5ca777f73db946da2ee912a418bafcdfc08bba9921e0"
+    }
+  },
+  {
+    "id": "raticate-alola",
+    "pokemonId": 10092,
+    "normal": {
+      "url": "/models/forms/raticate-alola.glb",
+      "bytes": 167052,
+      "sha256": "bd0fecfb23ac57a25615fbc56f71a96600135500ec03af75771f9fb6ccf78fa6"
+    },
+    "rare": {
+      "url": "/models/forms/raticate-alola-shiny.glb",
+      "bytes": 242788,
+      "sha256": "00740252514e55f4e95aca91a1c87e83170620c2018983ea7efe3e2a9121c73d"
+    }
+  },
+  {
+    "id": "raichu-alola",
+    "pokemonId": 10100,
+    "normal": {
+      "url": "/models/forms/raichu-alola.glb",
+      "bytes": 198680,
+      "sha256": "ae565a4291ca081d541a2514cc1dbe7e0bf49890729dc9280a5c94bb12f512c2"
+    },
+    "rare": {
+      "url": "/models/forms/raichu-alola-shiny.glb",
+      "bytes": 324396,
+      "sha256": "f81f8d251aa02a4f854957066907f27c87391269de844a94f0e64a9334b57d99"
+    }
+  },
+  {
+    "id": "sandshrew-alola",
+    "pokemonId": 10101,
+    "normal": {
+      "url": "/models/forms/sandshrew-alola.glb",
+      "bytes": 181508,
+      "sha256": "d5159e1a8cfdf2bae5ea3dff8549eba078f46d302130d391a10b8401bdf794c2"
+    },
+    "rare": {
+      "url": "/models/forms/sandshrew-alola-shiny.glb",
+      "bytes": 603524,
+      "sha256": "959cef7509b6f68245a9e69fe0f66dbba7466be3a3ac3c26afe4fc186f675171"
+    }
+  },
+  {
+    "id": "sandslash-alola",
+    "pokemonId": 10102,
+    "normal": {
+      "url": "/models/forms/sandslash-alola.glb",
+      "bytes": 149736,
+      "sha256": "22c2ff61e57bb09a0ba2cc498bb07a0d7c3ebff2776eb6c1824f141e22ccd235"
+    },
+    "rare": {
+      "url": "/models/forms/sandslash-alola-shiny.glb",
+      "bytes": 233524,
+      "sha256": "4e25cae25a6fbfa222489f0d865a4a4d37e8865c6c1c43b78eed39c6858d728f"
+    }
+  },
+  {
+    "id": "vulpix-alola",
+    "pokemonId": 10103,
+    "normal": {
+      "url": "/models/forms/vulpix-alola.glb",
+      "bytes": 144940,
+      "sha256": "80720e1c0ba0106a90d26813f56100dd522d4c10fe1df93ad5fbc82bda1d5f55"
+    },
+    "rare": {
+      "url": "/models/forms/vulpix-alola-shiny.glb",
+      "bytes": 216128,
+      "sha256": "68fbaacb133503986dcdbc65cba9b76af13ebe4d008365662535917360211372"
+    }
+  },
+  {
+    "id": "ninetales-alola",
+    "pokemonId": 10104,
+    "normal": {
+      "url": "/models/forms/ninetales-alola.glb",
+      "bytes": 756032,
+      "sha256": "197caee28a09d4ff0efe89d6852d95998eda18d0455948e559f6a269b7630a41"
+    },
+    "rare": {
+      "url": "/models/forms/ninetales-alola-shiny.glb",
+      "bytes": 896544,
+      "sha256": "6ea1e7f8ba476666a7e1c4b1317a65921e04cec0483a6d1385b9ff0974e9db68"
+    }
+  },
+  {
+    "id": "diglett-alola",
+    "pokemonId": 10105,
+    "normal": {
+      "url": "/models/forms/diglett-alola.glb",
+      "bytes": 74408,
+      "sha256": "88d892340d3e9ffadf76409932baad36b4adeea9f5711592d835291764e740b0"
+    },
+    "rare": {
+      "url": "/models/forms/diglett-alola-shiny.glb",
+      "bytes": 114700,
+      "sha256": "7b2591ccffe4bc7a522a7cdccaf3098dca1fc6978b9341d32cb8a62dabddd8e0"
+    }
+  },
+  {
+    "id": "dugtrio-alola",
+    "pokemonId": 10106,
+    "normal": {
+      "url": "/models/forms/dugtrio-alola.glb",
+      "bytes": 249988,
+      "sha256": "f64087b5b29521ed372401ff8ebe35d6e542f3c425912a84808f0c15821a0961"
+    },
+    "rare": {
+      "url": "/models/forms/dugtrio-alola-shiny.glb",
+      "bytes": 387672,
+      "sha256": "f701d3c4022bd091771fff63392b26e4c48feed637944518b36c8a1dde6087fe"
+    }
+  },
+  {
+    "id": "meowth-alola",
+    "pokemonId": 10107,
+    "normal": {
+      "url": "/models/forms/meowth-alola.glb",
+      "bytes": 183648,
+      "sha256": "b87749371609f4983a7bfdfa61fd9252101df6b392691646737b4d62ae7ff7e5"
+    },
+    "rare": {
+      "url": "/models/forms/meowth-alola-shiny.glb",
+      "bytes": 365572,
+      "sha256": "67c22e93b05761d53c592fe1a63e1daa2335236741a5641e916d54fb92371095"
+    }
+  },
+  {
+    "id": "persian-alola",
+    "pokemonId": 10108,
+    "normal": {
+      "url": "/models/forms/persian-alola.glb",
+      "bytes": 154772,
+      "sha256": "f7670e521864147bc017c810b0f50d8676939a1040b27cdaab73d27e95f09489"
+    },
+    "rare": {
+      "url": "/models/forms/persian-alola-shiny.glb",
+      "bytes": 275964,
+      "sha256": "a780497b9ef535236bb2989863702d4c2cb10b73af2b47dd42054a63dc0a4e8f"
+    }
+  },
+  {
+    "id": "geodude-alola",
+    "pokemonId": 10109,
+    "normal": {
+      "url": "/models/forms/geodude-alola.glb",
+      "bytes": 112924,
+      "sha256": "4d15d0cfedd677421f0979fd8207c5dae124b02ad6568e9a9e86169225234b6a"
+    },
+    "rare": {
+      "url": "/models/forms/geodude-alola-shiny.glb",
+      "bytes": 182584,
+      "sha256": "f893bdce97b83e9677e5f69f90656d4039f7078112e20294d7f375d252457100"
+    }
+  },
+  {
+    "id": "graveler-alola",
+    "pokemonId": 10110,
+    "normal": {
+      "url": "/models/forms/graveler-alola.glb",
+      "bytes": 157380,
+      "sha256": "736750ee6802af6fca06a8fcb3ea1a2b4f70d848400062b20f4727b4b6d3ae58"
+    },
+    "rare": {
+      "url": "/models/forms/graveler-alola-shiny.glb",
+      "bytes": 184516,
+      "sha256": "67bcc69bf5991521810acf0fcb6791472b68d5d36c81a8bece6effca19ef1e1f"
+    }
+  },
+  {
+    "id": "golem-alola",
+    "pokemonId": 10111,
+    "normal": {
+      "url": "/models/forms/golem-alola.glb",
+      "bytes": 157680,
+      "sha256": "d3a35948aa4f428155cb7cf37a7d0b964e2c91c909d9176cf662f18c28d57093"
+    },
+    "rare": {
+      "url": "/models/forms/golem-alola-shiny.glb",
+      "bytes": 269436,
+      "sha256": "4984ef49149d2d5041d76fb2841d1f54582b845b2eae4051b7ae61b5125b8174"
+    }
+  },
+  {
+    "id": "grimer-alola",
+    "pokemonId": 10112,
+    "normal": {
+      "url": "/models/forms/grimer-alola.glb",
+      "bytes": 459524,
+      "sha256": "a5d1e810d4269be71bdbc5a7a4d01abb309a2bf6de596a2df88349bb09fdd3de"
+    },
+    "rare": {
+      "url": "/models/forms/grimer-alola-shiny.glb",
+      "bytes": 751196,
+      "sha256": "c8382e3f8dbcb6ec73b147be56664c626ca11d55d9f6ee46120b997126c4f32b"
+    }
+  },
+  {
+    "id": "muk-alola",
+    "pokemonId": 10113,
+    "normal": {
+      "url": "/models/forms/muk-alola.glb",
+      "bytes": 296924,
+      "sha256": "cddbd3ce66a3d113e176285766cdbb0b5d833ca9b96390200097bc59580bc080"
+    },
+    "rare": {
+      "url": "/models/forms/muk-alola-shiny.glb",
+      "bytes": 355292,
+      "sha256": "0063db5c50cc005063dd92c0961c242bd64e84f4d99f8a84ff5a3b1b437d2780"
+    }
+  },
+  {
+    "id": "exeggutor-alola",
+    "pokemonId": 10114,
+    "normal": {
+      "url": "/models/forms/exeggutor-alola.glb",
+      "bytes": 296388,
+      "sha256": "315c58a36870ea8e8e74c088b67c6dee717a303b0997c1382435c4a2e60e9edc"
+    },
+    "rare": {
+      "url": "/models/forms/exeggutor-alola-shiny.glb",
+      "bytes": 440384,
+      "sha256": "8f564d444362762ca0ef148a167dd48743e9a11811fdd95b5f91c1dea06d12f4"
+    }
+  },
+  {
+    "id": "marowak-alola",
+    "pokemonId": 10115,
+    "normal": {
+      "url": "/models/forms/marowak-alola.glb",
+      "bytes": 201052,
+      "sha256": "06d7b24e2164ca76d86179a5555b34acc946b496c5ce89463f98fe1dca8acfd8"
+    },
+    "rare": {
+      "url": "/models/forms/marowak-alola-shiny.glb",
+      "bytes": 359720,
+      "sha256": "e493b637073c159f6e590f09d807f687b96d44d2b0ee312984ad26340afe373c"
+    }
+  },
+  {
+    "id": "meowth-galar",
+    "pokemonId": 10161,
+    "normal": {
+      "url": "/models/forms/meowth-galar.glb",
+      "bytes": 197660,
+      "sha256": "1a429f141b41a85f12cb6eee4fadc8e72873e3fba98121a41b4c455adb0bfa4e"
+    },
+    "rare": {
+      "url": "/models/forms/meowth-galar-shiny.glb",
+      "bytes": 336500,
+      "sha256": "fff25b8957290a02c95a6ebad15daecfc447f4c8e1a27a2edc2bb9c4d3b13e15"
+    }
+  },
+  {
+    "id": "ponyta-galar",
+    "pokemonId": 10162,
+    "normal": {
+      "url": "/models/forms/ponyta-galar.glb",
+      "bytes": 252752,
+      "sha256": "22cf4e28498d572c212f97b424a75a07239de867538129ef389c05455282f9cf"
+    },
+    "rare": {
+      "url": "/models/forms/ponyta-galar-shiny.glb",
+      "bytes": 335272,
+      "sha256": "966c44240b18e9282f4d74bfc1c57e32cdeae4b01f3dd5922a7718e7c40b5495"
+    }
+  },
+  {
+    "id": "rapidash-galar",
+    "pokemonId": 10163,
+    "normal": {
+      "url": "/models/forms/rapidash-galar.glb",
+      "bytes": 418036,
+      "sha256": "6adf41e22c8120af5b4404242f4de94e5aa5456ae57ba9f405b1a4af0e60f2e8"
+    },
+    "rare": {
+      "url": "/models/forms/rapidash-galar-shiny.glb",
+      "bytes": 519408,
+      "sha256": "9acc307d73a84a9702efaaa1b596952e134e29792a7951ec6868107a53c5bc3b"
+    }
+  },
+  {
+    "id": "slowpoke-galar",
+    "pokemonId": 10164,
+    "normal": {
+      "url": "/models/forms/slowpoke-galar.glb",
+      "bytes": 135544,
+      "sha256": "bc6b4451684e79d7eb5d6a03d843f624f0a576f22e3a1a9ec22d3a01f8ce646e"
+    },
+    "rare": {
+      "url": "/models/forms/slowpoke-galar-shiny.glb",
+      "bytes": 332044,
+      "sha256": "5300f3c7aa0537095a0e39023c2f92056a57e47af98deac45fb1de79077ac074"
+    }
+  },
+  {
+    "id": "slowbro-galar",
+    "pokemonId": 10165,
+    "normal": {
+      "url": "/models/forms/slowbro-galar.glb",
+      "bytes": 172928,
+      "sha256": "801876e663fca2d756d652c823155b4296a001c1a17e3305ea663d7824de3744"
+    },
+    "rare": {
+      "url": "/models/forms/slowbro-galar-shiny.glb",
+      "bytes": 400772,
+      "sha256": "f1528a5c3bda09c1962407044ba44b661cc632ae926eb3b109fb1f096cbc3f49"
+    }
+  },
+  {
+    "id": "farfetchd-galar",
+    "pokemonId": 10166,
+    "normal": {
+      "url": "/models/forms/farfetchd-galar.glb",
+      "bytes": 201600,
+      "sha256": "aa85dd80784127e7aa455b85faf7272e27404e2d6ea44391f33c6b2f238ce2a2"
+    },
+    "rare": {
+      "url": "/models/forms/farfetchd-galar-shiny.glb",
+      "bytes": 321008,
+      "sha256": "94392ddb7fa99a6012ce8aa5f1865ed0763f7862e44b17690e026c2a9df231a2"
+    }
+  },
+  {
+    "id": "weezing-galar",
+    "pokemonId": 10167,
+    "normal": {
+      "url": "/models/forms/weezing-galar.glb",
+      "bytes": 392356,
+      "sha256": "cf323fc50f63b719c3594a27d8df8b146ae3233bca431d31765a49260797f673"
+    },
+    "rare": {
+      "url": "/models/forms/weezing-galar-shiny.glb",
+      "bytes": 619104,
+      "sha256": "5fe24ad846d0940bc540183e8138c9e62b676454dbcb549eb4ae168ad93a36d1"
+    }
+  },
+  {
+    "id": "mr-mime-galar",
+    "pokemonId": 10168,
+    "normal": {
+      "url": "/models/forms/mr-mime-galar.glb",
+      "bytes": 186820,
+      "sha256": "3fc8a507af04e6abfadb1b53bd21d1cde0a13cb7a1c2114b0c8cc6407b20256c"
+    },
+    "rare": {
+      "url": "/models/forms/mr-mime-galar-shiny.glb",
+      "bytes": 430156,
+      "sha256": "29fe811722154607c2650c26ac01ad97884bf3dccce51cc38ed2ca7aaabde94c"
+    }
+  },
+  {
+    "id": "articuno-galar",
+    "pokemonId": 10169,
+    "normal": {
+      "url": "/models/forms/articuno-galar.glb",
+      "bytes": 411036,
+      "sha256": "2b613dace0cded5d0a58ed1c9452222f482af5b56077134b2e72514b0ed04153"
+    },
+    "rare": {
+      "url": "/models/forms/articuno-galar-shiny.glb",
+      "bytes": 690632,
+      "sha256": "c9375e710335f8682fd93f98731360bc9974252001f9a8bd060b095ac442b376"
+    }
+  },
+  {
+    "id": "zapdos-galar",
+    "pokemonId": 10170,
+    "normal": {
+      "url": "/models/forms/zapdos-galar.glb",
+      "bytes": 210480,
+      "sha256": "5ec914d8d238bb001ebb870b2aa8b47925f9a355427d1ecd4467928df8e5cf76"
+    },
+    "rare": {
+      "url": "/models/forms/zapdos-galar-shiny.glb",
+      "bytes": 324676,
+      "sha256": "56e9f6b04ef7b2f47226e3bce838706de305ef45a859d47e96737683596967f5"
+    }
+  },
+  {
+    "id": "moltres-galar",
+    "pokemonId": 10171,
+    "normal": {
+      "url": "/models/forms/moltres-galar.glb",
+      "bytes": 499976,
+      "sha256": "efb0740fb1d6bcb73cf97b22532faced4b1d581f37505144d63cb76419d5ee2f"
+    },
+    "rare": {
+      "url": "/models/forms/moltres-galar-shiny.glb",
+      "bytes": 796732,
+      "sha256": "7e7dc66c45bf97c3e5a1231e02fbf52cc0e29cbbed754f00add72745436da200"
+    }
+  },
+  {
+    "id": "slowking-galar",
+    "pokemonId": 10172,
+    "normal": {
+      "url": "/models/forms/slowking-galar.glb",
+      "bytes": 317208,
+      "sha256": "07d91a6cbec9d3b0ebf419aa3bca7589f74f85e86cd9713bb540afd154952ed5"
+    },
+    "rare": {
+      "url": "/models/forms/slowking-galar-shiny.glb",
+      "bytes": 628148,
+      "sha256": "0cbcbba1b85b9ed17bc6bbc23a7170567a4a4f526b833d2b8edf91436e48bf4a"
+    }
+  },
+  {
+    "id": "corsola-galar",
+    "pokemonId": 10173,
+    "normal": {
+      "url": "/models/forms/corsola-galar.glb",
+      "bytes": 251048,
+      "sha256": "dd1a36477125961cbd84b6c7f9ddac93df934777d4ac6cda33201f8b3ad890c5"
+    },
+    "rare": {
+      "url": "/models/forms/corsola-galar-shiny.glb",
+      "bytes": 366840,
+      "sha256": "f8be5b8d39fa575f5fb43783da0a584dd0c6c68121ebecb659de929c3ff68bdd"
+    }
+  },
+  {
+    "id": "zigzagoon-galar",
+    "pokemonId": 10174,
+    "normal": {
+      "url": "/models/forms/zigzagoon-galar.glb",
+      "bytes": 137648,
+      "sha256": "0a5e49006cea6c0cb97624883f96695711b3010e03473bb1bb69b851c72f6a77"
+    },
+    "rare": {
+      "url": "/models/forms/zigzagoon-galar-shiny.glb",
+      "bytes": 240716,
+      "sha256": "2c8286b573c03910acdb74d19daff374269dd79ae45b860253a8edcab886d350"
+    }
+  },
+  {
+    "id": "linoone-galar",
+    "pokemonId": 10175,
+    "normal": {
+      "url": "/models/forms/linoone-galar.glb",
+      "bytes": 173584,
+      "sha256": "60a912f92da7631e612b961adae857cf612a5ed702c0890a2a72e9b59755d341"
+    },
+    "rare": {
+      "url": "/models/forms/linoone-galar-shiny.glb",
+      "bytes": 371312,
+      "sha256": "b1ca0b152cf1ab143b70b4890df7ddf51563b2258c5b6115bce23669792688ab"
+    }
+  },
+  {
+    "id": "darumaka-galar",
+    "pokemonId": 10176,
+    "normal": {
+      "url": "/models/forms/darumaka-galar.glb",
+      "bytes": 156348,
+      "sha256": "dffbd2149d128d7162ed068a2bea4f1f9506aa6aede75dbafa40ac5a08d5f6d0"
+    },
+    "rare": {
+      "url": "/models/forms/darumaka-galar-shiny.glb",
+      "bytes": 416800,
+      "sha256": "5006d6f9d5239a3c9269bc31659fa1f52bceccdb7bc6b83753e58ae6d42d0b68"
+    }
+  },
+  {
+    "id": "darmanitan-galar-standard",
+    "pokemonId": 10177,
+    "normal": {
+      "url": "/models/forms/darmanitan-galar-standard.glb",
+      "bytes": 187488,
+      "sha256": "2efdded7ead1b91cc533d0df62a76fb5aabadae6d243b1e055baf11443addca1"
+    },
+    "rare": {
+      "url": "/models/forms/darmanitan-galar-standard-shiny.glb",
+      "bytes": 325152,
+      "sha256": "14596885f3dfc3c067223b0fa3dd46efebb74d9acdd866734db738494280dd77"
+    }
+  },
+  {
+    "id": "darmanitan-galar-zen",
+    "pokemonId": 10178,
+    "normal": {
+      "url": "/models/forms/darmanitan-galar-zen.glb",
+      "bytes": 161036,
+      "sha256": "649ee497e57e5abf7ae1035bdc80d112f85ed0057d516dd6aab49f3a71a49a8d"
+    },
+    "rare": {
+      "url": "/models/forms/darmanitan-galar-zen-shiny.glb",
+      "bytes": 387240,
+      "sha256": "cb0dc4572095ab1213f0f7f50dc10d778752fba8ccaf0008ff9280ebed683336"
+    }
+  },
+  {
+    "id": "yamask-galar",
+    "pokemonId": 10179,
+    "normal": {
+      "url": "/models/forms/yamask-galar.glb",
+      "bytes": 103952,
+      "sha256": "3b20ff2dfa9c8d47c2b633a628459d13eb5ec15f1c01ab9cd31b73ae565b0c68"
+    },
+    "rare": {
+      "url": "/models/forms/yamask-galar-shiny.glb",
+      "bytes": 168796,
+      "sha256": "0474c808952b830de9c7a7b54f4bd39f86117b3083dce443627004876826941a"
+    }
+  },
+  {
+    "id": "stunfisk-galar",
+    "pokemonId": 10180,
+    "normal": {
+      "url": "/models/forms/stunfisk-galar.glb",
+      "bytes": 116136,
+      "sha256": "6bcf5f4188f60c630f9fad7fcc810b0414f374896c6a86243b57e981a1184057"
+    },
+    "rare": {
+      "url": "/models/forms/stunfisk-galar-shiny.glb",
+      "bytes": 224064,
+      "sha256": "e149161011c9c5e9759804608b6e16fa07dd0752a64b36bd460d60ce9c67c96b"
+    }
+  },
+  {
+    "id": "growlithe-hisui",
+    "pokemonId": 10229,
+    "normal": {
+      "url": "/models/forms/growlithe-hisui.glb",
+      "bytes": 124364,
+      "sha256": "56eea214c9e377c14b3d73a8b5c78be529cf67ea85e7c40b917a66d4907e9e3b"
+    },
+    "rare": {
+      "url": "/models/forms/growlithe-hisui-shiny.glb",
+      "bytes": 191532,
+      "sha256": "18966d1928b58af3b476a8894ba6c7389330a34790486a4679834fec4d9e6d27"
+    }
+  },
+  {
+    "id": "arcanine-hisui",
+    "pokemonId": 10230,
+    "normal": {
+      "url": "/models/forms/arcanine-hisui.glb",
+      "bytes": 215580,
+      "sha256": "adb03175d645ffd807115b4ffbed57b5dee9c8165420db038e6c1eb565115578"
+    },
+    "rare": {
+      "url": "/models/forms/arcanine-hisui-shiny.glb",
+      "bytes": 401228,
+      "sha256": "24b1ad844e7506acce954d2575cc297b6150a61d9be6993e6e1d648373e25750"
+    }
+  },
+  {
+    "id": "voltorb-hisui",
+    "pokemonId": 10231,
+    "normal": {
+      "url": "/models/forms/voltorb-hisui.glb",
+      "bytes": 61576,
+      "sha256": "cdfaa50f75241f4dec26fae9d550d471d4e8f779f06d5d38e60a771bef0931fe"
+    },
+    "rare": {
+      "url": "/models/forms/voltorb-hisui-shiny.glb",
+      "bytes": 131628,
+      "sha256": "cd552bf401b6b1ebf6abb19842c35064675d7e6ce971e1a5ef5d4c02bfbb971b"
+    }
+  },
+  {
+    "id": "electrode-hisui",
+    "pokemonId": 10232,
+    "normal": {
+      "url": "/models/forms/electrode-hisui.glb",
+      "bytes": 62196,
+      "sha256": "1e9b7730a2db3b176f9b08385df7ee4bf860c95bb7367f37d50bd3539bdaaf85"
+    },
+    "rare": {
+      "url": "/models/forms/electrode-hisui-shiny.glb",
+      "bytes": 109092,
+      "sha256": "f53679f90ca3cc31a71760ebc567419790a081a068572ebe921e36384d0bf13b"
+    }
+  },
+  {
+    "id": "typhlosion-hisui",
+    "pokemonId": 10233,
+    "normal": {
+      "url": "/models/forms/typhlosion-hisui.glb",
+      "bytes": 460824,
+      "sha256": "889c193c7f9ad437b36e3be4c7455ebe40fce63c7eff2a5a7c2ca15a2e7802ac"
+    },
+    "rare": {
+      "url": "/models/forms/typhlosion-hisui-shiny.glb",
+      "bytes": 580784,
+      "sha256": "bee46b6b18f138c98580c78de7611ea3f101bbd098a45c9798c2c50ad60cfdc4"
+    }
+  },
+  {
+    "id": "qwilfish-hisui",
+    "pokemonId": 10234,
+    "normal": {
+      "url": "/models/forms/qwilfish-hisui.glb",
+      "bytes": 117108,
+      "sha256": "050ed05eb061003ac45abeda605c2d45eaf5f1600d3d58fecca0640ba6344e19"
+    },
+    "rare": {
+      "url": "/models/forms/qwilfish-hisui-shiny.glb",
+      "bytes": 256688,
+      "sha256": "aaf77b791497e7a8a708b00d5310661c6391b69aeb922db71c677ce84e99e216"
+    }
+  },
+  {
+    "id": "sneasel-hisui",
+    "pokemonId": 10235,
+    "normal": {
+      "url": "/models/forms/sneasel-hisui.glb",
+      "bytes": 149252,
+      "sha256": "6f98cd40794d9755664712152c0b328564ad7423264d8b4d7a50da18653baafa"
+    },
+    "rare": {
+      "url": "/models/forms/sneasel-hisui-shiny.glb",
+      "bytes": 309540,
+      "sha256": "3eade33e9326e935045f3ba0d346b8099d49c573a472320a9ec14565203d3efb"
+    }
+  },
+  {
+    "id": "samurott-hisui",
+    "pokemonId": 10236,
+    "normal": {
+      "url": "/models/forms/samurott-hisui.glb",
+      "bytes": 201432,
+      "sha256": "a865296ca40ce5e7b5deae123c92da79764894dbdac85b38d2aec5c7d2ca9b70"
+    },
+    "rare": {
+      "url": "/models/forms/samurott-hisui-shiny.glb",
+      "bytes": 285640,
+      "sha256": "8e1197c503a35be2601014984ec3e8da0436c5ca43ac137675475ba25780dbf7"
+    }
+  },
+  {
+    "id": "lilligant-hisui",
+    "pokemonId": 10237,
+    "normal": {
+      "url": "/models/forms/lilligant-hisui.glb",
+      "bytes": 150108,
+      "sha256": "41335e7391a3c472feb1f790eb42a3eae0208171d4843891d2fc5c73f26b5d3d"
+    },
+    "rare": {
+      "url": "/models/forms/lilligant-hisui-shiny.glb",
+      "bytes": 338376,
+      "sha256": "d4ab2c570ff228b4b1e0fec4254e894ad023637dc7b54bb242fcb556106d2a07"
+    }
+  },
+  {
+    "id": "zorua-hisui",
+    "pokemonId": 10238,
+    "normal": {
+      "url": "/models/forms/zorua-hisui.glb",
+      "bytes": 269112,
+      "sha256": "0bfae8dbfdefb7a18259a0d7730c7423727c90f24d82092872c0c8c49ed055c3"
+    },
+    "rare": {
+      "url": "/models/forms/zorua-hisui-shiny.glb",
+      "bytes": 468304,
+      "sha256": "cc42b6d8f1668643faa9abc62f278a7b6fa6c3d6179ffd101413bbea1fba4fdb"
+    }
+  },
+  {
+    "id": "zoroark-hisui",
+    "pokemonId": 10239,
+    "normal": {
+      "url": "/models/forms/zoroark-hisui.glb",
+      "bytes": 865528,
+      "sha256": "c85711fe03c7461d727a437642fe327c6f53dd68abc02d86e392ca7800f19a83"
+    },
+    "rare": {
+      "url": "/models/forms/zoroark-hisui-shiny.glb",
+      "bytes": 1210488,
+      "sha256": "1c688f8c15f00828fb08b74fc494d0eb9696e15513c306ed1b2341306ed9d1c5"
+    }
+  },
+  {
+    "id": "braviary-hisui",
+    "pokemonId": 10240,
+    "normal": {
+      "url": "/models/forms/braviary-hisui.glb",
+      "bytes": 313484,
+      "sha256": "2c05d752f42648a95d6da4f0ba8c7cf6f8ef9a55785244339813d15b56679406"
+    },
+    "rare": {
+      "url": "/models/forms/braviary-hisui-shiny.glb",
+      "bytes": 446976,
+      "sha256": "d1ff23c315f465a27541675ddd243018e1d1258b35fa35b6b9ab26bb5d2164c2"
+    }
+  },
+  {
+    "id": "sliggoo-hisui",
+    "pokemonId": 10241,
+    "normal": {
+      "url": "/models/forms/sliggoo-hisui.glb",
+      "bytes": 133644,
+      "sha256": "caf57596b20e26544c30c29bf6f4fe82d7af79a51049b9658bbc7826441f3890"
+    },
+    "rare": {
+      "url": "/models/forms/sliggoo-hisui-shiny.glb",
+      "bytes": 180600,
+      "sha256": "1e03b4a219d775a7a73b3791cc76a7d567460b78a43f27069c99b4565c475851"
+    }
+  },
+  {
+    "id": "goodra-hisui",
+    "pokemonId": 10242,
+    "normal": {
+      "url": "/models/forms/goodra-hisui.glb",
+      "bytes": 269204,
+      "sha256": "6b191128afb6421948c0b02b2a994f3a2b71f94688a1b178eb8f7c85ffe63869"
+    },
+    "rare": {
+      "url": "/models/forms/goodra-hisui-shiny.glb",
+      "bytes": 385984,
+      "sha256": "8d733132e5b3ed38fd990660cd6fd0eb3b111b7c37341e95ffbdd8c494f442ec"
+    }
+  },
+  {
+    "id": "avalugg-hisui",
+    "pokemonId": 10243,
+    "normal": {
+      "url": "/models/forms/avalugg-hisui.glb",
+      "bytes": 260868,
+      "sha256": "a823f4354e763121e5d6178019db1b122a95519e90baa42290b708fff260479d"
+    },
+    "rare": {
+      "url": "/models/forms/avalugg-hisui-shiny.glb",
+      "bytes": 418852,
+      "sha256": "2d28fdf57b17945be0275ffbcfd26b57ca95cd39206237efaf75c712434cc02c"
+    }
+  },
+  {
+    "id": "decidueye-hisui",
+    "pokemonId": 10244,
+    "normal": {
+      "url": "/models/forms/decidueye-hisui.glb",
+      "bytes": 300456,
+      "sha256": "02d765d9ef374b3f0eedd16cadc1f9f56938930642ec58718061b7e83e4f7b4b"
+    },
+    "rare": {
+      "url": "/models/forms/decidueye-hisui-shiny.glb",
+      "bytes": 428356,
+      "sha256": "367ab66f701155587a4763ff1bbd252332fdc217a233696ef7937ebbef49866c"
+    }
+  },
+  {
+    "id": "tauros-paldea-combat-breed",
+    "pokemonId": 10250,
+    "normal": {
+      "url": "/models/forms/tauros-paldea-combat-breed.glb",
+      "bytes": 173028,
+      "sha256": "53de1523b6ad45284ed2b52f328b7d110a686e2284de0c0811e94b58fb8d3855"
+    },
+    "rare": {
+      "url": "/models/forms/tauros-paldea-combat-breed-shiny.glb",
+      "bytes": 255188,
+      "sha256": "d0c8f0cdc93795be29c45ad4aee7aca360c7e099b54175c3d3f94c5c6cae8b10"
+    }
+  },
+  {
+    "id": "tauros-paldea-blaze-breed",
+    "pokemonId": 10251,
+    "normal": {
+      "url": "/models/forms/tauros-paldea-blaze-breed.glb",
+      "bytes": 215160,
+      "sha256": "312a3d991b611eabf6e8b12b90b7a1e38431aa272613185203e69a5199f184b1"
+    },
+    "rare": {
+      "url": "/models/forms/tauros-paldea-blaze-breed-shiny.glb",
+      "bytes": 338504,
+      "sha256": "5509f82a5489831d08a171f58d87f334fb50bd08fd09c16ad82d1f4afcde2d97"
+    }
+  },
+  {
+    "id": "tauros-paldea-aqua-breed",
+    "pokemonId": 10252,
+    "normal": {
+      "url": "/models/forms/tauros-paldea-aqua-breed.glb",
+      "bytes": 208504,
+      "sha256": "3bee35a16e4d86bca0b41595a65f700c5e5754865a511dd902f1f905519904f2"
+    },
+    "rare": {
+      "url": "/models/forms/tauros-paldea-aqua-breed-shiny.glb",
+      "bytes": 322660,
+      "sha256": "d5fbcbcb32cf369fa9cc60a0e32d9aba40f16e08b4d239232a5e85433259f793"
+    }
+  },
+  {
+    "id": "wooper-paldea",
+    "pokemonId": 10253,
+    "normal": {
+      "url": "/models/forms/wooper-paldea.glb",
+      "bytes": 100284,
+      "sha256": "d2bb20f9d3d649fd64c489d8114fd4f273ab0fc578a70e0e4618a438d6882137"
+    },
+    "rare": {
+      "url": "/models/forms/wooper-paldea-shiny.glb",
+      "bytes": 128596,
+      "sha256": "4d3cfa90858fff0206b08348dd68476fcb2c5b47f731a54e9ecbe672dbb2cf47"
+    }
+  }
+]

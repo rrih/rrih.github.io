@@ -1,0 +1,744 @@
+[
+  {
+    "id": "venusaur-mega",
+    "transforms": 123,
+    "transformHierarchySha256": "7d3cc07a6e7c8c49b1c1d7eeae65175e0801157b359f0c4108514bc573ff7c59",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 12
+  },
+  {
+    "id": "charizard-mega-x",
+    "transforms": 113,
+    "transformHierarchySha256": "32d20b0f5aae037b700c1522ee8bec1ae3cd15262c295461888043e8d6263290",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 12
+  },
+  {
+    "id": "charizard-mega-y",
+    "transforms": 82,
+    "transformHierarchySha256": "c2efb5434a74dce905d2fb6d58c53a486426a0eb9887afc4a7cc379b5cd3e94d",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "blastoise-mega",
+    "transforms": 59,
+    "transformHierarchySha256": "493bdd9f569e63fbb8b4a9a65e9c57f85ad7a08c4285a8a9066a56e515a73527",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 20
+  },
+  {
+    "id": "alakazam-mega",
+    "transforms": 76,
+    "transformHierarchySha256": "865637d1054876a06a552ece3fe13c2b41279b74b94a1da20803ed86e619fefc",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "gengar-mega",
+    "transforms": 79,
+    "transformHierarchySha256": "80449ee20af3d627c21b37ac846cfddee41723606ce9c5e9b36391ab20fab5ff",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 6
+  },
+  {
+    "id": "kangaskhan-mega",
+    "transforms": 88,
+    "transformHierarchySha256": "792ddb957025029fac18bf3a5cbafe981cfdf63f241f9f4749e49bc704079126",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 15
+  },
+  {
+    "id": "pinsir-mega",
+    "transforms": 63,
+    "transformHierarchySha256": "aba372c8f3042fe54e35bd26040860fac1e8bdb4515bcd0b9936968f3d0cd82a",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 13
+  },
+  {
+    "id": "gyarados-mega",
+    "transforms": 56,
+    "transformHierarchySha256": "9dcc36a6cc03640b7baec0cb8f048a44932b22c6fabcb342121c60c602b2e375",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "aerodactyl-mega",
+    "transforms": 50,
+    "transformHierarchySha256": "49100ff4796ac4cd928ad9be702c6931f021ae2663d12034f284a9080bd0e6ca",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "mewtwo-mega-x",
+    "transforms": 67,
+    "transformHierarchySha256": "3f2c9235da1b757962cfad33337b5d9a2e0b2143d708ae505c4f525f37f315a0",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 4
+  },
+  {
+    "id": "mewtwo-mega-y",
+    "transforms": 60,
+    "transformHierarchySha256": "1fc770cc61b27f1b94c93bd005d9c35c2c3db236aa87b5301ad9bc9ca01dfd17",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "ampharos-mega",
+    "transforms": 78,
+    "transformHierarchySha256": "6145c7bd2f8a6b1be20adc88e8205e4b41a6ec97922a10a5cef2fff541a1d2e5",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "scizor-mega",
+    "transforms": 41,
+    "transformHierarchySha256": "0a344e14731b7921f382134a3cff11ce492e9da77bdc14fca24534ce58a7fb77",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 15
+  },
+  {
+    "id": "heracross-mega",
+    "transforms": 49,
+    "transformHierarchySha256": "a52107336049123aae140f5e9006a9851ad938462019acdefa956d37cbfb31c0",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 11
+  },
+  {
+    "id": "houndoom-mega",
+    "transforms": 52,
+    "transformHierarchySha256": "b43625d14555bd3f4bf7f3f7714625283ee90dcb951e0d61fb936c066bbeca2d",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 10
+  },
+  {
+    "id": "tyranitar-mega",
+    "transforms": 44,
+    "transformHierarchySha256": "ad399b226d231ceec80fbdc7160bb5eedd3fff2f030d39a078b1b75e8a2f0edd",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "blaziken-mega",
+    "transforms": 116,
+    "transformHierarchySha256": "06ea9b54265d12abfc7da61b440ff9303265d7923767d97e382485fb9305dc0d",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 20
+  },
+  {
+    "id": "gardevoir-mega",
+    "transforms": 84,
+    "transformHierarchySha256": "3c8bc1fa96780990f81736883322aaa75cc9365487d585996a293549ffc62daf",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "mawile-mega",
+    "transforms": 79,
+    "transformHierarchySha256": "7f13010a79df0121295702942508c2fe1e2b8b5423b511003bc3563bff40bc94",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 12
+  },
+  {
+    "id": "aggron-mega",
+    "transforms": 58,
+    "transformHierarchySha256": "5892a198d74cfe5819d63e29f37dfdd7b6019e2396aa8e78c2c2d12de1045c0f",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 16
+  },
+  {
+    "id": "medicham-mega",
+    "transforms": 134,
+    "transformHierarchySha256": "def638940b5d4534e2ccbc110922cd972149fcf6217a323aca9981d748179839",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "manectric-mega",
+    "transforms": 41,
+    "transformHierarchySha256": "ef44a25c161994faf41859d036adf010e7959d9fef53d89586b7939401bbb912",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "banette-mega",
+    "transforms": 86,
+    "transformHierarchySha256": "fd6cd32e13235b3efac908e66813ddb84c354d7a09289e729298c5c45409188b",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 16
+  },
+  {
+    "id": "absol-mega",
+    "transforms": 80,
+    "transformHierarchySha256": "188088c74ae4adfb10c0d70ce925e736c8b5f0b8250b699eb887142c7b7c4763",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "garchomp-mega",
+    "transforms": 48,
+    "transformHierarchySha256": "ad4f2a8a83521b42556e2e826fade25dc1a19d3defa0e4a7dc3a7286cbd29890",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "lucario-mega",
+    "transforms": 72,
+    "transformHierarchySha256": "ed9889a3232bdbdb52073a12c8b98bf06c2cd94b09ecfa10872c2b1b454ec887",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "abomasnow-mega",
+    "transforms": 64,
+    "transformHierarchySha256": "79b3b4a208efea72c02b8fbcb6ac06af7c00a6f6202429a71bab6ae0e1b94e45",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "latias-mega",
+    "transforms": 40,
+    "transformHierarchySha256": "220e2c8f30134d54cf79ef15967bd3e7f3a1c8274071daa34329928c97fa5aae",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "latios-mega",
+    "transforms": 40,
+    "transformHierarchySha256": "7bad83216e1d7fafaec1c4ffc167303e083889e064e63a1d4ebd0a1197e5545f",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "swampert-mega",
+    "transforms": 67,
+    "transformHierarchySha256": "e497377031b4cebbf0b694afab65010263d91950a43875c4a92db9956c0af183",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "sceptile-mega",
+    "transforms": 196,
+    "transformHierarchySha256": "04aca246faaffa6814e5373c95ba7ad6ab25668c58a949d67c31b071ba0fae23",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 12
+  },
+  {
+    "id": "sableye-mega",
+    "transforms": 46,
+    "transformHierarchySha256": "c30a6ba89964f481c5d9f1cd3bcdf207f1d10c7193231516a260256e57698d4b",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 6
+  },
+  {
+    "id": "altaria-mega",
+    "transforms": 136,
+    "transformHierarchySha256": "4fc6e844b2261f4a5886551f278c28c70341b5b287513ce5128082f7b9fe29ee",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 10
+  },
+  {
+    "id": "gallade-mega",
+    "transforms": 93,
+    "transformHierarchySha256": "c6ac34ea73eeeeaf067843a1f85400b49db0e305935eba2b78edef15edaaface",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 15
+  },
+  {
+    "id": "audino-mega",
+    "transforms": 82,
+    "transformHierarchySha256": "d29f7a4ccdd7989af867696d751489fd80218358039e5002c8aa217063469e8b",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "sharpedo-mega",
+    "transforms": 42,
+    "transformHierarchySha256": "9a77a4ef7e1fdecebd9ff684f14c488d275d197efe92ccd7a3ecc5d1af3948ca",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "slowbro-mega",
+    "transforms": 39,
+    "transformHierarchySha256": "16ee6a2628d4dc92269617520b36929ab4e4139c176c5fe1add033d4ffd3df68",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "steelix-mega",
+    "transforms": 75,
+    "transformHierarchySha256": "1773eefb0e74eb6d026d4c53e6193122bc4bae0ebad34ed90e125ca471d1711f",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "pidgeot-mega",
+    "transforms": 96,
+    "transformHierarchySha256": "3e78b986d37c86ef639f943350e15bf8490315b68ae2bde2fe04fc6c0f16a251",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "glalie-mega",
+    "transforms": 13,
+    "transformHierarchySha256": "70d30215e165fa75f1292057f5f02507614f2c31029bb9aea69cfab6a5533451",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 13
+  },
+  {
+    "id": "diancie-mega",
+    "transforms": 175,
+    "transformHierarchySha256": "24e91416d9828bdc81e29740d408bad5e543e53e9634c48df99731002aa5f1bd",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 22
+  },
+  {
+    "id": "metagross-mega",
+    "transforms": 72,
+    "transformHierarchySha256": "57d3de901cd9c3c0ac75fa52c3331d8a599766f0e45c546d3e6d6a0794dab379",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 14
+  },
+  {
+    "id": "rayquaza-mega",
+    "transforms": 162,
+    "transformHierarchySha256": "4b59b269e6c9005259aaa12a6bc4945fa70ceabe083a7567c2d63c2f2b9b3d0f",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 15
+  },
+  {
+    "id": "camerupt-mega",
+    "transforms": 60,
+    "transformHierarchySha256": "76f89f6f100532085cc1a9f6689ff203e8b3835ece05a8f1f3edbf86a6a2efd1",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 6
+  },
+  {
+    "id": "lopunny-mega",
+    "transforms": 61,
+    "transformHierarchySha256": "54067669267c9fec0f0cef3f4f7b35cecebcbc7a4a7022e28b2f99552c174ba3",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 10
+  },
+  {
+    "id": "salamence-mega",
+    "transforms": 71,
+    "transformHierarchySha256": "e55a042622aa72c44a5ba777b767a304f9c11439de1e59eed1bffc759ed1812a",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "beedrill-mega",
+    "transforms": 54,
+    "transformHierarchySha256": "252215390e1bd2433f8743de078fedc7d8cd05c359bdd9022ac511f20464a9e7",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 19
+  },
+  {
+    "id": "rattata-alola",
+    "transforms": 47,
+    "transformHierarchySha256": "8d8342bbc8b513ddcbd2f2ff84c1adff77418f29a1ceb700285dd5a0b471158b",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 6
+  },
+  {
+    "id": "raticate-alola",
+    "transforms": 65,
+    "transformHierarchySha256": "685bbc981fe4618f98365b386a98d12df5e00dfa280a2a239e58e707e2f21dc0",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "raichu-alola",
+    "transforms": 41,
+    "transformHierarchySha256": "0d1cdeae587eadffc8234bb63fafb93abc0ca786f0a6677fc83af70c098be383",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "sandshrew-alola",
+    "transforms": 42,
+    "transformHierarchySha256": "2ac81a472a61716547c98f1fbf180dce30121b62e025880874457b73c34c7384",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "sandslash-alola",
+    "transforms": 48,
+    "transformHierarchySha256": "f5084286ae6b104bdafea6686aef7b84abcbae315cc13e86c6db3bc09969a97f",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 6
+  },
+  {
+    "id": "vulpix-alola",
+    "transforms": 56,
+    "transformHierarchySha256": "0997c53f133f9be5f9fb1860aac6fa129b49632fcb36812ef45eff19d4288d32",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "ninetales-alola",
+    "transforms": 186,
+    "transformHierarchySha256": "ae935db3148d04e48426585698e51d312bc5db6502c8135b0405832ccb307656",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 6
+  },
+  {
+    "id": "diglett-alola",
+    "transforms": 23,
+    "transformHierarchySha256": "5387f27a69bead168560955ffc8fcc0cbe9b565f013ce7f55e410c5c8b448074",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 4
+  },
+  {
+    "id": "dugtrio-alola",
+    "transforms": 145,
+    "transformHierarchySha256": "b25dc7809d9a7759fc41c5d91a664e2f4bd3615b76bf1385c8b2518add15438b",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 13
+  },
+  {
+    "id": "meowth-alola",
+    "transforms": 63,
+    "transformHierarchySha256": "0910aa7bd1111540de4de433f9e7c9d6efbbc8750d97340ac0730ed11ddebde0",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "persian-alola",
+    "transforms": 68,
+    "transformHierarchySha256": "e545231ca260931aab11e97e99395719f4ffa140b3c5a7149b4e1e7f2e5a538a",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "geodude-alola",
+    "transforms": 51,
+    "transformHierarchySha256": "f47ee27128f3e30d3a933acc0f6f165bd4e8c4834dc584fe5e12f809255ad66b",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "graveler-alola",
+    "transforms": 68,
+    "transformHierarchySha256": "84db926e0a8e22c3bfd9c409e4110f0f57ed6c26d18650406551bd401385a6fb",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "golem-alola",
+    "transforms": 50,
+    "transformHierarchySha256": "4c45cf792e706edc199a16d2ba1a204e89f43fa01b9c055b9c7e929b1c7b195f",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "grimer-alola",
+    "transforms": 100,
+    "transformHierarchySha256": "dafc5af182a2e3a398e82c9fa175a2eaa026a2ea2c040ecb2bba637c0b6225b1",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 11
+  },
+  {
+    "id": "muk-alola",
+    "transforms": 128,
+    "transformHierarchySha256": "c3e7fed61faad1d16f61a5b630a7928e69852a8601c8cfa221c1c51084b8ba1c",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 6
+  },
+  {
+    "id": "exeggutor-alola",
+    "transforms": 105,
+    "transformHierarchySha256": "cc7fbce6a24dc531ae76468500629d914c117630bc6eb57a6146fbecb1572d8e",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 12
+  },
+  {
+    "id": "marowak-alola",
+    "transforms": 87,
+    "transformHierarchySha256": "e15c139371dfeffaf7aaafd914ad6f6b4c9bc65cfe717ddc2716750e5d15cb89",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 13
+  },
+  {
+    "id": "meowth-galar",
+    "transforms": 92,
+    "transformHierarchySha256": "9ec0a29a9af45c470666e3ce4ae8e903b447bcfbdba4aca35ff406e71f52b203",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "ponyta-galar",
+    "transforms": 118,
+    "transformHierarchySha256": "a55ec44110ab94dd4a383e3d1764564a3d196857620eb9792f5f9a04c6efce1c",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "rapidash-galar",
+    "transforms": 144,
+    "transformHierarchySha256": "569fed2bbb6eca1190560bec187ca2912ff00cad342c176b4d2965b64a489465",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "slowpoke-galar",
+    "transforms": 44,
+    "transformHierarchySha256": "8ec0684c4aa75135a80d7e5a02f061352e8f35c2351493de4bd17ed7807d26d2",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "slowbro-galar",
+    "transforms": 49,
+    "transformHierarchySha256": "1213b17e555b4bef5ea2db09f6c3d5b2f5284cc80ada7746ce7b301dbbfe440c",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "farfetchd-galar",
+    "transforms": 92,
+    "transformHierarchySha256": "d3aba77512654a608b81d1125deb54ac5bee4ef52ad1c373833cd90d409e6081",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "weezing-galar",
+    "transforms": 225,
+    "transformHierarchySha256": "f007730cbef9622481543a1d305874f48b5f4e0b6bd951f7404a13e64db4c3b0",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 22
+  },
+  {
+    "id": "mr-mime-galar",
+    "transforms": 60,
+    "transformHierarchySha256": "9eff255a1ca340f6c93c98a140542c1e23572548c8d5e77f35e6a49e870e2d08",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 14
+  },
+  {
+    "id": "articuno-galar",
+    "transforms": 163,
+    "transformHierarchySha256": "dba048cb91db9323fba2d51c9392bb30b4bfd06a20821a67c66e6e9d3f88398b",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "zapdos-galar",
+    "transforms": 139,
+    "transformHierarchySha256": "e511bbcfe5e2d3dc87dcb75755d1330c465f55ef701b3987785499f87361a4d7",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "moltres-galar",
+    "transforms": 193,
+    "transformHierarchySha256": "571d75f5f5747f2efac9fa2b3484250b010dfcc2984d47cd328579214336fcbf",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 16
+  },
+  {
+    "id": "slowking-galar",
+    "transforms": 135,
+    "transformHierarchySha256": "93853b4827ba837b8a57639a4b52b2b03a3bb9edac56871c93b90a692f7b7dbe",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "corsola-galar",
+    "transforms": 115,
+    "transformHierarchySha256": "15c313b7b30bdc741205efaf61d81a0b93a4c1c7526c8befdd20786a96260977",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 11
+  },
+  {
+    "id": "zigzagoon-galar",
+    "transforms": 60,
+    "transformHierarchySha256": "34a60253688084c8402f41ab033eadbba0bb753493be87f67a7064c43426cd37",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 4
+  },
+  {
+    "id": "linoone-galar",
+    "transforms": 73,
+    "transformHierarchySha256": "c3b4edb3cdcb298c0316abe6c83ed58a1c716a876b16b584b8f74cde71f7442a",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "darumaka-galar",
+    "transforms": 38,
+    "transformHierarchySha256": "43a3549eac030895b2e15d9c4451ebe6173af05f7fbf896943dff3dee5944062",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "darmanitan-galar-standard",
+    "transforms": 64,
+    "transformHierarchySha256": "b678ca5ba042101350d04940d040c604a8ac77309e4637e281d5e72e87b1c556",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 6
+  },
+  {
+    "id": "darmanitan-galar-zen",
+    "transforms": 25,
+    "transformHierarchySha256": "c7c7484111078485ecb06835ac82d2892ead3e40c00ae0e985423d16285cedf0",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "yamask-galar",
+    "transforms": 57,
+    "transformHierarchySha256": "ce649d9729a9844b01aa6248fb18c6ef5743a0d795bc719eb54cd4e638dba1fa",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 4
+  },
+  {
+    "id": "stunfisk-galar",
+    "transforms": 35,
+    "transformHierarchySha256": "dda9869b8a77fd3a37382c9984dd1afb00cc7f64f4003843e9b9dd2756d9fa52",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "growlithe-hisui",
+    "transforms": 58,
+    "transformHierarchySha256": "02a281dcfcf572124b5a66da4675c7db0f3020681aca259b20ca95d77aabd49e",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "arcanine-hisui",
+    "transforms": 76,
+    "transformHierarchySha256": "db2ace12130c73e3632784768fecf44c94dccfeb17ede8af35311b5474b3cddd",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "voltorb-hisui",
+    "transforms": 35,
+    "transformHierarchySha256": "0d691d05a8f4b6b3b9443d2f0d4d489728af8e1b664f4f0df46369027bcec7e6",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 3
+  },
+  {
+    "id": "electrode-hisui",
+    "transforms": 34,
+    "transformHierarchySha256": "eafc42ecc0e49a8d352ab78e56b3e8e6b926eb1a525e25bf04ebc8ea151013d3",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 2
+  },
+  {
+    "id": "typhlosion-hisui",
+    "transforms": 169,
+    "transformHierarchySha256": "b0b78863526efa8a0be98dffc89663758536abe937cef59aaa835308d769e539",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "qwilfish-hisui",
+    "transforms": 36,
+    "transformHierarchySha256": "7b58eae1391e3eab03e3a7377b312c87bc0c26df59ac6d86cfc1b0b40a0498ca",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 4
+  },
+  {
+    "id": "sneasel-hisui",
+    "transforms": 57,
+    "transformHierarchySha256": "906ec3a6aa33f75989fa815139302024d4965b2c633c8e3cc368cf611de51484",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "samurott-hisui",
+    "transforms": 112,
+    "transformHierarchySha256": "a6f458e1b899afa8489e81e45e9d98b56324c73c4b5a6099ff1d3944ec0f1cbd",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "lilligant-hisui",
+    "transforms": 50,
+    "transformHierarchySha256": "b79593ea39df68ac742a78b483d034199419593c515d6f167e5d702dfa5acab3",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "zorua-hisui",
+    "transforms": 109,
+    "transformHierarchySha256": "f5249f3c938f0f090d29887fd809a3e9a59274f4c3005759bcd74de75aeeb085",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 5
+  },
+  {
+    "id": "zoroark-hisui",
+    "transforms": 197,
+    "transformHierarchySha256": "5ca80bfd9c58b7d22daf284fe8d41670e7d2182b6202d6cccfc559c701587b71",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 6
+  },
+  {
+    "id": "braviary-hisui",
+    "transforms": 131,
+    "transformHierarchySha256": "598837948272983b5406446719b29255935847dfee39a36848e0e8d27315ae34",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 6
+  },
+  {
+    "id": "sliggoo-hisui",
+    "transforms": 67,
+    "transformHierarchySha256": "454cfc81326d758800e5694350b4fd66d51d36c7dcc80182ff0b1fca6d49a6f5",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 4
+  },
+  {
+    "id": "goodra-hisui",
+    "transforms": 145,
+    "transformHierarchySha256": "f448c7a8f3960d50a0e25598cb0230e740fbdec9056134263147e34c1177876f",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 7
+  },
+  {
+    "id": "avalugg-hisui",
+    "transforms": 99,
+    "transformHierarchySha256": "7d53f05285b2e931c1a20955e827f9809a900d66a9c08f67ae6a83efe9af281b",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "decidueye-hisui",
+    "transforms": 183,
+    "transformHierarchySha256": "b809bf6952a82d3c3a90796c4041be7ec13348a096743d99059422c23582a5b6",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 13
+  },
+  {
+    "id": "tauros-paldea-combat-breed",
+    "transforms": 84,
+    "transformHierarchySha256": "a9ffeef726daff81dc47da90ce5c3ef8a3b895c5698fd89ddda6ad511c33215c",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "tauros-paldea-blaze-breed",
+    "transforms": 87,
+    "transformHierarchySha256": "714ccf15c26206e48a216ef4b23c11f5fc7314b2a4eb9a5391ae56a9fdec6a1e",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 9
+  },
+  {
+    "id": "tauros-paldea-aqua-breed",
+    "transforms": 97,
+    "transformHierarchySha256": "a84544e0197fb6fe8b145bb0b6a3e10fb1001c67a363aa92e45585687b6967dc",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 8
+  },
+  {
+    "id": "wooper-paldea",
+    "transforms": 25,
+    "transformHierarchySha256": "e6eb3b95dbd60d6a0020469edeb31fdcfafc3ae763f052e73bc060c6659d86aa",
+    "normalAndRareTransformsIdentical": true,
+    "rendererMaterialSlots": 4
+  }
+]

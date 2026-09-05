@@ -1,0 +1,1 @@
+bun run dev-check && (cd atlas && bun run dev-check)

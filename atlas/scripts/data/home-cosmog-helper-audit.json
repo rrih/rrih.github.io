@@ -1,0 +1,26 @@
+{
+  "id": 789,
+  "materials": 10,
+  "texturedMaterials": 6,
+  "simplifiedEffects": [
+    "pm0789_00_00-SmokeCoreAVco",
+    "pm0789_00_00-SmokeCoreBVco",
+    "pm0789_00_00-SmokeMaskBVco",
+    "pm0789_00_00-SmokeMaskAVco"
+  ],
+  "uvFallbacks": [],
+  "layerUvApproximations": [],
+  "omittedEffects": [
+    "pm0789_00_00_SmokeCoreSkin"
+  ],
+  "additiveMaterials": [],
+  "stencilMaterials": [
+    "pm0789_00_00-SmokeCoreAVco",
+    "pm0789_00_00-SmokeCoreBVco",
+    "pm0789_00_00-SmokeMaskBVco",
+    "pm0789_00_00-SmokeMaskAVco"
+  ],
+  "emissiveMaterials": [],
+  "effectUvApproximations": [],
+  "bytes": 504924
+}

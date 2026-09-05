@@ -1,0 +1,86 @@
+{
+  "en": {
+    "label": "English",
+    "description": "Born in 1997. I've been having fun building web apps since 2019, from frontend and backend to infrastructure. I primarily work with TypeScript, Go and Cloudflare.",
+    "bio": "Born in 1997. I've been having fun building web apps since 2019, from frontend and backend to infrastructure.",
+    "stack": "I primarily work with TypeScript, Go and Cloudflare.",
+    "language": "Language"
+  },
+  "ja": {
+    "label": "日本語",
+    "description": "1997年生まれ。2019年からWebアプリづくりを楽しんでいます。フロントエンドからバックエンド、インフラまで手がけています。 主にTypeScript、Go、Cloudflareを利用しています。",
+    "bio": "1997年生まれ。2019年からWebアプリづくりを楽しんでいます。フロントエンドからバックエンド、インフラまで手がけています。",
+    "stack": "主にTypeScript、Go、Cloudflareを利用しています。",
+    "language": "言語"
+  },
+  "fr": {
+    "label": "Français",
+    "description": "Naissance en 1997. Depuis 2019, je prends plaisir à créer des applications web, du frontend au backend et à l’infrastructure. J’utilise principalement TypeScript, Go et Cloudflare.",
+    "bio": "Naissance en 1997. Depuis 2019, je prends plaisir à créer des applications web, du frontend au backend et à l’infrastructure.",
+    "stack": "J’utilise principalement TypeScript, Go et Cloudflare.",
+    "language": "Langue"
+  },
+  "de": {
+    "label": "Deutsch",
+    "description": "1997 geboren. Seit 2019 habe ich Spaß daran, Webanwendungen zu entwickeln – vom Frontend über das Backend bis zur Infrastruktur. Ich arbeite hauptsächlich mit TypeScript, Go und Cloudflare.",
+    "bio": "1997 geboren. Seit 2019 habe ich Spaß daran, Webanwendungen zu entwickeln – vom Frontend über das Backend bis zur Infrastruktur.",
+    "stack": "Ich arbeite hauptsächlich mit TypeScript, Go und Cloudflare.",
+    "language": "Sprache"
+  },
+  "es": {
+    "label": "Español",
+    "description": "Nací en 1997. Desde 2019 disfruto creando aplicaciones web, desde el frontend y el backend hasta la infraestructura. Utilizo principalmente TypeScript, Go y Cloudflare.",
+    "bio": "Nací en 1997. Desde 2019 disfruto creando aplicaciones web, desde el frontend y el backend hasta la infraestructura.",
+    "stack": "Utilizo principalmente TypeScript, Go y Cloudflare.",
+    "language": "Idioma"
+  },
+  "it": {
+    "label": "Italiano",
+    "description": "Classe 1997. Dal 2019 mi diverto a creare applicazioni web, dal frontend e backend fino all’infrastruttura. Utilizzo principalmente TypeScript, Go e Cloudflare.",
+    "bio": "Classe 1997. Dal 2019 mi diverto a creare applicazioni web, dal frontend e backend fino all’infrastruttura.",
+    "stack": "Utilizzo principalmente TypeScript, Go e Cloudflare.",
+    "language": "Lingua"
+  },
+  "pt": {
+    "label": "Português",
+    "description": "Nasci em 1997. Desde 2019, me divirto criando aplicações web, do frontend e backend à infraestrutura. Utilizo principalmente TypeScript, Go e Cloudflare.",
+    "bio": "Nasci em 1997. Desde 2019, me divirto criando aplicações web, do frontend e backend à infraestrutura.",
+    "stack": "Utilizo principalmente TypeScript, Go e Cloudflare.",
+    "language": "Idioma"
+  },
+  "ko": {
+    "label": "한국어",
+    "description": "1997년생입니다. 2019년부터 웹 앱 만드는 즐거움을 느끼며 프런트엔드부터 백엔드, 인프라까지 다루고 있습니다. 주로 TypeScript, Go, Cloudflare를 사용합니다.",
+    "bio": "1997년생입니다. 2019년부터 웹 앱 만드는 즐거움을 느끼며 프런트엔드부터 백엔드, 인프라까지 다루고 있습니다.",
+    "stack": "주로 TypeScript, Go, Cloudflare를 사용합니다.",
+    "language": "언어"
+  },
+  "zh-Hans": {
+    "label": "简体中文",
+    "description": "生于1997年。2019年起就乐于折腾Web应用，从前端、后端到基础设施都喜欢动手做。 主要使用TypeScript、Go和Cloudflare。",
+    "bio": "生于1997年。2019年起就乐于折腾Web应用，从前端、后端到基础设施都喜欢动手做。",
+    "stack": "主要使用TypeScript、Go和Cloudflare。",
+    "language": "语言"
+  },
+  "zh-Hant": {
+    "label": "繁體中文",
+    "description": "生於1997年。從2019年起就樂於動手做Web應用程式，從前端、後端到基礎設施都喜歡嘗試。 主要使用TypeScript、Go與Cloudflare。",
+    "bio": "生於1997年。從2019年起就樂於動手做Web應用程式，從前端、後端到基礎設施都喜歡嘗試。",
+    "stack": "主要使用TypeScript、Go與Cloudflare。",
+    "language": "語言"
+  },
+  "ar": {
+    "label": "العربية",
+    "description": "من مواليد 1997. أستمتع ببناء تطبيقات الويب منذ عام 2019، من الواجهات الأمامية والخلفية إلى البنية التحتية. أستخدم بشكل أساسي TypeScript وGo وCloudflare.",
+    "bio": "من مواليد 1997. أستمتع ببناء تطبيقات الويب منذ عام 2019، من الواجهات الأمامية والخلفية إلى البنية التحتية.",
+    "stack": "أستخدم بشكل أساسي TypeScript وGo وCloudflare.",
+    "language": "اللغة"
+  },
+  "ru": {
+    "label": "Русский",
+    "description": "Год рождения — 1997. С 2019 года с удовольствием создаю веб-приложения: от фронтенда и бэкенда до инфраструктуры. В основном использую TypeScript, Go и Cloudflare.",
+    "bio": "Год рождения — 1997. С 2019 года с удовольствием создаю веб-приложения: от фронтенда и бэкенда до инфраструктуры.",
+    "stack": "В основном использую TypeScript, Go и Cloudflare.",
+    "language": "Язык"
+  }
+}
