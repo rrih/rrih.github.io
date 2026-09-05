@@ -1,0 +1,161 @@
+[
+  {
+    "id": 902,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 3,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [],
+    "effectUvApproximations": [],
+    "bytes": 604396
+  },
+  {
+    "id": 911,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 1,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [
+      "pm0911_00_00-BodyB02"
+    ],
+    "effectUvApproximations": [],
+    "bytes": 1484480
+  },
+  {
+    "id": 935,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0935_00_00-REye00",
+      "pm0935_00_00-LEye00"
+    ],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 9,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [
+      "pm0935_00_00-BodyDsp01",
+      "pm0935_00_00-BodyDsp00",
+      "pm0935_00_00-REye00",
+      "pm0935_00_00-Body00",
+      "pm0935_00_00-LEye00",
+      "pm0935_00_00-BodyDsp02",
+      "pm0935_00_00-REye01",
+      "pm0935_00_00-LEye01"
+    ],
+    "effectUvApproximations": [],
+    "bytes": 1032212
+  },
+  {
+    "id": 936,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0936_00_00-LEye",
+      "pm0936_00_00-REye"
+    ],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 5,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [
+      "pm0936_00_00-BodyADsp01",
+      "pm0936_00_00-BodyA01",
+      "pm0936_00_00-BodyADsp00",
+      "pm0936_00_00-BodyA00",
+      "pm0936_00_00-LEye",
+      "pm0936_00_00-REye"
+    ],
+    "effectUvApproximations": [],
+    "bytes": 981516
+  },
+  {
+    "id": 937,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0937_00_00-LEye",
+      "pm0937_00_00-REye"
+    ],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 9,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [
+      "pm0937_00_00-BodyADsp02",
+      "pm0937_00_00-BodyADsp01",
+      "pm0937_00_00-LEye",
+      "pm0937_00_00-REye",
+      "pm0937_00_00-BodyADsp00",
+      "pm0937_00_00-BodyA"
+    ],
+    "effectUvApproximations": [],
+    "bytes": 1451156
+  },
+  {
+    "id": 954,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [
+      "pm0954_00_00-BodyA00",
+      "pm0954_00_00-Eye"
+    ],
+    "layerUvApproximations": [],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 1,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [
+      "pm0954_00_00-Eye"
+    ],
+    "effectUvApproximations": [],
+    "bytes": 1116076
+  },
+  {
+    "id": 971,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 1,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [],
+    "effectUvApproximations": [],
+    "bytes": 766300
+  },
+  {
+    "id": 1002,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 6,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [],
+    "effectUvApproximations": [],
+    "bytes": 1474824
+  }
+]

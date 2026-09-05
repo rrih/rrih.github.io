@@ -1,0 +1,8805 @@
+[
+  {
+    "id": 1,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0001_00_00_LTutaSkin",
+      "CusAnimVis_pm0001_00_00_RTutaSkin"
+    ],
+    "eulerTracks": 22,
+    "bytes": 613016
+  },
+  {
+    "id": 2,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 199072
+  },
+  {
+    "id": 3,
+    "tracks": 171,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 261968
+  },
+  {
+    "id": 4,
+    "tracks": 142,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 496352
+  },
+  {
+    "id": 5,
+    "tracks": 97,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 559472
+  },
+  {
+    "id": 6,
+    "tracks": 187,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 650064
+  },
+  {
+    "id": 7,
+    "tracks": 92,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 153004
+  },
+  {
+    "id": 8,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 754180
+  },
+  {
+    "id": 9,
+    "tracks": 131,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0009_00_00_CoverSkin"
+    ],
+    "eulerTracks": 7,
+    "bytes": 792044
+  },
+  {
+    "id": 10,
+    "tracks": 55,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 96668
+  },
+  {
+    "id": 11,
+    "tracks": 24,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 60216
+  },
+  {
+    "id": 12,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 265048
+  },
+  {
+    "id": 13,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 125788
+  },
+  {
+    "id": 14,
+    "tracks": 9,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 35752
+  },
+  {
+    "id": 15,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 477788
+  },
+  {
+    "id": 16,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 161600
+  },
+  {
+    "id": 17,
+    "tracks": 133,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0017_00_00_LWingSkin",
+      "CusAnimVis_pm0017_00_00_RWingSkin"
+    ],
+    "eulerTracks": 1,
+    "bytes": 592984
+  },
+  {
+    "id": 18,
+    "tracks": 221,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 418524
+  },
+  {
+    "id": 19,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 193060
+  },
+  {
+    "id": 20,
+    "tracks": 164,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 369128
+  },
+  {
+    "id": 21,
+    "tracks": 130,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 207112
+  },
+  {
+    "id": 22,
+    "tracks": 204,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 455408
+  },
+  {
+    "id": 23,
+    "tracks": 82,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 21,
+    "bytes": 251172
+  },
+  {
+    "id": 24,
+    "tracks": 85,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 560552
+  },
+  {
+    "id": 25,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 494452
+  },
+  {
+    "id": 26,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 586624
+  },
+  {
+    "id": 27,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 211420
+  },
+  {
+    "id": 28,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 231820
+  },
+  {
+    "id": 29,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 191764
+  },
+  {
+    "id": 30,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 146276
+  },
+  {
+    "id": 31,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 180204
+  },
+  {
+    "id": 32,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 139360
+  },
+  {
+    "id": 33,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 142200
+  },
+  {
+    "id": 34,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 181092
+  },
+  {
+    "id": 35,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 171508
+  },
+  {
+    "id": 36,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 24,
+    "bytes": 259900
+  },
+  {
+    "id": 37,
+    "tracks": 165,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 228948
+  },
+  {
+    "id": 38,
+    "tracks": 348,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 51,
+    "bytes": 416968
+  },
+  {
+    "id": 39,
+    "tracks": 49,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 456452
+  },
+  {
+    "id": 40,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 507620
+  },
+  {
+    "id": 41,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 160772
+  },
+  {
+    "id": 42,
+    "tracks": 89,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 272628
+  },
+  {
+    "id": 43,
+    "tracks": 73,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 154956
+  },
+  {
+    "id": 44,
+    "tracks": 124,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 175848
+  },
+  {
+    "id": 45,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 168328
+  },
+  {
+    "id": 46,
+    "tracks": 84,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 532832
+  },
+  {
+    "id": 47,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 148112
+  },
+  {
+    "id": 48,
+    "tracks": 147,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 310560
+  },
+  {
+    "id": 49,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 863248
+  },
+  {
+    "id": 50,
+    "tracks": 22,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 71184
+  },
+  {
+    "id": 51,
+    "tracks": 59,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 215700
+  },
+  {
+    "id": 52,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 627924
+  },
+  {
+    "id": 53,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 196452
+  },
+  {
+    "id": 54,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 154672
+  },
+  {
+    "id": 55,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 191920
+  },
+  {
+    "id": 56,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 238596
+  },
+  {
+    "id": 57,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 213740
+  },
+  {
+    "id": 58,
+    "tracks": 135,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 545832
+  },
+  {
+    "id": 59,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 693412
+  },
+  {
+    "id": 60,
+    "tracks": 48,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 172852
+  },
+  {
+    "id": 61,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 556576
+  },
+  {
+    "id": 62,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 588436
+  },
+  {
+    "id": 63,
+    "tracks": 156,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 215408
+  },
+  {
+    "id": 64,
+    "tracks": 165,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 214148
+  },
+  {
+    "id": 65,
+    "tracks": 207,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 513564
+  },
+  {
+    "id": 66,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 470820
+  },
+  {
+    "id": 67,
+    "tracks": 156,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 792368
+  },
+  {
+    "id": 68,
+    "tracks": 261,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 24,
+    "bytes": 875080
+  },
+  {
+    "id": 69,
+    "tracks": 168,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 337496
+  },
+  {
+    "id": 70,
+    "tracks": 88,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 102432
+  },
+  {
+    "id": 71,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 206508
+  },
+  {
+    "id": 72,
+    "tracks": 42,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 97128
+  },
+  {
+    "id": 73,
+    "tracks": 164,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 230280
+  },
+  {
+    "id": 74,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 384728
+  },
+  {
+    "id": 75,
+    "tracks": 135,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 187012
+  },
+  {
+    "id": 76,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 210268
+  },
+  {
+    "id": 77,
+    "tracks": 189,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 24,
+    "bytes": 893752
+  },
+  {
+    "id": 78,
+    "tracks": 261,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 43,
+    "bytes": 1462552
+  },
+  {
+    "id": 79,
+    "tracks": 101,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 130272
+  },
+  {
+    "id": 80,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 182080
+  },
+  {
+    "id": 81,
+    "tracks": 27,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 265716
+  },
+  {
+    "id": 82,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 306552
+  },
+  {
+    "id": 83,
+    "tracks": 133,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 640460
+  },
+  {
+    "id": 84,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 227760
+  },
+  {
+    "id": 85,
+    "tracks": 165,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 386548
+  },
+  {
+    "id": 86,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 180240
+  },
+  {
+    "id": 87,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 182348
+  },
+  {
+    "id": 88,
+    "tracks": 194,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 1069276
+  },
+  {
+    "id": 89,
+    "tracks": 158,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 895564
+  },
+  {
+    "id": 90,
+    "tracks": 23,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 72944
+  },
+  {
+    "id": 91,
+    "tracks": 24,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 88048
+  },
+  {
+    "id": 92,
+    "tracks": 45,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 268644
+  },
+  {
+    "id": 93,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 323020
+  },
+  {
+    "id": 94,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0094_00_00_LongTongueSkin"
+    ],
+    "eulerTracks": 11,
+    "bytes": 438788
+  },
+  {
+    "id": 95,
+    "tracks": 51,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 392632
+  },
+  {
+    "id": 96,
+    "tracks": 130,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 353264
+  },
+  {
+    "id": 97,
+    "tracks": 204,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 26,
+    "bytes": 652668
+  },
+  {
+    "id": 98,
+    "tracks": 66,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 473744
+  },
+  {
+    "id": 99,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 464076
+  },
+  {
+    "id": 100,
+    "tracks": 10,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0100_00_00_FaceBSkin",
+      "CusAnimVis_pm0100_00_00_FaceCSkin"
+    ],
+    "eulerTracks": 1,
+    "bytes": 240820
+  },
+  {
+    "id": 101,
+    "tracks": 36,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 96556
+  },
+  {
+    "id": 102,
+    "tracks": 45,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 332296
+  },
+  {
+    "id": 103,
+    "tracks": 177,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 287724
+  },
+  {
+    "id": 104,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 176096
+  },
+  {
+    "id": 105,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 445228
+  },
+  {
+    "id": 106,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 202984
+  },
+  {
+    "id": 107,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 469308
+  },
+  {
+    "id": 108,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 184348
+  },
+  {
+    "id": 109,
+    "tracks": 94,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 840244
+  },
+  {
+    "id": 110,
+    "tracks": 128,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0110_00_00_SmokeCoreASkin",
+      "CusAnimVis_pm0110_00_00_SmokeGeomASkin",
+      "CusAnimVis_pm0110_00_00_SmokeMaskASkin"
+    ],
+    "eulerTracks": 4,
+    "bytes": 993984
+  },
+  {
+    "id": 111,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 535992
+  },
+  {
+    "id": 112,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 239556
+  },
+  {
+    "id": 113,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 188396
+  },
+  {
+    "id": 114,
+    "tracks": 217,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 321868
+  },
+  {
+    "id": 115,
+    "tracks": 225,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 304152
+  },
+  {
+    "id": 116,
+    "tracks": 85,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 126568
+  },
+  {
+    "id": 117,
+    "tracks": 76,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 211580
+  },
+  {
+    "id": 118,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 859696
+  },
+  {
+    "id": 119,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 369448
+  },
+  {
+    "id": 120,
+    "tracks": 51,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 221096
+  },
+  {
+    "id": 121,
+    "tracks": 70,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 352392
+  },
+  {
+    "id": 122,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 805784
+  },
+  {
+    "id": 123,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 634856
+  },
+  {
+    "id": 124,
+    "tracks": 261,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 507256
+  },
+  {
+    "id": 125,
+    "tracks": 198,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 24,
+    "bytes": 499204
+  },
+  {
+    "id": 126,
+    "tracks": 161,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 825876
+  },
+  {
+    "id": 127,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 180224
+  },
+  {
+    "id": 128,
+    "tracks": 168,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 306460
+  },
+  {
+    "id": 129,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 275552
+  },
+  {
+    "id": 130,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 591876
+  },
+  {
+    "id": 131,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 409492
+  },
+  {
+    "id": 132,
+    "tracks": 52,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 92716
+  },
+  {
+    "id": 133,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 196720
+  },
+  {
+    "id": 134,
+    "tracks": 119,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 194396
+  },
+  {
+    "id": 135,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 191252
+  },
+  {
+    "id": 136,
+    "tracks": 130,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 216132
+  },
+  {
+    "id": 137,
+    "tracks": 18,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 50944
+  },
+  {
+    "id": 138,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 137992
+  },
+  {
+    "id": 139,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 340512
+  },
+  {
+    "id": 140,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 229052
+  },
+  {
+    "id": 141,
+    "tracks": 84,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 133816
+  },
+  {
+    "id": 142,
+    "tracks": 139,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 189788
+  },
+  {
+    "id": 143,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 193048
+  },
+  {
+    "id": 144,
+    "tracks": 210,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 27,
+    "bytes": 282440
+  },
+  {
+    "id": 145,
+    "tracks": 168,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 260968
+  },
+  {
+    "id": 146,
+    "tracks": 249,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 939708
+  },
+  {
+    "id": 147,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 133140
+  },
+  {
+    "id": 148,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 151168
+  },
+  {
+    "id": 149,
+    "tracks": 174,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 530720
+  },
+  {
+    "id": 150,
+    "tracks": 162,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 590716
+  },
+  {
+    "id": 151,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 431364
+  },
+  {
+    "id": 152,
+    "tracks": 137,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0152_00_00_LVineSkin",
+      "CusAnimVis_pm0152_00_00_RVineSkin"
+    ],
+    "eulerTracks": 24,
+    "bytes": 526672
+  },
+  {
+    "id": 153,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 616212
+  },
+  {
+    "id": 154,
+    "tracks": 186,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 596608
+  },
+  {
+    "id": 155,
+    "tracks": 77,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 356152
+  },
+  {
+    "id": 156,
+    "tracks": 106,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0156_00_00_BodyBSkin"
+    ],
+    "eulerTracks": 8,
+    "bytes": 571540
+  },
+  {
+    "id": 157,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 556076
+  },
+  {
+    "id": 158,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 607336
+  },
+  {
+    "id": 159,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 626656
+  },
+  {
+    "id": 160,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 525544
+  },
+  {
+    "id": 161,
+    "tracks": 84,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 171480
+  },
+  {
+    "id": 162,
+    "tracks": 73,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 238784
+  },
+  {
+    "id": 163,
+    "tracks": 101,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 508480
+  },
+  {
+    "id": 164,
+    "tracks": 179,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 338796
+  },
+  {
+    "id": 165,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 555516
+  },
+  {
+    "id": 166,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 510952
+  },
+  {
+    "id": 167,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 153056
+  },
+  {
+    "id": 168,
+    "tracks": 66,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 142952
+  },
+  {
+    "id": 169,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 168028
+  },
+  {
+    "id": 170,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 400992
+  },
+  {
+    "id": 171,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 497768
+  },
+  {
+    "id": 172,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 456976
+  },
+  {
+    "id": 173,
+    "tracks": 60,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 117816
+  },
+  {
+    "id": 174,
+    "tracks": 46,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 190120
+  },
+  {
+    "id": 175,
+    "tracks": 60,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 131204
+  },
+  {
+    "id": 176,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 139244
+  },
+  {
+    "id": 177,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 160164
+  },
+  {
+    "id": 178,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 170076
+  },
+  {
+    "id": 179,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 501272
+  },
+  {
+    "id": 180,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 535284
+  },
+  {
+    "id": 181,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 517444
+  },
+  {
+    "id": 182,
+    "tracks": 168,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 227652
+  },
+  {
+    "id": 183,
+    "tracks": 91,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 401236
+  },
+  {
+    "id": 184,
+    "tracks": 110,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 514664
+  },
+  {
+    "id": 185,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 119176
+  },
+  {
+    "id": 186,
+    "tracks": 115,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 205668
+  },
+  {
+    "id": 187,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 171456
+  },
+  {
+    "id": 188,
+    "tracks": 52,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 101236
+  },
+  {
+    "id": 189,
+    "tracks": 51,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 124948
+  },
+  {
+    "id": 190,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 675456
+  },
+  {
+    "id": 191,
+    "tracks": 30,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 97604
+  },
+  {
+    "id": 192,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 231548
+  },
+  {
+    "id": 193,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 544388
+  },
+  {
+    "id": 194,
+    "tracks": 51,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 333424
+  },
+  {
+    "id": 195,
+    "tracks": 86,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 155080
+  },
+  {
+    "id": 196,
+    "tracks": 141,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 226876
+  },
+  {
+    "id": 197,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 435256
+  },
+  {
+    "id": 198,
+    "tracks": 124,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0198_00_00_LOpenWingSkin",
+      "CusAnimVis_pm0198_00_00_ROpenWingSkin"
+    ],
+    "eulerTracks": 10,
+    "bytes": 519076
+  },
+  {
+    "id": 199,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 572288
+  },
+  {
+    "id": 200,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 300184
+  },
+  {
+    "id": 201,
+    "tracks": 33,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 67312
+  },
+  {
+    "id": 202,
+    "tracks": 106,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 178436
+  },
+  {
+    "id": 203,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 252392
+  },
+  {
+    "id": 204,
+    "tracks": 147,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 387800
+  },
+  {
+    "id": 205,
+    "tracks": 91,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 111792
+  },
+  {
+    "id": 206,
+    "tracks": 48,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 107204
+  },
+  {
+    "id": 207,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 496780
+  },
+  {
+    "id": 208,
+    "tracks": 57,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 429880
+  },
+  {
+    "id": 209,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 334124
+  },
+  {
+    "id": 210,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 534056
+  },
+  {
+    "id": 211,
+    "tracks": 74,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 159684
+  },
+  {
+    "id": 212,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 639228
+  },
+  {
+    "id": 213,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 135288
+  },
+  {
+    "id": 214,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0214_00_00_LWingASkin",
+      "CusAnimVis_pm0214_00_00_LWingBSkin",
+      "CusAnimVis_pm0214_00_00_RWingASkin",
+      "CusAnimVis_pm0214_00_00_RWingBSkin"
+    ],
+    "eulerTracks": 5,
+    "bytes": 511960
+  },
+  {
+    "id": 215,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 503692
+  },
+  {
+    "id": 216,
+    "tracks": 70,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 133840
+  },
+  {
+    "id": 217,
+    "tracks": 162,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 197516
+  },
+  {
+    "id": 218,
+    "tracks": 146,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 1254736
+  },
+  {
+    "id": 219,
+    "tracks": 124,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0219_00_00_BodyB2Skin",
+      "CusAnimVis_pm0219_00_00_BodyB2offsetSkin"
+    ],
+    "eulerTracks": 11,
+    "bytes": 1148784
+  },
+  {
+    "id": 220,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 215924
+  },
+  {
+    "id": 221,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 143056
+  },
+  {
+    "id": 222,
+    "tracks": 6,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 74296
+  },
+  {
+    "id": 223,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 167668
+  },
+  {
+    "id": 224,
+    "tracks": 136,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 244824
+  },
+  {
+    "id": 225,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 606232
+  },
+  {
+    "id": 226,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 222404
+  },
+  {
+    "id": 227,
+    "tracks": 193,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 223920
+  },
+  {
+    "id": 228,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 478728
+  },
+  {
+    "id": 229,
+    "tracks": 121,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 189120
+  },
+  {
+    "id": 230,
+    "tracks": 52,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 424200
+  },
+  {
+    "id": 231,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 175048
+  },
+  {
+    "id": 232,
+    "tracks": 120,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 157476
+  },
+  {
+    "id": 233,
+    "tracks": 30,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 415288
+  },
+  {
+    "id": 234,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 151000
+  },
+  {
+    "id": 235,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 550028
+  },
+  {
+    "id": 236,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 493372
+  },
+  {
+    "id": 237,
+    "tracks": 88,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 327428
+  },
+  {
+    "id": 238,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 525964
+  },
+  {
+    "id": 239,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0239_00_00_ThunderASkin",
+      "CusAnimVis_pm0239_00_00_ThunderBSkin"
+    ],
+    "eulerTracks": 10,
+    "bytes": 460232
+  },
+  {
+    "id": 240,
+    "tracks": 103,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 190140
+  },
+  {
+    "id": 241,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 602668
+  },
+  {
+    "id": 242,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 181684
+  },
+  {
+    "id": 243,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 206612
+  },
+  {
+    "id": 244,
+    "tracks": 262,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 35,
+    "bytes": 400608
+  },
+  {
+    "id": 245,
+    "tracks": 266,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 47,
+    "bytes": 612156
+  },
+  {
+    "id": 246,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 163644
+  },
+  {
+    "id": 247,
+    "tracks": 12,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 284772
+  },
+  {
+    "id": 248,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 187988
+  },
+  {
+    "id": 249,
+    "tracks": 210,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 336496
+  },
+  {
+    "id": 250,
+    "tracks": 249,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 354100
+  },
+  {
+    "id": 251,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 711472
+  },
+  {
+    "id": 252,
+    "tracks": 135,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 441144
+  },
+  {
+    "id": 253,
+    "tracks": 276,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 34,
+    "bytes": 594492
+  },
+  {
+    "id": 254,
+    "tracks": 306,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 27,
+    "bytes": 745128
+  },
+  {
+    "id": 255,
+    "tracks": 135,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 498780
+  },
+  {
+    "id": 256,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 210956
+  },
+  {
+    "id": 257,
+    "tracks": 174,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0257_00_00_FireCoreSkin",
+      "CusAnimVis_pm0257_00_00_FireMaskSkin"
+    ],
+    "eulerTracks": 2,
+    "bytes": 698640
+  },
+  {
+    "id": 258,
+    "tracks": 94,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 130152
+  },
+  {
+    "id": 259,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 202092
+  },
+  {
+    "id": 260,
+    "tracks": 135,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 216452
+  },
+  {
+    "id": 261,
+    "tracks": 141,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 192700
+  },
+  {
+    "id": 262,
+    "tracks": 222,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 282200
+  },
+  {
+    "id": 263,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 199528
+  },
+  {
+    "id": 264,
+    "tracks": 120,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 208324
+  },
+  {
+    "id": 265,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 177252
+  },
+  {
+    "id": 266,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 110104
+  },
+  {
+    "id": 267,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 321904
+  },
+  {
+    "id": 268,
+    "tracks": 62,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 100320
+  },
+  {
+    "id": 269,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 291828
+  },
+  {
+    "id": 270,
+    "tracks": 74,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 127048
+  },
+  {
+    "id": 271,
+    "tracks": 158,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 252516
+  },
+  {
+    "id": 272,
+    "tracks": 147,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 378196
+  },
+  {
+    "id": 273,
+    "tracks": 30,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 240448
+  },
+  {
+    "id": 274,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 509936
+  },
+  {
+    "id": 275,
+    "tracks": 171,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 244672
+  },
+  {
+    "id": 276,
+    "tracks": 171,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 489784
+  },
+  {
+    "id": 277,
+    "tracks": 188,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 247940
+  },
+  {
+    "id": 278,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 222084
+  },
+  {
+    "id": 279,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 521656
+  },
+  {
+    "id": 280,
+    "tracks": 65,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 141616
+  },
+  {
+    "id": 281,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 24,
+    "bytes": 300840
+  },
+  {
+    "id": 282,
+    "tracks": 227,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 615280
+  },
+  {
+    "id": 283,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 110772
+  },
+  {
+    "id": 284,
+    "tracks": 60,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 429388
+  },
+  {
+    "id": 285,
+    "tracks": 73,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 122488
+  },
+  {
+    "id": 286,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 241596
+  },
+  {
+    "id": 287,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 449580
+  },
+  {
+    "id": 288,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 479148
+  },
+  {
+    "id": 289,
+    "tracks": 209,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 254592
+  },
+  {
+    "id": 290,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 421376
+  },
+  {
+    "id": 291,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0291_00_00_CloseWingALSkin",
+      "CusAnimVis_pm0291_00_00_CloseWingARSkin",
+      "CusAnimVis_pm0291_00_00_CloseWingBLSkin",
+      "CusAnimVis_pm0291_00_00_CloseWingBRSkin"
+    ],
+    "eulerTracks": 2,
+    "bytes": 710296
+  },
+  {
+    "id": 292,
+    "tracks": 9,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 45940
+  },
+  {
+    "id": 293,
+    "tracks": 73,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 107668
+  },
+  {
+    "id": 294,
+    "tracks": 138,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 435264
+  },
+  {
+    "id": 295,
+    "tracks": 169,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 227812
+  },
+  {
+    "id": 296,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 152536
+  },
+  {
+    "id": 297,
+    "tracks": 156,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 579584
+  },
+  {
+    "id": 298,
+    "tracks": 67,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 166736
+  },
+  {
+    "id": 299,
+    "tracks": 24,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 80764
+  },
+  {
+    "id": 300,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 199672
+  },
+  {
+    "id": 301,
+    "tracks": 150,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 294288
+  },
+  {
+    "id": 302,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 146144
+  },
+  {
+    "id": 303,
+    "tracks": 168,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 721060
+  },
+  {
+    "id": 304,
+    "tracks": 21,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 427956
+  },
+  {
+    "id": 305,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 188828
+  },
+  {
+    "id": 306,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 195192
+  },
+  {
+    "id": 307,
+    "tracks": 120,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 477504
+  },
+  {
+    "id": 308,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 581368
+  },
+  {
+    "id": 309,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 144988
+  },
+  {
+    "id": 310,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 172588
+  },
+  {
+    "id": 311,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 171828
+  },
+  {
+    "id": 312,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 171520
+  },
+  {
+    "id": 313,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0313_00_00_BodyIncSkin"
+    ],
+    "eulerTracks": 12,
+    "bytes": 726480
+  },
+  {
+    "id": 314,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 557612
+  },
+  {
+    "id": 315,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 317260
+  },
+  {
+    "id": 316,
+    "tracks": 207,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 197404
+  },
+  {
+    "id": 317,
+    "tracks": 300,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 284088
+  },
+  {
+    "id": 318,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 154300
+  },
+  {
+    "id": 319,
+    "tracks": 48,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 490372
+  },
+  {
+    "id": 320,
+    "tracks": 30,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 95996
+  },
+  {
+    "id": 321,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 183300
+  },
+  {
+    "id": 322,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 446032
+  },
+  {
+    "id": 323,
+    "tracks": 120,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 210028
+  },
+  {
+    "id": 324,
+    "tracks": 152,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0324_00_00_SmokeCoreBSkin",
+      "CusAnimVis_pm0324_00_00_SmokeCoreCSkin",
+      "CusAnimVis_pm0324_00_00_SmokeGeomBSkin",
+      "CusAnimVis_pm0324_00_00_SmokeGeomCSkin",
+      "CusAnimVis_pm0324_00_00_SmokeMaskBSkin",
+      "CusAnimVis_pm0324_00_00_SmokeMaskCSkin"
+    ],
+    "eulerTracks": 21,
+    "bytes": 892496
+  },
+  {
+    "id": 325,
+    "tracks": 42,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 90272
+  },
+  {
+    "id": 326,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 308164
+  },
+  {
+    "id": 327,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 713392
+  },
+  {
+    "id": 328,
+    "tracks": 51,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 142312
+  },
+  {
+    "id": 329,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 708252
+  },
+  {
+    "id": 330,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 1022360
+  },
+  {
+    "id": 331,
+    "tracks": 80,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 201624
+  },
+  {
+    "id": 332,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 198412
+  },
+  {
+    "id": 333,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 543492
+  },
+  {
+    "id": 334,
+    "tracks": 222,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 34,
+    "bytes": 317280
+  },
+  {
+    "id": 335,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 605568
+  },
+  {
+    "id": 336,
+    "tracks": 130,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 675164
+  },
+  {
+    "id": 337,
+    "tracks": 6,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 42668
+  },
+  {
+    "id": 338,
+    "tracks": 6,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 64524
+  },
+  {
+    "id": 339,
+    "tracks": 82,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 329844
+  },
+  {
+    "id": 340,
+    "tracks": 120,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 189888
+  },
+  {
+    "id": 341,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 521808
+  },
+  {
+    "id": 342,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 196252
+  },
+  {
+    "id": 343,
+    "tracks": 42,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 91044
+  },
+  {
+    "id": 344,
+    "tracks": 12,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 51856
+  },
+  {
+    "id": 345,
+    "tracks": 165,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 34,
+    "bytes": 281396
+  },
+  {
+    "id": 346,
+    "tracks": 178,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 35,
+    "bytes": 343208
+  },
+  {
+    "id": 347,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 789224
+  },
+  {
+    "id": 348,
+    "tracks": 162,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 258088
+  },
+  {
+    "id": 349,
+    "tracks": 45,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 149256
+  },
+  {
+    "id": 350,
+    "tracks": 201,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 29,
+    "bytes": 330652
+  },
+  {
+    "id": 351,
+    "tracks": 42,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 84960
+  },
+  {
+    "id": 352,
+    "tracks": 177,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 21,
+    "bytes": 253872
+  },
+  {
+    "id": 353,
+    "tracks": 133,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 202444
+  },
+  {
+    "id": 354,
+    "tracks": 138,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 238916
+  },
+  {
+    "id": 355,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 298692
+  },
+  {
+    "id": 356,
+    "tracks": 189,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 777228
+  },
+  {
+    "id": 357,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 411588
+  },
+  {
+    "id": 358,
+    "tracks": 57,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 412460
+  },
+  {
+    "id": 359,
+    "tracks": 150,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 204076
+  },
+  {
+    "id": 360,
+    "tracks": 84,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 205132
+  },
+  {
+    "id": 361,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 202960
+  },
+  {
+    "id": 362,
+    "tracks": 15,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 346064
+  },
+  {
+    "id": 363,
+    "tracks": 53,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 128972
+  },
+  {
+    "id": 364,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 215048
+  },
+  {
+    "id": 365,
+    "tracks": 116,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 168644
+  },
+  {
+    "id": 366,
+    "tracks": 57,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 108780
+  },
+  {
+    "id": 367,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 255672
+  },
+  {
+    "id": 368,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 202512
+  },
+  {
+    "id": 369,
+    "tracks": 66,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 132956
+  },
+  {
+    "id": 370,
+    "tracks": 24,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 72116
+  },
+  {
+    "id": 371,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 164072
+  },
+  {
+    "id": 372,
+    "tracks": 30,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 73848
+  },
+  {
+    "id": 373,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 234640
+  },
+  {
+    "id": 374,
+    "tracks": 24,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 64180
+  },
+  {
+    "id": 375,
+    "tracks": 51,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 120000
+  },
+  {
+    "id": 376,
+    "tracks": 128,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 189832
+  },
+  {
+    "id": 377,
+    "tracks": 60,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 221320
+  },
+  {
+    "id": 378,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 247088
+  },
+  {
+    "id": 379,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 470084
+  },
+  {
+    "id": 380,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 167572
+  },
+  {
+    "id": 381,
+    "tracks": 103,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 182712
+  },
+  {
+    "id": 382,
+    "tracks": 120,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 210772
+  },
+  {
+    "id": 383,
+    "tracks": 174,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 200348
+  },
+  {
+    "id": 384,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 248584
+  },
+  {
+    "id": 385,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 265496
+  },
+  {
+    "id": 386,
+    "tracks": 294,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0386_11_00_Arm1Skin"
+    ],
+    "eulerTracks": 49,
+    "bytes": 832800
+  },
+  {
+    "id": 387,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 434292
+  },
+  {
+    "id": 388,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 719592
+  },
+  {
+    "id": 389,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 763300
+  },
+  {
+    "id": 390,
+    "tracks": 188,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 22,
+    "bytes": 792700
+  },
+  {
+    "id": 391,
+    "tracks": 259,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 42,
+    "bytes": 1041740
+  },
+  {
+    "id": 392,
+    "tracks": 272,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 39,
+    "bytes": 916604
+  },
+  {
+    "id": 393,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 181944
+  },
+  {
+    "id": 394,
+    "tracks": 84,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 514656
+  },
+  {
+    "id": 395,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 550140
+  },
+  {
+    "id": 396,
+    "tracks": 176,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 202348
+  },
+  {
+    "id": 397,
+    "tracks": 178,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0397_00_00_BodyBSkin"
+    ],
+    "eulerTracks": 12,
+    "bytes": 586800
+  },
+  {
+    "id": 398,
+    "tracks": 263,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0398_00_00_BodyBSkin"
+    ],
+    "eulerTracks": 2,
+    "bytes": 716332
+  },
+  {
+    "id": 399,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 199824
+  },
+  {
+    "id": 400,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 186212
+  },
+  {
+    "id": 401,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 388960
+  },
+  {
+    "id": 402,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0402_00_00_WingB1Skin",
+      "CusAnimVis_pm0402_00_00_WingB2Skin",
+      "CusAnimVis_pm0402_00_00_WingB3Skin",
+      "CusAnimVis_pm0402_00_00_WingB4Skin",
+      "CusAnimVis_pm0402_00_00_WingC1Skin",
+      "CusAnimVis_pm0402_00_00_WingC2Skin",
+      "CusAnimVis_pm0402_00_00_WingC3Skin",
+      "CusAnimVis_pm0402_00_00_WingC4Skin"
+    ],
+    "eulerTracks": 8,
+    "bytes": 540692
+  },
+  {
+    "id": 403,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 537696
+  },
+  {
+    "id": 404,
+    "tracks": 204,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 626072
+  },
+  {
+    "id": 405,
+    "tracks": 232,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 706264
+  },
+  {
+    "id": 406,
+    "tracks": 48,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 150812
+  },
+  {
+    "id": 407,
+    "tracks": 141,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 24,
+    "bytes": 919212
+  },
+  {
+    "id": 408,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 190896
+  },
+  {
+    "id": 409,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 213256
+  },
+  {
+    "id": 410,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 139036
+  },
+  {
+    "id": 411,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 157244
+  },
+  {
+    "id": 412,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 161928
+  },
+  {
+    "id": 413,
+    "tracks": 189,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 32,
+    "bytes": 317084
+  },
+  {
+    "id": 414,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 233720
+  },
+  {
+    "id": 415,
+    "tracks": 48,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 420712
+  },
+  {
+    "id": 416,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 648680
+  },
+  {
+    "id": 417,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 261132
+  },
+  {
+    "id": 418,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 706284
+  },
+  {
+    "id": 419,
+    "tracks": 183,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 668816
+  },
+  {
+    "id": 420,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 137692
+  },
+  {
+    "id": 421,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 164564
+  },
+  {
+    "id": 422,
+    "tracks": 100,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 202964
+  },
+  {
+    "id": 423,
+    "tracks": 154,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 185444
+  },
+  {
+    "id": 424,
+    "tracks": 174,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 31,
+    "bytes": 941984
+  },
+  {
+    "id": 425,
+    "tracks": 138,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 30,
+    "bytes": 214240
+  },
+  {
+    "id": 426,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 186240
+  },
+  {
+    "id": 427,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 322824
+  },
+  {
+    "id": 428,
+    "tracks": 185,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 246060
+  },
+  {
+    "id": 429,
+    "tracks": 165,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 703684
+  },
+  {
+    "id": 430,
+    "tracks": 197,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0430_00_00_LCloseWingSkin",
+      "CusAnimVis_pm0430_00_00_RCloseWingSkin"
+    ],
+    "eulerTracks": 10,
+    "bytes": 730864
+  },
+  {
+    "id": 431,
+    "tracks": 177,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 250924
+  },
+  {
+    "id": 432,
+    "tracks": 189,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 373356
+  },
+  {
+    "id": 433,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 189736
+  },
+  {
+    "id": 434,
+    "tracks": 204,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 281052
+  },
+  {
+    "id": 435,
+    "tracks": 150,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 207340
+  },
+  {
+    "id": 436,
+    "tracks": 6,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 56400
+  },
+  {
+    "id": 437,
+    "tracks": 42,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 94556
+  },
+  {
+    "id": 438,
+    "tracks": 48,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 133372
+  },
+  {
+    "id": 439,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 204032
+  },
+  {
+    "id": 440,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 142972
+  },
+  {
+    "id": 441,
+    "tracks": 171,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 221456
+  },
+  {
+    "id": 442,
+    "tracks": 231,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0442_00_00_EyeCloseSkin",
+      "CusAnimVis_pm0442_00_00_EyeNormalSkin"
+    ],
+    "eulerTracks": 28,
+    "bytes": 1182524
+  },
+  {
+    "id": 443,
+    "tracks": 84,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 201748
+  },
+  {
+    "id": 444,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 702592
+  },
+  {
+    "id": 445,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 617668
+  },
+  {
+    "id": 446,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 520636
+  },
+  {
+    "id": 447,
+    "tracks": 120,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 536140
+  },
+  {
+    "id": 448,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 22,
+    "bytes": 728964
+  },
+  {
+    "id": 449,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 183812
+  },
+  {
+    "id": 450,
+    "tracks": 174,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 200508
+  },
+  {
+    "id": 451,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 171428
+  },
+  {
+    "id": 452,
+    "tracks": 156,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 259072
+  },
+  {
+    "id": 453,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 224256
+  },
+  {
+    "id": 454,
+    "tracks": 147,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 477628
+  },
+  {
+    "id": 455,
+    "tracks": 222,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 48,
+    "bytes": 643524
+  },
+  {
+    "id": 456,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 246464
+  },
+  {
+    "id": 457,
+    "tracks": 174,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 343532
+  },
+  {
+    "id": 458,
+    "tracks": 39,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 116608
+  },
+  {
+    "id": 459,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 543244
+  },
+  {
+    "id": 460,
+    "tracks": 198,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 255100
+  },
+  {
+    "id": 461,
+    "tracks": 231,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 801376
+  },
+  {
+    "id": 462,
+    "tracks": 33,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 697176
+  },
+  {
+    "id": 463,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 317560
+  },
+  {
+    "id": 464,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 177208
+  },
+  {
+    "id": 465,
+    "tracks": 245,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 34,
+    "bytes": 340200
+  },
+  {
+    "id": 466,
+    "tracks": 231,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 22,
+    "bytes": 294176
+  },
+  {
+    "id": 467,
+    "tracks": 189,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 1161904
+  },
+  {
+    "id": 468,
+    "tracks": 84,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 114128
+  },
+  {
+    "id": 469,
+    "tracks": 138,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 26,
+    "bytes": 574372
+  },
+  {
+    "id": 470,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 306468
+  },
+  {
+    "id": 471,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 215048
+  },
+  {
+    "id": 472,
+    "tracks": 150,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 254272
+  },
+  {
+    "id": 473,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 166136
+  },
+  {
+    "id": 474,
+    "tracks": 21,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 74656
+  },
+  {
+    "id": 475,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 540824
+  },
+  {
+    "id": 476,
+    "tracks": 31,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 404628
+  },
+  {
+    "id": 477,
+    "tracks": 168,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 22,
+    "bytes": 997240
+  },
+  {
+    "id": 478,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 684076
+  },
+  {
+    "id": 479,
+    "tracks": 49,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0479_11_00_TailSkin"
+    ],
+    "eulerTracks": 9,
+    "bytes": 313540
+  },
+  {
+    "id": 480,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 211180
+  },
+  {
+    "id": 481,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 32,
+    "bytes": 349272
+  },
+  {
+    "id": 482,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 304784
+  },
+  {
+    "id": 483,
+    "tracks": 156,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 238712
+  },
+  {
+    "id": 484,
+    "tracks": 192,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 802792
+  },
+  {
+    "id": 485,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 22,
+    "bytes": 714556
+  },
+  {
+    "id": 486,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 213008
+  },
+  {
+    "id": 487,
+    "tracks": 324,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 346748
+  },
+  {
+    "id": 488,
+    "tracks": 66,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 570616
+  },
+  {
+    "id": 489,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 519060
+  },
+  {
+    "id": 490,
+    "tracks": 100,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0490_00_00_EnvLSkin",
+      "CusAnimVis_pm0490_00_00_EnvRSkin",
+      "CusAnimVis_pm0490_00_00_IncALSkin",
+      "CusAnimVis_pm0490_00_00_IncARSkin"
+    ],
+    "eulerTracks": 16,
+    "bytes": 613552
+  },
+  {
+    "id": 491,
+    "tracks": 247,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 324216
+  },
+  {
+    "id": 492,
+    "tracks": 347,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 362112
+  },
+  {
+    "id": 493,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 654324
+  },
+  {
+    "id": 494,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0494_00_00_AuraSkin"
+    ],
+    "eulerTracks": 11,
+    "bytes": 621748
+  },
+  {
+    "id": 495,
+    "tracks": 155,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0495_00_00_LTutaSkin",
+      "CusAnimVis_pm0495_00_00_RTutaSkin"
+    ],
+    "eulerTracks": 22,
+    "bytes": 545456
+  },
+  {
+    "id": 496,
+    "tracks": 170,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0496_00_00_LVineSkin",
+      "CusAnimVis_pm0496_00_00_RVineSkin"
+    ],
+    "eulerTracks": 25,
+    "bytes": 643424
+  },
+  {
+    "id": 497,
+    "tracks": 192,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 47,
+    "bytes": 597920
+  },
+  {
+    "id": 498,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 478752
+  },
+  {
+    "id": 499,
+    "tracks": 138,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 207700
+  },
+  {
+    "id": 500,
+    "tracks": 172,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 671484
+  },
+  {
+    "id": 501,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 133904
+  },
+  {
+    "id": 502,
+    "tracks": 133,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 202340
+  },
+  {
+    "id": 503,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 242624
+  },
+  {
+    "id": 504,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0504_00_00_TailBSkin"
+    ],
+    "eulerTracks": 9,
+    "bytes": 617976
+  },
+  {
+    "id": 505,
+    "tracks": 156,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0505_00_00_EyeIncSkin",
+      "CusAnimVis_pm0505_00_00_SippoBSkin"
+    ],
+    "eulerTracks": 8,
+    "bytes": 644968
+  },
+  {
+    "id": 506,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 157432
+  },
+  {
+    "id": 507,
+    "tracks": 195,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 211420
+  },
+  {
+    "id": 508,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 246920
+  },
+  {
+    "id": 509,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 211196
+  },
+  {
+    "id": 510,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 651796
+  },
+  {
+    "id": 511,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 21,
+    "bytes": 661796
+  },
+  {
+    "id": 512,
+    "tracks": 177,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 35,
+    "bytes": 649244
+  },
+  {
+    "id": 513,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 554780
+  },
+  {
+    "id": 514,
+    "tracks": 189,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 29,
+    "bytes": 851332
+  },
+  {
+    "id": 515,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 252768
+  },
+  {
+    "id": 516,
+    "tracks": 213,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 35,
+    "bytes": 350428
+  },
+  {
+    "id": 517,
+    "tracks": 49,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0517_00_00_BaloonSkin"
+    ],
+    "eulerTracks": 2,
+    "bytes": 270864
+  },
+  {
+    "id": 518,
+    "tracks": 92,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 241624
+  },
+  {
+    "id": 519,
+    "tracks": 107,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 195976
+  },
+  {
+    "id": 520,
+    "tracks": 142,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 293244
+  },
+  {
+    "id": 521,
+    "tracks": 183,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 493108
+  },
+  {
+    "id": 522,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 427008
+  },
+  {
+    "id": 523,
+    "tracks": 92,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 157448
+  },
+  {
+    "id": 524,
+    "tracks": 22,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 152508
+  },
+  {
+    "id": 525,
+    "tracks": 33,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 144400
+  },
+  {
+    "id": 526,
+    "tracks": 43,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 90860
+  },
+  {
+    "id": 527,
+    "tracks": 63,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 216384
+  },
+  {
+    "id": 528,
+    "tracks": 107,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 481456
+  },
+  {
+    "id": 529,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 158616
+  },
+  {
+    "id": 530,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 538888
+  },
+  {
+    "id": 531,
+    "tracks": 171,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 230656
+  },
+  {
+    "id": 532,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 189304
+  },
+  {
+    "id": 533,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 190376
+  },
+  {
+    "id": 534,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 22,
+    "bytes": 236872
+  },
+  {
+    "id": 535,
+    "tracks": 21,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 76028
+  },
+  {
+    "id": 536,
+    "tracks": 109,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 218944
+  },
+  {
+    "id": 537,
+    "tracks": 175,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0537_00_00_TongueSkin"
+    ],
+    "eulerTracks": 18,
+    "bytes": 586604
+  },
+  {
+    "id": 538,
+    "tracks": 165,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 769884
+  },
+  {
+    "id": 539,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 733768
+  },
+  {
+    "id": 540,
+    "tracks": 98,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 193220
+  },
+  {
+    "id": 541,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 163204
+  },
+  {
+    "id": 542,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 138700
+  },
+  {
+    "id": 543,
+    "tracks": 63,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 294780
+  },
+  {
+    "id": 544,
+    "tracks": 9,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 93232
+  },
+  {
+    "id": 545,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 510148
+  },
+  {
+    "id": 546,
+    "tracks": 42,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 102116
+  },
+  {
+    "id": 547,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 125432
+  },
+  {
+    "id": 548,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 117784
+  },
+  {
+    "id": 549,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 216828
+  },
+  {
+    "id": 550,
+    "tracks": 57,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 137284
+  },
+  {
+    "id": 551,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 117308
+  },
+  {
+    "id": 552,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 133084
+  },
+  {
+    "id": 553,
+    "tracks": 141,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 204540
+  },
+  {
+    "id": 554,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 225252
+  },
+  {
+    "id": 555,
+    "tracks": 146,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 706476
+  },
+  {
+    "id": 556,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 244596
+  },
+  {
+    "id": 557,
+    "tracks": 66,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 115756
+  },
+  {
+    "id": 558,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 155952
+  },
+  {
+    "id": 559,
+    "tracks": 127,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0559_00_00_ClothBSkin"
+    ],
+    "eulerTracks": 16,
+    "bytes": 604068
+  },
+  {
+    "id": 560,
+    "tracks": 120,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 490648
+  },
+  {
+    "id": 561,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 139216
+  },
+  {
+    "id": 562,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 21,
+    "bytes": 240128
+  },
+  {
+    "id": 563,
+    "tracks": 185,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 301528
+  },
+  {
+    "id": 564,
+    "tracks": 67,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 144172
+  },
+  {
+    "id": 565,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 163444
+  },
+  {
+    "id": 566,
+    "tracks": 190,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 749784
+  },
+  {
+    "id": 567,
+    "tracks": 291,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 21,
+    "bytes": 1094144
+  },
+  {
+    "id": 568,
+    "tracks": 76,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 487668
+  },
+  {
+    "id": 569,
+    "tracks": 113,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 671112
+  },
+  {
+    "id": 570,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 512852
+  },
+  {
+    "id": 571,
+    "tracks": 204,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 760304
+  },
+  {
+    "id": 572,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 210904
+  },
+  {
+    "id": 573,
+    "tracks": 170,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 24,
+    "bytes": 237548
+  },
+  {
+    "id": 574,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 434112
+  },
+  {
+    "id": 575,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 501220
+  },
+  {
+    "id": 576,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 617092
+  },
+  {
+    "id": 577,
+    "tracks": 79,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 320104
+  },
+  {
+    "id": 578,
+    "tracks": 85,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 367048
+  },
+  {
+    "id": 579,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 562076
+  },
+  {
+    "id": 580,
+    "tracks": 101,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0580_00_00_LWingSkin",
+      "CusAnimVis_pm0580_00_00_RWingSkin"
+    ],
+    "eulerTracks": 4,
+    "bytes": 485108
+  },
+  {
+    "id": 581,
+    "tracks": 245,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 279496
+  },
+  {
+    "id": 582,
+    "tracks": 24,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 373364
+  },
+  {
+    "id": 583,
+    "tracks": 12,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 87032
+  },
+  {
+    "id": 584,
+    "tracks": 18,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 92708
+  },
+  {
+    "id": 585,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 162988
+  },
+  {
+    "id": 586,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 210888
+  },
+  {
+    "id": 587,
+    "tracks": 150,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 234916
+  },
+  {
+    "id": 588,
+    "tracks": 30,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 112952
+  },
+  {
+    "id": 589,
+    "tracks": 48,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 451920
+  },
+  {
+    "id": 590,
+    "tracks": 30,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 69840
+  },
+  {
+    "id": 591,
+    "tracks": 39,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 442460
+  },
+  {
+    "id": 592,
+    "tracks": 154,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 43,
+    "bytes": 455364
+  },
+  {
+    "id": 593,
+    "tracks": 151,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 41,
+    "bytes": 311072
+  },
+  {
+    "id": 594,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 123356
+  },
+  {
+    "id": 595,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 135088
+  },
+  {
+    "id": 596,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 165096
+  },
+  {
+    "id": 597,
+    "tracks": 57,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 84948
+  },
+  {
+    "id": 598,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 557432
+  },
+  {
+    "id": 599,
+    "tracks": 12,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 78524
+  },
+  {
+    "id": 600,
+    "tracks": 12,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 55744
+  },
+  {
+    "id": 601,
+    "tracks": 15,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 72396
+  },
+  {
+    "id": 602,
+    "tracks": 39,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 273764
+  },
+  {
+    "id": 603,
+    "tracks": 55,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 192488
+  },
+  {
+    "id": 604,
+    "tracks": 194,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 528660
+  },
+  {
+    "id": 605,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 532012
+  },
+  {
+    "id": 606,
+    "tracks": 63,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 125544
+  },
+  {
+    "id": 607,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0607_00_00_HeadBSkin"
+    ],
+    "eulerTracks": 11,
+    "bytes": 386404
+  },
+  {
+    "id": 608,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 27,
+    "bytes": 662208
+  },
+  {
+    "id": 609,
+    "tracks": 312,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 54,
+    "bytes": 1030532
+  },
+  {
+    "id": 610,
+    "tracks": 62,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 419172
+  },
+  {
+    "id": 611,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 482088
+  },
+  {
+    "id": 612,
+    "tracks": 135,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 206408
+  },
+  {
+    "id": 613,
+    "tracks": 79,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 140056
+  },
+  {
+    "id": 614,
+    "tracks": 128,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 182060
+  },
+  {
+    "id": 615,
+    "tracks": 42,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 479856
+  },
+  {
+    "id": 616,
+    "tracks": 30,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 333960
+  },
+  {
+    "id": 617,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 22,
+    "bytes": 757912
+  },
+  {
+    "id": 618,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 130836
+  },
+  {
+    "id": 619,
+    "tracks": 150,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 195028
+  },
+  {
+    "id": 620,
+    "tracks": 138,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 182228
+  },
+  {
+    "id": 621,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 191788
+  },
+  {
+    "id": 622,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 437232
+  },
+  {
+    "id": 623,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 32,
+    "bytes": 704148
+  },
+  {
+    "id": 624,
+    "tracks": 57,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 108448
+  },
+  {
+    "id": 625,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 170120
+  },
+  {
+    "id": 626,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 138112
+  },
+  {
+    "id": 627,
+    "tracks": 172,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0627_00_00_ROpenWingSkin"
+    ],
+    "eulerTracks": 18,
+    "bytes": 683960
+  },
+  {
+    "id": 628,
+    "tracks": 157,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 284160
+  },
+  {
+    "id": 629,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 193156
+  },
+  {
+    "id": 630,
+    "tracks": 208,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0630_00_00_BodyCSkin"
+    ],
+    "eulerTracks": 3,
+    "bytes": 736996
+  },
+  {
+    "id": 631,
+    "tracks": 150,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0631_00_00_TongueASkin",
+      "CusAnimVis_pm0631_00_00_TongueBSkin"
+    ],
+    "eulerTracks": 22,
+    "bytes": 1518648
+  },
+  {
+    "id": 632,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 181360
+  },
+  {
+    "id": 633,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 171468
+  },
+  {
+    "id": 634,
+    "tracks": 174,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 388032
+  },
+  {
+    "id": 635,
+    "tracks": 220,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 484232
+  },
+  {
+    "id": 636,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 341596
+  },
+  {
+    "id": 637,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 254160
+  },
+  {
+    "id": 638,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 204372
+  },
+  {
+    "id": 639,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 175032
+  },
+  {
+    "id": 640,
+    "tracks": 150,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 208764
+  },
+  {
+    "id": 641,
+    "tracks": 173,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 255932
+  },
+  {
+    "id": 642,
+    "tracks": 194,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 287444
+  },
+  {
+    "id": 643,
+    "tracks": 261,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 361720
+  },
+  {
+    "id": 644,
+    "tracks": 141,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 784520
+  },
+  {
+    "id": 645,
+    "tracks": 170,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 250080
+  },
+  {
+    "id": 646,
+    "tracks": 135,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 646948
+  },
+  {
+    "id": 647,
+    "tracks": 201,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 689596
+  },
+  {
+    "id": 648,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 180392
+  },
+  {
+    "id": 649,
+    "tracks": 97,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0649_11_00_Leg2Skin"
+    ],
+    "eulerTracks": 9,
+    "bytes": 599988
+  },
+  {
+    "id": 650,
+    "tracks": 112,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 291268
+  },
+  {
+    "id": 651,
+    "tracks": 125,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 616720
+  },
+  {
+    "id": 652,
+    "tracks": 188,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0652_00_00_ShieldASkin",
+      "CusAnimVis_pm0652_00_00_ShieldBSkin"
+    ],
+    "eulerTracks": 17,
+    "bytes": 904344
+  },
+  {
+    "id": 653,
+    "tracks": 178,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0653_00_00_HairBSkin",
+      "CusAnimVis_pm0653_00_00_TeethSkin"
+    ],
+    "eulerTracks": 7,
+    "bytes": 657068
+  },
+  {
+    "id": 654,
+    "tracks": 255,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0654_00_00_FireCoreSkin",
+      "CusAnimVis_pm0654_00_00_FireMask1Skin",
+      "CusAnimVis_pm0654_00_00_FireMask2Skin",
+      "CusAnimVis_pm0654_00_00_FireMask3Skin",
+      "CusAnimVis_pm0654_00_00_HairBSkin",
+      "CusAnimVis_pm0654_00_00_TeethSkin"
+    ],
+    "eulerTracks": 19,
+    "bytes": 974700
+  },
+  {
+    "id": 655,
+    "tracks": 371,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0655_00_00_FireCoreSkin",
+      "CusAnimVis_pm0655_00_00_FireMask1Skin",
+      "CusAnimVis_pm0655_00_00_FireMask2Skin",
+      "CusAnimVis_pm0655_00_00_FireMask3Skin",
+      "CusAnimVis_pm0655_00_00_HairBSkin",
+      "CusAnimVis_pm0655_00_00_StickSkin"
+    ],
+    "eulerTracks": 30,
+    "bytes": 917296
+  },
+  {
+    "id": 656,
+    "tracks": 158,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0656_00_00_BodyCSkin",
+      "CusAnimVis_pm0656_00_00_EyeBSkin"
+    ],
+    "eulerTracks": 16,
+    "bytes": 766792
+  },
+  {
+    "id": 657,
+    "tracks": 165,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0657_00_00_EyeBSkin"
+    ],
+    "eulerTracks": 15,
+    "bytes": 935756
+  },
+  {
+    "id": 658,
+    "tracks": 195,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0658_00_00_EyeBSkin"
+    ],
+    "eulerTracks": 23,
+    "bytes": 1138724
+  },
+  {
+    "id": 659,
+    "tracks": 128,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 561276
+  },
+  {
+    "id": 660,
+    "tracks": 177,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 245260
+  },
+  {
+    "id": 661,
+    "tracks": 138,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 180912
+  },
+  {
+    "id": 662,
+    "tracks": 164,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 244552
+  },
+  {
+    "id": 663,
+    "tracks": 183,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 288268
+  },
+  {
+    "id": 664,
+    "tracks": 174,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 22,
+    "bytes": 281076
+  },
+  {
+    "id": 665,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 190252
+  },
+  {
+    "id": 666,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 483544
+  },
+  {
+    "id": 667,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 548512
+  },
+  {
+    "id": 668,
+    "tracks": 237,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 298528
+  },
+  {
+    "id": 669,
+    "tracks": 220,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 370344
+  },
+  {
+    "id": 670,
+    "tracks": 228,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 362904
+  },
+  {
+    "id": 671,
+    "tracks": 296,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 40,
+    "bytes": 424464
+  },
+  {
+    "id": 672,
+    "tracks": 151,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 745728
+  },
+  {
+    "id": 673,
+    "tracks": 202,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 279112
+  },
+  {
+    "id": 674,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 621340
+  },
+  {
+    "id": 675,
+    "tracks": 181,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 264136
+  },
+  {
+    "id": 676,
+    "tracks": 192,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 287824
+  },
+  {
+    "id": 677,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 462568
+  },
+  {
+    "id": 678,
+    "tracks": 141,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0678_00_00_HeadBSkin"
+    ],
+    "eulerTracks": 6,
+    "bytes": 671284
+  },
+  {
+    "id": 679,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 381684
+  },
+  {
+    "id": 680,
+    "tracks": 147,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 36,
+    "bytes": 448284
+  },
+  {
+    "id": 681,
+    "tracks": 187,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 262492
+  },
+  {
+    "id": 682,
+    "tracks": 66,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 148920
+  },
+  {
+    "id": 683,
+    "tracks": 189,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 286968
+  },
+  {
+    "id": 684,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 225064
+  },
+  {
+    "id": 685,
+    "tracks": 63,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 190152
+  },
+  {
+    "id": 686,
+    "tracks": 70,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 646964
+  },
+  {
+    "id": 687,
+    "tracks": 207,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 48,
+    "bytes": 876396
+  },
+  {
+    "id": 688,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 143872
+  },
+  {
+    "id": 689,
+    "tracks": 169,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 336364
+  },
+  {
+    "id": 690,
+    "tracks": 99,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 647696
+  },
+  {
+    "id": 691,
+    "tracks": 177,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 673936
+  },
+  {
+    "id": 692,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 173460
+  },
+  {
+    "id": 693,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 220300
+  },
+  {
+    "id": 694,
+    "tracks": 189,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 24,
+    "bytes": 357196
+  },
+  {
+    "id": 695,
+    "tracks": 219,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 342488
+  },
+  {
+    "id": 696,
+    "tracks": 150,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 669996
+  },
+  {
+    "id": 697,
+    "tracks": 171,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 229544
+  },
+  {
+    "id": 698,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 580016
+  },
+  {
+    "id": 699,
+    "tracks": 285,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 46,
+    "bytes": 821168
+  },
+  {
+    "id": 700,
+    "tracks": 206,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 381048
+  },
+  {
+    "id": 701,
+    "tracks": 213,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 718524
+  },
+  {
+    "id": 702,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 204580
+  },
+  {
+    "id": 703,
+    "tracks": 21,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 98964
+  },
+  {
+    "id": 704,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 193140
+  },
+  {
+    "id": 705,
+    "tracks": 107,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 166096
+  },
+  {
+    "id": 706,
+    "tracks": 246,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 353752
+  },
+  {
+    "id": 707,
+    "tracks": 181,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 26,
+    "bytes": 360140
+  },
+  {
+    "id": 708,
+    "tracks": 57,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 285912
+  },
+  {
+    "id": 709,
+    "tracks": 186,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 785284
+  },
+  {
+    "id": 710,
+    "tracks": 45,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 433308
+  },
+  {
+    "id": 711,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 622708
+  },
+  {
+    "id": 712,
+    "tracks": 21,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 259392
+  },
+  {
+    "id": 713,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 525992
+  },
+  {
+    "id": 714,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 340864
+  },
+  {
+    "id": 715,
+    "tracks": 198,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 561416
+  },
+  {
+    "id": 716,
+    "tracks": 258,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0716_00_00_HornASkin"
+    ],
+    "eulerTracks": 8,
+    "bytes": 815536
+  },
+  {
+    "id": 717,
+    "tracks": 252,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 1826664
+  },
+  {
+    "id": 718,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 22,
+    "bytes": 1133192
+  },
+  {
+    "id": 719,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 159560
+  },
+  {
+    "id": 720,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 674444
+  },
+  {
+    "id": 721,
+    "tracks": 257,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0721_00_00_LClawSkin",
+      "CusAnimVis_pm0721_00_00_RClawSkin"
+    ],
+    "eulerTracks": 12,
+    "bytes": 888752
+  },
+  {
+    "id": 722,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0722_00_00_BodyBSkin",
+      "CusAnimVis_pm0722_00_00_OffsetBSkin"
+    ],
+    "eulerTracks": 13,
+    "bytes": 711300
+  },
+  {
+    "id": 723,
+    "tracks": 311,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 329064
+  },
+  {
+    "id": 724,
+    "tracks": 365,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 33,
+    "bytes": 441060
+  },
+  {
+    "id": 725,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0725_00_00_NailSkin",
+      "CusAnimVis_pm0725_00_00_SenakaSkin"
+    ],
+    "eulerTracks": 11,
+    "bytes": 546168
+  },
+  {
+    "id": 726,
+    "tracks": 194,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0726_00_00_LTeethSkin",
+      "CusAnimVis_pm0726_00_00_RTeethSkin",
+      "CusAnimVis_pm0726_00_00_SuzuOuterBBSkin",
+      "CusAnimVis_pm0726_00_00_SuzuOuterBFSkin"
+    ],
+    "eulerTracks": 10,
+    "bytes": 822696
+  },
+  {
+    "id": 727,
+    "tracks": 324,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0727_00_00_FireSkin",
+      "CusAnimVis_pm0727_00_00_NailSkin"
+    ],
+    "eulerTracks": 30,
+    "bytes": 1146652
+  },
+  {
+    "id": 728,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 442420
+  },
+  {
+    "id": 729,
+    "tracks": 192,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 26,
+    "bytes": 287304
+  },
+  {
+    "id": 730,
+    "tracks": 335,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0730_00_00_BarretteBSkin",
+      "CusAnimVis_pm0730_00_00_EyelashBSkin",
+      "CusAnimVis_pm0730_00_00_EyelashCSkin",
+      "CusAnimVis_pm0730_00_00_EyelashDSkin",
+      "CusAnimVis_pm0730_00_00_EyelashESkin",
+      "CusAnimVis_pm0730_00_00_EyelashFSkin",
+      "CusAnimVis_pm0730_00_00_EyelashGSkin",
+      "CusAnimVis_pm0730_00_00_HairBSkin"
+    ],
+    "eulerTracks": 53,
+    "bytes": 1443912
+  },
+  {
+    "id": 731,
+    "tracks": 182,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 202716
+  },
+  {
+    "id": 732,
+    "tracks": 209,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 290304
+  },
+  {
+    "id": 733,
+    "tracks": 188,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 263520
+  },
+  {
+    "id": 734,
+    "tracks": 168,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 202284
+  },
+  {
+    "id": 735,
+    "tracks": 216,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 251344
+  },
+  {
+    "id": 736,
+    "tracks": 63,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 111420
+  },
+  {
+    "id": 737,
+    "tracks": 27,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 283828
+  },
+  {
+    "id": 738,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 794100
+  },
+  {
+    "id": 739,
+    "tracks": 93,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 664380
+  },
+  {
+    "id": 740,
+    "tracks": 186,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 254364
+  },
+  {
+    "id": 741,
+    "tracks": 314,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 392180
+  },
+  {
+    "id": 742,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0742_00_00_OffsetEyeBSkin"
+    ],
+    "eulerTracks": 9,
+    "bytes": 696272
+  },
+  {
+    "id": 743,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0743_00_00_OffsetEyeBSkin"
+    ],
+    "eulerTracks": 16,
+    "bytes": 839748
+  },
+  {
+    "id": 744,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 230856
+  },
+  {
+    "id": 745,
+    "tracks": 174,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 260056
+  },
+  {
+    "id": 746,
+    "tracks": 43,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 155716
+  },
+  {
+    "id": 747,
+    "tracks": 318,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 46,
+    "bytes": 439904
+  },
+  {
+    "id": 748,
+    "tracks": 369,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 379272
+  },
+  {
+    "id": 749,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 171156
+  },
+  {
+    "id": 750,
+    "tracks": 156,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 255836
+  },
+  {
+    "id": 751,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 801700
+  },
+  {
+    "id": 752,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 30,
+    "bytes": 916476
+  },
+  {
+    "id": 753,
+    "tracks": 81,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 146096
+  },
+  {
+    "id": 754,
+    "tracks": 156,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 908460
+  },
+  {
+    "id": 755,
+    "tracks": 129,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 465204
+  },
+  {
+    "id": 756,
+    "tracks": 179,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 31,
+    "bytes": 262100
+  },
+  {
+    "id": 757,
+    "tracks": 204,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0757_00_00_FireCoreSkin",
+      "CusAnimVis_pm0757_00_00_FireMaskSkin"
+    ],
+    "eulerTracks": 29,
+    "bytes": 638440
+  },
+  {
+    "id": 758,
+    "tracks": 309,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0758_00_00_FireCoreASkin",
+      "CusAnimVis_pm0758_00_00_FireCoreBSkin",
+      "CusAnimVis_pm0758_00_00_FireMaskASkin",
+      "CusAnimVis_pm0758_00_00_FireMaskBSkin"
+    ],
+    "eulerTracks": 33,
+    "bytes": 1180388
+  },
+  {
+    "id": 759,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 154100
+  },
+  {
+    "id": 760,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 148548
+  },
+  {
+    "id": 761,
+    "tracks": 57,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 117972
+  },
+  {
+    "id": 762,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 672068
+  },
+  {
+    "id": 763,
+    "tracks": 155,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 802300
+  },
+  {
+    "id": 764,
+    "tracks": 312,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 379512
+  },
+  {
+    "id": 765,
+    "tracks": 333,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 39,
+    "bytes": 1124808
+  },
+  {
+    "id": 766,
+    "tracks": 255,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 852776
+  },
+  {
+    "id": 767,
+    "tracks": 223,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 267040
+  },
+  {
+    "id": 768,
+    "tracks": 152,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 209080
+  },
+  {
+    "id": 769,
+    "tracks": 138,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0769_00_00_BodyBSkin",
+      "CusAnimVis_pm0769_00_00_BodyCSkin"
+    ],
+    "eulerTracks": 9,
+    "bytes": 425292
+  },
+  {
+    "id": 770,
+    "tracks": 227,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0770_00_00_BodyBSkin",
+      "CusAnimVis_pm0770_00_00_BodyCSkin"
+    ],
+    "eulerTracks": 15,
+    "bytes": 834296
+  },
+  {
+    "id": 771,
+    "tracks": 161,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 29,
+    "bytes": 198056
+  },
+  {
+    "id": 772,
+    "tracks": 216,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 262144
+  },
+  {
+    "id": 773,
+    "tracks": 225,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 940340
+  },
+  {
+    "id": 774,
+    "tracks": 58,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0774_11_00_EyeSkin",
+      "CusAnimVis_pm0774_11_00_FeelerASkin",
+      "CusAnimVis_pm0774_11_00_FeelerBSkin",
+      "CusAnimVis_pm0774_11_00_FeelerCSkin",
+      "CusAnimVis_pm0774_11_00_FeelerDSkin",
+      "CusAnimVis_pm0774_11_00_FeelerESkin",
+      "CusAnimVis_pm0774_11_00_FeelerFSkin",
+      "CusAnimVis_pm0774_11_00_FeelerGSkin",
+      "CusAnimVis_pm0774_11_00_FeelerHSkin",
+      "CusAnimVis_pm0774_11_00_MouthASkin",
+      "CusAnimVis_pm0774_11_00_MouthBSkin",
+      "CusAnimVis_pm0774_11_00_MouthCSkin",
+      "CusAnimVis_pm0774_11_00_MouthDSkin",
+      "CusAnimVis_pm0774_11_00_MouthESkin",
+      "CusAnimVis_pm0774_11_00_MouthFSkin",
+      "CusAnimVis_pm0774_12_00_EyeSkin",
+      "CusAnimVis_pm0774_12_00_MouthASkin",
+      "CusAnimVis_pm0774_12_00_MouthBSkin",
+      "CusAnimVis_pm0774_12_00_MouthCSkin",
+      "CusAnimVis_pm0774_12_00_MouthDSkin",
+      "CusAnimVis_pm0774_12_00_MouthESkin",
+      "CusAnimVis_pm0774_12_00_MouthFSkin",
+      "CusAnimVis_pm0774_13_00_EyeSkin",
+      "CusAnimVis_pm0774_13_00_MouthASkin",
+      "CusAnimVis_pm0774_13_00_MouthBSkin",
+      "CusAnimVis_pm0774_13_00_MouthCSkin",
+      "CusAnimVis_pm0774_13_00_MouthDSkin",
+      "CusAnimVis_pm0774_13_00_MouthESkin",
+      "CusAnimVis_pm0774_13_00_MouthFSkin",
+      "CusAnimVis_pm0774_14_00_EyeSkin",
+      "CusAnimVis_pm0774_14_00_MouthASkin",
+      "CusAnimVis_pm0774_14_00_MouthBSkin",
+      "CusAnimVis_pm0774_14_00_MouthCSkin",
+      "CusAnimVis_pm0774_14_00_MouthDSkin",
+      "CusAnimVis_pm0774_14_00_MouthESkin",
+      "CusAnimVis_pm0774_14_00_MouthFSkin",
+      "CusAnimVis_pm0774_15_00_EyeSkin",
+      "CusAnimVis_pm0774_15_00_MouthASkin",
+      "CusAnimVis_pm0774_15_00_MouthBSkin",
+      "CusAnimVis_pm0774_15_00_MouthCSkin",
+      "CusAnimVis_pm0774_15_00_MouthDSkin",
+      "CusAnimVis_pm0774_15_00_MouthESkin",
+      "CusAnimVis_pm0774_15_00_MouthFSkin",
+      "CusAnimVis_pm0774_16_00_EyeSkin",
+      "CusAnimVis_pm0774_16_00_MouthASkin",
+      "CusAnimVis_pm0774_16_00_MouthBSkin",
+      "CusAnimVis_pm0774_16_00_MouthCSkin",
+      "CusAnimVis_pm0774_16_00_MouthDSkin",
+      "CusAnimVis_pm0774_16_00_MouthESkin",
+      "CusAnimVis_pm0774_16_00_MouthFSkin",
+      "CusAnimVis_pm0774_17_00_EyeSkin",
+      "CusAnimVis_pm0774_17_00_MouthASkin",
+      "CusAnimVis_pm0774_17_00_MouthBSkin",
+      "CusAnimVis_pm0774_17_00_MouthCSkin",
+      "CusAnimVis_pm0774_17_00_MouthDSkin",
+      "CusAnimVis_pm0774_17_00_MouthESkin",
+      "CusAnimVis_pm0774_17_00_MouthFSkin",
+      "CusAnimVis_pm0774_18_00_EyeSkin",
+      "CusAnimVis_pm0774_18_00_MouthASkin",
+      "CusAnimVis_pm0774_18_00_MouthBSkin",
+      "CusAnimVis_pm0774_18_00_MouthCSkin",
+      "CusAnimVis_pm0774_18_00_MouthDSkin",
+      "CusAnimVis_pm0774_18_00_MouthESkin",
+      "CusAnimVis_pm0774_18_00_MouthFSkin",
+      "CusAnimVis_pm0774_19_00_EyeSkin",
+      "CusAnimVis_pm0774_19_00_MouthASkin",
+      "CusAnimVis_pm0774_19_00_MouthBSkin",
+      "CusAnimVis_pm0774_19_00_MouthCSkin",
+      "CusAnimVis_pm0774_19_00_MouthDSkin",
+      "CusAnimVis_pm0774_19_00_MouthESkin",
+      "CusAnimVis_pm0774_19_00_MouthFSkin",
+      "CusAnimVis_pm0774_20_00_EyeSkin",
+      "CusAnimVis_pm0774_20_00_MouthASkin",
+      "CusAnimVis_pm0774_20_00_MouthBSkin",
+      "CusAnimVis_pm0774_20_00_MouthCSkin",
+      "CusAnimVis_pm0774_20_00_MouthDSkin",
+      "CusAnimVis_pm0774_20_00_MouthESkin",
+      "CusAnimVis_pm0774_20_00_MouthFSkin",
+      "CusAnimVis_pm0774_21_00_EyeSkin",
+      "CusAnimVis_pm0774_21_00_MouthASkin",
+      "CusAnimVis_pm0774_21_00_MouthBSkin",
+      "CusAnimVis_pm0774_21_00_MouthCSkin",
+      "CusAnimVis_pm0774_21_00_MouthDSkin",
+      "CusAnimVis_pm0774_21_00_MouthESkin",
+      "CusAnimVis_pm0774_21_00_MouthFSkin",
+      "CusAnimVis_pm0774_22_00_EyeSkin",
+      "CusAnimVis_pm0774_22_00_MouthASkin",
+      "CusAnimVis_pm0774_22_00_MouthBSkin",
+      "CusAnimVis_pm0774_22_00_MouthCSkin",
+      "CusAnimVis_pm0774_22_00_MouthDSkin",
+      "CusAnimVis_pm0774_22_00_MouthESkin",
+      "CusAnimVis_pm0774_22_00_MouthFSkin",
+      "CusAnimVis_pm0774_23_00_EyeSkin",
+      "CusAnimVis_pm0774_23_00_MouthASkin",
+      "CusAnimVis_pm0774_23_00_MouthBSkin",
+      "CusAnimVis_pm0774_23_00_MouthCSkin",
+      "CusAnimVis_pm0774_23_00_MouthDSkin",
+      "CusAnimVis_pm0774_23_00_MouthESkin",
+      "CusAnimVis_pm0774_23_00_MouthFSkin",
+      "CusAnimVis_pm0774_24_00_EyeSkin",
+      "CusAnimVis_pm0774_24_00_MouthASkin",
+      "CusAnimVis_pm0774_24_00_MouthBSkin",
+      "CusAnimVis_pm0774_24_00_MouthCSkin",
+      "CusAnimVis_pm0774_24_00_MouthDSkin",
+      "CusAnimVis_pm0774_24_00_MouthESkin",
+      "CusAnimVis_pm0774_24_00_MouthFSkin"
+    ],
+    "eulerTracks": 11,
+    "bytes": 839144
+  },
+  {
+    "id": 775,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 161768
+  },
+  {
+    "id": 776,
+    "tracks": 160,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 1023596
+  },
+  {
+    "id": 777,
+    "tracks": 196,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 217908
+  },
+  {
+    "id": 778,
+    "tracks": 262,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0778_11_00_EffLSkin",
+      "CusAnimVis_pm0778_11_00_EffRSkin",
+      "CusAnimVis_pm0778_11_00_LFeelerSkin",
+      "CusAnimVis_pm0778_11_00_RFeelerSkin"
+    ],
+    "eulerTracks": 39,
+    "bytes": 617932
+  },
+  {
+    "id": 779,
+    "tracks": 194,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 332316
+  },
+  {
+    "id": 780,
+    "tracks": 309,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 35,
+    "bytes": 438776
+  },
+  {
+    "id": 781,
+    "tracks": 173,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0781_00_00_BladeBSkin"
+    ],
+    "eulerTracks": 14,
+    "bytes": 1049568
+  },
+  {
+    "id": 782,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 696356
+  },
+  {
+    "id": 783,
+    "tracks": 201,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 802240
+  },
+  {
+    "id": 784,
+    "tracks": 333,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 1234948
+  },
+  {
+    "id": 785,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 211948
+  },
+  {
+    "id": 786,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 211676
+  },
+  {
+    "id": 787,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 192188
+  },
+  {
+    "id": 788,
+    "tracks": 132,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 300180
+  },
+  {
+    "id": 789,
+    "tracks": 186,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 617848
+  },
+  {
+    "id": 790,
+    "tracks": 63,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0790_00_00_StarSkin"
+    ],
+    "eulerTracks": 2,
+    "bytes": 1079776
+  },
+  {
+    "id": 791,
+    "tracks": 252,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0791_00_00_ClawSkin"
+    ],
+    "eulerTracks": 12,
+    "bytes": 1262680
+  },
+  {
+    "id": 792,
+    "tracks": 227,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0792_00_00_EdgeBSkin"
+    ],
+    "eulerTracks": 17,
+    "bytes": 1431820
+  },
+  {
+    "id": 793,
+    "tracks": 243,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 26,
+    "bytes": 1085772
+  },
+  {
+    "id": 794,
+    "tracks": 268,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 1550048
+  },
+  {
+    "id": 795,
+    "tracks": 255,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0795_00_00_EyelashBSkin",
+      "CusAnimVis_pm0795_00_00_EyelashCSkin",
+      "CusAnimVis_pm0795_00_00_EyelashDSkin",
+      "CusAnimVis_pm0795_00_00_EyelashESkin",
+      "CusAnimVis_pm0795_00_00_EyelashFSkin"
+    ],
+    "eulerTracks": 44,
+    "bytes": 1182948
+  },
+  {
+    "id": 796,
+    "tracks": 339,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 40,
+    "bytes": 865952
+  },
+  {
+    "id": 797,
+    "tracks": 249,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 328116
+  },
+  {
+    "id": 798,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 171988
+  },
+  {
+    "id": 799,
+    "tracks": 287,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 1110204
+  },
+  {
+    "id": 800,
+    "tracks": 122,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 1515476
+  },
+  {
+    "id": 801,
+    "tracks": 311,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0801_11_00_BallASkin",
+      "CusAnimVis_pm0801_11_00_BlasterSkin",
+      "CusAnimVis_pm0801_11_00_FlowerSkin"
+    ],
+    "eulerTracks": 46,
+    "bytes": 1661696
+  },
+  {
+    "id": 802,
+    "tracks": 289,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0802_00_00_HeadBSkin",
+      "CusAnimVis_pm0802_00_00_MatsugeASkin",
+      "CusAnimVis_pm0802_00_00_MatsugeBSkin",
+      "CusAnimVis_pm0802_00_00_PartsSkin"
+    ],
+    "eulerTracks": 24,
+    "bytes": 893088
+  },
+  {
+    "id": 803,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 590824
+  },
+  {
+    "id": 804,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 961128
+  },
+  {
+    "id": 805,
+    "tracks": 273,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0805_00_00_LArmASkin",
+      "CusAnimVis_pm0805_00_00_LThighASkin",
+      "CusAnimVis_pm0805_00_00_RArmASkin",
+      "CusAnimVis_pm0805_00_00_RThighASkin"
+    ],
+    "eulerTracks": 30,
+    "bytes": 1383848
+  },
+  {
+    "id": 806,
+    "tracks": 334,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0806_00_00_EyeFlowerSkin"
+    ],
+    "eulerTracks": 9,
+    "bytes": 1035068
+  },
+  {
+    "id": 807,
+    "tracks": 333,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 415620
+  },
+  {
+    "id": 808,
+    "tracks": 121,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 196360
+  },
+  {
+    "id": 809,
+    "tracks": 237,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 21,
+    "bytes": 320616
+  },
+  {
+    "id": 810,
+    "tracks": 269,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0810_00_00_StickASkin"
+    ],
+    "eulerTracks": 18,
+    "bytes": 718724
+  },
+  {
+    "id": 811,
+    "tracks": 370,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0811_00_00_HairSkin",
+      "CusAnimVis_pm0811_00_00_LStickBSkin",
+      "CusAnimVis_pm0811_00_00_MuzzleASkin",
+      "CusAnimVis_pm0811_00_00_RStickBSkin"
+    ],
+    "eulerTracks": 25,
+    "bytes": 995664
+  },
+  {
+    "id": 812,
+    "tracks": 412,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0812_00_00_DramASkin"
+    ],
+    "eulerTracks": 27,
+    "bytes": 1127572
+  },
+  {
+    "id": 813,
+    "tracks": 213,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 24,
+    "bytes": 349716
+  },
+  {
+    "id": 814,
+    "tracks": 191,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 767180
+  },
+  {
+    "id": 815,
+    "tracks": 322,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0815_00_00_FireBallAOutSkin",
+      "CusAnimVis_pm0815_00_00_FireBallASkin",
+      "CusAnimVis_pm0815_00_00_FireBallBOutSkin",
+      "CusAnimVis_pm0815_00_00_FireBallBSkin",
+      "CusAnimVis_pm0815_00_00_StoneSkin"
+    ],
+    "eulerTracks": 26,
+    "bytes": 1503240
+  },
+  {
+    "id": 816,
+    "tracks": 268,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0816_00_00_TearSkin"
+    ],
+    "eulerTracks": 19,
+    "bytes": 856008
+  },
+  {
+    "id": 817,
+    "tracks": 271,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0817_00_00_BombSkin",
+      "CusAnimVis_pm0817_00_00_TongueLongSkin"
+    ],
+    "eulerTracks": 19,
+    "bytes": 836372
+  },
+  {
+    "id": 818,
+    "tracks": 394,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 42,
+    "bytes": 527584
+  },
+  {
+    "id": 819,
+    "tracks": 171,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 235640
+  },
+  {
+    "id": 820,
+    "tracks": 333,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 423844
+  },
+  {
+    "id": 821,
+    "tracks": 193,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 224896
+  },
+  {
+    "id": 822,
+    "tracks": 299,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 525136
+  },
+  {
+    "id": 823,
+    "tracks": 297,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 540220
+  },
+  {
+    "id": 824,
+    "tracks": 161,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 207364
+  },
+  {
+    "id": 825,
+    "tracks": 63,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 151864
+  },
+  {
+    "id": 826,
+    "tracks": 144,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 959728
+  },
+  {
+    "id": 827,
+    "tracks": 258,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0827_00_00_TailBSkin"
+    ],
+    "eulerTracks": 22,
+    "bytes": 766324
+  },
+  {
+    "id": 828,
+    "tracks": 234,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 834696
+  },
+  {
+    "id": 829,
+    "tracks": 156,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 213408
+  },
+  {
+    "id": 830,
+    "tracks": 199,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 339512
+  },
+  {
+    "id": 831,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 206604
+  },
+  {
+    "id": 832,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 198872
+  },
+  {
+    "id": 833,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 179756
+  },
+  {
+    "id": 834,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 193372
+  },
+  {
+    "id": 835,
+    "tracks": 135,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 218336
+  },
+  {
+    "id": 836,
+    "tracks": 245,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 316396
+  },
+  {
+    "id": 837,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 107388
+  },
+  {
+    "id": 838,
+    "tracks": 102,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 294972
+  },
+  {
+    "id": 839,
+    "tracks": 174,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 26,
+    "bytes": 316700
+  },
+  {
+    "id": 840,
+    "tracks": 86,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 148628
+  },
+  {
+    "id": 841,
+    "tracks": 240,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 832836
+  },
+  {
+    "id": 842,
+    "tracks": 199,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 21,
+    "bytes": 277624
+  },
+  {
+    "id": 843,
+    "tracks": 119,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 196684
+  },
+  {
+    "id": 844,
+    "tracks": 104,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 219900
+  },
+  {
+    "id": 845,
+    "tracks": 448,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0845_11_00_Kawamasu1BodyASkin",
+      "CusAnimVis_pm0845_11_00_Kawamasu1BodyBSkin",
+      "CusAnimVis_pm0845_11_00_PikachuBodySkin",
+      "CusAnimVis_pm0845_11_00_PikachuSippoSkin"
+    ],
+    "eulerTracks": 38,
+    "bytes": 1414828
+  },
+  {
+    "id": 846,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 683756
+  },
+  {
+    "id": 847,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 801268
+  },
+  {
+    "id": 848,
+    "tracks": 176,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0848_00_00_SparkBSkin",
+      "CusAnimVis_pm0848_00_00_SparkShellBackBSkin",
+      "CusAnimVis_pm0848_00_00_SparkShellFaceBSkin"
+    ],
+    "eulerTracks": 6,
+    "bytes": 597752
+  },
+  {
+    "id": 849,
+    "tracks": 271,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 1101800
+  },
+  {
+    "id": 850,
+    "tracks": 170,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0850_00_00_FeelerBSkin"
+    ],
+    "eulerTracks": 24,
+    "bytes": 807660
+  },
+  {
+    "id": 851,
+    "tracks": 364,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 46,
+    "bytes": 2068116
+  },
+  {
+    "id": 852,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 194108
+  },
+  {
+    "id": 853,
+    "tracks": 236,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0853_00_00_HyponomeSkin"
+    ],
+    "eulerTracks": 31,
+    "bytes": 988764
+  },
+  {
+    "id": 854,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0854_11_00_BottomBSkin",
+      "CusAnimVis_pm0854_11_00_TopASkin",
+      "CusAnimVis_pm0854_11_00_TopCSkin",
+      "CusAnimVis_pm0854_11_00_TopDSkin",
+      "CusAnimVis_pm0854_11_00_TopESkin"
+    ],
+    "eulerTracks": 25,
+    "bytes": 793072
+  },
+  {
+    "id": 855,
+    "tracks": 233,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 52,
+    "bytes": 594864
+  },
+  {
+    "id": 856,
+    "tracks": 64,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 112844
+  },
+  {
+    "id": 857,
+    "tracks": 177,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 219152
+  },
+  {
+    "id": 858,
+    "tracks": 297,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0858_00_00_HairOpenSkin",
+      "CusAnimVis_pm0858_00_00_HipOpenBackSkin",
+      "CusAnimVis_pm0858_00_00_HipOpenFaceSkin"
+    ],
+    "eulerTracks": 23,
+    "bytes": 1100828
+  },
+  {
+    "id": 859,
+    "tracks": 179,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 600520
+  },
+  {
+    "id": 860,
+    "tracks": 237,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 849728
+  },
+  {
+    "id": 861,
+    "tracks": 461,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0861_00_00_RArmB1Skin",
+      "CusAnimVis_pm0861_00_00_RArmB2Skin"
+    ],
+    "eulerTracks": 27,
+    "bytes": 1334772
+  },
+  {
+    "id": 862,
+    "tracks": 368,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 987764
+  },
+  {
+    "id": 863,
+    "tracks": 258,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0863_00_31_LClawBSkin",
+      "CusAnimVis_pm0863_00_31_RClawBSkin"
+    ],
+    "eulerTracks": 15,
+    "bytes": 1203160
+  },
+  {
+    "id": 864,
+    "tracks": 369,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0864_00_31_BodyB1_01Skin",
+      "CusAnimVis_pm0864_00_31_BodyB1_03Skin",
+      "CusAnimVis_pm0864_00_31_BodyB1_04Skin",
+      "CusAnimVis_pm0864_00_31_Missile1_02Skin",
+      "CusAnimVis_pm0864_00_31_Missile1_03Skin",
+      "CusAnimVis_pm0864_00_31_Missile1_04Skin",
+      "CusAnimVis_pm0864_00_31_Missile1_05Skin",
+      "CusAnimVis_pm0864_00_31_Missile1_06Skin",
+      "CusAnimVis_pm0864_00_31_Missile1_07Skin",
+      "CusAnimVis_pm0864_00_31_Missile1_08Skin",
+      "CusAnimVis_pm0864_00_31_Missile1_09Skin",
+      "CusAnimVis_pm0864_00_31_Missile1_12Skin",
+      "CusAnimVis_pm0864_00_31_Missile_02Skin",
+      "CusAnimVis_pm0864_00_31_Missile_03Skin",
+      "CusAnimVis_pm0864_00_31_Missile_04Skin",
+      "CusAnimVis_pm0864_00_31_Missile_05Skin",
+      "CusAnimVis_pm0864_00_31_Missile_06Skin",
+      "CusAnimVis_pm0864_00_31_Missile_07Skin",
+      "CusAnimVis_pm0864_00_31_Missile_08Skin",
+      "CusAnimVis_pm0864_00_31_Missile_09Skin",
+      "CusAnimVis_pm0864_00_31_Missile_12Skin"
+    ],
+    "eulerTracks": 52,
+    "bytes": 2054968
+  },
+  {
+    "id": 865,
+    "tracks": 258,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0865_00_31_WingCloseLSkin",
+      "CusAnimVis_pm0865_00_31_WingCloseRSkin"
+    ],
+    "eulerTracks": 25,
+    "bytes": 1120684
+  },
+  {
+    "id": 866,
+    "tracks": 162,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0866_00_31_EyeBSkin",
+      "CusAnimVis_pm0866_00_31_EyeCSkin",
+      "CusAnimVis_pm0866_00_31_EyeDSkin",
+      "CusAnimVis_pm0866_00_31_EyeESkin",
+      "CusAnimVis_pm0866_00_31_EyeFSkin",
+      "CusAnimVis_pm0866_00_31_EyeGSkin"
+    ],
+    "eulerTracks": 15,
+    "bytes": 1259256
+  },
+  {
+    "id": 867,
+    "tracks": 323,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 82,
+    "bytes": 823404
+  },
+  {
+    "id": 868,
+    "tracks": 159,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 285120
+  },
+  {
+    "id": 869,
+    "tracks": 128,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 620592
+  },
+  {
+    "id": 870,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 1182052
+  },
+  {
+    "id": 871,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 98388
+  },
+  {
+    "id": 872,
+    "tracks": 47,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 316840
+  },
+  {
+    "id": 873,
+    "tracks": 108,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0873_00_00_EyeBSkin",
+      "CusAnimVis_pm0873_00_00_EyeCSkin",
+      "CusAnimVis_pm0873_00_00_EyeDSkin",
+      "CusAnimVis_pm0873_00_00_EyeESkin",
+      "CusAnimVis_pm0873_00_00_EyeFSkin",
+      "CusAnimVis_pm0873_00_00_EyeGSkin"
+    ],
+    "eulerTracks": 6,
+    "bytes": 777120
+  },
+  {
+    "id": 874,
+    "tracks": 69,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 218884
+  },
+  {
+    "id": 875,
+    "tracks": 201,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 241312
+  },
+  {
+    "id": 876,
+    "tracks": 147,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 189904
+  },
+  {
+    "id": 877,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0877_11_00_SeedSkin"
+    ],
+    "eulerTracks": 14,
+    "bytes": 503396
+  },
+  {
+    "id": 878,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 198264
+  },
+  {
+    "id": 879,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 273040
+  },
+  {
+    "id": 880,
+    "tracks": 207,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 306736
+  },
+  {
+    "id": 881,
+    "tracks": 151,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 389360
+  },
+  {
+    "id": 882,
+    "tracks": 96,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 187128
+  },
+  {
+    "id": 883,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 206312
+  },
+  {
+    "id": 884,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 185908
+  },
+  {
+    "id": 885,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 174560
+  },
+  {
+    "id": 886,
+    "tracks": 234,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 24,
+    "bytes": 957012
+  },
+  {
+    "id": 887,
+    "tracks": 391,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 43,
+    "bytes": 1467480
+  },
+  {
+    "id": 888,
+    "tracks": 336,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0888_11_00_SwordSkin"
+    ],
+    "eulerTracks": 50,
+    "bytes": 1110928
+  },
+  {
+    "id": 889,
+    "tracks": 265,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0889_11_00_ShieldSkin"
+    ],
+    "eulerTracks": 12,
+    "bytes": 1038516
+  },
+  {
+    "id": 890,
+    "tracks": 333,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 53,
+    "bytes": 1551696
+  },
+  {
+    "id": 891,
+    "tracks": 272,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 320848
+  },
+  {
+    "id": 892,
+    "tracks": 466,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 36,
+    "bytes": 1369812
+  },
+  {
+    "id": 893,
+    "tracks": 451,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0893_11_00_IvyStraightSkin",
+      "CusAnimVis_pm0893_11_00_LBackIvyASkin",
+      "CusAnimVis_pm0893_11_00_LBackIvyBSkin",
+      "CusAnimVis_pm0893_11_00_RBackIvyASkin",
+      "CusAnimVis_pm0893_11_00_RBackIvyBSkin"
+    ],
+    "eulerTracks": 41,
+    "bytes": 1353780
+  },
+  {
+    "id": 894,
+    "tracks": 455,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0894_00_00_LArmBSkin",
+      "CusAnimVis_pm0894_00_00_RArmBSkin"
+    ],
+    "eulerTracks": 15,
+    "bytes": 1893592
+  },
+  {
+    "id": 895,
+    "tracks": 60,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 768440
+  },
+  {
+    "id": 896,
+    "tracks": 161,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0896_00_00_TeethSkin"
+    ],
+    "eulerTracks": 3,
+    "bytes": 854440
+  },
+  {
+    "id": 897,
+    "tracks": 382,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0897_00_00_TeethSkin"
+    ],
+    "eulerTracks": 30,
+    "bytes": 1334872
+  },
+  {
+    "id": 898,
+    "tracks": 168,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 802876
+  },
+  {
+    "id": 899,
+    "tracks": 111,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0899_00_00_EyebrowBSkin",
+      "CusAnimVis_pm0899_00_00_EyebrowCSkin",
+      "CusAnimVis_pm0899_00_00_EyebrowDSkin",
+      "CusAnimVis_pm0899_00_00_EyebrowESkin",
+      "CusAnimVis_pm0899_00_00_EyebrowFSkin"
+    ],
+    "eulerTracks": 2,
+    "bytes": 539696
+  },
+  {
+    "id": 900,
+    "tracks": 101,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 447884
+  },
+  {
+    "id": 901,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 693728
+  },
+  {
+    "id": 902,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 707552
+  },
+  {
+    "id": 903,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 587324
+  },
+  {
+    "id": 904,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 592868
+  },
+  {
+    "id": 905,
+    "tracks": 267,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 35,
+    "bytes": 1018092
+  },
+  {
+    "id": 906,
+    "tracks": 239,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0906_00_00_ClawSkin"
+    ],
+    "eulerTracks": 19,
+    "bytes": 799992
+  },
+  {
+    "id": 907,
+    "tracks": 356,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0907_00_00_YoyoSkin"
+    ],
+    "eulerTracks": 47,
+    "bytes": 1087872
+  },
+  {
+    "id": 908,
+    "tracks": 395,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0908_00_00_BomBSkin",
+      "CusAnimVis_pm0908_00_00_BomCSkin",
+      "CusAnimVis_pm0908_00_00_IvySkin"
+    ],
+    "eulerTracks": 24,
+    "bytes": 1380508
+  },
+  {
+    "id": 909,
+    "tracks": 86,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 525720
+  },
+  {
+    "id": 910,
+    "tracks": 211,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 1004936
+  },
+  {
+    "id": 911,
+    "tracks": 373,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0911_00_00_BirdBSkin",
+      "CusAnimVis_pm0911_00_00_BirdCSkin"
+    ],
+    "eulerTracks": 21,
+    "bytes": 1744424
+  },
+  {
+    "id": 912,
+    "tracks": 193,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0912_00_00_HairBSkin",
+      "CusAnimVis_pm0912_00_00_LeftArmBSkin",
+      "CusAnimVis_pm0912_00_00_LeftWingSkin",
+      "CusAnimVis_pm0912_00_00_RightArmBSkin",
+      "CusAnimVis_pm0912_00_00_RightWingSkin"
+    ],
+    "eulerTracks": 17,
+    "bytes": 933116
+  },
+  {
+    "id": 913,
+    "tracks": 282,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0913_00_00_HairBSkin"
+    ],
+    "eulerTracks": 23,
+    "bytes": 1069476
+  },
+  {
+    "id": 914,
+    "tracks": 359,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 2372800
+  },
+  {
+    "id": 915,
+    "tracks": 161,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 514328
+  },
+  {
+    "id": 916,
+    "tracks": 189,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 857328
+  },
+  {
+    "id": 917,
+    "tracks": 279,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 58,
+    "bytes": 514396
+  },
+  {
+    "id": 918,
+    "tracks": 339,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 58,
+    "bytes": 379312
+  },
+  {
+    "id": 919,
+    "tracks": 110,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 4,
+    "bytes": 343852
+  },
+  {
+    "id": 920,
+    "tracks": 134,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 494504
+  },
+  {
+    "id": 921,
+    "tracks": 248,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 271400
+  },
+  {
+    "id": 922,
+    "tracks": 258,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 21,
+    "bytes": 275504
+  },
+  {
+    "id": 923,
+    "tracks": 384,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 28,
+    "bytes": 404492
+  },
+  {
+    "id": 924,
+    "tracks": 222,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 21,
+    "bytes": 249088
+  },
+  {
+    "id": 925,
+    "tracks": 366,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 33,
+    "bytes": 552828
+  },
+  {
+    "id": 926,
+    "tracks": 123,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 171348
+  },
+  {
+    "id": 927,
+    "tracks": 209,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 780112
+  },
+  {
+    "id": 928,
+    "tracks": 75,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 100744
+  },
+  {
+    "id": 929,
+    "tracks": 230,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 254868
+  },
+  {
+    "id": 930,
+    "tracks": 352,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 25,
+    "bytes": 462520
+  },
+  {
+    "id": 931,
+    "tracks": 348,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0931_11_00_LeftWingSkin",
+      "CusAnimVis_pm0931_11_00_RightWingSkin",
+      "CusAnimVis_pm1064_12_00_LeftWingSkin",
+      "CusAnimVis_pm1064_12_00_RightWingSkin",
+      "CusAnimVis_pm1064_13_00_LeftWingSkin",
+      "CusAnimVis_pm1064_13_00_RightWingSkin",
+      "CusAnimVis_pm1064_14_00_LeftWingSkin",
+      "CusAnimVis_pm1064_14_00_RightWingSkin"
+    ],
+    "eulerTracks": 25,
+    "bytes": 1160096
+  },
+  {
+    "id": 932,
+    "tracks": 12,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 2,
+    "bytes": 122496
+  },
+  {
+    "id": 933,
+    "tracks": 18,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 199768
+  },
+  {
+    "id": 934,
+    "tracks": 114,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 524796
+  },
+  {
+    "id": 935,
+    "tracks": 188,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 1148020
+  },
+  {
+    "id": 936,
+    "tracks": 188,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0936_00_00_ShoulderarmorBSkin"
+    ],
+    "eulerTracks": 12,
+    "bytes": 1091176
+  },
+  {
+    "id": 937,
+    "tracks": 164,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0937_00_00_LeftBladeSkin",
+      "CusAnimVis_pm0937_00_00_RightBladeSkin"
+    ],
+    "eulerTracks": 16,
+    "bytes": 1597976
+  },
+  {
+    "id": 938,
+    "tracks": 21,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 91468
+  },
+  {
+    "id": 939,
+    "tracks": 50,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0939_00_00_EffectSkin"
+    ],
+    "eulerTracks": 8,
+    "bytes": 384664
+  },
+  {
+    "id": 940,
+    "tracks": 180,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0940_00_00_LeftWingBSkin",
+      "CusAnimVis_pm0940_00_00_RightWingBSkin"
+    ],
+    "eulerTracks": 1,
+    "bytes": 602788
+  },
+  {
+    "id": 941,
+    "tracks": 214,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0941_00_00_LeftWingBSkin",
+      "CusAnimVis_pm0941_00_00_RightWingBSkin"
+    ],
+    "eulerTracks": 5,
+    "bytes": 644676
+  },
+  {
+    "id": 942,
+    "tracks": 229,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 255688
+  },
+  {
+    "id": 943,
+    "tracks": 273,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 326488
+  },
+  {
+    "id": 944,
+    "tracks": 113,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 17,
+    "bytes": 152104
+  },
+  {
+    "id": 945,
+    "tracks": 255,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 26,
+    "bytes": 351308
+  },
+  {
+    "id": 946,
+    "tracks": 220,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 228288
+  },
+  {
+    "id": 947,
+    "tracks": 105,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 162648
+  },
+  {
+    "id": 948,
+    "tracks": 72,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 517464
+  },
+  {
+    "id": 949,
+    "tracks": 344,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 90,
+    "bytes": 1014076
+  },
+  {
+    "id": 950,
+    "tracks": 182,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 1070620
+  },
+  {
+    "id": 951,
+    "tracks": 124,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 197348
+  },
+  {
+    "id": 952,
+    "tracks": 236,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 14,
+    "bytes": 379604
+  },
+  {
+    "id": 953,
+    "tracks": 131,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0953_00_00_EyebrowBSkin"
+    ],
+    "eulerTracks": 4,
+    "bytes": 802620
+  },
+  {
+    "id": 954,
+    "tracks": 249,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 1287288
+  },
+  {
+    "id": 955,
+    "tracks": 142,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 258844
+  },
+  {
+    "id": 956,
+    "tracks": 338,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 1139556
+  },
+  {
+    "id": 957,
+    "tracks": 160,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 558344
+  },
+  {
+    "id": 958,
+    "tracks": 244,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 313576
+  },
+  {
+    "id": 959,
+    "tracks": 363,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 37,
+    "bytes": 485664
+  },
+  {
+    "id": 960,
+    "tracks": 57,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 18,
+    "bytes": 122868
+  },
+  {
+    "id": 961,
+    "tracks": 117,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 32,
+    "bytes": 180332
+  },
+  {
+    "id": 962,
+    "tracks": 395,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 445752
+  },
+  {
+    "id": 963,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 399992
+  },
+  {
+    "id": 964,
+    "tracks": 87,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 5,
+    "bytes": 409516
+  },
+  {
+    "id": 965,
+    "tracks": 89,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 641748
+  },
+  {
+    "id": 966,
+    "tracks": 277,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 47,
+    "bytes": 1409268
+  },
+  {
+    "id": 967,
+    "tracks": 302,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0967_00_00_FronttireASkin",
+      "CusAnimVis_pm0967_00_00_FronttireBSkin",
+      "CusAnimVis_pm0967_00_00_TailBSkin"
+    ],
+    "eulerTracks": 9,
+    "bytes": 749128
+  },
+  {
+    "id": 968,
+    "tracks": 153,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0968_00_00_FeelerSkin"
+    ],
+    "eulerTracks": 37,
+    "bytes": 540884
+  },
+  {
+    "id": 969,
+    "tracks": 71,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0969_00_00_EyeBSkin",
+      "CusAnimVis_pm0969_00_00_EyeCSkin",
+      "CusAnimVis_pm0969_00_00_EyeDSkin",
+      "CusAnimVis_pm0969_00_00_EyeESkin"
+    ],
+    "eulerTracks": 10,
+    "bytes": 502744
+  },
+  {
+    "id": 970,
+    "tracks": 185,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0970_00_00_EyeBSkin",
+      "CusAnimVis_pm0970_00_00_EyeCSkin",
+      "CusAnimVis_pm0970_00_00_EyeDSkin",
+      "CusAnimVis_pm0970_00_00_EyeESkin"
+    ],
+    "eulerTracks": 1,
+    "bytes": 678740
+  },
+  {
+    "id": 971,
+    "tracks": 282,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 19,
+    "bytes": 964468
+  },
+  {
+    "id": 972,
+    "tracks": 371,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 15,
+    "bytes": 1266880
+  },
+  {
+    "id": 973,
+    "tracks": 223,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0973_00_00_LeftOpenwingSkin",
+      "CusAnimVis_pm0973_00_00_RightOpenwingSkin"
+    ],
+    "eulerTracks": 11,
+    "bytes": 624280
+  },
+  {
+    "id": 974,
+    "tracks": 127,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 21,
+    "bytes": 420788
+  },
+  {
+    "id": 975,
+    "tracks": 166,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 718656
+  },
+  {
+    "id": 976,
+    "tracks": 90,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0976_00_00_BoneASkin",
+      "CusAnimVis_pm0976_00_00_BoneBSkin",
+      "CusAnimVis_pm0976_00_00_LeftPartsASkin",
+      "CusAnimVis_pm0976_00_00_LeftPartsBSkin",
+      "CusAnimVis_pm0976_00_00_RightPartsASkin",
+      "CusAnimVis_pm0976_00_00_RightPartsBSkin"
+    ],
+    "eulerTracks": 14,
+    "bytes": 751452
+  },
+  {
+    "id": 977,
+    "tracks": 213,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 985836
+  },
+  {
+    "id": 978,
+    "tracks": 116,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0978_11_00_FinBSkin",
+      "CusAnimVis_pm0978_11_00_FinCSkin",
+      "CusAnimVis_pm0978_11_00_RiceBSkin"
+    ],
+    "eulerTracks": 19,
+    "bytes": 477816
+  },
+  {
+    "id": 979,
+    "tracks": 357,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 12,
+    "bytes": 490976
+  },
+  {
+    "id": 980,
+    "tracks": 122,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 3,
+    "bytes": 157060
+  },
+  {
+    "id": 981,
+    "tracks": 263,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0981_00_00_OuterheadBSkin"
+    ],
+    "eulerTracks": 19,
+    "bytes": 1085264
+  },
+  {
+    "id": 982,
+    "tracks": 82,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 6,
+    "bytes": 143404
+  },
+  {
+    "id": 983,
+    "tracks": 319,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0983_00_00_HairBSkin"
+    ],
+    "eulerTracks": 15,
+    "bytes": 1113768
+  },
+  {
+    "id": 984,
+    "tracks": 362,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 11,
+    "bytes": 1172548
+  },
+  {
+    "id": 985,
+    "tracks": 130,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 456092
+  },
+  {
+    "id": 986,
+    "tracks": 334,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 30,
+    "bytes": 909168
+  },
+  {
+    "id": 987,
+    "tracks": 306,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 32,
+    "bytes": 968776
+  },
+  {
+    "id": 988,
+    "tracks": 330,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 23,
+    "bytes": 434040
+  },
+  {
+    "id": 989,
+    "tracks": 400,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0989_00_00_LeftSandfootBSkin",
+      "CusAnimVis_pm0989_00_00_RightSandfootBSkin",
+      "CusAnimVis_pm0989_00_00_SandarmBSkin"
+    ],
+    "eulerTracks": 44,
+    "bytes": 1661184
+  },
+  {
+    "id": 990,
+    "tracks": 126,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 809744
+  },
+  {
+    "id": 991,
+    "tracks": 194,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 46,
+    "bytes": 1905744
+  },
+  {
+    "id": 992,
+    "tracks": 54,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 7,
+    "bytes": 1424720
+  },
+  {
+    "id": 993,
+    "tracks": 262,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 52,
+    "bytes": 2251940
+  },
+  {
+    "id": 994,
+    "tracks": 78,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0994_00_00_ArmBSkin"
+    ],
+    "eulerTracks": 4,
+    "bytes": 1047404
+  },
+  {
+    "id": 995,
+    "tracks": 147,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 10,
+    "bytes": 911532
+  },
+  {
+    "id": 996,
+    "tracks": 119,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 413656
+  },
+  {
+    "id": 997,
+    "tracks": 161,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 8,
+    "bytes": 569664
+  },
+  {
+    "id": 998,
+    "tracks": 160,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 13,
+    "bytes": 615532
+  },
+  {
+    "id": 999,
+    "tracks": 200,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm0999_11_00_CoinBSkin",
+      "CusAnimVis_pm0999_11_00_CoinCSkin",
+      "CusAnimVis_pm0999_11_00_CoinDSkin",
+      "CusAnimVis_pm0999_11_00_CoinESkin",
+      "CusAnimVis_pm0999_11_00_CoinFSkin",
+      "CusAnimVis_pm0999_11_00_EyeBSkin",
+      "CusAnimVis_pm0999_11_00_EyeCSkin",
+      "CusAnimVis_pm0999_11_00_EyeDSkin",
+      "CusAnimVis_pm0999_11_00_EyeESkin",
+      "CusAnimVis_pm0999_11_00_EyeFSkin",
+      "CusAnimVis_pm0999_11_00_EyeGSkin",
+      "CusAnimVis_pm0999_11_00_EyeHSkin"
+    ],
+    "eulerTracks": 35,
+    "bytes": 1165004
+  },
+  {
+    "id": 1000,
+    "tracks": 347,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1000_00_00_BoardSkin",
+      "CusAnimVis_pm1000_00_00_CoinASkin",
+      "CusAnimVis_pm1000_00_00_CoinBSkin",
+      "CusAnimVis_pm1000_00_00_CoinCSkin",
+      "CusAnimVis_pm1000_00_00_CoinDSkin",
+      "CusAnimVis_pm1000_00_00_CoinESkin"
+    ],
+    "eulerTracks": 72,
+    "bytes": 970920
+  },
+  {
+    "id": 1001,
+    "tracks": 392,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1001_00_00_ArmSkin"
+    ],
+    "eulerTracks": 29,
+    "bytes": 1864812
+  },
+  {
+    "id": 1002,
+    "tracks": 195,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1002_00_00_FeelerCSkin",
+      "CusAnimVis_pm1002_00_00_FeelerDSkin",
+      "CusAnimVis_pm1002_00_00_FeelerESkin"
+    ],
+    "eulerTracks": 16,
+    "bytes": 1604500
+  },
+  {
+    "id": 1003,
+    "tracks": 106,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 9,
+    "bytes": 982536
+  },
+  {
+    "id": 1004,
+    "tracks": 223,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 35,
+    "bytes": 1169900
+  },
+  {
+    "id": 1005,
+    "tracks": 367,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1005_00_00_WingBSkin"
+    ],
+    "eulerTracks": 13,
+    "bytes": 1493612
+  },
+  {
+    "id": 1006,
+    "tracks": 207,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 1479476
+  },
+  {
+    "id": 1007,
+    "tracks": 425,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1007_11_00_Tail02Skin"
+    ],
+    "eulerTracks": 49,
+    "bytes": 1482112
+  },
+  {
+    "id": 1008,
+    "tracks": 474,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1008_11_00_AntennaSkin",
+      "CusAnimVis_pm1008_11_00_Body02Skin",
+      "CusAnimVis_pm1008_11_00_Reduceaura01Skin",
+      "CusAnimVis_pm1008_11_00_Reduceaura02Skin",
+      "CusAnimVis_pm1008_11_00_Reduceaura03Skin",
+      "CusAnimVis_pm1008_11_00_Reduceaura04Skin",
+      "CusAnimVis_pm1008_11_00_Tail02Skin"
+    ],
+    "eulerTracks": 109,
+    "bytes": 2483008
+  },
+  {
+    "id": 1009,
+    "tracks": 400,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 1,
+    "bytes": 1397976
+  },
+  {
+    "id": 1010,
+    "tracks": 109,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1010_00_00_SaberSkin"
+    ],
+    "eulerTracks": 13,
+    "bytes": 1570668
+  },
+  {
+    "id": 1011,
+    "tracks": 163,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 20,
+    "bytes": 933752
+  },
+  {
+    "id": 1012,
+    "tracks": 215,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1012_11_00_BodyCSkin",
+      "CusAnimVis_pm1012_11_00_BodyFSkin",
+      "CusAnimVis_pm1012_11_00_HeadCSkin",
+      "CusAnimVis_pm1012_11_00_UpperPowderSkin"
+    ],
+    "eulerTracks": 47,
+    "bytes": 1366904
+  },
+  {
+    "id": 1013,
+    "tracks": 335,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 61,
+    "bytes": 658804
+  },
+  {
+    "id": 1014,
+    "tracks": 356,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1014_00_00_ChainBSkin"
+    ],
+    "eulerTracks": 33,
+    "bytes": 1512836
+  },
+  {
+    "id": 1015,
+    "tracks": 344,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1015_00_00_FeelerBSkin"
+    ],
+    "eulerTracks": 31,
+    "bytes": 1155400
+  },
+  {
+    "id": 1016,
+    "tracks": 398,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1016_00_00_ChainASkin",
+      "CusAnimVis_pm1016_00_00_ChainBSkin",
+      "CusAnimVis_pm1016_00_00_LeftWingSkin",
+      "CusAnimVis_pm1016_00_00_RightWingSkin"
+    ],
+    "eulerTracks": 20,
+    "bytes": 2672696
+  },
+  {
+    "id": 1017,
+    "tracks": 264,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1017_11_00_BranchSkin",
+      "CusAnimVis_pm1017_11_00_FaceFeelerBSkin",
+      "CusAnimVis_pm1017_11_00_TentacleSkin",
+      "CusAnimVis_pm1017_11_00_WeponSkin"
+    ],
+    "eulerTracks": 32,
+    "bytes": 1475232
+  },
+  {
+    "id": 1018,
+    "tracks": 183,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1018_00_00_BodyBSkin",
+      "CusAnimVis_pm1018_00_00_EffectASkin",
+      "CusAnimVis_pm1018_00_00_EffectBSkin",
+      "CusAnimVis_pm1018_00_00_LeftHandSkin",
+      "CusAnimVis_pm1018_00_00_RightHandSkin"
+    ],
+    "eulerTracks": 16,
+    "bytes": 1369336
+  },
+  {
+    "id": 1019,
+    "tracks": 424,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 36,
+    "bytes": 601904
+  },
+  {
+    "id": 1020,
+    "tracks": 284,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 16,
+    "bytes": 1947496
+  },
+  {
+    "id": 1021,
+    "tracks": 227,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1021_00_00_HairBSkin"
+    ],
+    "eulerTracks": 21,
+    "bytes": 1292956
+  },
+  {
+    "id": 1022,
+    "tracks": 134,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1022_00_00_HornBSkin",
+      "CusAnimVis_pm1022_00_00_HornCSkin"
+    ],
+    "eulerTracks": 7,
+    "bytes": 1817912
+  },
+  {
+    "id": 1023,
+    "tracks": 211,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1023_00_00_HornBSkin"
+    ],
+    "eulerTracks": 22,
+    "bytes": 2641308
+  },
+  {
+    "id": 1024,
+    "tracks": 149,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [
+      "CusAnimVis_pm1024_11_00_BodyBSkin"
+    ],
+    "eulerTracks": 7,
+    "bytes": 624656
+  },
+  {
+    "id": 1025,
+    "tracks": 169,
+    "skippedBonePaths": [],
+    "hiddenMeshes": [],
+    "eulerTracks": 27,
+    "bytes": 269392
+  }
+]

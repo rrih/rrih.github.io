@@ -1,0 +1,10 @@
+{
+  "models": 1025,
+  "eulerTracks": 13311,
+  "eulerKeys": 248833,
+  "eulerRotationOrders": {
+    "0": 13311
+  },
+  "otherNonemptyCurveSections": {},
+  "overlappingBoneRotations": {}
+}

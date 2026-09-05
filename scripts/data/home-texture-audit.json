@@ -1,0 +1,9574 @@
+[
+  {
+    "id": 1,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 498260
+  },
+  {
+    "id": 2,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 499760
+  },
+  {
+    "id": 3,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 579976
+  },
+  {
+    "id": 4,
+    "materials": 5,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [
+      "pm0004_00_00-FireCore",
+      "pm0004_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 358648
+  },
+  {
+    "id": 5,
+    "materials": 6,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [
+      "pm0005_00_00-FireCore",
+      "pm0005_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 392288
+  },
+  {
+    "id": 6,
+    "materials": 7,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [
+      "pm0006_00_00-FireCore",
+      "pm0006_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 449992
+  },
+  {
+    "id": 7,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 495932
+  },
+  {
+    "id": 8,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 705552
+  },
+  {
+    "id": 9,
+    "materials": 12,
+    "texturedMaterials": 12,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 708060
+  },
+  {
+    "id": 10,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 310804
+  },
+  {
+    "id": 11,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 215272
+  },
+  {
+    "id": 12,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 296740
+  },
+  {
+    "id": 13,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 305628
+  },
+  {
+    "id": 14,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 198068
+  },
+  {
+    "id": 15,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 421120
+  },
+  {
+    "id": 16,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 435520
+  },
+  {
+    "id": 17,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 519564
+  },
+  {
+    "id": 18,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 531556
+  },
+  {
+    "id": 19,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 314004
+  },
+  {
+    "id": 20,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 403660
+  },
+  {
+    "id": 21,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 598284
+  },
+  {
+    "id": 22,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 565808
+  },
+  {
+    "id": 23,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 298284
+  },
+  {
+    "id": 24,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 395284
+  },
+  {
+    "id": 25,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 383404
+  },
+  {
+    "id": 26,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 457872
+  },
+  {
+    "id": 27,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 659320
+  },
+  {
+    "id": 28,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 437800
+  },
+  {
+    "id": 29,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 293420
+  },
+  {
+    "id": 30,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 311792
+  },
+  {
+    "id": 31,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 362276
+  },
+  {
+    "id": 32,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 294708
+  },
+  {
+    "id": 33,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 319020
+  },
+  {
+    "id": 34,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 377856
+  },
+  {
+    "id": 35,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 336428
+  },
+  {
+    "id": 36,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 318148
+  },
+  {
+    "id": 37,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 385776
+  },
+  {
+    "id": 38,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 398224
+  },
+  {
+    "id": 39,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 382320
+  },
+  {
+    "id": 40,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 386204
+  },
+  {
+    "id": 41,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 289684
+  },
+  {
+    "id": 42,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 330116
+  },
+  {
+    "id": 43,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 258496
+  },
+  {
+    "id": 44,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 385000
+  },
+  {
+    "id": 45,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 342592
+  },
+  {
+    "id": 46,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 483616
+  },
+  {
+    "id": 47,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 282676
+  },
+  {
+    "id": 48,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 294132
+  },
+  {
+    "id": 49,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 719768
+  },
+  {
+    "id": 50,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 153464
+  },
+  {
+    "id": 51,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 349436
+  },
+  {
+    "id": 52,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 488304
+  },
+  {
+    "id": 53,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 289024
+  },
+  {
+    "id": 54,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 268780
+  },
+  {
+    "id": 55,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 371772
+  },
+  {
+    "id": 56,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 325892
+  },
+  {
+    "id": 57,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 299016
+  },
+  {
+    "id": 58,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 479660
+  },
+  {
+    "id": 59,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 604692
+  },
+  {
+    "id": 60,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 297100
+  },
+  {
+    "id": 61,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 460312
+  },
+  {
+    "id": 62,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 492928
+  },
+  {
+    "id": 63,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 326932
+  },
+  {
+    "id": 64,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 421676
+  },
+  {
+    "id": 65,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 379020
+  },
+  {
+    "id": 66,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 360068
+  },
+  {
+    "id": 67,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 680504
+  },
+  {
+    "id": 68,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 676600
+  },
+  {
+    "id": 69,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 282040
+  },
+  {
+    "id": 70,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 236256
+  },
+  {
+    "id": 71,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 316156
+  },
+  {
+    "id": 72,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 287624
+  },
+  {
+    "id": 73,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 314520
+  },
+  {
+    "id": 74,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 305672
+  },
+  {
+    "id": 75,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 346708
+  },
+  {
+    "id": 76,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 625256
+  },
+  {
+    "id": 77,
+    "materials": 13,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [
+      "pm0077_00_00-FireCoreA",
+      "pm0077_00_00-FireCoreB",
+      "pm0077_00_00-FireCoreC",
+      "pm0077_00_00-FireCoreD",
+      "pm0077_00_00-FireCoreE",
+      "pm0077_00_00-FireMaskA",
+      "pm0077_00_00-FireMaskB",
+      "pm0077_00_00-FireMaskC",
+      "pm0077_00_00-FireMaskD",
+      "pm0077_00_00-FireMaskE"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 358164
+  },
+  {
+    "id": 78,
+    "materials": 16,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [
+      "pm0078_00_00-FireCoreA",
+      "pm0078_00_00-FireCoreB",
+      "pm0078_00_00-FireCoreC",
+      "pm0078_00_00-FireCoreD",
+      "pm0078_00_00-FireCoreF",
+      "pm0078_00_00-FireCoreE",
+      "pm0078_00_00-FireCoreG",
+      "pm0078_00_00-FireMaskA",
+      "pm0078_00_00-FireMaskB",
+      "pm0078_00_00-FireMaskC",
+      "pm0078_00_00-FireMaskD",
+      "pm0078_00_00-FireMaskF",
+      "pm0078_00_00-FireMaskE",
+      "pm0078_00_00-FireMaskG"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 427648
+  },
+  {
+    "id": 79,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 309176
+  },
+  {
+    "id": 80,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 468072
+  },
+  {
+    "id": 81,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 228248
+  },
+  {
+    "id": 82,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 624896
+  },
+  {
+    "id": 83,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 542172
+  },
+  {
+    "id": 84,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 518372
+  },
+  {
+    "id": 85,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 619156
+  },
+  {
+    "id": 86,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 282968
+  },
+  {
+    "id": 87,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 301140
+  },
+  {
+    "id": 88,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0088_00_00-BodyA",
+      "pm0088_00_00-BodyB",
+      "pm0088_00_00-BodyC01"
+    ],
+    "bytes": 1178864
+  },
+  {
+    "id": 89,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0089_00_00-BodyC01",
+      "pm0089_00_00-BodyC00"
+    ],
+    "bytes": 882472
+  },
+  {
+    "id": 90,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 267512
+  },
+  {
+    "id": 91,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 330204
+  },
+  {
+    "id": 92,
+    "materials": 8,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [
+      "pm0092_00_00-SmokeCore",
+      "pm0092_00_00-SmokeMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 189200
+  },
+  {
+    "id": 93,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 265096
+  },
+  {
+    "id": 94,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 346412
+  },
+  {
+    "id": 95,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 307896
+  },
+  {
+    "id": 96,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 318828
+  },
+  {
+    "id": 97,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 433244
+  },
+  {
+    "id": 98,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 424640
+  },
+  {
+    "id": 99,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 415976
+  },
+  {
+    "id": 100,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 233664
+  },
+  {
+    "id": 101,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 193940
+  },
+  {
+    "id": 102,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 796348
+  },
+  {
+    "id": 103,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 500632
+  },
+  {
+    "id": 104,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 356696
+  },
+  {
+    "id": 105,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 371288
+  },
+  {
+    "id": 106,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 285620
+  },
+  {
+    "id": 107,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 403520
+  },
+  {
+    "id": 108,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 289464
+  },
+  {
+    "id": 109,
+    "materials": 10,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [
+      "pm0109_00_00-SmokeCoreA",
+      "pm0109_00_00-SmokeCoreB00",
+      "pm0109_00_00-SmokeCoreB01",
+      "pm0109_00_00-SmokeMaskA",
+      "pm0109_00_00-SmokeMaskB00",
+      "pm0109_00_00-SmokeMaskB01"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 287764
+  },
+  {
+    "id": 110,
+    "materials": 10,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [
+      "pm0110_00_00-SmokeCoreA",
+      "pm0110_00_00-SmokeCoreB00",
+      "pm0110_00_00-SmokeCoreB01",
+      "pm0110_00_00-SmokeMaskA",
+      "pm0110_00_00-SmokeMaskB00",
+      "pm0110_00_00-SmokeMaskB01"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 424780
+  },
+  {
+    "id": 111,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 472960
+  },
+  {
+    "id": 112,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 452072
+  },
+  {
+    "id": 113,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 326784
+  },
+  {
+    "id": 114,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 571516
+  },
+  {
+    "id": 115,
+    "materials": 14,
+    "texturedMaterials": 14,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 650424
+  },
+  {
+    "id": 116,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 233412
+  },
+  {
+    "id": 117,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 418644
+  },
+  {
+    "id": 118,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 752064
+  },
+  {
+    "id": 119,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 527792
+  },
+  {
+    "id": 120,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 162992
+  },
+  {
+    "id": 121,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 280020
+  },
+  {
+    "id": 122,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 418472
+  },
+  {
+    "id": 123,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 585724
+  },
+  {
+    "id": 124,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 560504
+  },
+  {
+    "id": 125,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 366700
+  },
+  {
+    "id": 126,
+    "materials": 11,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [
+      "pm0126_00_00-FireCore",
+      "pm0126_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0126_00_00-BodyA00"
+    ],
+    "bytes": 581064
+  },
+  {
+    "id": 127,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 354124
+  },
+  {
+    "id": 128,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 435896
+  },
+  {
+    "id": 129,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 418752
+  },
+  {
+    "id": 130,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 526284
+  },
+  {
+    "id": 131,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 348764
+  },
+  {
+    "id": 132,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 209292
+  },
+  {
+    "id": 133,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 329264
+  },
+  {
+    "id": 134,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 460940
+  },
+  {
+    "id": 135,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 388008
+  },
+  {
+    "id": 136,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 394564
+  },
+  {
+    "id": 137,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 78008
+  },
+  {
+    "id": 138,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 358552
+  },
+  {
+    "id": 139,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 554080
+  },
+  {
+    "id": 140,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 168724
+  },
+  {
+    "id": 141,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 345404
+  },
+  {
+    "id": 142,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 329264
+  },
+  {
+    "id": 143,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 371424
+  },
+  {
+    "id": 144,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 577864
+  },
+  {
+    "id": 145,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 560780
+  },
+  {
+    "id": 146,
+    "materials": 11,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [
+      "pm0146_00_00-FireCoreA01",
+      "pm0146_00_00-FireCoreA00",
+      "pm0146_00_00-FireCoreB",
+      "pm0146_00_00-FireCoreC",
+      "pm0146_00_00-FireMaskA00",
+      "pm0146_00_00-FireMaskA01",
+      "pm0146_00_00-FireMaskB",
+      "pm0146_00_00-FireMaskC"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 466180
+  },
+  {
+    "id": 147,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 242740
+  },
+  {
+    "id": 148,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 368920
+  },
+  {
+    "id": 149,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 430576
+  },
+  {
+    "id": 150,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 468512
+  },
+  {
+    "id": 151,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 329408
+  },
+  {
+    "id": 152,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 410928
+  },
+  {
+    "id": 153,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 524732
+  },
+  {
+    "id": 154,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 490460
+  },
+  {
+    "id": 155,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 287992
+  },
+  {
+    "id": 156,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 471008
+  },
+  {
+    "id": 157,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 448336
+  },
+  {
+    "id": 158,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 508432
+  },
+  {
+    "id": 159,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 577920
+  },
+  {
+    "id": 160,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 465708
+  },
+  {
+    "id": 161,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 311760
+  },
+  {
+    "id": 162,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 296144
+  },
+  {
+    "id": 163,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 420412
+  },
+  {
+    "id": 164,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 705564
+  },
+  {
+    "id": 165,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 439664
+  },
+  {
+    "id": 166,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 471088
+  },
+  {
+    "id": 167,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 300548
+  },
+  {
+    "id": 168,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 293856
+  },
+  {
+    "id": 169,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 283040
+  },
+  {
+    "id": 170,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 319844
+  },
+  {
+    "id": 171,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 454600
+  },
+  {
+    "id": 172,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 329568
+  },
+  {
+    "id": 173,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 274660
+  },
+  {
+    "id": 174,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 236560
+  },
+  {
+    "id": 175,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 334680
+  },
+  {
+    "id": 176,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 306408
+  },
+  {
+    "id": 177,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 235424
+  },
+  {
+    "id": 178,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 436936
+  },
+  {
+    "id": 179,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 434992
+  },
+  {
+    "id": 180,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 416716
+  },
+  {
+    "id": 181,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 403100
+  },
+  {
+    "id": 182,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 381544
+  },
+  {
+    "id": 183,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 296736
+  },
+  {
+    "id": 184,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 360348
+  },
+  {
+    "id": 185,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 265076
+  },
+  {
+    "id": 186,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 462708
+  },
+  {
+    "id": 187,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 268672
+  },
+  {
+    "id": 188,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 293004
+  },
+  {
+    "id": 189,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 312472
+  },
+  {
+    "id": 190,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 508440
+  },
+  {
+    "id": 191,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 270292
+  },
+  {
+    "id": 192,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 433356
+  },
+  {
+    "id": 193,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 391112
+  },
+  {
+    "id": 194,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 246972
+  },
+  {
+    "id": 195,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 285212
+  },
+  {
+    "id": 196,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 303120
+  },
+  {
+    "id": 197,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 306140
+  },
+  {
+    "id": 198,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 384688
+  },
+  {
+    "id": 199,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 481564
+  },
+  {
+    "id": 200,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 378920
+  },
+  {
+    "id": 201,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 92104
+  },
+  {
+    "id": 202,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 288396
+  },
+  {
+    "id": 203,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 570940
+  },
+  {
+    "id": 204,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 314928
+  },
+  {
+    "id": 205,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 338072
+  },
+  {
+    "id": 206,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 262000
+  },
+  {
+    "id": 207,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 417256
+  },
+  {
+    "id": 208,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 350476
+  },
+  {
+    "id": 209,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 429396
+  },
+  {
+    "id": 210,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 429884
+  },
+  {
+    "id": 211,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 281000
+  },
+  {
+    "id": 212,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 568736
+  },
+  {
+    "id": 213,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 294148
+  },
+  {
+    "id": 214,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 488976
+  },
+  {
+    "id": 215,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 440788
+  },
+  {
+    "id": 216,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 306632
+  },
+  {
+    "id": 217,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 416412
+  },
+  {
+    "id": 218,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 883576
+  },
+  {
+    "id": 219,
+    "materials": 7,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [
+      "pm0219_00_00-FireCore",
+      "pm0219_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0219_00_00-BodyAInc"
+    ],
+    "bytes": 881268
+  },
+  {
+    "id": 220,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 241660
+  },
+  {
+    "id": 221,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 287752
+  },
+  {
+    "id": 222,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 316384
+  },
+  {
+    "id": 223,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 309536
+  },
+  {
+    "id": 224,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 364224
+  },
+  {
+    "id": 225,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 515328
+  },
+  {
+    "id": 226,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 360900
+  },
+  {
+    "id": 227,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 537300
+  },
+  {
+    "id": 228,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 428092
+  },
+  {
+    "id": 229,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 482860
+  },
+  {
+    "id": 230,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 389980
+  },
+  {
+    "id": 231,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 295012
+  },
+  {
+    "id": 232,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 452692
+  },
+  {
+    "id": 233,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 390312
+  },
+  {
+    "id": 234,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 464840
+  },
+  {
+    "id": 235,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 424944
+  },
+  {
+    "id": 236,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 409856
+  },
+  {
+    "id": 237,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 307984
+  },
+  {
+    "id": 238,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 430436
+  },
+  {
+    "id": 239,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 350632
+  },
+  {
+    "id": 240,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 342032
+  },
+  {
+    "id": 241,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 466160
+  },
+  {
+    "id": 242,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 343756
+  },
+  {
+    "id": 243,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 659128
+  },
+  {
+    "id": 244,
+    "materials": 12,
+    "texturedMaterials": 12,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 510344
+  },
+  {
+    "id": 245,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 455136
+  },
+  {
+    "id": 246,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 259156
+  },
+  {
+    "id": 247,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 267344
+  },
+  {
+    "id": 248,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 491552
+  },
+  {
+    "id": 249,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 478992
+  },
+  {
+    "id": 250,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 686272
+  },
+  {
+    "id": 251,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 588636
+  },
+  {
+    "id": 252,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 357052
+  },
+  {
+    "id": 253,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 399924
+  },
+  {
+    "id": 254,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 548448
+  },
+  {
+    "id": 255,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 331104
+  },
+  {
+    "id": 256,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 553844
+  },
+  {
+    "id": 257,
+    "materials": 11,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [
+      "pm0257_00_00-FireCoreA",
+      "pm0257_00_00-FireCoreB",
+      "pm0257_00_00-FireMaskB",
+      "pm0257_00_00-FireMaskA"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 571088
+  },
+  {
+    "id": 258,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 363168
+  },
+  {
+    "id": 259,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 388120
+  },
+  {
+    "id": 260,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 469924
+  },
+  {
+    "id": 261,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 380516
+  },
+  {
+    "id": 262,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 484080
+  },
+  {
+    "id": 263,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 415584
+  },
+  {
+    "id": 264,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 472216
+  },
+  {
+    "id": 265,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 339808
+  },
+  {
+    "id": 266,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 181220
+  },
+  {
+    "id": 267,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 307764
+  },
+  {
+    "id": 268,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 135776
+  },
+  {
+    "id": 269,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 351396
+  },
+  {
+    "id": 270,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 232508
+  },
+  {
+    "id": 271,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 515264
+  },
+  {
+    "id": 272,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 462148
+  },
+  {
+    "id": 273,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 200704
+  },
+  {
+    "id": 274,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 435888
+  },
+  {
+    "id": 275,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 489104
+  },
+  {
+    "id": 276,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 400012
+  },
+  {
+    "id": 277,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 494952
+  },
+  {
+    "id": 278,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 346044
+  },
+  {
+    "id": 279,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 368132
+  },
+  {
+    "id": 280,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 343628
+  },
+  {
+    "id": 281,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 421904
+  },
+  {
+    "id": 282,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 480476
+  },
+  {
+    "id": 283,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 179248
+  },
+  {
+    "id": 284,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 375712
+  },
+  {
+    "id": 285,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 223004
+  },
+  {
+    "id": 286,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 378064
+  },
+  {
+    "id": 287,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 354104
+  },
+  {
+    "id": 288,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 385988
+  },
+  {
+    "id": 289,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 450892
+  },
+  {
+    "id": 290,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 356036
+  },
+  {
+    "id": 291,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 657372
+  },
+  {
+    "id": 292,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 298752
+  },
+  {
+    "id": 293,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 212784
+  },
+  {
+    "id": 294,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 373928
+  },
+  {
+    "id": 295,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 421284
+  },
+  {
+    "id": 296,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 328252
+  },
+  {
+    "id": 297,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 486496
+  },
+  {
+    "id": 298,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 246572
+  },
+  {
+    "id": 299,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 186688
+  },
+  {
+    "id": 300,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 339712
+  },
+  {
+    "id": 301,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 424180
+  },
+  {
+    "id": 302,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 298160
+  },
+  {
+    "id": 303,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 614052
+  },
+  {
+    "id": 304,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 409052
+  },
+  {
+    "id": 305,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 515980
+  },
+  {
+    "id": 306,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 538280
+  },
+  {
+    "id": 307,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 398040
+  },
+  {
+    "id": 308,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 434184
+  },
+  {
+    "id": 309,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 320140
+  },
+  {
+    "id": 310,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 526412
+  },
+  {
+    "id": 311,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 267016
+  },
+  {
+    "id": 312,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 263272
+  },
+  {
+    "id": 313,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 550688
+  },
+  {
+    "id": 314,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 479476
+  },
+  {
+    "id": 315,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 518484
+  },
+  {
+    "id": 316,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 293296
+  },
+  {
+    "id": 317,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 391388
+  },
+  {
+    "id": 318,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 434124
+  },
+  {
+    "id": 319,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 460464
+  },
+  {
+    "id": 320,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 278052
+  },
+  {
+    "id": 321,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 390776
+  },
+  {
+    "id": 322,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 403780
+  },
+  {
+    "id": 323,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 512048
+  },
+  {
+    "id": 324,
+    "materials": 11,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [
+      "pm0324_00_00-SmokeCoreA",
+      "pm0324_00_00-SmokeCoreB",
+      "pm0324_00_00-SmokeCoreC",
+      "pm0324_00_00-SmokeMaskA",
+      "pm0324_00_00-SmokeMaskB",
+      "pm0324_00_00-SmokeMaskC"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 464692
+  },
+  {
+    "id": 325,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 158984
+  },
+  {
+    "id": 326,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 381276
+  },
+  {
+    "id": 327,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 464852
+  },
+  {
+    "id": 328,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 231772
+  },
+  {
+    "id": 329,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 516168
+  },
+  {
+    "id": 330,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 907084
+  },
+  {
+    "id": 331,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 344468
+  },
+  {
+    "id": 332,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 373468
+  },
+  {
+    "id": 333,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 354288
+  },
+  {
+    "id": 334,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 349040
+  },
+  {
+    "id": 335,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 437528
+  },
+  {
+    "id": 336,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 592192
+  },
+  {
+    "id": 337,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 185052
+  },
+  {
+    "id": 338,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 358024
+  },
+  {
+    "id": 339,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 298704
+  },
+  {
+    "id": 340,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 355112
+  },
+  {
+    "id": 341,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 465720
+  },
+  {
+    "id": 342,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 578668
+  },
+  {
+    "id": 343,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 316188
+  },
+  {
+    "id": 344,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 230444
+  },
+  {
+    "id": 345,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 273980
+  },
+  {
+    "id": 346,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 340172
+  },
+  {
+    "id": 347,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 723024
+  },
+  {
+    "id": 348,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 695480
+  },
+  {
+    "id": 349,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 500576
+  },
+  {
+    "id": 350,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 448884
+  },
+  {
+    "id": 351,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 160156
+  },
+  {
+    "id": 352,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 414916
+  },
+  {
+    "id": 353,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 285716
+  },
+  {
+    "id": 354,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 366800
+  },
+  {
+    "id": 355,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 257344
+  },
+  {
+    "id": 356,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 490044
+  },
+  {
+    "id": 357,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 419948
+  },
+  {
+    "id": 358,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 314068
+  },
+  {
+    "id": 359,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 372340
+  },
+  {
+    "id": 360,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 289944
+  },
+  {
+    "id": 361,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 236220
+  },
+  {
+    "id": 362,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 333732
+  },
+  {
+    "id": 363,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 206220
+  },
+  {
+    "id": 364,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 323372
+  },
+  {
+    "id": 365,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 431976
+  },
+  {
+    "id": 366,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 320940
+  },
+  {
+    "id": 367,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 406780
+  },
+  {
+    "id": 368,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 332460
+  },
+  {
+    "id": 369,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 365804
+  },
+  {
+    "id": 370,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 125232
+  },
+  {
+    "id": 371,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 342172
+  },
+  {
+    "id": 372,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 264432
+  },
+  {
+    "id": 373,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 472076
+  },
+  {
+    "id": 374,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 220844
+  },
+  {
+    "id": 375,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 384232
+  },
+  {
+    "id": 376,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 477880
+  },
+  {
+    "id": 377,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 168568
+  },
+  {
+    "id": 378,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 175552
+  },
+  {
+    "id": 379,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 369176
+  },
+  {
+    "id": 380,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 403416
+  },
+  {
+    "id": 381,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 406716
+  },
+  {
+    "id": 382,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 566976
+  },
+  {
+    "id": 383,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 575288
+  },
+  {
+    "id": 384,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 538580
+  },
+  {
+    "id": 385,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 385516
+  },
+  {
+    "id": 386,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 472848
+  },
+  {
+    "id": 387,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 367596
+  },
+  {
+    "id": 388,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 641180
+  },
+  {
+    "id": 389,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 695804
+  },
+  {
+    "id": 390,
+    "materials": 7,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [
+      "pm0390_00_00-FireCore",
+      "pm0390_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 485488
+  },
+  {
+    "id": 391,
+    "materials": 6,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [
+      "pm0391_00_00-FireCore",
+      "pm0391_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 673888
+  },
+  {
+    "id": 392,
+    "materials": 6,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [
+      "pm0392_00_00-FireCore",
+      "pm0392_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 568344
+  },
+  {
+    "id": 393,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 433140
+  },
+  {
+    "id": 394,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 462560
+  },
+  {
+    "id": 395,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 479680
+  },
+  {
+    "id": 396,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 365040
+  },
+  {
+    "id": 397,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 435452
+  },
+  {
+    "id": 398,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 564108
+  },
+  {
+    "id": 399,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 439288
+  },
+  {
+    "id": 400,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 435780
+  },
+  {
+    "id": 401,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 312656
+  },
+  {
+    "id": 402,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 479840
+  },
+  {
+    "id": 403,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 410392
+  },
+  {
+    "id": 404,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 439728
+  },
+  {
+    "id": 405,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 549212
+  },
+  {
+    "id": 406,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 283588
+  },
+  {
+    "id": 407,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 813992
+  },
+  {
+    "id": 408,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 357948
+  },
+  {
+    "id": 409,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 492904
+  },
+  {
+    "id": 410,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 387208
+  },
+  {
+    "id": 411,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 605296
+  },
+  {
+    "id": 412,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 380176
+  },
+  {
+    "id": 413,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 362668
+  },
+  {
+    "id": 414,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 367828
+  },
+  {
+    "id": 415,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 347500
+  },
+  {
+    "id": 416,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 596444
+  },
+  {
+    "id": 417,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 449240
+  },
+  {
+    "id": 418,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 538284
+  },
+  {
+    "id": 419,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 556360
+  },
+  {
+    "id": 420,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 214188
+  },
+  {
+    "id": 421,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 248240
+  },
+  {
+    "id": 422,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 421864
+  },
+  {
+    "id": 423,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 337352
+  },
+  {
+    "id": 424,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 598428
+  },
+  {
+    "id": 425,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 251288
+  },
+  {
+    "id": 426,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 379320
+  },
+  {
+    "id": 427,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 338176
+  },
+  {
+    "id": 428,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 463900
+  },
+  {
+    "id": 429,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 512104
+  },
+  {
+    "id": 430,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 613044
+  },
+  {
+    "id": 431,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 536144
+  },
+  {
+    "id": 432,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 660944
+  },
+  {
+    "id": 433,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 359620
+  },
+  {
+    "id": 434,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 529912
+  },
+  {
+    "id": 435,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 585088
+  },
+  {
+    "id": 436,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 317272
+  },
+  {
+    "id": 437,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 276660
+  },
+  {
+    "id": 438,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 256424
+  },
+  {
+    "id": 439,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 381296
+  },
+  {
+    "id": 440,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 281964
+  },
+  {
+    "id": 441,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 564600
+  },
+  {
+    "id": 442,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 891488
+  },
+  {
+    "id": 443,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 404284
+  },
+  {
+    "id": 444,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 610552
+  },
+  {
+    "id": 445,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 552808
+  },
+  {
+    "id": 446,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 447408
+  },
+  {
+    "id": 447,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 446184
+  },
+  {
+    "id": 448,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 594240
+  },
+  {
+    "id": 449,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 425716
+  },
+  {
+    "id": 450,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 444576
+  },
+  {
+    "id": 451,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 271060
+  },
+  {
+    "id": 452,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 658628
+  },
+  {
+    "id": 453,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 286892
+  },
+  {
+    "id": 454,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 367364
+  },
+  {
+    "id": 455,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 370984
+  },
+  {
+    "id": 456,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 351564
+  },
+  {
+    "id": 457,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 343620
+  },
+  {
+    "id": 458,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 191732
+  },
+  {
+    "id": 459,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 421528
+  },
+  {
+    "id": 460,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 539552
+  },
+  {
+    "id": 461,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 638640
+  },
+  {
+    "id": 462,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 666984
+  },
+  {
+    "id": 463,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 379616
+  },
+  {
+    "id": 464,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 580456
+  },
+  {
+    "id": 465,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 393684
+  },
+  {
+    "id": 466,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 499080
+  },
+  {
+    "id": 467,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0467_00_00-BodyCInc00",
+      "pm0467_00_00-BodyCInc01"
+    ],
+    "bytes": 746416
+  },
+  {
+    "id": 468,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 286716
+  },
+  {
+    "id": 469,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 432440
+  },
+  {
+    "id": 470,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 536708
+  },
+  {
+    "id": 471,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 422468
+  },
+  {
+    "id": 472,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 468224
+  },
+  {
+    "id": 473,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 384928
+  },
+  {
+    "id": 474,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 337564
+  },
+  {
+    "id": 475,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 457120
+  },
+  {
+    "id": 476,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 376340
+  },
+  {
+    "id": 477,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 644144
+  },
+  {
+    "id": 478,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 583028
+  },
+  {
+    "id": 479,
+    "materials": 5,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [
+      "pm0479_11_00-FireMask",
+      "pm0479_11_00-FireCore"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 231372
+  },
+  {
+    "id": 480,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 345904
+  },
+  {
+    "id": 481,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 374340
+  },
+  {
+    "id": 482,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 354920
+  },
+  {
+    "id": 483,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 492424
+  },
+  {
+    "id": 484,
+    "materials": 13,
+    "texturedMaterials": 13,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 665292
+  },
+  {
+    "id": 485,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 535200
+  },
+  {
+    "id": 486,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 420116
+  },
+  {
+    "id": 487,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 699352
+  },
+  {
+    "id": 488,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 409244
+  },
+  {
+    "id": 489,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 309140
+  },
+  {
+    "id": 490,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 489888
+  },
+  {
+    "id": 491,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 429416
+  },
+  {
+    "id": 492,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 559192
+  },
+  {
+    "id": 493,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 585672
+  },
+  {
+    "id": 494,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0494_00_00-AuraEf1"
+    ],
+    "bytes": 527392
+  },
+  {
+    "id": 495,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 425900
+  },
+  {
+    "id": 496,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 514472
+  },
+  {
+    "id": 497,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 479680
+  },
+  {
+    "id": 498,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 422540
+  },
+  {
+    "id": 499,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 580660
+  },
+  {
+    "id": 500,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0500_00_00-BodyCHinoarashi_Fire"
+    ],
+    "bytes": 507236
+  },
+  {
+    "id": 501,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 452748
+  },
+  {
+    "id": 502,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 528636
+  },
+  {
+    "id": 503,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 396228
+  },
+  {
+    "id": 504,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 478480
+  },
+  {
+    "id": 505,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 553620
+  },
+  {
+    "id": 506,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 366736
+  },
+  {
+    "id": 507,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 355232
+  },
+  {
+    "id": 508,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 553764
+  },
+  {
+    "id": 509,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 386760
+  },
+  {
+    "id": 510,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 559468
+  },
+  {
+    "id": 511,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 459084
+  },
+  {
+    "id": 512,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 470196
+  },
+  {
+    "id": 513,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 403628
+  },
+  {
+    "id": 514,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 515876
+  },
+  {
+    "id": 515,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 404328
+  },
+  {
+    "id": 516,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 487176
+  },
+  {
+    "id": 517,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 244568
+  },
+  {
+    "id": 518,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 344788
+  },
+  {
+    "id": 519,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 416628
+  },
+  {
+    "id": 520,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 460248
+  },
+  {
+    "id": 521,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 476272
+  },
+  {
+    "id": 522,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 376900
+  },
+  {
+    "id": 523,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 447376
+  },
+  {
+    "id": 524,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 128956
+  },
+  {
+    "id": 525,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 169032
+  },
+  {
+    "id": 526,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 298556
+  },
+  {
+    "id": 527,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 196540
+  },
+  {
+    "id": 528,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 341156
+  },
+  {
+    "id": 529,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 395956
+  },
+  {
+    "id": 530,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 492664
+  },
+  {
+    "id": 531,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 335260
+  },
+  {
+    "id": 532,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 358820
+  },
+  {
+    "id": 533,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 404528
+  },
+  {
+    "id": 534,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 455608
+  },
+  {
+    "id": 535,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 177460
+  },
+  {
+    "id": 536,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 470604
+  },
+  {
+    "id": 537,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 468880
+  },
+  {
+    "id": 538,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 658396
+  },
+  {
+    "id": 539,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 642636
+  },
+  {
+    "id": 540,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 379232
+  },
+  {
+    "id": 541,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 341096
+  },
+  {
+    "id": 542,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 466964
+  },
+  {
+    "id": 543,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 258116
+  },
+  {
+    "id": 544,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 311376
+  },
+  {
+    "id": 545,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 431172
+  },
+  {
+    "id": 546,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 322464
+  },
+  {
+    "id": 547,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 313224
+  },
+  {
+    "id": 548,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 272548
+  },
+  {
+    "id": 549,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 483692
+  },
+  {
+    "id": 550,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 343136
+  },
+  {
+    "id": 551,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 295344
+  },
+  {
+    "id": 552,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 390900
+  },
+  {
+    "id": 553,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 450300
+  },
+  {
+    "id": 554,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 332084
+  },
+  {
+    "id": 555,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0555_11_00-BodyB"
+    ],
+    "bytes": 468720
+  },
+  {
+    "id": 556,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 347860
+  },
+  {
+    "id": 557,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 318728
+  },
+  {
+    "id": 558,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 327432
+  },
+  {
+    "id": 559,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 450256
+  },
+  {
+    "id": 560,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 394044
+  },
+  {
+    "id": 561,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 359780
+  },
+  {
+    "id": 562,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 275412
+  },
+  {
+    "id": 563,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 484364
+  },
+  {
+    "id": 564,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 451096
+  },
+  {
+    "id": 565,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 377692
+  },
+  {
+    "id": 566,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 546160
+  },
+  {
+    "id": 567,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 629532
+  },
+  {
+    "id": 568,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 400476
+  },
+  {
+    "id": 569,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 583660
+  },
+  {
+    "id": 570,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 452116
+  },
+  {
+    "id": 571,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 591664
+  },
+  {
+    "id": 572,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 390924
+  },
+  {
+    "id": 573,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 426836
+  },
+  {
+    "id": 574,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 340276
+  },
+  {
+    "id": 575,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 430840
+  },
+  {
+    "id": 576,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 481448
+  },
+  {
+    "id": 577,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 277320
+  },
+  {
+    "id": 578,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 354940
+  },
+  {
+    "id": 579,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 462752
+  },
+  {
+    "id": 580,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 423408
+  },
+  {
+    "id": 581,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 496452
+  },
+  {
+    "id": 582,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 329844
+  },
+  {
+    "id": 583,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 266576
+  },
+  {
+    "id": 584,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 502796
+  },
+  {
+    "id": 585,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 442032
+  },
+  {
+    "id": 586,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 486340
+  },
+  {
+    "id": 587,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 372496
+  },
+  {
+    "id": 588,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 198888
+  },
+  {
+    "id": 589,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 424696
+  },
+  {
+    "id": 590,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 175092
+  },
+  {
+    "id": 591,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 390504
+  },
+  {
+    "id": 592,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 377788
+  },
+  {
+    "id": 593,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 335068
+  },
+  {
+    "id": 594,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 265948
+  },
+  {
+    "id": 595,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 204404
+  },
+  {
+    "id": 596,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 480740
+  },
+  {
+    "id": 597,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 253396
+  },
+  {
+    "id": 598,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 487584
+  },
+  {
+    "id": 599,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 183452
+  },
+  {
+    "id": 600,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 329672
+  },
+  {
+    "id": 601,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 531844
+  },
+  {
+    "id": 602,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 153868
+  },
+  {
+    "id": 603,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 417536
+  },
+  {
+    "id": 604,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 616180
+  },
+  {
+    "id": 605,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 457692
+  },
+  {
+    "id": 606,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 415632
+  },
+  {
+    "id": 607,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 262676
+  },
+  {
+    "id": 608,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 410092
+  },
+  {
+    "id": 609,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 429232
+  },
+  {
+    "id": 610,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 358124
+  },
+  {
+    "id": 611,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 428468
+  },
+  {
+    "id": 612,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 561024
+  },
+  {
+    "id": 613,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 346840
+  },
+  {
+    "id": 614,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 281224
+  },
+  {
+    "id": 615,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 402984
+  },
+  {
+    "id": 616,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 313684
+  },
+  {
+    "id": 617,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 430148
+  },
+  {
+    "id": 618,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 279984
+  },
+  {
+    "id": 619,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 372948
+  },
+  {
+    "id": 620,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 284396
+  },
+  {
+    "id": 621,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 574408
+  },
+  {
+    "id": 622,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 347180
+  },
+  {
+    "id": 623,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 480772
+  },
+  {
+    "id": 624,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 411144
+  },
+  {
+    "id": 625,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 652260
+  },
+  {
+    "id": 626,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 544872
+  },
+  {
+    "id": 627,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 557076
+  },
+  {
+    "id": 628,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 557200
+  },
+  {
+    "id": 629,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 348300
+  },
+  {
+    "id": 630,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 585732
+  },
+  {
+    "id": 631,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 896188
+  },
+  {
+    "id": 632,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 586888
+  },
+  {
+    "id": 633,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 224272
+  },
+  {
+    "id": 634,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 350744
+  },
+  {
+    "id": 635,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 347600
+  },
+  {
+    "id": 636,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 297548
+  },
+  {
+    "id": 637,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 557564
+  },
+  {
+    "id": 638,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 514920
+  },
+  {
+    "id": 639,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 397692
+  },
+  {
+    "id": 640,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 397488
+  },
+  {
+    "id": 641,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 445104
+  },
+  {
+    "id": 642,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 513860
+  },
+  {
+    "id": 643,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 592124
+  },
+  {
+    "id": 644,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 706324
+  },
+  {
+    "id": 645,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 440932
+  },
+  {
+    "id": 646,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 548628
+  },
+  {
+    "id": 647,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 583100
+  },
+  {
+    "id": 648,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 372412
+  },
+  {
+    "id": 649,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 526228
+  },
+  {
+    "id": 650,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 498700
+  },
+  {
+    "id": 651,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 539856
+  },
+  {
+    "id": 652,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 778052
+  },
+  {
+    "id": 653,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 560124
+  },
+  {
+    "id": 654,
+    "materials": 9,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [
+      "pm0654_00_00-FireCore",
+      "pm0654_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 768288
+  },
+  {
+    "id": 655,
+    "materials": 7,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [
+      "pm0655_00_00-FireCore",
+      "pm0655_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 649104
+  },
+  {
+    "id": 656,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 636888
+  },
+  {
+    "id": 657,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 800112
+  },
+  {
+    "id": 658,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 948144
+  },
+  {
+    "id": 659,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 483948
+  },
+  {
+    "id": 660,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 634372
+  },
+  {
+    "id": 661,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 428560
+  },
+  {
+    "id": 662,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 598736
+  },
+  {
+    "id": 663,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 644816
+  },
+  {
+    "id": 664,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 264380
+  },
+  {
+    "id": 665,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 452520
+  },
+  {
+    "id": 666,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 357172
+  },
+  {
+    "id": 667,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 456876
+  },
+  {
+    "id": 668,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 473288
+  },
+  {
+    "id": 669,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 511384
+  },
+  {
+    "id": 670,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 628244
+  },
+  {
+    "id": 671,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 663848
+  },
+  {
+    "id": 672,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 645584
+  },
+  {
+    "id": 673,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 674472
+  },
+  {
+    "id": 674,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 520952
+  },
+  {
+    "id": 675,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 535040
+  },
+  {
+    "id": 676,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 641460
+  },
+  {
+    "id": 677,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 387892
+  },
+  {
+    "id": 678,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 594984
+  },
+  {
+    "id": 679,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 592604
+  },
+  {
+    "id": 680,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 861168
+  },
+  {
+    "id": 681,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 657432
+  },
+  {
+    "id": 682,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 396460
+  },
+  {
+    "id": 683,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 653824
+  },
+  {
+    "id": 684,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 368292
+  },
+  {
+    "id": 685,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 410584
+  },
+  {
+    "id": 686,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 547144
+  },
+  {
+    "id": 687,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 623000
+  },
+  {
+    "id": 688,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 404588
+  },
+  {
+    "id": 689,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 911176
+  },
+  {
+    "id": 690,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 486000
+  },
+  {
+    "id": 691,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 561024
+  },
+  {
+    "id": 692,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 384132
+  },
+  {
+    "id": 693,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 555352
+  },
+  {
+    "id": 694,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 465196
+  },
+  {
+    "id": 695,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 459588
+  },
+  {
+    "id": 696,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 552580
+  },
+  {
+    "id": 697,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 583480
+  },
+  {
+    "id": 698,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0698_00_00-BodyB"
+    ],
+    "bytes": 512976
+  },
+  {
+    "id": 699,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0699_00_00-BodyBInc"
+    ],
+    "bytes": 526700
+  },
+  {
+    "id": 700,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 564092
+  },
+  {
+    "id": 701,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 506188
+  },
+  {
+    "id": 702,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 323608
+  },
+  {
+    "id": 703,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 290664
+  },
+  {
+    "id": 704,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 219608
+  },
+  {
+    "id": 705,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 258988
+  },
+  {
+    "id": 706,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 437240
+  },
+  {
+    "id": 707,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 606208
+  },
+  {
+    "id": 708,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 371372
+  },
+  {
+    "id": 709,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 633596
+  },
+  {
+    "id": 710,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 389088
+  },
+  {
+    "id": 711,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 478152
+  },
+  {
+    "id": 712,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 244504
+  },
+  {
+    "id": 713,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 476504
+  },
+  {
+    "id": 714,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 540172
+  },
+  {
+    "id": 715,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 883188
+  },
+  {
+    "id": 716,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0716_00_00-BodyD"
+    ],
+    "bytes": 651824
+  },
+  {
+    "id": 717,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1119620
+  },
+  {
+    "id": 718,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0718_00_00-EffAInc"
+    ],
+    "bytes": 740688
+  },
+  {
+    "id": 719,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 469516
+  },
+  {
+    "id": 720,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 567600
+  },
+  {
+    "id": 721,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 732100
+  },
+  {
+    "id": 722,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 621804
+  },
+  {
+    "id": 723,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 681536
+  },
+  {
+    "id": 724,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 897428
+  },
+  {
+    "id": 725,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 461092
+  },
+  {
+    "id": 726,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0726_00_00-BodyC01Back",
+      "pm0726_00_00-BodyC01Front"
+    ],
+    "bytes": 710988
+  },
+  {
+    "id": 727,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0727_00_00-BodyC"
+    ],
+    "bytes": 943376
+  },
+  {
+    "id": 728,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 357896
+  },
+  {
+    "id": 729,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 569648
+  },
+  {
+    "id": 730,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1096392
+  },
+  {
+    "id": 731,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 507004
+  },
+  {
+    "id": 732,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 569064
+  },
+  {
+    "id": 733,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 632016
+  },
+  {
+    "id": 734,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 448144
+  },
+  {
+    "id": 735,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 498948
+  },
+  {
+    "id": 736,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 224528
+  },
+  {
+    "id": 737,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 270752
+  },
+  {
+    "id": 738,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 697636
+  },
+  {
+    "id": 739,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 610476
+  },
+  {
+    "id": 740,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 752900
+  },
+  {
+    "id": 741,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 893392
+  },
+  {
+    "id": 742,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 425528
+  },
+  {
+    "id": 743,
+    "materials": 12,
+    "texturedMaterials": 12,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 645656
+  },
+  {
+    "id": 744,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 616472
+  },
+  {
+    "id": 745,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 654936
+  },
+  {
+    "id": 746,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 321996
+  },
+  {
+    "id": 747,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 625392
+  },
+  {
+    "id": 748,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 751040
+  },
+  {
+    "id": 749,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 459824
+  },
+  {
+    "id": 750,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 577704
+  },
+  {
+    "id": 751,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 777924
+  },
+  {
+    "id": 752,
+    "materials": 13,
+    "texturedMaterials": 13,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 949904
+  },
+  {
+    "id": 753,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 348816
+  },
+  {
+    "id": 754,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 796356
+  },
+  {
+    "id": 755,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 374928
+  },
+  {
+    "id": 756,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 528060
+  },
+  {
+    "id": 757,
+    "materials": 5,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [
+      "pm0757_00_00-FireCore",
+      "pm0757_00_00-FireMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 448484
+  },
+  {
+    "id": 758,
+    "materials": 15,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [
+      "pm0758_00_00-FireCoreA00",
+      "pm0758_00_00-FireCoreA01",
+      "pm0758_00_00-FireCoreA02",
+      "pm0758_00_00-FireCoreA03",
+      "pm0758_00_00-FireCoreB01",
+      "pm0758_00_00-FireCoreB00",
+      "pm0758_00_00-FireMaskA00",
+      "pm0758_00_00-FireMaskA02",
+      "pm0758_00_00-FireMaskA01",
+      "pm0758_00_00-FireMaskA03",
+      "pm0758_00_00-FireMaskB00",
+      "pm0758_00_00-FireMaskB01"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 854924
+  },
+  {
+    "id": 759,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 340960
+  },
+  {
+    "id": 760,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 362860
+  },
+  {
+    "id": 761,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 249580
+  },
+  {
+    "id": 762,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 589436
+  },
+  {
+    "id": 763,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 712248
+  },
+  {
+    "id": 764,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 778012
+  },
+  {
+    "id": 765,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 886152
+  },
+  {
+    "id": 766,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 707336
+  },
+  {
+    "id": 767,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 581592
+  },
+  {
+    "id": 768,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 687616
+  },
+  {
+    "id": 769,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 326020
+  },
+  {
+    "id": 770,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 666520
+  },
+  {
+    "id": 771,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 326280
+  },
+  {
+    "id": 772,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 710804
+  },
+  {
+    "id": 773,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 739104
+  },
+  {
+    "id": 774,
+    "materials": 5,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [
+      "pm0774_11_00-BodyBInc"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 713792
+  },
+  {
+    "id": 775,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 471796
+  },
+  {
+    "id": 776,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 902396
+  },
+  {
+    "id": 777,
+    "materials": 13,
+    "texturedMaterials": 13,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 968024
+  },
+  {
+    "id": 778,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 419836
+  },
+  {
+    "id": 779,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 825584
+  },
+  {
+    "id": 780,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 596700
+  },
+  {
+    "id": 781,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 920752
+  },
+  {
+    "id": 782,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 612472
+  },
+  {
+    "id": 783,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 696040
+  },
+  {
+    "id": 784,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1015420
+  },
+  {
+    "id": 785,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 925048
+  },
+  {
+    "id": 786,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 926016
+  },
+  {
+    "id": 787,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1001944
+  },
+  {
+    "id": 788,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1087984
+  },
+  {
+    "id": 789,
+    "materials": 10,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [
+      "pm0789_00_00-SmokeCoreAVco",
+      "pm0789_00_00-SmokeCoreBVco",
+      "pm0789_00_00-SmokeMaskBVco",
+      "pm0789_00_00-SmokeMaskAVco"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "omittedEffects": [
+      "pm0789_00_00_SmokeCoreSkin"
+    ],
+    "additiveMaterials": [],
+    "stencilMaterials": [
+      "pm0789_00_00-SmokeCoreAVco",
+      "pm0789_00_00-SmokeCoreBVco",
+      "pm0789_00_00-SmokeMaskBVco",
+      "pm0789_00_00-SmokeMaskAVco"
+    ],
+    "emissiveMaterials": [],
+    "effectUvApproximations": [],
+    "bytes": 504924
+  },
+  {
+    "id": 790,
+    "materials": 7,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [
+      "pm0790_00_00-SmokeCore",
+      "pm0790_00_00-SmokeMask"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 717188
+  },
+  {
+    "id": 791,
+    "materials": 14,
+    "texturedMaterials": 14,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 978428
+  },
+  {
+    "id": 792,
+    "materials": 12,
+    "texturedMaterials": 12,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1119328
+  },
+  {
+    "id": 793,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 897344
+  },
+  {
+    "id": 794,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0794_00_00-BodyE_Opa",
+      "pm0794_00_00-BodyG_Bubble"
+    ],
+    "bytes": 1314680
+  },
+  {
+    "id": 795,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1059156
+  },
+  {
+    "id": 796,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 590104
+  },
+  {
+    "id": 797,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 976080
+  },
+  {
+    "id": 798,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 619716
+  },
+  {
+    "id": 799,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 815856
+  },
+  {
+    "id": 800,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1308700
+  },
+  {
+    "id": 801,
+    "materials": 12,
+    "texturedMaterials": 12,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1318032
+  },
+  {
+    "id": 802,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0802_00_00-BodyA",
+      "pm0802_00_00-BodyAVco"
+    ],
+    "bytes": 652276
+  },
+  {
+    "id": 803,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 476104
+  },
+  {
+    "id": 804,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 802692
+  },
+  {
+    "id": 805,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1163132
+  },
+  {
+    "id": 806,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 727356
+  },
+  {
+    "id": 807,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 946512
+  },
+  {
+    "id": 808,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 521640
+  },
+  {
+    "id": 809,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 869916
+  },
+  {
+    "id": 810,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 553468
+  },
+  {
+    "id": 811,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 776148
+  },
+  {
+    "id": 812,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 869624
+  },
+  {
+    "id": 813,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 683344
+  },
+  {
+    "id": 814,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 655140
+  },
+  {
+    "id": 815,
+    "materials": 14,
+    "texturedMaterials": 13,
+    "simplifiedEffects": [
+      "pm0815_00_00-BodyC"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0815_00_00-BodyD"
+    ],
+    "bytes": 1273752
+  },
+  {
+    "id": 816,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 680504
+  },
+  {
+    "id": 817,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 679540
+  },
+  {
+    "id": 818,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 957796
+  },
+  {
+    "id": 819,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 497528
+  },
+  {
+    "id": 820,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1035184
+  },
+  {
+    "id": 821,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 500184
+  },
+  {
+    "id": 822,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 829984
+  },
+  {
+    "id": 823,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 838048
+  },
+  {
+    "id": 824,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 411036
+  },
+  {
+    "id": 825,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 886296
+  },
+  {
+    "id": 826,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0826_00_00-Eye",
+      "pm0826_00_00-BodyBIncVco"
+    ],
+    "bytes": 865648
+  },
+  {
+    "id": 827,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 596724
+  },
+  {
+    "id": 828,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 696744
+  },
+  {
+    "id": 829,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 465736
+  },
+  {
+    "id": 830,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 895848
+  },
+  {
+    "id": 831,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 460716
+  },
+  {
+    "id": 832,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 601416
+  },
+  {
+    "id": 833,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 611020
+  },
+  {
+    "id": 834,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 545272
+  },
+  {
+    "id": 835,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 737076
+  },
+  {
+    "id": 836,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1082860
+  },
+  {
+    "id": 837,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 257936
+  },
+  {
+    "id": 838,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1040740
+  },
+  {
+    "id": 839,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0839_00_00-BodyCIncVcoEnv",
+      "pm0839_00_00-BodyCInc"
+    ],
+    "bytes": 778672
+  },
+  {
+    "id": 840,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 453264
+  },
+  {
+    "id": 841,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 548988
+  },
+  {
+    "id": 842,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 737428
+  },
+  {
+    "id": 843,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 457224
+  },
+  {
+    "id": 844,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 538448
+  },
+  {
+    "id": 845,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1144704
+  },
+  {
+    "id": 846,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 627436
+  },
+  {
+    "id": 847,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 737016
+  },
+  {
+    "id": 848,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 480380
+  },
+  {
+    "id": 849,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 888768
+  },
+  {
+    "id": 850,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0850_00_00-BodyBInc"
+    ],
+    "bytes": 514000
+  },
+  {
+    "id": 851,
+    "materials": 13,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [
+      "pm0851_00_00-FireCoreA",
+      "pm0851_00_00-FireCoreB",
+      "pm0851_00_00-FireCoreC",
+      "pm0851_00_00-FireCoreD",
+      "pm0851_00_00-FireMaskA",
+      "pm0851_00_00-FireMaskB",
+      "pm0851_00_00-FireMaskC",
+      "pm0851_00_00-FireMaskD"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 905124
+  },
+  {
+    "id": 852,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 399624
+  },
+  {
+    "id": 853,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 798332
+  },
+  {
+    "id": 854,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 651940
+  },
+  {
+    "id": 855,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 953176
+  },
+  {
+    "id": 856,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 239356
+  },
+  {
+    "id": 857,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 611760
+  },
+  {
+    "id": 858,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 893056
+  },
+  {
+    "id": 859,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 500192
+  },
+  {
+    "id": 860,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 712460
+  },
+  {
+    "id": 861,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1051596
+  },
+  {
+    "id": 862,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 801500
+  },
+  {
+    "id": 863,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1052696
+  },
+  {
+    "id": 864,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0864_00_31-Feeler01",
+      "pm0864_00_31-Feeler02",
+      "pm0864_00_31-Feeler03",
+      "pm0864_00_31-Feeler04",
+      "pm0864_00_31-Missile"
+    ],
+    "bytes": 1591664
+  },
+  {
+    "id": 865,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 943252
+  },
+  {
+    "id": 866,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1066216
+  },
+  {
+    "id": 867,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 410976
+  },
+  {
+    "id": 868,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 232256
+  },
+  {
+    "id": 869,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0869_11_00-Eye",
+      "pm0869_11_00-BMouth",
+      "pm0869_11_00-AMouth"
+    ],
+    "bytes": 540896
+  },
+  {
+    "id": 870,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 998544
+  },
+  {
+    "id": 871,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 266892
+  },
+  {
+    "id": 872,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 285168
+  },
+  {
+    "id": 873,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 740480
+  },
+  {
+    "id": 874,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 265480
+  },
+  {
+    "id": 875,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 629928
+  },
+  {
+    "id": 876,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 531508
+  },
+  {
+    "id": 877,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 389200
+  },
+  {
+    "id": 878,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 490768
+  },
+  {
+    "id": 879,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 816780
+  },
+  {
+    "id": 880,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 633044
+  },
+  {
+    "id": 881,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 648176
+  },
+  {
+    "id": 882,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 518840
+  },
+  {
+    "id": 883,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 592308
+  },
+  {
+    "id": 884,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 519140
+  },
+  {
+    "id": 885,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 353272
+  },
+  {
+    "id": 886,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 792948
+  },
+  {
+    "id": 887,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0887_00_00-BodyA00",
+      "pm0887_00_00-BodyA01"
+    ],
+    "bytes": 1181972
+  },
+  {
+    "id": 888,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 812976
+  },
+  {
+    "id": 889,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 868112
+  },
+  {
+    "id": 890,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 930568
+  },
+  {
+    "id": 891,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 746040
+  },
+  {
+    "id": 892,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1061000
+  },
+  {
+    "id": 893,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1068480
+  },
+  {
+    "id": 894,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1076232
+  },
+  {
+    "id": 895,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 684456
+  },
+  {
+    "id": 896,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 770744
+  },
+  {
+    "id": 897,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 849648
+  },
+  {
+    "id": 898,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 703292
+  },
+  {
+    "id": 899,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 477900
+  },
+  {
+    "id": 900,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 380120
+  },
+  {
+    "id": 901,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 592552
+  },
+  {
+    "id": 902,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 3,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [],
+    "effectUvApproximations": [],
+    "bytes": 604396
+  },
+  {
+    "id": 903,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 459160
+  },
+  {
+    "id": 904,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 531084
+  },
+  {
+    "id": 905,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 762564
+  },
+  {
+    "id": 906,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 639340
+  },
+  {
+    "id": 907,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 846432
+  },
+  {
+    "id": 908,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1145344
+  },
+  {
+    "id": 909,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 464812
+  },
+  {
+    "id": 910,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 783620
+  },
+  {
+    "id": 911,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 1,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [
+      "pm0911_00_00-BodyB02"
+    ],
+    "effectUvApproximations": [],
+    "bytes": 1484480
+  },
+  {
+    "id": 912,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 810596
+  },
+  {
+    "id": 913,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 897980
+  },
+  {
+    "id": 914,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1614684
+  },
+  {
+    "id": 915,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 413956
+  },
+  {
+    "id": 916,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 746024
+  },
+  {
+    "id": 917,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 529880
+  },
+  {
+    "id": 918,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 613936
+  },
+  {
+    "id": 919,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 282120
+  },
+  {
+    "id": 920,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 428996
+  },
+  {
+    "id": 921,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 368708
+  },
+  {
+    "id": 922,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 397916
+  },
+  {
+    "id": 923,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 501872
+  },
+  {
+    "id": 924,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 621124
+  },
+  {
+    "id": 925,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1063536
+  },
+  {
+    "id": 926,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 312564
+  },
+  {
+    "id": 927,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 662780
+  },
+  {
+    "id": 928,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 188204
+  },
+  {
+    "id": 929,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 522956
+  },
+  {
+    "id": 930,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1000372
+  },
+  {
+    "id": 931,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 918828
+  },
+  {
+    "id": 932,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 102132
+  },
+  {
+    "id": 933,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 180796
+  },
+  {
+    "id": 934,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 408564
+  },
+  {
+    "id": 935,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0935_00_00-REye00",
+      "pm0935_00_00-LEye00"
+    ],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 9,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [
+      "pm0935_00_00-BodyDsp01",
+      "pm0935_00_00-BodyDsp00",
+      "pm0935_00_00-REye00",
+      "pm0935_00_00-Body00",
+      "pm0935_00_00-LEye00",
+      "pm0935_00_00-BodyDsp02",
+      "pm0935_00_00-REye01",
+      "pm0935_00_00-LEye01"
+    ],
+    "effectUvApproximations": [],
+    "bytes": 1032212
+  },
+  {
+    "id": 936,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0936_00_00-LEye",
+      "pm0936_00_00-REye"
+    ],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 5,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [
+      "pm0936_00_00-BodyADsp01",
+      "pm0936_00_00-BodyA01",
+      "pm0936_00_00-BodyADsp00",
+      "pm0936_00_00-BodyA00",
+      "pm0936_00_00-LEye",
+      "pm0936_00_00-REye"
+    ],
+    "effectUvApproximations": [],
+    "bytes": 981516
+  },
+  {
+    "id": 937,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0937_00_00-LEye",
+      "pm0937_00_00-REye"
+    ],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 9,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [
+      "pm0937_00_00-BodyADsp02",
+      "pm0937_00_00-BodyADsp01",
+      "pm0937_00_00-LEye",
+      "pm0937_00_00-REye",
+      "pm0937_00_00-BodyADsp00",
+      "pm0937_00_00-BodyA"
+    ],
+    "effectUvApproximations": [],
+    "bytes": 1451156
+  },
+  {
+    "id": 938,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 180844
+  },
+  {
+    "id": 939,
+    "materials": 6,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [
+      "pm0939_00_00-BodyTra"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 320656
+  },
+  {
+    "id": 940,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 472236
+  },
+  {
+    "id": 941,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 532612
+  },
+  {
+    "id": 942,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 520116
+  },
+  {
+    "id": 943,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 681164
+  },
+  {
+    "id": 944,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 353776
+  },
+  {
+    "id": 945,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 693784
+  },
+  {
+    "id": 946,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 342572
+  },
+  {
+    "id": 947,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 499980
+  },
+  {
+    "id": 948,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 472924
+  },
+  {
+    "id": 949,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [
+      "pm0949_00_00-BodyTra"
+    ],
+    "layerUvApproximations": [],
+    "bytes": 700328
+  },
+  {
+    "id": 950,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 937576
+  },
+  {
+    "id": 951,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 515068
+  },
+  {
+    "id": 952,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 879080
+  },
+  {
+    "id": 953,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 709848
+  },
+  {
+    "id": 954,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [
+      "pm0954_00_00-BodyA00",
+      "pm0954_00_00-Eye"
+    ],
+    "layerUvApproximations": [],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 1,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [
+      "pm0954_00_00-Eye"
+    ],
+    "effectUvApproximations": [],
+    "bytes": 1116076
+  },
+  {
+    "id": 955,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 712872
+  },
+  {
+    "id": 956,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 946324
+  },
+  {
+    "id": 957,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 462624
+  },
+  {
+    "id": 958,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 771764
+  },
+  {
+    "id": 959,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1207296
+  },
+  {
+    "id": 960,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 229756
+  },
+  {
+    "id": 961,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 324960
+  },
+  {
+    "id": 962,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 741348
+  },
+  {
+    "id": 963,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 347588
+  },
+  {
+    "id": 964,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 356764
+  },
+  {
+    "id": 965,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 389860
+  },
+  {
+    "id": 966,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 908452
+  },
+  {
+    "id": 967,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 551476
+  },
+  {
+    "id": 968,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 385868
+  },
+  {
+    "id": 969,
+    "materials": 3,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [
+      "pm0969_00_00-BodyEnv"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 436392
+  },
+  {
+    "id": 970,
+    "materials": 4,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [
+      "pm0970_00_00-BodyEnv"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 586868
+  },
+  {
+    "id": 971,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 1,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [],
+    "effectUvApproximations": [],
+    "bytes": 766300
+  },
+  {
+    "id": 972,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1027640
+  },
+  {
+    "id": 973,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 477312
+  },
+  {
+    "id": 974,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 319860
+  },
+  {
+    "id": 975,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 617272
+  },
+  {
+    "id": 976,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 653656
+  },
+  {
+    "id": 977,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 755756
+  },
+  {
+    "id": 978,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 368124
+  },
+  {
+    "id": 979,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1208452
+  },
+  {
+    "id": 980,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 381420
+  },
+  {
+    "id": 981,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 925756
+  },
+  {
+    "id": 982,
+    "materials": 2,
+    "texturedMaterials": 2,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 315128
+  },
+  {
+    "id": 983,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 933668
+  },
+  {
+    "id": 984,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 964020
+  },
+  {
+    "id": 985,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 372588
+  },
+  {
+    "id": 986,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 708636
+  },
+  {
+    "id": 987,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 755612
+  },
+  {
+    "id": 988,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1195844
+  },
+  {
+    "id": 989,
+    "materials": 10,
+    "texturedMaterials": 10,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1296108
+  },
+  {
+    "id": 990,
+    "materials": 9,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [
+      "pm0990_00_00-BodyATra"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0990_00_00-BodyBPara"
+    ],
+    "bytes": 625500
+  },
+  {
+    "id": 991,
+    "materials": 10,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [
+      "pm0991_00_00-BodyBTra"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0991_00_00-BodyCPara"
+    ],
+    "bytes": 1342896
+  },
+  {
+    "id": 992,
+    "materials": 8,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [
+      "pm0992_00_00-BodyATra"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0992_00_00-BodyBPara"
+    ],
+    "bytes": 1289172
+  },
+  {
+    "id": 993,
+    "materials": 9,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [
+      "pm0993_00_00-BodyBTra"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0993_00_00-BodyBPara",
+      "pm0993_00_00-BodyCInc"
+    ],
+    "bytes": 1373860
+  },
+  {
+    "id": 994,
+    "materials": 6,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [
+      "pm0994_00_00-BodyATra"
+    ],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0994_00_00-BodyB01Para"
+    ],
+    "bytes": 943080
+  },
+  {
+    "id": 995,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm1006_00_00-BodyBPara"
+    ],
+    "bytes": 758344
+  },
+  {
+    "id": 996,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 331908
+  },
+  {
+    "id": 997,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 456720
+  },
+  {
+    "id": 998,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 491468
+  },
+  {
+    "id": 999,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 986840
+  },
+  {
+    "id": 1000,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 713564
+  },
+  {
+    "id": 1001,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1555924
+  },
+  {
+    "id": 1002,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "omittedEffects": [],
+    "ignoredVertexColorPrimitives": 6,
+    "additiveMaterials": [],
+    "stencilMaterials": [],
+    "emissiveMaterials": [],
+    "effectUvApproximations": [],
+    "bytes": 1474824
+  },
+  {
+    "id": 1003,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 902248
+  },
+  {
+    "id": 1004,
+    "materials": 3,
+    "texturedMaterials": 3,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 568276
+  },
+  {
+    "id": 1005,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1282168
+  },
+  {
+    "id": 1006,
+    "materials": 9,
+    "texturedMaterials": 9,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm0995_00_00-BodyBPara01",
+      "pm0995_00_00-BodyBPara00"
+    ],
+    "bytes": 1245988
+  },
+  {
+    "id": 1007,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1078960
+  },
+  {
+    "id": 1008,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [
+      "pm1008_11_00-BodyC01"
+    ],
+    "layerUvApproximations": [
+      "pm1008_11_00-BodyC01",
+      "pm1008_11_00-BodyC00",
+      "pm1008_11_00-BodyCTra"
+    ],
+    "bytes": 1264100
+  },
+  {
+    "id": 1009,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1131852
+  },
+  {
+    "id": 1010,
+    "materials": 4,
+    "texturedMaterials": 4,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm1010_00_00-BodyBPara"
+    ],
+    "bytes": 1382820
+  },
+  {
+    "id": 1011,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 830376
+  },
+  {
+    "id": 1012,
+    "materials": 5,
+    "texturedMaterials": 5,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm1012_11_00-Body01"
+    ],
+    "bytes": 846392
+  },
+  {
+    "id": 1013,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 958512
+  },
+  {
+    "id": 1014,
+    "materials": 8,
+    "texturedMaterials": 8,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1268092
+  },
+  {
+    "id": 1015,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 936212
+  },
+  {
+    "id": 1016,
+    "materials": 6,
+    "texturedMaterials": 6,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 2410984
+  },
+  {
+    "id": 1017,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1296184
+  },
+  {
+    "id": 1018,
+    "materials": 16,
+    "texturedMaterials": 16,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1237520
+  },
+  {
+    "id": 1019,
+    "materials": 11,
+    "texturedMaterials": 11,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 2969216
+  },
+  {
+    "id": 1020,
+    "materials": 12,
+    "texturedMaterials": 12,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1718848
+  },
+  {
+    "id": 1021,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1107048
+  },
+  {
+    "id": 1022,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm1022_00_00-BodyBPara"
+    ],
+    "bytes": 1663132
+  },
+  {
+    "id": 1023,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [
+      "pm1023_00_00-BodyBPara"
+    ],
+    "bytes": 2380548
+  },
+  {
+    "id": 1024,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [
+      "pm1024_11_00-BodyInc"
+    ],
+    "layerUvApproximations": [
+      "pm1024_11_00-BodyInc"
+    ],
+    "bytes": 518036
+  },
+  {
+    "id": 1025,
+    "materials": 7,
+    "texturedMaterials": 7,
+    "simplifiedEffects": [],
+    "uvFallbacks": [],
+    "layerUvApproximations": [],
+    "bytes": 1006872
+  }
+]

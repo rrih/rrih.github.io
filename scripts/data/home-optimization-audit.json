@@ -1,0 +1,8205 @@
+{
+  "totalBytes": 188932296,
+  "models": [
+    {
+      "id": 1,
+      "before": 613044,
+      "after": 139648,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 2,
+      "before": 199108,
+      "after": 149452,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 3,
+      "before": 262000,
+      "after": 188900,
+      "animations": 1,
+      "channels": 171,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 4,
+      "before": 496388,
+      "after": 181464,
+      "animations": 1,
+      "channels": 142,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 5,
+      "before": 559500,
+      "after": 215356,
+      "animations": 1,
+      "channels": 97,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 6,
+      "before": 650096,
+      "after": 256164,
+      "animations": 1,
+      "channels": 187,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 7,
+      "before": 153036,
+      "after": 117824,
+      "animations": 1,
+      "channels": 92,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 8,
+      "before": 754216,
+      "after": 131916,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 9,
+      "before": 792080,
+      "after": 155228,
+      "animations": 1,
+      "channels": 131,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 10,
+      "before": 96704,
+      "after": 76936,
+      "animations": 1,
+      "channels": 55,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 11,
+      "before": 60248,
+      "after": 45772,
+      "animations": 1,
+      "channels": 24,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 12,
+      "before": 265084,
+      "after": 191984,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 13,
+      "before": 125816,
+      "after": 93656,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 14,
+      "before": 35780,
+      "after": 28592,
+      "animations": 1,
+      "channels": 9,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 15,
+      "before": 477824,
+      "after": 117184,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 16,
+      "before": 161628,
+      "after": 113468,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 17,
+      "before": 593020,
+      "after": 129768,
+      "animations": 1,
+      "channels": 133,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 18,
+      "before": 418556,
+      "after": 234728,
+      "animations": 1,
+      "channels": 221,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 19,
+      "before": 193096,
+      "after": 142632,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 20,
+      "before": 369164,
+      "after": 266928,
+      "animations": 1,
+      "channels": 164,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 21,
+      "before": 207140,
+      "after": 159844,
+      "animations": 1,
+      "channels": 130,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 22,
+      "before": 455444,
+      "after": 318076,
+      "animations": 1,
+      "channels": 204,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 23,
+      "before": 251200,
+      "after": 148852,
+      "animations": 1,
+      "channels": 82,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 24,
+      "before": 560588,
+      "after": 292536,
+      "animations": 1,
+      "channels": 85,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 25,
+      "before": 494488,
+      "after": 156040,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 26,
+      "before": 586656,
+      "after": 199232,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 27,
+      "before": 211452,
+      "after": 161560,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 28,
+      "before": 231852,
+      "after": 146284,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 29,
+      "before": 191800,
+      "after": 145580,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 30,
+      "before": 146312,
+      "after": 104172,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 31,
+      "before": 180240,
+      "after": 128128,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 32,
+      "before": 139396,
+      "after": 102704,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 33,
+      "before": 142236,
+      "after": 105296,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 34,
+      "before": 181120,
+      "after": 134204,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 35,
+      "before": 171544,
+      "after": 132772,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 36,
+      "before": 259936,
+      "after": 206168,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 37,
+      "before": 228984,
+      "after": 166312,
+      "animations": 1,
+      "channels": 165,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 38,
+      "before": 417000,
+      "after": 277504,
+      "animations": 1,
+      "channels": 348,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 39,
+      "before": 456488,
+      "after": 142264,
+      "animations": 1,
+      "channels": 49,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 40,
+      "before": 507648,
+      "after": 192868,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 41,
+      "before": 160808,
+      "after": 104788,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 42,
+      "before": 272660,
+      "after": 173292,
+      "animations": 1,
+      "channels": 89,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 43,
+      "before": 154992,
+      "after": 113460,
+      "animations": 1,
+      "channels": 73,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 44,
+      "before": 175884,
+      "after": 110452,
+      "animations": 1,
+      "channels": 124,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 45,
+      "before": 168364,
+      "after": 135324,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 46,
+      "before": 532868,
+      "after": 97584,
+      "animations": 1,
+      "channels": 84,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 47,
+      "before": 148144,
+      "after": 101068,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 48,
+      "before": 310592,
+      "after": 213288,
+      "animations": 1,
+      "channels": 147,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 49,
+      "before": 863276,
+      "after": 224480,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 50,
+      "before": 71220,
+      "after": 59376,
+      "animations": 1,
+      "channels": 22,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 51,
+      "before": 215728,
+      "after": 163396,
+      "animations": 1,
+      "channels": 59,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 52,
+      "before": 627952,
+      "after": 163828,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 53,
+      "before": 196488,
+      "after": 143604,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 54,
+      "before": 154708,
+      "after": 108944,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 55,
+      "before": 191956,
+      "after": 124552,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 56,
+      "before": 238636,
+      "after": 172688,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 57,
+      "before": 213776,
+      "after": 155852,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 58,
+      "before": 545860,
+      "after": 161108,
+      "animations": 1,
+      "channels": 135,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 59,
+      "before": 693448,
+      "after": 161684,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 60,
+      "before": 172880,
+      "after": 144592,
+      "animations": 1,
+      "channels": 48,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 61,
+      "before": 556612,
+      "after": 166024,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 62,
+      "before": 588472,
+      "after": 167116,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 63,
+      "before": 215444,
+      "after": 121844,
+      "animations": 1,
+      "channels": 156,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 64,
+      "before": 214184,
+      "after": 151012,
+      "animations": 1,
+      "channels": 165,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 65,
+      "before": 513596,
+      "after": 153600,
+      "animations": 1,
+      "channels": 207,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 66,
+      "before": 470852,
+      "after": 143964,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 67,
+      "before": 792404,
+      "after": 184192,
+      "animations": 1,
+      "channels": 156,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 68,
+      "before": 875116,
+      "after": 251132,
+      "animations": 1,
+      "channels": 261,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 69,
+      "before": 337524,
+      "after": 239168,
+      "animations": 1,
+      "channels": 168,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 70,
+      "before": 102460,
+      "after": 70364,
+      "animations": 1,
+      "channels": 88,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 71,
+      "before": 206536,
+      "after": 147132,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 72,
+      "before": 97160,
+      "after": 80600,
+      "animations": 1,
+      "channels": 42,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 73,
+      "before": 230316,
+      "after": 145836,
+      "animations": 1,
+      "channels": 164,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 74,
+      "before": 384764,
+      "after": 104948,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 75,
+      "before": 187048,
+      "after": 128936,
+      "animations": 1,
+      "channels": 135,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 76,
+      "before": 210296,
+      "after": 157648,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 77,
+      "before": 893788,
+      "after": 522016,
+      "animations": 1,
+      "channels": 189,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 78,
+      "before": 1462588,
+      "after": 937828,
+      "animations": 1,
+      "channels": 261,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 79,
+      "before": 130308,
+      "after": 92804,
+      "animations": 1,
+      "channels": 101,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 80,
+      "before": 182108,
+      "after": 139916,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 81,
+      "before": 265752,
+      "after": 71988,
+      "animations": 1,
+      "channels": 27,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 82,
+      "before": 306580,
+      "after": 254052,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 83,
+      "before": 640492,
+      "after": 161832,
+      "animations": 1,
+      "channels": 133,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 84,
+      "before": 227796,
+      "after": 182584,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 85,
+      "before": 386576,
+      "after": 315536,
+      "animations": 1,
+      "channels": 165,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 86,
+      "before": 180272,
+      "after": 141728,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 87,
+      "before": 182380,
+      "after": 146200,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 88,
+      "before": 1069312,
+      "after": 447448,
+      "animations": 1,
+      "channels": 194,
+      "visibilityTracks": 4
+    },
+    {
+      "id": 89,
+      "before": 895600,
+      "after": 367996,
+      "animations": 1,
+      "channels": 158,
+      "visibilityTracks": 1
+    },
+    {
+      "id": 90,
+      "before": 72980,
+      "after": 63868,
+      "animations": 1,
+      "channels": 23,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 91,
+      "before": 88084,
+      "after": 75284,
+      "animations": 1,
+      "channels": 24,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 92,
+      "before": 268644,
+      "after": 82500,
+      "animations": 1,
+      "channels": 45,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 93,
+      "before": 323052,
+      "after": 92336,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 94,
+      "before": 438824,
+      "after": 129800,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 95,
+      "before": 392668,
+      "after": 113488,
+      "animations": 1,
+      "channels": 51,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 96,
+      "before": 353300,
+      "after": 249124,
+      "animations": 1,
+      "channels": 130,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 97,
+      "before": 652700,
+      "after": 244788,
+      "animations": 1,
+      "channels": 204,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 98,
+      "before": 473780,
+      "after": 90284,
+      "animations": 1,
+      "channels": 66,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 99,
+      "before": 464112,
+      "after": 96392,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 100,
+      "before": 240848,
+      "after": 47672,
+      "animations": 1,
+      "channels": 10,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 101,
+      "before": 96584,
+      "after": 71832,
+      "animations": 1,
+      "channels": 36,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 102,
+      "before": 332324,
+      "after": 299204,
+      "animations": 1,
+      "channels": 45,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 103,
+      "before": 287752,
+      "after": 211572,
+      "animations": 1,
+      "channels": 177,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 104,
+      "before": 176128,
+      "after": 138532,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 105,
+      "before": 445260,
+      "after": 117896,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 106,
+      "before": 203020,
+      "after": 162632,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 107,
+      "before": 469344,
+      "after": 116860,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 108,
+      "before": 184376,
+      "after": 123180,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 109,
+      "before": 840244,
+      "after": 338716,
+      "animations": 1,
+      "channels": 94,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 110,
+      "before": 993984,
+      "after": 252216,
+      "animations": 1,
+      "channels": 128,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 111,
+      "before": 536020,
+      "after": 133952,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 112,
+      "before": 239588,
+      "after": 181696,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 113,
+      "before": 188432,
+      "after": 133596,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 114,
+      "before": 321904,
+      "after": 225584,
+      "animations": 1,
+      "channels": 217,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 115,
+      "before": 304188,
+      "after": 218384,
+      "animations": 1,
+      "channels": 225,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 116,
+      "before": 126596,
+      "after": 88008,
+      "animations": 1,
+      "channels": 85,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 117,
+      "before": 211612,
+      "after": 151608,
+      "animations": 1,
+      "channels": 76,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 118,
+      "before": 859728,
+      "after": 260240,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 119,
+      "before": 369476,
+      "after": 318108,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 120,
+      "before": 221128,
+      "after": 66504,
+      "animations": 1,
+      "channels": 51,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 121,
+      "before": 352420,
+      "after": 88116,
+      "animations": 1,
+      "channels": 70,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 122,
+      "before": 805820,
+      "after": 431172,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 123,
+      "before": 634888,
+      "after": 159048,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 124,
+      "before": 507284,
+      "after": 375472,
+      "animations": 1,
+      "channels": 261,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 125,
+      "before": 499240,
+      "after": 163448,
+      "animations": 1,
+      "channels": 198,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 126,
+      "before": 825904,
+      "after": 351088,
+      "animations": 1,
+      "channels": 161,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 127,
+      "before": 180260,
+      "after": 125128,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 128,
+      "before": 306492,
+      "after": 244308,
+      "animations": 1,
+      "channels": 168,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 129,
+      "before": 275580,
+      "after": 216596,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 130,
+      "before": 591904,
+      "after": 146872,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 131,
+      "before": 409520,
+      "after": 105788,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 132,
+      "before": 92748,
+      "after": 68096,
+      "animations": 1,
+      "channels": 52,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 133,
+      "before": 196756,
+      "after": 152496,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 134,
+      "before": 194432,
+      "after": 147628,
+      "animations": 1,
+      "channels": 119,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 135,
+      "before": 191288,
+      "after": 138244,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 136,
+      "before": 216164,
+      "after": 164696,
+      "animations": 1,
+      "channels": 130,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 137,
+      "before": 50972,
+      "after": 37952,
+      "animations": 1,
+      "channels": 18,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 138,
+      "before": 138028,
+      "after": 104360,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 139,
+      "before": 340548,
+      "after": 270456,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 140,
+      "before": 229080,
+      "after": 85960,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 141,
+      "before": 133844,
+      "after": 101108,
+      "animations": 1,
+      "channels": 84,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 142,
+      "before": 189824,
+      "after": 128340,
+      "animations": 1,
+      "channels": 139,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 143,
+      "before": 193080,
+      "after": 137140,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 144,
+      "before": 282476,
+      "after": 200964,
+      "animations": 1,
+      "channels": 210,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 145,
+      "before": 261000,
+      "after": 182956,
+      "animations": 1,
+      "channels": 168,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 146,
+      "before": 939740,
+      "after": 398832,
+      "animations": 1,
+      "channels": 249,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 147,
+      "before": 133172,
+      "after": 114692,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 148,
+      "before": 151196,
+      "after": 121632,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 149,
+      "before": 530752,
+      "after": 177160,
+      "animations": 1,
+      "channels": 174,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 150,
+      "before": 590744,
+      "after": 148628,
+      "animations": 1,
+      "channels": 162,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 151,
+      "before": 431400,
+      "after": 151360,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 152,
+      "before": 526700,
+      "after": 125012,
+      "animations": 1,
+      "channels": 137,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 153,
+      "before": 616248,
+      "after": 153408,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 154,
+      "before": 596636,
+      "after": 161364,
+      "animations": 1,
+      "channels": 186,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 155,
+      "before": 356188,
+      "after": 97232,
+      "animations": 1,
+      "channels": 77,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 156,
+      "before": 571576,
+      "after": 148832,
+      "animations": 1,
+      "channels": 106,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 157,
+      "before": 556108,
+      "after": 142972,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 158,
+      "before": 607372,
+      "after": 164764,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 159,
+      "before": 626684,
+      "after": 118712,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 160,
+      "before": 525580,
+      "after": 131392,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 161,
+      "before": 171512,
+      "after": 139756,
+      "animations": 1,
+      "channels": 84,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 162,
+      "before": 238812,
+      "after": 202084,
+      "animations": 1,
+      "channels": 73,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 163,
+      "before": 508512,
+      "after": 140168,
+      "animations": 1,
+      "channels": 101,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 164,
+      "before": 338828,
+      "after": 216268,
+      "animations": 1,
+      "channels": 179,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 165,
+      "before": 555552,
+      "after": 188840,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 166,
+      "before": 510980,
+      "after": 124020,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 167,
+      "before": 153092,
+      "after": 132000,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 168,
+      "before": 142988,
+      "after": 114220,
+      "animations": 1,
+      "channels": 66,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 169,
+      "before": 168068,
+      "after": 120088,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 170,
+      "before": 401024,
+      "after": 123832,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 171,
+      "before": 497796,
+      "after": 121040,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 172,
+      "before": 457008,
+      "after": 175904,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 173,
+      "before": 117848,
+      "after": 92564,
+      "animations": 1,
+      "channels": 60,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 174,
+      "before": 190156,
+      "after": 165216,
+      "animations": 1,
+      "channels": 46,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 175,
+      "before": 131232,
+      "after": 107540,
+      "animations": 1,
+      "channels": 60,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 176,
+      "before": 139280,
+      "after": 98696,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 177,
+      "before": 160200,
+      "after": 124584,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 178,
+      "before": 170108,
+      "after": 123044,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 179,
+      "before": 501300,
+      "after": 140112,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 180,
+      "before": 535316,
+      "after": 172500,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 181,
+      "before": 517472,
+      "after": 176276,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 182,
+      "before": 227684,
+      "after": 163044,
+      "animations": 1,
+      "channels": 168,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 183,
+      "before": 401264,
+      "after": 144220,
+      "animations": 1,
+      "channels": 91,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 184,
+      "before": 514692,
+      "after": 185192,
+      "animations": 1,
+      "channels": 110,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 185,
+      "before": 119204,
+      "after": 87248,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 186,
+      "before": 205696,
+      "after": 140716,
+      "animations": 1,
+      "channels": 115,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 187,
+      "before": 171492,
+      "after": 137348,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 188,
+      "before": 101272,
+      "after": 75452,
+      "animations": 1,
+      "channels": 52,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 189,
+      "before": 124984,
+      "after": 96800,
+      "animations": 1,
+      "channels": 51,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 190,
+      "before": 675484,
+      "after": 238268,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 191,
+      "before": 97632,
+      "after": 86244,
+      "animations": 1,
+      "channels": 30,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 192,
+      "before": 231584,
+      "after": 171260,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 193,
+      "before": 544416,
+      "after": 204044,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 194,
+      "before": 333460,
+      "after": 288104,
+      "animations": 1,
+      "channels": 51,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 195,
+      "before": 155116,
+      "after": 117248,
+      "animations": 1,
+      "channels": 86,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 196,
+      "before": 226908,
+      "after": 170344,
+      "animations": 1,
+      "channels": 141,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 197,
+      "before": 435284,
+      "after": 138432,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 198,
+      "before": 519112,
+      "after": 171376,
+      "animations": 1,
+      "channels": 124,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 199,
+      "before": 572320,
+      "after": 163548,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 200,
+      "before": 300220,
+      "after": 245044,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 201,
+      "before": 67348,
+      "after": 49244,
+      "animations": 1,
+      "channels": 33,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 202,
+      "before": 178464,
+      "after": 115940,
+      "animations": 1,
+      "channels": 106,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 203,
+      "before": 252420,
+      "after": 168760,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 204,
+      "before": 387832,
+      "after": 96124,
+      "animations": 1,
+      "channels": 147,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 205,
+      "before": 111824,
+      "after": 74952,
+      "animations": 1,
+      "channels": 91,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 206,
+      "before": 107240,
+      "after": 87104,
+      "animations": 1,
+      "channels": 48,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 207,
+      "before": 496812,
+      "after": 137076,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 208,
+      "before": 429916,
+      "after": 84172,
+      "animations": 1,
+      "channels": 57,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 209,
+      "before": 334160,
+      "after": 268252,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 210,
+      "before": 534084,
+      "after": 155976,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 211,
+      "before": 159712,
+      "after": 131852,
+      "animations": 1,
+      "channels": 74,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 212,
+      "before": 639260,
+      "after": 180500,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 213,
+      "before": 135320,
+      "after": 117592,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 214,
+      "before": 511988,
+      "after": 138852,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 215,
+      "before": 503728,
+      "after": 131700,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 216,
+      "before": 133876,
+      "after": 106980,
+      "animations": 1,
+      "channels": 70,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 217,
+      "before": 197544,
+      "after": 139076,
+      "animations": 1,
+      "channels": 162,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 218,
+      "before": 1254764,
+      "after": 590652,
+      "animations": 1,
+      "channels": 146,
+      "visibilityTracks": 4
+    },
+    {
+      "id": 219,
+      "before": 1148812,
+      "after": 421116,
+      "animations": 1,
+      "channels": 124,
+      "visibilityTracks": 6
+    },
+    {
+      "id": 220,
+      "before": 215960,
+      "after": 133324,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 221,
+      "before": 143088,
+      "after": 93628,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 222,
+      "before": 74328,
+      "after": 66608,
+      "animations": 1,
+      "channels": 6,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 223,
+      "before": 167700,
+      "after": 140200,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 224,
+      "before": 244856,
+      "after": 183556,
+      "animations": 1,
+      "channels": 136,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 225,
+      "before": 606268,
+      "after": 141860,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 226,
+      "before": 222440,
+      "after": 179096,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 227,
+      "before": 223952,
+      "after": 151356,
+      "animations": 1,
+      "channels": 193,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 228,
+      "before": 478756,
+      "after": 98908,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 229,
+      "before": 189148,
+      "after": 138508,
+      "animations": 1,
+      "channels": 121,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 230,
+      "before": 424228,
+      "after": 95460,
+      "animations": 1,
+      "channels": 52,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 231,
+      "before": 175084,
+      "after": 129292,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 232,
+      "before": 157512,
+      "after": 113844,
+      "animations": 1,
+      "channels": 120,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 233,
+      "before": 415324,
+      "after": 76884,
+      "animations": 1,
+      "channels": 30,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 234,
+      "before": 151036,
+      "after": 117000,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 235,
+      "before": 550064,
+      "after": 171000,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 236,
+      "before": 493404,
+      "after": 139216,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 237,
+      "before": 327456,
+      "after": 266372,
+      "animations": 1,
+      "channels": 88,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 238,
+      "before": 526000,
+      "after": 146008,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 239,
+      "before": 460268,
+      "after": 148316,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 240,
+      "before": 190176,
+      "after": 136212,
+      "animations": 1,
+      "channels": 103,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 241,
+      "before": 602700,
+      "after": 199120,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 242,
+      "before": 181720,
+      "after": 131232,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 243,
+      "before": 206644,
+      "after": 151452,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 244,
+      "before": 400644,
+      "after": 237124,
+      "animations": 1,
+      "channels": 262,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 245,
+      "before": 612188,
+      "after": 528300,
+      "animations": 1,
+      "channels": 266,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 246,
+      "before": 163680,
+      "after": 124332,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 247,
+      "before": 284808,
+      "after": 53540,
+      "animations": 1,
+      "channels": 12,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 248,
+      "before": 188020,
+      "after": 145920,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 249,
+      "before": 336532,
+      "after": 243684,
+      "animations": 1,
+      "channels": 210,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 250,
+      "before": 354132,
+      "after": 253556,
+      "animations": 1,
+      "channels": 249,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 251,
+      "before": 711508,
+      "after": 235860,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 252,
+      "before": 441180,
+      "after": 128876,
+      "animations": 1,
+      "channels": 135,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 253,
+      "before": 594528,
+      "after": 212908,
+      "animations": 1,
+      "channels": 276,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 254,
+      "before": 745164,
+      "after": 227616,
+      "animations": 1,
+      "channels": 306,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 255,
+      "before": 498816,
+      "after": 263108,
+      "animations": 1,
+      "channels": 135,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 256,
+      "before": 210992,
+      "after": 142844,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 257,
+      "before": 698672,
+      "after": 141632,
+      "animations": 1,
+      "channels": 174,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 258,
+      "before": 130180,
+      "after": 94648,
+      "animations": 1,
+      "channels": 94,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 259,
+      "before": 202128,
+      "after": 141796,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 260,
+      "before": 216484,
+      "after": 165592,
+      "animations": 1,
+      "channels": 135,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 261,
+      "before": 192736,
+      "after": 136684,
+      "animations": 1,
+      "channels": 141,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 262,
+      "before": 282236,
+      "after": 192324,
+      "animations": 1,
+      "channels": 222,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 263,
+      "before": 199560,
+      "after": 160080,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 264,
+      "before": 208360,
+      "after": 159840,
+      "animations": 1,
+      "channels": 120,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 265,
+      "before": 177284,
+      "after": 124164,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 266,
+      "before": 110140,
+      "after": 80128,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 267,
+      "before": 321940,
+      "after": 210844,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 268,
+      "before": 100356,
+      "after": 74124,
+      "animations": 1,
+      "channels": 62,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 269,
+      "before": 291864,
+      "after": 170600,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 270,
+      "before": 127084,
+      "after": 89688,
+      "animations": 1,
+      "channels": 74,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 271,
+      "before": 252548,
+      "after": 178292,
+      "animations": 1,
+      "channels": 158,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 272,
+      "before": 378228,
+      "after": 254524,
+      "animations": 1,
+      "channels": 147,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 273,
+      "before": 240480,
+      "after": 65688,
+      "animations": 1,
+      "channels": 30,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 274,
+      "before": 509968,
+      "after": 129120,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 275,
+      "before": 244700,
+      "after": 181984,
+      "animations": 1,
+      "channels": 171,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 276,
+      "before": 489820,
+      "after": 132052,
+      "animations": 1,
+      "channels": 171,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 277,
+      "before": 247976,
+      "after": 156596,
+      "animations": 1,
+      "channels": 188,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 278,
+      "before": 222120,
+      "after": 164212,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 279,
+      "before": 521688,
+      "after": 190292,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 280,
+      "before": 141644,
+      "after": 113392,
+      "animations": 1,
+      "channels": 65,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 281,
+      "before": 300872,
+      "after": 244952,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 282,
+      "before": 615316,
+      "after": 204044,
+      "animations": 1,
+      "channels": 227,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 283,
+      "before": 110808,
+      "after": 76404,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 284,
+      "before": 429420,
+      "after": 122820,
+      "animations": 1,
+      "channels": 60,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 285,
+      "before": 122524,
+      "after": 82044,
+      "animations": 1,
+      "channels": 73,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 286,
+      "before": 241632,
+      "after": 187716,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 287,
+      "before": 449616,
+      "after": 132844,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 288,
+      "before": 479180,
+      "after": 132004,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 289,
+      "before": 254624,
+      "after": 161496,
+      "animations": 1,
+      "channels": 209,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 290,
+      "before": 421412,
+      "after": 108664,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 291,
+      "before": 710332,
+      "after": 147896,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 292,
+      "before": 45976,
+      "after": 40696,
+      "animations": 1,
+      "channels": 9,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 293,
+      "before": 107704,
+      "after": 77072,
+      "animations": 1,
+      "channels": 73,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 294,
+      "before": 435300,
+      "after": 303984,
+      "animations": 1,
+      "channels": 138,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 295,
+      "before": 227848,
+      "after": 159028,
+      "animations": 1,
+      "channels": 169,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 296,
+      "before": 152572,
+      "after": 121432,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 297,
+      "before": 579616,
+      "after": 146404,
+      "animations": 1,
+      "channels": 156,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 298,
+      "before": 166772,
+      "after": 109812,
+      "animations": 1,
+      "channels": 67,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 299,
+      "before": 80800,
+      "after": 54492,
+      "animations": 1,
+      "channels": 24,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 300,
+      "before": 199704,
+      "after": 129196,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 301,
+      "before": 294316,
+      "after": 237532,
+      "animations": 1,
+      "channels": 150,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 302,
+      "before": 146180,
+      "after": 102516,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 303,
+      "before": 721096,
+      "after": 178420,
+      "animations": 1,
+      "channels": 168,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 304,
+      "before": 427992,
+      "after": 72268,
+      "animations": 1,
+      "channels": 21,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 305,
+      "before": 188856,
+      "after": 133068,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 306,
+      "before": 195224,
+      "after": 141668,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 307,
+      "before": 477540,
+      "after": 133160,
+      "animations": 1,
+      "channels": 120,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 308,
+      "before": 581404,
+      "after": 195764,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 309,
+      "before": 145024,
+      "after": 106188,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 310,
+      "before": 172624,
+      "after": 129036,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 311,
+      "before": 171864,
+      "after": 126264,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 312,
+      "before": 171556,
+      "after": 125912,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 313,
+      "before": 726516,
+      "after": 291536,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 314,
+      "before": 557648,
+      "after": 207528,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 315,
+      "before": 317288,
+      "after": 244716,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 316,
+      "before": 197436,
+      "after": 119244,
+      "animations": 1,
+      "channels": 207,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 317,
+      "before": 284120,
+      "after": 170752,
+      "animations": 1,
+      "channels": 300,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 318,
+      "before": 154336,
+      "after": 131240,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 319,
+      "before": 490404,
+      "after": 78872,
+      "animations": 1,
+      "channels": 48,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 320,
+      "before": 96028,
+      "after": 82568,
+      "animations": 1,
+      "channels": 30,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 321,
+      "before": 183332,
+      "after": 134536,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 322,
+      "before": 446060,
+      "after": 106924,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 323,
+      "before": 210056,
+      "after": 164716,
+      "animations": 1,
+      "channels": 120,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 324,
+      "before": 892496,
+      "after": 237568,
+      "animations": 1,
+      "channels": 152,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 325,
+      "before": 90300,
+      "after": 64684,
+      "animations": 1,
+      "channels": 42,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 326,
+      "before": 308192,
+      "after": 251340,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 327,
+      "before": 713428,
+      "after": 340964,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 328,
+      "before": 142348,
+      "after": 123656,
+      "animations": 1,
+      "channels": 51,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 329,
+      "before": 708288,
+      "after": 242264,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 330,
+      "before": 1022396,
+      "after": 391360,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 331,
+      "before": 201660,
+      "after": 169860,
+      "animations": 1,
+      "channels": 80,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 332,
+      "before": 198440,
+      "after": 144468,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 333,
+      "before": 543492,
+      "after": 222432,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 334,
+      "before": 317312,
+      "after": 217372,
+      "animations": 1,
+      "channels": 222,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 335,
+      "before": 605604,
+      "after": 204628,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 336,
+      "before": 675192,
+      "after": 142496,
+      "animations": 1,
+      "channels": 130,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 337,
+      "before": 42700,
+      "after": 40516,
+      "animations": 1,
+      "channels": 6,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 338,
+      "before": 64556,
+      "after": 58564,
+      "animations": 1,
+      "channels": 6,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 339,
+      "before": 329876,
+      "after": 292176,
+      "animations": 1,
+      "channels": 82,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 340,
+      "before": 189924,
+      "after": 139220,
+      "animations": 1,
+      "channels": 120,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 341,
+      "before": 521808,
+      "after": 107880,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 342,
+      "before": 196284,
+      "after": 150976,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 343,
+      "before": 91072,
+      "after": 70972,
+      "animations": 1,
+      "channels": 42,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 344,
+      "before": 51892,
+      "after": 47016,
+      "animations": 1,
+      "channels": 12,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 345,
+      "before": 281432,
+      "after": 194848,
+      "animations": 1,
+      "channels": 165,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 346,
+      "before": 343236,
+      "after": 278216,
+      "animations": 1,
+      "channels": 178,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 347,
+      "before": 789252,
+      "after": 120644,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 348,
+      "before": 258120,
+      "after": 182984,
+      "animations": 1,
+      "channels": 162,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 349,
+      "before": 149288,
+      "after": 128716,
+      "animations": 1,
+      "channels": 45,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 350,
+      "before": 330688,
+      "after": 252292,
+      "animations": 1,
+      "channels": 201,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 351,
+      "before": 84996,
+      "after": 68428,
+      "animations": 1,
+      "channels": 42,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 352,
+      "before": 253904,
+      "after": 137840,
+      "animations": 1,
+      "channels": 177,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 353,
+      "before": 202472,
+      "after": 130656,
+      "animations": 1,
+      "channels": 133,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 354,
+      "before": 238948,
+      "after": 161840,
+      "animations": 1,
+      "channels": 138,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 355,
+      "before": 298720,
+      "after": 62560,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 356,
+      "before": 777260,
+      "after": 292292,
+      "animations": 1,
+      "channels": 189,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 357,
+      "before": 411620,
+      "after": 272316,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 358,
+      "before": 412496,
+      "after": 140804,
+      "animations": 1,
+      "channels": 57,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 359,
+      "before": 204104,
+      "after": 146172,
+      "animations": 1,
+      "channels": 150,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 360,
+      "before": 205168,
+      "after": 159580,
+      "animations": 1,
+      "channels": 84,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 361,
+      "before": 202988,
+      "after": 148664,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 362,
+      "before": 346100,
+      "after": 63876,
+      "animations": 1,
+      "channels": 15,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 363,
+      "before": 129008,
+      "after": 98828,
+      "animations": 1,
+      "channels": 53,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 364,
+      "before": 215076,
+      "after": 165820,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 365,
+      "before": 168676,
+      "after": 118072,
+      "animations": 1,
+      "channels": 116,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 366,
+      "before": 108816,
+      "after": 76608,
+      "animations": 1,
+      "channels": 57,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 367,
+      "before": 255704,
+      "after": 231392,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 368,
+      "before": 202548,
+      "after": 163576,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 369,
+      "before": 132992,
+      "after": 103508,
+      "animations": 1,
+      "channels": 66,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 370,
+      "before": 72144,
+      "after": 59252,
+      "animations": 1,
+      "channels": 24,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 371,
+      "before": 164104,
+      "after": 120592,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 372,
+      "before": 73884,
+      "after": 62436,
+      "animations": 1,
+      "channels": 30,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 373,
+      "before": 234672,
+      "after": 172964,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 374,
+      "before": 64216,
+      "after": 56032,
+      "animations": 1,
+      "channels": 24,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 375,
+      "before": 120032,
+      "after": 102080,
+      "animations": 1,
+      "channels": 51,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 376,
+      "before": 189868,
+      "after": 131696,
+      "animations": 1,
+      "channels": 128,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 377,
+      "before": 221356,
+      "after": 72456,
+      "animations": 1,
+      "channels": 60,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 378,
+      "before": 247124,
+      "after": 63548,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 379,
+      "before": 470120,
+      "after": 116816,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 380,
+      "before": 167608,
+      "after": 122656,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 381,
+      "before": 182748,
+      "after": 135152,
+      "animations": 1,
+      "channels": 103,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 382,
+      "before": 210808,
+      "after": 154976,
+      "animations": 1,
+      "channels": 120,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 383,
+      "before": 200380,
+      "after": 137012,
+      "animations": 1,
+      "channels": 174,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 384,
+      "before": 248616,
+      "after": 189992,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 385,
+      "before": 265528,
+      "after": 205624,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 386,
+      "before": 832832,
+      "after": 368424,
+      "animations": 1,
+      "channels": 294,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 387,
+      "before": 434320,
+      "after": 114476,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 388,
+      "before": 719624,
+      "after": 152132,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 389,
+      "before": 763332,
+      "after": 162216,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 390,
+      "before": 792736,
+      "after": 350448,
+      "animations": 1,
+      "channels": 188,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 391,
+      "before": 1041772,
+      "after": 425812,
+      "animations": 1,
+      "channels": 259,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 392,
+      "before": 916640,
+      "after": 425584,
+      "animations": 1,
+      "channels": 272,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 393,
+      "before": 181980,
+      "after": 140288,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 394,
+      "before": 514688,
+      "after": 111760,
+      "animations": 1,
+      "channels": 84,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 395,
+      "before": 550172,
+      "after": 133416,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 396,
+      "before": 202376,
+      "after": 132412,
+      "animations": 1,
+      "channels": 176,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 397,
+      "before": 586836,
+      "after": 183020,
+      "animations": 1,
+      "channels": 178,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 398,
+      "before": 716360,
+      "after": 206336,
+      "animations": 1,
+      "channels": 263,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 399,
+      "before": 199860,
+      "after": 144760,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 400,
+      "before": 186248,
+      "after": 144632,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 401,
+      "before": 388992,
+      "after": 110396,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 402,
+      "before": 540724,
+      "after": 126820,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 403,
+      "before": 537732,
+      "after": 179692,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 404,
+      "before": 626108,
+      "after": 237376,
+      "animations": 1,
+      "channels": 204,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 405,
+      "before": 706296,
+      "after": 211720,
+      "animations": 1,
+      "channels": 232,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 406,
+      "before": 150840,
+      "after": 129520,
+      "animations": 1,
+      "channels": 48,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 407,
+      "before": 919248,
+      "after": 195512,
+      "animations": 1,
+      "channels": 141,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 408,
+      "before": 190932,
+      "after": 151012,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 409,
+      "before": 213284,
+      "after": 157952,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 410,
+      "before": 139068,
+      "after": 106384,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 411,
+      "before": 157276,
+      "after": 125036,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 412,
+      "before": 161960,
+      "after": 119400,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 413,
+      "before": 317120,
+      "after": 216648,
+      "animations": 1,
+      "channels": 189,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 414,
+      "before": 233752,
+      "after": 155068,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 415,
+      "before": 420740,
+      "after": 133424,
+      "animations": 1,
+      "channels": 48,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 416,
+      "before": 648708,
+      "after": 165760,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 417,
+      "before": 261168,
+      "after": 199812,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 418,
+      "before": 706320,
+      "after": 256100,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 419,
+      "before": 668844,
+      "after": 165220,
+      "animations": 1,
+      "channels": 183,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 420,
+      "before": 137728,
+      "after": 98588,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 421,
+      "before": 164600,
+      "after": 109672,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 422,
+      "before": 202992,
+      "after": 152160,
+      "animations": 1,
+      "channels": 100,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 423,
+      "before": 185476,
+      "after": 120860,
+      "animations": 1,
+      "channels": 154,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 424,
+      "before": 942020,
+      "after": 408676,
+      "animations": 1,
+      "channels": 174,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 425,
+      "before": 214276,
+      "after": 154416,
+      "animations": 1,
+      "channels": 138,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 426,
+      "before": 186276,
+      "after": 147596,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 427,
+      "before": 322856,
+      "after": 183584,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 428,
+      "before": 246096,
+      "after": 172152,
+      "animations": 1,
+      "channels": 185,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 429,
+      "before": 703716,
+      "after": 260080,
+      "animations": 1,
+      "channels": 165,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 430,
+      "before": 730892,
+      "after": 176424,
+      "animations": 1,
+      "channels": 197,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 431,
+      "before": 250956,
+      "after": 179008,
+      "animations": 1,
+      "channels": 177,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 432,
+      "before": 373392,
+      "after": 227524,
+      "animations": 1,
+      "channels": 189,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 433,
+      "before": 189772,
+      "after": 141868,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 434,
+      "before": 281080,
+      "after": 201852,
+      "animations": 1,
+      "channels": 204,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 435,
+      "before": 207376,
+      "after": 148012,
+      "animations": 1,
+      "channels": 150,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 436,
+      "before": 56428,
+      "after": 54416,
+      "animations": 1,
+      "channels": 6,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 437,
+      "before": 94592,
+      "after": 76364,
+      "animations": 1,
+      "channels": 42,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 438,
+      "before": 133408,
+      "after": 88336,
+      "animations": 1,
+      "channels": 48,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 439,
+      "before": 204068,
+      "after": 171876,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 440,
+      "before": 143008,
+      "after": 103032,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 441,
+      "before": 221488,
+      "after": 155104,
+      "animations": 1,
+      "channels": 171,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 442,
+      "before": 1182560,
+      "after": 298456,
+      "animations": 1,
+      "channels": 231,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 443,
+      "before": 201784,
+      "after": 160908,
+      "animations": 1,
+      "channels": 84,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 444,
+      "before": 702628,
+      "after": 157060,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 445,
+      "before": 617700,
+      "after": 131604,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 446,
+      "before": 520668,
+      "after": 109520,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 447,
+      "before": 536172,
+      "after": 149372,
+      "animations": 1,
+      "channels": 120,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 448,
+      "before": 728992,
+      "after": 163064,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 449,
+      "before": 183848,
+      "after": 135912,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 450,
+      "before": 200536,
+      "after": 136996,
+      "animations": 1,
+      "channels": 174,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 451,
+      "before": 171464,
+      "after": 139000,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 452,
+      "before": 259108,
+      "after": 193560,
+      "animations": 1,
+      "channels": 156,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 453,
+      "before": 224292,
+      "after": 135132,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 454,
+      "before": 477664,
+      "after": 152276,
+      "animations": 1,
+      "channels": 147,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 455,
+      "before": 643552,
+      "after": 486676,
+      "animations": 1,
+      "channels": 222,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 456,
+      "before": 246496,
+      "after": 202932,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 457,
+      "before": 343564,
+      "after": 277440,
+      "animations": 1,
+      "channels": 174,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 458,
+      "before": 116644,
+      "after": 98564,
+      "animations": 1,
+      "channels": 39,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 459,
+      "before": 543272,
+      "after": 152228,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 460,
+      "before": 255128,
+      "after": 168000,
+      "animations": 1,
+      "channels": 198,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 461,
+      "before": 801412,
+      "after": 210656,
+      "animations": 1,
+      "channels": 231,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 462,
+      "before": 697212,
+      "after": 102040,
+      "animations": 1,
+      "channels": 33,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 463,
+      "before": 317592,
+      "after": 177372,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 464,
+      "before": 177240,
+      "after": 133524,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 465,
+      "before": 340236,
+      "after": 229832,
+      "animations": 1,
+      "channels": 245,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 466,
+      "before": 294204,
+      "after": 201312,
+      "animations": 1,
+      "channels": 231,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 467,
+      "before": 1161932,
+      "after": 390160,
+      "animations": 1,
+      "channels": 189,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 468,
+      "before": 114160,
+      "after": 84108,
+      "animations": 1,
+      "channels": 84,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 469,
+      "before": 574400,
+      "after": 170012,
+      "animations": 1,
+      "channels": 138,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 470,
+      "before": 306500,
+      "after": 230996,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 471,
+      "before": 215076,
+      "after": 168804,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 472,
+      "before": 254308,
+      "after": 191308,
+      "animations": 1,
+      "channels": 150,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 473,
+      "before": 166172,
+      "after": 127096,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 474,
+      "before": 74692,
+      "after": 65956,
+      "animations": 1,
+      "channels": 21,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 475,
+      "before": 540860,
+      "after": 145496,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 476,
+      "before": 404656,
+      "after": 79244,
+      "animations": 1,
+      "channels": 31,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 477,
+      "before": 997268,
+      "after": 397736,
+      "animations": 1,
+      "channels": 168,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 478,
+      "before": 684112,
+      "after": 161636,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 479,
+      "before": 313568,
+      "after": 96612,
+      "animations": 1,
+      "channels": 49,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 480,
+      "before": 211208,
+      "after": 154200,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 481,
+      "before": 349304,
+      "after": 275548,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 482,
+      "before": 304812,
+      "after": 246572,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 483,
+      "before": 238740,
+      "after": 169492,
+      "animations": 1,
+      "channels": 156,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 484,
+      "before": 802828,
+      "after": 229272,
+      "animations": 1,
+      "channels": 192,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 485,
+      "before": 714592,
+      "after": 183048,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 486,
+      "before": 213044,
+      "after": 152516,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 487,
+      "before": 346784,
+      "after": 203108,
+      "animations": 1,
+      "channels": 324,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 488,
+      "before": 570644,
+      "after": 176568,
+      "animations": 1,
+      "channels": 66,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 489,
+      "before": 519060,
+      "after": 264224,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 490,
+      "before": 613588,
+      "after": 175324,
+      "animations": 1,
+      "channels": 100,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 491,
+      "before": 324244,
+      "after": 195864,
+      "animations": 1,
+      "channels": 247,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 492,
+      "before": 362148,
+      "after": 205440,
+      "animations": 1,
+      "channels": 347,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 493,
+      "before": 654324,
+      "after": 128664,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 494,
+      "before": 621784,
+      "after": 178468,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 495,
+      "before": 545492,
+      "after": 146884,
+      "animations": 1,
+      "channels": 155,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 496,
+      "before": 643452,
+      "after": 163732,
+      "animations": 1,
+      "channels": 170,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 497,
+      "before": 597956,
+      "after": 281776,
+      "animations": 1,
+      "channels": 192,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 498,
+      "before": 478788,
+      "after": 115272,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 499,
+      "before": 207736,
+      "after": 151424,
+      "animations": 1,
+      "channels": 138,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 500,
+      "before": 671512,
+      "after": 215884,
+      "animations": 1,
+      "channels": 172,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 501,
+      "before": 133940,
+      "after": 105356,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 502,
+      "before": 202368,
+      "after": 155552,
+      "animations": 1,
+      "channels": 133,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 503,
+      "before": 242652,
+      "after": 146632,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 504,
+      "before": 618008,
+      "after": 151380,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 505,
+      "before": 645004,
+      "after": 145196,
+      "animations": 1,
+      "channels": 156,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 506,
+      "before": 157468,
+      "after": 114160,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 507,
+      "before": 211452,
+      "after": 139340,
+      "animations": 1,
+      "channels": 195,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 508,
+      "before": 246948,
+      "after": 177136,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 509,
+      "before": 211232,
+      "after": 173412,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 510,
+      "before": 651832,
+      "after": 159192,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 511,
+      "before": 661824,
+      "after": 261604,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 512,
+      "before": 649276,
+      "after": 229888,
+      "animations": 1,
+      "channels": 177,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 513,
+      "before": 554816,
+      "after": 199848,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 514,
+      "before": 851364,
+      "after": 387200,
+      "animations": 1,
+      "channels": 189,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 515,
+      "before": 252804,
+      "after": 206228,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 516,
+      "before": 350464,
+      "after": 262588,
+      "animations": 1,
+      "channels": 213,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 517,
+      "before": 270896,
+      "after": 63140,
+      "animations": 1,
+      "channels": 49,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 518,
+      "before": 241660,
+      "after": 147948,
+      "animations": 1,
+      "channels": 92,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 519,
+      "before": 196004,
+      "after": 128076,
+      "animations": 1,
+      "channels": 107,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 520,
+      "before": 293280,
+      "after": 194508,
+      "animations": 1,
+      "channels": 142,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 521,
+      "before": 493144,
+      "after": 280412,
+      "animations": 1,
+      "channels": 183,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 522,
+      "before": 427036,
+      "after": 104136,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 523,
+      "before": 157484,
+      "after": 119156,
+      "animations": 1,
+      "channels": 92,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 524,
+      "before": 152508,
+      "after": 50912,
+      "animations": 1,
+      "channels": 22,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 525,
+      "before": 144432,
+      "after": 85324,
+      "animations": 1,
+      "channels": 33,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 526,
+      "before": 90896,
+      "after": 69368,
+      "animations": 1,
+      "channels": 43,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 527,
+      "before": 216412,
+      "after": 137724,
+      "animations": 1,
+      "channels": 63,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 528,
+      "before": 481484,
+      "after": 179424,
+      "animations": 1,
+      "channels": 107,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 529,
+      "before": 158644,
+      "after": 115172,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 530,
+      "before": 538920,
+      "after": 101004,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 531,
+      "before": 230684,
+      "after": 159040,
+      "animations": 1,
+      "channels": 171,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 532,
+      "before": 189332,
+      "after": 153696,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 533,
+      "before": 190412,
+      "after": 148688,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 534,
+      "before": 236904,
+      "after": 185668,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 535,
+      "before": 76060,
+      "after": 67496,
+      "animations": 1,
+      "channels": 21,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 536,
+      "before": 218980,
+      "after": 147640,
+      "animations": 1,
+      "channels": 109,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 537,
+      "before": 586604,
+      "after": 163348,
+      "animations": 1,
+      "channels": 175,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 538,
+      "before": 769920,
+      "after": 168808,
+      "animations": 1,
+      "channels": 165,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 539,
+      "before": 733796,
+      "after": 164648,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 540,
+      "before": 193252,
+      "after": 142912,
+      "animations": 1,
+      "channels": 98,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 541,
+      "before": 163232,
+      "after": 126508,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 542,
+      "before": 138728,
+      "after": 112456,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 543,
+      "before": 294816,
+      "after": 79608,
+      "animations": 1,
+      "channels": 63,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 544,
+      "before": 93268,
+      "after": 89412,
+      "animations": 1,
+      "channels": 9,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 545,
+      "before": 510148,
+      "after": 166300,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 546,
+      "before": 102148,
+      "after": 85152,
+      "animations": 1,
+      "channels": 42,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 547,
+      "before": 125468,
+      "after": 104036,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 548,
+      "before": 117812,
+      "after": 85048,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 549,
+      "before": 216864,
+      "after": 164544,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 550,
+      "before": 137316,
+      "after": 115720,
+      "animations": 1,
+      "channels": 57,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 551,
+      "before": 117344,
+      "after": 87152,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 552,
+      "before": 133120,
+      "after": 99104,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 553,
+      "before": 204576,
+      "after": 139772,
+      "animations": 1,
+      "channels": 141,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 554,
+      "before": 225288,
+      "after": 156468,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 555,
+      "before": 706512,
+      "after": 241516,
+      "animations": 1,
+      "channels": 146,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 556,
+      "before": 244632,
+      "after": 158728,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 557,
+      "before": 115788,
+      "after": 86576,
+      "animations": 1,
+      "channels": 66,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 558,
+      "before": 155980,
+      "after": 101744,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 559,
+      "before": 604104,
+      "after": 221268,
+      "animations": 1,
+      "channels": 127,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 560,
+      "before": 490684,
+      "after": 160992,
+      "animations": 1,
+      "channels": 120,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 561,
+      "before": 139252,
+      "after": 100176,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 562,
+      "before": 240160,
+      "after": 122984,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 563,
+      "before": 301564,
+      "after": 169284,
+      "animations": 1,
+      "channels": 185,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 564,
+      "before": 144208,
+      "after": 118868,
+      "animations": 1,
+      "channels": 67,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 565,
+      "before": 163476,
+      "after": 124432,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 566,
+      "before": 749812,
+      "after": 268764,
+      "animations": 1,
+      "channels": 190,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 567,
+      "before": 1094180,
+      "after": 523632,
+      "animations": 1,
+      "channels": 291,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 568,
+      "before": 487696,
+      "after": 139916,
+      "animations": 1,
+      "channels": 76,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 569,
+      "before": 671140,
+      "after": 151036,
+      "animations": 1,
+      "channels": 113,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 570,
+      "before": 512888,
+      "after": 130704,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 571,
+      "before": 760340,
+      "after": 241188,
+      "animations": 1,
+      "channels": 204,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 572,
+      "before": 210940,
+      "after": 165724,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 573,
+      "before": 237580,
+      "after": 169392,
+      "animations": 1,
+      "channels": 170,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 574,
+      "before": 434148,
+      "after": 142968,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 575,
+      "before": 501256,
+      "after": 117944,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 576,
+      "before": 617128,
+      "after": 179540,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 577,
+      "before": 320136,
+      "after": 99848,
+      "animations": 1,
+      "channels": 79,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 578,
+      "before": 367080,
+      "after": 115552,
+      "animations": 1,
+      "channels": 85,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 579,
+      "before": 562108,
+      "after": 150804,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 580,
+      "before": 485140,
+      "after": 103852,
+      "animations": 1,
+      "channels": 101,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 581,
+      "before": 279524,
+      "after": 164460,
+      "animations": 1,
+      "channels": 245,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 582,
+      "before": 373400,
+      "after": 117168,
+      "animations": 1,
+      "channels": 24,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 583,
+      "before": 87060,
+      "after": 83104,
+      "animations": 1,
+      "channels": 12,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 584,
+      "before": 92740,
+      "after": 85688,
+      "animations": 1,
+      "channels": 18,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 585,
+      "before": 163016,
+      "after": 124408,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 586,
+      "before": 210916,
+      "after": 151604,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 587,
+      "before": 234952,
+      "after": 164340,
+      "animations": 1,
+      "channels": 150,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 588,
+      "before": 112988,
+      "after": 97688,
+      "animations": 1,
+      "channels": 30,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 589,
+      "before": 451956,
+      "after": 98304,
+      "animations": 1,
+      "channels": 48,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 590,
+      "before": 69876,
+      "after": 55524,
+      "animations": 1,
+      "channels": 30,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 591,
+      "before": 442488,
+      "after": 107856,
+      "animations": 1,
+      "channels": 39,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 592,
+      "before": 455392,
+      "after": 372040,
+      "animations": 1,
+      "channels": 154,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 593,
+      "before": 311100,
+      "after": 167932,
+      "animations": 1,
+      "channels": 151,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 594,
+      "before": 123384,
+      "after": 101200,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 595,
+      "before": 135124,
+      "after": 98852,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 596,
+      "before": 165124,
+      "after": 138932,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 597,
+      "before": 84976,
+      "after": 63868,
+      "animations": 1,
+      "channels": 57,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 598,
+      "before": 557432,
+      "after": 124524,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 599,
+      "before": 78552,
+      "after": 70128,
+      "animations": 1,
+      "channels": 12,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 600,
+      "before": 55780,
+      "after": 50648,
+      "animations": 1,
+      "channels": 12,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 601,
+      "before": 72432,
+      "after": 65496,
+      "animations": 1,
+      "channels": 15,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 602,
+      "before": 273800,
+      "after": 236996,
+      "animations": 1,
+      "channels": 39,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 603,
+      "before": 192520,
+      "after": 169996,
+      "animations": 1,
+      "channels": 55,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 604,
+      "before": 528692,
+      "after": 416400,
+      "animations": 1,
+      "channels": 194,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 605,
+      "before": 532048,
+      "after": 115740,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 606,
+      "before": 125580,
+      "after": 99896,
+      "animations": 1,
+      "channels": 63,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 607,
+      "before": 386432,
+      "after": 148752,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 608,
+      "before": 662240,
+      "after": 275176,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 609,
+      "before": 1030568,
+      "after": 588108,
+      "animations": 1,
+      "channels": 312,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 610,
+      "before": 419208,
+      "after": 113864,
+      "animations": 1,
+      "channels": 62,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 611,
+      "before": 482124,
+      "after": 110804,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 612,
+      "before": 206436,
+      "after": 156628,
+      "animations": 1,
+      "channels": 135,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 613,
+      "before": 140092,
+      "after": 108228,
+      "animations": 1,
+      "channels": 79,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 614,
+      "before": 182092,
+      "after": 132396,
+      "animations": 1,
+      "channels": 128,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 615,
+      "before": 479892,
+      "after": 120904,
+      "animations": 1,
+      "channels": 42,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 616,
+      "before": 333988,
+      "after": 71948,
+      "animations": 1,
+      "channels": 30,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 617,
+      "before": 757944,
+      "after": 381216,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 618,
+      "before": 130868,
+      "after": 95116,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 619,
+      "before": 195060,
+      "after": 139884,
+      "animations": 1,
+      "channels": 150,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 620,
+      "before": 182256,
+      "after": 125392,
+      "animations": 1,
+      "channels": 138,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 621,
+      "before": 191824,
+      "after": 141300,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 622,
+      "before": 437260,
+      "after": 106664,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 623,
+      "before": 704184,
+      "after": 202588,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 624,
+      "before": 108476,
+      "after": 89760,
+      "animations": 1,
+      "channels": 57,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 625,
+      "before": 170156,
+      "after": 133544,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 626,
+      "before": 138140,
+      "after": 105696,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 627,
+      "before": 683996,
+      "after": 196552,
+      "animations": 1,
+      "channels": 172,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 628,
+      "before": 284196,
+      "after": 177756,
+      "animations": 1,
+      "channels": 157,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 629,
+      "before": 193192,
+      "after": 146380,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 630,
+      "before": 737032,
+      "after": 198244,
+      "animations": 1,
+      "channels": 208,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 631,
+      "before": 1518684,
+      "after": 151492,
+      "animations": 1,
+      "channels": 150,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 632,
+      "before": 181392,
+      "after": 131180,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 633,
+      "before": 171504,
+      "after": 133672,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 634,
+      "before": 388064,
+      "after": 306428,
+      "animations": 1,
+      "channels": 174,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 635,
+      "before": 484268,
+      "after": 393680,
+      "animations": 1,
+      "channels": 220,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 636,
+      "before": 341632,
+      "after": 85396,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 637,
+      "before": 254188,
+      "after": 203788,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 638,
+      "before": 204404,
+      "after": 162428,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 639,
+      "before": 175060,
+      "after": 128968,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 640,
+      "before": 208796,
+      "after": 149416,
+      "animations": 1,
+      "channels": 150,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 641,
+      "before": 255968,
+      "after": 177424,
+      "animations": 1,
+      "channels": 173,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 642,
+      "before": 287480,
+      "after": 198704,
+      "animations": 1,
+      "channels": 194,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 643,
+      "before": 361756,
+      "after": 257792,
+      "animations": 1,
+      "channels": 261,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 644,
+      "before": 784556,
+      "after": 207584,
+      "animations": 1,
+      "channels": 141,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 645,
+      "before": 250116,
+      "after": 173608,
+      "animations": 1,
+      "channels": 170,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 646,
+      "before": 646984,
+      "after": 201108,
+      "animations": 1,
+      "channels": 135,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 647,
+      "before": 689632,
+      "after": 167844,
+      "animations": 1,
+      "channels": 201,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 648,
+      "before": 180428,
+      "after": 142276,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 649,
+      "before": 600024,
+      "after": 156028,
+      "animations": 1,
+      "channels": 97,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 650,
+      "before": 291300,
+      "after": 177692,
+      "animations": 1,
+      "channels": 112,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 651,
+      "before": 616756,
+      "after": 153144,
+      "animations": 1,
+      "channels": 125,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 652,
+      "before": 904376,
+      "after": 192168,
+      "animations": 1,
+      "channels": 188,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 653,
+      "before": 657104,
+      "after": 174268,
+      "animations": 1,
+      "channels": 178,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 654,
+      "before": 974732,
+      "after": 252836,
+      "animations": 1,
+      "channels": 255,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 655,
+      "before": 917328,
+      "after": 254612,
+      "animations": 1,
+      "channels": 371,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 656,
+      "before": 766824,
+      "after": 204732,
+      "animations": 1,
+      "channels": 158,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 657,
+      "before": 935792,
+      "after": 221928,
+      "animations": 1,
+      "channels": 165,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 658,
+      "before": 1138760,
+      "after": 291480,
+      "animations": 1,
+      "channels": 195,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 659,
+      "before": 561308,
+      "after": 143524,
+      "animations": 1,
+      "channels": 128,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 660,
+      "before": 245296,
+      "after": 180092,
+      "animations": 1,
+      "channels": 177,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 661,
+      "before": 180944,
+      "after": 114984,
+      "animations": 1,
+      "channels": 138,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 662,
+      "before": 244588,
+      "after": 162244,
+      "animations": 1,
+      "channels": 164,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 663,
+      "before": 288304,
+      "after": 189796,
+      "animations": 1,
+      "channels": 183,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 664,
+      "before": 281112,
+      "after": 144212,
+      "animations": 1,
+      "channels": 174,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 665,
+      "before": 190280,
+      "after": 112616,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 666,
+      "before": 483580,
+      "after": 252912,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 667,
+      "before": 548548,
+      "after": 156032,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 668,
+      "before": 298556,
+      "after": 212432,
+      "animations": 1,
+      "channels": 237,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 669,
+      "before": 370380,
+      "after": 200104,
+      "animations": 1,
+      "channels": 220,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 670,
+      "before": 362936,
+      "after": 213504,
+      "animations": 1,
+      "channels": 228,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 671,
+      "before": 424496,
+      "after": 268804,
+      "animations": 1,
+      "channels": 296,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 672,
+      "before": 745728,
+      "after": 176476,
+      "animations": 1,
+      "channels": 151,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 673,
+      "before": 279144,
+      "after": 171332,
+      "animations": 1,
+      "channels": 202,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 674,
+      "before": 621376,
+      "after": 164204,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 675,
+      "before": 264164,
+      "after": 187356,
+      "animations": 1,
+      "channels": 181,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 676,
+      "before": 287852,
+      "after": 183864,
+      "animations": 1,
+      "channels": 192,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 677,
+      "before": 462604,
+      "after": 135572,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 678,
+      "before": 671316,
+      "after": 139700,
+      "animations": 1,
+      "channels": 141,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 679,
+      "before": 381716,
+      "after": 216372,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 680,
+      "before": 448320,
+      "after": 253604,
+      "animations": 1,
+      "channels": 147,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 681,
+      "before": 262520,
+      "after": 162124,
+      "animations": 1,
+      "channels": 187,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 682,
+      "before": 148948,
+      "after": 102068,
+      "animations": 1,
+      "channels": 66,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 683,
+      "before": 287000,
+      "after": 175108,
+      "animations": 1,
+      "channels": 189,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 684,
+      "before": 225092,
+      "after": 160968,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 685,
+      "before": 190184,
+      "after": 157628,
+      "animations": 1,
+      "channels": 63,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 686,
+      "before": 646996,
+      "after": 187140,
+      "animations": 1,
+      "channels": 70,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 687,
+      "before": 876428,
+      "after": 340048,
+      "animations": 1,
+      "channels": 207,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 688,
+      "before": 143904,
+      "after": 125620,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 689,
+      "before": 336400,
+      "after": 261280,
+      "animations": 1,
+      "channels": 169,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 690,
+      "before": 647728,
+      "after": 246292,
+      "animations": 1,
+      "channels": 99,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 691,
+      "before": 673972,
+      "after": 176792,
+      "animations": 1,
+      "channels": 177,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 692,
+      "before": 173496,
+      "after": 131300,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 693,
+      "before": 220332,
+      "after": 171488,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 694,
+      "before": 357228,
+      "after": 209508,
+      "animations": 1,
+      "channels": 189,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 695,
+      "before": 342524,
+      "after": 200216,
+      "animations": 1,
+      "channels": 219,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 696,
+      "before": 670032,
+      "after": 148052,
+      "animations": 1,
+      "channels": 150,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 697,
+      "before": 229580,
+      "after": 165184,
+      "animations": 1,
+      "channels": 171,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 698,
+      "before": 580052,
+      "after": 141196,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 699,
+      "before": 821196,
+      "after": 329452,
+      "animations": 1,
+      "channels": 285,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 700,
+      "before": 381076,
+      "after": 308268,
+      "animations": 1,
+      "channels": 206,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 701,
+      "before": 718560,
+      "after": 265376,
+      "animations": 1,
+      "channels": 213,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 702,
+      "before": 204616,
+      "after": 156520,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 703,
+      "before": 98992,
+      "after": 86492,
+      "animations": 1,
+      "channels": 21,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 704,
+      "before": 193172,
+      "after": 165084,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 705,
+      "before": 166128,
+      "after": 120768,
+      "animations": 1,
+      "channels": 107,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 706,
+      "before": 353784,
+      "after": 234660,
+      "animations": 1,
+      "channels": 246,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 707,
+      "before": 360176,
+      "after": 189264,
+      "animations": 1,
+      "channels": 181,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 708,
+      "before": 285948,
+      "after": 264800,
+      "animations": 1,
+      "channels": 57,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 709,
+      "before": 785320,
+      "after": 234796,
+      "animations": 1,
+      "channels": 186,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 710,
+      "before": 433336,
+      "after": 102132,
+      "animations": 1,
+      "channels": 45,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 711,
+      "before": 622736,
+      "after": 200956,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 712,
+      "before": 259420,
+      "after": 75388,
+      "animations": 1,
+      "channels": 21,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 713,
+      "before": 526028,
+      "after": 166516,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 714,
+      "before": 340900,
+      "after": 223456,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 715,
+      "before": 561444,
+      "after": 388500,
+      "animations": 1,
+      "channels": 198,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 716,
+      "before": 815564,
+      "after": 222208,
+      "animations": 1,
+      "channels": 258,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 717,
+      "before": 1826692,
+      "after": 971244,
+      "animations": 1,
+      "channels": 252,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 718,
+      "before": 1133228,
+      "after": 382788,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 719,
+      "before": 159592,
+      "after": 131276,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 720,
+      "before": 674480,
+      "after": 201308,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 721,
+      "before": 888788,
+      "after": 190356,
+      "animations": 1,
+      "channels": 257,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 722,
+      "before": 711336,
+      "after": 158880,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 723,
+      "before": 329100,
+      "after": 204728,
+      "animations": 1,
+      "channels": 311,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 724,
+      "before": 441096,
+      "after": 256092,
+      "animations": 1,
+      "channels": 365,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 725,
+      "before": 546196,
+      "after": 182292,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 726,
+      "before": 822732,
+      "after": 233512,
+      "animations": 1,
+      "channels": 194,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 727,
+      "before": 1146688,
+      "after": 318784,
+      "animations": 1,
+      "channels": 324,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 728,
+      "before": 442420,
+      "after": 130912,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 729,
+      "before": 287340,
+      "after": 208784,
+      "animations": 1,
+      "channels": 192,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 730,
+      "before": 1443940,
+      "after": 303924,
+      "animations": 1,
+      "channels": 335,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 731,
+      "before": 202748,
+      "after": 133888,
+      "animations": 1,
+      "channels": 182,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 732,
+      "before": 290336,
+      "after": 175892,
+      "animations": 1,
+      "channels": 209,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 733,
+      "before": 263548,
+      "after": 171348,
+      "animations": 1,
+      "channels": 188,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 734,
+      "before": 202320,
+      "after": 141984,
+      "animations": 1,
+      "channels": 168,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 735,
+      "before": 251380,
+      "after": 170288,
+      "animations": 1,
+      "channels": 216,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 736,
+      "before": 111452,
+      "after": 83532,
+      "animations": 1,
+      "channels": 63,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 737,
+      "before": 283864,
+      "after": 61504,
+      "animations": 1,
+      "channels": 27,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 738,
+      "before": 794136,
+      "after": 240152,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 739,
+      "before": 664416,
+      "after": 138908,
+      "animations": 1,
+      "channels": 93,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 740,
+      "before": 254400,
+      "after": 183048,
+      "animations": 1,
+      "channels": 186,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 741,
+      "before": 392212,
+      "after": 245640,
+      "animations": 1,
+      "channels": 314,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 742,
+      "before": 696304,
+      "after": 319424,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 743,
+      "before": 839784,
+      "after": 280812,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 744,
+      "before": 230892,
+      "after": 167328,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 745,
+      "before": 260088,
+      "after": 187480,
+      "animations": 1,
+      "channels": 174,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 746,
+      "before": 155752,
+      "after": 140092,
+      "animations": 1,
+      "channels": 43,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 747,
+      "before": 439940,
+      "after": 252116,
+      "animations": 1,
+      "channels": 318,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 748,
+      "before": 379300,
+      "after": 240352,
+      "animations": 1,
+      "channels": 369,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 749,
+      "before": 171188,
+      "after": 133280,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 750,
+      "before": 255872,
+      "after": 191068,
+      "animations": 1,
+      "channels": 156,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 751,
+      "before": 801732,
+      "after": 207284,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 752,
+      "before": 916512,
+      "after": 212356,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 753,
+      "before": 146132,
+      "after": 111504,
+      "animations": 1,
+      "channels": 81,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 754,
+      "before": 908492,
+      "after": 210804,
+      "animations": 1,
+      "channels": 156,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 755,
+      "before": 465240,
+      "after": 131376,
+      "animations": 1,
+      "channels": 129,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 756,
+      "before": 262136,
+      "after": 184592,
+      "animations": 1,
+      "channels": 179,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 757,
+      "before": 638476,
+      "after": 199996,
+      "animations": 1,
+      "channels": 204,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 758,
+      "before": 1180416,
+      "after": 282260,
+      "animations": 1,
+      "channels": 309,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 759,
+      "before": 154136,
+      "after": 107472,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 760,
+      "before": 148576,
+      "after": 105336,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 761,
+      "before": 118008,
+      "after": 88868,
+      "animations": 1,
+      "channels": 57,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 762,
+      "before": 672100,
+      "after": 164140,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 763,
+      "before": 802328,
+      "after": 175532,
+      "animations": 1,
+      "channels": 155,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 764,
+      "before": 379544,
+      "after": 255508,
+      "animations": 1,
+      "channels": 312,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 765,
+      "before": 1124840,
+      "after": 262976,
+      "animations": 1,
+      "channels": 333,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 766,
+      "before": 852808,
+      "after": 220404,
+      "animations": 1,
+      "channels": 255,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 767,
+      "before": 267076,
+      "after": 171764,
+      "animations": 1,
+      "channels": 223,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 768,
+      "before": 209116,
+      "after": 152764,
+      "animations": 1,
+      "channels": 152,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 769,
+      "before": 425328,
+      "after": 113964,
+      "animations": 1,
+      "channels": 138,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 770,
+      "before": 834332,
+      "after": 195928,
+      "animations": 1,
+      "channels": 227,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 771,
+      "before": 198092,
+      "after": 83528,
+      "animations": 1,
+      "channels": 161,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 772,
+      "before": 262172,
+      "after": 181788,
+      "animations": 1,
+      "channels": 216,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 773,
+      "before": 940372,
+      "after": 255548,
+      "animations": 1,
+      "channels": 225,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 774,
+      "before": 839180,
+      "after": 108284,
+      "animations": 1,
+      "channels": 58,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 775,
+      "before": 161796,
+      "after": 117872,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 776,
+      "before": 1023628,
+      "after": 192380,
+      "animations": 1,
+      "channels": 160,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 777,
+      "before": 217936,
+      "after": 134416,
+      "animations": 1,
+      "channels": 196,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 778,
+      "before": 617968,
+      "after": 139788,
+      "animations": 1,
+      "channels": 262,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 779,
+      "before": 332344,
+      "after": 222744,
+      "animations": 1,
+      "channels": 194,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 780,
+      "before": 438812,
+      "after": 285164,
+      "animations": 1,
+      "channels": 309,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 781,
+      "before": 1049604,
+      "after": 168952,
+      "animations": 1,
+      "channels": 173,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 782,
+      "before": 696392,
+      "after": 158884,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 783,
+      "before": 802272,
+      "after": 173804,
+      "animations": 1,
+      "channels": 201,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 784,
+      "before": 1234980,
+      "after": 277392,
+      "animations": 1,
+      "channels": 333,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 785,
+      "before": 211984,
+      "after": 162928,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 786,
+      "before": 211712,
+      "after": 161696,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 787,
+      "before": 192224,
+      "after": 159992,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 788,
+      "before": 300208,
+      "after": 240084,
+      "animations": 1,
+      "channels": 132,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 789,
+      "before": 617848,
+      "after": 178332,
+      "animations": 1,
+      "channels": 186,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 790,
+      "before": 1079776,
+      "after": 67824,
+      "animations": 1,
+      "channels": 63,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 791,
+      "before": 1262716,
+      "after": 398156,
+      "animations": 1,
+      "channels": 252,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 792,
+      "before": 1431848,
+      "after": 358400,
+      "animations": 1,
+      "channels": 227,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 793,
+      "before": 1085804,
+      "after": 349960,
+      "animations": 1,
+      "channels": 243,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 794,
+      "before": 1550084,
+      "after": 303456,
+      "animations": 1,
+      "channels": 268,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 795,
+      "before": 1182980,
+      "after": 279172,
+      "animations": 1,
+      "channels": 255,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 796,
+      "before": 865984,
+      "after": 224356,
+      "animations": 1,
+      "channels": 339,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 797,
+      "before": 328148,
+      "after": 232196,
+      "animations": 1,
+      "channels": 249,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 798,
+      "before": 172016,
+      "after": 132984,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 799,
+      "before": 1110232,
+      "after": 336672,
+      "animations": 1,
+      "channels": 287,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 800,
+      "before": 1515512,
+      "after": 319956,
+      "animations": 1,
+      "channels": 122,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 801,
+      "before": 1661724,
+      "after": 258052,
+      "animations": 1,
+      "channels": 311,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 802,
+      "before": 893116,
+      "after": 237192,
+      "animations": 1,
+      "channels": 289,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 803,
+      "before": 590852,
+      "after": 176816,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 804,
+      "before": 961164,
+      "after": 236072,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 805,
+      "before": 1383880,
+      "after": 294712,
+      "animations": 1,
+      "channels": 273,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 806,
+      "before": 1035100,
+      "after": 305684,
+      "animations": 1,
+      "channels": 334,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 807,
+      "before": 415648,
+      "after": 271388,
+      "animations": 1,
+      "channels": 333,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 808,
+      "before": 196396,
+      "after": 101944,
+      "animations": 1,
+      "channels": 121,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 809,
+      "before": 320648,
+      "after": 176524,
+      "animations": 1,
+      "channels": 237,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 810,
+      "before": 718760,
+      "after": 208496,
+      "animations": 1,
+      "channels": 269,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 811,
+      "before": 995700,
+      "after": 275992,
+      "animations": 1,
+      "channels": 370,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 812,
+      "before": 1127604,
+      "after": 329128,
+      "animations": 1,
+      "channels": 412,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 813,
+      "before": 349752,
+      "after": 222024,
+      "animations": 1,
+      "channels": 213,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 814,
+      "before": 767216,
+      "after": 180104,
+      "animations": 1,
+      "channels": 191,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 815,
+      "before": 1503276,
+      "after": 257472,
+      "animations": 1,
+      "channels": 322,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 816,
+      "before": 856040,
+      "after": 218144,
+      "animations": 1,
+      "channels": 268,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 817,
+      "before": 836408,
+      "after": 211452,
+      "animations": 1,
+      "channels": 271,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 818,
+      "before": 527620,
+      "after": 288868,
+      "animations": 1,
+      "channels": 394,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 819,
+      "before": 235676,
+      "after": 169892,
+      "animations": 1,
+      "channels": 171,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 820,
+      "before": 423880,
+      "after": 235972,
+      "animations": 1,
+      "channels": 333,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 821,
+      "before": 224932,
+      "after": 149480,
+      "animations": 1,
+      "channels": 193,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 822,
+      "before": 525164,
+      "after": 319248,
+      "animations": 1,
+      "channels": 299,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 823,
+      "before": 540248,
+      "after": 301276,
+      "animations": 1,
+      "channels": 297,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 824,
+      "before": 207400,
+      "after": 142788,
+      "animations": 1,
+      "channels": 161,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 825,
+      "before": 151900,
+      "after": 127348,
+      "animations": 1,
+      "channels": 63,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 826,
+      "before": 959760,
+      "after": 156520,
+      "animations": 1,
+      "channels": 144,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 827,
+      "before": 766360,
+      "after": 197192,
+      "animations": 1,
+      "channels": 258,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 828,
+      "before": 834724,
+      "after": 221068,
+      "animations": 1,
+      "channels": 234,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 829,
+      "before": 213444,
+      "after": 151860,
+      "animations": 1,
+      "channels": 156,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 830,
+      "before": 339540,
+      "after": 203072,
+      "animations": 1,
+      "channels": 199,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 831,
+      "before": 206640,
+      "after": 149552,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 832,
+      "before": 198908,
+      "after": 154744,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 833,
+      "before": 179784,
+      "after": 135128,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 834,
+      "before": 193408,
+      "after": 141052,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 835,
+      "before": 218372,
+      "after": 154396,
+      "animations": 1,
+      "channels": 135,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 836,
+      "before": 316432,
+      "after": 202444,
+      "animations": 1,
+      "channels": 245,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 837,
+      "before": 107424,
+      "after": 61664,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 838,
+      "before": 295008,
+      "after": 191848,
+      "animations": 1,
+      "channels": 102,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 839,
+      "before": 316736,
+      "after": 168260,
+      "animations": 1,
+      "channels": 174,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 840,
+      "before": 148660,
+      "after": 118604,
+      "animations": 1,
+      "channels": 86,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 841,
+      "before": 832864,
+      "after": 332584,
+      "animations": 1,
+      "channels": 240,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 842,
+      "before": 277656,
+      "after": 201708,
+      "animations": 1,
+      "channels": 199,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 843,
+      "before": 196720,
+      "after": 142836,
+      "animations": 1,
+      "channels": 119,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 844,
+      "before": 219936,
+      "after": 170080,
+      "animations": 1,
+      "channels": 104,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 845,
+      "before": 1414828,
+      "after": 239344,
+      "animations": 1,
+      "channels": 448,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 846,
+      "before": 683792,
+      "after": 129288,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 847,
+      "before": 801300,
+      "after": 147712,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 848,
+      "before": 597780,
+      "after": 173780,
+      "animations": 1,
+      "channels": 176,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 849,
+      "before": 1101836,
+      "after": 246832,
+      "animations": 1,
+      "channels": 271,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 850,
+      "before": 807696,
+      "after": 202376,
+      "animations": 1,
+      "channels": 170,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 851,
+      "before": 2068152,
+      "after": 1086864,
+      "animations": 1,
+      "channels": 364,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 852,
+      "before": 194140,
+      "after": 133544,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 853,
+      "before": 988796,
+      "after": 266984,
+      "animations": 1,
+      "channels": 236,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 854,
+      "before": 793100,
+      "after": 183388,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 855,
+      "before": 594892,
+      "after": 292652,
+      "animations": 1,
+      "channels": 233,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 856,
+      "before": 112880,
+      "after": 85380,
+      "animations": 1,
+      "channels": 64,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 857,
+      "before": 219180,
+      "after": 131664,
+      "animations": 1,
+      "channels": 177,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 858,
+      "before": 1100864,
+      "after": 238080,
+      "animations": 1,
+      "channels": 297,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 859,
+      "before": 600552,
+      "after": 152516,
+      "animations": 1,
+      "channels": 179,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 860,
+      "before": 849764,
+      "after": 203820,
+      "animations": 1,
+      "channels": 237,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 861,
+      "before": 1334804,
+      "after": 318880,
+      "animations": 1,
+      "channels": 461,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 862,
+      "before": 987796,
+      "after": 248120,
+      "animations": 1,
+      "channels": 368,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 863,
+      "before": 1203196,
+      "after": 254488,
+      "animations": 1,
+      "channels": 258,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 864,
+      "before": 2055000,
+      "after": 300412,
+      "animations": 1,
+      "channels": 369,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 865,
+      "before": 1120716,
+      "after": 245056,
+      "animations": 1,
+      "channels": 258,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 866,
+      "before": 1259292,
+      "after": 280020,
+      "animations": 1,
+      "channels": 162,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 867,
+      "before": 823440,
+      "after": 378432,
+      "animations": 1,
+      "channels": 323,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 868,
+      "before": 285148,
+      "after": 139952,
+      "animations": 1,
+      "channels": 159,
+      "visibilityTracks": 5
+    },
+    {
+      "id": 869,
+      "before": 620620,
+      "after": 161480,
+      "animations": 1,
+      "channels": 128,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 870,
+      "before": 1182080,
+      "after": 344968,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 871,
+      "before": 98416,
+      "after": 71232,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 872,
+      "before": 316872,
+      "after": 73828,
+      "animations": 1,
+      "channels": 47,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 873,
+      "before": 777156,
+      "after": 208784,
+      "animations": 1,
+      "channels": 108,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 874,
+      "before": 218920,
+      "after": 121184,
+      "animations": 1,
+      "channels": 69,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 875,
+      "before": 241344,
+      "after": 131932,
+      "animations": 1,
+      "channels": 201,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 876,
+      "before": 189940,
+      "after": 134128,
+      "animations": 1,
+      "channels": 147,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 877,
+      "before": 503432,
+      "after": 174628,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 878,
+      "before": 198296,
+      "after": 144560,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 879,
+      "before": 273076,
+      "after": 189548,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 880,
+      "before": 306764,
+      "after": 221216,
+      "animations": 1,
+      "channels": 207,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 881,
+      "before": 389392,
+      "after": 240988,
+      "animations": 1,
+      "channels": 151,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 882,
+      "before": 187160,
+      "after": 149268,
+      "animations": 1,
+      "channels": 96,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 883,
+      "before": 206348,
+      "after": 162636,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 884,
+      "before": 185940,
+      "after": 123176,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 885,
+      "before": 174588,
+      "after": 131524,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 886,
+      "before": 957040,
+      "after": 303808,
+      "animations": 1,
+      "channels": 234,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 887,
+      "before": 1467508,
+      "after": 436716,
+      "animations": 1,
+      "channels": 391,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 888,
+      "before": 1110960,
+      "after": 340496,
+      "animations": 1,
+      "channels": 336,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 889,
+      "before": 1038548,
+      "after": 300352,
+      "animations": 1,
+      "channels": 265,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 890,
+      "before": 1551732,
+      "after": 419684,
+      "animations": 1,
+      "channels": 333,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 891,
+      "before": 320884,
+      "after": 219488,
+      "animations": 1,
+      "channels": 272,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 892,
+      "before": 1369844,
+      "after": 360096,
+      "animations": 1,
+      "channels": 466,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 893,
+      "before": 1353816,
+      "after": 310772,
+      "animations": 1,
+      "channels": 451,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 894,
+      "before": 1893620,
+      "after": 794984,
+      "animations": 1,
+      "channels": 455,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 895,
+      "before": 768476,
+      "after": 119356,
+      "animations": 1,
+      "channels": 60,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 896,
+      "before": 854476,
+      "after": 181088,
+      "animations": 1,
+      "channels": 161,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 897,
+      "before": 1334908,
+      "after": 596712,
+      "animations": 1,
+      "channels": 382,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 898,
+      "before": 802904,
+      "after": 184048,
+      "animations": 1,
+      "channels": 168,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 899,
+      "before": 539732,
+      "after": 109948,
+      "animations": 1,
+      "channels": 111,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 900,
+      "before": 447920,
+      "after": 102756,
+      "animations": 1,
+      "channels": 101,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 901,
+      "before": 693756,
+      "after": 172320,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 902,
+      "before": 707552,
+      "after": 191848,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 903,
+      "before": 587360,
+      "after": 180744,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 904,
+      "before": 592904,
+      "after": 143712,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 905,
+      "before": 1018128,
+      "after": 312028,
+      "animations": 1,
+      "channels": 267,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 906,
+      "before": 800028,
+      "after": 212828,
+      "animations": 1,
+      "channels": 239,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 907,
+      "before": 1087908,
+      "after": 263976,
+      "animations": 1,
+      "channels": 356,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 908,
+      "before": 1380544,
+      "after": 309316,
+      "animations": 1,
+      "channels": 395,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 909,
+      "before": 525756,
+      "after": 127816,
+      "animations": 1,
+      "channels": 86,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 910,
+      "before": 1004964,
+      "after": 271088,
+      "animations": 1,
+      "channels": 211,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 911,
+      "before": 1744424,
+      "after": 363804,
+      "animations": 1,
+      "channels": 373,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 912,
+      "before": 933152,
+      "after": 187708,
+      "animations": 1,
+      "channels": 193,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 913,
+      "before": 1069512,
+      "after": 235124,
+      "animations": 1,
+      "channels": 282,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 914,
+      "before": 2372828,
+      "after": 895484,
+      "animations": 1,
+      "channels": 359,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 915,
+      "before": 514364,
+      "after": 143760,
+      "animations": 1,
+      "channels": 161,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 916,
+      "before": 857360,
+      "after": 216556,
+      "animations": 1,
+      "channels": 189,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 917,
+      "before": 514432,
+      "after": 294000,
+      "animations": 1,
+      "channels": 279,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 918,
+      "before": 379348,
+      "after": 167164,
+      "animations": 1,
+      "channels": 339,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 919,
+      "before": 343888,
+      "after": 82564,
+      "animations": 1,
+      "channels": 110,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 920,
+      "before": 494536,
+      "after": 121660,
+      "animations": 1,
+      "channels": 134,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 921,
+      "before": 271432,
+      "after": 175060,
+      "animations": 1,
+      "channels": 248,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 922,
+      "before": 275536,
+      "after": 178420,
+      "animations": 1,
+      "channels": 258,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 923,
+      "before": 404520,
+      "after": 258560,
+      "animations": 1,
+      "channels": 384,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 924,
+      "before": 249116,
+      "after": 134852,
+      "animations": 1,
+      "channels": 222,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 925,
+      "before": 552864,
+      "after": 270368,
+      "animations": 1,
+      "channels": 366,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 926,
+      "before": 171376,
+      "after": 122276,
+      "animations": 1,
+      "channels": 123,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 927,
+      "before": 780148,
+      "after": 211988,
+      "animations": 1,
+      "channels": 209,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 928,
+      "before": 100772,
+      "after": 72692,
+      "animations": 1,
+      "channels": 75,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 929,
+      "before": 254904,
+      "after": 169856,
+      "animations": 1,
+      "channels": 230,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 930,
+      "before": 462552,
+      "after": 327192,
+      "animations": 1,
+      "channels": 352,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 931,
+      "before": 1160128,
+      "after": 296312,
+      "animations": 1,
+      "channels": 348,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 932,
+      "before": 122532,
+      "after": 30972,
+      "animations": 1,
+      "channels": 12,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 933,
+      "before": 199804,
+      "after": 47940,
+      "animations": 1,
+      "channels": 18,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 934,
+      "before": 524828,
+      "after": 158968,
+      "animations": 1,
+      "channels": 114,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 935,
+      "before": 1148020,
+      "after": 262916,
+      "animations": 1,
+      "channels": 188,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 936,
+      "before": 1091176,
+      "after": 231876,
+      "animations": 1,
+      "channels": 188,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 937,
+      "before": 1597976,
+      "after": 356268,
+      "animations": 1,
+      "channels": 164,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 938,
+      "before": 91504,
+      "after": 82900,
+      "animations": 1,
+      "channels": 21,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 939,
+      "before": 384664,
+      "after": 103312,
+      "animations": 1,
+      "channels": 50,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 940,
+      "before": 602816,
+      "after": 178156,
+      "animations": 1,
+      "channels": 180,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 941,
+      "before": 644708,
+      "after": 172228,
+      "animations": 1,
+      "channels": 214,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 942,
+      "before": 255720,
+      "after": 170664,
+      "animations": 1,
+      "channels": 229,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 943,
+      "before": 326524,
+      "after": 222980,
+      "animations": 1,
+      "channels": 273,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 944,
+      "before": 152140,
+      "after": 110032,
+      "animations": 1,
+      "channels": 113,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 945,
+      "before": 351344,
+      "after": 245384,
+      "animations": 1,
+      "channels": 255,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 946,
+      "before": 228320,
+      "after": 128948,
+      "animations": 1,
+      "channels": 220,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 947,
+      "before": 162680,
+      "after": 108256,
+      "animations": 1,
+      "channels": 105,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 948,
+      "before": 517500,
+      "after": 131944,
+      "animations": 1,
+      "channels": 72,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 949,
+      "before": 1014112,
+      "after": 358444,
+      "animations": 1,
+      "channels": 344,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 950,
+      "before": 1070656,
+      "after": 272528,
+      "animations": 1,
+      "channels": 182,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 951,
+      "before": 197376,
+      "after": 137964,
+      "animations": 1,
+      "channels": 124,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 952,
+      "before": 379632,
+      "after": 256020,
+      "animations": 1,
+      "channels": 236,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 953,
+      "before": 802656,
+      "after": 183756,
+      "animations": 1,
+      "channels": 131,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 954,
+      "before": 1287288,
+      "after": 262548,
+      "animations": 1,
+      "channels": 249,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 955,
+      "before": 258880,
+      "after": 147524,
+      "animations": 1,
+      "channels": 142,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 956,
+      "before": 1139588,
+      "after": 292568,
+      "animations": 1,
+      "channels": 338,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 957,
+      "before": 558376,
+      "after": 148992,
+      "animations": 1,
+      "channels": 160,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 958,
+      "before": 313612,
+      "after": 221836,
+      "animations": 1,
+      "channels": 244,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 959,
+      "before": 485692,
+      "after": 326516,
+      "animations": 1,
+      "channels": 363,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 960,
+      "before": 122904,
+      "after": 80252,
+      "animations": 1,
+      "channels": 57,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 961,
+      "before": 180360,
+      "after": 132536,
+      "animations": 1,
+      "channels": 117,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 962,
+      "before": 445780,
+      "after": 257312,
+      "animations": 1,
+      "channels": 395,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 963,
+      "before": 400024,
+      "after": 140616,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 964,
+      "before": 409544,
+      "after": 166792,
+      "animations": 1,
+      "channels": 87,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 965,
+      "before": 641784,
+      "after": 285356,
+      "animations": 1,
+      "channels": 89,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 966,
+      "before": 1409296,
+      "after": 449784,
+      "animations": 1,
+      "channels": 277,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 967,
+      "before": 749160,
+      "after": 263720,
+      "animations": 1,
+      "channels": 302,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 968,
+      "before": 540916,
+      "after": 104720,
+      "animations": 1,
+      "channels": 153,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 969,
+      "before": 502744,
+      "after": 100376,
+      "animations": 1,
+      "channels": 71,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 970,
+      "before": 678740,
+      "after": 163616,
+      "animations": 1,
+      "channels": 185,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 971,
+      "before": 964468,
+      "after": 271188,
+      "animations": 1,
+      "channels": 282,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 972,
+      "before": 1266916,
+      "after": 313476,
+      "animations": 1,
+      "channels": 371,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 973,
+      "before": 624316,
+      "after": 185376,
+      "animations": 1,
+      "channels": 223,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 974,
+      "before": 420824,
+      "after": 132836,
+      "animations": 1,
+      "channels": 127,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 975,
+      "before": 718692,
+      "after": 161248,
+      "animations": 1,
+      "channels": 166,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 976,
+      "before": 751484,
+      "after": 185428,
+      "animations": 1,
+      "channels": 90,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 977,
+      "before": 985872,
+      "after": 325104,
+      "animations": 1,
+      "channels": 213,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 978,
+      "before": 477852,
+      "after": 134260,
+      "animations": 1,
+      "channels": 116,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 979,
+      "before": 491004,
+      "after": 355572,
+      "animations": 1,
+      "channels": 357,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 980,
+      "before": 157096,
+      "after": 103260,
+      "animations": 1,
+      "channels": 122,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 981,
+      "before": 1085300,
+      "after": 255804,
+      "animations": 1,
+      "channels": 263,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 982,
+      "before": 143440,
+      "after": 111392,
+      "animations": 1,
+      "channels": 82,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 983,
+      "before": 1113796,
+      "after": 233592,
+      "animations": 1,
+      "channels": 319,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 984,
+      "before": 1172576,
+      "after": 305528,
+      "animations": 1,
+      "channels": 362,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 985,
+      "before": 456124,
+      "after": 139452,
+      "animations": 1,
+      "channels": 130,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 986,
+      "before": 909200,
+      "after": 289872,
+      "animations": 1,
+      "channels": 334,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 987,
+      "before": 968808,
+      "after": 250876,
+      "animations": 1,
+      "channels": 306,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 988,
+      "before": 434068,
+      "after": 300396,
+      "animations": 1,
+      "channels": 330,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 989,
+      "before": 1661220,
+      "after": 352904,
+      "animations": 1,
+      "channels": 400,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 990,
+      "before": 809744,
+      "after": 160656,
+      "animations": 1,
+      "channels": 126,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 991,
+      "before": 1905744,
+      "after": 311424,
+      "animations": 1,
+      "channels": 194,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 992,
+      "before": 1424720,
+      "after": 187052,
+      "animations": 1,
+      "channels": 54,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 993,
+      "before": 2251940,
+      "after": 616072,
+      "animations": 1,
+      "channels": 262,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 994,
+      "before": 1047404,
+      "after": 178680,
+      "animations": 1,
+      "channels": 78,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 995,
+      "before": 911568,
+      "after": 159392,
+      "animations": 1,
+      "channels": 147,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 996,
+      "before": 413692,
+      "after": 129796,
+      "animations": 1,
+      "channels": 119,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 997,
+      "before": 569700,
+      "after": 166980,
+      "animations": 1,
+      "channels": 161,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 998,
+      "before": 615564,
+      "after": 170936,
+      "animations": 1,
+      "channels": 160,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 999,
+      "before": 1165036,
+      "after": 240796,
+      "animations": 1,
+      "channels": 200,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1000,
+      "before": 970956,
+      "after": 245952,
+      "animations": 1,
+      "channels": 347,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1001,
+      "before": 1864848,
+      "after": 344688,
+      "animations": 1,
+      "channels": 392,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1002,
+      "before": 1604500,
+      "after": 319556,
+      "animations": 1,
+      "channels": 195,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1003,
+      "before": 982568,
+      "after": 293360,
+      "animations": 1,
+      "channels": 106,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1004,
+      "before": 1169928,
+      "after": 639556,
+      "animations": 1,
+      "channels": 223,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1005,
+      "before": 1493648,
+      "after": 341208,
+      "animations": 1,
+      "channels": 367,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1006,
+      "before": 1479512,
+      "after": 235680,
+      "animations": 1,
+      "channels": 207,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1007,
+      "before": 1482140,
+      "after": 498628,
+      "animations": 1,
+      "channels": 425,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1008,
+      "before": 2483044,
+      "after": 938252,
+      "animations": 1,
+      "channels": 474,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1009,
+      "before": 1398012,
+      "after": 377436,
+      "animations": 1,
+      "channels": 400,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1010,
+      "before": 1570704,
+      "after": 180192,
+      "animations": 1,
+      "channels": 109,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1011,
+      "before": 933788,
+      "after": 202380,
+      "animations": 1,
+      "channels": 163,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1012,
+      "before": 1366940,
+      "after": 402316,
+      "animations": 1,
+      "channels": 215,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1013,
+      "before": 658832,
+      "after": 289768,
+      "animations": 1,
+      "channels": 335,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1014,
+      "before": 1512872,
+      "after": 333996,
+      "animations": 1,
+      "channels": 356,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1015,
+      "before": 1155436,
+      "after": 284724,
+      "animations": 1,
+      "channels": 344,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1016,
+      "before": 2672732,
+      "after": 478236,
+      "animations": 1,
+      "channels": 398,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1017,
+      "before": 1475260,
+      "after": 575468,
+      "animations": 1,
+      "channels": 264,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1018,
+      "before": 1369364,
+      "after": 202828,
+      "animations": 1,
+      "channels": 183,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1019,
+      "before": 601940,
+      "after": 371768,
+      "animations": 1,
+      "channels": 424,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1020,
+      "before": 1947532,
+      "after": 379816,
+      "animations": 1,
+      "channels": 284,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1021,
+      "before": 1292984,
+      "after": 293064,
+      "animations": 1,
+      "channels": 227,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1022,
+      "before": 1817944,
+      "after": 242972,
+      "animations": 1,
+      "channels": 134,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1023,
+      "before": 2641336,
+      "after": 287256,
+      "animations": 1,
+      "channels": 211,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1024,
+      "before": 624692,
+      "after": 145664,
+      "animations": 1,
+      "channels": 149,
+      "visibilityTracks": 0
+    },
+    {
+      "id": 1025,
+      "before": 269428,
+      "after": 153160,
+      "animations": 1,
+      "channels": 169,
+      "visibilityTracks": 0
+    }
+  ]
+}

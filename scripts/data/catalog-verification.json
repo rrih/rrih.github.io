@@ -1,0 +1,53 @@
+{
+  "sourceRepository": "https://github.com/PokeAPI/pokeapi",
+  "sourceCommit": "d4f9a4af58ade123fbc0558f68b1c69daa97d9e4",
+  "countVerificationEndpoint": "https://pokeapi.co/api/v2/pokemon-species?limit=10000",
+  "speciesCount": 1025,
+  "minId": 1,
+  "maxId": 1025,
+  "generationCounts": {
+    "1": 151,
+    "2": 100,
+    "3": 135,
+    "4": 107,
+    "5": 156,
+    "6": 72,
+    "7": 88,
+    "8": 96,
+    "9": 120
+  },
+  "statOrder": [
+    "HP",
+    "Attack",
+    "Defense",
+    "Special Attack",
+    "Special Defense",
+    "Speed"
+  ],
+  "heightUnit": "m",
+  "weightUnit": "kg",
+  "formSelection": "One record per species using the upstream default Pokemon form",
+  "flavorTextSelection": "Latest version ID with nonempty English flavor text; whitespace normalized",
+  "verified": [
+    "unique IDs",
+    "complete contiguous national IDs",
+    "API count/ID/slug parity",
+    "names in English and Japanese",
+    "six valid base stats",
+    "one or two types",
+    "positive metric dimensions",
+    "flavor text and genus",
+    "valid evolution references"
+  ],
+  "sourceSha256": {
+    "pokemon_species.csv": "9878f19c0637095cdd9a4134b4aac8fb2b64776d3bdc599aa68f15c3a011b87c",
+    "pokemon.csv": "16c81c33188b0eac403aa2f759fcbe9e42c611f722d263f5b5a6a5bff9f8ce6b",
+    "pokemon_species_names.csv": "820cde17074cdb1c2b0595c997fb8f998e773bd5da3bb525dec85703c86c5fd9",
+    "pokemon_types.csv": "f1fc4bfd657a034ea3bf6972423b10276424aa068577b304a78a08996425ba05",
+    "types.csv": "37f039c8d722f47d51ba1c5c5ecf9b7007235b1a9a1af2827645c777b70307c8",
+    "pokemon_stats.csv": "fa2c44263a3706468682fefc3e0b3c4f5487fe9febed7d4ebcd6939c34b16aa8",
+    "pokemon_species_flavor_text.csv": "c341e602ab623084fef4c44ca4a174938e617802cfcf2deec830d824f688dc69",
+    "species-api.json": "cdfd6524c4b51d14b83088113553fdbc7ec9b2ca4673788ca47f9ae76bada479"
+  },
+  "catalogSha256": "51c63cbea14a6363bd3fb9dead835cb2842eb28348aa694ee5434fec4d650abc"
+}
