@@ -1,0 +1,37 @@
+{
+  "name": "pictulane",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "lint": "eslint src scripts tests public/sw.js",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/core.test.ts",
+    "build": "npm run typecheck && vite build && node scripts/build-sw.mjs",
+    "preview": "node scripts/serve.mjs",
+    "e2e": "playwright test",
+    "dev-check": "npm run lint && npm run test && npm run build",
+    "build:test": "vite build --mode test && PICTULANE_TEST_BUILD=1 node scripts/build-sw.mjs"
+  },
+  "dependencies": {
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "@playwright/test": "1.58.2",
+    "@types/node": "22.18.6",
+    "@types/react": "19.1.16",
+    "@types/react-dom": "19.1.9",
+    "eslint": "9.39.4",
+    "sharp": "^0.35.4",
+    "tsx": "4.20.6",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.57.0",
+    "vite": "^7.3.6"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.13.0"
+  }
+}

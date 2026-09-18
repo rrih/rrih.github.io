@@ -79,6 +79,16 @@ for (const path of ['/atlas/pokemon/99999/', '/atlas/not-a-real-page/', '/shitsu
   assert(html.includes('noindex'), `${path}: real missing page`)
 }
 
+const pictulane = await get('/tools/pictulane/')
+assert(pictulane.includes('<title>pictulane</title>'))
+assert(pictulane.includes('/tools/pictulane/manifest.webmanifest'))
+assert(!pictulane.includes('fixture-provider'))
+const pictulaneManifest = JSON.parse(await get('/tools/pictulane/manifest.webmanifest'))
+for (const key of ['id', 'scope', 'start_url']) assert.equal(pictulaneManifest[key], '/tools/pictulane/')
+assert((await get('/tools/pictulane/sw.js')).includes('pictulane-images-v1'))
+await get('/tools/pictulane/not-found.js', 404)
+await get('/tools/pictulane/src/main.tsx', 404)
+
 mkdirSync('work/production-check', { recursive: true })
 writeFileSync(
   'work/production-check/latest.json',

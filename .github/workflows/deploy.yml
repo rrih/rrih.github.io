@@ -45,8 +45,34 @@ jobs:
         with:
           name: compatibility
           path: atlas/hosting/
+  pictulane:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tools/pictulane
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
+          cache: npm
+          cache-dependency-path: tools/pictulane/package-lock.json
+      - run: npm ci
+      - run: npm run dev-check
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build:test && npm run e2e
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pictulane
+          path: tools/pictulane/dist/
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: pictulane-tests
+          path: tools/pictulane/test-results/
   assemble:
-    needs: [profile, atlas]
+    needs: [profile, atlas, pictulane]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -56,7 +82,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           path: artifacts
-      - run: bun deployment/compose.ts artifacts/profile artifacts/atlas artifacts/compatibility site-dist
+      - run: bun deployment/compose.ts artifacts/profile artifacts/atlas artifacts/compatibility site-dist artifacts/pictulane
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
