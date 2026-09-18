@@ -61,18 +61,34 @@ export function cachedAlbum(account: string): Album | undefined {
     if (
       a?.version === 1 &&
       a.username === account &&
-      Array.isArray(a.posts) && a.posts.length <= 300 &&
-      a.posts.every(p => typeof p?.id === 'string' && /^\d{1,30}$/.test(p.id) &&
-        typeof p.author === 'string' && username(p.author) === p.author &&
-        (p.text === undefined || typeof p.text === 'string') &&
-        (p.date === undefined || typeof p.date === 'string' && Number.isFinite(Date.parse(p.date))) &&
-        (p.sensitive === undefined || typeof p.sensitive === 'boolean') &&
-        (p.repost === undefined || typeof p.repost === 'boolean') &&
-        Array.isArray(p.images) && p.images.length <= 20 && p.images.every(i =>
-          typeof i?.key === 'string' && /^[\w-]{1,80}$/.test(i.key) &&
-          Number.isInteger(i.position) && i.position >= 0 && i.position < 20 &&
-          typeof i.url === 'string' && imageURL(i.url) && typeof i.thumb === 'string' && imageURL(i.thumb) &&
-          (i.alt === undefined || typeof i.alt === 'string'))) &&
+      Array.isArray(a.posts) &&
+      a.posts.length <= 300 &&
+      a.posts.every(
+        (p) =>
+          typeof p?.id === 'string' &&
+          /^\d{1,30}$/.test(p.id) &&
+          typeof p.author === 'string' &&
+          username(p.author) === p.author &&
+          (p.text === undefined || typeof p.text === 'string') &&
+          (p.date === undefined || (typeof p.date === 'string' && Number.isFinite(Date.parse(p.date)))) &&
+          (p.sensitive === undefined || typeof p.sensitive === 'boolean') &&
+          (p.repost === undefined || typeof p.repost === 'boolean') &&
+          Array.isArray(p.images) &&
+          p.images.length <= 20 &&
+          p.images.every(
+            (i) =>
+              typeof i?.key === 'string' &&
+              /^[\w-]{1,80}$/.test(i.key) &&
+              Number.isInteger(i.position) &&
+              i.position >= 0 &&
+              i.position < 20 &&
+              typeof i.url === 'string' &&
+              imageURL(i.url) &&
+              typeof i.thumb === 'string' &&
+              imageURL(i.thumb) &&
+              (i.alt === undefined || typeof i.alt === 'string'),
+          ),
+      ) &&
       Number.isFinite(Date.parse(a.fetchedAt)) &&
       ['end', 'unavailable'].includes(a.range)
     ) {

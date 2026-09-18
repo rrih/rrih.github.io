@@ -359,3 +359,29 @@ test('entire sequence forward and reverse, end range and settings Escape', async
   await page.keyboard.press('Escape')
   await expect(page.locator('.viewer')).toHaveCount(0)
 })
+test('clearing history cancels pending resume writes and disabled cache survives metadata eviction', async ({
+  page,
+}) => {
+  await page.goto(base + '#/nasa')
+  await page.evaluate(() => navigator.serviceWorker.ready)
+  await page.reload()
+  await page.locator('.thumb').first().click()
+  await page.getByRole('button', { name: '設定', exact: true }).last().click()
+  await page.locator('dialog input[type=checkbox]').uncheck()
+  await page.getByRole('button', { name: '閲覧履歴を削除', exact: true }).click()
+  await page.waitForTimeout(500)
+  await page.evaluate(() => window.dispatchEvent(new Event('pagehide')))
+  expect(await page.evaluate(() => localStorage.getItem('pictulane:v1:resume:nasa'))).toBe(null)
+  await page.evaluate(() => caches.delete('pictulane-image-meta-v1'))
+  await page.goto(base)
+  await expect
+    .poll(() =>
+      page.evaluate(async () => {
+        const r = await (await caches.open('pictulane-image-meta-v1')).match(
+          location.origin + '/tools/pictulane/__cache_settings',
+        )
+        return r && (await r.json()).enabled
+      }),
+    )
+    .toBe(false)
+})

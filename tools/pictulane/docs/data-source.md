@@ -12,6 +12,8 @@ Playwright driving installed Chrome, a new browser context per origin, no storag
 | `https://x.com/NatGeo/media` | 200, readable CORS response, 297549 characters | Same | None established |
 | `https://twitter.com/NASA/media` | 200, readable CORS response, 297549 characters | Same | None established |
 
+After the first Pages deployment, the same checks were repeated from the actual `/tools/pictulane/` page: all three responses were readable HTTP 200 shells with zero post articles, zero post-photo images and no tweet results. Exact timestamp and machine-readable evidence: [source-probe.json](source-probe.json).
+
 The returned HTML was the common JavaScript application shell: no `tweet_results`, no post-photo `<img>` list; the only HTML image was an `abs.twimg.com` warning emoji. This environment did **not** reproduce a CORS rejection; successful reading of an app shell is still not successful retrieval of posts. Results are environment/time specific, not a promise of CORS availability elsewhere. No X application scripts, guest activation or GraphQL request were executed to complete the data.
 
 ## Candidate decisions

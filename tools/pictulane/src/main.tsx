@@ -37,6 +37,9 @@ function App() {
   const closeButton = useRef<HTMLButtonElement>(null)
   const lastFocus = useRef<HTMLElement | null>(null)
   const updating = useRef(false)
+  const suppressResume = useRef(false)
+  const cachePreference = useRef(cacheEnabled)
+  cachePreference.current = cacheEnabled
   const slides = useMemo(
     () => (album && album.username === route.username ? flatten(album) : []),
     [album, route.username],
@@ -57,7 +60,7 @@ function App() {
     navigate(routeURL(route.username!, s), false, { fromList: true })
   }
   function closeViewer() {
-    if (slide && route.username) write(`resume:${route.username}`, slide.id)
+    if (slide && route.username && !suppressResume.current) write(`resume:${route.username}`, slide.id)
     if (history.state?.fromList) history.back()
     else navigate(routeURL(route.username!), true)
   }
@@ -98,7 +101,7 @@ function App() {
   useEffect(() => {
     void registerWorker(setUpdate)
     const controller = () => {
-      void workerMessage('configure', { enabled: cacheEnabled })
+      void workerMessage('configure', { enabled: cachePreference.current })
       if (updating.current) location.reload()
     }
     navigator.serviceWorker?.addEventListener('controllerchange', controller)
@@ -111,8 +114,12 @@ function App() {
       navigator.serviceWorker?.removeEventListener('controllerchange', controller)
       window.removeEventListener('beforeinstallprompt', installEvent)
     }
+  }, [])
+  useEffect(() => {
+    void workerMessage('configure', { enabled: cacheEnabled })
   }, [cacheEnabled])
   useEffect(() => {
+    suppressResume.current = false
     if (!route.username) {
       setAlbum(undefined)
       setStatus('')
@@ -150,6 +157,7 @@ function App() {
     const account = route.username,
       id = slide.id
     const save = () => {
+      if (suppressResume.current) return
       if (!write(`resume:${account}`, id)) setSaveFailed(true)
     }
     const timer = setTimeout(save, 350)
@@ -274,7 +282,8 @@ function App() {
           <button
             onClick={() => {
               updating.current = true
-              if (current.current && route.username) write(`resume:${route.username}`, current.current.id)
+              if (current.current && route.username && !suppressResume.current)
+                write(`resume:${route.username}`, current.current.id)
               update.waiting?.postMessage({ type: 'activate' })
             }}
           >
@@ -631,6 +640,7 @@ function App() {
           </button>
           <button
             onClick={() => {
+              suppressResume.current = true
               clearHistory()
               setRecents([])
             }}
