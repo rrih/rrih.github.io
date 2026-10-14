@@ -24,3 +24,6 @@ scripts/dev-check.sh
 
 /site-dist/
 /atlas/hosting/
+/target/
+**/rust/pkg/
+**/worker/pkg/

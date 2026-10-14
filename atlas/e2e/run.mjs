@@ -5,9 +5,9 @@ import { resolve } from 'node:path'
 
 const suites = [
   'migration', 'migration-pwa', 'performance-regressions', 'verify', 'unavailable',
-  'localization-failures', 'localization', 'studio', 'studio-storage',
-  'expansion', 'expansion-regressions', 'storage-persistence',
-  'pwa', 'localization-pwa', 'cache-retention', 'cache-update',
+  'localization-failures', 'localization', 'studio', 'studio-storage', 'ui-state',
+  'expansion', 'expansion-regressions', 'scene-sharing', 'storage-persistence',
+  'pwa', 'localization-pwa', 'cache-retention', 'cache-update', 'http-cache',
   'advertising', 'privacy', 'advertising-google',
 ]
 const requested = process.argv.slice(2)

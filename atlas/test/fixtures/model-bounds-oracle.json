@@ -1,0 +1,10 @@
+{
+  "sourceRevision": "ef25889c60f099aa864bed11042f4054827a78c4",
+  "sourcePath": "atlas/src/Viewer.tsx",
+  "sourceSha256": "68afeb96963e2af282d059c3d313842f5d77785c3036697d033e343528298ac8",
+  "sections": {
+    "measureMotion": "3c402f15f135350241e5539fb0fc1ac6c00a7d84c9c876dec2f87f41412e50ea",
+    "normalizedPoints": "f35a8720e026f39f0aecc8e1696cc5aa8eed4fefac825472b2e4657ab9656373"
+  },
+  "preparationSha256": "26ce1c69f6109dfc573f6e03caf6bcf49bcc52597ecc622e6dd5f8f3ef0e9ac0"
+}

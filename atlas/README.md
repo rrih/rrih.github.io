@@ -4,7 +4,15 @@
 
 ## Development
 
-From this directory: `bun install --frozen-lockfile`, then `bun run dev`. Run `bun run dev-check` to verify the build.
+Atlas runs its UI, state, storage, localization, scene rules and renderer control in Rust/WebAssembly. The same Rust metadata code generates its static pages. Three.js provides the existing WebGPU/WebGL renderer through a small vendor adapter; models, artwork, CSS, URLs and saved-data namespaces are preserved.
+
+Service-worker cache-key and offline fallback policies also run in Rust. Workbox supplies cache strategies and browser event wiring through the retained Vite configuration and worker bootstrap. JavaScript remains at these library boundaries and in the independent browser tests.
+
+Install the Rust toolchain in the repository's `rust-toolchain.toml` and `wasm-bindgen-cli` 0.2.129. From this directory, run `bun install --frozen-lockfile`, then `bun run dev`. `bun run dev-check` checks Rust formatting, Clippy, native tests, real GLB assets, the WASM build and all generated pages. It does not substitute for browser verification.
+
+After building the profile and Pictulane independently, run `bun run compose` and `bun run e2e` from the repository root. See [browser regression coverage](../e2e/README.md) for mobile, offline, scene migration and exact procedural-renderer checks.
+
+See the [migration verification record](../deployment/RUST-MIGRATION.md) for completed checks, outstanding work, previous-release upgrade validation and performance comparisons. The local results do not establish a Pages deployment.
 
 ## Compatibility and credits
 

@@ -3,13 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "bun run build && bun scripts/serve-site.ts",
-    "build": "bun scripts/build-site.ts",
-    "preview": "bun scripts/serve-site.ts",
-    "test": "bun scripts/verify-site.ts",
-    "lint": "biome check scripts/*.ts",
+    "dev": "bun run build && sh scripts/rust.sh run --locked -p xtask -- serve",
+    "build": "sh scripts/rust.sh run --locked -p xtask -- profile",
+    "preview": "sh scripts/rust.sh run --locked -p xtask -- serve",
+    "test": "sh scripts/test-preview-pool.sh && sh scripts/rust.sh test --locked -p xtask -p profile-app && sh scripts/rust.sh run --locked -p xtask -- verify-profile",
+    "lint": "sh scripts/rust.sh fmt -p xtask -p profile-app -- --check && sh scripts/rust.sh clippy --locked -p xtask -p profile-app --all-targets -- -D warnings && sh scripts/rust.sh clippy --locked -p profile-app --target wasm32-unknown-unknown -- -D warnings",
     "dev-check": "bun run lint && bun run build && bun run test",
-    "prepare": "husky"
+    "prepare": "husky",
+    "e2e": "node e2e/run.mjs",
+    "compose": "sh scripts/rust.sh run --locked -p xtask -- compose"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.2.0",

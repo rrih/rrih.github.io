@@ -1,0 +1,97 @@
+{
+  "crate": "tiny_http",
+  "version": "0.12.0",
+  "registry": "crates.io",
+  "crateChecksum": "389915df6413a2e74fb181895f933386023c71110878cd0825588928e64cdc82",
+  "gitRevision": "212b1c45852fef2093dc1374875a9393c55eb4b9",
+  "files": [
+    {
+      "path": "src/client.rs",
+      "sha256": "8fcc6344c2259e91677c267cd9e022a316463a1b03bb805c0a2ec692ef94c898"
+    },
+    {
+      "path": "src/common.rs",
+      "sha256": "5cae33d9517acdf3f559488acbd4fd727b565ac5e10234b060d37f6398ef2c7b"
+    },
+    {
+      "path": "src/connection.rs",
+      "sha256": "67dbb92f1d7b3edc8b9fb85b6d770bd50250fb08cde0fdc9e75ceacb68125ac0"
+    },
+    {
+      "path": "src/lib.rs",
+      "sha256": "5545e94107ab9b4474ad8253d6367f0a20a696ad3f647c97136e21c2824b4a90"
+    },
+    {
+      "path": "src/request.rs",
+      "sha256": "ef8fcf8d36706a0e1a146f3262917b4631ecf8db925408d4b6959a0d7423695a"
+    },
+    {
+      "path": "src/response.rs",
+      "sha256": "946c4aa551b7a16cc2ea5f86f8ae2ce9b9bda3faecb2f9d1057d5bc17cb2dbdc"
+    },
+    {
+      "path": "src/ssl/openssl.rs",
+      "sha256": "7a7317d2d6d5e75b7e57caa282180a21ec0639e71813e5498a75dcba0dab7e7d"
+    },
+    {
+      "path": "src/ssl/rustls.rs",
+      "sha256": "d39f329d74f611ec992c0a559a8ea32280b66981380f78683142102a0b758268"
+    },
+    {
+      "path": "src/ssl.rs",
+      "sha256": "dd38964c51c5d9fe6dbafd383e172f89d0f62f8d52042e94247cc1d67e07c29e"
+    },
+    {
+      "path": "src/test.rs",
+      "sha256": "b6a2a4848acb46fbacc7593629cf6d2fac745e852ead9bf57e014e32623ca1b4"
+    },
+    {
+      "path": "src/util/custom_stream.rs",
+      "sha256": "a6921b2eb16600070647c41a339c57eb2f616f24116b8b7135cf9a26b2e5ceec"
+    },
+    {
+      "path": "src/util/equal_reader.rs",
+      "sha256": "7d7916b42316d745c12185509fa5719dd9a032fef1c19fe8057b154f48e8db55"
+    },
+    {
+      "path": "src/util/fused_reader.rs",
+      "sha256": "2c92bf51a069ec7d6aa647fb44709bbb013131c43cd1667a4a0d1784a57eab6b"
+    },
+    {
+      "path": "src/util/messages_queue.rs",
+      "sha256": "ac283569e0e24d4f5ff7515a4c74ea08a2cc8439152a17dd1121030429ebcb4f"
+    },
+    {
+      "path": "src/util/mod.rs",
+      "sha256": "107ceae83c9a10672be797a1805e13772f9c25e68b74e02bef6f45af85018293"
+    },
+    {
+      "path": "src/util/refined_tcp_stream.rs",
+      "sha256": "f1ee3a06ded63843209120d2d9bf94ae113bc781be91daedce7f5ce9e537a6a1"
+    },
+    {
+      "path": "src/util/sequential.rs",
+      "sha256": "5ad84c87bd412edec8b289639d6d21486201e84f25a7edc1be4284be59c5570c"
+    },
+    {
+      "path": "src/util/task_pool.rs",
+      "sha256": "08e3cc8139d1512bb751f828e9838579d8848607e7172ae41b4033d8ecc46fdb"
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "03c7dfc1df0bbf4274890d33e256baddd4c77e0f9eaee1035ef07a250d229db8"
+    },
+    {
+      "path": "README.md",
+      "sha256": "3f8d7fb0101454ba4a3704d7bd4e29b81a142014b66640f3a0cce936214d95c8"
+    },
+    {
+      "path": "LICENSE-APACHE",
+      "sha256": "a60eea817514531668d7e00765731449fe14d059d3249e0bc93b36de45f759f2"
+    },
+    {
+      "path": "LICENSE-MIT",
+      "sha256": "e69bb98ae371fc43e5ef9cb1fc648762faf92edd93a8afd71411fac419b1b550"
+    }
+  ]
+}

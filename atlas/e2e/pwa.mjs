@@ -1,7 +1,7 @@
 import { appBase } from './helpers.mjs'
 import assert from 'node:assert/strict'
 import { mkdir, writeFile } from 'node:fs/promises'
-import { chromium } from './helpers.mjs'
+import { chromium, expect } from './helpers.mjs'
 
 const base = appBase
 const output = process.env.ATLAS_QA_DIR || 'work/qa-pwa'
@@ -92,9 +92,9 @@ try {
   assert.equal(onlineRuntimeArtwork.status, 200)
   assert(onlineRuntimeArtwork.contentType?.includes('image/webp'))
   assert(onlineRuntimeArtwork.bytes > 0)
-  await page.waitForFunction(
+  await expect.poll(() => page.evaluate(
     async () => !!(await (await caches.open('atlas-artwork-v1')).match('/artwork/500.webp')),
-  )
+  ), { timeout: 30_000 }).toBe(true)
   await context.setOffline(true)
   await page.reload()
   await page.getByText('LIVE VIEW', { exact: true }).waitFor({ timeout: 60_000 })
@@ -130,6 +130,20 @@ try {
     onlineRuntimeArtwork,
     'A thumbnail outside the initial 24 must remain identical offline',
   )
+  const workerPolicyPrecache = await page.evaluate(async () => {
+    const urls = []
+    for (const name of await caches.keys()) {
+      for (const request of await (await caches.open(name)).keys()) urls.push(request.url)
+    }
+    const wasm = urls.find(url => /\/worker-[a-f0-9]{20}\.wasm(?:\?|$)/.test(url))
+    const bindings = wasm && urls.find(url => new URL(url).pathname === new URL(wasm).pathname.replace(/\.wasm$/, '.js'))
+    return { wasm, bindings }
+  })
+  assert(workerPolicyPrecache.wasm && workerPolicyPrecache.bindings, 'The content-matched Rust worker ABI and WASM must be precached together')
+  await cdp.send('ServiceWorker.enable')
+  await cdp.send('ServiceWorker.stopAllWorkers')
+  const restartedWorkerArtwork = await page.evaluate(readRuntimeArtwork)
+  assert.deepEqual(restartedWorkerArtwork, onlineRuntimeArtwork, 'A cold Rust worker must bootstrap from its version-matched WASM cache while offline')
   console.log('Offline application, default model, and runtime artwork passed')
   await page.screenshot({ path: `${output}/offline.png`, fullPage: true })
   await page.getByRole('searchbox').fill('500')
@@ -155,10 +169,10 @@ try {
   await page.locator('.detail-tabs').getByRole('button', { name: 'Studio', exact: true }).click()
   await page.getByRole('button', { name: 'Shiny appearance', exact: true }).click()
   await page.getByText('LIVE VIEW', { exact: true }).waitFor({ timeout: 90_000 })
-  await page.waitForFunction(async () => {
+  await expect.poll(() => page.evaluate(async () => {
     const cache = await caches.open('atlas-models-v1')
     return (await cache.keys()).some((request) => request.url.includes('/models/shiny-home/6.glb'))
-  })
+  }), { timeout: 30_000 }).toBe(true)
   console.log('Online shiny model rendered and entered the model cache')
   await context.setOffline(true)
   await page.reload()
@@ -176,6 +190,8 @@ try {
     runtimeArtworkPath: '/atlas/artwork/500.webp',
     onlineRuntimeArtwork,
     offlineRuntimeArtwork,
+    workerPolicyPrecache,
+    offlineWorkerRestart: true,
     offlineReload: true,
     offline3D: true,
     uncachedNetworkFailed: true,

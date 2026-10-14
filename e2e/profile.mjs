@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { chromium } from '@playwright/test'
+import { verifyProfileHttpCache } from './profile-cache.mjs'
 const origin = process.env.PROFILE_URL || 'http://127.0.0.1:3343'
 const output = process.env.PROFILE_QA_DIR || 'work/profile-independence/profile-qa'
 await mkdir(output, { recursive: true })
@@ -53,3 +54,4 @@ assert.deepEqual(errors,[])
 await writeFile(`${output}/results.json`,JSON.stringify({results,errors,noApplicationRequests:true,noServiceWorker:true,installabilityErrors:install.installabilityErrors},null,2))
 console.log('12 languages × 3 widths; independent routes, links, metadata and no PWA passed.')
 }finally{await browser.close()}
+await verifyProfileHttpCache({ output: `${output}/http-cache` })

@@ -7,6 +7,7 @@ import { gzipSync } from 'node:zlib'
 import { chromium, siteDist } from './helpers.mjs'
 
 const builds = { previous: resolve(process.env.ATLAS_PREVIOUS_DIST || fileURLToPath(new URL('../../work/atlas-migration/previous/', import.meta.url))), current: resolve(process.env.ATLAS_DIST || siteDist) }
+const previousBase = (process.env.ATLAS_PREVIOUS_BASE || '').replace(/\/+$/, '')
 const output = process.env.ATLAS_QA_DIR || 'work/atlas-migration/performance-comparison'
 await mkdir(output, { recursive: true })
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.webmanifest': 'application/manifest+json', '.wasm': 'application/wasm', '.glb': 'model/gltf-binary', '.webp': 'image/webp', '.jpg': 'image/jpeg', '.png': 'image/png', '.svg': 'image/svg+xml', '.woff2': 'font/woff2' }
@@ -33,7 +34,7 @@ const results = []
 try {
   for (const id of [6, 753]) for (let trial = 1; trial <= 3; trial++) for (const build of trial === 2 ? ['current', 'previous'] : ['previous', 'current']) {
     variant = build
-    const path = `${build === 'current' ? '/atlas' : ''}${id === 753 ? '/ja' : ''}/pokemon/${id}/`
+    const path = `${build === 'current' ? '/atlas' : previousBase}${id === 753 ? '/ja' : ''}/pokemon/${id}/`
     const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-webgpu', '--enable-unsafe-swiftshader'] })
     const context = await browser.newContext({ locale: 'en-US', viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, serviceWorkers: 'block' })
     const page = await context.newPage(), errors = [], blocked = []
@@ -72,7 +73,9 @@ try {
       const initial = completed.filter(e => e.responseEnd <= observed.readyMs)
       const sum = (entries, key) => entries.reduce((value, item) => value + item[key], 0)
       const js = completed.filter(e => e.path.endsWith('.js'))
-      const record = { build, id, trial, path, browser: browser.version(), readyMs: observed.readyMs, fcpMs: observed.paints.find(e => e.name === 'first-contentful-paint')?.startTime, labLcpMs: observed.lcp.at(-1)?.startTime, lcpElement: observed.lcp.at(-1), transferByReadyBytes: sum(initial, 'transferSize') + observed.navigation.transferSize, observedTotalTransferBytes: sum(completed, 'transferSize') + observed.navigation.transferSize, jsTransferBytes: sum(js, 'transferSize'), jsDecodedBytes: sum(js, 'decodedBodySize'), longTasksCount: observed.longTasks.length, longTasksMs: sum(observed.longTasks, 'duration'), observed, errors, blocked }
+      const wasm = completed.filter(e => e.path.endsWith('.wasm'))
+      const runtime = [...js, ...wasm]
+      const record = { build, id, trial, path, browser: browser.version(), readyMs: observed.readyMs, fcpMs: observed.paints.find(e => e.name === 'first-contentful-paint')?.startTime, labLcpMs: observed.lcp.at(-1)?.startTime, lcpElement: observed.lcp.at(-1), transferByReadyBytes: sum(initial, 'transferSize') + observed.navigation.transferSize, observedTotalTransferBytes: sum(completed, 'transferSize') + observed.navigation.transferSize, jsTransferBytes: sum(js, 'transferSize'), jsDecodedBytes: sum(js, 'decodedBodySize'), wasmTransferBytes: sum(wasm, 'transferSize'), wasmDecodedBytes: sum(wasm, 'decodedBodySize'), runtimeTransferBytes: sum(runtime, 'transferSize'), runtimeDecodedBytes: sum(runtime, 'decodedBodySize'), longTasksCount: observed.longTasks.length, longTasksMs: sum(observed.longTasks, 'duration'), observed, errors, blocked }
       assert.deepEqual(errors, [])
       assert.equal(observed.overflow, false)
       assert.equal(observed.name, id === 6 ? 'Charizard' : 'カリキリ')
@@ -80,14 +83,14 @@ try {
       results.push(record)
       await writeFile(`${output}/${build}-${id}-${trial}.json`, JSON.stringify(record, null, 2))
       await writeFile(`${output}/results.json`, JSON.stringify({ conditions, results }, null, 2))
-      console.log(`${build} #${id}: ready ${(record.readyMs / 1000).toFixed(2)} s, JS ${Math.round(record.jsTransferBytes / 1024)} KiB`)
+      console.log(`${build} #${id}: ready ${(record.readyMs / 1000).toFixed(2)} s, JS ${Math.round(record.jsTransferBytes / 1024)} KiB, WASM ${Math.round(record.wasmTransferBytes / 1024)} KiB, JS+WASM ${Math.round(record.runtimeTransferBytes / 1024)} KiB`)
     } finally { await context.close(); await browser.close() }
   }
   const median = values => [...values].sort((a, b) => a - b)[Math.floor(values.length / 2)]
   const summaries = []
   for (const id of [6, 753]) for (const build of ['previous', 'current']) {
     const records = results.filter(r => r.id === id && r.build === build), metrics = {}
-    for (const key of ['readyMs', 'fcpMs', 'labLcpMs', 'transferByReadyBytes', 'observedTotalTransferBytes', 'jsTransferBytes', 'jsDecodedBytes', 'longTasksMs']) {
+    for (const key of ['readyMs', 'fcpMs', 'labLcpMs', 'transferByReadyBytes', 'observedTotalTransferBytes', 'jsTransferBytes', 'jsDecodedBytes', 'wasmTransferBytes', 'wasmDecodedBytes', 'runtimeTransferBytes', 'runtimeDecodedBytes', 'longTasksMs']) {
       const values = records.map(r => r[key]); metrics[key] = { median: median(values), min: Math.min(...values), max: Math.max(...values), values }
     }
     summaries.push({ id, build, samples: records.length, metrics })

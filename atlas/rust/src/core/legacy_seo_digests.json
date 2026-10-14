@@ -1,0 +1,59 @@
+{
+  "description": "FNV-1a-64 of recursively key-sorted UTF-8 JSON plus LF; generated from original TypeScript implementation before migration. All 1025 species, 120 forms, and 51 index variants in each of nine locales.",
+  "results": [
+    {
+      "locale": "en",
+      "pokemon": "8229ad625b3fdbc7",
+      "forms": "dd13f1e681b58f46",
+      "indexes": "08ffaee631d522d0"
+    },
+    {
+      "locale": "ja",
+      "pokemon": "a8d47d865f18d8a1",
+      "forms": "944beab83b5bac2e",
+      "indexes": "f821b2ce508f954f"
+    },
+    {
+      "locale": "fr",
+      "pokemon": "d8da659cac7bf877",
+      "forms": "74cce3d33a6e4689",
+      "indexes": "ff600a98173d9227"
+    },
+    {
+      "locale": "de",
+      "pokemon": "adb5f3010ea9755a",
+      "forms": "612f32441cd808b9",
+      "indexes": "d6117194216b3a9c"
+    },
+    {
+      "locale": "es",
+      "pokemon": "73f9e90a1ca39cb9",
+      "forms": "ed50c0ff84fbc992",
+      "indexes": "18a5f7a6bb02c9a0"
+    },
+    {
+      "locale": "it",
+      "pokemon": "f2262a05b47fa776",
+      "forms": "d5b4bceaf06fa015",
+      "indexes": "39720d6d67bb9bf5"
+    },
+    {
+      "locale": "ko",
+      "pokemon": "de5e57e27dceab00",
+      "forms": "153b53872917d277",
+      "indexes": "bd1cfcb74da7b962"
+    },
+    {
+      "locale": "zh-Hans",
+      "pokemon": "8ec001be3033170f",
+      "forms": "e6d8a786d32c26fa",
+      "indexes": "1e513600cb065b27"
+    },
+    {
+      "locale": "zh-Hant",
+      "pokemon": "30cc9aa2e357ddf2",
+      "forms": "0b5ea9a233ccea50",
+      "indexes": "fb5e29262cf8c204"
+    }
+  ]
+}

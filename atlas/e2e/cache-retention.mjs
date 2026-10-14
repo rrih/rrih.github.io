@@ -1,7 +1,7 @@
 import { appBase } from './helpers.mjs'
 import assert from 'node:assert/strict'
 import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
-import { chromium } from './helpers.mjs'
+import { chromium, expect } from './helpers.mjs'
 
 const base = appBase
 const output = process.env.ATLAS_QA_DIR || 'work/cache/qa'
@@ -134,11 +134,10 @@ const responseInfo = async ({ url, cacheName }) => {
 }
 const readResponse = (path, cacheName) => page.evaluate(responseInfo, { url: url(path), cacheName })
 const waitCached = (path, cacheName = modelCache) =>
-  page.waitForFunction(
+  expect.poll(() => page.evaluate(
     async ({ url, cacheName }) => !!(await (await caches.open(cacheName)).match(url.replace('/atlas/models/', '/models/').replace('/atlas/artwork/', '/artwork/'))),
     { url: url(path), cacheName },
-    { timeout: 90_000 },
-  )
+  ), { timeout: 90_000 }).toBe(true)
 const snapshot = () =>
   page.evaluate(async () =>
     Object.fromEntries(
@@ -350,6 +349,12 @@ try {
   assert.deepEqual(result.uncachedPreviewArtworkFallback, result.onlineArtwork)
   assert.deepEqual(result.uncachedFormPreviewIconFallback, result.offlineIcon)
   assert.equal(await page.evaluate(async () => !!(await (await caches.open('atlas-previews-v1')).match('/atlas/previews/500.webp'))), false, 'Fallback never replaces the real preview in its cache')
+  const missingArtwork = '/atlas/artwork/1025.webp'
+  assert.equal(await readResponse(missingArtwork, artworkCache), null)
+  result.uncachedOfflineArtwork = await readResponse(missingArtwork)
+  assert.equal(result.uncachedOfflineArtwork.status, 503)
+  assert.equal(result.uncachedOfflineArtwork.bytes, 0, 'Missing artwork must not show another species')
+  assert.equal(await readResponse(missingArtwork, artworkCache), null, 'Offline failure must not poison the artwork cache')
   result.offlineModels = {}
   for (const id of modelIds) {
     result.offlineModels[id] = await readResponse(modelUrl(id))
@@ -391,6 +396,11 @@ try {
   passed('All 49 manifests and the 32nd/33rd models work offline without prior locale visits')
 
   await setOffline(false)
+  result.reconnectedArtwork = await readResponse(missingArtwork)
+  assert.equal(result.reconnectedArtwork.status, 200)
+  assert(result.reconnectedArtwork.bytes > 0)
+  await waitCached(missingArtwork, artworkCache)
+  assert.deepEqual(await readResponse(missingArtwork, artworkCache), result.reconnectedArtwork)
   result.reconnectedPreview = await readResponse('/atlas/previews/500.webp')
   assert.equal(result.reconnectedPreview.status, 200)
   assert.notEqual(result.reconnectedPreview.sha256, result.onlineArtwork.sha256)
@@ -460,11 +470,10 @@ try {
   // Workbox rethrows only after all quota cleanup callbacks have completed.
   // Cache names disappear before their IndexedDB metadata has finished clearing.
   assert.equal(await worker.evaluate('self.__atlasQuotaSettled'), true)
-  await page.waitForFunction(
+  await expect.poll(() => page.evaluate(
     async (names) => (await caches.keys()).every((name) => !names.includes(name)),
     [modelCache, artworkCache],
-    { timeout: 30_000 },
-  )
+  ), { timeout: 30_000 }).toBe(true)
   result.quotaProbe = await worker.evaluate('self.__atlasQuotaProbe')
   assert.equal(result.quotaProbe.throws, 1)
   assert.equal(result.quotaProbe.recoveryComplete, true)

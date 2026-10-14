@@ -1,0 +1,47 @@
+[workspace]
+members = ["xtask", "profile/rust", "atlas/rust", "atlas/worker", "tools/pictulane/rust", "tools/pictulane/worker"]
+exclude = ["vendor/tiny_http"]
+resolver = "2"
+
+[patch.crates-io]
+tiny_http = { path = "vendor/tiny_http" }
+
+[workspace.package]
+edition = "2024"
+rust-version = "1.88"
+license = "MIT"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["preserve_order", "float_roundtrip"] }
+wasm-bindgen = "=0.2.129"
+wasm-bindgen-futures = "0.4"
+js-sys = "0.3"
+web-sys = "0.3"
+yew = { version = "0.23", features = ["csr"] }
+
+[profile.dev]
+debug = 0
+incremental = false
+
+# Native generators inspect more than ten thousand HTML pages per build.
+[profile.dev.package.xtask]
+opt-level = 2
+
+[profile.dev.package.regex]
+opt-level = 2
+
+[profile.dev.package.regex-automata]
+opt-level = 2
+
+[profile.dev.package.regex-syntax]
+opt-level = 2
+
+[profile.release]
+opt-level = "s"
+lto = true
+codegen-units = 1
+strip = "debuginfo"
+
+[profile.release.package.atlas-app]
+opt-level = "z"

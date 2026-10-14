@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
-import { spawn } from 'node:child_process'
+import { spawnSync } from 'node:child_process'
+import { createServer } from 'node:http'
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -11,8 +12,8 @@ const argumentsList = process.argv.slice(2)
 const option = (name, fallback) => argumentsList.includes(name) ? argumentsList[argumentsList.indexOf(name) + 1] : fallback
 const port = Number(option('--port', '3334'))
 const origin = `http://127.0.0.1:${port}`
-const output = resolve(root, 'public/previews')
-const recordDirectory = resolve(root, '../work/atlas-migration/previews')
+const output = resolve(root, option('--output', 'public/previews'))
+const recordDirectory = resolve(root, option('--records', '../work/atlas-migration/previews'))
 mkdirSync(recordDirectory, { recursive: true })
 mkdirSync(resolve(root, 'work'), { recursive: true })
 mkdirSync(resolve(output, 'forms'), { recursive: true })
@@ -22,34 +23,55 @@ const models = JSON.parse(readFileSync(resolve(root, 'src/data/models.json'), 'u
 const all = [...catalog.map((entry) => ({ key: String(entry.id), id: entry.id, name: entry.name, model: models[entry.id].url, file: `${entry.id}.webp` })), ...forms.map((form) => ({ key: form.id, id: form.speciesId, formId: form.id, name: form.name, model: form.model.url, file: `forms/${form.id}.webp` }))]
 const requested = option('--ids', '').split(',').filter(Boolean)
 const targets = requested.length ? requested.map((id) => { const entry = all.find((candidate) => candidate.key === id); assert(entry, `Unknown preview ${id}`); return entry }) : all
-const harness = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><style>html,body,#root{margin:0;width:100%;height:100%;background:#101311;overflow:hidden}#root{position:relative}canvas{display:block}</style></head><body><div id="root"></div><script type="module">
-import React,{useState,useRef} from 'react'; import {createRoot} from 'react-dom/client';
-import Viewer from '/atlas/src/Viewer.tsx';import catalog from '/atlas/src/data/catalog.json';import {forms,modelFor,formPokemon} from '/atlas/src/forms.ts';
-const settings={playing:true,rotate:false,speed:1,light:1,habitat:'studio',wireframe:false,shiny:false,quality:'high',animation:0};
-const state={status:'loading',key:'6',loads:0};window.__atlasPreview={state};
-function Preview(){const [target,setTarget]=useState({id:6});const viewer=useRef(); const pokemon=catalog.find(p=>p.id===target.id);const form=forms.find(f=>f.id===target.formId);const key=target.formId||String(target.id);
-window.__atlasPreview.select=(next)=>{state.status='loading';state.key=next.formId||String(next.id);state.error='';setTarget(next)};
-window.__atlasPreview.frame=()=>viewer.current?.view('reset');
-return React.createElement(Viewer,{ref:viewer,pokemon:formPokemon(pokemon,form),label:form?.name||pokemon.name,model:modelFor(pokemon.id,form?.id),settings,onLoad:(clips)=>{state.status='ready';state.key=key;state.clips=clips.length;state.model=modelFor(pokemon.id,form?.id).url;state.loads++},onError:(error)=>{state.status='failed';state.error=error},onLoading:(loading)=>{if(loading)state.status='loading'}})}
-createRoot(document.getElementById('root')).render(React.createElement(Preview));
+const settings = { playing: true, rotate: false, speed: 1, light: 1, habitat: 'studio', wireframe: false, shiny: false, quality: 'high', animation: 0 }
+const harnessPath = '/atlas/work/preview.html'
+const bundlePath = '/atlas/work/rust-renderer-qa/'
+const bundle = resolve(root, 'work/rust-renderer-qa/browser')
+const harness = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><style>html,body,#viewer-qa{margin:0;width:100%;height:100%;background:#101311;overflow:hidden}#viewer-qa{position:relative}canvas{display:block}</style></head><body><div id="viewer-qa"></div><script type="module">
+import * as renderer from '${bundlePath}atlas_app.js';
+await renderer.default({module_or_path:'${bundlePath}atlas_app_bg.wasm'});
+window.renderer = renderer;
+renderer.renderer_qa_mount(6, undefined, ${JSON.stringify(JSON.stringify(settings))}, undefined);
 </script></body></html>`
-writeFileSync(resolve(root, 'work/preview.html'), harness)
+const previewState = () => ({
+  status: document.body.dataset.error ? 'failed' : document.body.dataset.loading === 'false' ? 'ready' : 'loading',
+  error: document.body.dataset.error,
+  key: document.body.dataset.key,
+  model: document.body.dataset.model,
+  clips: JSON.parse(document.body.dataset.animations || '[]').length,
+})
+if (!argumentsList.includes('--profile-only')) {
+  const built = spawnSync(process.execPath, [resolve(root, 'scripts/build-renderer-qa.mjs')], { stdio: 'inherit' })
+  assert.ifError(built.error)
+  assert.equal(built.status, 0, 'Rust renderer preview build')
+}
 let server, browser
 const records = []
 const rejected = [], errors = []
 try {
   if (!argumentsList.includes('--existing-server') && !argumentsList.includes('--profile-only')) {
-    const vite = [resolve(root, 'node_modules/vite/bin/vite.js'), resolve(root, '../node_modules/vite/bin/vite.js')].find(existsSync)
-    assert(vite, 'Vite is required')
-    server = spawn(process.execPath, [vite, '--host', '127.0.0.1', '--port', String(port), '--strictPort'], { cwd: root, stdio: ['ignore', 'pipe', 'pipe'] })
-    let serverLog = ''
-    server.stdout.on('data', (chunk) => { serverLog += chunk; writeFileSync(resolve(recordDirectory, 'vite.log'), serverLog) })
-    server.stderr.on('data', (chunk) => { serverLog += chunk; writeFileSync(resolve(recordDirectory, 'vite.log'), serverLog) })
-    for (let attempt = 0; attempt < 100; attempt++) { try { const response = await fetch(`${origin}/atlas/work/preview.html`); if (response.ok) break } catch {} if (server.exitCode !== null) throw new Error(`Vite stopped: ${serverLog}`); if (attempt === 99) throw new Error('Vite did not start'); await new Promise((resolve) => setTimeout(resolve, 100)) }
+    const publicRoot = resolve(root, 'public')
+    server = createServer((request, response) => {
+      const pathname = decodeURIComponent(new URL(request.url, origin).pathname)
+      const file = resolve(publicRoot, '.' + pathname.replace(/^\/atlas(?=\/)/, ''))
+      if (!file.startsWith(publicRoot + '/') || !existsSync(file)) {
+        response.writeHead(404); response.end(); return
+      }
+      const contentType = file.endsWith('.wasm') ? 'application/wasm' : file.endsWith('.js') ? 'text/javascript' : 'application/octet-stream'
+      try { response.writeHead(200, { 'Content-Type': contentType }); response.end(readFileSync(file)) }
+      catch { response.writeHead(404); response.end() }
+    })
+    await new Promise((resolve, reject) => { server.once('error', reject); server.listen(port, '127.0.0.1', resolve) })
   }
   browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-webgpu', '--enable-unsafe-swiftshader'] })
   const context = await browser.newContext({ viewport: { width: 512, height: 512 }, deviceScaleFactor: 1, locale: 'en-US', serviceWorkers: 'block' })
   await context.route('**/*', async (route) => { const url = new URL(route.request().url()); if (url.origin === origin || ['data:', 'blob:'].includes(url.protocol)) await route.continue(); else { rejected.push(url.origin + url.pathname); await route.abort() } })
+  await context.route(`${origin}${harnessPath}`, route => route.fulfill({ contentType: 'text/html', body: harness }))
+  await context.route(`${origin}${bundlePath}*`, route => {
+    const name = new URL(route.request().url()).pathname.split('/').pop()
+    assert(['atlas_app.js', 'atlas_app_bg.wasm'].includes(name), 'Known renderer bundle file')
+    return route.fulfill({ contentType: name.endsWith('.wasm') ? 'application/wasm' : 'text/javascript', body: readFileSync(resolve(bundle, name)) })
+  })
   const page = await context.newPage()
   page.on('pageerror', (error) => { errors.push(error.message); console.error(error.message) })
   if (!argumentsList.includes('--skip-profile')) {
@@ -61,9 +83,9 @@ try {
   }
   if (!argumentsList.includes('--profile-only')) {
   const start = Date.now()
-  await page.goto(`${origin}/atlas/work/preview.html`, { waitUntil: 'domcontentloaded' })
-  await page.waitForFunction(() => window.__atlasPreview?.state.status === 'ready' || window.__atlasPreview?.state.status === 'failed', undefined, { timeout: 120_000 })
-  const initial = await page.evaluate(() => window.__atlasPreview.state)
+  await page.goto(`${origin}${harnessPath}`, { waitUntil: 'domcontentloaded' })
+  await page.waitForFunction(() => document.body.dataset.loading === 'false' || document.body.dataset.error, undefined, { timeout: 120_000 })
+  const initial = await page.evaluate(previewState)
   assert.equal(initial.status, 'ready', initial.error)
   for (const [index, target] of targets.entries()) {
     const file = resolve(output, target.file)
@@ -74,13 +96,16 @@ try {
       if (previous.sourceHash === sourceHash && previous.success) { records.push(previous); continue }
     }
     const began = Date.now()
-    const selected = await page.evaluate(() => window.__atlasPreview.state.key)
-    if (selected !== target.key) await page.evaluate((target) => window.__atlasPreview.select({ id: target.id, formId: target.formId }), target)
-    await page.waitForFunction((key) => window.__atlasPreview.state.key === key && ['ready', 'failed'].includes(window.__atlasPreview.state.status), target.key, { timeout: 120_000 })
-    const state = await page.evaluate(() => window.__atlasPreview.state)
+    const selected = await page.evaluate(() => document.body.dataset.key)
+    if (selected !== target.key) await page.evaluate(({ target, settings }) => {
+      document.body.dataset.loading = 'true'
+      window.renderer.renderer_qa_mount(target.id, target.formId, JSON.stringify(settings), undefined)
+    }, { target, settings })
+    await page.waitForFunction((key) => document.body.dataset.key === key && (document.body.dataset.loading === 'false' || document.body.dataset.error), target.key, { timeout: 120_000 })
+    const state = await page.evaluate(previewState)
     assert.equal(state.status, 'ready', `${target.key}: ${state.error}`)
     assert.equal(state.model.replace(/^\/atlas\//, '/'), target.model, `${target.key}: actual source model`)
-    await page.evaluate(() => window.__atlasPreview.frame())
+    await page.evaluate(() => window.renderer.renderer_qa_view('reset'))
     await page.waitForTimeout(220)
     const captured = await page.evaluate(async () => {
       await new Promise(requestAnimationFrame)
@@ -106,12 +131,12 @@ try {
     records.push(record); writeFileSync(recordFile, JSON.stringify(record, null, 2) + '\n')
     if (index < 3 || (index + 1) % 20 === 0 || index + 1 === targets.length) console.log(JSON.stringify({ complete: records.length, targets: targets.length, key: target.key, elapsedMs: record.elapsedMs, bytes: record.bytes, totalMs: Date.now() - start }))
   }
-  if (!requested.length && records.length === all.length) writeFileSync(resolve(root, 'src/data/previews.json'), JSON.stringify({ species: catalog.map((entry) => entry.id), forms: forms.map((form) => form.id) }) + '\n')
+  if (!requested.length && records.length === all.length && output === resolve(root, 'public/previews')) writeFileSync(resolve(root, 'src/data/previews.json'), JSON.stringify({ species: catalog.map((entry) => entry.id), forms: forms.map((form) => form.id) }) + '\n')
   const summary = { success: records.length === targets.length, requested: targets.length, completed: records.length, totalMs: Date.now() - start, bytes: records.reduce((sum, record) => sum + record.bytes, 0), externalRequestsBlocked: rejected, errors, records }
   writeFileSync(resolve(recordDirectory, requested.length ? 'sample-summary.json' : 'summary.json'), JSON.stringify(summary, null, 2) + '\n')
   console.log(JSON.stringify({ complete: summary.completed, totalMs: summary.totalMs, bytes: summary.bytes, errors }))
   }
 } finally {
   await browser?.close()
-  if (server) server.kill('SIGTERM')
+  if (server) await new Promise(resolve => server.close(resolve))
 }

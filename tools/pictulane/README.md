@@ -4,12 +4,16 @@ Independent static photo viewer at https://rrih.github.io/tools/pictulane/ . **L
 
 ## Development
 
-Node 20.19+ or 22.13+ (CI: 22.14), npm. React 19 / Vite 7 / TypeScript. No application runtime or build output imports from Atlas or the profile.
+Rust (see the repository toolchain), the `wasm32-unknown-unknown` target, and wasm-bindgen CLI 0.2.129 are required for builds. The application is Rust / Yew, compiled to WebAssembly; locale text is JSON data and CSS is unchanged. The external bootstrap and generated wasm-bindgen imports are the browser ABI boundary. The service worker cache policy, URL allowlist, TTL, LRU ordering, message handling, and offline responses are Rust in `worker/src/`. Its small JavaScript entry only connects browser events synchronously and loads the matching worker WASM from the versioned shell cache, enabling offline worker restarts. Cache and storage namespaces are preserved. No application runtime or build output imports from Atlas or the profile.
+
+Node 20.19+ or 22.13+ and npm are used for the existing Playwright E2E oracle and optional source-investigation tooling. Application state, routing, validation, persistence, gestures, and UI rendering are implemented in `rust/src/`. Production and test-only fixture builds are separated by a Rust feature; test fixtures are absent from the production WASM.
+
+The optional `scripts/icons.mjs` is a Sharp adapter for resizing the existing SVG into PNG icons. The independent browser tests and source-investigation scripts remain JavaScript/TypeScript. See [migration verification](docs/rust-migration.md) for the 21 passing browser scenarios, update-cache checks, and the boundaries of that evidence.
 
 ```sh
 cd tools/pictulane
 npm ci
-npm run dev
+npm run dev # builds Rust/WASM, then serves the static output
 npm run lint
 npm run typecheck
 npm test
@@ -23,9 +27,9 @@ npm run e2e
 npm run build
 ```
 
-Local installed Chrome can be selected with `CHROME_CHANNEL=chrome npm run e2e`. Preview is a plain static HTTP server on 127.0.0.1:4173 with real 404s and no proxy. Test builds carry a TEST-ONLY marker and the composition script refuses them. Only dist is published; tests, docs, source and node_modules are excluded. No fixture account or fallback photos are in production.
+Local installed Chrome can be selected with `CHROME_CHANNEL=chrome npm run e2e`. Preview is the Rust xtask static HTTP server on 127.0.0.1:4173 with real 404s and no proxy. Test builds carry a TEST-ONLY marker and the composition script refuses them. Only dist is published; tests, docs, source and node_modules are excluded. No fixture account or fallback photos are in production.
 
-From repository root run `bun run dev-check` and `(cd atlas && bun run dev-check)` before each commit, then `bun deployment/compose.ts`. Each independent build completes before the final `site-dist` composition. Existing Pages workflow uploads one combined artifact, preserving profiles, Atlas, compatibility pages and true 404s.
+From repository root run `bun run dev-check` and `(cd atlas && bun run dev-check)` before each commit, then `bun run compose`. Each independent build completes before the final `site-dist` composition. Existing Pages workflow uploads one combined artifact, preserving profiles, Atlas, compatibility pages and true 404s.
 
 ## Viewer and persistence
 
