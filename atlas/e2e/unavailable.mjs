@@ -11,7 +11,7 @@ const page = await context.newPage()
 const errors = []
 const checked = []
 page.on('pageerror', error => errors.push(error.message))
-await page.addInitScript(() => {
+await page.addInitScript(forceWebGL => {
   const gpu = Object.getOwnPropertyDescriptor(navigator, 'gpu')
   const getContext = HTMLCanvasElement.prototype.getContext
   Object.defineProperty(navigator, 'gpu', { configurable: true, value: undefined })
@@ -19,11 +19,13 @@ await page.addInitScript(() => {
     return type === 'webgl2' || type === 'webgl' ? null : getContext.call(this, type, ...args)
   }
   window.restoreAtlasGraphics = () => {
-    if (gpu) Object.defineProperty(navigator, 'gpu', gpu)
-    else delete navigator.gpu
+    if (!forceWebGL) {
+      if (gpu) Object.defineProperty(navigator, 'gpu', gpu)
+      else delete navigator.gpu
+    }
     HTMLCanvasElement.prototype.getContext = getContext
   }
-})
+}, process.env.ATLAS_FORCE_WEBGL === '1')
 
 const unavailable = async name => {
   await expect(page.locator('.viewer-error p')).toHaveText('3D viewing is unavailable in this browser. Try updating your browser or enabling graphics acceleration.', { timeout: 60_000 })
@@ -86,8 +88,7 @@ try {
   await page.waitForTimeout(400)
   const paused = await page.locator('canvas').screenshot()
   await page.getByRole('button', { name: 'Play animation', exact: true }).click()
-  await page.waitForTimeout(500)
-  assert(!paused.equals(await page.locator('canvas').screenshot()), 'Recovered character animation changes the rendered image')
+  await expect.poll(async () => (await page.locator('canvas').screenshot()).equals(paused), { timeout: 60_000 }).toBe(false)
   await expect(page.locator('.viewer-error')).toHaveCount(0)
   checked.push('the recovered 3D model renders a moving character animation')
 

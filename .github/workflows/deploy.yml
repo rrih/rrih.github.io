@@ -134,6 +134,9 @@ jobs:
         env:
           CHROME_CHANNEL: chrome
           SITE_E2E_OUTPUT: work/rust-migration/ci-e2e
+          # Headless CI has no real GPU: WebGPU initializes but never presents
+          # pixels, so canvas assertions exercise the shipped WebGL fallback.
+          ATLAS_FORCE_WEBGL: '1'
       - uses: actions/upload-artifact@v4
         if: always()
         with:

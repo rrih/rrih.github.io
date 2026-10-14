@@ -8,6 +8,7 @@ const output = process.env.ATLAS_QA_DIR || 'work/qa'
 await mkdir(output, { recursive: true })
 const browser = await chromium.launch({ channel: 'chrome', headless: true, args: ['--enable-unsafe-webgpu', '--enable-unsafe-swiftshader'] })
 const context = await browser.newContext({ locale: 'en-US', viewport: { width: 1440, height: 1000 }, acceptDownloads: true })
+if (process.env.ATLAS_FORCE_WEBGL === '1') await context.addInitScript(() => Object.defineProperty(navigator, 'gpu', { configurable: true, value: undefined }))
 const page = await context.newPage()
 const errors = []
 page.on('pageerror', error => errors.push(error.message))
@@ -91,6 +92,7 @@ await page.getByRole('searchbox').fill('does not exist')
 await expect(page.getByText('No Pokémon found.', { exact: true })).toHaveCount(1)
 
 const mobileContext = await browser.newContext({ locale: 'en-US', viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true })
+if (process.env.ATLAS_FORCE_WEBGL === '1') await mobileContext.addInitScript(() => Object.defineProperty(navigator, 'gpu', { configurable: true, value: undefined }))
 const mobile = await mobileContext.newPage()
 mobile.on('pageerror', error => errors.push(error.message))
 await mobile.goto(base)
