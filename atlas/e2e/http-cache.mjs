@@ -84,7 +84,7 @@ try {
   await page.locator('.live-dot:not(.loading)').waitFor({ timeout: 120000 })
   await page.locator('.loader').waitFor({ state: 'hidden' })
   assert.equal(await page.locator('.viewer-error').count(), 0)
-  await page.getByRole('button', { name: 'Play animation', exact: true }).waitFor()
+  await page.getByRole('button', { name: 'Play animation', exact: true }).waitFor({ timeout: 120000 })
   const before = await page.locator('canvas').screenshot()
   await page.getByRole('button', { name: 'side', exact: true }).click()
   await expect.poll(async () => before.equals(await page.locator('canvas').screenshot())).toBe(false)

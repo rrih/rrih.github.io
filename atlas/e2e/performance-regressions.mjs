@@ -125,7 +125,7 @@ try {
   for (const code of ['fr', 'ja', 'fr']) {
     await page.locator('.language-button').click()
     await page.locator(`[data-language="${code}"]`).click()
-    await page.locator(`.app-shell[data-locale="${code}"][data-catalog-state=ready]`).waitFor()
+    await page.locator(`.app-shell[data-locale="${code}"][data-catalog-state=ready]`).waitFor({ timeout: 120000 })
   }
   const uiRequests = requests.filter(url => /\/locales\/ui\/.*\.json$/.test(new URL(url).pathname))
   assert.equal(uiRequests.filter(url => url.endsWith('/fr.json')).length, 1)

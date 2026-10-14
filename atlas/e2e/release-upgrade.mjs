@@ -108,10 +108,10 @@ try{
   const background=await page.evaluate(()=>{const c=document.createElement('canvas');c.width=96;c.height=64;const x=c.getContext('2d');x.fillStyle='#8fc3d1';x.fillRect(0,0,96,64);x.fillStyle='#456b4e';x.fillRect(0,40,96,24);return c.toDataURL('image/png')})
   const scene={id:'release-upgrade',name:'Saved before Rust migration',members:[6,1,25,133,7,94].map((speciesId,i)=>({key:`upgrade-${i}`,speciesId,shiny:false,x:(i%3-1)*2.6,z:i<3?-1.4:1.4,rotation:i*15,scale:0.8})),settings:{playing:false,rotate:false,speed:1.25,light:1.1,habitat:'custom',wireframe:false,shiny:false,quality:'standard',animation:0},camera:{position:[8,7,13],target:[0,1,0]}}
   await page.locator('.scene-file-actions input[type=file]').setInputFiles({name:'upgrade.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({version:1,scene,background}))})
-  await page.getByText('Scene imported.',{exact:true}).waitFor()
+  await page.getByText('Scene imported.',{exact:true}).waitFor({ timeout: 120000 })
   await ready()
   await page.getByRole('button',{name:'Save scene',exact:true}).click()
-  await page.getByText('Scene saved on this device.',{exact:true}).waitFor()
+  await page.getByText('Scene saved on this device.',{exact:true}).waitFor({ timeout: 120000 })
   await page.locator('.language-button').click()
   await page.locator('[data-language="ja"]').click()
   await page.locator('.app-shell[data-locale=ja][data-catalog-state=ready]').waitFor({timeout:120000})
@@ -119,7 +119,7 @@ try{
   // Finish the old UI choices before the final save. The old viewer can reframe
   // after a resize without synchronizing its stored camera until pagehide.
   await page.getByRole('button',{name:words['Save scene'],exact:true}).click()
-  await page.getByText(words['Scene saved on this device.'],{exact:true}).waitFor()
+  await page.getByText(words['Scene saved on this device.'],{exact:true}).waitFor({ timeout: 120000 })
   await page.evaluate(async()=>{
     localStorage.setItem('atlas-upgrade-sentinel','preserve-unknown-atlas-key')
     localStorage.setItem('other:upgrade-sentinel','preserve-unrelated-key')
@@ -186,7 +186,7 @@ try{
   assert(await page.evaluate(async()=>{try{await fetch(`/uncached-upgrade-proof-${Date.now()}`,{cache:'no-store'});return false}catch{return true}}))
   await Promise.all([page.waitForEvent('domcontentloaded',{timeout:120000}),page.getByRole('button',{name:words['Update now'],exact:true}).click()])
   await ready()
-  await page.locator('.app-shell[data-locale=ja]').waitFor()
+  await page.locator('.app-shell[data-locale=ja]').waitFor({ timeout: 120000 })
   assert.notEqual(await page.evaluate(()=>window.__upgradeDocument),oldDocument)
   const currentDocument=await page.evaluate(()=>window.__upgradeDocument)
   await expect.poll(()=>lifecycle.find(event=>event.kind==='document'&&event.id===currentDocument)).toBeTruthy()

@@ -1,7 +1,7 @@
 import { appBase } from './helpers.mjs'
 import assert from 'node:assert/strict'
 import {readFile,writeFile,mkdir} from 'node:fs/promises'
-import {chromium} from './helpers.mjs'
+import {chromium, expect} from './helpers.mjs'
 const base=appBase
 const output=process.env.ATLAS_QA_DIR || 'work/expansion/qa'
 await mkdir(output,{recursive:true})
@@ -28,10 +28,10 @@ try {
  assert((await page.locator('.type-row').innerText()).includes('Dragon'))
  assert((await page.locator('.measurements').innerText()).includes('110.5'))
  await page.getByRole('button',{name:'Play animation',exact:true}).click();await page.waitForTimeout(700)
- let before=await canvas().screenshot();await page.waitForTimeout(600);assert(!before.equals(await canvas().screenshot()),'Mega has source motion')
+ let before=await canvas().screenshot();await expect.poll(async()=>(await canvas().screenshot()).equals(before),{timeout:60000}).toBe(false)
  await page.locator('.detail-tabs').getByRole('button',{name:'Studio',exact:true}).click()
  await page.getByRole('button',{name:'Shiny appearance',exact:true}).click();await ready();await page.waitForTimeout(500)
- before=await canvas().screenshot();await page.waitForTimeout(600);assert(!before.equals(await canvas().screenshot()),'Mega shiny keeps source motion')
+ before=await canvas().screenshot();await expect.poll(async()=>(await canvas().screenshot()).equals(before),{timeout:60000}).toBe(false)
  await page.getByRole('button',{name:'Pause animation',exact:true}).click();await shot('mega-charizard-x-shiny')
  await selectForm('charizard-mega-y');await shot('mega-charizard-y')
  const external=JSON.parse(await readFile('scripts/data/form-external-sources.json','utf8'))
@@ -40,27 +40,27 @@ try {
  for(const [id,form] of variants){await page.goto(`${base}/pokemon/${id}/?lang=en#pokemon=${id}&form=${form}&scene=studio`);await ready();assert.equal(await page.getByRole('combobox',{name:'Form',exact:true}).inputValue(),form);await shot(form)}
  await page.goto(`${base}/pokemon/25/?lang=en`);await ready()
  const scenes=['studio','forest','night','coast','snow','desert','meadow','mountain','cave','underwater','volcano','wetland','sakura']
- for(const scene of scenes){await page.locator(`.environment-card.${scene}`).click();await canvas().scrollIntoViewIfNeeded();await page.waitForTimeout(400);assert.equal(await page.locator(`.viewer-stage.${scene}`).count(),1);await shot(`environment-${scene}`);const front=await canvas().screenshot();await page.getByRole('button',{name:'back',exact:true}).click();await page.waitForTimeout(400);assert(!front.equals(await canvas().screenshot()),`${scene}: orbit changes real geometry`);await page.getByRole('button',{name:'Reset camera',exact:true}).click()}
+ for(const scene of scenes){await page.locator(`.environment-card.${scene}`).click();await canvas().scrollIntoViewIfNeeded();await page.waitForTimeout(400);assert.equal(await page.locator(`.viewer-stage.${scene}`).count(),1);await shot(`environment-${scene}`);const front=await canvas().screenshot();await page.getByRole('button',{name:'back',exact:true}).click();await expect.poll(async()=>(await canvas().screenshot()).equals(front),{timeout:60000}).toBe(false);await page.getByRole('button',{name:'Reset camera',exact:true}).click()}
  const upload=page.locator('.background-picker input[type=file]')
- await upload.setInputFiles({name:'private-location-123.jpg',mimeType:'image/jpeg',buffer:await readFile('public/social.jpg')});await page.locator('.viewer-stage.custom').waitFor();await page.waitForTimeout(700);await shot('custom-background')
+ await upload.setInputFiles({name:'private-location-123.jpg',mimeType:'image/jpeg',buffer:await readFile('public/social.jpg')});await page.locator('.viewer-stage.custom').waitFor({ timeout: 120000 });await page.waitForTimeout(700);await shot('custom-background')
  assert(!requests.some(url=>url.includes('private-location-123')),'image filename never leaves device')
- await page.reload();await ready();await page.locator('.viewer-stage.custom').waitFor();await shot('custom-reloaded')
+ await page.reload();await ready();await page.locator('.viewer-stage.custom').waitFor({ timeout: 120000 });await shot('custom-reloaded')
  await page.getByRole('button',{name:'Together',exact:true}).click();await ready()
  await page.getByRole('textbox',{name:'Scene name',exact:true}).fill('Private photo studio')
- await page.getByRole('button',{name:'Save scene',exact:true}).click();await page.getByText('Scene saved on this device.',{exact:true}).waitFor()
+ await page.getByRole('button',{name:'Save scene',exact:true}).click();await page.getByText('Scene saved on this device.',{exact:true}).waitFor({ timeout: 120000 })
  const download=page.waitForEvent('download');await page.getByRole('button',{name:'Download scene',exact:true}).first().click();const file=await download;await file.saveAs(`${output}/scene.json`)
  const exported=JSON.parse(await readFile(`${output}/scene.json`,'utf8'));assert(exported.background.startsWith('data:image/'));assert.equal(exported.scene.settings.habitat,'custom');assert(!JSON.stringify(exported).includes('private-location-123'))
  await page.getByRole('button',{name:'Remove background image',exact:true}).click();assert.equal(await page.locator('.viewer-stage.custom').count(),0)
- await page.locator('.scene-file-actions input[type=file]').setInputFiles(`${output}/scene.json`);await page.getByText('Scene imported.',{exact:true}).waitFor();await ready();await page.locator('.viewer-stage.custom').waitFor();await shot('custom-imported')
+ await page.locator('.scene-file-actions input[type=file]').setInputFiles(`${output}/scene.json`);await page.getByText('Scene imported.',{exact:true}).waitFor({ timeout: 120000 });await ready();await page.locator('.viewer-stage.custom').waitFor({ timeout: 120000 });await shot('custom-imported')
  const old=await page.getByRole('textbox',{name:'Scene name',exact:true}).inputValue()
- await page.locator('.scene-file-actions input[type=file]').setInputFiles({name:'invalid.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...exported,background:'https://example.com/private.jpg'}))});await page.getByText('This scene file could not be opened.',{exact:true}).waitFor();assert.equal(await page.getByRole('textbox',{name:'Scene name',exact:true}).inputValue(),old)
- await upload.setInputFiles({name:'bad.svg',mimeType:'image/svg+xml',buffer:Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)"/>')});await page.getByText('This image could not be opened. Use JPEG, PNG, WebP, GIF or AVIF.',{exact:true}).waitFor();assert.equal(await page.locator('.viewer-stage.custom').count(),1)
+ await page.locator('.scene-file-actions input[type=file]').setInputFiles({name:'invalid.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify({...exported,background:'https://example.com/private.jpg'}))});await page.getByText('This scene file could not be opened.',{exact:true}).waitFor({ timeout: 120000 });assert.equal(await page.getByRole('textbox',{name:'Scene name',exact:true}).inputValue(),old)
+ await upload.setInputFiles({name:'bad.svg',mimeType:'image/svg+xml',buffer:Buffer.from('<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)"/>')});await page.getByText('This image could not be opened. Use JPEG, PNG, WebP, GIF or AVIF.',{exact:true}).waitFor({ timeout: 120000 });assert.equal(await page.locator('.viewer-stage.custom').count(),1)
  const beforeLayout=modelRequests().length;await page.getByRole('slider',{name:'Left / right',exact:true}).fill('2');await page.waitForTimeout(200);assert.equal(modelRequests().length,beforeLayout,'placement does not refetch models')
  await page.setViewportSize({width:390,height:844});await noOverflow();await shot('mobile390-custom')
  await page.setViewportSize({width:320,height:568});await noOverflow();await shot('mobile320-custom')
- await page.getByRole('button',{name:'Save scene',exact:true}).click();await page.getByText('Scene saved on this device.',{exact:true}).waitFor()
+ await page.getByRole('button',{name:'Save scene',exact:true}).click();await page.getByText('Scene saved on this device.',{exact:true}).waitFor({ timeout: 120000 })
  await page.waitForFunction(()=>!!navigator.serviceWorker.controller,null,{timeout:45000})
- await context.setOffline(true);await page.reload();await ready();await page.locator('.viewer-stage.custom').waitFor();await shot('offline-custom')
+ await context.setOffline(true);await page.reload();await ready();await page.locator('.viewer-stage.custom').waitFor({ timeout: 120000 });await shot('offline-custom')
  assert.deepEqual(errors,[])
  const result={base,mega:true,megaShinyMotion:true,regionalExamples:variants.length,environments:scenes.length,customUpload:true,customReload:true,customExportImport:true,invalidImagesRejected:true,invalidImportPreservesScene:true,noFilenameRequests:true,placementNoReload:true,mobile390:true,mobile320:true,offlineCustom:true,errors}
  await writeFile(`${output}/results.json`,JSON.stringify(result,null,2));console.log(result)

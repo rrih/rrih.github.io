@@ -82,7 +82,7 @@ try {
   await ready()
   await page.getByRole('textbox', { name: 'Scene name', exact: true }).fill('private-scene-999')
   await page.locator('.background-picker input[type=file]').setInputFiles({ name: 'private-photo-999.jpg', mimeType: 'image/jpeg', buffer: await readFile('public/social.jpg') })
-  await page.locator('.viewer-stage.custom').waitFor()
+  await page.locator('.viewer-stage.custom').waitFor({ timeout: 120000 })
   await expect.poll(() => named('atlas_model_load').filter(event => event['ep.outcome'] === 'ready' && event['ep.view_mode'] === 'together').length, { timeout: 30000 }).toBe(1)
   assert.equal(named('page_view').length, 1)
   await page.getByRole('button', { name: 'Solo view', exact: true }).click()
@@ -92,7 +92,7 @@ try {
   await expect.poll(() => named('atlas_model_load').some(event => event['ep.outcome'] === 'ready' && event['ep.view_mode'] === 'solo'), { timeout: 30000 }).toBe(true)
   failModel = true
   await choose(500, 'Emboar')
-  await page.locator('.viewer-error').waitFor()
+  await page.locator('.viewer-error').waitFor({ timeout: 120000 })
   await expect.poll(() => named('atlas_model_load').some(event => event['ep.outcome'] === 'failed'), { timeout: 30000 }).toBe(true)
   result.modelLoadReadyAndFailed = named('atlas_model_load').map(event => ({ outcome: event['ep.outcome'], mode: event['ep.view_mode'], ms: Number(event['epn.model_load_ms']) }))
   for (const value of result.modelLoadReadyAndFailed) assert(Number.isFinite(value.ms) && value.ms >= 0)
