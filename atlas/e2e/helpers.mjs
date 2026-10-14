@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 export { expect }
 export const siteOrigin = new URL(process.env.ATLAS_URL || 'http://127.0.0.1:3342').origin
 export const appBase = `${siteOrigin}/atlas`
-export const siteDist = fileURLToPath(new URL('../../site-dist/', import.meta.url))
+export const siteDist = process.env.ATLAS_DIST || fileURLToPath(new URL('../../site-dist/', import.meta.url))
 export const appPath = path => path.startsWith('/atlas/') || path === '/atlas' ? path : `/atlas${path.startsWith('/') ? path : `/${path}`}`
 export const seoLocales = ['en', 'ja', 'fr', 'de', 'es', 'it', 'ko', 'zh-Hans', 'zh-Hant']
 export const localeHome = code => `/atlas/${seoLocales.includes(code) && code !== 'en' ? `${code}/` : code === 'es-419' ? 'es/' : ''}`

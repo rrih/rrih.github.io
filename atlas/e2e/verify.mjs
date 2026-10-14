@@ -1,7 +1,7 @@
 import { appBase } from './helpers.mjs'
 import assert from 'node:assert/strict'
 import { mkdir, writeFile } from 'node:fs/promises'
-import { chromium } from './helpers.mjs'
+import { chromium, expect } from './helpers.mjs'
 
 const base = appBase
 const output = process.env.ATLAS_QA_DIR || 'work/qa'
@@ -78,7 +78,7 @@ await page.getByRole('link', { name: 'View Wyrdeer', exact: true }).click()
 await ready(page)
 assert((await page.locator('.specimen-heading .eyebrow').innerText()).toLowerCase().includes('generation viii'))
 await page.getByLabel('Type', { exact: true }).selectOption('fire')
-assert(await page.getByText('No Pokémon found.', { exact: true }).count() === 1)
+await expect(page.getByText('No Pokémon found.', { exact: true })).toHaveCount(1)
 await page.getByLabel('Generation', { exact: true }).selectOption('0')
 await page.getByLabel('Type', { exact: true }).selectOption('')
 await page.getByRole('searchbox').fill('1025')
@@ -90,7 +90,7 @@ assert(await page.locator('dialog').evaluate(dialog => dialog.open))
 await page.keyboard.press('Escape')
 assert(!await page.locator('dialog').evaluate(dialog => dialog.open))
 await page.getByRole('searchbox').fill('does not exist')
-assert(await page.getByText('No Pokémon found.', { exact: true }).count() === 1)
+await expect(page.getByText('No Pokémon found.', { exact: true })).toHaveCount(1)
 
 const mobileContext = await browser.newContext({ locale: 'en-US', viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true })
 const mobile = await mobileContext.newPage()
@@ -126,7 +126,7 @@ let offlineVerified = false
 if (process.env.ATLAS_VERIFY_PWA === '1') {
   await page.goto(`${base}/#pokemon=6&scene=studio`)
   await ready(page)
-  await page.waitForFunction(async () => (await navigator.serviceWorker.getRegistrations()).some(r => !!r.active), null, { timeout: 45000 })
+  await expect.poll(() => page.evaluate(async () => (await navigator.serviceWorker.getRegistrations()).some(r => !!r.active)), { timeout: 45000 }).toBe(true)
   await page.waitForFunction(() => !!navigator.serviceWorker.controller, null, { timeout: 30_000 })
   const manifest = await page.evaluate(async () => {
     const link = document.querySelector('link[rel=manifest]')

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build verified HOME forms, retaining the same native rig and idle in both colors.
 
-Run normal, then optimize-home-models.mjs on work/forms/normal, then rare and
+Run normal, then Rust xtask atlas-optimize-models on atlas/work/forms/normal, then rare and
 publish. Existing public/models/home and shiny-home files are never opened for
 writing. The rare stage preserves the optimized normal geometry bytes exactly.
 """

@@ -3,7 +3,7 @@ import { appBase, manifestStart } from './helpers.mjs'
 import assert from 'node:assert/strict'
 import { createHash } from 'node:crypto'
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
-import { chromium } from './helpers.mjs'
+import { chromium, expect } from './helpers.mjs'
 
 const base = appBase
 const output = process.env.ATLAS_QA_DIR || 'work/i18n/pwa'
@@ -147,7 +147,7 @@ try {
   await description(page, 'en', 'en')
   await page.waitForFunction(() => !!navigator.serviceWorker.controller, null, { timeout: 120_000 })
   // Controller/registration alone is insufficient: check the saved responses themselves.
-  await page.waitForFunction(
+  await expect.poll(() => page.evaluate(
     async (paths) => {
       const saved = new Set()
       for (const name of (await caches.keys()).filter((name) => name.includes('precache'))) {
@@ -160,8 +160,7 @@ try {
       return paths.every((path) => saved.has(path))
     },
     [...expectedCatalogPaths, '/atlas/models/home/6.glb'],
-    { timeout: 120_000 },
-  )
+  ), { timeout: 120_000 }).toBe(true)
   result.cacheSaveMs = Math.round(performance.now() - started)
   const precache = await page.evaluate(async () => {
     const names = (await caches.keys()).filter((name) => name.includes('precache'))
@@ -297,14 +296,13 @@ try {
   await page.getByRole('button', { name: dictionaries.ar['Try again'], exact: true }).click()
   await live(page, 'ar')
   assert.equal(await page.locator('.specimen-heading bdi').innerText(), emboar.name)
-  await page.waitForFunction(
+  await expect.poll(() => page.evaluate(
     async (path) => {
       const response = await (await caches.open('atlas-models-v1')).match(path.replace('/atlas/models/', '/models/'))
       return response?.ok && (await response.arrayBuffer()).byteLength > 0
     },
     model500.url,
-    { timeout: 30_000 },
-  )
+  ), { timeout: 30_000 }).toBe(true)
   assert.equal(
     await page
       .locator('.offline-notice')

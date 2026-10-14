@@ -2,19 +2,20 @@ name: Verify and deploy independent sites
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: ${{ github.event_name == 'pull_request' && format('pages-pr-{0}', github.event.pull_request.number) || 'pages' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
   profile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-rust
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: '1.3.9'
@@ -32,11 +33,41 @@ jobs:
         working-directory: atlas
     steps:
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-rust
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: '1.3.9'
       - run: bun install --frozen-lockfile
       - run: bun run dev-check
+      - name: Compare Rust renderer and search with the original implementation
+        run: |
+          node scripts/build-renderer-qa.mjs
+          node e2e/renderer-geometry.mjs
+          node e2e/search-normalization.mjs
+      - run: bunx playwright install --with-deps chrome
+      - name: Verify real model bounds and rendered controls
+        env:
+          ATLAS_URL: http://127.0.0.1:3393
+          CHROME_CHANNEL: chrome
+        run: |
+          PORT=3393 SITE_BASE=/atlas/ ../target/debug/xtask serve atlas/public > work/rust-renderer-qa/preview.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid"' EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:3393/atlas/models/home/6.glb --output /dev/null; then break; fi
+            sleep 1
+          done
+          node e2e/model-bounds.mjs
+          node e2e/renderer-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: atlas-renderer-evidence
+          path: atlas/work/rust-renderer-qa/
+          if-no-files-found: ignore
       - uses: actions/upload-artifact@v4
         with:
           name: atlas
@@ -52,6 +83,7 @@ jobs:
         working-directory: tools/pictulane
     steps:
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-rust
       - uses: actions/setup-node@v4
         with:
           node-version: '22.14.0'
@@ -74,22 +106,54 @@ jobs:
   assemble:
     needs: [profile, atlas, pictulane]
     runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      pages: write
     steps:
       - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-rust
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.14.0'
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: '1.3.9'
       - uses: actions/download-artifact@v4
         with:
           path: artifacts
-      - run: bun deployment/compose.ts artifacts/profile artifacts/atlas artifacts/compatibility site-dist artifacts/pictulane
+      - name: Install browser test dependencies
+        run: |
+          bun install --frozen-lockfile
+          bun install --cwd atlas --frozen-lockfile
+          bunx playwright install --with-deps chrome
+      - name: Compose verified independent product builds
+        run: sh scripts/rust.sh run --locked -p xtask -- compose artifacts/profile artifacts/atlas artifacts/compatibility site-dist artifacts/pictulane
+      - name: Verify the assembled production site in Chrome
+        run: node e2e/run.mjs
+        env:
+          CHROME_CHANNEL: chrome
+          SITE_E2E_OUTPUT: work/rust-migration/ci-e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: assembled-browser-regressions
+          path: work/rust-migration/ci-e2e/
+          if-no-files-found: ignore
+          retention-days: 14
       - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
       - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request'
         with:
           path: site-dist
   deploy:
     needs: assemble
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

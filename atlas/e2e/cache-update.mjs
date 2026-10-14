@@ -5,7 +5,7 @@ import { createReadStream } from 'node:fs'
 import { mkdir, readFile, stat, writeFile } from 'node:fs/promises'
 import { createServer } from 'node:http'
 import { extname, resolve } from 'node:path'
-import { chromium } from './helpers.mjs'
+import { chromium, expect } from './helpers.mjs'
 
 const dist = resolve(process.env.ATLAS_DIST || siteDist)
 const output = process.env.ATLAS_QA_DIR || 'work/cache/update-qa'
@@ -124,11 +124,10 @@ async function waitForModel(page) {
   await page.waitForFunction(() => !!navigator.serviceWorker.controller, null, { timeout: 120_000 })
   await page.getByText('LIVE VIEW', { exact: true }).waitFor({ timeout: 120_000 })
   assert.equal(await page.locator('.specimen-heading bdi').innerText(), 'Emboar')
-  await page.waitForFunction(
+  await expect.poll(() => page.evaluate(
     async ({ cacheName, path }) => !!(await (await caches.open(cacheName)).match(path.replace('/atlas/models/', '/models/'))),
     { cacheName, path: modelPath },
-    { timeout: 90_000 },
-  )
+  ), { timeout: 90_000 }).toBe(true)
 }
 
 async function runCase(returning, activatedElsewhere = false) {

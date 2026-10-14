@@ -1,7 +1,7 @@
 import { appBase } from './helpers.mjs'
 import assert from 'node:assert/strict'
 import { mkdir, writeFile } from 'node:fs/promises'
-import { chromium } from './helpers.mjs'
+import { chromium, expect } from './helpers.mjs'
 
 const base = appBase
 const output = process.env.ATLAS_QA_DIR || 'work/studio/qa'
@@ -23,9 +23,17 @@ const readState = () => page.evaluate(() => JSON.parse(localStorage.getItem('atl
 const pause = async () => { const button = page.getByRole('button', { name: 'Pause animation', exact: true }); if (await button.count()) await button.click(); await page.waitForTimeout(700) }
 const motion = async label => {
   await pause()
+  // Element screenshots include overlapping DOM. Let the import/save notice
+  // disappear before comparing animation pixels; its timer can cross the pair.
+  await page.locator('.toast').waitFor({ state: 'hidden' })
   const a = await page.locator('canvas').screenshot()
   await page.waitForTimeout(300)
-  assert(a.equals(await page.locator('canvas').screenshot()), `${label} pause is stable`)
+  const paused = await page.locator('canvas').screenshot()
+  if (!a.equals(paused)) {
+    await writeFile(`${output}/pause-before.png`, a)
+    await writeFile(`${output}/pause-after.png`, paused)
+  }
+  assert(a.equals(paused), `${label} pause is stable`)
   await page.getByRole('button', { name: 'Play animation', exact: true }).click()
   await page.waitForTimeout(350)
   const b = await page.locator('canvas').screenshot()
@@ -135,10 +143,10 @@ try {
   }
   await page.setViewportSize({ width: 1440, height: 1000 })
   await page.waitForFunction(() => !!navigator.serviceWorker.controller, null, { timeout: 120_000 })
-  await page.waitForFunction(async () => {
+  await expect.poll(() => page.evaluate(async () => {
     const state = JSON.parse(localStorage.getItem('atlas-scenes-v1'))
     return (await Promise.all(state.draft.members.map(member => caches.match(member.shiny ? `/models/shiny-home/${member.speciesId}.glb` : `/models/home/${member.speciesId}.glb`)))).every(Boolean)
-  }, null, { timeout: 60_000 })
+  }), { timeout: 60_000 }).toBe(true)
   await context.setOffline(true)
   await page.reload()
   await ready()

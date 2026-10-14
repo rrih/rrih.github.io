@@ -114,17 +114,18 @@ function googleFixture(config) {
     state.usDialogs++
     callback(true)
   }
-  state.emitTcf = (allow) => {
+  state.emitTcf = (allow, success = true) => {
     tcf = { ...(allow ? accepted : denied), eventStatus: 'useractioncomplete' }
-    for (const callback of tcfListeners) callback(tcf, true)
+    for (const callback of tcfListeners) callback(tcf, success)
   }
-  state.emitGppChange = () => {
+  state.emitGpp = (gppString, signalStatus = 'ready') => {
     gpp = {
       eventName: 'signalStatus',
-      pingData: { ...gpp.pingData, gppString: 'atlas-test-changed-gpp-fixture' },
+      pingData: { ...gpp.pingData, gppString, signalStatus },
     }
     for (const callback of gppListeners) callback(gpp, true)
   }
+  state.emitGppChange = () => state.emitGpp('atlas-test-changed-gpp-fixture')
   if (!config.missingCmp) {
     window.__tcfapi = (command, version, callback) => {
       state.tcfSubscriptions.push({ command, version })
@@ -138,10 +139,21 @@ function googleFixture(config) {
     }
   }
   const queued = Array.from(fc.callbackQueue)
+  const pendingUs = []
+  state.publishInitialUs = () => {
+    for (const callback of pendingUs.splice(0)) {
+      state.fcCallbacks.push('INITIAL_US_STATES_OPT_OUT_DATA_READY')
+      callback()
+    }
+  }
   const invoke = (entry) => {
     if (typeof entry === 'function') entry()
     else
       for (const [key, callback] of Object.entries(entry)) {
+        if (config.manualUs && key === 'INITIAL_US_STATES_OPT_OUT_DATA_READY') {
+          pendingUs.push(callback)
+          continue
+        }
         state.fcCallbacks.push(key)
         callback()
       }
@@ -168,6 +180,7 @@ async function scenario(name, config, run) {
     serviceWorkers: 'block',
   })
   const page = await context.newPage()
+  if (config.clock) await page.clock.install()
   page.setDefaultTimeout(30_000)
   const errors = []
   const consoleMessages = []
@@ -203,10 +216,12 @@ async function scenario(name, config, run) {
     if (url.hostname === 'pagead2.googlesyndication.com' && url.pathname === '/pagead/js/adsbygoogle.js') {
       routes.ads.push(url.href)
       if (config.scriptFailed) return route.abort('failed')
+      if (config.scriptDelayed) await page.waitForFunction(() => window.__atlasAdTest.releaseAds === true)
       return route.fulfill({
         contentType: 'application/javascript',
         headers: { 'Access-Control-Allow-Origin': '*' },
-        body: `(${googleFixture.toString()})(${JSON.stringify({ ...config, deferCmp: config.cmpFailed || config.cmpDelayed })});`,
+        body: config.scriptDelayed ? 'window.__atlasAdTest.lateSdkLoaded = true'
+          : `(${googleFixture.toString()})(${JSON.stringify({ ...config, deferCmp: config.cmpFailed || config.cmpDelayed })});`,
       })
     }
     if (url.hostname === 'www.googletagmanager.com' && url.pathname === '/gtag/js') {
@@ -219,6 +234,10 @@ async function scenario(name, config, run) {
     }
     try {
       let { path, body } = await readLocal(url)
+      if (extname(path) === '.html' && config.unownedScript) {
+        const attributes = config.unownedScript === 'id' ? 'id="atlas-advertising"' : 'src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=unowned"'
+        body = body.toString().replace('</head>', `<script type="application/json" data-unowned-advertising ${attributes}></script></head>`)
+      }
       if (extname(path) === '.html' && (config.farAway || config.hideIns)) {
         const css = config.farAway
           ? '.atlas-ad-placement{margin-block-start:1600px!important}'
@@ -286,7 +305,7 @@ async function settle(page) {
 
 async function readState(page) {
   return page.evaluate(() => {
-    const { emitTcf, emitGppChange, ...state } = window.__atlasAdTest
+    const state = Object.fromEntries(Object.entries(window.__atlasAdTest).filter(([key, value]) => typeof value !== 'function' && key !== 'lateScript'))
     return { ...state, paused: window.adsbygoogle?.pauseAdRequests }
   })
 }
@@ -428,6 +447,62 @@ try {
     return { requests: 0, scriptRemoved: true }
   })
 
+  for (const identity of ['id', 'url']) {
+    await scenario(`unowned-advertising-script-${identity}`, { unownedScript: identity }, async (page, routes) => {
+      assert.equal((await noAd(page)).paused, 1)
+      await changeLanguage(page, 'fr')
+      await changeLanguage(page, 'en')
+      await noAd(page)
+      await expect(page.locator('script[data-unowned-advertising]')).toHaveCount(1)
+      await expect(page.locator('script#atlas-ad-consent')).toHaveCount(0)
+      assert.equal(routes.ads.length, 0, 'The controller must not add or trust a duplicate SDK')
+      assert.equal(routes.cmp.length, 0)
+      return { requests: 0, identity, unownedScriptRejected: true, remountDoesNotRetry: true }
+    })
+  }
+
+  for (const initialFirst of [true, false]) {
+    await scenario(`gpp-change-${initialFirst ? 'after' : 'before'}-initial-us`, { manualUs: true, farAway: true, tcf: 'not-applicable', usStatus: 2 }, async (page) => {
+      await waitFixture(page)
+      await page.evaluate((initialFirst) => {
+        const state = window.__atlasAdTest
+        if (initialFirst) state.publishInitialUs()
+        state.emitGpp('atlas-test-gpp-fixture', 'not ready')
+        state.emitGpp('changed-current-gpp-fixture', 'ready')
+        if (!initialFirst) state.publishInitialUs()
+      }, initialFirst)
+      assert.equal((await noAd(page)).paused, 1)
+      await page.evaluate(() => window.__atlasAdTest.emitTcf(true))
+      assert.equal((await noAd(page)).paused, 1)
+      return { requests: 0, initialFirst, staleUsPermissionNeverRevived: true }
+    })
+  }
+
+  for (const sdk of ['advertising', 'consent']) {
+    const config = sdk === 'advertising' ? { scriptDelayed: true, cmpOwnFixture: true } : { cmpDelayed: true }
+    await scenario(`${sdk}-timeout-late-load`, { ...config, clock: true }, async (page, routes) => {
+      await waitFixture(page)
+      await page.getByText('LIVE VIEW', { exact: true }).waitFor({ timeout: 120_000 })
+      await page.evaluate((sdk) => { window.__atlasAdTest.lateScript = document.getElementById(sdk === 'advertising' ? 'atlas-advertising' : 'atlas-ad-consent') }, sdk)
+      await page.clock.fastForward(30_001)
+      await expect(page.locator(`#${sdk === 'advertising' ? 'atlas-advertising' : 'atlas-ad-consent'}`)).toHaveCount(0)
+      assert.equal((await noAd(page)).paused, 1)
+      await page.evaluate(() => { window.__atlasAdTest.releaseAds = true; window.__atlasAdTest.releaseCmp = true })
+      if (sdk === 'consent') await page.waitForFunction(() => typeof window.__atlasAdTest.emitTcf === 'function')
+      else await page.waitForFunction(() => window.__atlasAdTest.lateSdkLoaded === true)
+      await page.evaluate(() => {
+        window.__atlasAdTest.lateScript.dispatchEvent(new Event('load'))
+        window.__atlasAdTest.emitTcf(true)
+      })
+      await changeLanguage(page, 'fa')
+      await changeLanguage(page, 'en')
+      assert.equal((await noAd(page)).paused, 1)
+      assert.equal(routes.ads.length, 1)
+      assert.equal(routes.cmp.length, 1)
+      return { requests: 0, sdk, timeoutTerminalAfterLateLoadAndConsent: true, remountDoesNotRetry: true }
+    })
+  }
+
   await scenario('independent-cmp-failure', { cmpFailed: true }, async (page, routes) => {
     await waitFixture(page)
     await page.waitForFunction(() => !document.getElementById('atlas-ad-consent'))
@@ -496,7 +571,14 @@ try {
     return { requests: 1, removedAfterWithdrawal: true, renewedConsentDoesNotRefresh: true }
   })
 
-  await scenario('non-eu-consent-not-applicable', { tcf: 'not-applicable' }, async (page) => {
+  await scenario('tcf-api-failure-retires-unit', {}, async (page) => {
+    await showAd(page, 728, 90)
+    await page.evaluate(() => window.__atlasAdTest.emitTcf(true, false))
+    assert.equal((await noAd(page, 1)).paused, 1)
+    return { requests: 1, failedCurrentTcfResponseRevokesPermission: true }
+  })
+
+  await scenario('non-eu-consent-not-applicable', { tcf: 'not-applicable', gpp: 'unknown' }, async (page) => {
     await showAd(page, 728, 90)
     await expect(page.getByRole('button', { name: 'Ad privacy choices', exact: true })).toHaveCount(0)
     return { requests: 1, minimalTcfResponse: { gdprApplies: false }, usStatus: 1 }
@@ -528,6 +610,8 @@ try {
     await showAd(page, 728, 90)
     await changeLanguage(page, 'fa')
     assert.equal((await noAd(page, 1)).paused, 1)
+    await page.evaluate(() => window.__atlasAdTest.emitTcf(true))
+    assert.equal((await noAd(page, 1)).paused, 1, 'Late consent cannot reactivate an unsupported language')
     await changeLanguage(page, 'en')
     await noAd(page, 1)
     assert.equal(routes.ads.length, 1)

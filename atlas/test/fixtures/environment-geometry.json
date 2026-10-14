@@ -1,0 +1,401 @@
+{
+  "sourceRevision": "ef25889c60f099aa864bed11042f4054827a78c4",
+  "referenceRuntime": "Node 22.12.0 / V8; Three.js 0.180.0",
+  "sourceFiles": [
+    {
+      "path": "src/Forest.ts",
+      "sha256": "b719a0c9dbedf739683c7f2c3b7d4b9df097b54529bec6c6b546fc7e39dd6b1c"
+    },
+    {
+      "path": "src/Environments.ts",
+      "sha256": "1c07dd22e102c69e85ca549e48708531a1dcb1c3a7051d7e02271029ffa25617"
+    }
+  ],
+  "records": [
+    {
+      "key": "forest",
+      "time": "initial",
+      "meshes": 7,
+      "numeric": 52157,
+      "sha256": "433d8eab07605f5dc678bfd91f017a3654a4afad8e20f0ebc8f562ef19c5dfe3"
+    },
+    {
+      "key": "forest",
+      "time": 0,
+      "meshes": 7,
+      "numeric": 52157,
+      "sha256": "52825c23f7f4beee93b4aa7f3992ce7ddcff1a27ed430934bcb4a5e6abb88c17"
+    },
+    {
+      "key": "forest",
+      "time": 0.5,
+      "meshes": 7,
+      "numeric": 52157,
+      "sha256": "5328e76e6b7e824faf7282eea14a72044dc3fcf2875fb3100f333e7410bffb5a"
+    },
+    {
+      "key": "forest",
+      "time": 5,
+      "meshes": 7,
+      "numeric": 52157,
+      "sha256": "af218f3b6195b82e12c0312710e7903019118e6820abe27325c492fb1af98b10"
+    },
+    {
+      "key": "forest",
+      "time": 37,
+      "meshes": 7,
+      "numeric": 52157,
+      "sha256": "a71fbbe96b6801c21203c0f781bf103bb82a1a6c301e55c298eb7c022797957e"
+    },
+    {
+      "key": "coast",
+      "time": "initial",
+      "meshes": 6,
+      "numeric": 70568,
+      "sha256": "a6fb4235af02704ba1b8f5b011137fd5102948669437dd07955a9451e1818a41"
+    },
+    {
+      "key": "coast",
+      "time": 0,
+      "meshes": 6,
+      "numeric": 70568,
+      "sha256": "780a52ec056b1d0efcd3fde7129b7808d5032a4bba6da314faab53d41b8ede6f"
+    },
+    {
+      "key": "coast",
+      "time": 0.5,
+      "meshes": 6,
+      "numeric": 70568,
+      "sha256": "0df4d772acc14fc92f418cf23b37417c88a5b33192e474dc0213f49dbe23241a"
+    },
+    {
+      "key": "coast",
+      "time": 5,
+      "meshes": 6,
+      "numeric": 70568,
+      "sha256": "16951505803db7bbebdd04bf2d6d871a26ac1f10f2c8595e2c053e53c60149e3"
+    },
+    {
+      "key": "coast",
+      "time": 37,
+      "meshes": 6,
+      "numeric": 70568,
+      "sha256": "ffde6f107cfae4d475db9273fd379d0aa1d0daf169d7115010ca7074d413a17d"
+    },
+    {
+      "key": "snow",
+      "time": "initial",
+      "meshes": 6,
+      "numeric": 39608,
+      "sha256": "84de6a530cb8a88bab0ed803e414ab69fd095ddbcbd6f3825327d0922861676a"
+    },
+    {
+      "key": "snow",
+      "time": 0,
+      "meshes": 6,
+      "numeric": 39608,
+      "sha256": "fd68af38bc14031daf056a214d79adace241b7af629eec487dc38f9235ce3b11"
+    },
+    {
+      "key": "snow",
+      "time": 0.5,
+      "meshes": 6,
+      "numeric": 39608,
+      "sha256": "d014cb8d3014a888bf4afbb3e2a812edf51472cf587bb67fa9d299682a5a8a0e"
+    },
+    {
+      "key": "snow",
+      "time": 5,
+      "meshes": 6,
+      "numeric": 39608,
+      "sha256": "f3c3c97665e3a8eaf1199cba2536aaee6d39f28e46cd2dee8fb9ab20c5bbc2f9"
+    },
+    {
+      "key": "snow",
+      "time": 37,
+      "meshes": 6,
+      "numeric": 39608,
+      "sha256": "641f2358a132508f1ff731b1c445c0266e9abdff35c8666bbada36485406ac42"
+    },
+    {
+      "key": "desert",
+      "time": "initial",
+      "meshes": 4,
+      "numeric": 36996,
+      "sha256": "a53b1bcb3617ac11adfc6463f0c8e190d683a0304e2547e2a4207713662ac882"
+    },
+    {
+      "key": "desert",
+      "time": 0,
+      "meshes": 4,
+      "numeric": 36996,
+      "sha256": "a53b1bcb3617ac11adfc6463f0c8e190d683a0304e2547e2a4207713662ac882"
+    },
+    {
+      "key": "desert",
+      "time": 0.5,
+      "meshes": 4,
+      "numeric": 36996,
+      "sha256": "a53b1bcb3617ac11adfc6463f0c8e190d683a0304e2547e2a4207713662ac882"
+    },
+    {
+      "key": "desert",
+      "time": 5,
+      "meshes": 4,
+      "numeric": 36996,
+      "sha256": "a53b1bcb3617ac11adfc6463f0c8e190d683a0304e2547e2a4207713662ac882"
+    },
+    {
+      "key": "desert",
+      "time": 37,
+      "meshes": 4,
+      "numeric": 36996,
+      "sha256": "a53b1bcb3617ac11adfc6463f0c8e190d683a0304e2547e2a4207713662ac882"
+    },
+    {
+      "key": "meadow",
+      "time": "initial",
+      "meshes": 4,
+      "numeric": 44910,
+      "sha256": "adad320868a30b109878adfeb51caa2a637ecb6b5cc703eebf2061d44c75f70b"
+    },
+    {
+      "key": "meadow",
+      "time": 0,
+      "meshes": 4,
+      "numeric": 44910,
+      "sha256": "2a87f1b9f7d652f8ad7ca5a496a364b2dc8005f6ddc904668bae3f8b658b916f"
+    },
+    {
+      "key": "meadow",
+      "time": 0.5,
+      "meshes": 4,
+      "numeric": 44910,
+      "sha256": "18fc65fcf57d53d6b52a6f0139ec2fc0af635e3890da5d91c3a7da90d9608bfd"
+    },
+    {
+      "key": "meadow",
+      "time": 5,
+      "meshes": 4,
+      "numeric": 44910,
+      "sha256": "088993f163dfcd7030f15270b4f630b4edd9737d17cdd60eb965cadf25758df4"
+    },
+    {
+      "key": "meadow",
+      "time": 37,
+      "meshes": 4,
+      "numeric": 44910,
+      "sha256": "994f7ca327e320d0ede31743cb982cffea7a6696d133a5e4adac9f5252a26261"
+    },
+    {
+      "key": "mountain",
+      "time": "initial",
+      "meshes": 4,
+      "numeric": 36468,
+      "sha256": "92521184a6970ff88de7331fd348d4574dec238ff073184710565a7c83877f56"
+    },
+    {
+      "key": "mountain",
+      "time": 0,
+      "meshes": 4,
+      "numeric": 36468,
+      "sha256": "92521184a6970ff88de7331fd348d4574dec238ff073184710565a7c83877f56"
+    },
+    {
+      "key": "mountain",
+      "time": 0.5,
+      "meshes": 4,
+      "numeric": 36468,
+      "sha256": "92521184a6970ff88de7331fd348d4574dec238ff073184710565a7c83877f56"
+    },
+    {
+      "key": "mountain",
+      "time": 5,
+      "meshes": 4,
+      "numeric": 36468,
+      "sha256": "92521184a6970ff88de7331fd348d4574dec238ff073184710565a7c83877f56"
+    },
+    {
+      "key": "mountain",
+      "time": 37,
+      "meshes": 4,
+      "numeric": 36468,
+      "sha256": "92521184a6970ff88de7331fd348d4574dec238ff073184710565a7c83877f56"
+    },
+    {
+      "key": "cave",
+      "time": "initial",
+      "meshes": 6,
+      "numeric": 69228,
+      "sha256": "aec8a56b7595123bf617e7ed9ff3f85d032ae932ae33e857cb8e4960640aeeec"
+    },
+    {
+      "key": "cave",
+      "time": 0,
+      "meshes": 6,
+      "numeric": 69228,
+      "sha256": "aec8a56b7595123bf617e7ed9ff3f85d032ae932ae33e857cb8e4960640aeeec"
+    },
+    {
+      "key": "cave",
+      "time": 0.5,
+      "meshes": 6,
+      "numeric": 69228,
+      "sha256": "aec8a56b7595123bf617e7ed9ff3f85d032ae932ae33e857cb8e4960640aeeec"
+    },
+    {
+      "key": "cave",
+      "time": 5,
+      "meshes": 6,
+      "numeric": 69228,
+      "sha256": "aec8a56b7595123bf617e7ed9ff3f85d032ae932ae33e857cb8e4960640aeeec"
+    },
+    {
+      "key": "cave",
+      "time": 37,
+      "meshes": 6,
+      "numeric": 69228,
+      "sha256": "aec8a56b7595123bf617e7ed9ff3f85d032ae932ae33e857cb8e4960640aeeec"
+    },
+    {
+      "key": "underwater",
+      "time": "initial",
+      "meshes": 5,
+      "numeric": 44738,
+      "sha256": "424b9e2a5d8a119c411f76426343dbee88a18bcbe70723708bf2b2a70e6af61f"
+    },
+    {
+      "key": "underwater",
+      "time": 0,
+      "meshes": 5,
+      "numeric": 44738,
+      "sha256": "9563d6b5408de0c48b422e6a644561057023ae49c016edb4952321822763aead"
+    },
+    {
+      "key": "underwater",
+      "time": 0.5,
+      "meshes": 5,
+      "numeric": 44738,
+      "sha256": "9ee62ae12015c75bb677b70dfd85ab14ed31e5885b5bd397174a89dddbdc6497"
+    },
+    {
+      "key": "underwater",
+      "time": 5,
+      "meshes": 5,
+      "numeric": 44738,
+      "sha256": "828790ef1143874681deda551d2a123b3f6a1a44480cfdf5c0970967738d5fdd"
+    },
+    {
+      "key": "underwater",
+      "time": 37,
+      "meshes": 5,
+      "numeric": 44738,
+      "sha256": "2bd84179ca6cbbb60c27f74d2bb1d87adfe65a2cdf3e049b84f7fe2ddb4ba28b"
+    },
+    {
+      "key": "volcano",
+      "time": "initial",
+      "meshes": 6,
+      "numeric": 72572,
+      "sha256": "50625d8b450ce2112507e95902d62dd292e632831beeea35404a7a56166d7c37"
+    },
+    {
+      "key": "volcano",
+      "time": 0,
+      "meshes": 6,
+      "numeric": 72572,
+      "sha256": "044b8af7442b1af03b644cf40c5a95b8ac5d9843d511306a0b89ba0605817501"
+    },
+    {
+      "key": "volcano",
+      "time": 0.5,
+      "meshes": 6,
+      "numeric": 72572,
+      "sha256": "3116370aca6ca676056255bb02313f21917bb0cc4bb217179a5626ce6f22794b"
+    },
+    {
+      "key": "volcano",
+      "time": 5,
+      "meshes": 6,
+      "numeric": 72572,
+      "sha256": "a2f5828f262709c91b45f2e363e558a7e44a07d8c908a5ec9cba48432ac1878f"
+    },
+    {
+      "key": "volcano",
+      "time": 37,
+      "meshes": 6,
+      "numeric": 72572,
+      "sha256": "22a859e0f6a66c7a089495d19d6317361935b63076e5f29166b6cec21b985d39"
+    },
+    {
+      "key": "wetland",
+      "time": "initial",
+      "meshes": 7,
+      "numeric": 73018,
+      "sha256": "aefa845c8db653d111b69b6d094faeae8d9b776bd4dfdc7da0a713d6688e5f6f"
+    },
+    {
+      "key": "wetland",
+      "time": 0,
+      "meshes": 7,
+      "numeric": 73018,
+      "sha256": "34efa37e4e41bc7f93f09e5a74dbe574c3eafa0e1e122ad821eb0557d57de1d0"
+    },
+    {
+      "key": "wetland",
+      "time": 0.5,
+      "meshes": 7,
+      "numeric": 73018,
+      "sha256": "eefedad6189f944ee9eb01cda83ab44f82f3193bc67ee38594560865c85b367f"
+    },
+    {
+      "key": "wetland",
+      "time": 5,
+      "meshes": 7,
+      "numeric": 73018,
+      "sha256": "5fa0a161e113595a5218752090f6843b2e90580e94057fa73e72f1bf22135cc2"
+    },
+    {
+      "key": "wetland",
+      "time": 37,
+      "meshes": 7,
+      "numeric": 73018,
+      "sha256": "dd30021b3859333eb9a14235f3a18a207858924d91c59866ecac40a75344479a"
+    },
+    {
+      "key": "sakura",
+      "time": "initial",
+      "meshes": 7,
+      "numeric": 52157,
+      "sha256": "f0fabb52c7e7f7349fa3fb025ff24c284ebb7d2c8bdd8f50323a49caee735b29"
+    },
+    {
+      "key": "sakura",
+      "time": 0,
+      "meshes": 7,
+      "numeric": 52157,
+      "sha256": "34564b87bb2f8143fa6a9c1b3cd61df933c126954564680f9538642df3dd305a"
+    },
+    {
+      "key": "sakura",
+      "time": 0.5,
+      "meshes": 7,
+      "numeric": 52157,
+      "sha256": "5b7c79d3e38dbf4f1d463e33271556bb421039b058a9da6c13610287461bd8c4"
+    },
+    {
+      "key": "sakura",
+      "time": 5,
+      "meshes": 7,
+      "numeric": 52157,
+      "sha256": "4341bd350f42327c84ba42ae4eb2eecbb5e0ee8aa5e5ba8e5bbda44cbc9118b9"
+    },
+    {
+      "key": "sakura",
+      "time": 37,
+      "meshes": 7,
+      "numeric": 52157,
+      "sha256": "37be358ab1c3aeceb13bcb4c456095947faa32e6d85f2e5ecfa780837ef451eb"
+    }
+  ]
+}

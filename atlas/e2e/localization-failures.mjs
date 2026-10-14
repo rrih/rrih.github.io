@@ -170,6 +170,84 @@ try {
     assert(requests >= 2)
     return { preservesPreferenceSceneAndUrl: true, retryRecovered: true, requests }
   })
+  await scenario('ui-and-catalog-load-in-parallel', {}, async (page) => {
+    const requested = []
+    let release
+    const held = new Promise(resolve => { release = resolve })
+    for (const kind of ['ui', 'catalog']) {
+      await page.route(`**/atlas/locales/${kind}/fr.json`, async route => {
+        requested.push(kind)
+        await held
+        await route.continue()
+      })
+    }
+    try {
+      await page.goto(`${base}/fr/pokemon/6/`, { waitUntil: 'domcontentloaded' })
+      await expect.poll(() => requested.length, { timeout: 10_000 }).toBe(2)
+      assert.deepEqual([...requested].sort(), ['catalog', 'ui'], 'Both requests start while neither response is released')
+      await expect(page.locator('#root h1')).toContainText('Dracaufeu')
+      assert.equal(await page.locator('canvas').count(), 0, 'Readable initial HTML remains while translations are pending')
+      release()
+      await localizedEntry(page, 'fr')
+      return { requested, bothStartedBeforeRelease: true, initialHtmlPreserved: true }
+    } finally {
+      release()
+    }
+  })
+  await scenario('duplicate-language-requests-share-fetch-and-failure-remains-retryable', {}, async (page) => {
+    let requests = 0, release
+    const held = new Promise(resolve => { release = resolve })
+    await page.route('**/atlas/locales/ui/fr.json', async route => {
+      requests++
+      if (requests === 1) {
+        await held
+        return route.fulfill({ status: 503, body: 'Temporary unavailable' })
+      }
+      if (requests === 2) return route.fulfill({ contentType: 'application/json', body: '[]' })
+      return route.continue()
+    })
+    try {
+      await page.goto(`${base}/pokemon/6/?lang=en`)
+      await state(page, 'en', 'ready')
+      await page.locator('.language-button').click()
+      // Real browser history events bypass the language menu's deliberate busy
+      // guard and can request the same language before its first fetch completes.
+      await page.evaluate(() => {
+        history.pushState(null, '', '/atlas/fr/pokemon/6/')
+        dispatchEvent(new PopStateEvent('popstate'))
+      })
+      await expect.poll(() => requests).toBe(1)
+      await expect(page.locator('[data-language=fr]')).toHaveAttribute('aria-disabled', 'true')
+      await page.evaluate(() => {
+        for (let i = 0; i < 2; i++) {
+          history.pushState(null, '', '/atlas/fr/pokemon/6/')
+          dispatchEvent(new PopStateEvent('popstate'))
+        }
+      })
+      await page.locator('[data-language=fr]').dispatchEvent('click')
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))))
+      assert.equal(requests, 1, 'Concurrent history requests and busy menu activation reuse the same dictionary fetch')
+      await state(page, 'en', 'ready')
+      release()
+      await expect(page.locator('.language-dialog [role=status]')).toContainText('The language could not be loaded. Try again.')
+      await page.getByRole('button', { name: 'Retry translations', exact: true }).click()
+      await expect.poll(() => requests).toBe(2)
+      await expect(page.locator('.language-dialog [role=status]')).toContainText('The language could not be loaded. Try again.')
+      await state(page, 'en', 'ready')
+      await page.getByRole('button', { name: 'Retry translations', exact: true }).click()
+      await localizedEntry(page, 'fr')
+      assert.equal(requests, 3, 'Failed and malformed shared requests are evicted so retry fetches again')
+      for (const locale of ['en', 'fr']) {
+        await page.locator('.language-button').click()
+        await page.locator(`[data-language=${locale}]`).click()
+        await state(page, locale, 'ready')
+      }
+      assert.equal(requests, 3, 'A successful dictionary is reused locally after switching away and back')
+      return { overlappingHistoryRequests: 3, firstFetchCount: 1, requestsAfterRetryAndReuse: requests, busyMenuGuardPreserved: true }
+    } finally {
+      release()
+    }
+  })
   for (const locale of ['fr', 'ja']) {
     await scenario(`${locale}-failure-and-retry`, {}, async (page) => {
       let blocked = true

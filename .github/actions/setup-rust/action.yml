@@ -1,0 +1,33 @@
+name: Set up Rust and WebAssembly bindings
+description: Install the workspace Rust targets and the checksum-verified matching wasm-bindgen CLI.
+runs:
+  using: composite
+  steps:
+    - name: Install Rust targets and checks
+      shell: bash
+      run: |
+        rustup toolchain install stable --profile minimal --component rustfmt --component clippy --target wasm32-unknown-unknown
+        rustup default stable
+    - name: Cache Rust dependencies and build artifacts
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.cargo/registry
+          ~/.cargo/git
+          target
+        key: ${{ runner.os }}-rust-${{ github.job }}-${{ hashFiles('Cargo.lock', 'rust-toolchain.toml') }}
+        restore-keys: |
+          ${{ runner.os }}-rust-${{ github.job }}-
+    - name: Install verified wasm-bindgen CLI
+      shell: bash
+      run: |
+        set -euo pipefail
+        rust_setup_dir="$(mktemp -d)"
+        trap 'rm -rf "$rust_setup_dir"' EXIT
+        curl --fail --location --retry 3 --max-time 180 \
+          https://github.com/wasm-bindgen/wasm-bindgen/releases/download/0.2.129/wasm-bindgen-0.2.129-x86_64-unknown-linux-musl.tar.gz \
+          --output "$rust_setup_dir/wasm-bindgen.tar.gz"
+        printf '%s  %s\n' '82d12bb940e2d4e72e0d5605387fc1b8ca179044e012b620f0ce4e7440e8320e' "$rust_setup_dir/wasm-bindgen.tar.gz" | sha256sum --check
+        tar -xzf "$rust_setup_dir/wasm-bindgen.tar.gz" -C "$rust_setup_dir"
+        install -m 755 "$rust_setup_dir/wasm-bindgen-0.2.129-x86_64-unknown-linux-musl/wasm-bindgen" "$HOME/.cargo/bin/wasm-bindgen"
+        wasm-bindgen --version

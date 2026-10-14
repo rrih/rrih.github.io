@@ -34,12 +34,29 @@ folders; the scripts accept cache-path overrides. Source manifests are pinned in
 `scripts/data/home-sources.json` and `scripts/data/home-companion-paths.json`.
 `home-discovery.json` records the original paths and verified cross-material references.
 
+Rust owns asset validation, download retries, conversion settings, preservation
+checks and audit reports. `asset-library-bridge.mjs` only calls the existing Sharp
+and glTF Transform/Draco codecs. The commands below are run from `atlas/`;
+explicit paths passed to `xtask` are relative to the repository root.
+
+The production build verifies all 1,025 normal and 150 shiny GLBs, including
+their embedded resources, native HOME idle animation and valid animation targets.
+This check is also available on its own:
+
+```sh
+sh ../scripts/rust.sh run --locked -p xtask -- atlas-verify-assets
+sh ../scripts/rust.sh run --locked -p xtask -- atlas-prepare-artwork
+```
+
+Artwork preparation downloads only missing images from the existing PokeAPI
+official-artwork source and retains the 192 px, quality-78 WebP settings.
+
 ```sh
 python3 scripts/prepare-home-sources.py
 python3 scripts/prepare-home-textures.py \
   --cache work/home-textures --geometry-cache work/home-geometry
 python3 scripts/prepare-home-animations.py --cache work/home-animations --workers 16
-bun scripts/optimize-home-models.mjs
+sh ../scripts/rust.sh run --locked -p xtask -- atlas-optimize-models
 bun scripts/verify-home-models.mjs
 python3 scripts/sync-home-models.py
 ```
@@ -239,7 +256,7 @@ No existing normal or shiny model bytes change. Rebuild in this order:
 ```sh
 python3 scripts/prepare-form-sources.py
 python3 scripts/prepare-home-forms.py normal
-bun scripts/optimize-home-models.mjs work/forms/normal scripts/data/form-optimization-audit.json
+sh ../scripts/rust.sh run --locked -p xtask -- atlas-optimize-models atlas/work/forms/normal atlas/scripts/data/form-optimization-audit.json
 python3 scripts/prepare-home-forms.py rare
 python3 scripts/prepare-home-forms.py publish
 python3 scripts/prepare-external-forms.py

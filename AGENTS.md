@@ -15,7 +15,7 @@ The owner requested a full replacement of the old tools site and its Git history
 - Update ignored DEVELOPMENT_HISTORY.md for a material working session.
 - Distinguish code commit, remote push, Pages deployment, and live-site verification in reports.
 
-- When updating model or artwork contents at existing URLs, change the corresponding runtime cache version in atlas/vite.config.ts so returning visitors fetch the updated asset. Keep unchanged asset cache versions stable to preserve opened resources across application updates.
+- When updating model or artwork contents at existing URLs, change the corresponding runtime cache version in atlas/vite.config.mjs so returning visitors fetch the updated asset. Keep unchanged asset cache versions stable to preserve opened resources across application updates.
 
 - Preserve existing Atlas localStorage/IndexedDB and model/artwork cache keys. The owner explicitly superseded the previous root-PWA identity rule: /atlas/ retains its PWA, and independent /tools/<app>/ PWAs are allowed, each with its own id/start/scope and storage/cache namespace. Do not add a root or /tools/ worker. Retire the old root worker without deleting data. No profile-to-Atlas redirects or mutual UI links. Equivalent old non-root Atlas routes remain hosting compatibility redirects. Keep unrelated missing routes true 404s.
 - Per-species and form metadata must share the same generator before and after JavaScript. Keep truthful content-based sitemap dates and only supported, translated pages in hreflang.
