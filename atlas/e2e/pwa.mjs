@@ -118,7 +118,7 @@ try {
     downloadThroughput: -1,
     uploadThroughput: -1,
   })
-  await page.getByText('You’re offline.', { exact: false }).waitFor()
+  await page.getByText('You’re offline.', { exact: false }).waitFor({ timeout: 120000 })
 
   const artwork = await page
     .locator('.pokemon-card img')

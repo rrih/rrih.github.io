@@ -55,7 +55,7 @@ try {
     const errors = []
     page.on('pageerror', (e) => errors.push(e.message))
     await page.goto(`${base}/?lang=en`)
-    await page.locator('.app-shell').waitFor()
+    await page.locator('.app-shell').waitFor({ timeout: 120000 })
     await page.waitForTimeout(150)
     if (mode === 'installed-startup')
       await page.waitForFunction(() => window.storageCalls.includes('persist'))

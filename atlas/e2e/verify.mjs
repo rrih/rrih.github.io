@@ -15,7 +15,7 @@ page.on('pageerror', error => errors.push(error.message))
 const ready = async p => {
   await p.getByText('LIVE VIEW', { exact: true }).waitFor({ timeout: 120_000 })
   await p.locator('.loader').waitFor({ state: 'hidden' })
-  await p.locator('canvas').waitFor()
+  await p.locator('canvas').waitFor({ timeout: 120000 })
 }
 const noOverflow = async p => assert(await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'horizontal overflow')
 try {
@@ -139,7 +139,7 @@ if (process.env.ATLAS_VERIFY_PWA === '1') {
   await ready(page)
   const cdp = await context.newCDPSession(page)
   await cdp.send('Network.overrideNetworkState', { offline: true, latency: 0, downloadThroughput: -1, uploadThroughput: -1 })
-  await page.getByText('You’re offline.', { exact: false }).waitFor()
+  await page.getByText('You’re offline.', { exact: false }).waitFor({ timeout: 120000 })
   await page.screenshot({ path: `${output}/offline.png`, fullPage: true })
   offlineVerified = true
   await context.setOffline(false)

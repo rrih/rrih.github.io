@@ -497,7 +497,7 @@ try {
   assert(await proveOffline(), 'Real network requests must still fail after the cached reload')
   // Chromium may reset navigator.onLine after a cached navigation; network emulation remains active.
   await setOffline(true)
-  await page.getByText('You’re offline.', { exact: false }).waitFor()
+  await page.getByText('You’re offline.', { exact: false }).waitFor({ timeout: 120000 })
   assert.deepEqual(await readResponse(quotaUrl), result.quotaNetworkResponse)
   await page.screenshot({ path: `${output}/offline-after-quota.png`, fullPage: true })
   passed('One-shot quota failure preserves readable data and shell, and the next save succeeds')

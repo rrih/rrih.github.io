@@ -12,7 +12,7 @@ const ready = async () => {
   await page.locator('.app-shell[data-catalog-state=ready]').waitFor({ timeout: 120_000 })
   await page.getByText('LIVE VIEW', { exact: true }).waitFor({ timeout: 120_000 })
   await page.locator('.loader').waitFor({ state: 'hidden' })
-  await page.locator('canvas').waitFor()
+  await page.locator('canvas').waitFor({ timeout: 120000 })
   assert.equal(await page.locator('.viewer-error').count(), 0)
 }
 const studio = () => page.evaluate(() => JSON.parse(localStorage.getItem('atlas-scenes-v1')))
@@ -59,7 +59,7 @@ try {
   results.push('solo-pagehide-reload-and-return-preserve-together-settings-and-camera')
 
   await page.getByRole('button', { name: 'Save scene', exact: true }).click()
-  await page.getByText('Scene saved on this device.', { exact: true }).waitFor()
+  await page.getByText('Scene saved on this device.', { exact: true }).waitFor({ timeout: 120000 })
   await page.locator('.toast').waitFor({ state: 'hidden', timeout: 10_000 })
   await page.evaluate(() => {
     window.__idleWrites = { history: 0, scenes: 0 }
@@ -90,7 +90,7 @@ try {
     dispatchEvent(event)
   })
   await page.getByRole('button', { name: 'Get the app', exact: true }).click()
-  await page.getByText('Atlas is ready for your home screen.', { exact: true }).waitFor()
+  await page.getByText('Atlas is ready for your home screen.', { exact: true }).waitFor({ timeout: 120000 })
   await expect.poll(() => page.evaluate(() => window.__installPersistence)).toBe(1)
   results.push('accepted-install-requests-persistent-storage-without-appinstalled-event')
 

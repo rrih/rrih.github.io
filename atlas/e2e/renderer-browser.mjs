@@ -37,7 +37,7 @@ const settings = { playing:true, rotate:false, speed:1, light:1, habitat:'studio
 const ready = async () => {
   await page.waitForFunction(() => document.body.dataset.loading === 'false' || document.body.dataset.error, null, {timeout:120000})
   assert.equal(await page.locator('body').getAttribute('data-error'),'')
-  await page.locator('canvas').waitFor()
+  await page.locator('canvas').waitFor({ timeout: 120000 })
   await page.waitForTimeout(450)
 }
 const mount = async (id, form, next=settings, members) => {

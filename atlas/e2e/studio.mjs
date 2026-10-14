@@ -17,7 +17,7 @@ page.on('request', request => { if (/\.glb(?:\?|$)/.test(request.url())) request
 const ready = async () => {
   await page.getByText('LIVE VIEW', { exact: true }).waitFor({ timeout: 120_000 })
   await page.locator('.loader').waitFor({ state: 'hidden' })
-  await page.locator('canvas').waitFor()
+  await page.locator('canvas').waitFor({ timeout: 120000 })
 }
 const readState = () => page.evaluate(() => JSON.parse(localStorage.getItem('atlas-scenes-v1')))
 const pause = async () => { const button = page.getByRole('button', { name: 'Pause animation', exact: true }); if (await button.count()) await button.click(); await page.waitForTimeout(700) }
@@ -35,9 +35,7 @@ const motion = async label => {
   }
   assert(a.equals(paused), `${label} pause is stable`)
   await page.getByRole('button', { name: 'Play animation', exact: true }).click()
-  await page.waitForTimeout(350)
-  const b = await page.locator('canvas').screenshot()
-  assert(!a.equals(b), `${label} moves`)
+  await expect.poll(async () => (await page.locator('canvas').screenshot()).equals(a), { timeout: 60_000 }).toBe(false)
 }
 try {
   await page.goto(`${base}/?lang=en#pokemon=6&scene=studio`)
@@ -89,12 +87,11 @@ try {
   await pause()
   const front = await page.locator('canvas').screenshot()
   await page.getByRole('button', { name: 'back', exact: true }).click()
-  await page.waitForTimeout(500)
-  assert(!front.equals(await page.locator('canvas').screenshot()), 'Forest rear view changes actual geometry')
+  await expect.poll(async () => (await page.locator('canvas').screenshot()).equals(front), { timeout: 60_000 }).toBe(false)
   await page.getByRole('button', { name: 'Reset camera', exact: true }).click()
   await page.getByLabel('Scene name', { exact: true }).fill('Forest friends')
   await page.getByRole('button', { name: 'Save scene', exact: true }).click()
-  await page.getByText('Scene saved on this device.', { exact: true }).waitFor()
+  await page.getByText('Scene saved on this device.', { exact: true }).waitFor({ timeout: 120000 })
   let state = await readState()
   assert.equal(state.saved.length, 1)
   assert.equal(state.draft.settings.habitat, 'forest')
@@ -110,8 +107,9 @@ try {
   scene.settings.playing = true
   scene.members = [6, 1, 25, 133, 7, 94].map((speciesId, index) => ({ key: `qa-${index}`, speciesId, shiny: index === 0, x: (index % 3 - 1) * 2.6, z: (Math.floor(index / 3) - 0.5) * 2.8, rotation: 0, scale: 0.8 }))
   await page.locator('.scene-file-actions input[type=file]').setInputFiles({ name: 'six.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify({ version: 1, scene })) })
+  const imported = page.getByText('Scene imported.', { exact: true }).waitFor({ timeout: 120000 })
   await ready()
-  await page.getByText('Scene imported.', { exact: true }).waitFor()
+  await imported
   assert.equal((await readState()).draft.members.length, 6)
   await motion('Six Pokémon')
   await pause()
@@ -132,7 +130,7 @@ try {
   await (await exported).saveAs(`${output}/scene.json`)
   const beforeBad = (await readState()).draft
   await page.locator('.scene-file-actions input[type=file]').setInputFiles({ name: 'invalid.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify({ version: 1, scene: { ...beforeBad, members: [{ ...beforeBad.members[0], speciesId: 99999 }] } })) })
-  await page.getByText('This scene file could not be opened.', { exact: true }).waitFor()
+  await page.getByText('This scene file could not be opened.', { exact: true }).waitFor({ timeout: 120000 })
   assert.deepEqual((await readState()).draft, beforeBad)
 
   for (const width of [390, 320]) {

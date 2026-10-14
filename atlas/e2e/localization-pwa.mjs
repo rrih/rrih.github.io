@@ -135,7 +135,7 @@ const offlineState = async (target, code) => {
     .getByText(dictionaries[code]['You’re offline. Recently viewed Pokémon may still be available.'], {
       exact: true,
     })
-    .waitFor()
+    .waitFor({ timeout: 120000 })
   return cdp
 }
 

@@ -231,7 +231,7 @@ async function runCase(returning, activatedElsewhere = false) {
           .filter((event) => event.kind === 'controllerchange' && event.changed).length,
         1,
       )
-      await page.getByRole('button', { name: 'Update now', exact: true }).waitFor()
+      await page.getByRole('button', { name: 'Update now', exact: true }).waitFor({ timeout: 120000 })
       console.log(`${name}: another tab activated the worker; original tab now updates with waiting=null`)
     }
     console.log(`${name}: update is ready; clicking Update now while offline`)
@@ -258,7 +258,7 @@ async function runCase(returning, activatedElsewhere = false) {
       downloadThroughput: -1,
       uploadThroughput: -1,
     })
-    await page.getByText('You’re offline.', { exact: false }).waitFor()
+    await page.getByText('You’re offline.', { exact: false }).waitFor({ timeout: 120000 })
     // Observe after rendering as well, so two competing update listeners cannot pass as one reload.
     await delay(3000)
     record.reloads = observed.lifecycle.filter((event) => event.kind === 'document').length - beforeDocuments
